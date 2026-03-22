@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light Mode */
+  --background: #ffffff;
+  --foreground: #111111;
+  --panel: #ffffff;
+  --border: #e4e4e7;
+  --accent: #ca8a04;
+  --accent-hover: #a16207;
+  --muted: #777777;
+  --input-bg: #ffffff;
+  --placeholder: #777777;
+}
+
+.dark {
+  /* Dark Mode */
+  --background: #111111;
+  --foreground: #e5e5e5;
+  --panel: #18181b;
+  --border: #27272a;
+  --accent: #facc15;
+  --accent-hover: #eab308;
+  --muted: #888888;
+  --input-bg: #111111;
+  --placeholder: #888888;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Specific Input & Select Styles */
+input,
+select {
+  background-color: var(--input-bg);
+  color: var(--foreground);
+}
+
+input::placeholder {
+  color: var(--placeholder);
+}
+
+/* Base utility classes for nice aesthetic */
+.glass-panel {
+  background: rgba(var(--panel-rgb, 255, 255, 255), 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+}
+
+.dark .glass-panel {
+  background: rgba(24, 24, 27, 0.6);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--accent), #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
