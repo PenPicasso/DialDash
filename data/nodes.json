@@ -3,11 +3,10 @@
     {
       "channel": "Super-Spiked",
       "host": "Arjun Murti",
-      "channelId": "UCbM0l_U0u-9v7A3lP8A1f3g",
+      "channelId": "",
       "energyType": "Oil Markets",
       "region": "US",
-      "priority": "HOT",
-      "youtubeUrl": "https://www.youtube.com/@veriten",
+      "youtubeUrl": "https://www.youtube.com/@super-spiked",
       "xProfile": "https://x.com/arjunmurti"
     },
     {
@@ -16,7 +15,6 @@
       "channelId": "UCV3F6Z2_8vO5n3Yv_rP2q1A",
       "energyType": "Oil Markets",
       "region": "Canada",
-      "priority": "HOT",
       "youtubeUrl": "https://www.youtube.com/@arcenergy",
       "xProfile": "https://x.com/tertzakian"
     },
@@ -26,7 +24,6 @@
       "channelId": "UCyCH6W7n70cE_Aun875Dkpg",
       "energyType": "Oil Markets",
       "region": "US",
-      "priority": "HOT",
       "youtubeUrl": "https://www.youtube.com/@petronerds633",
       "xProfile": "https://x.com/petronerds"
     },
@@ -36,27 +33,24 @@
       "channelId": "UCbM0l_U0u-9v7A3lP8A1f3g",
       "energyType": "Oil Markets",
       "region": "US",
-      "priority": "WARM",
       "youtubeUrl": "https://www.youtube.com/@veriten",
       "xProfile": "https://x.com/VeritenLLC"
     },
     {
       "channel": "Energy Gang",
       "host": "Stephen Lacey",
-      "channelId": "UC6w8cK5vA3R-s4hB0f0jG3A",
+      "channelId": "",
       "energyType": "Energy Transition",
       "region": "US",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@WoodMackenzieChannel",
       "xProfile": "https://x.com/Stephen_Lacey"
     },
     {
       "channel": "Odd Lots",
       "host": "Tracy Alloway & Joe Weisenthal",
-      "channelId": "UC6w8cK5vA3R-s4hB0f0jG3A",
+      "channelId": "",
       "energyType": "Macro",
       "region": "Global",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@BloombergPodcasts",
       "xProfile": "https://x.com/TracyAlloway"
     },
@@ -66,7 +60,6 @@
       "channelId": "UCh8G0b1z29zS2b46C9oWQ4Q",
       "energyType": "Clean Energy",
       "region": "Europe",
-      "priority": "WARM",
       "youtubeUrl": "https://www.youtube.com/@LiebreichAssociates",
       "xProfile": "https://x.com/MichaelLiebreich"
     },
@@ -76,7 +69,6 @@
       "channelId": "UCYwV-1O0K4w_o5O8D_u27Bw",
       "energyType": "Energy Markets",
       "region": "Global",
-      "priority": "HOT",
       "youtubeUrl": "https://www.youtube.com/@RystadEnergy",
       "xProfile": "https://x.com/RystadEnergy"
     },
@@ -86,7 +78,6 @@
       "channelId": "UCvS4R8lV6_3B8V_vP0N7_XQ",
       "energyType": "Energy Transition",
       "region": "Europe",
-      "priority": "WARM",
       "youtubeUrl": "https://www.youtube.com/@RedefiningEnergy",
       "xProfile": "https://x.com/LaurentSegalen"
     },
@@ -96,149 +87,125 @@
       "channelId": "UCGvN2V_V1Klb6QO8qK8f_WQ",
       "energyType": "Energy Policy",
       "region": "US",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@ColumbiaUEnergy",
       "xProfile": "https://x.com/ColumbiaUEnergy"
     },
     {
       "channel": "Energy Intelligence Podcast",
       "host": "Energy Intelligence",
-      "channelId": "UCpYmO97V7V7V7V7V7V7V7V",
+      "channelId": "",
       "energyType": "Energy Markets",
       "region": "Global",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@energyintelligence",
       "xProfile": "https://x.com/energyintel"
     },
     {
       "channel": "MacroVoices",
       "host": "Erik Townsend",
-      "channelId": "UCuL9V-V1Klb6QO8qK8f_WQ",
+      "channelId": "",
       "energyType": "Macro",
       "region": "Global",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@MacroVoices",
       "xProfile": "https://x.com/MacroVoices"
     },
     {
       "channel": "Oil Ground Up",
       "host": "Patrick De Haan",
-      "channelId": "UCbM0l_U0u-9v7A3lP8A1f3g",
+      "channelId": "",
       "energyType": "Oil Markets",
       "region": "US",
-      "priority": "WARM",
       "youtubeUrl": "https://www.youtube.com/@GasBuddy",
       "xProfile": "https://x.com/GasBuddyGuy"
     },
     {
       "channel": "Energy vs Climate",
       "host": "David Keith & Sara Hastings-Simon",
-      "channelId": "UCbM0l_U0u-9v7A3lP8A1f3g",
+      "channelId": "",
       "energyType": "Energy Policy",
       "region": "Canada",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@EnergyvsClimate",
       "xProfile": "https://x.com/sara_sim0n"
     },
     {
       "channel": "CleanTechnica Podcast",
       "host": "Zach Shahan",
-      "channelId": "UCvS4R8lV6_3B8V_vP0N7_XQ",
+      "channelId": "",
       "energyType": "Clean Energy",
       "region": "US",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@CleanTechnica",
       "xProfile": "https://x.com/ZacharyShahan"
     },
     {
       "channel": "Catalyst with Shayle Kann",
       "host": "Shayle Kann",
-      "channelId": "UCh8G0b1z29zS2b46C9oWQ4Q",
+      "channelId": "",
       "energyType": "Climate Tech",
       "region": "US",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@CatalystShayleKann",
       "xProfile": "https://x.com/shaylekann"
     },
     {
       "channel": "Energy Impact Podcast",
       "host": "Energy Impact Partners",
-      "channelId": "UCYwV-1O0K4w_o5O8D_u27Bw",
+      "channelId": "",
       "energyType": "Climate Tech",
       "region": "Global",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@EnergyImpactPodcast",
       "xProfile": "https://x.com/EIPfund"
     },
     {
       "channel": "Volts Podcast",
       "host": "David Roberts",
-      "channelId": "UC6w8cK5vA3R-s4hB0f0jG3A",
+      "channelId": "",
       "energyType": "Energy Transition",
       "region": "US",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@drvolts",
       "xProfile": "https://x.com/drvolts"
     },
     {
       "channel": "The Interchange",
       "host": "Canary Media",
-      "channelId": "UCh8G0b1z29zS2b46C9oWQ4Q",
+      "channelId": "",
       "energyType": "Clean Energy",
       "region": "US",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@CanaryMediaInc",
       "xProfile": "https://x.com/CanaryMediaInc"
     },
     {
       "channel": "Energy Unplugged",
       "host": "Aurora Energy Research",
-      "channelId": "UCpYmO97V7V7V7V7V7V7V7V",
+      "channelId": "",
       "energyType": "Energy Markets",
       "region": "Europe",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@AuroraEnergyResearch",
       "xProfile": "https://x.com/AuroraER_Oxford"
     },
     {
       "channel": "Smarter Markets",
       "host": "Abaxx Technologies",
-      "channelId": "UCYwV-1O0K4w_o5O8D_u27Bw",
+      "channelId": "",
       "energyType": "Commodity Markets",
       "region": "Global",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@AbaxxTech",
       "xProfile": "https://x.com/AbaxxTech"
     },
     {
       "channel": "The Energy Podcast",
       "host": "Shell / Industry Guests",
-      "channelId": "UCbM0l_U0u-9v7A3lP8A1f3g",
+      "channelId": "",
       "energyType": "Energy Markets",
       "region": "Global",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@Shell",
       "xProfile": "https://x.com/Shell"
     },
     {
       "channel": "Energy Evolution",
       "host": "S&P Global",
-      "channelId": "UCYwV-1O0K4w_o5O8D_u27Bw",
+      "channelId": "",
       "energyType": "Energy Markets",
       "region": "Global",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@SPGlobal",
       "xProfile": "https://x.com/SPGlobal"
-    },
-    {
-      "channel": "The Oil & Gas Startups Podcast",
-      "host": "Digital Wildcatters",
-      "channelId": "UCV3F6Z2_8vO5n3Yv_rP2q1A",
-      "energyType": "Oil & Gas",
-      "region": "US",
-      "priority": "WARM",
-      "youtubeUrl": "https://www.youtube.com/@DigitalWildcatters",
-      "xProfile": "https://x.com/DigitalWildcat"
     },
     {
       "channel": "Digital Wildcatters",
@@ -246,17 +213,15 @@
       "channelId": "UCV3F6Z2_8vO5n3Yv_rP2q1A",
       "energyType": "Oil & Gas",
       "region": "US",
-      "priority": "WARM",
       "youtubeUrl": "https://www.youtube.com/@DigitalWildcatters",
       "xProfile": "https://x.com/DigitalWildcat"
     },
     {
       "channel": "Energy Week",
       "host": "Energy Analysts",
-      "channelId": "UCpYmO97V7V7V7V7V7V7V7V",
+      "channelId": "",
       "energyType": "Energy Markets",
       "region": "Global",
-      "priority": "MEDIUM",
       "youtubeUrl": "https://www.youtube.com/@energyweek",
       "xProfile": "https://x.com/search?q=energy%20analyst"
     }

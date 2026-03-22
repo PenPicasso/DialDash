@@ -1,9 +1,15 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+    subsets: ["latin"],
+    display: "swap",
+});
 
 export const metadata: Metadata = {
-    title: "Energy Dial Dashboard",
-    description: "Internal clip intelligence system for the Energy Dial project",
+    title: "Dial Dash — Energy Dial",
+    description: "YouTube prospect intelligence for Energy Dial's clipping service",
 };
 
 export default function RootLayout({
@@ -12,7 +18,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
+        <html lang="en" className={inter.className}>
             <body className="antialiased">{children}</body>
         </html>
     );

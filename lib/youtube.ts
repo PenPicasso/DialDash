@@ -3,58 +3,153 @@ export interface YouTubeVideo {
     title: string;
     thumbnail: string;
     publishDate: string;
-    viewCount?: string;
+}
+
+export interface ChannelStats {
+    lastUploadDate: string | null;
+    uploadFrequency: string;
+    videosLast30Days: number;
+    shortsCount: number;
+    totalVideos: number;
+    recentVideos: YouTubeVideo[];
+    subscriberCount: string | null;
 }
 
 /**
- * Fetches the latest videos from a YouTube channel using various RSS feed patterns.
- * This approach does not require an API key.
+ * Fetches channel stats from YouTube RSS feed (no API key needed).
  */
-export async function getLatestVideos(
+export async function getChannelStats(
     channelId?: string,
-    youtubeUrl?: string,
-    channelName?: string
-): Promise<YouTubeVideo[]> {
-    // Strategy: try multiple RSS feed approaches in order of reliability
+    youtubeUrl?: string
+): Promise<ChannelStats> {
+    const emptyStats: ChannelStats = {
+        lastUploadDate: null,
+        uploadFrequency: "Unknown",
+        videosLast30Days: 0,
+        shortsCount: 0,
+        totalVideos: 0,
+        recentVideos: [],
+        subscriberCount: null,
+    };
 
-    // 1. Try channel_id RSS first (most reliable)
-    if (channelId && channelId.startsWith("UC")) {
-        const videos = await tryFetchRss(
+    let videos: YouTubeVideo[] = [];
+    let resolvedChannelId: string | null = null;
+
+    // 1. Try channelId RSS
+    if (channelId && channelId.startsWith("UC") && channelId.length > 10) {
+        videos = await tryFetchRss(
             `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`
         );
-        if (videos.length > 0) return videos;
+        if (videos.length > 0) resolvedChannelId = channelId;
     }
 
-    // 2. If we have a handle URL, resolve the real channel ID from the page
-    if (youtubeUrl && youtubeUrl.includes("@")) {
-        const resolvedId = await resolveChannelId(youtubeUrl);
-        if (resolvedId) {
-            const videos = await tryFetchRss(
-                `https://www.youtube.com/feeds/videos.xml?channel_id=${resolvedId}`
+    // 2. Resolve from handle URL
+    if (videos.length === 0 && youtubeUrl && youtubeUrl.includes("@")) {
+        const result = await resolveChannelId(youtubeUrl);
+        if (result) {
+            resolvedChannelId = result;
+            videos = await tryFetchRss(
+                `https://www.youtube.com/feeds/videos.xml?channel_id=${result}`
             );
-            if (videos.length > 0) return videos;
         }
     }
 
-    // 3. If we have a plain channel URL (no handle), try extracting a channel ID
-    if (youtubeUrl && youtubeUrl.includes("/channel/")) {
+    // 3. Try /channel/ URL pattern
+    if (videos.length === 0 && youtubeUrl && youtubeUrl.includes("/channel/")) {
         const idMatch = youtubeUrl.match(/\/channel\/(UC[a-zA-Z0-9_-]+)/);
         if (idMatch) {
-            const videos = await tryFetchRss(
+            resolvedChannelId = idMatch[1];
+            videos = await tryFetchRss(
                 `https://www.youtube.com/feeds/videos.xml?channel_id=${idMatch[1]}`
             );
-            if (videos.length > 0) return videos;
         }
     }
 
-    console.warn("Could not fetch videos for:", { channelId, youtubeUrl, channelName });
-    return [];
+    if (videos.length === 0) return emptyStats;
+
+    // Calculate stats
+    const now = new Date();
+    const thirtyDaysAgo = new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000);
+
+    const videosLast30Days = videos.filter(
+        (v) => new Date(v.publishDate) >= thirtyDaysAgo
+    ).length;
+
+    const shortsCount = videos.filter((v) => {
+        const title = v.title.toLowerCase();
+        return title.includes("#shorts") || title.includes("#short");
+    }).length;
+
+    // Upload frequency from date spread
+    const uploadFrequency = calculateFrequency(videos);
+
+    // Try to get subscriber count (best-effort)
+    let subscriberCount: string | null = null;
+    if (youtubeUrl) {
+        subscriberCount = await getSubscriberCount(youtubeUrl);
+    }
+
+    return {
+        lastUploadDate: videos[0]?.publishDate || null,
+        uploadFrequency,
+        videosLast30Days,
+        shortsCount,
+        totalVideos: videos.length,
+        recentVideos: videos.slice(0, 3),
+        subscriberCount,
+    };
 }
 
-/**
- * Resolves a YouTube handle URL (e.g. https://www.youtube.com/@handle) to a channel ID
- * by fetching the channel page and extracting the channel_id meta tag or RSS link.
- */
+function calculateFrequency(videos: YouTubeVideo[]): string {
+    if (videos.length < 2) return "Rare";
+
+    const dates = videos
+        .map((v) => new Date(v.publishDate).getTime())
+        .sort((a, b) => b - a);
+
+    const newestMs = dates[0];
+    const oldestMs = dates[dates.length - 1];
+    const spanDays = (newestMs - oldestMs) / (1000 * 60 * 60 * 24);
+
+    if (spanDays === 0) return "Daily";
+
+    const uploadsPerWeek = (videos.length / spanDays) * 7;
+
+    if (uploadsPerWeek >= 5) return "Daily";
+    if (uploadsPerWeek >= 2) return `${Math.round(uploadsPerWeek)}x/week`;
+    if (uploadsPerWeek >= 0.8) return "Weekly";
+    const uploadsPerMonth = uploadsPerWeek * 4.33;
+    if (uploadsPerMonth >= 2) return `${Math.round(uploadsPerMonth)}x/month`;
+    return "Monthly";
+}
+
+async function getSubscriberCount(youtubeUrl: string): Promise<string | null> {
+    try {
+        const res = await fetch(youtubeUrl, {
+            headers: { "User-Agent": "Mozilla/5.0" },
+            redirect: "follow",
+        });
+        if (!res.ok) return null;
+        const html = await res.text();
+
+        // Extract subscriber count from YouTube page JSON
+        const subMatch = html.match(/"subscriberCountText":\s*\{[^}]*"simpleText":\s*"([^"]+)"/);
+        if (subMatch) {
+            return subMatch[1].replace(" subscribers", "").trim();
+        }
+
+        // Fallback pattern
+        const subMatch2 = html.match(/"subscriberCountText":"([^"]+)"/);
+        if (subMatch2) {
+            return subMatch2[1].replace(" subscribers", "").trim();
+        }
+
+        return null;
+    } catch {
+        return null;
+    }
+}
+
 async function resolveChannelId(handleUrl: string): Promise<string | null> {
     try {
         const res = await fetch(handleUrl, {
@@ -64,11 +159,10 @@ async function resolveChannelId(handleUrl: string): Promise<string | null> {
         if (!res.ok) return null;
         const html = await res.text();
 
-        // Look for channel_id in the page source (multiple patterns)
         const patterns = [
-            /\"channelId\":\"(UC[a-zA-Z0-9_-]+)\"/,
+            /"channelId":"(UC[a-zA-Z0-9_-]+)"/,
             /channel_id=(UC[a-zA-Z0-9_-]+)/,
-            /\"externalId\":\"(UC[a-zA-Z0-9_-]+)\"/,
+            /"externalId":"(UC[a-zA-Z0-9_-]+)"/,
             /<link rel="canonical" href="https:\/\/www\.youtube\.com\/channel\/(UC[a-zA-Z0-9_-]+)">/,
         ];
 
@@ -82,26 +176,18 @@ async function resolveChannelId(handleUrl: string): Promise<string | null> {
     }
 }
 
-/**
- * Attempts to fetch and parse an RSS feed URL. Returns empty array on failure.
- */
 async function tryFetchRss(rssUrl: string): Promise<YouTubeVideo[]> {
     try {
         const response = await fetch(rssUrl);
         if (!response.ok) return [];
         const xml = await response.text();
         return parseRssXml(xml);
-    } catch (error) {
-        console.error("RSS fetch error for", rssUrl, error);
+    } catch {
         return [];
     }
 }
 
-/**
- * Internal helper to parse the YouTube RSS XML.
- */
 function parseRssXml(xml: string): YouTubeVideo[] {
-    // Lightweight regex-based parser
     const entryRegex = /<entry>([\s\S]*?)<\/entry>/g;
     const videoIdRegex = /<yt:videoId>(.*?)<\/yt:videoId>/;
     const titleRegex = /<title>(.*?)<\/title>/;
@@ -110,7 +196,7 @@ function parseRssXml(xml: string): YouTubeVideo[] {
     const videos: YouTubeVideo[] = [];
     let match;
 
-    while ((match = entryRegex.exec(xml)) !== null && videos.length < 5) {
+    while ((match = entryRegex.exec(xml)) !== null && videos.length < 15) {
         const entryBody = match[1];
         const videoId = videoIdRegex.exec(entryBody)?.[1] || "";
         const title = titleRegex.exec(entryBody)?.[1] || "Untitled";
@@ -128,9 +214,6 @@ function parseRssXml(xml: string): YouTubeVideo[] {
     return videos;
 }
 
-/**
- * Basic utility to decode common HTML entities in RSS titles.
- */
 function decodeHtmlEntities(str: string): string {
     return str
         .replace(/&amp;/g, "&")
