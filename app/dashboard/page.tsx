@@ -5,6 +5,20 @@ import data from "@/data/nodes.json";
 import { VideoPreview } from "@/components/videoPreview";
 import { Search, Youtube, ExternalLink, Moon, Sun } from "lucide-react";
 
+type NodeData = {
+    channel: string;
+    host: string;
+    channelId: string;
+    energyType: string;
+    region: string;
+    priority: string;
+    youtubeUrl: string;
+    xProfile?: string;
+    lastUpload?: string;
+};
+
+const allNodes = data.nodes as NodeData[];
+
 export default function Dashboard() {
     const [search, setSearch] = useState("");
     const [priority, setPriority] = useState("");
@@ -26,11 +40,11 @@ export default function Dashboard() {
     }, [isDark]);
 
     // Derive unique options for filters dynamically from dataset
-    const energyTypes = Array.from(new Set(data.nodes.map(n => n.energyType).filter(Boolean)));
-    const regions = Array.from(new Set(data.nodes.map(n => n.region).filter(Boolean)));
-    const priorities = Array.from(new Set(data.nodes.map(n => n.priority).filter(Boolean)));
+    const energyTypes = Array.from(new Set(allNodes.map(n => n.energyType).filter(Boolean)));
+    const regions = Array.from(new Set(allNodes.map(n => n.region).filter(Boolean)));
+    const priorities = Array.from(new Set(allNodes.map(n => n.priority).filter(Boolean)));
 
-    const filteredNodes = data.nodes.filter(node => {
+    const filteredNodes = allNodes.filter(node => {
         const matchSearch = node.channel.toLowerCase().includes(search.toLowerCase()) ||
             node.host.toLowerCase().includes(search.toLowerCase());
         const matchPriority = priority ? node.priority === priority : true;
