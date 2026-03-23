@@ -623,7 +623,7 @@ function FilterSelect({
             value={value}
             onChange={(e) => onChange(e.target.value)}
         >
-            <option value="">{`All ${placeholder}s`}</option>
+            <option value="">{`All ${placeholder}${placeholder.endsWith("s") ? "es" : "s"}`}</option>
             {options.map((opt) => (
                 <option key={opt} value={opt}>
                     {labels ? labels[opt] : opt}
