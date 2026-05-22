@@ -215,7 +215,16 @@ export default function NetworkGraph({ nodes, onNodeClick, searchQuery, activeCa
       <div ref={containerRef} className="w-full h-full" />
       {/* Legend */}
       <div className="absolute bottom-4 left-4 bg-panel/90 backdrop-blur-md border border-border rounded-lg p-3 text-xs space-y-1.5">
-        {(["Oil & Gas", "Commodities", "LNG & Gas", "Renewables & Clean", "Macro & Policy"] as const).map((cat) => (
+        {([
+          "Oil & Gas",
+          "Power & Utilities",
+          "Renewables",
+          "Nuclear",
+          "Infrastructure & Logistics",
+          "Commodity & Energy Markets",
+          "Energy Media & Research",
+          "Energy Advisory & Expertise"
+        ] as const).map((cat) => (
           <div key={cat} className="flex items-center gap-2">
             <div
               className="w-3 h-3 rounded-full"

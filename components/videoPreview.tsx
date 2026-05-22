@@ -5,7 +5,7 @@ import { formatDistanceToNow } from "date-fns";
 import { YouTubeVideo } from "@/lib/youtube";
 import { Flame } from "lucide-react";
 
-export function VideoPreview({ channelId, youtubeUrl, channelName }: { channelId?: string, youtubeUrl?: string, channelName?: string }) {
+export function VideoPreview({ channelId, youtubeUrl, channelName, inline = false }: { channelId?: string, youtubeUrl?: string, channelName?: string, inline?: boolean }) {
     const [videos, setVideos] = useState<YouTubeVideo[]>([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
@@ -41,8 +41,12 @@ export function VideoPreview({ channelId, youtubeUrl, channelName }: { channelId
     if (error) return <div className="p-4 text-sm text-red-400">{error}</div>;
     if (videos.length === 0) return <div className="p-4 text-sm text-muted">No recent videos found.</div>;
 
+    const containerClasses = inline
+        ? "w-full rounded-xl bg-black/10 dark:bg-white/5 border border-border p-4 flex flex-col gap-3 text-left mt-2"
+        : "absolute z-50 ml-4 w-80 rounded-xl glass-panel shadow-2xl p-4 flex flex-col gap-3 top-0 transform translate-x-[105%] text-left";
+
     return (
-        <div className="absolute z-50 ml-4 w-80 rounded-xl glass-panel shadow-2xl p-4 flex flex-col gap-3 top-0 transform translate-x-[105%] text-left">
+        <div className={containerClasses}>
             <h4 className="text-sm font-semibold tracking-wide text-foreground uppercase border-b border-border pb-2">
                 Latest Uploads
             </h4>

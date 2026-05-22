@@ -188,11 +188,20 @@ export default function Dashboard() {
                   onMouseLeave={() => setHoveredChannel(null)}
                 >
                   <td className="px-6 py-4 relative">
-                    <div className="font-bold text-foreground group-hover:text-accent transition-colors">
+                    <div className="font-bold text-foreground group-hover:text-accent transition-colors flex items-center gap-1.5">
                       {node.host}
+                      {node.publishingCadence === "active" && (
+                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" title="Active cadence" />
+                      )}
+                      {node.publishingCadence === "semi-active" && (
+                        <span className="w-1.5 h-1.5 rounded-full bg-amber-500" title="Semi-active cadence" />
+                      )}
+                      {node.publishingCadence === "inactive" && (
+                        <span className="w-1.5 h-1.5 rounded-full bg-red-500" title="Inactive cadence" />
+                      )}
                     </div>
                     <div className="text-muted text-xs mt-1">
-                      {node.channel || (node.isXOnly ? "X only" : "")}
+                      {node.channel || (node.isXOnly ? (node.isPodcastOnly ? "Podcast only" : "X only") : "")}
                     </div>
                     {hoveredChannel === node.channel &&
                       node.channel &&
@@ -216,25 +225,36 @@ export default function Dashboard() {
                     {node.region}
                   </td>
                   <td className="px-6 py-4">
-                    <span
-                      className={`px-2.5 py-1 rounded-md text-xs font-bold ${
-                        node.priority === "HOT"
-                          ? "bg-accent/10 text-accent border border-accent/20"
-                          : node.priority === "WARM"
-                          ? "bg-orange-500/10 text-orange-400 border border-orange-500/20"
-                          : "bg-panel border border-border text-foreground"
-                      }`}
-                    >
-                      {node.priority}
-                    </span>
+                    <div className="flex items-center gap-2">
+                      <span
+                        className={`px-2.5 py-1 rounded-md text-xs font-bold ${
+                          node.priority === "HOT"
+                            ? "bg-accent/10 text-accent border border-accent/20"
+                            : node.priority === "WARM"
+                            ? "bg-orange-500/10 text-orange-400 border border-orange-500/20"
+                            : node.priority === "MEDIUM"
+                            ? "bg-blue-500/10 text-blue-400 border border-blue-500/20"
+                            : "bg-panel border border-border text-foreground"
+                        }`}
+                      >
+                        {node.priority}
+                      </span>
+                      {node.calculatedScore !== undefined && (
+                        <span className="text-xs font-bold text-foreground/80 bg-black/10 dark:bg-white/5 border border-border px-2 py-1 rounded-md">
+                          {node.calculatedScore}
+                        </span>
+                      )}
+                    </div>
                   </td>
                   <td className="px-6 py-4 text-muted font-medium text-xs">
                     {node.xFollowers
                       ? `${(node.xFollowers / 1000).toFixed(0)}K X`
                       : ""}
-                    {node.xFollowers && node.youtubeSubscribers ? " · " : ""}
+                    {(node.xFollowers && (node.youtubeSubscribers || node.isPodcastOnly)) ? " · " : ""}
                     {node.youtubeSubscribers
                       ? `${(node.youtubeSubscribers / 1000).toFixed(0)}K YT`
+                      : node.isPodcastOnly
+                      ? "Podcast"
                       : ""}
                   </td>
                   <td className="px-6 py-4 text-right">
