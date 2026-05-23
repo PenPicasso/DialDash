@@ -53,6 +53,17 @@ export function NodeDetail({ node, onClose }: Props) {
           </button>
         </div>
 
+        {/* Warning Banner for Manual Review */}
+        {node.needsManualReview && (
+          <div className="flex items-start gap-2.5 p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 mb-6 text-xs text-amber-500 animate-in fade-in slide-in-from-top-2 duration-300">
+            <AlertTriangle className="shrink-0 mt-0.5" size={16} />
+            <div>
+              <span className="font-bold block mb-0.5">Needs Manual Review</span>
+              <span className="opacity-95 leading-relaxed">{node.notes || "This profile requires manual verification of publishing activity."}</span>
+            </div>
+          </div>
+        )}
+
         {/* Score & Priority Header Badge */}
         <div className="flex items-center gap-3 p-3 rounded-xl bg-black/10 dark:bg-white/5 border border-border mb-6">
           <Award className="text-accent shrink-0" size={24} />
@@ -119,6 +130,61 @@ export function NodeDetail({ node, onClose }: Props) {
             <div className="flex justify-between">
               <span className="text-muted">Last Active Date</span>
               <span className="font-semibold text-foreground text-xs">{node.lastPublishDate}</span>
+            </div>
+          )}
+        </div>
+
+        {/* Verification & Cadence Confidence */}
+        <div className="border-t border-border/60 pt-4 pb-4 space-y-3 text-sm">
+          <h3 className="text-xs font-semibold text-muted uppercase tracking-wider mb-1">
+            Verification Metrics
+          </h3>
+          <div className="flex justify-between items-center">
+            <span className="text-muted">Confidence Level</span>
+            <span
+              className={`px-2 py-0.5 rounded text-[10px] font-bold ${
+                node.cadenceConfidence === "HIGH"
+                  ? "bg-emerald-500/15 text-emerald-400 border border-emerald-500/25"
+                  : node.cadenceConfidence === "MEDIUM"
+                  ? "bg-amber-500/15 text-amber-400 border border-amber-500/25"
+                  : "bg-muted/15 text-muted border border-border"
+              }`}
+            >
+              {node.cadenceConfidence || "LOW"}
+            </span>
+          </div>
+
+          {node.lastVerifiedAt && (
+            <div className="flex justify-between">
+              <span className="text-muted">Last Checked</span>
+              <span className="font-semibold text-foreground text-xs">
+                {new Date(node.lastVerifiedAt).toLocaleDateString()}
+              </span>
+            </div>
+          )}
+
+          {node.sourceOfLastPublishDate && (
+            <div className="flex justify-between">
+              <span className="text-muted">Evidence Source</span>
+              <span className="font-semibold text-foreground text-xs capitalize">
+                {node.sourceOfLastPublishDate}
+              </span>
+            </div>
+          )}
+
+          {node.verificationSourcesChecked && node.verificationSourcesChecked.length > 0 && (
+            <div className="space-y-1.5">
+              <span className="text-muted text-xs block">Checked Sources</span>
+              <div className="flex flex-wrap gap-1.5">
+                {node.verificationSourcesChecked.map((src) => (
+                  <span
+                    key={src}
+                    className="px-1.5 py-0.5 rounded bg-black/10 dark:bg-white/5 border border-border text-[10px] text-muted-foreground uppercase font-bold"
+                  >
+                    {src.replace("_", " ")}
+                  </span>
+                ))}
+              </div>
             </div>
           )}
         </div>

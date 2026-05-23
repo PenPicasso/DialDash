@@ -6,7 +6,7 @@ import data from "@/data/nodes.json";
 import { NodeData } from "@/lib/types";
 import { VideoPreview } from "@/components/videoPreview";
 import { NodeDetail } from "@/components/nodeDetail";
-import { Search, Youtube, ExternalLink, Moon, Sun, Table2, Network } from "lucide-react";
+import { Search, Youtube, ExternalLink, Moon, Sun, Table2, Network, AlertTriangle } from "lucide-react";
 
 const NetworkGraph = dynamic(() => import("@/components/networkGraph"), {
   ssr: false,
@@ -28,6 +28,8 @@ export default function Dashboard() {
   const [hoveredChannel, setHoveredChannel] = useState<string | null>(null);
   const [selectedNode, setSelectedNode] = useState<NodeData | null>(null);
   const [isDark, setIsDark] = useState(true);
+  const [needsReview, setNeedsReview] = useState("");
+  const [confidence, setConfidence] = useState("");
 
   useEffect(() => {
     const root = document.documentElement;
@@ -49,7 +51,21 @@ export default function Dashboard() {
     const matchPriority = priority ? node.priority === priority : true;
     const matchCategory = category ? node.category === category : true;
     const matchRegion = region ? node.region === region : true;
-    return matchSearch && matchPriority && matchCategory && matchRegion;
+    const matchNeedsReview =
+      needsReview === "yes"
+        ? node.needsManualReview === true
+        : needsReview === "no"
+        ? !node.needsManualReview
+        : true;
+    const matchConfidence = confidence ? node.cadenceConfidence === confidence : true;
+    return (
+      matchSearch &&
+      matchPriority &&
+      matchCategory &&
+      matchRegion &&
+      matchNeedsReview &&
+      matchConfidence
+    );
   });
 
   const nodeCount = filteredNodes.length;
@@ -153,6 +169,27 @@ export default function Dashboard() {
             </option>
           ))}
         </select>
+
+        <select
+          className="bg-white dark:bg-[#111] text-[#111] dark:text-[#e5e5e5] border border-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer"
+          value={needsReview}
+          onChange={(e) => setNeedsReview(e.target.value)}
+        >
+          <option value="">All Review States</option>
+          <option value="yes">Needs Manual Review</option>
+          <option value="no">Verified (No Review)</option>
+        </select>
+
+        <select
+          className="bg-white dark:bg-[#111] text-[#111] dark:text-[#e5e5e5] border border-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer"
+          value={confidence}
+          onChange={(e) => setConfidence(e.target.value)}
+        >
+          <option value="">All Confidence Levels</option>
+          <option value="HIGH">High Confidence</option>
+          <option value="MEDIUM">Medium Confidence</option>
+          <option value="LOW">Low Confidence</option>
+        </select>
       </div>
 
       {/* Main Content */}
@@ -190,6 +227,9 @@ export default function Dashboard() {
                   <td className="px-6 py-4 relative">
                     <div className="font-bold text-foreground group-hover:text-accent transition-colors flex items-center gap-1.5">
                       {node.host}
+                      {node.needsManualReview && (
+                        <AlertTriangle size={13} className="text-amber-500 shrink-0 animate-pulse" title="Needs manual review / Cadence Conflict" />
+                      )}
                       {node.publishingCadence === "active" && (
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" title="Active cadence" />
                       )}

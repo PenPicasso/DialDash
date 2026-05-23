@@ -55,5 +55,12 @@ export type NodeData = {
   publishingCadence?: "active" | "semi-active" | "inactive";
   frequencyEpisodesPerMonth?: number;
   notes?: string;
+  lastVerifiedAt?: string;
+  verificationSourcesChecked?: string[];
+  cadenceConfidence?: "HIGH" | "MEDIUM" | "LOW";
+  cadenceEvidenceUrl?: string;
+  lastKnownPublishDate?: string;
+  sourceOfLastPublishDate?: string;
+  needsManualReview?: boolean;
 };
 
