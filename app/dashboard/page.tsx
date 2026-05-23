@@ -228,7 +228,9 @@ export default function Dashboard() {
                     <div className="font-bold text-foreground group-hover:text-accent transition-colors flex items-center gap-1.5">
                       {node.host}
                       {node.needsManualReview && (
-                        <AlertTriangle size={13} className="text-amber-500 shrink-0 animate-pulse" title="Needs manual review / Cadence Conflict" />
+                        <span title="Needs manual review / Cadence Conflict">
+                          <AlertTriangle size={13} className="text-amber-500 shrink-0 animate-pulse" />
+                        </span>
                       )}
                       {node.publishingCadence === "active" && (
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" title="Active cadence" />
