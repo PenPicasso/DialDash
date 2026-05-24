@@ -6,16 +6,9 @@ import data from "@/data/nodes.json";
 import { NodeData } from "@/lib/types";
 import { VideoPreview } from "@/components/videoPreview";
 import { NodeDetail } from "@/components/nodeDetail";
-import { Search, Youtube, ExternalLink, Moon, Sun, Table2, Network, AlertTriangle } from "lucide-react";
+import { Search, Youtube, ExternalLink, Moon, Sun, Table2, AlertTriangle, Podcast } from "lucide-react";
 
-const NetworkGraph = dynamic(() => import("@/components/networkGraph"), {
-  ssr: false,
-  loading: () => (
-    <div className="flex items-center justify-center h-full text-muted">
-      Loading graph...
-    </div>
-  ),
-});
+
 
 const allNodes = data.nodes as NodeData[];
 
@@ -23,11 +16,10 @@ export default function Dashboard() {
   const [search, setSearch] = useState("");
   const [priority, setPriority] = useState("");
   const [category, setCategory] = useState("");
-  const [region, setRegion] = useState("");
-  const [viewMode, setViewMode] = useState<"table" | "graph">("graph");
+  const [formatFilter, setFormatFilter] = useState("");
   const [hoveredChannel, setHoveredChannel] = useState<string | null>(null);
   const [selectedNode, setSelectedNode] = useState<NodeData | null>(null);
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(false);
   const [needsReview, setNeedsReview] = useState("");
   const [confidence, setConfidence] = useState("");
 
@@ -50,7 +42,6 @@ export default function Dashboard() {
       node.host.toLowerCase().includes(search.toLowerCase());
     const matchPriority = priority ? node.priority === priority : true;
     const matchCategory = category ? node.category === category : true;
-    const matchRegion = region ? node.region === region : true;
     const matchNeedsReview =
       needsReview === "yes"
         ? node.needsManualReview === true
@@ -58,13 +49,21 @@ export default function Dashboard() {
         ? !node.needsManualReview
         : true;
     const matchConfidence = confidence ? node.cadenceConfidence === confidence : true;
+    const matchFormat =
+      formatFilter === "podcast-no-video"
+        ? node.isPodcastOnly === true
+        : formatFilter === "video"
+        ? !node.isXOnly && !node.isPodcastOnly
+        : formatFilter === "x-only"
+        ? node.isXOnly === true
+        : true;
     return (
       matchSearch &&
       matchPriority &&
       matchCategory &&
-      matchRegion &&
       matchNeedsReview &&
-      matchConfidence
+      matchConfidence &&
+      matchFormat
     );
   });
 
@@ -83,31 +82,6 @@ export default function Dashboard() {
           </p>
         </div>
         <div className="flex items-center gap-2">
-          {/* View toggle */}
-          <div className="flex bg-panel border border-border rounded-lg overflow-hidden">
-            <button
-              onClick={() => setViewMode("table")}
-              className={`p-2.5 transition-colors ${
-                viewMode === "table"
-                  ? "bg-accent/10 text-accent"
-                  : "text-muted hover:text-foreground"
-              }`}
-              title="Table View"
-            >
-              <Table2 size={18} />
-            </button>
-            <button
-              onClick={() => setViewMode("graph")}
-              className={`p-2.5 transition-colors ${
-                viewMode === "graph"
-                  ? "bg-accent/10 text-accent"
-                  : "text-muted hover:text-foreground"
-              }`}
-              title="Graph View"
-            >
-              <Network size={18} />
-            </button>
-          </div>
           <button
             onClick={() => setIsDark(!isDark)}
             className="p-2.5 rounded-lg bg-panel border border-border hover:bg-black/5 dark:hover:bg-white/5 transition-colors text-muted hover:text-foreground"
@@ -159,15 +133,13 @@ export default function Dashboard() {
 
         <select
           className="bg-white dark:bg-[#111] text-[#111] dark:text-[#e5e5e5] border border-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer"
-          value={region}
-          onChange={(e) => setRegion(e.target.value)}
+          value={formatFilter}
+          onChange={(e) => setFormatFilter(e.target.value)}
         >
-          <option value="">All Regions</option>
-          {regions.map((r) => (
-            <option key={r} value={r}>
-              {r}
-            </option>
-          ))}
+          <option value="">All Formats</option>
+          <option value="podcast-no-video">Podcast Only (No Video Strategy)</option>
+          <option value="video">YouTube / Video</option>
+          <option value="x-only">X Only</option>
         </select>
 
         <select
@@ -193,17 +165,7 @@ export default function Dashboard() {
       </div>
 
       {/* Main Content */}
-      {viewMode === "graph" ? (
-        <div className="rounded-xl border border-border overflow-hidden bg-panel/80 backdrop-blur-md shadow-xl h-[72vh] animate-in fade-in duration-500">
-          <NetworkGraph
-            nodes={filteredNodes}
-            onNodeClick={(node) => setSelectedNode(node)}
-            searchQuery={search}
-            activeCategory={category}
-          />
-        </div>
-      ) : (
-        <div className="rounded-xl border border-border overflow-hidden bg-panel/80 backdrop-blur-md shadow-xl relative animate-in fade-in duration-500">
+      <div className="rounded-xl border border-border overflow-hidden bg-panel/80 backdrop-blur-md shadow-xl relative animate-in fade-in duration-500">
           <table className="w-full text-left text-sm">
             <thead className="bg-panel/90 text-muted uppercase text-xs font-semibold tracking-wider border-b border-border">
               <tr>
@@ -339,7 +301,6 @@ export default function Dashboard() {
             </tbody>
           </table>
         </div>
-      )}
 
       {/* Node Detail Panel */}
       {selectedNode && (

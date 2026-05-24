@@ -188,6 +188,21 @@ function remapCategory(oldCat: string, oldSub: string, host: string): { category
   const normCat = oldCat.trim();
   const normSub = oldSub.trim();
 
+  const validCategories = [
+    "Oil & Gas",
+    "Power & Utilities",
+    "Renewables",
+    "Nuclear",
+    "Infrastructure & Logistics",
+    "Commodity & Energy Markets",
+    "Energy Media & Research",
+    "Energy Advisory & Expertise"
+  ];
+
+  if (validCategories.includes(normCat)) {
+    return { category: normCat as Category, subcategory: normSub };
+  }
+
   if (normCat === "Oil & Gas") {
     if (normSub.toLowerCase().includes("upstream") || host.toLowerCase().includes("upstream")) {
       return { category: "Oil & Gas", subcategory: "Upstream" };
