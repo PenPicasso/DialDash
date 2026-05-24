@@ -62,5 +62,6 @@ export type NodeData = {
   lastKnownPublishDate?: string;
   sourceOfLastPublishDate?: string;
   needsManualReview?: boolean;
+  brokenLinks?: string[];
 };
 

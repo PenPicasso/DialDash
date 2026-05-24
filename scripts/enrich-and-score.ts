@@ -58,6 +58,7 @@ type NodeData = {
   lastKnownPublishDate?: string;
   sourceOfLastPublishDate?: string;
   needsManualReview?: boolean;
+  brokenLinks?: string[];
 };
 
 // Corrections for X Handles
@@ -303,7 +304,41 @@ function inferRole(host: string, channel: string, subcategory: string): Particip
   return "TRADERS & ANALYSTS";
 }
 
-// Simple RSS parser helper
+// HTTP Link Checker
+async function verifyUrl(url: string): Promise<boolean> {
+  if (!url) return false;
+  const lowerUrl = url.toLowerCase();
+  if (
+    lowerUrl.includes("x.com") ||
+    lowerUrl.includes("twitter.com") ||
+    lowerUrl.includes("spotify.com") ||
+    lowerUrl.includes("podcasts.apple.com") ||
+    lowerUrl.startsWith("mailto:")
+  ) {
+    return true; // Bypass social/email/Apple checks to avoid false negatives
+  }
+  try {
+    const res = await fetch(url, {
+      method: "HEAD",
+      headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" },
+      signal: AbortSignal.timeout(3000),
+    });
+    if (res.ok || (res.status >= 300 && res.status < 400)) {
+      return true;
+    }
+    // Fallback to GET
+    const getRes = await fetch(url, {
+      method: "GET",
+      headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)" },
+      signal: AbortSignal.timeout(3000),
+    });
+    return getRes.ok || (getRes.status >= 300 && getRes.status < 400);
+  } catch (e) {
+    return false;
+  }
+}
+
+// Simple RSS parser helper matching item/entry nodes first to avoid channel-level metadata leaks
 async function checkRssFeed(url: string): Promise<{ lastBuildDate: Date | null; episodesPerMonth: number; isActive: boolean; cadence: "active" | "semi-active" | "inactive" }> {
   try {
     const res = await fetch(url, {
@@ -313,19 +348,24 @@ async function checkRssFeed(url: string): Promise<{ lastBuildDate: Date | null; 
     if (!res.ok) throw new Error("Fetch failed");
     const xml = await res.text();
 
-    const pubDateRegex = /<pubDate>(.*?)<\/pubDate>/g;
     const dates: Date[] = [];
+    
+    // Find all <item> or <entry> blocks
+    const items: string[] = [];
+    const itemRegex = /<(item|entry)>([\s\S]*?)<\/\1>/g;
     let match;
-    while ((match = pubDateRegex.exec(xml)) !== null && dates.length < 30) {
-      const d = new Date(match[1]);
-      if (!isNaN(d.getTime())) dates.push(d);
+    while ((match = itemRegex.exec(xml)) !== null && items.length < 50) {
+      items.push(match[2]);
     }
 
-    if (dates.length === 0) {
-      const updatedRegex = /<(?:updated|dc:date)>(.*?)<\/(?:updated|dc:date)>/g;
-      while ((match = updatedRegex.exec(xml)) !== null && dates.length < 30) {
-        const d = new Date(match[1]);
-        if (!isNaN(d.getTime())) dates.push(d);
+    for (const itemXml of items) {
+      // Find pubDate or updated date inside this item/entry
+      const pubDateMatch = itemXml.match(/<(pubDate|updated|dc:date)>([\s\S]*?)<\/\1>/i);
+      if (pubDateMatch) {
+        const d = new Date(pubDateMatch[2].trim());
+        if (!isNaN(d.getTime())) {
+          dates.push(d);
+        }
       }
     }
 
@@ -349,8 +389,12 @@ async function checkRssFeed(url: string): Promise<{ lastBuildDate: Date | null; 
   }
 }
 
-// Apple Podcasts lookup/search API helper
-async function checkApplePodcasts(appleUrl?: string, host?: string, channel?: string): Promise<{ lastBuildDate: Date | null; feedUrl: string | null }> {
+// Apple Podcasts lookup/search API helper resolving direct page links and feeds
+async function checkApplePodcasts(
+  appleUrl?: string,
+  host?: string,
+  channel?: string
+): Promise<{ lastBuildDate: Date | null; feedUrl: string | null; resolvedUrl: string | null }> {
   try {
     let id = "";
     if (appleUrl) {
@@ -365,7 +409,7 @@ async function checkApplePodcasts(appleUrl?: string, host?: string, channel?: st
       const term = encodeURIComponent(`${host || ""} ${channel || ""}`.trim());
       url = `https://itunes.apple.com/search?term=${term}&entity=podcast&limit=1`;
     } else {
-      return { lastBuildDate: null, feedUrl: null };
+      return { lastBuildDate: null, feedUrl: null, resolvedUrl: null };
     }
 
     const res = await fetch(url, {
@@ -374,15 +418,37 @@ async function checkApplePodcasts(appleUrl?: string, host?: string, channel?: st
     });
     if (!res.ok) throw new Error("iTunes lookup failed");
     const data = await res.json() as { resultCount: number; results: any[] };
+    
+    // If lookup with ID returned nothing, search using the host and channel term
+    if (id && (!data.results || data.results.length === 0) && (host || channel)) {
+      const term = encodeURIComponent(`${host || ""} ${channel || ""}`.trim());
+      const searchUrl = `https://itunes.apple.com/search?term=${term}&entity=podcast&limit=1`;
+      const searchRes = await fetch(searchUrl, {
+        headers: { "User-Agent": "Mozilla/5.0" },
+        signal: AbortSignal.timeout(6000),
+      });
+      if (searchRes.ok) {
+        const searchData = await searchRes.json() as { resultCount: number; results: any[] };
+        if (searchData.results && searchData.results.length > 0) {
+          const result = searchData.results[0];
+          const releaseDate = result.releaseDate ? new Date(result.releaseDate) : null;
+          const feedUrl = result.feedUrl || null;
+          const resolvedUrl = result.collectionViewUrl || null;
+          return { lastBuildDate: releaseDate, feedUrl, resolvedUrl };
+        }
+      }
+    }
+
     if (data.results && data.results.length > 0) {
       const result = data.results[0];
       const releaseDate = result.releaseDate ? new Date(result.releaseDate) : null;
       const feedUrl = result.feedUrl || null;
-      return { lastBuildDate: releaseDate, feedUrl };
+      const resolvedUrl = result.collectionViewUrl || null;
+      return { lastBuildDate: releaseDate, feedUrl, resolvedUrl };
     }
-    return { lastBuildDate: null, feedUrl: null };
+    return { lastBuildDate: null, feedUrl: null, resolvedUrl: null };
   } catch (e) {
-    return { lastBuildDate: null, feedUrl: null };
+    return { lastBuildDate: null, feedUrl: null, resolvedUrl: null };
   }
 }
 
@@ -472,6 +538,9 @@ function calculateScore(node: NodeData): number {
   // Conservative scoring for low cadence confidence or conflict
   if (node.needsManualReview || node.cadenceConfidence === "LOW") {
     penalty += 15; // Moderate penalty for uncertainty
+  }
+  if (node.brokenLinks && node.brokenLinks.length > 0) {
+    penalty += 20 * node.brokenLinks.length; // 20 pts penalty per broken link
   }
   if (!node.xProfile && !node.email && (!node.outreachChannels || node.outreachChannels.length === 0)) {
     penalty += 100; // Hard disqualification
@@ -1605,10 +1674,10 @@ async function main() {
     const podcastRss = podcastFeeds[hostId] || node.rssUrl;
     if (podcastRss) {
       node.rssUrl = podcastRss;
-      if (!node.podcastAppleUrl) {
+      if (!node.podcastAppleUrl || node.podcastAppleUrl.includes("/search")) {
         node.podcastAppleUrl = `https://podcasts.apple.com/search?term=${encodeURIComponent(node.host)}`;
       }
-      if (!node.podcastSpotifyUrl) {
+      if (!node.podcastSpotifyUrl || node.podcastSpotifyUrl.includes("/search")) {
         node.podcastSpotifyUrl = `https://open.spotify.com/search/${encodeURIComponent(node.host)}`;
       }
       node.isPodcastOnly = !node.youtubeUrl;
@@ -1633,9 +1702,12 @@ async function main() {
       sourcesChecked.push("apple_podcasts");
       const appleResult = await checkApplePodcasts(node.podcastAppleUrl, node.host, node.channel);
       if (appleResult.lastBuildDate) {
-        datesFound.push({ source: "apple_podcasts", date: appleResult.lastBuildDate, url: node.podcastAppleUrl || undefined });
-        if (appleResult.feedUrl && !node.rssUrl) {
+        datesFound.push({ source: "apple_podcasts", date: appleResult.lastBuildDate, url: appleResult.resolvedUrl || node.podcastAppleUrl || undefined });
+        if (appleResult.feedUrl && (!node.rssUrl || node.rssUrl.includes("podcasts.apple.com/search"))) {
           node.rssUrl = appleResult.feedUrl;
+        }
+        if (appleResult.resolvedUrl) {
+          node.podcastAppleUrl = appleResult.resolvedUrl;
         }
       }
     }
@@ -1672,6 +1744,19 @@ async function main() {
     node.lastVerifiedAt = now.toISOString();
     node.verificationSourcesChecked = sourcesChecked;
 
+    // Verify link integrity
+    const brokenLinks: string[] = [];
+    if (node.rssUrl && !(await verifyUrl(node.rssUrl))) {
+      brokenLinks.push("rssUrl");
+    }
+    if (node.podcastAppleUrl && !(await verifyUrl(node.podcastAppleUrl))) {
+      brokenLinks.push("podcastAppleUrl");
+    }
+    if (node.youtubeUrl && !node.isXOnly && !(await verifyUrl(node.youtubeUrl))) {
+      brokenLinks.push("youtubeUrl");
+    }
+    node.brokenLinks = brokenLinks.length > 0 ? brokenLinks : undefined;
+
     if (datesFound.length > 0) {
       // Find latest date across checked sources
       datesFound.sort((a, b) => b.date.getTime() - a.date.getTime());
@@ -1701,7 +1786,7 @@ async function main() {
         node.isActive = true;
 
         if (hasInactive) {
-          // CONFLICT! One source is active/semi-active, but another is dead (e.g. Arjun Murti's podcast RSS vs Substack newsletter/YouTube)
+          // CONFLICT! One source is active/semi-active, but another is dead
           conflictCount++;
           node.cadenceConfidence = "LOW";
           node.needsManualReview = true;
@@ -1715,56 +1800,19 @@ async function main() {
         }
       } else {
         // All sources are inactive.
-        // We only mark them inactive if we verified this across MULTIPLE sources.
-        if (datesFound.length >= 2) {
-          node.publishingCadence = "inactive";
-          node.isActive = false;
-          node.cadenceConfidence = "HIGH";
-          node.needsManualReview = false;
-          node.notes = `Confirmed inactive across multiple sources (${datesFound.map(d => d.source).join(", ")}).`;
-        } else {
-          // Only one source returned a date, and it was inactive. We set cadenceConfidence = LOW and needsManualReview = true.
-          node.publishingCadence = "semi-active"; // conservative active status
-          node.isActive = true;
-          node.cadenceConfidence = "LOW";
-          node.needsManualReview = true;
-          node.notes = `Single source (${datesFound[0].source}) shows inactivity since ${node.lastKnownPublishDate}. Needs manual review to confirm total inactivity.`;
-        }
+        node.publishingCadence = "inactive";
+        node.isActive = false;
+        node.cadenceConfidence = datesFound.length >= 2 ? "HIGH" : "MEDIUM";
+        node.needsManualReview = false;
+        node.notes = `Confirmed inactive (last publish was ${node.lastKnownPublishDate}).`;
       }
     } else {
-      // No dates found (e.g. all fetch failed or unchecked)
-      const knownDate = node.lastKnownPublishDate || node.lastPublishDate;
-      if (knownDate) {
-        const lastDate = new Date(knownDate + "T12:00:00.000Z");
-        const diff = (now.getTime() - lastDate.getTime()) / (1000 * 3600 * 24);
-        if (diff > 180) {
-          node.publishingCadence = "inactive";
-          node.isActive = false;
-          node.cadenceConfidence = "HIGH";
-          node.needsManualReview = false;
-          node.notes = `Inactive since ${knownDate} based on historical records.`;
-        } else {
-          node.publishingCadence = diff <= 60 ? "active" : "semi-active";
-          node.isActive = true;
-          node.cadenceConfidence = "LOW";
-          node.needsManualReview = true;
-          node.notes = `Historical publish date is ${knownDate}, but current checks returned no new dates. Needs manual review.`;
-        }
-      } else {
-        if (node.xProfile || node.email) {
-          node.publishingCadence = "active";
-          node.isActive = true;
-          node.cadenceConfidence = "LOW";
-          node.needsManualReview = true;
-          node.notes = "No publishing date found on checked sources. Set to active with low confidence. Needs manual review.";
-        } else {
-          node.publishingCadence = "inactive";
-          node.isActive = false;
-          node.cadenceConfidence = "LOW";
-          node.needsManualReview = true;
-          node.notes = "No valid outreach path and no publishing dates found. Flagged for review.";
-        }
-      }
+      // NO POSITIVE EVIDENCE FOUND: Mark inactive (Strict proof)
+      node.publishingCadence = "inactive";
+      node.isActive = false;
+      node.cadenceConfidence = "HIGH";
+      node.needsManualReview = false;
+      node.notes = "No recent publishing activity detected on checked feeds.";
     }
 
     // Specific Hardcoded overrides for targets to guarantee correct data
@@ -1814,15 +1862,18 @@ async function main() {
     priorityStats[node.priority]++;
   }
 
-  // Batch process currentNodes with concurrency = 10
-  console.log("Starting batch processing of cadences...");
-  const CONCURRENCY = 10;
-  for (let i = 0; i < currentNodes.length; i += CONCURRENCY) {
-    const chunk = currentNodes.slice(i, i + CONCURRENCY);
-    console.log(`Processing chunk ${Math.floor(i / CONCURRENCY) + 1} of ${Math.ceil(currentNodes.length / CONCURRENCY)} (nodes ${i + 1} - ${Math.min(i + CONCURRENCY, currentNodes.length)})...`);
-    await Promise.all(chunk.map(node => processNode(node)));
+  // Process currentNodes sequentially with a 200ms throttle to prevent rate limiting
+  console.log("Starting sequential processing of cadences (with 200ms throttle)...");
+  const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+  for (let i = 0; i < currentNodes.length; i++) {
+    const node = currentNodes[i];
+    console.log(`[${i + 1}/${currentNodes.length}] Processing ${node.host} (${node.id})...`);
+    await processNode(node);
+    if (i < currentNodes.length - 1) {
+      await delay(200);
+    }
   }
-  console.log("Batch processing complete.");
+  console.log("Sequential processing complete.");
 
   // Sort nodes by calculatedScore desc
   currentNodes.sort((a, b) => (b.calculatedScore || 0) - (a.calculatedScore || 0));

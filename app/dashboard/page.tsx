@@ -92,82 +92,218 @@ export default function Dashboard() {
         </div>
       </header>
 
-      {/* Filters */}
-      <div className="flex flex-wrap gap-3 mb-6">
-        <div className="relative flex-1 min-w-[220px]">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-muted" size={16} />
+      {/* Motion.dev Inline Filter Panel */}
+      <div className="bg-white dark:bg-[#111111] border border-border/80 rounded-2xl p-6 mb-8 space-y-6 shadow-sm">
+        {/* Search Bar */}
+        <div className="relative">
+          <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-muted-foreground/60" size={18} />
           <input
             type="text"
-            placeholder="Search hosts or channels..."
-            className="w-full bg-white dark:bg-[#111] text-[#111] dark:text-[#e5e5e5] placeholder-[#777] dark:placeholder-[#888] border border-border rounded-lg pl-9 pr-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/50 transition-all font-medium"
+            placeholder="Search by host or channel name..."
+            className="w-full bg-[#FAFAFA] dark:bg-[#18181B] text-[#111] dark:text-[#E5E5E5] placeholder-muted-foreground/50 border border-border/60 rounded-xl pl-11 pr-4 py-3 text-sm focus:outline-none focus:ring-1 focus:ring-black dark:focus:ring-white transition-all font-medium"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
 
-        <select
-          className="bg-white dark:bg-[#111] text-[#111] dark:text-[#e5e5e5] border border-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer"
-          value={priority}
-          onChange={(e) => setPriority(e.target.value)}
-        >
-          <option value="">All Priorities</option>
-          {priorities.map((p) => (
-            <option key={p} value={p}>
-              {p}
-            </option>
-          ))}
-        </select>
+        {/* Priority & Format */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div className="space-y-2">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground block">Filter Priority</span>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setPriority("")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  priority === ""
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                }`}
+              >
+                All Priorities
+              </button>
+              {priorities.map((p) => (
+                <button
+                  key={p}
+                  onClick={() => setPriority(p)}
+                  className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                    priority === p
+                      ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                      : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                  }`}
+                >
+                  {p}
+                </button>
+              ))}
+            </div>
+          </div>
 
-        <select
-          className="bg-white dark:bg-[#111] text-[#111] dark:text-[#e5e5e5] border border-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer"
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-        >
-          <option value="">All Categories</option>
-          {categories.map((c) => (
-            <option key={c} value={c}>
-              {c}
-            </option>
-          ))}
-        </select>
+          <div className="space-y-2">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground block">Filter Format</span>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setFormatFilter("")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  formatFilter === ""
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                }`}
+              >
+                All Formats
+              </button>
+              <button
+                onClick={() => setFormatFilter("podcast-no-video")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  formatFilter === "podcast-no-video"
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                }`}
+              >
+                Podcast Only (No Video Strategy)
+              </button>
+              <button
+                onClick={() => setFormatFilter("video")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  formatFilter === "video"
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                }`}
+              >
+                YouTube / Video
+              </button>
+              <button
+                onClick={() => setFormatFilter("x-only")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  formatFilter === "x-only"
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                }`}
+              >
+                X Only
+              </button>
+            </div>
+          </div>
+        </div>
 
-        <select
-          className="bg-white dark:bg-[#111] text-[#111] dark:text-[#e5e5e5] border border-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer"
-          value={formatFilter}
-          onChange={(e) => setFormatFilter(e.target.value)}
-        >
-          <option value="">All Formats</option>
-          <option value="podcast-no-video">Podcast Only (No Video Strategy)</option>
-          <option value="video">YouTube / Video</option>
-          <option value="x-only">X Only</option>
-        </select>
+        {/* Categories */}
+        <div className="space-y-2">
+          <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground block">Filter Category</span>
+          <div className="flex flex-wrap gap-2">
+            <button
+              onClick={() => setCategory("")}
+              className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                category === ""
+                  ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                  : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+              }`}
+            >
+              All Categories
+            </button>
+            {categories.map((c) => (
+              <button
+                key={c}
+                onClick={() => setCategory(c)}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  category === c
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                }`}
+              >
+                {c}
+              </button>
+            ))}
+          </div>
+        </div>
 
-        <select
-          className="bg-white dark:bg-[#111] text-[#111] dark:text-[#e5e5e5] border border-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer"
-          value={needsReview}
-          onChange={(e) => setNeedsReview(e.target.value)}
-        >
-          <option value="">All Review States</option>
-          <option value="yes">Needs Manual Review</option>
-          <option value="no">Verified (No Review)</option>
-        </select>
+        {/* Review & Confidence */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2 border-t border-border/40">
+          <div className="space-y-2">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground block">Verification Review</span>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setNeedsReview("")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  needsReview === ""
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                }`}
+              >
+                All Review States
+              </button>
+              <button
+                onClick={() => setNeedsReview("yes")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  needsReview === "yes"
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-[#D97706] border-amber-500/30 hover:bg-amber-500/5"
+                }`}
+              >
+                Needs Manual Review
+              </button>
+              <button
+                onClick={() => setNeedsReview("no")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  needsReview === "no"
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                }`}
+              >
+                Verified (No Review)
+              </button>
+            </div>
+          </div>
 
-        <select
-          className="bg-white dark:bg-[#111] text-[#111] dark:text-[#e5e5e5] border border-border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-accent/50 cursor-pointer"
-          value={confidence}
-          onChange={(e) => setConfidence(e.target.value)}
-        >
-          <option value="">All Confidence Levels</option>
-          <option value="HIGH">High Confidence</option>
-          <option value="MEDIUM">Medium Confidence</option>
-          <option value="LOW">Low Confidence</option>
-        </select>
+          <div className="space-y-2">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground block">Verification Confidence</span>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setConfidence("")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  confidence === ""
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                }`}
+              >
+                All Confidence Levels
+              </button>
+              <button
+                onClick={() => setConfidence("HIGH")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  confidence === "HIGH"
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-[#059669] border-emerald-500/30 hover:bg-emerald-500/5"
+                }`}
+              >
+                High Confidence
+              </button>
+              <button
+                onClick={() => setConfidence("MEDIUM")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  confidence === "MEDIUM"
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-[#D97706] border-amber-500/30 hover:bg-amber-500/5"
+                }`}
+              >
+                Medium Confidence
+              </button>
+              <button
+                onClick={() => setConfidence("LOW")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  confidence === "LOW"
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-[#DC2626] border-red-500/30 hover:bg-red-500/5"
+                }`}
+              >
+                Low Confidence
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Main Content */}
-      <div className="rounded-xl border border-border overflow-hidden bg-panel/80 backdrop-blur-md shadow-xl relative animate-in fade-in duration-500">
+      <div className="rounded-2xl border border-border/80 overflow-hidden bg-white dark:bg-[#111111] shadow-sm relative animate-in fade-in duration-500">
           <table className="w-full text-left text-sm">
-            <thead className="bg-panel/90 text-muted uppercase text-xs font-semibold tracking-wider border-b border-border">
+            <thead className="bg-[#FAFAFA] dark:bg-[#18181B] text-[#555555] dark:text-[#a1a1aa] uppercase text-[10px] font-bold tracking-wider border-b border-border/60">
               <tr>
                 <th className="px-6 py-4">Host & Channel</th>
                 <th className="px-6 py-4">Category</th>
@@ -177,11 +313,11 @@ export default function Dashboard() {
                 <th className="px-6 py-4 text-right">Links</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-border/50">
+            <tbody className="divide-y divide-border/40">
               {filteredNodes.map((node) => (
                 <tr
                   key={node.id}
-                  className="hover:bg-black/5 dark:hover:bg-white/5 transition-colors group relative cursor-pointer"
+                  className="table-row-hover hover:bg-black/5 dark:hover:bg-white/5 group relative cursor-pointer"
                   onClick={() => setSelectedNode(node)}
                   onMouseEnter={() => setHoveredChannel(node.channel)}
                   onMouseLeave={() => setHoveredChannel(null)}
@@ -231,20 +367,20 @@ export default function Dashboard() {
                   <td className="px-6 py-4">
                     <div className="flex items-center gap-2">
                       <span
-                        className={`px-2.5 py-1 rounded-md text-xs font-bold ${
+                        className={`px-2.5 py-1 rounded-full text-xs font-bold border transition-colors ${
                           node.priority === "HOT"
-                            ? "bg-accent/10 text-accent border border-accent/20"
+                            ? "bg-[#FEE2E2] text-[#EF4444] border-[#FCA5A5] dark:bg-[#EF4444]/10 dark:text-[#F87171] dark:border-[#EF4444]/25"
                             : node.priority === "WARM"
-                            ? "bg-orange-500/10 text-orange-400 border border-orange-500/20"
+                            ? "bg-[#FEF3C7] text-[#D97706] border-[#FCD34D] dark:bg-[#D97706]/10 dark:text-[#FBBF24] dark:border-[#D97706]/25"
                             : node.priority === "MEDIUM"
-                            ? "bg-blue-500/10 text-blue-400 border border-blue-500/20"
-                            : "bg-panel border border-border text-foreground"
+                            ? "bg-[#DBEAFE] text-[#2563EB] border-[#93C5FD] dark:bg-[#2563EB]/10 dark:text-[#60A5FA] dark:border-[#2563EB]/25"
+                            : "bg-[#F3F4F6] text-[#374151] border-[#E5E7EB] dark:bg-panel dark:border-border dark:text-foreground"
                         }`}
                       >
                         {node.priority}
                       </span>
                       {node.calculatedScore !== undefined && (
-                        <span className="text-xs font-bold text-foreground/80 bg-black/10 dark:bg-white/5 border border-border px-2 py-1 rounded-md">
+                        <span className="text-xs font-bold text-foreground/80 bg-[#FAFAFA] dark:bg-white/5 border border-border/80 px-2 py-1 rounded-md">
                           {node.calculatedScore}
                         </span>
                       )}

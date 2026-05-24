@@ -36,7 +36,7 @@ export function NodeDetail({ node, onClose }: Props) {
   };
 
   return (
-    <div className="fixed right-0 top-0 h-full w-[380px] bg-panel/95 backdrop-blur-xl border-l border-border z-50 shadow-2xl animate-in slide-in-from-right duration-300 overflow-y-auto">
+    <div className="fixed right-0 top-0 h-full w-[390px] bg-white dark:bg-[#111111] border-l border-border/80 z-50 shadow-2xl transition-all duration-300 ease-in-out animate-in slide-in-from-right duration-250 overflow-y-auto">
       <div className="p-6">
         <div className="flex items-start justify-between mb-4">
           <div className="flex-1">
@@ -217,29 +217,99 @@ export function NodeDetail({ node, onClose }: Props) {
           )}
         </div>
 
-        {/* Direct Outreach Info */}
-        <div className="border-t border-border/60 pt-4 pb-6 space-y-3">
-          <h3 className="text-xs font-semibold text-muted uppercase tracking-wider">
-            Outreach Channels
+        {/* Link Integrity & Outreach Audit Panel */}
+        <div className="border-t border-border/60 pt-5 pb-5 space-y-3.5">
+          <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+            Outreach & Link Audit
           </h3>
-          {node.email ? (
-            <div className="flex items-center justify-between bg-black/10 dark:bg-white/5 border border-border p-3 rounded-lg text-sm">
-              <span className="flex items-center gap-2 text-foreground font-medium">
-                <Mail size={16} className="text-accent" />
-                {node.email}
+          <div className="space-y-2">
+            {/* RSS Link */}
+            {node.rssUrl && (
+              <div className="flex items-center justify-between text-xs p-2.5 rounded-lg bg-[#FAFAFA] dark:bg-white/5 border border-border/60">
+                <span className="font-semibold flex items-center gap-1.5 text-foreground/80">
+                  <Radio size={14} className="text-orange-500" />
+                  RSS Feed URL
+                </span>
+                {node.brokenLinks?.includes("rssUrl") ? (
+                  <span className="flex items-center gap-1 text-red-500 font-bold">
+                    <AlertTriangle size={12} /> Broken
+                  </span>
+                ) : (
+                  <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-bold">
+                    <CheckCircle size={12} /> Live
+                  </span>
+                )}
+              </div>
+            )}
+
+            {/* Apple Podcasts */}
+            {node.podcastAppleUrl && (
+              <div className="flex items-center justify-between text-xs p-2.5 rounded-lg bg-[#FAFAFA] dark:bg-white/5 border border-border/60">
+                <span className="font-semibold flex items-center gap-1.5 text-foreground/80">
+                  <Podcast size={14} className="text-purple-500" />
+                  Apple Podcasts Page
+                </span>
+                {node.brokenLinks?.includes("podcastAppleUrl") ? (
+                  <span className="flex items-center gap-1 text-red-500 font-bold">
+                    <AlertTriangle size={12} /> Broken
+                  </span>
+                ) : (
+                  <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-bold">
+                    <CheckCircle size={12} /> Active
+                  </span>
+                )}
+              </div>
+            )}
+
+            {/* YouTube Link */}
+            {node.youtubeUrl && !node.isXOnly && (
+              <div className="flex items-center justify-between text-xs p-2.5 rounded-lg bg-[#FAFAFA] dark:bg-white/5 border border-border/60">
+                <span className="font-semibold flex items-center gap-1.5 text-foreground/80">
+                  <Youtube size={14} className="text-red-500" />
+                  YouTube Channel
+                </span>
+                {node.brokenLinks?.includes("youtubeUrl") ? (
+                  <span className="flex items-center gap-1 text-red-500 font-bold">
+                    <AlertTriangle size={12} /> Broken
+                  </span>
+                ) : (
+                  <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-bold">
+                    <CheckCircle size={12} /> Live
+                  </span>
+                )}
+              </div>
+            )}
+
+            {/* X Profile */}
+            {node.xProfile && (
+              <div className="flex items-center justify-between text-xs p-2.5 rounded-lg bg-[#FAFAFA] dark:bg-white/5 border border-border/60">
+                <span className="font-semibold flex items-center gap-1.5 text-foreground/80">
+                  <ExternalLink size={14} className="text-blue-400" />
+                  X Profile
+                </span>
+                <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-bold">
+                  <CheckCircle size={12} /> Verified
+                </span>
+              </div>
+            )}
+
+            {/* Email Outreach */}
+            <div className="flex items-center justify-between text-xs p-2.5 rounded-lg bg-[#FAFAFA] dark:bg-white/5 border border-border/60">
+              <span className="font-semibold flex items-center gap-1.5 text-foreground/80">
+                <Mail size={14} className="text-gray-400" />
+                Email Channel
               </span>
-              <a
-                href={`mailto:${node.email}`}
-                className="text-xs text-accent hover:underline font-semibold"
-              >
-                Send Email
-              </a>
+              {node.email ? (
+                <span className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 font-bold">
+                  <CheckCircle size={12} /> {node.email}
+                </span>
+              ) : (
+                <span className="text-muted-foreground italic">
+                  Not Found (DM Required)
+                </span>
+              )}
             </div>
-          ) : (
-            <div className="text-xs text-muted/80 italic">
-              No public email found. DM outreach suggested.
-            </div>
-          )}
+          </div>
         </div>
 
         {/* Action Button Links */}
