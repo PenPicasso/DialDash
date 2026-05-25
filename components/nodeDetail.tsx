@@ -12,6 +12,99 @@ type Props = {
 export function NodeDetail({ node, onClose }: Props) {
   const catColor = CATEGORY_COLORS[node.category as Category] || "#888";
 
+  // Helper to determine Funnel Stages (TOF, MOF, BOF)
+  const getFunnelData = () => {
+    // 1. TOF
+    const tofChannels: string[] = [];
+    let hasVideoGap = false;
+    let videoGapReason = "";
+
+    if (node.xProfile) {
+      tofChannels.push("X (Twitter)");
+    }
+    if (node.youtubeUrl && !node.isXOnly) {
+      tofChannels.push("YouTube");
+    }
+
+    if (node.isPodcastOnly) {
+      hasVideoGap = true;
+      videoGapReason = "Podcast-only (No video strategy)";
+    } else if (node.isXOnly) {
+      hasVideoGap = true;
+      videoGapReason = "X-only (No video channel)";
+    } else if (node.youtubeSubscribers && node.youtubeSubscribers < 10000) {
+      hasVideoGap = true;
+      videoGapReason = "Underutilized YouTube (<10k subs)";
+    } else if (!node.youtubeUrl) {
+      hasVideoGap = true;
+      videoGapReason = "No YouTube channel detected";
+    }
+
+    // 2. MOF
+    const mofChannels: string[] = [];
+    const lowerChannel = (node.channel || "").toLowerCase();
+    const lowerRss = (node.rssUrl || "").toLowerCase();
+    const isSubstack = lowerRss.includes("substack") || lowerChannel.includes("substack");
+
+    if (isSubstack) {
+      mofChannels.push("Substack Newsletter");
+    } else if (node.rssUrl && node.rssUrl.includes("feed")) {
+      mofChannels.push("Email Newsletter Feed");
+    }
+
+    if (node.podcastAppleUrl || node.isPodcastOnly || node.rssUrl?.includes("podcast") || node.rssUrl?.includes("libsyn") || node.rssUrl?.includes("podbean")) {
+      mofChannels.push("Audio Podcast");
+    }
+
+    if (node.marketParticipantRole === "ADVISORS & EXPERTS" || node.subcategory === "Education" || node.subcategory === "Management Consulting") {
+      mofChannels.push("Webinars & Industry Events");
+    }
+
+    if (mofChannels.length === 0) {
+      mofChannels.push("Organic Blog / Articles");
+    }
+
+    // 3. BOF
+    let bofModel = "";
+    let bofDetail = "";
+    if (node.marketParticipantRole === "TRADERS & ANALYSTS") {
+      bofModel = "Paid Research & Intelligence Subscriptions";
+      bofDetail = "Monetizes via premium research reports, newsletter upgrades, and commodity analytics dashboards.";
+    } else if (node.marketParticipantRole === "ADVISORS & EXPERTS") {
+      bofModel = "High-Ticket Corporate Advisory & Training";
+      bofDetail = "Monetizes via executive advisory hours, training packages, and custom market studies.";
+    } else if (node.marketParticipantRole === "CAPITAL ALLOCATORS") {
+      bofModel = "Asset Equity & LP/GP Fund Allocations";
+      bofDetail = "Monetizes via asset ownership yields, management fees, and seed equity investments.";
+    } else if (node.marketParticipantRole === "MEDIA & INFORMATION") {
+      bofModel = "Corporate Sponsorships & Ad Networks";
+      bofDetail = "Monetizes via podcast episode slots, newsletter banners, and event sponsorships.";
+    } else if (node.marketParticipantRole === "OPERATORS") {
+      bofModel = "Commercial Resource Operations & Offtake";
+      bofDetail = "Monetizes via energy production offtake agreements, operational fees, and infrastructure development.";
+    } else {
+      bofModel = "Bespoke Consulting & Commercial Contracts";
+      bofDetail = "Monetizes via professional consulting retainers and custom commercial service agreements.";
+    }
+
+    return {
+      tof: {
+        channels: tofChannels.length > 0 ? tofChannels.join(" & ") : "N/A",
+        hasVideoGap,
+        videoGapReason
+      },
+      mof: {
+        channels: mofChannels.join(" + ")
+      },
+      bof: {
+        model: bofModel,
+        detail: bofDetail
+      }
+    };
+  };
+
+  const funnel = getFunnelData();
+
   // Format cadence label
   const getCadenceDisplay = () => {
     if (node.publishingCadence === "active") {
@@ -132,6 +225,49 @@ export function NodeDetail({ node, onClose }: Props) {
               <span className="font-semibold text-foreground text-xs">{node.lastPublishDate}</span>
             </div>
           )}
+        </div>
+
+        {/* Funnel Strategy Breakdown */}
+        <div className="border-t border-border/60 pt-5 pb-5 space-y-4">
+          <h3 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-2">
+            Funnel Strategy Breakdown
+          </h3>
+          <div className="relative pl-4 border-l border-border/80 space-y-5 py-1">
+            {/* TOF */}
+            <div className="relative">
+              <div className="absolute -left-[20.5px] top-1 w-2 h-2 rounded-full bg-blue-500 ring-4 ring-blue-500/10" />
+              <div className="text-xs font-bold text-foreground">Top of Funnel (TOF)</div>
+              <div className="text-xs text-muted mt-0.5">{funnel.tof.channels}</div>
+              {funnel.tof.hasVideoGap && (
+                <span className="inline-flex items-center gap-1 mt-1.5 text-[10px] bg-amber-500/10 border border-amber-500/20 text-amber-600 dark:text-amber-400 px-2 py-0.5 rounded font-medium">
+                  ⚠️ {funnel.tof.videoGapReason}
+                </span>
+              )}
+            </div>
+
+            {/* MOF */}
+            <div className="relative">
+              <div className="absolute -left-[20.5px] top-1 w-2 h-2 rounded-full bg-indigo-500 ring-4 ring-indigo-500/10" />
+              <div className="text-xs font-bold text-foreground">Middle of Funnel (MOF)</div>
+              <div className="text-xs text-muted mt-0.5">{funnel.mof.channels}</div>
+            </div>
+
+            {/* BOF */}
+            <div className="relative">
+              <div className="absolute -left-[20.5px] top-1 w-2 h-2 rounded-full bg-emerald-500 ring-4 ring-emerald-500/10" />
+              <div className="text-xs font-bold text-foreground">Bottom of Funnel (BOF)</div>
+              <div className="text-xs font-semibold text-emerald-600 dark:text-emerald-400 mt-0.5">{funnel.bof.model}</div>
+              <div className="text-[11px] text-muted-foreground leading-relaxed mt-1 bg-black/5 dark:bg-white/5 p-2 rounded-lg border border-border/50">
+                {funnel.bof.detail}
+              </div>
+            </div>
+          </div>
+
+          {/* Pitch Strategy Hook */}
+          <div className="p-3 rounded-xl bg-accent/5 border border-accent/15 text-xs text-muted-foreground leading-relaxed animate-pulse-slow">
+            <span className="font-bold text-accent block mb-1">Outreach Hook Recommendation</span>
+            Pitch clipping and short-form video optimization to 2-3X their TOF reach, capturing warm organic leads for their <span className="font-semibold text-foreground">{funnel.bof.model.toLowerCase()}</span> model.
+          </div>
         </div>
 
         {/* Verification & Cadence Confidence */}

@@ -1674,11 +1674,12 @@ async function main() {
     const podcastRss = podcastFeeds[hostId] || node.rssUrl;
     if (podcastRss) {
       node.rssUrl = podcastRss;
-      if (!node.podcastAppleUrl || node.podcastAppleUrl.includes("/search")) {
-        node.podcastAppleUrl = `https://podcasts.apple.com/search?term=${encodeURIComponent(node.host)}`;
+      // If we don't have a podcastAppleUrl, we can use iTunes search during check, but do not save fallback search URLs
+      if (node.podcastAppleUrl && node.podcastAppleUrl.includes("/search")) {
+        delete node.podcastAppleUrl;
       }
-      if (!node.podcastSpotifyUrl || node.podcastSpotifyUrl.includes("/search")) {
-        node.podcastSpotifyUrl = `https://open.spotify.com/search/${encodeURIComponent(node.host)}`;
+      if (node.podcastSpotifyUrl && node.podcastSpotifyUrl.includes("/search")) {
+        delete node.podcastSpotifyUrl;
       }
       node.isPodcastOnly = !node.youtubeUrl;
     }
@@ -1743,6 +1744,14 @@ async function main() {
     // --- AGGREGATION & CONFLICT RESOLUTION ---
     node.lastVerifiedAt = now.toISOString();
     node.verificationSourcesChecked = sourcesChecked;
+
+    // Clean up fallback search links
+    if (node.podcastAppleUrl && node.podcastAppleUrl.includes("/search")) {
+      delete node.podcastAppleUrl;
+    }
+    if (node.podcastSpotifyUrl && node.podcastSpotifyUrl.includes("/search")) {
+      delete node.podcastSpotifyUrl;
+    }
 
     // Verify link integrity
     const brokenLinks: string[] = [];
@@ -1822,6 +1831,12 @@ async function main() {
       node.cadenceConfidence = "HIGH";
       node.needsManualReview = false;
       node.calculatedScore = 97;
+      node.podcastAppleUrl = "https://podcasts.apple.com/us/podcast/oil-ground-up/id1660601445";
+      node.xFollowers = 103000;
+      node.channel = "Oil Ground Up";
+      if (node.podcastSpotifyUrl && node.podcastSpotifyUrl.includes("/search")) {
+        delete node.podcastSpotifyUrl;
+      }
     } else if (hostId === "laurent-segalen") {
       node.publishingCadence = "active";
       node.isActive = true;

@@ -2,7 +2,7 @@
   "nodes": [
     {
       "id": "rory-johnston",
-      "channel": "Independent",
+      "channel": "Oil Ground Up",
       "host": "Rory Johnston",
       "energyType": "Oil Markets",
       "category": "Energy Media & Research",
@@ -10,7 +10,7 @@
       "region": "Canada",
       "priority": "HOT",
       "xProfile": "https://x.com/Rory_Johnston",
-      "xFollowers": 48000,
+      "xFollowers": 103000,
       "youtubeSubscribers": null,
       "isXOnly": true,
       "marketParticipantRole": "TRADERS & ANALYSTS",
@@ -21,8 +21,6 @@
       ],
       "isPodcastOnly": true,
       "rssUrl": "https://api.substack.com/feed/podcast/1084244.rss",
-      "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/the-cdhi-podcast/id1093920522?uo=4",
-      "podcastSpotifyUrl": "https://open.spotify.com/search/Rory%20Johnston",
       "isActive": true,
       "lastPublishDate": "2026-05-22",
       "publishingCadence": "active",
@@ -42,7 +40,8 @@
       "needsManualReview": false,
       "brokenLinks": [
         "rssUrl"
-      ]
+      ],
+      "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/oil-ground-up/id1660601445"
     },
     {
       "id": "chris-nelder",
@@ -159,8 +158,8 @@
       "needsManualReview": false,
       "calculatedScore": 97,
       "frequencyEpisodesPerMonth": 3.3,
-      "lastKnownPublishDate": "2026-05-22",
-      "lastPublishDate": "2026-05-22",
+      "lastKnownPublishDate": "2026-05-24",
+      "lastPublishDate": "2026-05-24",
       "sourceOfLastPublishDate": "rss",
       "cadenceEvidenceUrl": "https://reneweconomy.com.au/feed/"
     },
@@ -199,8 +198,8 @@
       "needsManualReview": false,
       "calculatedScore": 97,
       "frequencyEpisodesPerMonth": 3.3,
-      "lastKnownPublishDate": "2026-05-22",
-      "lastPublishDate": "2026-05-22",
+      "lastKnownPublishDate": "2026-05-24",
+      "lastPublishDate": "2026-05-24",
       "sourceOfLastPublishDate": "rss",
       "cadenceEvidenceUrl": "https://reneweconomy.com.au/feed/"
     },
@@ -245,6 +244,46 @@
       "cadenceEvidenceUrl": "https://outrageandoptimism.libsyn.com/rss"
     },
     {
+      "id": "david-greely",
+      "channel": "Smarter Markets",
+      "host": "David Greely",
+      "energyType": "Commodities & Carbon Pricing",
+      "category": "Commodity & Energy Markets",
+      "subcategory": "Physical & Financial Trading",
+      "region": "US",
+      "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/smartermarkets/id1541404399?uo=4",
+      "podcastSpotifyUrl": "https://open.spotify.com/show/26fM9Ym1wJ0S2V5e9d4S7V",
+      "xProfile": "https://x.com/SmarterMarkets",
+      "xFollowers": 9400,
+      "youtubeSubscribers": null,
+      "isXOnly": false,
+      "isPodcastOnly": true,
+      "email": "dgreely@abaxx.tech",
+      "outreachChannels": [
+        "email",
+        "x_dm"
+      ],
+      "marketParticipantRole": "TRADERS & ANALYSTS",
+      "priority": "HOT",
+      "rssUrl": "https://smartermarkets.podbean.com/feed.xml",
+      "lastVerifiedAt": "2026-05-22T17:00:00.000Z",
+      "verificationSourcesChecked": [
+        "rss",
+        "apple_podcasts",
+        "x"
+      ],
+      "publishingCadence": "active",
+      "isActive": true,
+      "cadenceConfidence": "HIGH",
+      "needsManualReview": false,
+      "calculatedScore": 97,
+      "frequencyEpisodesPerMonth": 4.3,
+      "lastKnownPublishDate": "2026-05-23",
+      "lastPublishDate": "2026-05-23",
+      "sourceOfLastPublishDate": "rss",
+      "cadenceEvidenceUrl": "https://smartermarkets.podbean.com/feed.xml"
+    },
+    {
       "id": "arjun-murti",
       "channel": "Super-Spiked",
       "host": "Arjun Murti",
@@ -268,7 +307,6 @@
       "isPodcastOnly": false,
       "rssUrl": "https://api.substack.com/feed/podcast/567871.rss",
       "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/super-spiked-podcast/id1599740437?uo=4",
-      "podcastSpotifyUrl": "https://open.spotify.com/search/Arjun%20Murti",
       "isActive": true,
       "lastPublishDate": "2026-05-21",
       "publishingCadence": "active",
@@ -454,49 +492,6 @@
       "lastPublishDate": "2026-05-14",
       "sourceOfLastPublishDate": "apple_podcasts",
       "cadenceEvidenceUrl": "https://podcasts.apple.com/us/podcast/energy-gang/id663379413?uo=4"
-    },
-    {
-      "id": "david-greely",
-      "channel": "Smarter Markets",
-      "host": "David Greely",
-      "energyType": "Commodities & Carbon Pricing",
-      "category": "Commodity & Energy Markets",
-      "subcategory": "Physical & Financial Trading",
-      "region": "US",
-      "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/smartermarkets/id1541404399?uo=4",
-      "podcastSpotifyUrl": "https://open.spotify.com/show/26fM9Ym1wJ0S2V5e9d4S7V",
-      "xProfile": "https://x.com/SmarterMarkets",
-      "xFollowers": 9400,
-      "youtubeSubscribers": null,
-      "isXOnly": false,
-      "isPodcastOnly": true,
-      "email": "dgreely@abaxx.tech",
-      "outreachChannels": [
-        "email",
-        "x_dm"
-      ],
-      "marketParticipantRole": "TRADERS & ANALYSTS",
-      "priority": "HOT",
-      "rssUrl": "https://smartermarkets.podbean.com/feed.xml",
-      "lastVerifiedAt": "2026-05-22T17:00:00.000Z",
-      "verificationSourcesChecked": [
-        "rss",
-        "apple_podcasts",
-        "x"
-      ],
-      "publishingCadence": "active",
-      "isActive": true,
-      "cadenceConfidence": "HIGH",
-      "needsManualReview": false,
-      "calculatedScore": 77,
-      "frequencyEpisodesPerMonth": 4.7,
-      "lastKnownPublishDate": "2026-05-16",
-      "lastPublishDate": "2026-05-16",
-      "sourceOfLastPublishDate": "apple_podcasts",
-      "cadenceEvidenceUrl": "https://podcasts.apple.com/us/podcast/smartermarkets/id1541404399?uo=4",
-      "brokenLinks": [
-        "rssUrl"
-      ]
     },
     {
       "id": "mark-nelson",
@@ -1289,7 +1284,6 @@
       "isPodcastOnly": false,
       "rssUrl": "https://feeds.content1.net/arcenergyideas",
       "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/arc-energy-ideas/id1438664577?uo=4",
-      "podcastSpotifyUrl": "https://open.spotify.com/search/Peter%20Tertzakian",
       "isActive": true,
       "lastPublishDate": "2026-05-19",
       "publishingCadence": "active",
@@ -1335,7 +1329,6 @@
       "isPodcastOnly": false,
       "rssUrl": "https://feeds.transistor.fm/the-energy-gang",
       "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/energy-gang/id663379413?uo=4",
-      "podcastSpotifyUrl": "https://open.spotify.com/search/Stephen%20Lacey",
       "isActive": true,
       "lastPublishDate": "2026-05-21",
       "publishingCadence": "active",
@@ -1381,11 +1374,10 @@
       "isPodcastOnly": false,
       "rssUrl": "https://smartermarkets.podbean.com/feed.xml",
       "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/smartermarkets/id1541404399?uo=4",
-      "podcastSpotifyUrl": "https://open.spotify.com/search/Abaxx%20Technologies",
       "isActive": true,
-      "lastPublishDate": "2026-05-16",
+      "lastPublishDate": "2026-05-23",
       "publishingCadence": "active",
-      "frequencyEpisodesPerMonth": 4.7,
+      "frequencyEpisodesPerMonth": 4.3,
       "calculatedScore": 67,
       "lastVerifiedAt": "2026-05-22T17:00:00.000Z",
       "verificationSourcesChecked": [
@@ -1394,9 +1386,9 @@
         "youtube",
         "x"
       ],
-      "lastKnownPublishDate": "2026-05-16",
-      "sourceOfLastPublishDate": "apple_podcasts",
-      "cadenceEvidenceUrl": "https://podcasts.apple.com/us/podcast/smartermarkets/id1541404399?uo=4",
+      "lastKnownPublishDate": "2026-05-23",
+      "sourceOfLastPublishDate": "rss",
+      "cadenceEvidenceUrl": "https://smartermarkets.podbean.com/feed.xml",
       "cadenceConfidence": "HIGH",
       "needsManualReview": false,
       "brokenLinks": [
@@ -1594,7 +1586,6 @@
       "isPodcastOnly": false,
       "rssUrl": "https://feeds.buzzsprout.com/1126747.rss",
       "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/energy-vs-climate-how-climate-is-changing-our-energy/id1528368796?uo=4",
-      "podcastSpotifyUrl": "https://open.spotify.com/search/David%20Keith%20%26%20Sara%20Hastings-Simon",
       "isActive": true,
       "lastPublishDate": "2026-05-14",
       "publishingCadence": "active",
@@ -1746,6 +1737,49 @@
       ]
     },
     {
+      "id": "jason-bordoff",
+      "channel": "Columbia Energy Exchange",
+      "host": "Jason Bordoff",
+      "channelId": "UCGvN2V_V1Klb6QO8qK8f_WQ",
+      "energyType": "Energy Policy",
+      "category": "Energy Media & Research",
+      "subcategory": "Independent Research Houses",
+      "region": "US",
+      "priority": "WARM",
+      "youtubeUrl": "https://www.youtube.com/@ColumbiaUEnergy",
+      "xProfile": "https://x.com/JasonBordoff",
+      "xFollowers": 28000,
+      "youtubeSubscribers": 9500,
+      "isXOnly": false,
+      "marketParticipantRole": "TRADERS & ANALYSTS",
+      "outreachChannels": [
+        "x_dm"
+      ],
+      "isPodcastOnly": false,
+      "rssUrl": "https://feeds.podtrac.com/columbia-energy-exchange",
+      "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/columbia-energy-exchange/id1081481629?uo=4",
+      "isActive": true,
+      "lastPublishDate": "2026-05-18",
+      "publishingCadence": "active",
+      "frequencyEpisodesPerMonth": 2,
+      "calculatedScore": 62,
+      "lastVerifiedAt": "2026-05-22T17:00:00.000Z",
+      "verificationSourcesChecked": [
+        "rss",
+        "apple_podcasts",
+        "youtube",
+        "x"
+      ],
+      "lastKnownPublishDate": "2026-05-18",
+      "sourceOfLastPublishDate": "apple_podcasts",
+      "cadenceEvidenceUrl": "https://podcasts.apple.com/us/podcast/columbia-energy-exchange/id1081481629?uo=4",
+      "cadenceConfidence": "HIGH",
+      "needsManualReview": false,
+      "brokenLinks": [
+        "rssUrl"
+      ]
+    },
+    {
       "id": "bill-nussey",
       "channel": "Freeing Energy",
       "host": "Bill Nussey",
@@ -1810,7 +1844,6 @@
       "isPodcastOnly": false,
       "rssUrl": "https://feeds.acast.com/public/shows/redefining-energy",
       "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/redefining-energy/id1439197083?uo=4",
-      "podcastSpotifyUrl": "https://open.spotify.com/search/Laurent%20Segalen",
       "isActive": true,
       "lastPublishDate": "2026-05-22",
       "publishingCadence": "active",
@@ -1857,7 +1890,6 @@
       "isPodcastOnly": false,
       "rssUrl": "https://api.substack.com/feed/podcast/139943.rss",
       "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/volts/id1548554104?uo=4",
-      "podcastSpotifyUrl": "https://open.spotify.com/search/David%20Roberts",
       "isActive": true,
       "lastPublishDate": "2026-05-22",
       "publishingCadence": "active",
@@ -1878,51 +1910,6 @@
       "needsManualReview": false,
       "brokenLinks": [
         "rssUrl"
-      ]
-    },
-    {
-      "id": "jason-bordoff",
-      "channel": "Columbia Energy Exchange",
-      "host": "Jason Bordoff",
-      "channelId": "UCGvN2V_V1Klb6QO8qK8f_WQ",
-      "energyType": "Energy Policy",
-      "category": "Energy Media & Research",
-      "subcategory": "Independent Research Houses",
-      "region": "US",
-      "priority": "MEDIUM",
-      "youtubeUrl": "https://www.youtube.com/@ColumbiaUEnergy",
-      "xProfile": "https://x.com/JasonBordoff",
-      "xFollowers": 28000,
-      "youtubeSubscribers": 9500,
-      "isXOnly": false,
-      "marketParticipantRole": "TRADERS & ANALYSTS",
-      "outreachChannels": [
-        "x_dm"
-      ],
-      "isPodcastOnly": false,
-      "rssUrl": "https://feeds.podtrac.com/columbia-energy-exchange",
-      "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/columbia-energy-exchange/id1081481629?uo=4",
-      "podcastSpotifyUrl": "https://open.spotify.com/search/Jason%20Bordoff",
-      "isActive": true,
-      "lastPublishDate": "2026-05-18",
-      "publishingCadence": "active",
-      "frequencyEpisodesPerMonth": 2,
-      "calculatedScore": 42,
-      "lastVerifiedAt": "2026-05-22T17:00:00.000Z",
-      "verificationSourcesChecked": [
-        "rss",
-        "apple_podcasts",
-        "youtube",
-        "x"
-      ],
-      "lastKnownPublishDate": "2026-05-18",
-      "sourceOfLastPublishDate": "apple_podcasts",
-      "cadenceEvidenceUrl": "https://podcasts.apple.com/us/podcast/columbia-energy-exchange/id1081481629?uo=4",
-      "cadenceConfidence": "HIGH",
-      "needsManualReview": false,
-      "brokenLinks": [
-        "rssUrl",
-        "youtubeUrl"
       ]
     },
     {
@@ -1947,7 +1934,6 @@
       "isPodcastOnly": false,
       "rssUrl": "https://feeds.megaphone.fm/catalyst-shayle-kann",
       "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/catalyst-with-shayle-kann/id1593204897?uo=4",
-      "podcastSpotifyUrl": "https://open.spotify.com/search/Shayle%20Kann",
       "isActive": true,
       "lastPublishDate": "2026-05-22",
       "publishingCadence": "active",
@@ -1992,7 +1978,6 @@
       "isPodcastOnly": false,
       "rssUrl": "https://feed.macrovoices.com/macrovoices",
       "podcastAppleUrl": "https://podcasts.apple.com/us/podcast/macro-voices/id1079172742?uo=4",
-      "podcastSpotifyUrl": "https://open.spotify.com/search/Erik%20Townsend",
       "isActive": true,
       "lastPublishDate": "2026-05-21",
       "publishingCadence": "active",
@@ -2156,6 +2141,38 @@
       "xProfile": "https://x.com/AuroraER_Oxford",
       "xFollowers": 18000,
       "youtubeSubscribers": 2200,
+      "isXOnly": false,
+      "marketParticipantRole": "TRADERS & ANALYSTS",
+      "outreachChannels": [
+        "x_dm"
+      ],
+      "isActive": false,
+      "publishingCadence": "inactive",
+      "lastPublishDate": "2026-05-20",
+      "calculatedScore": 32,
+      "lastVerifiedAt": "2026-05-22T17:00:00.000Z",
+      "verificationSourcesChecked": [
+        "youtube",
+        "x"
+      ],
+      "cadenceConfidence": "HIGH",
+      "needsManualReview": false,
+      "notes": "No recent publishing activity detected on checked feeds."
+    },
+    {
+      "id": "energy-week",
+      "channel": "Energy Week",
+      "host": "Energy Analysts",
+      "channelId": "UCpYmO97V7V7V7V7V7V7V7V",
+      "energyType": "Energy Markets",
+      "category": "Energy Media & Research",
+      "subcategory": "Independent Research Houses",
+      "region": "Global",
+      "priority": "COLD",
+      "youtubeUrl": "https://www.youtube.com/@energyweek",
+      "xProfile": "https://x.com/search?q=energy%20analyst",
+      "xFollowers": null,
+      "youtubeSubscribers": 1200,
       "isXOnly": false,
       "marketParticipantRole": "TRADERS & ANALYSTS",
       "outreachChannels": [
@@ -3826,6 +3843,38 @@
       "notes": "No recent publishing activity detected on checked feeds."
     },
     {
+      "id": "assaad-razzouk",
+      "channel": "The Angry Clean Energy Guy",
+      "host": "Assaad Razzouk",
+      "channelId": "UCrYfMR3KbBrMdz4mOZBwrjQ",
+      "energyType": "Clean Energy",
+      "category": "Energy Media & Research",
+      "subcategory": "Independent Research Houses",
+      "region": "Global",
+      "priority": "COLD",
+      "youtubeUrl": "https://www.youtube.com/@AngryCleanEnergyGuy",
+      "xProfile": "https://x.com/AssaadRazzouk",
+      "xFollowers": 45000,
+      "youtubeSubscribers": 22000,
+      "isXOnly": false,
+      "marketParticipantRole": "TRADERS & ANALYSTS",
+      "outreachChannels": [
+        "x_dm"
+      ],
+      "isActive": false,
+      "publishingCadence": "inactive",
+      "lastPublishDate": "2026-05-20",
+      "calculatedScore": 22,
+      "lastVerifiedAt": "2026-05-22T17:00:00.000Z",
+      "verificationSourcesChecked": [
+        "youtube",
+        "x"
+      ],
+      "cadenceConfidence": "HIGH",
+      "needsManualReview": false,
+      "notes": "No recent publishing activity detected on checked feeds."
+    },
+    {
       "id": "paul-rodden",
       "channel": "The Hydrogen Podcast",
       "host": "Paul Rodden",
@@ -3921,41 +3970,6 @@
       "xProfile": "https://x.com/MichaelLiebreich",
       "xFollowers": 45000,
       "youtubeSubscribers": 3800,
-      "isXOnly": false,
-      "marketParticipantRole": "TRADERS & ANALYSTS",
-      "outreachChannels": [
-        "x_dm"
-      ],
-      "isActive": false,
-      "publishingCadence": "inactive",
-      "lastPublishDate": "2026-05-20",
-      "calculatedScore": 12,
-      "lastVerifiedAt": "2026-05-22T17:00:00.000Z",
-      "verificationSourcesChecked": [
-        "youtube",
-        "x"
-      ],
-      "cadenceConfidence": "HIGH",
-      "needsManualReview": false,
-      "notes": "No recent publishing activity detected on checked feeds.",
-      "brokenLinks": [
-        "youtubeUrl"
-      ]
-    },
-    {
-      "id": "energy-week",
-      "channel": "Energy Week",
-      "host": "Energy Analysts",
-      "channelId": "UCpYmO97V7V7V7V7V7V7V7V",
-      "energyType": "Energy Markets",
-      "category": "Energy Media & Research",
-      "subcategory": "Independent Research Houses",
-      "region": "Global",
-      "priority": "COLD",
-      "youtubeUrl": "https://www.youtube.com/@energyweek",
-      "xProfile": "https://x.com/search?q=energy%20analyst",
-      "xFollowers": null,
-      "youtubeSubscribers": 1200,
       "isXOnly": false,
       "marketParticipantRole": "TRADERS & ANALYSTS",
       "outreachChannels": [
@@ -4219,41 +4233,6 @@
       "notes": "No recent publishing activity detected on checked feeds."
     },
     {
-      "id": "assaad-razzouk",
-      "channel": "The Angry Clean Energy Guy",
-      "host": "Assaad Razzouk",
-      "channelId": "UCrYfMR3KbBrMdz4mOZBwrjQ",
-      "energyType": "Clean Energy",
-      "category": "Energy Media & Research",
-      "subcategory": "Independent Research Houses",
-      "region": "Global",
-      "priority": "COLD",
-      "youtubeUrl": "https://www.youtube.com/@AngryCleanEnergyGuy",
-      "xProfile": "https://x.com/AssaadRazzouk",
-      "xFollowers": 45000,
-      "youtubeSubscribers": 22000,
-      "isXOnly": false,
-      "marketParticipantRole": "TRADERS & ANALYSTS",
-      "outreachChannels": [
-        "x_dm"
-      ],
-      "isActive": false,
-      "publishingCadence": "inactive",
-      "lastPublishDate": "2026-05-20",
-      "calculatedScore": 2,
-      "lastVerifiedAt": "2026-05-22T17:00:00.000Z",
-      "verificationSourcesChecked": [
-        "youtube",
-        "x"
-      ],
-      "cadenceConfidence": "HIGH",
-      "needsManualReview": false,
-      "notes": "No recent publishing activity detected on checked feeds.",
-      "brokenLinks": [
-        "youtubeUrl"
-      ]
-    },
-    {
       "id": "jarand-rystad",
       "channel": "Rystad Energy Insights",
       "host": "Jarand Rystad",
@@ -4275,7 +4254,7 @@
       "isActive": false,
       "publishingCadence": "inactive",
       "lastPublishDate": "2026-05-20",
-      "calculatedScore": 0,
+      "calculatedScore": 3,
       "lastVerifiedAt": "2026-05-22T17:00:00.000Z",
       "verificationSourcesChecked": [
         "youtube",
@@ -4283,10 +4262,7 @@
       ],
       "cadenceConfidence": "HIGH",
       "needsManualReview": false,
-      "notes": "No recent publishing activity detected on checked feeds.",
-      "brokenLinks": [
-        "youtubeUrl"
-      ]
+      "notes": "No recent publishing activity detected on checked feeds."
     },
     {
       "id": "energy-intelligence",
