@@ -77,8 +77,8 @@ export function NodeDetail({ node, onClose }: Props) {
       bofModel = "Asset Equity & LP/GP Fund Allocations";
       bofDetail = "Monetizes via asset ownership yields, management fees, and seed equity investments.";
     } else if (node.marketParticipantRole === "MEDIA & INFORMATION") {
-      bofModel = "Corporate Sponsorships & Ad Networks";
-      bofDetail = "Monetizes via podcast episode slots, newsletter banners, and event sponsorships.";
+      bofModel = "Corporate Sponsorships & Paid Events / Ad Networks";
+      bofDetail = "Monetizes via podcast episode slots, newsletter advertising slots, premium live summits, and paid corporate event hosting.";
     } else if (node.marketParticipantRole === "OPERATORS") {
       bofModel = "Commercial Resource Operations & Offtake";
       bofDetail = "Monetizes via energy production offtake agreements, operational fees, and infrastructure development.";

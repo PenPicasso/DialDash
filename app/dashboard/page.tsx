@@ -32,7 +32,16 @@ export default function Dashboard() {
     }
   }, [isDark]);
 
-  const categories = Array.from(new Set(allNodes.map((n) => n.category).filter(Boolean)));
+  const categories = [
+    "Oil & Gas",
+    "Power & Utilities",
+    "Renewables",
+    "Nuclear",
+    "Infrastructure & Logistics",
+    "Commodity & Energy Markets",
+    "Energy Media & Research",
+    "Energy Advisory & Expertise"
+  ];
   const regions = Array.from(new Set(allNodes.map((n) => n.region).filter(Boolean)));
   const priorities = Array.from(new Set(allNodes.map((n) => n.priority).filter(Boolean)));
 

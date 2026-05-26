@@ -267,7 +267,11 @@ function inferRole(host: string, channel: string, subcategory: string): Particip
     normChan.includes("lots") ||
     normChan.includes("media") ||
     normChan.includes("magazine") ||
-    normChan.includes("oilprice")
+    normChan.includes("oilprice") ||
+    normChan.includes("this week") ||
+    normChan.includes("show") ||
+    normChan.includes("news") ||
+    normHost.includes("lacour")
   ) {
     return "MEDIA & INFORMATION";
   }
