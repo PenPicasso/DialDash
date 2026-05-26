@@ -1881,18 +1881,29 @@ async function main() {
     priorityStats[node.priority]++;
   }
 
-  // Process currentNodes sequentially with a 200ms throttle to prevent rate limiting
-  console.log("Starting sequential processing of cadences (with 200ms throttle)...");
-  const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-  for (let i = 0; i < currentNodes.length; i++) {
-    const node = currentNodes[i];
-    console.log(`[${i + 1}/${currentNodes.length}] Processing ${node.host} (${node.id})...`);
-    await processNode(node);
-    if (i < currentNodes.length - 1) {
-      await delay(200);
+  // Process currentNodes concurrently with a worker pool to speed up execution
+  console.log("Starting concurrent processing of cadences (concurrency pool of 15)...");
+  const concurrency = 15;
+  const queue = [...currentNodes];
+  let processedCount = 0;
+
+  async function worker() {
+    while (queue.length > 0) {
+      const node = queue.shift();
+      if (!node) break;
+      const currentIdx = ++processedCount;
+      console.log(`[${currentIdx}/${currentNodes.length}] Processing ${node.host} (${node.id})...`);
+      try {
+        await processNode(node);
+      } catch (e) {
+        console.error(`Error processing ${node.id}:`, e);
+      }
     }
   }
-  console.log("Sequential processing complete.");
+
+  const workers = Array.from({ length: concurrency }, () => worker());
+  await Promise.all(workers);
+  console.log("Concurrent processing complete.");
 
   // Sort nodes by calculatedScore desc
   currentNodes.sort((a, b) => (b.calculatedScore || 0) - (a.calculatedScore || 0));
