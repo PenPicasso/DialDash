@@ -317,9 +317,11 @@ async function verifyUrl(url: string): Promise<boolean> {
     lowerUrl.includes("twitter.com") ||
     lowerUrl.includes("spotify.com") ||
     lowerUrl.includes("podcasts.apple.com") ||
+    lowerUrl.includes("youtube.com") ||
+    lowerUrl.includes("youtu.be") ||
     lowerUrl.startsWith("mailto:")
   ) {
-    return true; // Bypass social/email/Apple checks to avoid false negatives
+    return true; // Bypass social/email/Apple/YouTube checks to avoid false negatives
   }
   try {
     const res = await fetch(url, {
