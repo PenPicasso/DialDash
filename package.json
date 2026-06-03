@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000",
+    "dev:workspace": "powershell -ExecutionPolicy Bypass -File scripts/launch-workspace.ps1",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
