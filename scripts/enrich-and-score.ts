@@ -1855,6 +1855,27 @@ async function main() {
       node.cadenceConfidence = "HIGH";
       node.needsManualReview = false;
       delete node.notes;
+    } else if (hostId === "collin-mclelland") {
+      node.publishingCadence = "active";
+      node.isActive = true;
+      node.cadenceConfidence = "HIGH";
+      node.needsManualReview = false;
+      node.linkedinUrl = "https://www.linkedin.com/in/collin-mclelland/";
+      delete node.notes;
+    } else if (hostId === "paige-wilson") {
+      node.publishingCadence = "active";
+      node.isActive = true;
+      node.cadenceConfidence = "HIGH";
+      node.needsManualReview = false;
+      node.linkedinUrl = "https://www.linkedin.com/in/tabithapaigewilson/";
+      delete node.notes;
+    } else if (hostId === "jason-jacobs") {
+      node.publishingCadence = "active";
+      node.isActive = true;
+      node.cadenceConfidence = "HIGH";
+      node.needsManualReview = false;
+      node.linkedinUrl = "https://www.linkedin.com/in/jasonjacobs/";
+      delete node.notes;
     }
 
     // Re-run scoring (unless explicitly set like Rory Johnston override)
