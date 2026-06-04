@@ -1,19 +1,19 @@
 export type Category =
-  | "Oil & Gas"
+  | "Fossil Fuels"
   | "Power & Utilities"
   | "Renewables"
   | "Nuclear"
-  | "Infrastructure & Logistics"
+  | "Energy Enablers"
   | "Commodity & Energy Markets"
   | "Energy Media & Research"
   | "Energy Advisory & Expertise";
 
 export const CATEGORY_COLORS: Record<Category, string> = {
-  "Oil & Gas": "#ef4444",              // Vibrant Red
+  "Fossil Fuels": "#ef4444",              // Vibrant Red
   "Power & Utilities": "#f59e0b",      // Amber
   "Renewables": "#10b981",             // Emerald Green
   "Nuclear": "#8b5cf6",                // Purple
-  "Infrastructure & Logistics": "#6366f1", // Indigo
+  "Energy Enablers": "#6366f1", // Indigo
   "Commodity & Energy Markets": "#ec4899", // Pink
   "Energy Media & Research": "#3b82f6", // Blue
   "Energy Advisory & Expertise": "#14b8a6", // Teal
@@ -63,5 +63,17 @@ export type NodeData = {
   sourceOfLastPublishDate?: string;
   needsManualReview?: boolean;
   brokenLinks?: string[];
+  
+  // Point-Man & Reachability Fields
+  pointManName?: string;
+  organizationName?: string;
+  creatorRole?: string;
+  bestOutreachChannel?: string;
+  linkedinUrl?: string;
+  sourceUrl?: string;
+  confidenceScore?: number;
+  reachabilityScore?: number;
+  reachabilityStatus?: "STRONG" | "WEAK";
+  manualReviewReason?: string;
 };
 
