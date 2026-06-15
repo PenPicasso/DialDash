@@ -214,7 +214,9 @@ export function auditProspectActionability(node: NodeData, auditedAt = new Date(
   if (isCorporateMonolith(audited)) reasons.push("corporate monolith or large institution");
   if (!hasText(audited.pitchHook)) reasons.push("missing funnel-aware pitch hook");
 
-  audited.actionabilityStatus = reasons.length === 0 ? "READY" : "REVIEW";
+  audited.actionabilityReasons = reasons;
+  audited.rejectionReason = reasons.length > 0 ? reasons.join("; ") : undefined;
+  audited.actionabilityStatus = reasons.length === 0 ? "READY" : "REJECTED";
 
   return { node: audited, reasons };
 }

@@ -491,6 +491,7 @@ export default function Dashboard() {
                 <th className="px-6 py-4">Host & Channel</th>
                 <th className="px-6 py-4">Category</th>
                 <th className="px-6 py-4">Region</th>
+                <th className="px-6 py-4">Latest</th>
                 <th className="px-6 py-4">Actionability</th>
                 <th className="px-6 py-4">Outreach</th>
                 <th className="px-6 py-4">Priority</th>
@@ -548,6 +549,14 @@ export default function Dashboard() {
                   </td>
                   <td className="px-6 py-4 font-medium text-foreground/80">
                     {node.region}
+                  </td>
+                  <td className="px-6 py-4">
+                    <div className="text-xs font-semibold text-foreground/80">
+                      {node.lastPublishDate || node.lastKnownPublishDate || "Unknown"}
+                    </div>
+                    <div className="text-muted text-[10px] mt-1 uppercase">
+                      {node.sourceOfLastPublishDate || node.publishingCadence || "unchecked"}
+                    </div>
                   </td>
                   <td className="px-6 py-4">
                     <span
@@ -640,7 +649,7 @@ export default function Dashboard() {
               ))}
               {filteredNodes.length === 0 && (
                 <tr>
-                  <td colSpan={8} className="px-6 py-12 text-center text-muted">
+                  <td colSpan={9} className="px-6 py-12 text-center text-muted">
                     No prospects found matching the filters.
                   </td>
                 </tr>

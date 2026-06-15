@@ -96,5 +96,7 @@ export type NodeData = {
   leadSource?: string;
   verificationTier?: "DETERMINISTIC" | "LLM_ASSISTED" | "MANUAL" | "LEGACY";
   lastActionabilityAuditAt?: string;
+  actionabilityReasons?: string[];
+  rejectionReason?: string;
 };
 
