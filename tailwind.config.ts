@@ -10,6 +10,17 @@ const config: Config = {
             colors: {
                 background: "var(--background)",
                 foreground: "var(--foreground)",
+                panel: "var(--panel)",
+                border: "var(--border)",
+                accent: "var(--accent)",
+                "accent-hover": "var(--accent-hover)",
+                muted: "var(--muted)",
+                "input-bg": "var(--input-bg)",
+                placeholder: "var(--placeholder)",
+                brand: {
+                    orange: "#FE8007",
+                    blue: "#113E80",
+                },
             },
         },
     },

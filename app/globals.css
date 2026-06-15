@@ -4,12 +4,14 @@
 
 :root {
   /* Light Mode */
+  --brand-orange: #FE8007;
+  --brand-blue: #113E80;
   --background: #fcfcfc;
   --foreground: #111111;
   --panel: #ffffff;
   --border: #e2e2e5;
-  --accent: #000000;
-  --accent-hover: #333333;
+  --accent: var(--brand-orange);
+  --accent-hover: #d86c05;
   --muted: #666666;
   --input-bg: #ffffff;
   --placeholder: #888888;
@@ -17,12 +19,14 @@
 
 .dark {
   /* Dark Mode */
+  --brand-orange: #FE8007;
+  --brand-blue: #113E80;
   --background: #09090b;
   --foreground: #f4f4f5;
   --panel: #18181b;
   --border: #27272a;
-  --accent: #ffffff;
-  --accent-hover: #e4e4e7;
+  --accent: var(--brand-orange);
+  --accent-hover: #ff9a31;
   --muted: #a1a1aa;
   --input-bg: #18181b;
   --placeholder: #71717a;
@@ -47,6 +51,20 @@ select {
   color: var(--foreground);
 }
 
+select {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--brand-blue) 50%),
+    linear-gradient(135deg, var(--brand-blue) 50%, transparent 50%);
+  background-position:
+    calc(100% - 18px) 50%,
+    calc(100% - 13px) 50%;
+  background-size:
+    5px 5px,
+    5px 5px;
+  background-repeat: no-repeat;
+}
+
 input::placeholder {
   color: var(--placeholder);
 }
@@ -65,13 +83,13 @@ input::placeholder {
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #000000, #555555);
+  background: linear-gradient(120deg, var(--brand-blue), var(--brand-orange));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .dark .text-gradient {
-  background: linear-gradient(to right, #ffffff, #a1a1aa);
+  background: linear-gradient(120deg, #7aa7e8, var(--brand-orange));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

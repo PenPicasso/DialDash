@@ -71,12 +71,9 @@ Never run legacy sourcing as a production write unless explicitly requested. `sc
 ## Dashboard Notes
 
 The dashboard now includes:
-- Actionability filters.
-- Reachability filters.
-- Funnel opportunity filters.
-- Best outreach channel filters.
-- Lead source filters.
-- `Latest` column showing the last known post date.
+- Compact dropdown filters for actionability, reachability, funnel opportunity, best outreach channel, lead source, format, category, priority, and confidence.
+- Brand colors sampled from the provided Energy Dial logo reference: orange `#FE8007` and blue `#113E80`. Do not add the logo asset itself unless the user explicitly asks.
+- `Latest` column showing the last known post date as `Today`, `Yesterday`, or `<days>d ago`; future-dated records should display a short absolute date instead of a relative freshness label.
 - Detail drawer showing TOF/MOF/BOF and the stored prospect-specific pitch hook.
 
 ## Verification Baseline
