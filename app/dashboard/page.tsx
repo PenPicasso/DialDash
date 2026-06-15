@@ -1,12 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import dynamic from "next/dynamic";
 import data from "@/data/nodes.json";
-import { NodeData } from "@/lib/types";
+import { CATEGORIES, NodeData } from "@/lib/types";
 import { VideoPreview } from "@/components/videoPreview";
 import { NodeDetail } from "@/components/nodeDetail";
-import { Search, Youtube, ExternalLink, Moon, Sun, Table2, AlertTriangle, Podcast } from "lucide-react";
+import { Search, Youtube, ExternalLink, Moon, Sun, AlertTriangle } from "lucide-react";
 
 
 
@@ -22,6 +21,11 @@ export default function Dashboard() {
   const [isDark, setIsDark] = useState(false);
   const [needsReview, setNeedsReview] = useState("");
   const [confidence, setConfidence] = useState("");
+  const [actionability, setActionability] = useState("");
+  const [reachability, setReachability] = useState("");
+  const [outreach, setOutreach] = useState("");
+  const [leadSource, setLeadSource] = useState("");
+  const [funnel, setFunnel] = useState("");
 
   useEffect(() => {
     const root = document.documentElement;
@@ -32,18 +36,12 @@ export default function Dashboard() {
     }
   }, [isDark]);
 
-  const categories = [
-    "Oil & Gas",
-    "Power & Utilities",
-    "Renewables",
-    "Nuclear",
-    "Infrastructure & Logistics",
-    "Commodity & Energy Markets",
-    "Energy Media & Research",
-    "Energy Advisory & Expertise"
-  ];
-  const regions = Array.from(new Set(allNodes.map((n) => n.region).filter(Boolean)));
+  const categories = CATEGORIES;
   const priorities = Array.from(new Set(allNodes.map((n) => n.priority).filter(Boolean)));
+  const actionabilityStates = Array.from(new Set(allNodes.flatMap((n) => (n.actionabilityStatus ? [n.actionabilityStatus] : []))));
+  const reachabilityStates = Array.from(new Set(allNodes.flatMap((n) => (n.reachabilityStatus ? [n.reachabilityStatus] : []))));
+  const outreachChannels = Array.from(new Set(allNodes.flatMap((n) => (n.bestOutreachChannel ? [n.bestOutreachChannel] : []))));
+  const leadSources = Array.from(new Set(allNodes.flatMap((n) => (n.leadSource ? [n.leadSource] : []))));
 
   const filteredNodes = allNodes.filter((node) => {
     const matchSearch =
@@ -58,6 +56,16 @@ export default function Dashboard() {
         ? !node.needsManualReview
         : true;
     const matchConfidence = confidence ? node.cadenceConfidence === confidence : true;
+    const matchActionability = actionability ? node.actionabilityStatus === actionability : true;
+    const matchReachability = reachability ? node.reachabilityStatus === reachability : true;
+    const matchOutreach = outreach ? node.bestOutreachChannel === outreach : true;
+    const matchLeadSource = leadSource ? node.leadSource === leadSource : true;
+    const matchFunnel =
+      funnel === "video-gap"
+        ? Boolean(node.videoGapReason && !node.videoGapReason.toLowerCase().includes("existing large"))
+        : funnel === "podcast-newsletter"
+        ? Boolean(node.mofChannels?.some((channel) => ["Podcast", "Newsletter"].includes(channel)))
+        : true;
     const matchFormat =
       formatFilter === "podcast-no-video"
         ? node.isPodcastOnly === true
@@ -72,12 +80,19 @@ export default function Dashboard() {
       matchCategory &&
       matchNeedsReview &&
       matchConfidence &&
+      matchActionability &&
+      matchReachability &&
+      matchOutreach &&
+      matchLeadSource &&
+      matchFunnel &&
       matchFormat
     );
   });
 
   const nodeCount = filteredNodes.length;
   const xOnlyCount = filteredNodes.filter((n) => n.isXOnly).length;
+  const readyCount = filteredNodes.filter((n) => n.actionabilityStatus === "READY").length;
+  const reviewCount = filteredNodes.filter((n) => n.actionabilityStatus === "REVIEW").length;
 
   return (
     <div className="min-h-screen bg-background text-foreground p-8 font-sans transition-colors duration-300">
@@ -87,7 +102,7 @@ export default function Dashboard() {
             <span className="text-gradient">Energy Dial</span> Network
           </h1>
           <p className="text-muted text-sm">
-            {nodeCount} prospects &middot; {xOnlyCount} X-only &middot; {nodeCount - xOnlyCount} YouTube
+            {nodeCount} prospects &middot; {readyCount} READY &middot; {reviewCount} REVIEW &middot; {xOnlyCount} X-only
           </p>
         </div>
         <div className="flex items-center gap-2">
@@ -307,6 +322,165 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
+
+        {/* Actionability, Reachability & Lead Source */}
+        <div className="grid grid-cols-1 xl:grid-cols-3 gap-6 pt-2 border-t border-border/40">
+          <div className="space-y-2">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground block">Actionability</span>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setActionability("")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  actionability === ""
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                }`}
+              >
+                All States
+              </button>
+              {actionabilityStates.map((state) => (
+                <button
+                  key={state}
+                  onClick={() => setActionability(state)}
+                  className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                    actionability === state
+                      ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                      : state === "READY"
+                      ? "bg-[#FAFAFA] dark:bg-[#18181B] text-[#059669] border-emerald-500/30 hover:bg-emerald-500/5"
+                      : "bg-[#FAFAFA] dark:bg-[#18181B] text-[#D97706] border-amber-500/30 hover:bg-amber-500/5"
+                  }`}
+                >
+                  {state}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground block">Reachability</span>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setReachability("")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  reachability === ""
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                }`}
+              >
+                All Reachability
+              </button>
+              {reachabilityStates.map((state) => (
+                <button
+                  key={state}
+                  onClick={() => setReachability(state)}
+                  className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                    reachability === state
+                      ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                      : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                  }`}
+                >
+                  {state}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground block">Funnel Opportunity</span>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setFunnel("")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  funnel === ""
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                }`}
+              >
+                All Funnels
+              </button>
+              <button
+                onClick={() => setFunnel("video-gap")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  funnel === "video-gap"
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-[#D97706] border-amber-500/30 hover:bg-amber-500/5"
+                }`}
+              >
+                Video Gap
+              </button>
+              <button
+                onClick={() => setFunnel("podcast-newsletter")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  funnel === "podcast-newsletter"
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-[#2563EB] border-blue-500/30 hover:bg-blue-500/5"
+                }`}
+              >
+                Podcast / Newsletter
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2 border-t border-border/40">
+          <div className="space-y-2">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground block">Best Outreach Channel</span>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setOutreach("")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  outreach === ""
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                }`}
+              >
+                All Outreach
+              </button>
+              {outreachChannels.map((channel) => (
+                <button
+                  key={channel}
+                  onClick={() => setOutreach(channel)}
+                  className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                    outreach === channel
+                      ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                      : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                  }`}
+                >
+                  {channel.replace("_", " ")}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground block">Lead Source</span>
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setLeadSource("")}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                  leadSource === ""
+                    ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                    : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                }`}
+              >
+                All Sources
+              </button>
+              {leadSources.map((source) => (
+                <button
+                  key={source}
+                  onClick={() => setLeadSource(source)}
+                  className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-150 ${
+                    leadSource === source
+                      ? "bg-black text-white border-black dark:bg-white dark:text-black dark:border-white shadow-sm"
+                      : "bg-[#FAFAFA] dark:bg-[#18181B] text-foreground/70 hover:bg-black/5 dark:hover:bg-white/5 border-border/60"
+                  }`}
+                >
+                  {source.replace("_", " ")}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Main Content */}
@@ -317,6 +491,8 @@ export default function Dashboard() {
                 <th className="px-6 py-4">Host & Channel</th>
                 <th className="px-6 py-4">Category</th>
                 <th className="px-6 py-4">Region</th>
+                <th className="px-6 py-4">Actionability</th>
+                <th className="px-6 py-4">Outreach</th>
                 <th className="px-6 py-4">Priority</th>
                 <th className="px-6 py-4">Followers</th>
                 <th className="px-6 py-4 text-right">Links</th>
@@ -372,6 +548,32 @@ export default function Dashboard() {
                   </td>
                   <td className="px-6 py-4 font-medium text-foreground/80">
                     {node.region}
+                  </td>
+                  <td className="px-6 py-4">
+                    <span
+                      className={`px-2.5 py-1 rounded-full text-xs font-bold border ${
+                        node.actionabilityStatus === "READY"
+                          ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/25"
+                          : node.actionabilityStatus === "REJECTED"
+                          ? "bg-red-500/10 text-red-600 dark:text-red-400 border-red-500/25"
+                          : "bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/25"
+                      }`}
+                    >
+                      {node.actionabilityStatus || "REVIEW"}
+                    </span>
+                    {node.reachabilityStatus && (
+                      <div className="text-muted text-[10px] mt-1 font-bold uppercase">
+                        {node.reachabilityStatus} reach
+                      </div>
+                    )}
+                  </td>
+                  <td className="px-6 py-4">
+                    <div className="text-xs font-semibold text-foreground/80 uppercase">
+                      {node.bestOutreachChannel ? node.bestOutreachChannel.replace("_", " ") : "Missing"}
+                    </div>
+                    <div className="text-muted text-[10px] mt-1">
+                      {node.leadSource ? node.leadSource.replace("_", " ") : "legacy"}
+                    </div>
                   </td>
                   <td className="px-6 py-4">
                     <div className="flex items-center gap-2">
@@ -438,7 +640,7 @@ export default function Dashboard() {
               ))}
               {filteredNodes.length === 0 && (
                 <tr>
-                  <td colSpan={6} className="px-6 py-12 text-center text-muted">
+                  <td colSpan={8} className="px-6 py-12 text-center text-muted">
                     No prospects found matching the filters.
                   </td>
                 </tr>

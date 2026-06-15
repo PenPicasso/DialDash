@@ -5,7 +5,7 @@ import Graph from "graphology";
 import Sigma from "sigma";
 import forceAtlas2 from "graphology-layout-forceatlas2";
 import noverlap from "graphology-layout-noverlap";
-import { NodeData } from "@/lib/types";
+import { CATEGORIES, NodeData } from "@/lib/types";
 import { getCategoryColor, computeNodeSize, FORCE_ATLAS_SETTINGS } from "@/lib/graphConfig";
 
 type Props = {
@@ -215,16 +215,7 @@ export default function NetworkGraph({ nodes, onNodeClick, searchQuery, activeCa
       <div ref={containerRef} className="w-full h-full" />
       {/* Legend */}
       <div className="absolute bottom-4 left-4 bg-panel/90 backdrop-blur-md border border-border rounded-lg p-3 text-xs space-y-1.5">
-        {([
-          "Oil & Gas",
-          "Power & Utilities",
-          "Renewables",
-          "Nuclear",
-          "Infrastructure & Logistics",
-          "Commodity & Energy Markets",
-          "Energy Media & Research",
-          "Energy Advisory & Expertise"
-        ] as const).map((cat) => (
+        {CATEGORIES.map((cat) => (
           <div key={cat} className="flex items-center gap-2">
             <div
               className="w-3 h-3 rounded-full"

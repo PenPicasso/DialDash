@@ -14,7 +14,7 @@ export async function GET(request: Request) {
     try {
         const videos = await getLatestVideos(channelId, youtubeUrl, channelName);
         return NextResponse.json(videos);
-    } catch (error) {
+    } catch {
         return NextResponse.json({ error: "Failed to fetch videos" }, { status: 500 });
     }
 }

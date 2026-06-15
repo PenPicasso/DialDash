@@ -1,7 +1,7 @@
 "use client";
 
 import { NodeData, CATEGORY_COLORS, Category } from "@/lib/types";
-import { X, Youtube, ExternalLink, Mail, Podcast, Radio, CheckCircle, AlertTriangle, HelpCircle, Award } from "lucide-react";
+import { X, Youtube, ExternalLink, Mail, Podcast, Radio, CheckCircle, AlertTriangle, Award } from "lucide-react";
 import { VideoPreview } from "./videoPreview";
 
 type Props = {
@@ -89,15 +89,15 @@ export function NodeDetail({ node, onClose }: Props) {
 
     return {
       tof: {
-        channels: tofChannels.length > 0 ? tofChannels.join(" & ") : "N/A",
-        hasVideoGap,
-        videoGapReason
+        channels: node.tofChannels?.length ? node.tofChannels.join(" & ") : tofChannels.length > 0 ? tofChannels.join(" & ") : "N/A",
+        hasVideoGap: Boolean(node.videoGapReason) || hasVideoGap,
+        videoGapReason: node.videoGapReason || videoGapReason
       },
       mof: {
-        channels: mofChannels.join(" + ")
+        channels: node.mofChannels?.length ? node.mofChannels.join(" + ") : mofChannels.join(" + ")
       },
       bof: {
-        model: bofModel,
+        model: node.bofOffer || bofModel,
         detail: bofDetail
       }
     };
@@ -178,6 +178,23 @@ export function NodeDetail({ node, onClose }: Props) {
               >
                 {node.priority}
               </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Actionability Header */}
+        <div className="flex items-center justify-between gap-3 p-3 rounded-xl bg-[#FAFAFA] dark:bg-white/5 border border-border mb-6">
+          <div>
+            <div className="text-xs text-muted uppercase font-bold tracking-wider">Actionability</div>
+            <div className="text-sm font-bold text-foreground mt-0.5">
+              {node.actionabilityStatus || "REVIEW"}
+              {node.reachabilityStatus ? ` / ${node.reachabilityStatus} reach` : ""}
+            </div>
+          </div>
+          <div className="text-right">
+            <div className="text-xs text-muted uppercase font-bold tracking-wider">Best Outreach</div>
+            <div className="text-sm font-bold text-foreground mt-0.5">
+              {node.bestOutreachChannel ? node.bestOutreachChannel.replace("_", " ") : "Missing"}
             </div>
           </div>
         </div>
@@ -266,7 +283,11 @@ export function NodeDetail({ node, onClose }: Props) {
           {/* Pitch Strategy Hook */}
           <div className="p-3 rounded-xl bg-accent/5 border border-accent/15 text-xs text-muted-foreground leading-relaxed animate-pulse-slow">
             <span className="font-bold text-accent block mb-1">Outreach Hook Recommendation</span>
-            Pitch clipping and short-form video optimization to 2-3X their TOF reach, capturing warm organic leads for their <span className="font-semibold text-foreground">{funnel.bof.model.toLowerCase()}</span> model.
+            {node.pitchHook || (
+              <>
+                Pitch clipping and short-form video optimization to improve their TOF reach, capturing warm organic leads for their <span className="font-semibold text-foreground">{funnel.bof.model.toLowerCase()}</span> model.
+              </>
+            )}
           </div>
         </div>
 
@@ -307,6 +328,34 @@ export function NodeDetail({ node, onClose }: Props) {
               </span>
             </div>
           )}
+
+          {node.sourceEvidenceUrl && (
+            <div className="flex justify-between gap-3">
+              <span className="text-muted">Source Evidence URL</span>
+              <a
+                href={node.sourceEvidenceUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="font-semibold text-accent text-xs text-right hover:underline truncate max-w-[210px]"
+              >
+                Open evidence
+              </a>
+            </div>
+          )}
+
+          <div className="flex justify-between">
+            <span className="text-muted">Lead Source</span>
+            <span className="font-semibold text-foreground text-xs uppercase">
+              {(node.leadSource || "legacy").replace("_", " ")}
+            </span>
+          </div>
+
+          <div className="flex justify-between">
+            <span className="text-muted">Verification Tier</span>
+            <span className="font-semibold text-foreground text-xs uppercase">
+              {node.verificationTier || "LEGACY"}
+            </span>
+          </div>
 
           {node.verificationSourcesChecked && node.verificationSourcesChecked.length > 0 && (
             <div className="space-y-1.5">

@@ -4,11 +4,11 @@ import { join } from "path";
 const DATA_PATH = join(__dirname, "..", "data", "nodes.json");
 
 type Category =
-  | "Oil & Gas"
+  | "Fossil Fuels"
   | "Power & Utilities"
   | "Renewables"
   | "Nuclear"
-  | "Infrastructure & Logistics"
+  | "Energy Enablers"
   | "Commodity & Energy Markets"
   | "Energy Media & Research"
   | "Energy Advisory & Expertise";
@@ -280,7 +280,7 @@ function classifyCategory(channel: string): { category: Category; subcategory: s
   }
   // Oil & Gas
   else if (normChan.includes("oil") || normChan.includes("gas") || normChan.includes("upstream") || normChan.includes("lng") || normChan.includes("shale") || normChan.includes("crude") || normChan.includes("refining") || normChan.includes("drill")) {
-    category = "Oil & Gas";
+    category = "Fossil Fuels";
     subcategory = "Upstream";
     role = "MEDIA & INFORMATION";
     energyType = "Oil & Gas Markets";

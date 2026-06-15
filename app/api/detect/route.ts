@@ -18,7 +18,7 @@ export async function GET(request: Request) {
 
         const moments = detectClipMoments(lines);
         return NextResponse.json({ moments });
-    } catch (error) {
+    } catch {
         return NextResponse.json({ error: "Failed to detect clips" }, { status: 500 });
     }
 }

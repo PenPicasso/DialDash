@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { formatDistanceToNow } from "date-fns";
 import { YouTubeVideo } from "@/lib/youtube";
 import { Flame } from "lucide-react";
@@ -27,7 +28,7 @@ export function VideoPreview({ channelId, youtubeUrl, channelName, inline = fals
                 if (!res.ok) throw new Error("Failed");
                 const data = await res.json();
                 if (active) setVideos(data);
-            } catch (e) {
+            } catch {
                 if (active) setError("Could not load videos");
             } finally {
                 if (active) setLoading(false);
@@ -58,10 +59,13 @@ export function VideoPreview({ channelId, youtubeUrl, channelName, inline = fals
                     return (
                         <div key={vid.id} className="group relative flex flex-col gap-1 cursor-pointer transition-all hover:bg-white/5 p-2 rounded-lg -mx-2">
                             <div className="relative w-full aspect-video rounded-md overflow-hidden bg-black/40">
-                                <img
+                                <Image
                                     src={vid.thumbnail}
                                     alt={vid.title}
-                                    className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+                                    fill
+                                    sizes="320px"
+                                    unoptimized
+                                    className="object-cover group-hover:scale-105 transition-transform duration-300"
                                 />
                                 {isHot && (
                                     <div className="absolute top-2 left-2 flex items-center gap-1 bg-red-600/90 text-white text-[10px] font-bold px-2 py-0.5 rounded-sm shadow-md">

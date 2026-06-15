@@ -79,7 +79,7 @@ export function detectClipMoments(lines: TranscriptLine[]): ClipMoment[] {
     return topMoments;
 }
 
-function formatSeconds(msStringOrNumber: any): string {
+function formatSeconds(msStringOrNumber: string | number): string {
     const offsetNum = Number(msStringOrNumber);
     // Determine if it's ms or s. Often youtube-transcript returns ms. Wait, youtube-transcript sometimes returns `offset` in milliseconds, sometimes seconds. Let's assume it's ms if it is very large, but usually it's in seconds or ms.
     // the official youtube-transcript package returns offset in milliseconds (as a number or string).

@@ -19,11 +19,11 @@ const API_KEY = process.env.FIRECRAWL_API_KEY;
 const DATA_PATH = join(__dirname, "..", "data", "nodes.json");
 
 type Category =
-  | "Oil & Gas"
+  | "Fossil Fuels"
   | "Power & Utilities"
   | "Renewables"
   | "Nuclear"
-  | "Infrastructure & Logistics"
+  | "Energy Enablers"
   | "Commodity & Energy Markets"
   | "Energy Media & Research"
   | "Energy Advisory & Expertise";

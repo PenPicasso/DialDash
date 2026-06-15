@@ -1,5 +1,6 @@
-import { readFileSync, writeFileSync, existsSync } from "fs";
+import { mkdirSync, readFileSync, writeFileSync, existsSync } from "fs";
 import { join } from "path";
+import { auditProspectActionability } from "../lib/prospectActionability";
 
 // Load environment variables from .env.local
 const envPath = join(__dirname, "..", ".env.local");
@@ -19,6 +20,14 @@ const TAVILY_KEY = process.env.TAVILY_API_KEY;
 const JINA_KEY = process.env.JINA_API_KEY;
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 const DATA_PATH = join(__dirname, "..", "data", "nodes.json");
+const WRITE_PRODUCTION = process.argv.includes("--write-production");
+const STAGING_DIR = join(
+  __dirname,
+  "..",
+  "storage",
+  "prospect-runs",
+  `source-and-sift-${new Date().toISOString().replace(/[:.]/g, "-")}`
+);
 
 type Category =
   | "Fossil Fuels"
@@ -698,7 +707,9 @@ async function siftAndEnrichLocally(
     sourceUrl: candidate.sourceUrl,
     confidenceScore: reachScore * 16 + 10,
     reachabilityScore: reachScore,
-    reachabilityStatus: reachStatus
+    reachabilityStatus: reachStatus,
+    leadSource: candidate.type,
+    verificationTier: "DETERMINISTIC"
   };
 
   return { node: newNode };
@@ -893,7 +904,9 @@ async function siftAndEnrichWithGemini(
     sourceUrl: siftResult.sourceUrl || candidate.sourceUrl,
     confidenceScore: siftResult.reachScore * 16 + 10,
     reachabilityScore: siftResult.reachScore,
-    reachabilityStatus: reachStatus
+    reachabilityStatus: reachStatus,
+    leadSource: candidate.type,
+    verificationTier: "LLM_ASSISTED"
   };
 
   return { node: newNode };
@@ -1034,8 +1047,15 @@ async function main() {
   let manualReviewCount = 0;
 
   const rejectedMonoliths: string[] = [];
+  const rejectedCandidates: { title: string; type: string; reason: string }[] = [];
   const pointManOverrides: string[] = [];
   const addedNodes: NodeData[] = [];
+
+  if (!WRITE_PRODUCTION) {
+    mkdirSync(STAGING_DIR, { recursive: true });
+    console.log(`Production writes disabled. Staging artifacts in ${STAGING_DIR}`);
+    writeFileSync(join(STAGING_DIR, "candidates.json"), JSON.stringify(uniquePool, null, 2) + "\n", "utf-8");
+  }
 
   for (const candidate of uniquePool) {
     if (addedCount >= TARGET_ADDED) {
@@ -1059,6 +1079,11 @@ async function main() {
 
       if (result.rejectedReason) {
         rejectedCount++;
+        rejectedCandidates.push({
+          title: candidate.title,
+          type: candidate.type,
+          reason: result.rejectedReason,
+        });
         if (result.rejectedReason.includes("Monolith") || result.rejectedReason.includes("monolith")) {
           rejectedMonoliths.push(candidate.title);
         }
@@ -1066,7 +1091,7 @@ async function main() {
         continue;
       }
 
-      const node = result.node;
+      const node = auditProspectActionability(result.node).node;
       
       // Successfully sifted & verified
       db.nodes.push(node);
@@ -1086,7 +1111,12 @@ async function main() {
 
       // Write changes incrementally to prevent data loss
       if (addedCount % 1 === 0) {
-        writeFileSync(DATA_PATH, JSON.stringify(db, null, 2) + "\n", "utf-8");
+        if (WRITE_PRODUCTION) {
+          writeFileSync(DATA_PATH, JSON.stringify(db, null, 2) + "\n", "utf-8");
+        } else {
+          writeFileSync(join(STAGING_DIR, "accepted.json"), JSON.stringify(addedNodes, null, 2) + "\n", "utf-8");
+          writeFileSync(join(STAGING_DIR, "rejected.json"), JSON.stringify(rejectedCandidates, null, 2) + "\n", "utf-8");
+        }
       }
 
     } catch (e: any) {
@@ -1094,9 +1124,31 @@ async function main() {
     }
   }
 
-  // Final database write
-  writeFileSync(DATA_PATH, JSON.stringify(db, null, 2) + "\n", "utf-8");
-  console.log("\nDatabase written successfully!");
+  // Final database or staged artifact write
+  if (WRITE_PRODUCTION) {
+    writeFileSync(DATA_PATH, JSON.stringify(db, null, 2) + "\n", "utf-8");
+    console.log("\nDatabase written successfully!");
+  } else {
+    writeFileSync(join(STAGING_DIR, "accepted.json"), JSON.stringify(addedNodes, null, 2) + "\n", "utf-8");
+    writeFileSync(join(STAGING_DIR, "rejected.json"), JSON.stringify(rejectedCandidates, null, 2) + "\n", "utf-8");
+    writeFileSync(
+      join(STAGING_DIR, "metrics.json"),
+      JSON.stringify(
+        {
+          generatedAt: new Date().toISOString(),
+          sourced: sourcedCount,
+          rejected: rejectedCount,
+          added: addedCount,
+          manualReview: manualReviewCount,
+          productionWrite: false,
+        },
+        null,
+        2
+      ) + "\n",
+      "utf-8"
+    );
+    console.log(`\nStaged artifacts written to ${STAGING_DIR}. Production data was not modified.`);
+  }
 
   // Output test batch metrics report
   console.log("\n=================== BATCH PIPELINE RUN SUMMARY ===================");

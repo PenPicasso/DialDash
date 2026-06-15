@@ -1,14 +1,15 @@
 import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
+import { auditProspectActionability } from "../lib/prospectActionability";
 
 const DATA_PATH = join(__dirname, "..", "data", "nodes.json");
 
 type Category =
-  | "Oil & Gas"
+  | "Fossil Fuels"
   | "Power & Utilities"
   | "Renewables"
   | "Nuclear"
-  | "Infrastructure & Logistics"
+  | "Energy Enablers"
   | "Commodity & Energy Markets"
   | "Energy Media & Research"
   | "Energy Advisory & Expertise";
@@ -190,11 +191,11 @@ function remapCategory(oldCat: string, oldSub: string, host: string): { category
   const normSub = oldSub.trim();
 
   const validCategories = [
-    "Oil & Gas",
+    "Fossil Fuels",
     "Power & Utilities",
     "Renewables",
     "Nuclear",
-    "Infrastructure & Logistics",
+    "Energy Enablers",
     "Commodity & Energy Markets",
     "Energy Media & Research",
     "Energy Advisory & Expertise"
@@ -206,22 +207,22 @@ function remapCategory(oldCat: string, oldSub: string, host: string): { category
 
   if (normCat === "Oil & Gas") {
     if (normSub.toLowerCase().includes("upstream") || host.toLowerCase().includes("upstream")) {
-      return { category: "Oil & Gas", subcategory: "Upstream" };
+      return { category: "Fossil Fuels", subcategory: "Upstream" };
     }
     if (normSub.toLowerCase().includes("trading") || normSub.toLowerCase().includes("market")) {
       return { category: "Commodity & Energy Markets", subcategory: "Physical & Financial Trading" };
     }
     if (normSub.toLowerCase().includes("downstream")) {
-      return { category: "Oil & Gas", subcategory: "Downstream" };
+      return { category: "Fossil Fuels", subcategory: "Downstream" };
     }
     if (normSub.toLowerCase().includes("service")) {
-      return { category: "Oil & Gas", subcategory: "Service Companies" };
+      return { category: "Fossil Fuels", subcategory: "Service Companies" };
     }
-    return { category: "Oil & Gas", subcategory: "Upstream" };
+    return { category: "Fossil Fuels", subcategory: "Upstream" };
   }
 
   if (normCat === "LNG & Gas") {
-    return { category: "Oil & Gas", subcategory: "Midstream" };
+    return { category: "Fossil Fuels", subcategory: "Midstream" };
   }
 
   if (normCat === "Renewables & Clean") {
@@ -607,7 +608,7 @@ const NEW_PROSPECTS: Omit<NodeData, "priority">[] = [
     channel: "Oil and Gas Startups",
     host: "Collin McLelland",
     energyType: "Oilfield Technology & Shale",
-    category: "Oil & Gas",
+    category: "Fossil Fuels",
     subcategory: "Upstream",
     region: "US",
     podcastAppleUrl: "https://podcasts.apple.com/us/podcast/oil-and-gas-startups/id1483329061",
@@ -627,7 +628,7 @@ const NEW_PROSPECTS: Omit<NodeData, "priority">[] = [
     channel: "Digital Oil and Gas",
     host: "Geoffrey Cann",
     energyType: "Oil & Gas Digitalization",
-    category: "Oil & Gas",
+    category: "Fossil Fuels",
     subcategory: "Upstream",
     region: "Canada",
     podcastAppleUrl: "https://podcasts.apple.com/us/podcast/digital-oil-and-gas/id1298835848",
@@ -647,7 +648,7 @@ const NEW_PROSPECTS: Omit<NodeData, "priority">[] = [
     channel: "Oil and Gas This Week",
     host: "Mark LaCour",
     energyType: "Oil & Gas Market News",
-    category: "Oil & Gas",
+    category: "Fossil Fuels",
     subcategory: "Upstream",
     region: "US",
     podcastAppleUrl: "https://podcasts.apple.com/us/podcast/oil-and-gas-this-week/id1008064971",
@@ -667,7 +668,7 @@ const NEW_PROSPECTS: Omit<NodeData, "priority">[] = [
     channel: "Oil and Gas Onshore",
     host: "Paige Wilson",
     energyType: "Onshore Drilling & Operations",
-    category: "Oil & Gas",
+    category: "Fossil Fuels",
     subcategory: "Upstream",
     region: "US",
     podcastAppleUrl: "https://podcasts.apple.com/us/podcast/oil-and-gas-onshore/id1585806240",
@@ -1459,7 +1460,7 @@ const NEW_PROSPECTS: Omit<NodeData, "priority">[] = [
     channel: "Black Gold Energy",
     host: "Gary Ross",
     energyType: "Global Oil Supply/Demand",
-    category: "Oil & Gas",
+    category: "Fossil Fuels",
     subcategory: "Upstream",
     region: "US",
     xProfile: "https://x.com/GaryRoss46",
@@ -1895,6 +1896,8 @@ async function main() {
     } else {
       node.priority = "COLD";
     }
+
+    Object.assign(node, auditProspectActionability(node as any, now.toISOString()).node);
 
     // Accumulate stats
     if (node.needsManualReview) {

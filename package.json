@@ -7,7 +7,11 @@
     "dev:workspace": "powershell -ExecutionPolicy Bypass -File scripts/launch-workspace.ps1",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint app components lib --max-warnings=0",
+    "typecheck": "tsc --noEmit --incremental false",
+    "validate:data": "npx tsx scripts/validate-data.ts",
+    "audit:actionability": "npx tsx scripts/audit-actionability.ts",
+    "source:dry-run": "npx tsx scripts/source-dry-run.ts",
     "refresh": "npx tsx scripts/refresh-followers.ts"
   },
   "dependencies": {

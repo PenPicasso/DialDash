@@ -16,7 +16,7 @@ export function MomentsPanel({ videoId, onClose }: { videoId: string; onClose: (
                 if (!res.ok) throw new Error("Failed");
                 const data = await res.json();
                 setMoments(data.moments || []);
-            } catch (e) {
+            } catch {
                 setError("Error analyzing transcript");
             } finally {
                 setLoading(false);
@@ -62,7 +62,7 @@ export function MomentsPanel({ videoId, onClose }: { videoId: string; onClose: (
                                 {m.timestamp}
                             </a>
                             <p className="text-sm text-foreground/90 leading-relaxed italic border-l-2 border-accent/30 pl-3 py-1">
-                                "{m.text}"
+                                &quot;{m.text}&quot;
                             </p>
 
                             <div className="flex items-center gap-2 mt-3 text-xs">

@@ -8,6 +8,17 @@ export type Category =
   | "Energy Media & Research"
   | "Energy Advisory & Expertise";
 
+export const CATEGORIES: Category[] = [
+  "Fossil Fuels",
+  "Power & Utilities",
+  "Renewables",
+  "Nuclear",
+  "Energy Enablers",
+  "Commodity & Energy Markets",
+  "Energy Media & Research",
+  "Energy Advisory & Expertise",
+];
+
 export const CATEGORY_COLORS: Record<Category, string> = {
   "Fossil Fuels": "#ef4444",              // Vibrant Red
   "Power & Utilities": "#f59e0b",      // Amber
@@ -75,5 +86,15 @@ export type NodeData = {
   reachabilityScore?: number;
   reachabilityStatus?: "STRONG" | "WEAK";
   manualReviewReason?: string;
+  actionabilityStatus?: "READY" | "REVIEW" | "REJECTED";
+  sourceEvidenceUrl?: string;
+  videoGapReason?: string;
+  tofChannels?: string[];
+  mofChannels?: string[];
+  bofOffer?: string;
+  pitchHook?: string;
+  leadSource?: string;
+  verificationTier?: "DETERMINISTIC" | "LLM_ASSISTED" | "MANUAL" | "LEGACY";
+  lastActionabilityAuditAt?: string;
 };
 
