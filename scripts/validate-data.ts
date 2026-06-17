@@ -95,6 +95,9 @@ for (const node of db.nodes) {
     if (!node.mofChannels?.length) errors.push(`${node.id}: READY missing mofChannels`);
     if (!hasText(node.bofOffer)) errors.push(`${node.id}: READY missing bofOffer`);
     if (!hasText(node.videoGapReason)) errors.push(`${node.id}: READY missing videoGapReason`);
+    if (!hasText(node.latestYoutubePublishedAt) && !hasText(node.latestPodcastPublishedAt)) {
+      warnings.push(`${node.id}: READY missing verified YouTube/podcast freshness`);
+    }
   } else if (node.actionabilityStatus === "REJECTED") {
     stats.rejected++;
   } else {

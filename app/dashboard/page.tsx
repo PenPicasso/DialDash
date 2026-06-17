@@ -40,7 +40,9 @@ type FreshnessSignal = {
   source: string;
   href?: string;
   date?: string;
+  title?: string;
   available: boolean;
+  verified: boolean;
 };
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
@@ -119,10 +121,6 @@ function formatLatestDate(dateValue?: string) {
   return `${Math.floor(diffMs / MS_PER_DAY)}d ago`;
 }
 
-function getLatestDate(node: NodeData) {
-  return node.lastPublishDate || node.lastKnownPublishDate;
-}
-
 function formatCount(value: number | null | undefined) {
   if (!value) return "";
   if (value >= 1_000_000) return `${(value / 1_000_000).toFixed(value >= 10_000_000 ? 0 : 1)}M`;
@@ -133,32 +131,35 @@ function formatCount(value: number | null | undefined) {
 function formatSource(source?: string) {
   if (!source) return "Unverified";
   if (source === "apple_podcasts") return "Apple Podcasts";
+  if (source === "itunes_lookup") return "Apple Lookup";
   return titleCase(source);
 }
 
 function getMediaFreshness(node: NodeData) {
-  const latestDate = getLatestDate(node);
-  const source = (node.sourceOfLastPublishDate || "").toLowerCase();
-  const isPodcastEvidence = source === "apple_podcasts" || source === "rss";
-  const youtubeDate = source === "youtube" ? latestDate : undefined;
-  const appleDate = node.podcastAppleUrl && isPodcastEvidence ? latestDate : undefined;
+  const youtubeDate = node.latestYoutubePublishedAt || node.latestYoutubePublishDate;
+  const podcastDate = node.latestPodcastPublishedAt || node.latestPodcastPublishDate;
+  const podcastHref = node.latestPodcastEvidenceUrl || node.podcastAppleUrl || node.rssUrl;
 
   const signals: FreshnessSignal[] = [
     {
       label: "YouTube",
-      value: youtubeDate ? formatLatestDate(youtubeDate) : node.youtubeUrl && !node.isXOnly ? "Linked" : "Missing",
-      source: youtubeDate ? "YouTube verified" : node.youtubeUrl && !node.isXOnly ? "Date not verified" : "No channel",
-      href: node.youtubeUrl,
+      value: youtubeDate ? formatLatestDate(youtubeDate) : node.youtubeUrl && !node.isXOnly ? "Needs check" : "Missing",
+      source: youtubeDate ? "Verified YouTube" : node.youtubeUrl && !node.isXOnly ? "No fetched date" : "No channel",
+      href: node.latestYoutubeEvidenceUrl || node.youtubeUrl,
       date: youtubeDate,
+      title: node.latestYoutubeTitle,
       available: Boolean(node.youtubeUrl && !node.isXOnly),
+      verified: Boolean(youtubeDate),
     },
     {
-      label: "Apple Pod",
-      value: appleDate ? formatLatestDate(appleDate) : node.podcastAppleUrl ? "Linked" : "Missing",
-      source: appleDate ? `via ${formatSource(source)}` : node.podcastAppleUrl ? "Date not verified" : "No Apple page",
-      href: node.podcastAppleUrl,
-      date: appleDate,
-      available: Boolean(node.podcastAppleUrl),
+      label: "Podcast",
+      value: podcastDate ? formatLatestDate(podcastDate) : podcastHref ? "Needs check" : "Missing",
+      source: podcastDate ? `via ${formatSource(node.latestPodcastSource)}` : podcastHref ? "No fetched date" : "No feed/page",
+      href: podcastHref,
+      date: podcastDate,
+      title: node.latestPodcastTitle,
+      available: Boolean(podcastHref),
+      verified: Boolean(podcastDate),
     },
   ];
 
@@ -172,13 +173,13 @@ function getMediaFreshness(node: NodeData) {
 
   const primary = datedSignals[0] || signals.find((signal) => signal.available) || {
     label: "Media",
-    value: latestDate ? formatLatestDate(latestDate) : "Unknown",
-    source: latestDate ? formatSource(source) : "No social media date",
-    date: latestDate,
+    value: "Needs check",
+    source: "No verified media date",
     available: false,
+    verified: false,
   };
 
-  return { primary, signals };
+  return { primary, signals, verified: datedSignals.length > 0 };
 }
 
 function SelectFilter({
@@ -241,27 +242,32 @@ function Metric({
   );
 }
 
-function QuickButton({
-  label,
-  active,
-  onClick,
+function ViewPresetSelect({
+  value,
+  onChange,
 }: {
-  label: string;
-  active: boolean;
-  onClick: () => void;
+  value: string;
+  onChange: (value: string) => void;
 }) {
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`h-10 rounded-lg px-3 text-sm font-bold transition-colors ${
-        active
-          ? "bg-brand-blue text-white shadow-sm"
-          : "border border-border bg-background text-foreground/75 hover:border-brand-blue hover:text-brand-blue"
-      }`}
-    >
-      {label}
-    </button>
+    <label className="min-w-[160px] space-y-1.5">
+      <span className="block text-[10px] font-bold uppercase tracking-wider text-muted">
+        View
+      </span>
+      <select
+        value={value}
+        onChange={(event) => onChange(event.target.value)}
+        className="h-11 w-full rounded-lg border border-border bg-input-bg px-3 pr-9 text-sm font-bold text-foreground outline-none transition-colors focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10"
+      >
+        <option value="ready">Workable</option>
+        <option value="hot">Hot ready</option>
+        <option value="strong">Strong reach</option>
+        <option value="all">All records</option>
+        <option value="custom" disabled>
+          Custom filters
+        </option>
+      </select>
+    </label>
   );
 }
 
@@ -307,25 +313,37 @@ function priorityClasses(priority: NodeData["priority"]) {
 
 function FreshnessCell({ node }: { node: NodeData }) {
   const freshness = getMediaFreshness(node);
+  const toneClass = freshness.verified
+    ? "border-brand-blue/30 bg-brand-blue/5"
+    : "border-amber-500/30 bg-amber-500/10";
 
   return (
     <div className="group/fresh inline-block min-w-[132px]" onClick={(event) => event.stopPropagation()}>
-      <div className="rounded-lg border border-border bg-background px-3 py-2 transition-all duration-150 group-hover/fresh:w-[230px] group-hover/fresh:border-brand-blue/40 group-hover/fresh:shadow-sm">
+      <div className={`rounded-lg border px-3 py-2 transition-all duration-150 group-hover/fresh:w-[260px] group-hover/fresh:shadow-sm ${toneClass}`}>
         <div className="flex items-start justify-between gap-3">
-          <div>
-            <div className="text-xs font-extrabold text-foreground">{freshness.primary.value}</div>
-            <div className="mt-0.5 text-[10px] font-bold uppercase text-muted">{freshness.primary.label}</div>
+          <div className="min-w-0">
+            <div className="flex items-center gap-1.5 text-xs font-extrabold text-foreground">
+              <span
+                className={`h-1.5 w-1.5 shrink-0 rounded-full ${
+                  freshness.verified ? "bg-brand-blue" : "bg-amber-500"
+                }`}
+              />
+              {freshness.primary.value}
+            </div>
+            <div className="mt-0.5 truncate text-[10px] font-bold uppercase text-muted">
+              {freshness.primary.label}
+            </div>
           </div>
           <ChevronDown
             size={14}
             className="mt-0.5 shrink-0 text-muted transition-transform group-hover/fresh:rotate-180"
           />
         </div>
-        <div className="grid max-h-0 gap-2 overflow-hidden opacity-0 transition-all duration-150 group-hover/fresh:mt-3 group-hover/fresh:max-h-28 group-hover/fresh:opacity-100">
+        <div className="grid max-h-0 gap-2 overflow-hidden opacity-0 transition-all duration-150 group-hover/fresh:mt-3 group-hover/fresh:max-h-36 group-hover/fresh:opacity-100">
           {freshness.signals.map((signal) => (
-            <div key={signal.label} className="flex items-center justify-between gap-2 text-[11px]">
+            <div key={signal.label} className="grid grid-cols-[68px_1fr] gap-2 text-[11px]">
               <span className="font-bold text-foreground">{signal.label}</span>
-              <span className="text-right text-muted">
+              <span className="min-w-0 text-right text-muted">
                 {signal.href ? (
                   <a
                     href={signal.href}
@@ -339,6 +357,11 @@ function FreshnessCell({ node }: { node: NodeData }) {
                   signal.value
                 )}
                 <span className="block text-[9px] uppercase">{signal.source}</span>
+                {signal.title && (
+                  <span className="block truncate text-[10px] normal-case text-muted" title={signal.title}>
+                    {signal.title}
+                  </span>
+                )}
               </span>
             </div>
           ))}
@@ -509,18 +532,30 @@ export default function Dashboard() {
       archived: nodes.filter((node) => node.actionabilityStatus === "REJECTED").length,
       hotReady: nodes.filter((node) => node.actionabilityStatus === "READY" && node.priority === "HOT").length,
       strongReady: nodes.filter((node) => node.actionabilityStatus === "READY" && node.reachabilityStatus === "STRONG").length,
+      mediaVerified: nodes.filter(
+        (node) =>
+          node.actionabilityStatus === "READY" &&
+          Boolean(node.latestYoutubePublishedAt || node.latestYoutubePublishDate || node.latestPodcastPublishedAt || node.latestPodcastPublishDate)
+      ).length,
     }),
     [nodes]
   );
 
   const visibleNodes = filteredNodes.slice(0, visibleCount);
   const hasMoreRows = visibleNodes.length < filteredNodes.length;
-  const isReadyPreset = actionability === "READY" && !priority && !reachability;
-  const isHotPreset = actionability === "READY" && priority === "HOT" && !reachability;
-  const isStrongPreset = actionability === "READY" && reachability === "STRONG" && !priority;
-  const isAllPreset = !actionability && !priority && !reachability;
+  const viewPreset =
+    actionability === "READY" && !priority && !reachability
+      ? "ready"
+      : actionability === "READY" && priority === "HOT" && !reachability
+        ? "hot"
+        : actionability === "READY" && reachability === "STRONG" && !priority
+          ? "strong"
+          : !actionability && !priority && !reachability
+            ? "all"
+            : "custom";
 
-  const hasAdvancedFilters = Boolean(category || formatFilter || confidence || outreach || leadSource || funnel);
+  const advancedFilterCount = [category, formatFilter, confidence, outreach, leadSource, funnel].filter(Boolean).length;
+  const hasAdvancedFilters = advancedFilterCount > 0;
   const hasActiveFilters = Boolean(
     search ||
       actionability !== "READY" ||
@@ -540,6 +575,26 @@ export default function Dashboard() {
     setOutreach("");
     setLeadSource("");
     setFunnel("");
+  };
+
+  const applyViewPreset = (value: string) => {
+    if (value === "ready") {
+      setActionability("READY");
+      setPriority("");
+      setReachability("");
+    } else if (value === "hot") {
+      setActionability("READY");
+      setPriority("HOT");
+      setReachability("");
+    } else if (value === "strong") {
+      setActionability("READY");
+      setPriority("");
+      setReachability("STRONG");
+    } else if (value === "all") {
+      setActionability("");
+      setPriority("");
+      setReachability("");
+    }
   };
 
   return (
@@ -567,58 +622,21 @@ export default function Dashboard() {
         <Metric label="Workable" value={databaseStats.ready} tone="orange" />
         <Metric label="Hot Ready" value={databaseStats.hotReady} />
         <Metric label="Strong Reach" value={databaseStats.strongReady} tone="blue" />
-        <Metric label="In View" value={loadState === "loading" ? "..." : filteredNodes.length} />
+        <Metric label="Media Fresh" value={loadState === "loading" ? "..." : databaseStats.mediaVerified} />
       </section>
 
       <section className="mb-5 rounded-xl border border-border bg-panel p-3 shadow-sm">
         <div className="flex flex-col gap-3 xl:flex-row xl:items-center">
+          <ViewPresetSelect value={viewPreset} onChange={applyViewPreset} />
+
           <div className="relative min-w-0 flex-1">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-brand-blue" size={18} />
             <input
               type="text"
-              placeholder="Search host, channel, person, organization..."
+              placeholder="Search host, channel, point-man, organization..."
               className="h-11 w-full rounded-lg border border-border bg-input-bg pl-10 pr-3 text-sm font-medium text-foreground outline-none transition-colors placeholder:text-placeholder focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
-            />
-          </div>
-
-          <div className="grid grid-cols-2 gap-2 sm:flex">
-            <QuickButton
-              label="Workable"
-              active={isReadyPreset}
-              onClick={() => {
-                setActionability("READY");
-                setPriority("");
-                setReachability("");
-              }}
-            />
-            <QuickButton
-              label="Hot"
-              active={isHotPreset}
-              onClick={() => {
-                setActionability("READY");
-                setPriority("HOT");
-                setReachability("");
-              }}
-            />
-            <QuickButton
-              label="Strong reach"
-              active={isStrongPreset}
-              onClick={() => {
-                setActionability("READY");
-                setPriority("");
-                setReachability("STRONG");
-              }}
-            />
-            <QuickButton
-              label="All"
-              active={isAllPreset}
-              onClick={() => {
-                setActionability("");
-                setPriority("");
-                setReachability("");
-              }}
             />
           </div>
 
@@ -634,7 +652,9 @@ export default function Dashboard() {
             <SlidersHorizontal size={16} />
             Filters
             {hasAdvancedFilters && (
-              <span className="rounded-full bg-brand-orange px-1.5 py-0.5 text-[10px] text-white">on</span>
+              <span className="rounded-full bg-brand-orange px-1.5 py-0.5 text-[10px] text-white">
+                {advancedFilterCount}
+              </span>
             )}
           </button>
         </div>

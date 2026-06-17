@@ -72,6 +72,22 @@ export type NodeData = {
   cadenceEvidenceUrl?: string;
   lastKnownPublishDate?: string;
   sourceOfLastPublishDate?: string;
+  latestYoutubePublishedAt?: string;
+  latestYoutubePublishDate?: string;
+  latestYoutubeTitle?: string;
+  latestYoutubeEvidenceUrl?: string;
+  latestYoutubeCheckedAt?: string;
+  latestPodcastPublishedAt?: string;
+  latestPodcastPublishDate?: string;
+  latestPodcastTitle?: string;
+  latestPodcastEvidenceUrl?: string;
+  latestPodcastSource?: "rss" | "apple_podcasts" | "itunes_lookup";
+  latestPodcastCheckedAt?: string;
+  latestMediaPublishedAt?: string;
+  latestMediaPublishDate?: string;
+  latestMediaSource?: "youtube" | "podcast";
+  latestMediaTitle?: string;
+  lastMediaFreshnessAuditAt?: string;
   needsManualReview?: boolean;
   brokenLinks?: string[];
   

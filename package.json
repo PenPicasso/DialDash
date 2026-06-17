@@ -11,6 +11,7 @@
     "typecheck": "tsc --noEmit --incremental false",
     "validate:data": "npx tsx scripts/validate-data.ts",
     "audit:actionability": "npx tsx scripts/audit-actionability.ts",
+    "refresh:media": "npx tsx scripts/refresh-media-freshness.ts",
     "source:dry-run": "npx tsx scripts/source-dry-run.ts",
     "refresh": "npx tsx scripts/refresh-followers.ts"
   },

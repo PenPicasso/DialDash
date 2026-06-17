@@ -42,6 +42,10 @@ Key fields added for agents:
 - `leadSource`
 - `verificationTier`
 - `lastActionabilityAuditAt`
+- `latestYoutubePublishedAt`
+- `latestPodcastPublishedAt`
+- `latestMediaPublishedAt`
+- `lastMediaFreshnessAuditAt`
 
 ## Current State
 
@@ -60,6 +64,7 @@ The 642 former REVIEW rows were finished by applying the hard gates and marking 
 
 Use these from the repo root:
 - `npm run audit:actionability`: recompute actionability, funnel fields, pitch hooks, and final READY/REJECTED status.
+- `npm run refresh:media`: refresh source-specific YouTube/podcast freshness for READY rows.
 - `npm run validate:data`: validate schema, canonical categories, READY gates, HOT contact completeness, and duplicate warnings.
 - `npm run source:dry-run -- --limit 25 --no-write`: stage new candidates under `storage/prospect-runs/` without touching production data.
 - `npm run typecheck`: non-mutating TypeScript check using `--incremental false`.
@@ -73,11 +78,22 @@ Never run legacy sourcing as a production write unless explicitly requested. `sc
 The dashboard now includes:
 - Compact dropdown filters for actionability, reachability, funnel opportunity, best outreach channel, lead source, format, category, priority, and confidence.
 - Brand colors sampled from the provided Energy Dial logo reference: orange `#FE8007` and blue `#113E80`. Do not add the logo asset itself unless the user explicitly asks.
-- `Latest` column showing the last known post date as `Today`, `Yesterday`, or `<days>d ago`; future-dated records should display a short absolute date instead of a relative freshness label.
+- `Latest`/freshness column showing only source-specific YouTube or podcast freshness as `Today`, `Yesterday`, or `<days>d ago`; future-dated records should display a short absolute date instead of a relative freshness label.
 - Default dashboard view is `READY` only. UI labels `REJECTED` rows as `Archived` because those records failed hard actionability gates and should not be treated as active sales targets.
 - Prospect data is loaded from `/api/prospects` instead of importing `data/nodes.json` into the client page, so the initial dashboard HTML stays light. The table renders in batches of 100.
 - The freshness column prioritizes YouTube and Apple Podcast/RSS evidence and expands on hover to show both platform signals.
 - Detail drawer showing TOF/MOF/BOF and the stored prospect-specific pitch hook.
+
+## Freshness Methodology
+
+Do not use generic `lastPublishDate` or `lastKnownPublishDate` as the dashboard freshness source. Those fields may be legacy cadence evidence and can be stale or platform-ambiguous.
+
+`npm run refresh:media` must populate source-specific fields:
+- YouTube: `latestYoutubePublishedAt`, `latestYoutubeTitle`, `latestYoutubeEvidenceUrl`.
+- Podcast: `latestPodcastPublishedAt`, `latestPodcastTitle`, `latestPodcastEvidenceUrl`, `latestPodcastSource`.
+- Primary media: `latestMediaPublishedAt`, `latestMediaSource`, `latestMediaTitle`.
+
+Apple/iTunes lookup results are valid only when the result is a podcast result (`wrapperType: "track"`, `kind: "podcast"`), has a `feedUrl`, and links to `podcasts.apple.com`. Do not overwrite podcast fields from music, album, audiobook, or other Apple media results.
 
 ## Verification Baseline
 
