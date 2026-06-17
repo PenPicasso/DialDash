@@ -1,20 +1,50 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
-import data from "@/data/nodes.json";
+import dynamic from "next/dynamic";
+import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import { CATEGORIES, NodeData } from "@/lib/types";
-import { VideoPreview } from "@/components/videoPreview";
-import { NodeDetail } from "@/components/nodeDetail";
-import { AlertTriangle, ExternalLink, Moon, Search, Sun, Youtube } from "lucide-react";
+import {
+  AlertTriangle,
+  ChevronDown,
+  ExternalLink,
+  Moon,
+  Search,
+  SlidersHorizontal,
+  Sun,
+  X,
+  Youtube,
+} from "lucide-react";
 
-const allNodes = data.nodes as NodeData[];
+const VideoPreview = dynamic(
+  () => import("@/components/videoPreview").then((mod) => mod.VideoPreview),
+  { ssr: false, loading: () => null }
+);
+
+const NodeDetail = dynamic(
+  () => import("@/components/nodeDetail").then((mod) => mod.NodeDetail),
+  { ssr: false }
+);
 
 type FilterOption = {
   label: string;
   value: string;
 };
 
+type ProspectPayload = {
+  nodes: NodeData[];
+};
+
+type FreshnessSignal = {
+  label: string;
+  value: string;
+  source: string;
+  href?: string;
+  date?: string;
+  available: boolean;
+};
+
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
+const PAGE_SIZE = 100;
 
 const formatOptions: FilterOption[] = [
   { label: "Podcast only", value: "podcast-no-video" },
@@ -44,6 +74,12 @@ function titleCase(value: string) {
     .replace(/[_-]/g, " ")
     .toLowerCase()
     .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function actionabilityLabel(value: string) {
+  if (value === "READY") return "Ready";
+  if (value === "REJECTED") return "Archived";
+  return titleCase(value);
 }
 
 function parsePublishDate(dateValue?: string) {
@@ -94,6 +130,57 @@ function formatCount(value: number | null | undefined) {
   return `${value}`;
 }
 
+function formatSource(source?: string) {
+  if (!source) return "Unverified";
+  if (source === "apple_podcasts") return "Apple Podcasts";
+  return titleCase(source);
+}
+
+function getMediaFreshness(node: NodeData) {
+  const latestDate = getLatestDate(node);
+  const source = (node.sourceOfLastPublishDate || "").toLowerCase();
+  const isPodcastEvidence = source === "apple_podcasts" || source === "rss";
+  const youtubeDate = source === "youtube" ? latestDate : undefined;
+  const appleDate = node.podcastAppleUrl && isPodcastEvidence ? latestDate : undefined;
+
+  const signals: FreshnessSignal[] = [
+    {
+      label: "YouTube",
+      value: youtubeDate ? formatLatestDate(youtubeDate) : node.youtubeUrl && !node.isXOnly ? "Linked" : "Missing",
+      source: youtubeDate ? "YouTube verified" : node.youtubeUrl && !node.isXOnly ? "Date not verified" : "No channel",
+      href: node.youtubeUrl,
+      date: youtubeDate,
+      available: Boolean(node.youtubeUrl && !node.isXOnly),
+    },
+    {
+      label: "Apple Pod",
+      value: appleDate ? formatLatestDate(appleDate) : node.podcastAppleUrl ? "Linked" : "Missing",
+      source: appleDate ? `via ${formatSource(source)}` : node.podcastAppleUrl ? "Date not verified" : "No Apple page",
+      href: node.podcastAppleUrl,
+      date: appleDate,
+      available: Boolean(node.podcastAppleUrl),
+    },
+  ];
+
+  const datedSignals = signals
+    .filter((signal) => signal.date)
+    .sort((a, b) => {
+      const aTime = parsePublishDate(a.date)?.getTime() || 0;
+      const bTime = parsePublishDate(b.date)?.getTime() || 0;
+      return bTime - aTime;
+    });
+
+  const primary = datedSignals[0] || signals.find((signal) => signal.available) || {
+    label: "Media",
+    value: latestDate ? formatLatestDate(latestDate) : "Unknown",
+    source: latestDate ? formatSource(source) : "No social media date",
+    date: latestDate,
+    available: false,
+  };
+
+  return { primary, signals };
+}
+
 function SelectFilter({
   label,
   value,
@@ -128,16 +215,78 @@ function SelectFilter({
   );
 }
 
-function actionabilityClasses(status?: NodeData["actionabilityStatus"]) {
+function Metric({
+  label,
+  value,
+  tone = "neutral",
+  title,
+}: {
+  label: string;
+  value: number | string;
+  tone?: "orange" | "blue" | "neutral";
+  title?: string;
+}) {
+  const toneClass =
+    tone === "orange"
+      ? "border-brand-orange/35 text-brand-orange"
+      : tone === "blue"
+        ? "border-brand-blue/25 text-brand-blue dark:text-blue-300"
+        : "border-border text-foreground";
+
+  return (
+    <div className={`rounded-lg border bg-panel px-4 py-3 ${toneClass}`} title={title}>
+      <div className="text-[10px] font-bold uppercase tracking-wider text-muted">{label}</div>
+      <div className="mt-1 text-2xl font-extrabold">{value}</div>
+    </div>
+  );
+}
+
+function QuickButton({
+  label,
+  active,
+  onClick,
+}: {
+  label: string;
+  active: boolean;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`h-10 rounded-lg px-3 text-sm font-bold transition-colors ${
+        active
+          ? "bg-brand-blue text-white shadow-sm"
+          : "border border-border bg-background text-foreground/75 hover:border-brand-blue hover:text-brand-blue"
+      }`}
+    >
+      {label}
+    </button>
+  );
+}
+
+function StatusPill({ status }: { status?: NodeData["actionabilityStatus"] }) {
   if (status === "READY") {
-    return "border-brand-orange/30 bg-brand-orange/10 text-brand-orange";
+    return (
+      <span className="rounded-full border border-brand-orange/30 bg-brand-orange/10 px-2.5 py-1 text-xs font-bold text-brand-orange">
+        Ready
+      </span>
+    );
   }
 
   if (status === "REJECTED") {
-    return "border-red-500/25 bg-red-500/10 text-red-600 dark:text-red-400";
+    return (
+      <span className="rounded-full border border-border bg-background px-2.5 py-1 text-xs font-bold text-muted">
+        Archived
+      </span>
+    );
   }
 
-  return "border-amber-500/25 bg-amber-500/10 text-amber-600 dark:text-amber-400";
+  return (
+    <span className="rounded-full border border-amber-500/25 bg-amber-500/10 px-2.5 py-1 text-xs font-bold text-amber-600 dark:text-amber-400">
+      Review
+    </span>
+  );
 }
 
 function priorityClasses(priority: NodeData["priority"]) {
@@ -156,8 +305,54 @@ function priorityClasses(priority: NodeData["priority"]) {
   return "border-border bg-panel text-foreground/75";
 }
 
+function FreshnessCell({ node }: { node: NodeData }) {
+  const freshness = getMediaFreshness(node);
+
+  return (
+    <div className="group/fresh inline-block min-w-[132px]" onClick={(event) => event.stopPropagation()}>
+      <div className="rounded-lg border border-border bg-background px-3 py-2 transition-all duration-150 group-hover/fresh:w-[230px] group-hover/fresh:border-brand-blue/40 group-hover/fresh:shadow-sm">
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <div className="text-xs font-extrabold text-foreground">{freshness.primary.value}</div>
+            <div className="mt-0.5 text-[10px] font-bold uppercase text-muted">{freshness.primary.label}</div>
+          </div>
+          <ChevronDown
+            size={14}
+            className="mt-0.5 shrink-0 text-muted transition-transform group-hover/fresh:rotate-180"
+          />
+        </div>
+        <div className="grid max-h-0 gap-2 overflow-hidden opacity-0 transition-all duration-150 group-hover/fresh:mt-3 group-hover/fresh:max-h-28 group-hover/fresh:opacity-100">
+          {freshness.signals.map((signal) => (
+            <div key={signal.label} className="flex items-center justify-between gap-2 text-[11px]">
+              <span className="font-bold text-foreground">{signal.label}</span>
+              <span className="text-right text-muted">
+                {signal.href ? (
+                  <a
+                    href={signal.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-bold text-brand-blue hover:underline dark:text-blue-300"
+                  >
+                    {signal.value}
+                  </a>
+                ) : (
+                  signal.value
+                )}
+                <span className="block text-[9px] uppercase">{signal.source}</span>
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Dashboard() {
+  const [nodes, setNodes] = useState<NodeData[]>([]);
+  const [loadState, setLoadState] = useState<"loading" | "ready" | "error">("loading");
   const [search, setSearch] = useState("");
+  const deferredSearch = useDeferredValue(search);
   const [priority, setPriority] = useState("");
   const [category, setCategory] = useState("");
   const [formatFilter, setFormatFilter] = useState("");
@@ -165,11 +360,44 @@ export default function Dashboard() {
   const [selectedNode, setSelectedNode] = useState<NodeData | null>(null);
   const [isDark, setIsDark] = useState(false);
   const [confidence, setConfidence] = useState("");
-  const [actionability, setActionability] = useState("");
+  const [actionability, setActionability] = useState("READY");
   const [reachability, setReachability] = useState("");
   const [outreach, setOutreach] = useState("");
   const [leadSource, setLeadSource] = useState("");
   const [funnel, setFunnel] = useState("");
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+
+  useEffect(() => {
+    let active = true;
+    const controller = new AbortController();
+
+    async function loadProspects() {
+      try {
+        const response = await fetch("/api/prospects", {
+          signal: controller.signal,
+          headers: { Accept: "application/json" },
+        });
+        if (!response.ok) throw new Error("Failed to load prospects");
+        const payload = (await response.json()) as ProspectPayload;
+        if (active) {
+          setNodes(payload.nodes);
+          setLoadState("ready");
+        }
+      } catch (error) {
+        if (active && !(error instanceof DOMException && error.name === "AbortError")) {
+          setLoadState("error");
+        }
+      }
+    }
+
+    loadProspects();
+
+    return () => {
+      active = false;
+      controller.abort();
+    };
+  }, []);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -185,32 +413,32 @@ export default function Dashboard() {
 
     return {
       priorities: priorityOrder
-        .filter((value) => allNodes.some((node) => node.priority === value))
+        .filter((value) => nodes.some((node) => node.priority === value))
         .map((value) => ({ label: titleCase(value), value })),
       categories: CATEGORIES.map((value) => ({ label: value, value })),
-      actionability: compact(allNodes.map((node) => node.actionabilityStatus)).map((value) => ({
+      actionability: compact(nodes.map((node) => node.actionabilityStatus)).map((value) => ({
+        label: actionabilityLabel(value),
+        value,
+      })),
+      reachability: compact(nodes.map((node) => node.reachabilityStatus)).map((value) => ({
         label: titleCase(value),
         value,
       })),
-      reachability: compact(allNodes.map((node) => node.reachabilityStatus)).map((value) => ({
+      outreach: compact(nodes.map((node) => node.bestOutreachChannel)).map((value) => ({
         label: titleCase(value),
         value,
       })),
-      outreach: compact(allNodes.map((node) => node.bestOutreachChannel)).map((value) => ({
-        label: titleCase(value),
-        value,
-      })),
-      leadSources: compact(allNodes.map((node) => node.leadSource)).map((value) => ({
+      leadSources: compact(nodes.map((node) => node.leadSource)).map((value) => ({
         label: titleCase(value),
         value,
       })),
     };
-  }, []);
+  }, [nodes]);
 
   const filteredNodes = useMemo(() => {
-    const normalizedSearch = search.trim().toLowerCase();
+    const normalizedSearch = deferredSearch.trim().toLowerCase();
 
-    return allNodes.filter((node) => {
+    return nodes.filter((node) => {
       const searchFields = [
         node.channel,
         node.host,
@@ -260,46 +488,54 @@ export default function Dashboard() {
     actionability,
     category,
     confidence,
+    deferredSearch,
     formatFilter,
     funnel,
     leadSource,
+    nodes,
     outreach,
     priority,
     reachability,
-    search,
   ]);
 
-  const stats = useMemo(
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [actionability, category, confidence, deferredSearch, formatFilter, funnel, leadSource, outreach, priority, reachability]);
+
+  const databaseStats = useMemo(
     () => ({
-      total: filteredNodes.length,
-      ready: filteredNodes.filter((node) => node.actionabilityStatus === "READY").length,
-      rejected: filteredNodes.filter((node) => node.actionabilityStatus === "REJECTED").length,
-      hot: filteredNodes.filter((node) => node.priority === "HOT").length,
-      strongReach: filteredNodes.filter((node) => node.reachabilityStatus === "STRONG").length,
+      total: nodes.length,
+      ready: nodes.filter((node) => node.actionabilityStatus === "READY").length,
+      archived: nodes.filter((node) => node.actionabilityStatus === "REJECTED").length,
+      hotReady: nodes.filter((node) => node.actionabilityStatus === "READY" && node.priority === "HOT").length,
+      strongReady: nodes.filter((node) => node.actionabilityStatus === "READY" && node.reachabilityStatus === "STRONG").length,
     }),
-    [filteredNodes]
+    [nodes]
   );
 
+  const visibleNodes = filteredNodes.slice(0, visibleCount);
+  const hasMoreRows = visibleNodes.length < filteredNodes.length;
+  const isReadyPreset = actionability === "READY" && !priority && !reachability;
+  const isHotPreset = actionability === "READY" && priority === "HOT" && !reachability;
+  const isStrongPreset = actionability === "READY" && reachability === "STRONG" && !priority;
+  const isAllPreset = !actionability && !priority && !reachability;
+
+  const hasAdvancedFilters = Boolean(category || formatFilter || confidence || outreach || leadSource || funnel);
   const hasActiveFilters = Boolean(
     search ||
+      actionability !== "READY" ||
       priority ||
-      category ||
-      formatFilter ||
-      confidence ||
-      actionability ||
       reachability ||
-      outreach ||
-      leadSource ||
-      funnel
+      hasAdvancedFilters
   );
 
-  const resetFilters = () => {
+  const resetToWorkable = () => {
     setSearch("");
     setPriority("");
     setCategory("");
     setFormatFilter("");
     setConfidence("");
-    setActionability("");
+    setActionability("READY");
     setReachability("");
     setOutreach("");
     setLeadSource("");
@@ -314,7 +550,7 @@ export default function Dashboard() {
             <span className="text-gradient">Energy Dial</span> Network
           </h1>
           <p className="text-sm text-muted">
-            {stats.total} prospects &middot; {stats.ready} READY &middot; {stats.hot} HOT &middot; {stats.strongReach} strong reach
+            {databaseStats.ready} workable prospects &middot; {databaseStats.hotReady} hot &middot; {databaseStats.archived} archived by quality gates
           </p>
         </div>
         <button
@@ -327,265 +563,311 @@ export default function Dashboard() {
         </button>
       </header>
 
-      <section className="mb-6 grid gap-3 md:grid-cols-4">
-        <div className="rounded-lg border border-brand-orange/35 bg-panel p-4">
-          <div className="text-[10px] font-bold uppercase tracking-wider text-muted">Ready</div>
-          <div className="mt-2 text-2xl font-extrabold text-brand-orange">{stats.ready}</div>
-        </div>
-        <div className="rounded-lg border border-brand-blue/25 bg-panel p-4">
-          <div className="text-[10px] font-bold uppercase tracking-wider text-muted">Strong Reach</div>
-          <div className="mt-2 text-2xl font-extrabold text-brand-blue dark:text-blue-300">{stats.strongReach}</div>
-        </div>
-        <div className="rounded-lg border border-border bg-panel p-4">
-          <div className="text-[10px] font-bold uppercase tracking-wider text-muted">Hot</div>
-          <div className="mt-2 text-2xl font-extrabold text-foreground">{stats.hot}</div>
-        </div>
-        <div className="rounded-lg border border-border bg-panel p-4">
-          <div className="text-[10px] font-bold uppercase tracking-wider text-muted">Rejected</div>
-          <div className="mt-2 text-2xl font-extrabold text-foreground/70">{stats.rejected}</div>
-        </div>
+      <section className="mb-5 grid gap-3 md:grid-cols-4">
+        <Metric label="Workable" value={databaseStats.ready} tone="orange" />
+        <Metric label="Hot Ready" value={databaseStats.hotReady} />
+        <Metric label="Strong Reach" value={databaseStats.strongReady} tone="blue" />
+        <Metric label="In View" value={loadState === "loading" ? "..." : filteredNodes.length} />
       </section>
 
-      <section className="mb-6 rounded-xl border border-border bg-panel p-4 shadow-sm">
-        <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-5">
-          <div className="relative md:col-span-2 xl:col-span-2">
+      <section className="mb-5 rounded-xl border border-border bg-panel p-3 shadow-sm">
+        <div className="flex flex-col gap-3 xl:flex-row xl:items-center">
+          <div className="relative min-w-0 flex-1">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-brand-blue" size={18} />
             <input
               type="text"
               placeholder="Search host, channel, person, organization..."
-              className="h-10 w-full rounded-lg border border-border bg-input-bg pl-10 pr-3 text-sm font-medium text-foreground outline-none transition-colors placeholder:text-placeholder focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10"
+              className="h-11 w-full rounded-lg border border-border bg-input-bg pl-10 pr-3 text-sm font-medium text-foreground outline-none transition-colors placeholder:text-placeholder focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
             />
           </div>
 
-          <SelectFilter
-            label="Status"
-            value={actionability}
-            allLabel="All statuses"
-            options={filterOptions.actionability}
-            onChange={setActionability}
-          />
-          <SelectFilter
-            label="Category"
-            value={category}
-            allLabel="All categories"
-            options={filterOptions.categories}
-            onChange={setCategory}
-          />
-          <SelectFilter
-            label="Priority"
-            value={priority}
-            allLabel="All priorities"
-            options={filterOptions.priorities}
-            onChange={setPriority}
-          />
-          <SelectFilter
-            label="Format"
-            value={formatFilter}
-            allLabel="All formats"
-            options={formatOptions}
-            onChange={setFormatFilter}
-          />
-          <SelectFilter
-            label="Reach"
-            value={reachability}
-            allLabel="All reach"
-            options={filterOptions.reachability}
-            onChange={setReachability}
-          />
-          <SelectFilter
-            label="Outreach"
-            value={outreach}
-            allLabel="All outreach"
-            options={filterOptions.outreach}
-            onChange={setOutreach}
-          />
-          <SelectFilter
-            label="Source"
-            value={leadSource}
-            allLabel="All sources"
-            options={filterOptions.leadSources}
-            onChange={setLeadSource}
-          />
-          <SelectFilter
-            label="Funnel"
-            value={funnel}
-            allLabel="All funnels"
-            options={funnelOptions}
-            onChange={setFunnel}
-          />
-          <SelectFilter
-            label="Confidence"
-            value={confidence}
-            allLabel="All confidence"
-            options={confidenceOptions}
-            onChange={setConfidence}
-          />
+          <div className="grid grid-cols-2 gap-2 sm:flex">
+            <QuickButton
+              label="Workable"
+              active={isReadyPreset}
+              onClick={() => {
+                setActionability("READY");
+                setPriority("");
+                setReachability("");
+              }}
+            />
+            <QuickButton
+              label="Hot"
+              active={isHotPreset}
+              onClick={() => {
+                setActionability("READY");
+                setPriority("HOT");
+                setReachability("");
+              }}
+            />
+            <QuickButton
+              label="Strong reach"
+              active={isStrongPreset}
+              onClick={() => {
+                setActionability("READY");
+                setPriority("");
+                setReachability("STRONG");
+              }}
+            />
+            <QuickButton
+              label="All"
+              active={isAllPreset}
+              onClick={() => {
+                setActionability("");
+                setPriority("");
+                setReachability("");
+              }}
+            />
+          </div>
+
+          <button
+            type="button"
+            onClick={() => setFiltersOpen((open) => !open)}
+            className={`inline-flex h-10 items-center justify-center gap-2 rounded-lg border px-3 text-sm font-bold transition-colors ${
+              filtersOpen || hasAdvancedFilters
+                ? "border-brand-orange/40 bg-brand-orange/10 text-brand-orange"
+                : "border-border bg-background text-foreground/75 hover:border-brand-orange hover:text-brand-orange"
+            }`}
+          >
+            <SlidersHorizontal size={16} />
+            Filters
+            {hasAdvancedFilters && (
+              <span className="rounded-full bg-brand-orange px-1.5 py-0.5 text-[10px] text-white">on</span>
+            )}
+          </button>
         </div>
 
+        {filtersOpen && (
+          <div className="mt-4 grid gap-3 border-t border-border pt-4 md:grid-cols-2 xl:grid-cols-5">
+            <SelectFilter
+              label="Status"
+              value={actionability}
+              allLabel="All statuses"
+              options={filterOptions.actionability}
+              onChange={setActionability}
+            />
+            <SelectFilter
+              label="Category"
+              value={category}
+              allLabel="All categories"
+              options={filterOptions.categories}
+              onChange={setCategory}
+            />
+            <SelectFilter
+              label="Format"
+              value={formatFilter}
+              allLabel="All formats"
+              options={formatOptions}
+              onChange={setFormatFilter}
+            />
+            <SelectFilter
+              label="Outreach"
+              value={outreach}
+              allLabel="All outreach"
+              options={filterOptions.outreach}
+              onChange={setOutreach}
+            />
+            <SelectFilter
+              label="Source"
+              value={leadSource}
+              allLabel="All sources"
+              options={filterOptions.leadSources}
+              onChange={setLeadSource}
+            />
+            <SelectFilter
+              label="Funnel"
+              value={funnel}
+              allLabel="All funnels"
+              options={funnelOptions}
+              onChange={setFunnel}
+            />
+            <SelectFilter
+              label="Confidence"
+              value={confidence}
+              allLabel="All confidence"
+              options={confidenceOptions}
+              onChange={setConfidence}
+            />
+          </div>
+        )}
+
         <div className="mt-3 flex items-center justify-between border-t border-border pt-3 text-xs text-muted">
-          <span>{hasActiveFilters ? "Filtered view" : "Full prospect list"}</span>
+          <span>
+            Showing {visibleNodes.length} of {filteredNodes.length || 0}
+            {loadState === "loading" ? " prospects..." : " prospects"}
+          </span>
           <button
-            onClick={resetFilters}
+            onClick={resetToWorkable}
             disabled={!hasActiveFilters}
-            className="rounded-md px-2 py-1 font-bold text-brand-blue transition-colors hover:bg-brand-blue/10 disabled:pointer-events-none disabled:opacity-40"
+            className="inline-flex items-center gap-1 rounded-md px-2 py-1 font-bold text-brand-blue transition-colors hover:bg-brand-blue/10 disabled:pointer-events-none disabled:opacity-40"
             type="button"
           >
-            Reset filters
+            <X size={13} />
+            Reset
           </button>
         </div>
       </section>
 
-      <div className="overflow-hidden rounded-xl border border-border bg-panel shadow-sm">
+      <div className="rounded-xl border border-border bg-panel shadow-sm">
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[1120px] text-left text-sm">
+          <table className="w-full min-w-[1140px] text-left text-sm">
             <thead className="border-b border-border bg-background text-[10px] font-bold uppercase tracking-wider text-muted">
               <tr>
                 <th className="px-5 py-4">Host & Channel</th>
                 <th className="px-5 py-4">Category</th>
                 <th className="px-5 py-4">Region</th>
-                <th className="px-5 py-4">Latest</th>
-                <th className="px-5 py-4">Actionability</th>
+                <th className="px-5 py-4">Media Freshness</th>
+                <th className="px-5 py-4">Status</th>
                 <th className="px-5 py-4">Outreach</th>
                 <th className="px-5 py-4">Priority</th>
-                <th className="px-5 py-4">Followers</th>
+                <th className="px-5 py-4">Audience</th>
                 <th className="px-5 py-4 text-right">Links</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
-              {filteredNodes.map((node) => {
-                const latestDate = getLatestDate(node);
-                const followers = [
-                  node.xFollowers ? `${formatCount(node.xFollowers)} X` : "",
-                  node.youtubeSubscribers
-                    ? `${formatCount(node.youtubeSubscribers)} YT`
-                    : node.isPodcastOnly
-                      ? "Podcast"
-                      : "",
-                ].filter(Boolean);
-
-                return (
-                  <tr
-                    key={node.id}
-                    className="table-row-hover group relative cursor-pointer hover:bg-black/[0.025] dark:hover:bg-white/[0.035]"
-                    onClick={() => setSelectedNode(node)}
-                    onMouseEnter={() => setHoveredChannel(node.channel)}
-                    onMouseLeave={() => setHoveredChannel(null)}
-                  >
-                    <td className="relative px-5 py-4">
-                      <div className="flex items-center gap-1.5 font-bold text-foreground transition-colors group-hover:text-brand-orange">
-                        {node.host}
-                        {node.needsManualReview && (
-                          <span title="Needs manual review / cadence conflict">
-                            <AlertTriangle size={13} className="shrink-0 text-amber-500" />
-                          </span>
-                        )}
-                        {node.publishingCadence === "active" && (
-                          <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" title="Active cadence" />
-                        )}
-                        {node.publishingCadence === "semi-active" && (
-                          <span className="h-1.5 w-1.5 rounded-full bg-amber-500" title="Semi-active cadence" />
-                        )}
-                        {node.publishingCadence === "inactive" && (
-                          <span className="h-1.5 w-1.5 rounded-full bg-red-500" title="Inactive cadence" />
-                        )}
-                      </div>
-                      <div className="mt-1 text-xs text-muted">
-                        {node.channel || (node.isXOnly ? (node.isPodcastOnly ? "Podcast only" : "X only") : "")}
-                      </div>
-                      {hoveredChannel === node.channel && node.channel && !node.isXOnly && (
-                        <div onClick={(event) => event.stopPropagation()}>
-                          <VideoPreview
-                            channelId={node.channelId}
-                            youtubeUrl={node.youtubeUrl}
-                            channelName={node.channel}
-                          />
-                        </div>
-                      )}
-                    </td>
-                    <td className="px-5 py-4">
-                      <div className="text-xs font-semibold text-foreground/85">{node.category}</div>
-                      <div className="text-xs text-muted">{node.subcategory}</div>
-                    </td>
-                    <td className="px-5 py-4 text-xs font-semibold text-foreground/80">{node.region}</td>
-                    <td className="px-5 py-4">
-                      <div className="text-xs font-extrabold text-foreground" title={formatAbsoluteDate(latestDate)}>
-                        {formatLatestDate(latestDate)}
-                      </div>
-                      <div className="mt-1 text-[10px] uppercase text-muted">
-                        {node.sourceOfLastPublishDate || node.publishingCadence || "unchecked"}
-                      </div>
-                    </td>
-                    <td className="px-5 py-4">
-                      <span
-                        className={`rounded-full border px-2.5 py-1 text-xs font-bold ${actionabilityClasses(node.actionabilityStatus)}`}
-                      >
-                        {node.actionabilityStatus || "REVIEW"}
-                      </span>
-                      {node.reachabilityStatus && (
-                        <div className="mt-1 text-[10px] font-bold uppercase text-brand-blue dark:text-blue-300">
-                          {node.reachabilityStatus} reach
-                        </div>
-                      )}
-                    </td>
-                    <td className="px-5 py-4">
-                      <div className="text-xs font-bold uppercase text-foreground/85">
-                        {node.bestOutreachChannel ? titleCase(node.bestOutreachChannel) : "Missing"}
-                      </div>
-                      <div className="mt-1 text-[10px] text-muted">
-                        {node.leadSource ? titleCase(node.leadSource) : "Legacy"}
-                      </div>
-                    </td>
-                    <td className="px-5 py-4">
-                      <div className="flex items-center gap-2">
-                        <span className={`rounded-full border px-2.5 py-1 text-xs font-bold ${priorityClasses(node.priority)}`}>
-                          {node.priority}
-                        </span>
-                        {node.calculatedScore !== undefined && (
-                          <span className="rounded-md border border-border bg-background px-2 py-1 text-xs font-bold text-foreground/80">
-                            {node.calculatedScore}
-                          </span>
-                        )}
-                      </div>
-                    </td>
-                    <td className="px-5 py-4 text-xs font-semibold text-muted">
-                      {followers.length ? followers.join(" / ") : "Unknown"}
-                    </td>
-                    <td className="px-5 py-4 text-right">
-                      <div className="flex items-center justify-end gap-2 opacity-80 transition-opacity group-hover:opacity-100">
-                        {node.youtubeUrl && !node.isXOnly && (
-                          <a
-                            href={node.youtubeUrl}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="rounded-lg p-2 text-muted transition-colors hover:bg-brand-orange/10 hover:text-brand-orange"
-                            title="Open channel"
-                            aria-label={`Open ${node.channel || node.host} on YouTube`}
-                            onClick={(event) => event.stopPropagation()}
-                          >
-                            <Youtube size={16} />
-                          </a>
-                        )}
-                        {node.xProfile && (
-                          <a
-                            href={node.xProfile}
-                            target="_blank"
-                            rel="noreferrer"
-                            className="rounded-lg p-2 text-muted transition-colors hover:bg-brand-blue/10 hover:text-brand-blue dark:hover:text-blue-300"
-                            title="Open X profile"
-                            aria-label={`Open ${node.host} X profile`}
-                            onClick={(event) => event.stopPropagation()}
-                          >
-                            <ExternalLink size={16} />
-                          </a>
-                        )}
-                      </div>
+              {loadState === "loading" &&
+                Array.from({ length: 8 }).map((_, index) => (
+                  <tr key={index}>
+                    <td colSpan={9} className="px-5 py-4">
+                      <div className="h-8 animate-pulse rounded-lg bg-black/5 dark:bg-white/5" />
                     </td>
                   </tr>
-                );
-              })}
-              {filteredNodes.length === 0 && (
+                ))}
+
+              {loadState === "error" && (
+                <tr>
+                  <td colSpan={9} className="px-6 py-12 text-center text-red-500">
+                    Could not load prospects. Refresh the page and try again.
+                  </td>
+                </tr>
+              )}
+
+              {loadState === "ready" &&
+                visibleNodes.map((node) => {
+                  const followers = [
+                    node.xFollowers ? `${formatCount(node.xFollowers)} X` : "",
+                    node.youtubeSubscribers
+                      ? `${formatCount(node.youtubeSubscribers)} YT`
+                      : node.isPodcastOnly
+                        ? "Podcast"
+                        : "",
+                  ].filter(Boolean);
+
+                  return (
+                    <tr
+                      key={node.id}
+                      className="table-row-hover group relative cursor-pointer hover:bg-black/[0.025] dark:hover:bg-white/[0.035]"
+                      onClick={() => setSelectedNode(node)}
+                      onMouseEnter={() => setHoveredChannel(node.channel)}
+                      onMouseLeave={() => setHoveredChannel(null)}
+                    >
+                      <td className="relative px-5 py-4">
+                        <div className="flex items-center gap-1.5 font-bold text-foreground transition-colors group-hover:text-brand-orange">
+                          {node.host}
+                          {node.needsManualReview && (
+                            <span title="Needs manual review / cadence conflict">
+                              <AlertTriangle size={13} className="shrink-0 text-amber-500" />
+                            </span>
+                          )}
+                          {node.publishingCadence === "active" && (
+                            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" title="Active cadence" />
+                          )}
+                          {node.publishingCadence === "semi-active" && (
+                            <span className="h-1.5 w-1.5 rounded-full bg-amber-500" title="Semi-active cadence" />
+                          )}
+                          {node.publishingCadence === "inactive" && (
+                            <span className="h-1.5 w-1.5 rounded-full bg-red-500" title="Inactive cadence" />
+                          )}
+                        </div>
+                        <div className="mt-1 text-xs text-muted">
+                          {node.channel || (node.isXOnly ? (node.isPodcastOnly ? "Podcast only" : "X only") : "")}
+                        </div>
+                        {hoveredChannel === node.channel && node.channel && !node.isXOnly && (
+                          <div onClick={(event) => event.stopPropagation()}>
+                            <VideoPreview
+                              channelId={node.channelId}
+                              youtubeUrl={node.youtubeUrl}
+                              channelName={node.channel}
+                            />
+                          </div>
+                        )}
+                      </td>
+                      <td className="px-5 py-4">
+                        <div className="text-xs font-semibold text-foreground/85">{node.category}</div>
+                        <div className="text-xs text-muted">{node.subcategory}</div>
+                      </td>
+                      <td className="px-5 py-4 text-xs font-semibold text-foreground/80">{node.region}</td>
+                      <td className="px-5 py-4">
+                        <FreshnessCell node={node} />
+                      </td>
+                      <td className="px-5 py-4">
+                        <StatusPill status={node.actionabilityStatus} />
+                        {node.reachabilityStatus && (
+                          <div className="mt-1 text-[10px] font-bold uppercase text-brand-blue dark:text-blue-300">
+                            {node.reachabilityStatus} reach
+                          </div>
+                        )}
+                      </td>
+                      <td className="px-5 py-4">
+                        <div className="text-xs font-bold uppercase text-foreground/85">
+                          {node.bestOutreachChannel ? titleCase(node.bestOutreachChannel) : "Missing"}
+                        </div>
+                        <div className="mt-1 text-[10px] text-muted">
+                          {node.leadSource ? titleCase(node.leadSource) : "Legacy"}
+                        </div>
+                      </td>
+                      <td className="px-5 py-4">
+                        <div className="flex items-center gap-2">
+                          <span className={`rounded-full border px-2.5 py-1 text-xs font-bold ${priorityClasses(node.priority)}`}>
+                            {node.priority}
+                          </span>
+                          {node.calculatedScore !== undefined && (
+                            <span className="rounded-md border border-border bg-background px-2 py-1 text-xs font-bold text-foreground/80">
+                              {node.calculatedScore}
+                            </span>
+                          )}
+                        </div>
+                      </td>
+                      <td className="px-5 py-4 text-xs font-semibold text-muted">
+                        {followers.length ? followers.join(" / ") : "Unknown"}
+                      </td>
+                      <td className="px-5 py-4 text-right">
+                        <div className="flex items-center justify-end gap-2 opacity-80 transition-opacity group-hover:opacity-100">
+                          {node.youtubeUrl && !node.isXOnly && (
+                            <a
+                              href={node.youtubeUrl}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="rounded-lg p-2 text-muted transition-colors hover:bg-brand-orange/10 hover:text-brand-orange"
+                              title="Open channel"
+                              aria-label={`Open ${node.channel || node.host} on YouTube`}
+                              onClick={(event) => event.stopPropagation()}
+                            >
+                              <Youtube size={16} />
+                            </a>
+                          )}
+                          {node.xProfile && (
+                            <a
+                              href={node.xProfile}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="rounded-lg p-2 text-muted transition-colors hover:bg-brand-blue/10 hover:text-brand-blue dark:hover:text-blue-300"
+                              title="Open X profile"
+                              aria-label={`Open ${node.host} X profile`}
+                              onClick={(event) => event.stopPropagation()}
+                            >
+                              <ExternalLink size={16} />
+                            </a>
+                          )}
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })}
+
+              {loadState === "ready" && filteredNodes.length === 0 && (
                 <tr>
                   <td colSpan={9} className="px-6 py-12 text-center text-muted">
                     No prospects found matching the filters.
@@ -595,6 +877,18 @@ export default function Dashboard() {
             </tbody>
           </table>
         </div>
+
+        {hasMoreRows && (
+          <div className="border-t border-border p-4 text-center">
+            <button
+              type="button"
+              onClick={() => setVisibleCount((count) => count + PAGE_SIZE)}
+              className="rounded-lg border border-border bg-background px-4 py-2 text-sm font-bold text-foreground transition-colors hover:border-brand-blue hover:text-brand-blue"
+            >
+              Show next {Math.min(PAGE_SIZE, filteredNodes.length - visibleNodes.length)}
+            </button>
+          </div>
+        )}
       </div>
 
       {selectedNode && <NodeDetail node={selectedNode} onClose={() => setSelectedNode(null)} />}

@@ -74,6 +74,9 @@ The dashboard now includes:
 - Compact dropdown filters for actionability, reachability, funnel opportunity, best outreach channel, lead source, format, category, priority, and confidence.
 - Brand colors sampled from the provided Energy Dial logo reference: orange `#FE8007` and blue `#113E80`. Do not add the logo asset itself unless the user explicitly asks.
 - `Latest` column showing the last known post date as `Today`, `Yesterday`, or `<days>d ago`; future-dated records should display a short absolute date instead of a relative freshness label.
+- Default dashboard view is `READY` only. UI labels `REJECTED` rows as `Archived` because those records failed hard actionability gates and should not be treated as active sales targets.
+- Prospect data is loaded from `/api/prospects` instead of importing `data/nodes.json` into the client page, so the initial dashboard HTML stays light. The table renders in batches of 100.
+- The freshness column prioritizes YouTube and Apple Podcast/RSS evidence and expands on hover to show both platform signals.
 - Detail drawer showing TOF/MOF/BOF and the stored prospect-specific pitch hook.
 
 ## Verification Baseline
