@@ -60,6 +60,42 @@ As of the latest audit:
 
 The 642 former REVIEW rows were finished by applying the hard gates and marking non-actionable rows as `REJECTED` with reasons embedded in `actionabilityReasons` and `rejectionReason`.
 
+## Methodology Pilot (Isolated Branch)
+
+Branch: `codex/prospect-methodology-pilot`
+
+This branch contains a read-only, adversarial 15-prospect pilot. It must not be merged into `main` or used to promote records until the user reviews the results.
+
+Pilot composition and result:
+- 5 current READY records audited.
+- 5 rejected records tested for recovery.
+- 5 newly sourced records.
+- `PURSUE_NOW`: 9.
+- `NURTURE`: 3.
+- `DISQUALIFIED`: 3.
+- Production rows changed: 0.
+
+The pilot corrects several legacy methodology failures:
+- Match freshness to the owned show/channel and named person; do not borrow dates from a related company channel.
+- Separate the content owner, on-mic host, and economic buyer. They may be different people.
+- Verify the prospect's actual offer from an official page; do not infer BOF from a job title.
+- Treat short-form volume and short-form explanatory quality as separate observations.
+- Build the observed TOF/MOF/BOF funnel first, then a separate proposed Energy Dial funnel tied to the real transaction.
+- Let failed hard gates override the numeric score.
+
+Firecrawl remains an escalation tool. The corrected matched pass produced 14 valid pages, rejected one branded 404, added one meaningful contact set, added four raw decision inputs, and changed no final decision. Deterministic research remains the default.
+
+Pilot files and surfaces:
+- `data/pilot-manifest.json`: fixed 5/5/5 cohort and official source inputs.
+- `scripts/research-pilot.ts`: deterministic podcast, cadence, YouTube, contact, and offer research with optional matched Firecrawl pass.
+- `data/pilotReports.ts`: the 15 plain-language, evidence-linked decision reports.
+- `docs/PILOT_METHODOLOGY.md`: methodology, outreach policy, and working pricing.
+- `npm run validate:pilot`: validates cohort counts, ranks, score arithmetic, hard-gate overrides, source references, and zero production writes.
+- `/pilot`: review workspace with methodology and offer-playbook views.
+- `/api/pilot`: static, read-only payload for other agents and automation.
+
+Pilot review feedback is saved in browser local storage under `dialdash:pilot-feedback:v1` and can be exported as JSON. It is deliberately not written to Vercel's filesystem. Agentation is available only in local development for visual annotations.
+
 ## Important Scripts
 
 Use these from the repo root:

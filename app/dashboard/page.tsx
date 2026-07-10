@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import { CATEGORIES, NodeData } from "@/lib/types";
 import {
@@ -608,14 +609,22 @@ export default function Dashboard() {
             {databaseStats.ready} workable prospects &middot; {databaseStats.hotReady} hot &middot; {databaseStats.archived} archived by quality gates
           </p>
         </div>
-        <button
-          onClick={() => setIsDark(!isDark)}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-panel text-muted transition-colors hover:border-brand-blue hover:text-brand-blue"
-          title="Toggle theme"
-          type="button"
-        >
-          {isDark ? <Sun size={18} /> : <Moon size={18} />}
-        </button>
+        <div className="flex items-center gap-2">
+          <Link
+            href="/pilot"
+            className="inline-flex h-10 items-center rounded-lg border border-brand-blue/25 bg-brand-blue/5 px-3 text-sm font-bold text-brand-blue transition-colors hover:border-brand-blue"
+          >
+            Review 15-prospect pilot
+          </Link>
+          <button
+            onClick={() => setIsDark(!isDark)}
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-panel text-muted transition-colors hover:border-brand-blue hover:text-brand-blue"
+            title="Toggle theme"
+            type="button"
+          >
+            {isDark ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
+        </div>
       </header>
 
       <section className="mb-5 grid gap-3 md:grid-cols-4">

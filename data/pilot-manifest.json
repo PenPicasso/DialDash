@@ -1,0 +1,250 @@
+{
+  "id": "quality-methodology-pilot-15",
+  "asOfDate": "2026-07-10",
+  "description": "Adversarial 15-prospect pilot. Production prospect data is read-only.",
+  "prospects": [
+    {
+      "id": "arjun-murti",
+      "cohort": "CURRENT_READY",
+      "existingNodeId": "arjun-murti",
+      "person": "Arjun Murti",
+      "organization": "Super-Spiked / Veriten",
+      "podcastName": "Super-Spiked Podcast",
+      "primaryUrl": "https://veriten.com/public-engagement/",
+      "officialUrls": [
+        "https://veriten.com/public-engagement/",
+        "https://veriten.com/what-we-do/"
+      ],
+      "appleUrl": "https://podcasts.apple.com/us/podcast/super-spiked-podcast/id1599740437",
+      "rssUrl": "https://api.substack.com/feed/podcast/567871.rss",
+      "youtubeChannelId": "UC3qrPyGIWzS0oVOSQLTO6hg",
+      "youtubeQuery": "Super-Spiked Arjun Murti"
+    },
+    {
+      "id": "rory-johnston",
+      "cohort": "CURRENT_READY",
+      "existingNodeId": "rory-johnston",
+      "person": "Rory Johnston",
+      "organization": "Commodity Context",
+      "podcastName": "Oil Ground Up",
+      "primaryUrl": "https://www.commoditycontext.com/about",
+      "officialUrls": [
+        "https://www.commoditycontext.com/about",
+        "https://www.commoditycontext.com/"
+      ],
+      "appleUrl": "https://podcasts.apple.com/us/podcast/oil-ground-up/id1666068669",
+      "rssUrl": "https://anchor.fm/s/be62e120/podcast/rss",
+      "youtubeQuery": "Oil Ground Up Rory Johnston"
+    },
+    {
+      "id": "chris-nelder",
+      "cohort": "CURRENT_READY",
+      "existingNodeId": "chris-nelder",
+      "person": "Chris Nelder",
+      "organization": "The Energy Transition Show",
+      "podcastName": "The Energy Transition Show",
+      "primaryUrl": "https://xenetwork.org/ets/faq/",
+      "officialUrls": [
+        "https://xenetwork.org/ets/",
+        "https://xenetwork.org/ets/faq/"
+      ],
+      "appleUrl": "https://podcasts.apple.com/us/podcast/the-energy-transition-show-with-chris-nelder/id1042713378",
+      "rssUrl": "https://feeds.feedburner.com/TheEnergyTransitionShow",
+      "youtubeQuery": "Energy Transition Show Chris Nelder"
+    },
+    {
+      "id": "tim-montague",
+      "cohort": "CURRENT_READY",
+      "existingNodeId": "tim-montague",
+      "person": "Tim Montague",
+      "organization": "Clean Power Consulting Group",
+      "podcastName": "Clean Power Hour",
+      "primaryUrl": "https://cleanpowerhour.com/work-with-tim/",
+      "officialUrls": [
+        "https://cleanpowerhour.com/work-with-tim/",
+        "https://www.cleanpower.group/services"
+      ],
+      "appleUrl": "https://podcasts.apple.com/us/podcast/clean-power-hour/id1582667621",
+      "rssUrl": "https://rss.buzzsprout.com/1765472.rss",
+      "youtubeChannelId": "UCL4LATF8RejwxZg-Ut1psiA",
+      "youtubeQuery": "Clean Power Hour Tim Montague"
+    },
+    {
+      "id": "jason-jacobs-record",
+      "cohort": "CURRENT_READY",
+      "existingNodeId": "jason-jacobs",
+      "person": "Cody Simms",
+      "organization": "MCJ",
+      "podcastName": "Inevitable",
+      "primaryUrl": "https://mcj.vc/team/cody-simms",
+      "officialUrls": [
+        "https://mcj.vc/team/cody-simms",
+        "https://mcj.vc/inevitable-podcast"
+      ],
+      "appleUrl": "https://podcasts.apple.com/us/podcast/inevitable/id1462776122",
+      "rssUrl": "https://feeds.simplecast.com/XFfCG1w8",
+      "youtubeChannelId": "UCOb2P6-Ztq1l26POqNmW8CQ",
+      "youtubeQuery": "MCJ Inevitable podcast"
+    },
+    {
+      "id": "demetri-kofinas",
+      "cohort": "RECOVERY_REVIEW",
+      "existingNodeId": "demetri-kofinas",
+      "person": "Demetri Kofinas",
+      "organization": "Hidden Forces",
+      "podcastName": "Hidden Forces",
+      "primaryUrl": "https://hiddenforces.io/subscribe/",
+      "officialUrls": [
+        "https://hiddenforces.io/",
+        "https://hiddenforces.io/subscribe/"
+      ],
+      "appleUrl": "https://podcasts.apple.com/us/podcast/hidden-forces/id1205359334",
+      "rssUrl": "https://rss.libsyn.com/shows/91567/destinations/457899.xml",
+      "youtubeChannelId": "UC8URhgYos5fjHqFSO4RSIEg",
+      "youtubeQuery": "Hidden Forces Demetri Kofinas"
+    },
+    {
+      "id": "rod-adams",
+      "cohort": "RECOVERY_REVIEW",
+      "existingNodeId": "rod-adams-atomic-insights",
+      "person": "Rod Adams",
+      "organization": "Atomic Insights / Nucleation Capital",
+      "podcastName": "The Atomic Show",
+      "primaryUrl": "https://atomicinsights.com/about/",
+      "officialUrls": [
+        "https://atomicinsights.com/about/",
+        "https://atomicinsights.com/author/rod-adams/"
+      ],
+      "appleUrl": "https://podcasts.apple.com/us/podcast/the-atomic-show/id552797011",
+      "rssUrl": "https://atomicinsights.com/feed/podcast",
+      "youtubeChannelId": "UCkEfm3kuSyzr_znZ4KCvoww",
+      "youtubeQuery": "Atomic Insights Rod Adams"
+    },
+    {
+      "id": "tom-essex",
+      "cohort": "RECOVERY_REVIEW",
+      "existingNodeId": "tom-essex",
+      "person": "Tom Essex",
+      "organization": "KIGYO Solutions",
+      "podcastName": "The REM Podcast",
+      "primaryUrl": "https://kigyosolutions.com/renewables/",
+      "officialUrls": [
+        "https://kigyosolutions.com/renewables/",
+        "https://www.youtube.com/@Tom-Essex"
+      ],
+      "appleUrl": "https://podcasts.apple.com/us/podcast/the-rem-podcast-renewable-energy-movement/id1829364588",
+      "rssUrl": "https://feeds.captivate.fm/rem-podcast/",
+      "youtubeChannelId": "UCcJ1XtGZyOHY_zwAk2uv9BQ",
+      "youtubeQuery": "REM Podcast Tom Essex"
+    },
+    {
+      "id": "ariane-morrissey",
+      "cohort": "RECOVERY_REVIEW",
+      "existingNodeId": "ariane-morrissey",
+      "person": "Ariane Morrissey",
+      "organization": "ship.energy",
+      "podcastName": "The ship.energy Podcast",
+      "primaryUrl": "https://ship.energy/about/",
+      "officialUrls": [
+        "https://ship.energy/about/",
+        "https://ship.energy/ship-energy-podcasts/"
+      ],
+      "appleUrl": "https://podcasts.apple.com/us/podcast/the-ship-energy-podcast/id1567271142",
+      "rssUrl": "https://audioboom.com/channels/5051666.rss",
+      "youtubeQuery": "ship.energy podcast"
+    },
+    {
+      "id": "bill-derasmo",
+      "cohort": "RECOVERY_REVIEW",
+      "existingNodeId": "bill-derasmo",
+      "person": "Bill Derasmo",
+      "organization": "Troutman Pepper Locke",
+      "podcastName": "Battery + Storage Podcast",
+      "primaryUrl": "https://www.troutman.com/insights/category/podcasts/battery-storage-podcast/",
+      "officialUrls": [
+        "https://www.troutman.com/insights/category/podcasts/battery-storage-podcast/",
+        "https://www.troutman.com/professionals/bill-derasmo/"
+      ],
+      "appleUrl": "https://podcasts.apple.com/us/podcast/battery-storage-podcast/id1561047978",
+      "rssUrl": "https://feeds.simplecast.com/W_n2CU68",
+      "youtubeQuery": "Battery Storage Podcast Troutman Pepper Locke"
+    },
+    {
+      "id": "doug-lewin",
+      "cohort": "NEW_SOURCE",
+      "person": "Doug Lewin",
+      "organization": "Texas Energy & Power",
+      "podcastName": "Energy Capital Podcast",
+      "primaryUrl": "https://www.texasenergyandpower.com/about",
+      "officialUrls": [
+        "https://www.texasenergyandpower.com/about",
+        "https://www.texasenergyandpower.com/"
+      ],
+      "appleUrl": "https://podcasts.apple.com/us/podcast/energy-capital-podcast/id1726252628",
+      "rssUrl": "https://api.substack.com/feed/podcast/1180283.rss",
+      "youtubeChannelId": "UC7NO0xAAUzjznp25FsQK-Aw",
+      "youtubeQuery": "Texas Energy and Power Doug Lewin"
+    },
+    {
+      "id": "elisa-wood",
+      "cohort": "NEW_SOURCE",
+      "person": "Elisa Wood",
+      "organization": "Energy Changemakers",
+      "podcastName": "Energy Changemakers Podcast",
+      "primaryUrl": "https://energychangemakers.com/about-energy-changemakers/",
+      "officialUrls": [
+        "https://energychangemakers.com/about-energy-changemakers/",
+        "https://energychangemakers.com/get-your-ideas-out-there/",
+        "https://energychangemakers.com/energy-changemakers-podcasts-complete-list/"
+      ],
+      "appleUrl": "https://podcasts.apple.com/us/podcast/energy-changemakers-podcast/id1750578413",
+      "rssUrl": "https://anchor.fm/s/f7419540/podcast/rss",
+      "youtubeQuery": "Energy Changemakers Podcast Elisa Wood"
+    },
+    {
+      "id": "local-energy",
+      "cohort": "NEW_SOURCE",
+      "person": "Peter Brecht and Wade Spear",
+      "organization": "Local Energy",
+      "podcastName": "Local Energy",
+      "primaryUrl": "https://localenergy.com/",
+      "officialUrls": [
+        "https://localenergy.com/",
+        "https://falconwestenergy.com/peter-brecht/"
+      ],
+      "appleUrl": "https://podcasts.apple.com/us/podcast/local-energy/id1885425019",
+      "rssUrl": "https://anchor.fm/s/1122a87f4/podcast/rss",
+      "youtubeChannelId": "UCV3MTXnHJRjqjUi0SFdyGKg",
+      "youtubeQuery": "Local Energy Peter Brecht Wade Spear"
+    },
+    {
+      "id": "joe-webb",
+      "cohort": "NEW_SOURCE",
+      "person": "Joe Webb",
+      "organization": "Critical Minerals Podcast / Mining.com.au",
+      "podcastName": "Critical Minerals Podcast",
+      "primaryUrl": "https://criticalmineralspodcast.com/",
+      "officialUrls": [
+        "https://criticalmineralspodcast.com/"
+      ],
+      "youtubeQuery": "Critical Minerals Podcast Joe Webb Mining.com.au"
+    },
+    {
+      "id": "upon-further-inspection",
+      "cohort": "NEW_SOURCE",
+      "person": "Branden Stucky and Greg Alvarado",
+      "organization": "CorrSolutions / Inspectioneering",
+      "podcastName": "Upon Further Inspection",
+      "primaryUrl": "https://www.uponfurtherinspection.com/2489029/about",
+      "officialUrls": [
+        "https://www.uponfurtherinspection.com/2489029/about",
+        "https://inspectioneering.com/subscribe",
+        "https://corrsolutions.com/"
+      ],
+      "appleUrl": "https://podcasts.apple.com/us/podcast/upon-further-inspection/id1812339890",
+      "rssUrl": "https://rss.buzzsprout.com/2489029.rss",
+      "youtubeChannelId": "UC0_69oTYmR8s4rZMfZYV2XA",
+      "youtubeQuery": "Upon Further Inspection mechanical integrity podcast"
+    }
+  ]
+}
