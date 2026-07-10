@@ -153,6 +153,13 @@ For UI changes, also smoke-test `/dashboard` locally or on a Vercel preview and 
 
 The branch `codex/quality-gated-prospect-scaling` was deployed to Vercel preview successfully before this record was added. Preview deployments may return `401` to unauthenticated users because Vercel Deployment Protection is enabled on the project.
 
+The methodology pilot is published separately:
+- Branch: `codex/prospect-methodology-pilot`.
+- Draft PR: `https://github.com/PenPicasso/DialDash/pull/2` targeting `main`.
+- Stable Vercel preview alias: `https://dial-dash-git-codex-c8c810-runitbackstudios-gmailcoms-projects.vercel.app/pilot`.
+- Vercel target: preview only. Deployment Protection requires a Vercel login in a normal browser session.
+- GitHub/Vercel status check passed for commit `e66d22a`; do not promote or merge until the user reviews the 15 reports.
+
 If the user says "make it the main one", merge/push to `main` and deploy/promote production after the checks pass.
 
 ## Security Notes
