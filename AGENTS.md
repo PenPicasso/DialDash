@@ -158,6 +158,18 @@ Apple/iTunes lookup results are valid only when the result is a podcast result (
 
 A Codex automation named `Refresh DialDash media` runs daily at 07:00 Africa/Lagos with a light model in an isolated worktree. It refreshes, reranks, and validates only; it must not push, deploy, use Firecrawl, or touch `main`.
 
+### Light-model 100-record pass
+
+Branch: `codex/light-model-next-100`. This branch is isolated and must not be merged into `main` or deployed without explicit approval.
+
+The first 100 highest-ranked unresolved records were processed in four batches of 25 with direct owned-source refreshes only. The run produced 27 deterministic hard-gate disqualifications and 73 `Sol Medium` escalation reports; it promoted zero records. The main sales queue and methodology decisions were not changed. `data/nodes.json` changed only through source-specific freshness refreshes on this isolated branch.
+
+New batch tooling:
+- `npm run refresh:media -- --ids=id-one,id-two`: refresh explicitly selected records regardless of legacy actionability state.
+- `npm run research:light-batch -- --offset=0 --limit=25`: write ignored per-record evidence reports and a `Sol Medium` escalation queue under `storage/prospect-runs/` without promoting data.
+
+The light-batch report accepts only direct source freshness, explicit first-party offer URLs, and public contact URLs. Missing or ambiguous owner, buyer, offer, cadence, contact, or distribution evidence is an escalation, never a promotion.
+
 ## Verification Baseline
 
 Before pushing material changes, run:

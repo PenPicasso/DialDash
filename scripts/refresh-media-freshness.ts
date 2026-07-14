@@ -32,6 +32,8 @@ const includeAll = args.has("--all");
 const staleOnly = args.has("--stale-only");
 const limitArg = process.argv.find((arg) => arg.startsWith("--limit="));
 const limit = limitArg ? Number(limitArg.split("=")[1]) : undefined;
+const idsArg = process.argv.find((arg) => arg.startsWith("--ids="));
+const requestedIds = new Set((idsArg?.split("=")[1] || "").split(",").map((id) => id.trim()).filter(Boolean));
 
 function sleep(milliseconds: number) {
   Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, milliseconds);
@@ -743,7 +745,7 @@ async function run() {
   const db = loadDatabase();
   const checkedAt = new Date().toISOString();
   const allTargets = db.nodes
-    .filter((node) => includeAll || node.actionabilityStatus === "READY")
+    .filter((node) => requestedIds.size > 0 ? requestedIds.has(node.id) : includeAll || node.actionabilityStatus === "READY")
     .filter((node) => !staleOnly || !node.lastMediaFreshnessAuditAt || Date.now() - new Date(node.lastMediaFreshnessAuditAt).getTime() > 23 * 60 * 60 * 1000)
     .sort((a, b) => (b.fitScore ?? b.calculatedScore ?? 0) - (a.fitScore ?? a.calculatedScore ?? 0));
   const targets = typeof limit === "number" && Number.isFinite(limit) ? allTargets.slice(0, limit) : allTargets;
@@ -756,7 +758,7 @@ async function run() {
     console.log(`batch ${index + 1}-${Math.min(index + CONCURRENCY, targets.length)}: ${batch.map((node) => node.id).join(", ")}`);
     const results = await Promise.all(
       batch.map((node) =>
-        withTimeout(node.id, refreshNode(node, checkedAt), { youtube: false, podcast: false, latest: false })
+        withTimeout(node.id, refreshNode(node, checkedAt), { youtube: false, podcast: false, newsletter: false, latest: false })
       )
     );
 
