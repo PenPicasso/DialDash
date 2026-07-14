@@ -1,4 +1,4 @@
-import { copyFileSync, cpSync, existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { copyFileSync, cpSync, existsSync, mkdirSync, rmSync } from "node:fs";
 import { resolve } from "node:path";
 
 const source = resolve(".open-next");
@@ -11,11 +11,12 @@ if (!existsSync(resolve(source, "worker.js"))) {
 rmSync(target, { force: true, recursive: true });
 cpSync(source, target, { recursive: true });
 
-mkdirSync(resolve(target, "server"), { recursive: true });
-writeFileSync(
-  resolve(target, "server", "index.js"),
-  'export { default } from "../worker.js";\n',
-  "utf8"
+const serverTarget = resolve(target, "server");
+mkdirSync(serverTarget, { recursive: true });
+cpSync(source, serverTarget, { recursive: true });
+copyFileSync(
+  resolve(source, "worker.js"),
+  resolve(serverTarget, "index.js")
 );
 
 mkdirSync(resolve(target, ".openai"), { recursive: true });
