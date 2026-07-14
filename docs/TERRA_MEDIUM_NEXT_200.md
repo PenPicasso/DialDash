@@ -49,6 +49,8 @@ Use owned RSS/Atom, strict Apple podcast lookup, official YouTube channel/feed, 
 
 For `factualHardGate`, use exactly one of: `INACTIVE_OVER_90_DAYS`, `CORPORATE_MONOLITH`, `WRONG_ICP`, `NON_ENGLISH`, `DUPLICATE_ACCOUNT`, `NO_NAMED_HUMAN_BY_DESIGN`, `EXISTING_STRONG_VIDEO_CAPABILITY`, or `NO_COMMERCIAL_TRANSACTION`. The evidence must prove the chosen gate. Use `NO_COMMERCIAL_TRANSACTION` only when an official source affirmatively establishes that there is no relevant transaction; failure to find an offer is `NURTURE`.
 
+`CORPORATE_MONOLITH` means a large enterprise, government/intergovernmental body, university, bank, global professional-services firm, or established media institution controls both the content and commercial transaction and no creator-controlled buyer chain exists. Company ownership alone is not enough. Founder-led businesses, specialist research firms, funded startups, and small media teams stay `NURTURE` until buyer authority and creator-sales fit are resolved.
+
 Do not reject because an offer, contact, owner, or feed was not found. That is unresolved research. Do not infer an offer from a title such as consultant, founder, investor, or analyst.
 
 ## Output

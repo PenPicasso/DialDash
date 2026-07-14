@@ -35,7 +35,7 @@ const errors: string[] = [];
 const expectedIds = expected.records.map((record) => record.id).sort();
 const actualIds = result.records.map((record) => record.id).sort();
 const url = (value?: string) => Boolean(value && /^https?:\/\//i.test(value));
-const genericRejection = /could not verify|did not verify|missing evidence|unverified|incomplete chain/i;
+const genericRejection = /could not verify|did not verify|missing evidence|unverified|incomplete chain|cannot be (?:factually )?rejected|remaining .+ require manual/i;
 const factualHardGates = new Set([
   "INACTIVE_OVER_90_DAYS",
   "CORPORATE_MONOLITH",
@@ -84,6 +84,7 @@ for (const record of result.records) {
   if (record.decision === "DISQUALIFIED_CONFIRMED") {
     if (!record.factualHardGate || genericRejection.test(record.decisionReason)) errors.push(`${record.id}: confirmed rejection requires a factual hard gate, not missing evidence.`);
     if (record.factualHardGate && !factualHardGates.has(record.factualHardGate)) errors.push(`${record.id}: unrecognized factual hard gate.`);
+    if (record.unresolvedGates?.length) errors.push(`${record.id}: confirmed rejection cannot retain unresolved gates.`);
   }
 }
 

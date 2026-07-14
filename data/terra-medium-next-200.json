@@ -1,6 +1,6 @@
 {
   "methodology": "terra-medium-recovery-v1",
-  "generatedAt": "2026-07-14T22:51:59.014Z",
+  "generatedAt": "2026-07-14T23:14:35.053Z",
   "solReviewStatus": "PENDING",
   "warning": "These are Terra Medium research decisions. They are not final until Sol audits every promotion, every nurture record, and a deterministic rejection sample.",
   "total": 200,
@@ -832,23 +832,13 @@
       "contentOwner": "Fatih Birol",
       "economicBuyer": "Fatih Birol",
       "factualHardGate": "CORPORATE_MONOLITH",
-      "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
       "evidence": [
         {
           "url": "https://www.iea.org/contributors/fatih-birol",
           "proves": "The IEA identifies Fatih Birol as its Executive Director and describes his agency leadership role."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "daniel-yergin",
@@ -857,23 +847,13 @@
       "contentOwner": "Daniel Yergin",
       "economicBuyer": "Daniel Yergin",
       "factualHardGate": "CORPORATE_MONOLITH",
-      "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
       "evidence": [
         {
           "url": "https://www.spglobal.com/en/enterprise/experts/dan-yergin.html",
           "proves": "S&P Global identifies Daniel Yergin as its Vice Chairman and chair of S&P's CERAWeek conference."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "luke-gromen",
@@ -1119,7 +1099,7 @@
       "id": "thomas-grtzner-und-bernhard-seyfang",
       "decision": "DISQUALIFIED_CONFIRMED",
       "factualHardGate": "NON_ENGLISH",
-      "decisionReason": "The official feed verifies Folge 48 - Energiewende in der Kritik: Haben ihre Gegner einen Punkt? at 2026-06-10T06:39:40.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The verified DeCarbon Cast feed is a German-language programme, which fails DialDash's global English-language content requirement.",
       "contentOwner": "Thomas Grützner und Bernhard Seyfang",
       "economicBuyer": "Thomas Grützner und Bernhard Seyfang",
       "ownedLongForm": {
@@ -1138,27 +1118,19 @@
         "cadenceStatus": "SEMI_ACTIVE",
         "medianIntervalDays": 29
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
       "evidence": [
         {
           "url": "https://anchor.fm/s/d3517f60/podcast/rss",
           "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "marketing-masterclasses",
       "decision": "DISQUALIFIED_CONFIRMED",
       "factualHardGate": "WRONG_ICP",
-      "decisionReason": "The official feed verifies 124. From Agency Life to Building a Sustainable Brand: with Sealand Gear CEO, Adrian Hewlett at 2026-05-13T14:21:48.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The verified Marketing Masterclasses catalogue covers agency, brand and marketing operations rather than energy, so it falls outside the Energy Dial ICP.",
       "contentOwner": "Marketing Masterclasses",
       "economicBuyer": "Marketing Masterclasses",
       "ownedLongForm": {
@@ -1177,27 +1149,19 @@
         "cadenceStatus": "SEMI_ACTIVE",
         "medianIntervalDays": 8
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
       "evidence": [
         {
           "url": "https://anchor.fm/s/f3e7c66c/podcast/rss",
           "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "ad-advance",
       "decision": "DISQUALIFIED_CONFIRMED",
       "factualHardGate": "WRONG_ICP",
-      "decisionReason": "The official feed verifies Expanding the Map: Amerge Joins the Podean Family at 2026-04-27T14:00:00.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The verified Ad Project catalogue is about Amazon advertising and agency operations rather than energy, so it falls outside the Energy Dial ICP.",
       "contentOwner": "Ad Advance",
       "economicBuyer": "Ad Advance",
       "ownedLongForm": {
@@ -1216,21 +1180,13 @@
         "cadenceStatus": "SEMI_ACTIVE",
         "medianIntervalDays": 14
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
       "evidence": [
         {
           "url": "https://feeds.captivate.fm/the-ad-project/",
           "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "paul-louis-holi",
@@ -1274,7 +1230,7 @@
       "id": "intentional-learning",
       "decision": "DISQUALIFIED_CONFIRMED",
       "factualHardGate": "WRONG_ICP",
-      "decisionReason": "The official feed verifies Technology Skills for Today’s CPA with Derek Henry at 2026-05-28T21:33:01.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The verified Intentional Learning catalogue serves CPA and accounting education rather than energy, so it falls outside the Energy Dial ICP.",
       "contentOwner": "Intentional Learning",
       "economicBuyer": "Intentional Learning",
       "ownedLongForm": {
@@ -1293,21 +1249,13 @@
         "cadenceStatus": "SEMI_ACTIVE",
         "medianIntervalDays": 50.1
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
       "evidence": [
         {
           "url": "https://feed.podbean.com/encoursa/feed.xml",
           "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "hugh-hendry",
@@ -1446,27 +1394,19 @@
         "cadenceStatus": "ACTIVE",
         "medianIntervalDays": 41.5
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
       "evidence": [
         {
-          "url": "https://api.substack.com/feed/podcast/4254176.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "url": "https://www.strath.ac.uk/humanities/centreforenergypolicy/aboutus/",
+          "proves": "The University of Strathclyde identifies the Centre for Energy Policy as its institutional research centre."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "globaldata-energy",
       "decision": "DISQUALIFIED_CONFIRMED",
       "factualHardGate": "CORPORATE_MONOLITH",
-      "decisionReason": "The official feed verifies Energy transition investment trends: where’s the money flowing? at 2026-07-07T10:59:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "GlobalData is an enterprise intelligence platform used by more than 5,000 organisations, with in-house analysts, journalists and commercial teams; its energy podcast is corporate product marketing rather than a creator-controlled account.",
       "contentOwner": "GlobalData Energy",
       "economicBuyer": "GlobalData Energy",
       "ownedLongForm": {
@@ -1485,21 +1425,13 @@
         "cadenceStatus": "ACTIVE",
         "medianIntervalDays": 7
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
       "evidence": [
         {
-          "url": "https://anchor.fm/s/1093f677c/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "url": "https://careers.globaldata.com/who-we-are",
+          "proves": "GlobalData describes an enterprise intelligence platform used by more than 5,000 organisations and supported by in-house teams."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "paul-sankey",
@@ -1551,9 +1483,8 @@
     },
     {
       "id": "gridx",
-      "decision": "DISQUALIFIED_CONFIRMED",
-      "factualHardGate": "CORPORATE_MONOLITH",
-      "decisionReason": "GridX's current podcast is company-owned utility-software marketing, not a creator-controlled Energy Dial account.",
+      "decision": "NURTURE",
+      "decisionReason": "GridX has an active owned energy podcast, a named leadership team and a demo-led software offer. Company ownership alone does not prove the corporate-monolith gate; creator-sales fit, buyer authority and the three-sample video gap still require review.",
       "contentOwner": "GridX",
       "economicBuyer": "GridX",
       "ownedLongForm": {
@@ -1586,15 +1517,19 @@
           "proves": "GridX's official company overview identifies the owner of the utility-industry podcast and platform."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.323Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "inspiratia",
-      "decision": "DISQUALIFIED_CONFIRMED",
-      "factualHardGate": "CORPORATE_MONOLITH",
-      "decisionReason": "inspiratia is an energy-infrastructure intelligence company; its podcast is company-owned analyst marketing rather than a creator-controlled account.",
+      "decision": "NURTURE",
+      "decisionReason": "Official sources verify an active energy-transition podcast, named hosts and editors, direct podcast contact, subscription and demo offers, events, sponsorships and current video shorts. This resembles the target research-media ICP; buyer authority and the quality of three existing shorts still require inspection before promotion.",
       "contentOwner": "inspiratia",
-      "economicBuyer": "inspiratia",
+      "onMicHost": "Maya Chavvakula",
+      "contact": {
+        "channel": "EMAIL",
+        "value": "podcasts@inspiratia.com",
+        "evidenceUrl": "https://inspiratia.com/article/the-opportunities-and-potential-for-onshore-wind-repowering-in-europe-with-trig-infrared"
+      },
       "ownedLongForm": {
         "type": "PODCAST",
         "latestTitle": "The opportunities and potential for onshore wind repowering in Europe with TRIG/ InfraRed",
@@ -1611,21 +1546,36 @@
         "cadenceStatus": "ACTIVE",
         "medianIntervalDays": 7.1
       },
+      "offer": {
+        "description": "Energy-transition intelligence subscriptions, demo-led data products, events and sponsored podcast partnerships.",
+        "evidenceUrl": "https://inspiratia.com/article/the-opportunities-and-potential-for-onshore-wind-repowering-in-europe-with-trig-infrared"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Energy Transition Today podcast and video shorts"
+        ],
+        "mof": [
+          "Free analysis, newsletter, events and expert content"
+        ],
+        "bof": [
+          "Subscription demo, event tickets and sponsored podcast partnerships"
+        ]
+      },
       "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "ECONOMIC_BUYER_AUTHORITY",
+        "THREE_SAMPLE_VIDEO_GAP"
       ],
       "evidence": [
         {
-          "url": "https://inspiratia.com/about-us",
-          "proves": "inspiratia describes its energy and infrastructure intelligence business and enterprise customer focus."
+          "url": "https://inspiratia.com/team",
+          "proves": "The official team page names the CEO, marketing lead, analysts, podcast producers and co-hosts."
+        },
+        {
+          "url": "https://inspiratia.com/article/the-opportunities-and-potential-for-onshore-wind-repowering-in-europe-with-trig-infrared",
+          "proves": "The current episode identifies Maya Chavvakula as host, provides the podcast email and demo CTA, and embeds multiple video shorts."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.323Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "patrick-de-haan",
@@ -1658,23 +1608,13 @@
       "decisionReason": "NOV is an energy-equipment company, so its communications are enterprise-owned rather than a creator-controlled clipping prospect.",
       "contentOwner": "NOV",
       "economicBuyer": "NOV",
-      "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
       "evidence": [
         {
           "url": "https://investors.nov.com/company-overview/",
           "proves": "NOV identifies its energy-equipment business and corporate product lines."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.323Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "x-energy",
@@ -1683,23 +1623,13 @@
       "decisionReason": "X-energy is an advanced nuclear reactor and fuel company, so its content is enterprise-owned corporate communications rather than a creator-controlled clipping prospect.",
       "contentOwner": "X-energy",
       "economicBuyer": "X-energy",
-      "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
       "evidence": [
         {
           "url": "https://investors.x-energy.com/",
           "proves": "X-energy's investor site identifies a reactor-technology and fuel manufacturing company."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.323Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "louisiana-oil-gas-association",

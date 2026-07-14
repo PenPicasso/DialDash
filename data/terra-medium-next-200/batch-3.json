@@ -28,9 +28,8 @@
     },
     {
       "id": "gridx",
-      "decision": "DISQUALIFIED_CONFIRMED",
-      "factualHardGate": "CORPORATE_MONOLITH",
-      "decisionReason": "GridX's current podcast is company-owned utility-software marketing, not a creator-controlled Energy Dial account.",
+      "decision": "NURTURE",
+      "decisionReason": "GridX has an active owned energy podcast, a named leadership team and a demo-led software offer. Company ownership alone does not prove the corporate-monolith gate; creator-sales fit, buyer authority and the three-sample video gap still require review.",
       "contentOwner": "GridX",
       "economicBuyer": "GridX",
       "ownedLongForm": {
@@ -63,15 +62,19 @@
           "proves": "GridX's official company overview identifies the owner of the utility-industry podcast and platform."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.323Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "inspiratia",
-      "decision": "DISQUALIFIED_CONFIRMED",
-      "factualHardGate": "CORPORATE_MONOLITH",
-      "decisionReason": "inspiratia is an energy-infrastructure intelligence company; its podcast is company-owned analyst marketing rather than a creator-controlled account.",
+      "decision": "NURTURE",
+      "decisionReason": "Official sources verify an active energy-transition podcast, named hosts and editors, direct podcast contact, subscription and demo offers, events, sponsorships and current video shorts. This resembles the target research-media ICP; buyer authority and the quality of three existing shorts still require inspection before promotion.",
       "contentOwner": "inspiratia",
-      "economicBuyer": "inspiratia",
+      "onMicHost": "Maya Chavvakula",
+      "contact": {
+        "channel": "EMAIL",
+        "value": "podcasts@inspiratia.com",
+        "evidenceUrl": "https://inspiratia.com/article/the-opportunities-and-potential-for-onshore-wind-repowering-in-europe-with-trig-infrared"
+      },
       "ownedLongForm": {
         "type": "PODCAST",
         "latestTitle": "The opportunities and potential for onshore wind repowering in Europe with TRIG/ InfraRed",
@@ -88,21 +91,36 @@
         "cadenceStatus": "ACTIVE",
         "medianIntervalDays": 7.1
       },
+      "offer": {
+        "description": "Energy-transition intelligence subscriptions, demo-led data products, events and sponsored podcast partnerships.",
+        "evidenceUrl": "https://inspiratia.com/article/the-opportunities-and-potential-for-onshore-wind-repowering-in-europe-with-trig-infrared"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Energy Transition Today podcast and video shorts"
+        ],
+        "mof": [
+          "Free analysis, newsletter, events and expert content"
+        ],
+        "bof": [
+          "Subscription demo, event tickets and sponsored podcast partnerships"
+        ]
+      },
       "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "ECONOMIC_BUYER_AUTHORITY",
+        "THREE_SAMPLE_VIDEO_GAP"
       ],
       "evidence": [
         {
-          "url": "https://inspiratia.com/about-us",
-          "proves": "inspiratia describes its energy and infrastructure intelligence business and enterprise customer focus."
+          "url": "https://inspiratia.com/team",
+          "proves": "The official team page names the CEO, marketing lead, analysts, podcast producers and co-hosts."
+        },
+        {
+          "url": "https://inspiratia.com/article/the-opportunities-and-potential-for-onshore-wind-repowering-in-europe-with-trig-infrared",
+          "proves": "The current episode identifies Maya Chavvakula as host, provides the podcast email and demo CTA, and embeds multiple video shorts."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.323Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "patrick-de-haan",
@@ -135,23 +153,13 @@
       "decisionReason": "NOV is an energy-equipment company, so its communications are enterprise-owned rather than a creator-controlled clipping prospect.",
       "contentOwner": "NOV",
       "economicBuyer": "NOV",
-      "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
       "evidence": [
         {
           "url": "https://investors.nov.com/company-overview/",
           "proves": "NOV identifies its energy-equipment business and corporate product lines."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.323Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "x-energy",
@@ -160,23 +168,13 @@
       "decisionReason": "X-energy is an advanced nuclear reactor and fuel company, so its content is enterprise-owned corporate communications rather than a creator-controlled clipping prospect.",
       "contentOwner": "X-energy",
       "economicBuyer": "X-energy",
-      "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
       "evidence": [
         {
           "url": "https://investors.x-energy.com/",
           "proves": "X-energy's investor site identifies a reactor-technology and fuel manufacturing company."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.323Z"
+      "auditedAt": "2026-07-14T23:08:37.000Z"
     },
     {
       "id": "louisiana-oil-gas-association",
