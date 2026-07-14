@@ -143,9 +143,10 @@ The replacement workflow is `terra-medium-recovery-v1`:
 - Sol must subsequently audit all promotions, all nurture decisions, and a rejection sample before the 200 can count as completed.
 
 Terra Medium batch progress:
-- Batch 1 of 8 was independently researched and passed `validate:terra-medium-next-200`, `validate:methodology`, and `validate:data` on 2026-07-14.
-- Its output is `data/terra-medium-next-200/batch-1.json`: 14 factual exclusions and 11 NURTURE records. No prospect was promoted.
-- Batches 2 through 8 are not started and must not be represented as completed. The full 200 remains uncounted and cannot be composed until all eight batches exist.
+- All eight batches were processed and passed `validate:terra-medium-next-200`; the methodology and production-data validators also passed on 2026-07-14.
+- The composed result is `data/terra-medium-next-200.json`: 9 factual exclusions, 191 NURTURE records, and 0 promotions. It remains `solReviewStatus: PENDING` and the 200 must not count as completed until Sol reviews it.
+- `npm run research:terra-medium-evidence -- --batch=N` creates a resumable, ignored evidence pack using strict Apple discovery, official RSS parsing, cadence calculation and source probes. `npm run draft:terra-medium-batch -- --batch=N` turns that evidence into a conservative batch file.
+- A stale podcast feed is not a factual inactivity rejection. It proves only that the feed is stale; YouTube, newsletter and official-site publishing must be cross-checked for the true latest owned publication. Feed-only inactivity stays NURTURE.
 
 ### Full light-model and Sol review
 

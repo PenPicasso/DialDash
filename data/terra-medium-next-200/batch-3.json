@@ -1,0 +1,820 @@
+{
+  "methodology": "terra-medium-recovery-v1",
+  "batch": 3,
+  "records": [
+    {
+      "id": "saad-rahim",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Saad Rahim",
+      "economicBuyer": "Saad Rahim",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/SaadRahim",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "gridx",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies How PSEG Long Island found its footing at 2026-06-23T10:00:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "GridX",
+      "economicBuyer": "GridX",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "How PSEG Long Island found its footing",
+        "latestPublishedAt": "2026-06-23T10:00:00.000Z",
+        "evidenceUrl": "https://feeds.simplecast.com/_NR1_RZa",
+        "recentPublicationDates": [
+          "2026-06-23T10:00:00.000Z",
+          "2026-06-09T10:00:00.000Z",
+          "2026-05-26T10:00:00.000Z",
+          "2026-05-12T10:00:00.000Z",
+          "2026-04-28T10:00:00.000Z",
+          "2026-04-14T10:00:00.000Z"
+        ],
+        "cadenceStatus": "ACTIVE",
+        "medianIntervalDays": 14
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.simplecast.com/_NR1_RZa",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "inspiratia",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies The opportunities and potential for onshore wind repowering in Europe with TRIG/ InfraRed at 2026-07-09T10:00:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "inspiratia",
+      "economicBuyer": "inspiratia",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "The opportunities and potential for onshore wind repowering in Europe with TRIG/ InfraRed",
+        "latestPublishedAt": "2026-07-09T10:00:00.000Z",
+        "evidenceUrl": "https://rss.buzzsprout.com/1175864.rss",
+        "recentPublicationDates": [
+          "2026-07-09T10:00:00.000Z",
+          "2026-06-11T12:00:00.000Z",
+          "2026-04-17T06:00:00.000Z",
+          "2026-03-13T07:00:00.000Z",
+          "2026-02-17T12:00:00.000Z",
+          "2026-02-06T07:00:00.000Z"
+        ],
+        "cadenceStatus": "ACTIVE",
+        "medianIntervalDays": 7.1
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://rss.buzzsprout.com/1175864.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "patrick-de-haan",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Patrick De Haan",
+      "economicBuyer": "Patrick De Haan",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=FlH9h8_bcKE",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "nov",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "NOV",
+      "economicBuyer": "NOV",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/NOVGlobal",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "x-energy",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "X-energy",
+      "economicBuyer": "X-energy",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=XfQ1CH7AePM",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "louisiana-oil-gas-association",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Louisiana Oil & Gas Association",
+      "economicBuyer": "Louisiana Oil & Gas Association",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/LouisianaOilGas",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "emd",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Technicals: Week 28 at 2026-07-14T09:00:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "EMD",
+      "economicBuyer": "EMD",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Technicals: Week 28",
+        "latestPublishedAt": "2026-07-14T09:00:00.000Z",
+        "evidenceUrl": "https://feeds.transistor.fm/energy-markets-daily",
+        "recentPublicationDates": [
+          "2026-07-14T09:00:00.000Z",
+          "2026-07-13T09:00:00.000Z",
+          "2026-07-08T13:55:16.000Z",
+          "2026-07-03T09:00:00.000Z",
+          "2026-07-02T09:00:00.000Z",
+          "2026-07-01T09:00:00.000Z"
+        ],
+        "cadenceStatus": "ACTIVE",
+        "medianIntervalDays": 1
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.transistor.fm/energy-markets-daily",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "american-public-power-association",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies SRP Official Details Project That Will Install New Fuel Moisture Sensor Technology to Monitor Wildfire Risk at 2026-07-13T16:00:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "American Public Power Association",
+      "economicBuyer": "American Public Power Association",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "SRP Official Details Project That Will Install New Fuel Moisture Sensor Technology to Monitor Wildfire Risk",
+        "latestPublishedAt": "2026-07-13T16:00:00.000Z",
+        "evidenceUrl": "https://rss.buzzsprout.com/1452280.rss",
+        "recentPublicationDates": [
+          "2026-07-13T16:00:00.000Z",
+          "2026-07-06T16:00:00.000Z",
+          "2026-06-29T16:00:00.000Z",
+          "2026-06-22T16:00:00.000Z",
+          "2026-06-15T16:00:00.000Z",
+          "2026-06-08T16:00:00.000Z"
+        ],
+        "cadenceStatus": "ACTIVE",
+        "medianIntervalDays": 7
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://rss.buzzsprout.com/1452280.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "gas-processing",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Cybersecurity: A discussion in threat mitigation and resilience at 2026-07-14T04:05:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Gas Processing",
+      "economicBuyer": "Gas Processing",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Cybersecurity: A discussion in threat mitigation and resilience",
+        "latestPublishedAt": "2026-07-14T04:05:00.000Z",
+        "evidenceUrl": "https://feeds.blubrry.com/feeds/3716290.xml",
+        "recentPublicationDates": [
+          "2026-07-14T04:05:00.000Z",
+          "2026-07-06T18:01:29.000Z",
+          "2026-06-12T13:44:00.000Z",
+          "2026-05-27T18:05:52.000Z",
+          "2026-05-13T17:48:00.000Z",
+          "2026-04-06T15:28:00.000Z"
+        ],
+        "cadenceStatus": "ACTIVE",
+        "medianIntervalDays": 9.1
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.blubrry.com/feeds/3716290.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "politico",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Gov. Hochul on New York’s energy and climate balancing act at 2026-07-13T09:00:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "POLITICO",
+      "economicBuyer": "POLITICO",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Gov. Hochul on New York’s energy and climate balancing act",
+        "latestPublishedAt": "2026-07-13T09:00:00.000Z",
+        "evidenceUrl": "https://feeds.megaphone.fm/ASD3100338491",
+        "recentPublicationDates": [
+          "2026-07-13T09:00:00.000Z",
+          "2026-07-10T09:00:00.000Z",
+          "2026-07-08T09:00:00.000Z",
+          "2026-07-06T09:00:00.000Z",
+          "2026-07-01T09:00:00.000Z",
+          "2026-06-29T09:00:00.000Z"
+        ],
+        "cadenceStatus": "ACTIVE",
+        "medianIntervalDays": 2
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.megaphone.fm/ASD3100338491",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "vitaliy",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Navigating Solar in Abbotsford – Costs, Rebates, and Farm Loads (2026) at 2026-06-19T21:00:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Vitaliy",
+      "economicBuyer": "Vitaliy",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Navigating Solar in Abbotsford – Costs, Rebates, and Farm Loads (2026)",
+        "latestPublishedAt": "2026-06-19T21:00:00.000Z",
+        "evidenceUrl": "https://rss.buzzsprout.com/2434562.rss",
+        "recentPublicationDates": [
+          "2026-06-19T21:00:00.000Z",
+          "2026-02-27T22:00:00.000Z",
+          "2026-02-26T00:00:00.000Z",
+          "2026-02-18T00:00:00.000Z",
+          "2025-11-14T06:00:00.000Z",
+          "2025-11-12T23:00:00.000Z"
+        ],
+        "cadenceStatus": "ACTIVE",
+        "medianIntervalDays": 10.2
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://rss.buzzsprout.com/2434562.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "power-stellar",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Power Stellar",
+      "economicBuyer": "Power Stellar",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@powerstellar?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "carol-morgan",
+      "decision": "NURTURE",
+      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "contentOwner": "Carol Morgan",
+      "economicBuyer": "Carol Morgan",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Love Your Buyers: Build Referrals!",
+        "latestPublishedAt": "2026-03-03T20:30:13.000Z",
+        "evidenceUrl": "https://feed.podbean.com/SalesandMarketingPowerHour/feed.xml",
+        "recentPublicationDates": [
+          "2026-03-03T20:30:13.000Z",
+          "2025-12-12T15:25:34.000Z",
+          "2025-12-05T19:17:18.000Z",
+          "2025-12-05T18:12:51.000Z",
+          "2025-12-05T18:12:27.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 3.4
+      },
+      "evidence": [
+        {
+          "url": "https://feed.podbean.com/SalesandMarketingPowerHour/feed.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z",
+      "unresolvedGates": [
+        "CROSS_CHANNEL_TRUE_LATEST",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ]
+    },
+    {
+      "id": "victoria-gibson",
+      "decision": "NURTURE",
+      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "contentOwner": "Victoria Gibson",
+      "economicBuyer": "Victoria Gibson",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "How Human Design Helps You Thrive in an Unpredictable Business Landscape",
+        "latestPublishedAt": "2026-04-04T05:52:00.000Z",
+        "evidenceUrl": "https://rss.libsyn.com/shows/314477/destinations/2532140.xml",
+        "recentPublicationDates": [
+          "2026-04-04T05:52:00.000Z",
+          "2026-03-25T17:00:00.000Z",
+          "2026-03-13T01:15:00.000Z",
+          "2026-03-02T01:36:00.000Z",
+          "2026-01-29T17:25:00.000Z",
+          "2026-01-17T15:21:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 11
+      },
+      "evidence": [
+        {
+          "url": "https://rss.libsyn.com/shows/314477/destinations/2532140.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z",
+      "unresolvedGates": [
+        "CROSS_CHANNEL_TRUE_LATEST",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ]
+    },
+    {
+      "id": "isaac-asimov",
+      "decision": "NURTURE",
+      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "contentOwner": "Isaac Asimov",
+      "economicBuyer": "Isaac Asimov",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "001 - Volume 1 Part 1",
+        "latestPublishedAt": "2026-03-04T21:56:22.000Z",
+        "evidenceUrl": "https://www.spreaker.com/show/6900461/episodes/feed",
+        "recentPublicationDates": [
+          "2026-03-04T21:56:22.000Z",
+          "2026-03-04T21:56:25.000Z",
+          "2026-03-04T21:56:30.000Z",
+          "2026-03-04T21:56:35.000Z",
+          "2026-03-04T21:56:40.000Z",
+          "2026-03-04T21:56:44.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 0
+      },
+      "evidence": [
+        {
+          "url": "https://www.spreaker.com/show/6900461/episodes/feed",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z",
+      "unresolvedGates": [
+        "CROSS_CHANNEL_TRUE_LATEST",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ]
+    },
+    {
+      "id": "markham-hislop",
+      "decision": "NURTURE",
+      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "contentOwner": "Markham Hislop",
+      "economicBuyer": "Markham Hislop",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Trump Is Not Happy with Carney's Davos Speech",
+        "latestPublishedAt": "2026-01-22T17:54:29.000Z",
+        "evidenceUrl": "https://feeds.transistor.fm/energi-talks",
+        "recentPublicationDates": [
+          "2026-01-22T17:54:29.000Z",
+          "2025-05-04T00:45:12.000Z",
+          "2025-05-01T20:37:50.000Z",
+          "2025-04-30T21:38:04.000Z",
+          "2025-04-29T17:44:09.000Z",
+          "2025-04-29T17:37:02.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 1
+      },
+      "evidence": [
+        {
+          "url": "https://feeds.transistor.fm/energi-talks",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z",
+      "unresolvedGates": [
+        "CROSS_CHANNEL_TRUE_LATEST",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ]
+    },
+    {
+      "id": "deloitte-uk",
+      "decision": "NURTURE",
+      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "contentOwner": "Deloitte UK",
+      "economicBuyer": "Deloitte UK",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Episode 18: The Power of Connection: Driving Wider Outcomes in Infrastructure",
+        "latestPublishedAt": "2026-02-03T06:49:27.000Z",
+        "evidenceUrl": "https://rss.libsyn.com/shows/464415/destinations/3921915.xml",
+        "recentPublicationDates": [
+          "2026-02-03T06:49:27.000Z",
+          "2025-07-16T09:10:52.000Z",
+          "2025-06-25T12:30:57.000Z",
+          "2025-06-18T09:55:15.000Z",
+          "2025-04-08T04:59:00.000Z",
+          "2025-03-10T07:42:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 42
+      },
+      "evidence": [
+        {
+          "url": "https://rss.libsyn.com/shows/464415/destinations/3921915.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z",
+      "unresolvedGates": [
+        "CROSS_CHANNEL_TRUE_LATEST",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ]
+    },
+    {
+      "id": "matt-jones",
+      "decision": "NURTURE",
+      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "contentOwner": "Matt Jones",
+      "economicBuyer": "Matt Jones",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Understanding Oil Spills: Legal and Practical Insights from Industry Professionals &#124; Ep 17",
+        "latestPublishedAt": "2026-04-09T13:33:56.000Z",
+        "evidenceUrl": "https://feeds.oggn.com/category/eltw/feed/",
+        "recentPublicationDates": [
+          "2026-04-09T13:33:56.000Z",
+          "2025-11-12T06:00:00.000Z",
+          "2025-10-08T05:00:00.000Z",
+          "2025-09-10T05:00:00.000Z",
+          "2025-09-03T05:00:00.000Z",
+          "2025-07-30T13:20:55.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 28
+      },
+      "evidence": [
+        {
+          "url": "https://feeds.oggn.com/category/eltw/feed/",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z",
+      "unresolvedGates": [
+        "CROSS_CHANNEL_TRUE_LATEST",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ]
+    },
+    {
+      "id": "naygn-clean-energy-committee-members",
+      "decision": "NURTURE",
+      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "contentOwner": "NAYGN Clean Energy Committee Members",
+      "economicBuyer": "NAYGN Clean Energy Committee Members",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "NAYGN EP.4-Exploring America's energy infrastructure from historic build-out to today w/ Emmet Penny",
+        "latestPublishedAt": "2026-03-26T20:05:01.000Z",
+        "evidenceUrl": "https://api.riverside.fm/hosting/K7Fb2IxI.rss",
+        "recentPublicationDates": [
+          "2026-03-26T20:05:01.000Z",
+          "2026-02-24T03:25:53.000Z",
+          "2026-02-22T20:58:01.000Z",
+          "2026-02-05T14:33:20.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 17.3
+      },
+      "evidence": [
+        {
+          "url": "https://api.riverside.fm/hosting/K7Fb2IxI.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z",
+      "unresolvedGates": [
+        "CROSS_CHANNEL_TRUE_LATEST",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ]
+    },
+    {
+      "id": "lagos-commodities-and-futures-exchange",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "LAGOS COMMODITIES AND FUTURES EXCHANGE",
+      "economicBuyer": "LAGOS COMMODITIES AND FUTURES EXCHANGE",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/LCFE_NG",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "climatechoice",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "ClimateChoice",
+      "economicBuyer": "ClimateChoice",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/climatechoice",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "eag",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "EAG",
+      "economicBuyer": "EAG",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@EnthusiastAutoGroupCincinnati?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "aliya",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Data Centers in Central Asia: Energy, Infrastructure, and Investment at 2026-05-28T05:59:31.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Aliya",
+      "economicBuyer": "Aliya",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Data Centers in Central Asia: Energy, Infrastructure, and Investment",
+        "latestPublishedAt": "2026-05-28T05:59:31.000Z",
+        "evidenceUrl": "https://podster.fm/rss.xml?pid=91116",
+        "recentPublicationDates": [
+          "2026-05-28T05:59:31.000Z",
+          "2026-05-14T05:44:18.000Z",
+          "2026-01-15T06:29:36.000Z",
+          "2025-09-25T07:33:36.000Z",
+          "2025-08-14T06:15:32.000Z",
+          "2025-07-24T04:25:05.000Z"
+        ],
+        "cadenceStatus": "SEMI_ACTIVE",
+        "medianIntervalDays": 21.1
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://podster.fm/rss.xml?pid=91116",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    },
+    {
+      "id": "iterorganization",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "iterorganization",
+      "economicBuyer": "iterorganization",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=pNAqT3LC6sI",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T22:19:26.323Z"
+    }
+  ]
+}

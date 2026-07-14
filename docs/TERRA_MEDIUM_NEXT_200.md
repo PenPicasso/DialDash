@@ -17,6 +17,15 @@ Work on `codex/sol-next-200`, or on a worktree branch created from its latest co
 
 Read `storage/sol-next-200/batch-N.json` for the current batch. Old fields, generic rejection maps, and light-model conclusions are discovery hints only. They are not evidence and must not be copied as final decisions.
 
+For batches 2-8, precompute the official-source evidence pack first:
+
+```bash
+npm run research:terra-medium-evidence -- --batch=N
+npm run draft:terra-medium-batch -- --batch=N
+```
+
+The evidence command caches nothing in production and writes only under ignored `storage/terra-medium-next-200/`. The draft is deliberately conservative and must be manually enriched before promotion. A stale podcast feed alone remains NURTURE until every owned channel is checked for the true latest publication.
+
 ## Required Research Per Prospect
 
 Use official first-party evidence wherever available and record the exact URL that proves each conclusion:

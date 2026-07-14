@@ -2,30 +2,777 @@
   "methodology": "terra-medium-recovery-v1",
   "batch": 1,
   "records": [
-    {"id":"the-wilkes-center-for-climate-science","decision":"DISQUALIFIED_CONFIRMED","decisionReason":"The official site identifies this as a University of Utah climate-policy center, not a creator-controlled Energy Dial account.","factualHardGate":"CORPORATE_MONOLITH","evidence":[{"url":"https://wilkescenter.utah.edu/about/","proves":"The center is an institutional University of Utah program with university staff and faculty leadership."},{"url":"https://wilkescenter.utah.edu/pod/","proves":"Ross Chambless hosts and produces the institution's Talking Climate podcast."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"amrita-sen","decision":"DISQUALIFIED_CONFIRMED","decisionReason":"Amrita Sen founded and leads research at Energy Aspects, a 400-person global research house; its current YouTube and content are firm-owned enterprise marketing rather than a creator-controlled clipping account.","contentOwner":"Energy Aspects","onMicHost":"Amrita Sen","economicBuyer":"Amrita Sen","contact":{"channel":"EMAIL","value":"contact@energyaspects.com","evidenceUrl":"https://www.energyaspects.com/contact"},"offer":{"description":"Energy-market intelligence subscriptions, data and bespoke consultancy.","evidenceUrl":"https://www.energyaspects.com/ai-info-page"},"observedFunnel":{"tof":["Energy Aspects insights and YouTube"],"mof":["EA Forum, research and webinars"],"bof":["Subscription trial and consultancy"]},"factualHardGate":"CORPORATE_MONOLITH","evidence":[{"url":"https://www.energyaspects.com/about-us/amrita-sen","proves":"Amrita is founder and Director of Market Intelligence at a global research house with over 400 employees."},{"url":"https://www.energyaspects.com/request-a-trial","proves":"Energy Aspects sells energy data and intelligence through a trial-led subscription."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"helima-croft","decision":"DISQUALIFIED_CONFIRMED","decisionReason":"Helima Croft's energy analysis and media appearances are carried through RBC Capital Markets, a global bank; the available content is not a creator-owned media business.","contentOwner":"RBC Capital Markets","onMicHost":"Helima Croft","economicBuyer":"RBC Capital Markets","contact":{"channel":"EMAIL","value":"Helima.Croft@rbccm.com","evidenceUrl":"https://www.rbccm.com/en/insights/story.page?dcr=templatedata%2Farticle%2Finsights%2Fdata%2F2020%2F09%2Fbeyond_the_ballot_with_helima_croft"},"factualHardGate":"CORPORATE_MONOLITH","evidence":[{"url":"https://www.rbccm.com/en/insights/story.page?dcr=templatedata%2Farticle%2Finsights%2Fdata%2F2020%2F09%2Fbeyond_the_ballot_with_helima_croft","proves":"RBC identifies Croft as its Managing Director and Global Head of Commodity Strategy and MENA Research."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"josh-young","decision":"NURTURE","decisionReason":"Bison Interests verifies Josh Young as founder/CIO and provides a public contact route, but the official media page shows him as a guest on third-party shows, not owner of a current recurring long-form property.","contentOwner":"Josh Young","economicBuyer":"Josh Young","contact":{"channel":"EMAIL","value":"info@bisoninterests.com","evidenceUrl":"https://bisoninterests.com/about-us"},"offer":{"description":"Energy-focused investment management through Bison Interests.","evidenceUrl":"https://bisoninterests.com/about-us"},"observedFunnel":{"tof":["Third-party video and podcast appearances"],"mof":["Bison media and white-paper content"],"bof":["Investment-management relationship"]},"unresolvedGates":["OWNED_CURRENT_LONG_FORM","THREE_PUBLICATION_CADENCE_DATES","INSPECTED_VIDEO_GAP"],"evidence":[{"url":"https://bisoninterests.com/about-us","proves":"Josh Young is Bison Interests' Founder and CIO and the site gives the public inquiry email."},{"url":"https://bisoninterests.com/media","proves":"The company curates Josh Young's recent external video and podcast appearances."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"eric-nuttall","decision":"NURTURE","decisionReason":"The existing public profile identifies an energy investor and social route, but no first-party owned current long-form property or transaction page was verified in this batch.","contentOwner":"Eric Nuttall","economicBuyer":"Eric Nuttall","contact":{"channel":"X_DM","value":"https://x.com/ericnuttall","evidenceUrl":"https://x.com/ericnuttall"},"unresolvedGates":["OWNED_CURRENT_LONG_FORM","THREE_PUBLICATION_CADENCE_DATES","VERIFIED_OFFER","INSPECTED_VIDEO_GAP"],"evidence":[{"url":"https://x.com/ericnuttall","proves":"The recorded public outreach route is Eric Nuttall's X profile."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"bob-mcnally","decision":"NURTURE","decisionReason":"The available channels identify Bob McNally and a Rapidan Energy Group relationship, but this batch did not verify a current owner-controlled show, three-date cadence, or a direct public contact route on an official Rapidan page.","contentOwner":"Bob McNally","economicBuyer":"Bob McNally","contact":{"channel":"X_DM","value":"https://x.com/BobMcNally_RA","evidenceUrl":"https://x.com/BobMcNally_RA"},"unresolvedGates":["OWNED_CURRENT_LONG_FORM","THREE_PUBLICATION_CADENCE_DATES","VERIFIED_CONTACT","VERIFIED_OFFER","INSPECTED_VIDEO_GAP"],"evidence":[{"url":"https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about","proves":"The existing prospect record points to Bob McNally's public YouTube channel."},{"url":"https://x.com/BobMcNally_RA","proves":"The recorded public outreach route is Bob McNally's X profile."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"gary-ross","decision":"NURTURE","decisionReason":"The record identifies an energy economist with a social profile, but no official current creator-owned long-form source, contact page, or commercial transaction was verified.","contentOwner":"Gary Ross","economicBuyer":"Gary Ross","contact":{"channel":"X_DM","value":"https://x.com/GaryRoss46","evidenceUrl":"https://x.com/GaryRoss46"},"unresolvedGates":["OWNED_CURRENT_LONG_FORM","THREE_PUBLICATION_CADENCE_DATES","VERIFIED_CONTACT","VERIFIED_OFFER","INSPECTED_VIDEO_GAP"],"evidence":[{"url":"https://x.com/GaryRoss46","proves":"The recorded public outreach route is Gary Ross's X profile."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"endeavor-business-media","decision":"DISQUALIFIED_CONFIRMED","decisionReason":"Oil & Gas Journal is part of EndeavorB2B's multi-industry B2B media, marketing, events and intelligence company, with an established internal editorial, sales, sponsorship and custom-publishing function.","contentOwner":"EndeavorB2B","economicBuyer":"Diana Smith","contact":{"channel":"EMAIL","value":"dsmith@endeavorb2b.com","evidenceUrl":"https://energy.endeavorb2b.com/ogj-resources/"},"offer":{"description":"B2B media, marketing, sponsorship, custom publishing and demand-generation services.","evidenceUrl":"https://www.endeavorb2b.com/company/"},"observedFunnel":{"tof":["Oil & Gas Journal articles, newsletter and podcast"],"mof":["Editorial content and events"],"bof":["Advertising, sponsorship and custom publishing"]},"factualHardGate":"CORPORATE_MONOLITH","evidence":[{"url":"https://www.endeavorb2b.com/company/","proves":"EndeavorB2B is a multi-industry B2B media, marketing, events and intelligence company."},{"url":"https://energy.endeavorb2b.com/ogj-resources/","proves":"Oil & Gas Journal has internal sales, sponsorship, custom publishing and editorial staff."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"anne-marie-campbell","decision":"NURTURE","decisionReason":"The legacy sources point to Bloomberg-branded distribution and an unrelated YouTube URL; the ownership, current long-form property and direct commercial buyer need a clean first-party match before any decision.","contentOwner":"Anne-Marie Campbell","unresolvedGates":["OWNED_CURRENT_LONG_FORM","CONTENT_OWNER_MATCH","ECONOMIC_BUYER","VERIFIED_CONTACT","VERIFIED_OFFER","INSPECTED_VIDEO_GAP"],"evidence":[{"url":"https://bloombergpowerplay.libsyn.com/rss","proves":"The existing record's podcast evidence is a Bloomberg-branded RSS feed, not proof of Anne-Marie Campbell ownership."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"sidley-austin-llp","decision":"DISQUALIFIED_CONFIRMED","decisionReason":"Sidley Austin LLP is a global law firm; its podcast and channel are firm-owned corporate communications rather than a creator-sales prospect.","contentOwner":"Sidley Austin LLP","economicBuyer":"Sidley Austin LLP","contact":{"channel":"X_DM","value":"https://x.com/SidleyLaw","evidenceUrl":"https://x.com/SidleyLaw"},"ownedLongForm":{"type":"PODCAST","latestTitle":"Reliability vs. Reality: Can the Grid Keep Up?","latestPublishedAt":"2026-05-04T20:00:00.000Z","evidenceUrl":"https://rss.buzzsprout.com/2276624.rss"},"factualHardGate":"CORPORATE_MONOLITH","evidence":[{"url":"https://www.sidley.com/","proves":"Sidley Austin LLP is a law firm."},{"url":"https://rss.buzzsprout.com/2276624.rss","proves":"The record's owned long-form evidence is a Sidley podcast feed."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"ey-canada","decision":"DISQUALIFIED_CONFIRMED","decisionReason":"EY Canada is the Canadian member firm of a global professional-services network; Energy Drivers is enterprise content rather than an independent creator account.","contentOwner":"EY Canada","economicBuyer":"EY Canada","contact":{"channel":"X_DM","value":"https://x.com/2055458552215703986","evidenceUrl":"https://x.com/2055458552215703986"},"ownedLongForm":{"type":"PODCAST","latestTitle":"Energy Drivers - What does nation-building look like in Canada's Arctic?","latestPublishedAt":"2026-06-08T09:04:00.000Z","evidenceUrl":"https://www.ey.com/en_ca/media/podcasts/energy-drivers"},"factualHardGate":"CORPORATE_MONOLITH","evidence":[{"url":"https://www.ey.com/en_ca/media/podcasts/energy-drivers","proves":"EY Canada publishes the Energy Drivers podcast."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"erik-townsend","decision":"NURTURE","decisionReason":"MacroVoices is a current Erik Townsend-hosted market show with energy episodes and an accredited-investor academy, but it is broader macro/investing content and the owned video distribution quality still needs direct inspection.","contentOwner":"Erik Townsend","onMicHost":"Erik Townsend","economicBuyer":"Erik Townsend","contact":{"channel":"CONTACT_FORM","value":"https://www.macrovoices.com/mobile-home/86-general-site-content","evidenceUrl":"https://www.macrovoices.com/mobile-home/86-general-site-content"},"ownedLongForm":{"type":"PODCAST","latestTitle":"MacroVoices #540 Adam Parker: Beyond the AI Bubble","latestPublishedAt":"2026-07-09T00:00:00.000Z","evidenceUrl":"https://www.macrovoices.com/","recentPublicationDates":["2026-07-09","2026-07-02","2026-06-25"],"cadenceStatus":"ACTIVE","medianIntervalDays":7},"offer":{"description":"Erik Townsend's Accredited Investor Academy and paid access/donation-supported MacroVoices materials.","evidenceUrl":"https://www.macrovoices.com/mobile-home/86-general-site-content"},"observedFunnel":{"tof":["MacroVoices podcast and email roundup"],"mof":["Free episodes, transcripts and registered supporting material"],"bof":["Accredited Investor Academy and paid access/donations"]},"unresolvedGates":["ENERGY_ICP_SHARE","INSPECTED_VIDEO_GAP","PERSON_TIED_OUTREACH"],"evidence":[{"url":"https://www.macrovoices.com/","proves":"MacroVoices names Erik Townsend as host and shows current weekly episodes, including energy-market topics."},{"url":"https://www.macrovoices.com/mobile-home/86-general-site-content","proves":"The official site describes the Accredited Investor Academy, current registration and its contact form."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"marty-rosenberg","decision":"DISQUALIFIED_CONFIRMED","decisionReason":"The verified Smart Grid Today Buzzsprout feed's latest item is dated 20 January 2025, exceeding the 90-day activity hard gate.","contentOwner":"Marty Rosenberg","onMicHost":"Marty Rosenberg","economicBuyer":"Marty Rosenberg","ownedLongForm":{"type":"PODCAST","latestTitle":"Latest item in the Smart Grid Today RSS feed","latestPublishedAt":"2025-01-20T19:00:00.000Z","evidenceUrl":"https://rss.buzzsprout.com/677039.rss","recentPublicationDates":["2025-01-20","2025-01-07","2024-12-23"],"cadenceStatus":"INACTIVE","medianIntervalDays":14},"factualHardGate":"INACTIVE_OVER_90_DAYS","evidence":[{"url":"https://rss.buzzsprout.com/677039.rss","proves":"The Smart Grid Today RSS feed returns publication dates of 20 January, 7 January and 23 December 2025/2024."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"american-uranium-asxamu","decision":"NURTURE","decisionReason":"American Uranium has a public investor contact route and investor communications, but this is company-owned investor-relations content; named buyer authority and a creator-level long-form/video-gap fit remain unresolved.","contentOwner":"American Uranium","contact":{"channel":"EMAIL","value":"info@americanuranium.com.au","evidenceUrl":"https://www.americanuranium.com.au/contact"},"observedFunnel":{"tof":["Investor communications and YouTube"],"mof":["Investor centre"],"bof":["Public-market investor relationship"]},"unresolvedGates":["NAMED_ECONOMIC_BUYER","OWNED_CURRENT_LONG_FORM","THREE_PUBLICATION_CADENCE_DATES","INSPECTED_VIDEO_GAP"],"evidence":[{"url":"https://www.americanuranium.com.au/contact","proves":"American Uranium provides a public investor-centre contact email and phone route."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"solid-state-fusion","decision":"NURTURE","decisionReason":"The site is an educational solid-state-fusion resource with curated YouTube playlists, but no named economic buyer or commercial transaction was verified from official material.","contentOwner":"Solid State Fusion Discovery","unresolvedGates":["NAMED_ECONOMIC_BUYER","VERIFIED_CONTACT","VERIFIED_OFFER","OWNED_CURRENT_LONG_FORM","THREE_PUBLICATION_CADENCE_DATES","INSPECTED_VIDEO_GAP"],"evidence":[{"url":"https://solidstatefusion.org/for-students/","proves":"The official site positions its YouTube playlists as educational resources and describes the organization as a field resource."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"sean-mcmahon","decision":"DISQUALIFIED_CONFIRMED","decisionReason":"The verified owned Buzzsprout feed's latest recorded episode is 207 days old, exceeding the 90-day activity hard gate.","contentOwner":"Sean McMahon","onMicHost":"Sean McMahon","economicBuyer":"Sean McMahon","ownedLongForm":{"type":"PODCAST","latestTitle":"How to Keep Data Centers Secure - with Bill Kleyman from Apolo.us","latestPublishedAt":"2025-12-19T15:00:00.000Z","evidenceUrl":"https://rss.buzzsprout.com/1730150.rss","recentPublicationDates":["2025-12-19","2025-11-24","2025-10-23"],"cadenceStatus":"INACTIVE","medianIntervalDays":26},"factualHardGate":"INACTIVE_OVER_90_DAYS","evidence":[{"url":"https://rss.buzzsprout.com/1730150.rss","proves":"The owned podcast feed's latest three publication dates are 19 December, 24 November and 23 October 2025."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"suraj-b","decision":"DISQUALIFIED_CONFIRMED","decisionReason":"The verified Sustainability Simplified feed's latest recorded episode is dated 3 January 2026, more than 90 days before this audit.","contentOwner":"Suraj B","onMicHost":"Suraj B","economicBuyer":"Suraj B","ownedLongForm":{"type":"PODCAST","latestTitle":"Episode 25-5 - A review of UN PRI week and COP 30 in Brazil","latestPublishedAt":"2026-01-03T00:07:44.000Z","evidenceUrl":"https://anchor.fm/s/4666e8d8/podcast/rss","recentPublicationDates":["2026-01-03","2025-09-19","2025-09-12"],"cadenceStatus":"INACTIVE","medianIntervalDays":7},"factualHardGate":"INACTIVE_OVER_90_DAYS","evidence":[{"url":"https://anchor.fm/s/4666e8d8/podcast/rss","proves":"The owned Sustainability Simplified feed's latest three publication dates are 3 January 2026, 19 September and 12 September 2025."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"neg8-carbon","decision":"DISQUALIFIED_CONFIRMED","decisionReason":"The recorded official YouTube evidence has a latest publication on 10 March 2026, more than 90 days before this audit.","contentOwner":"NEG8 Carbon","ownedLongForm":{"type":"YOUTUBE","latestTitle":"Direct Air Capture for eSAF Production","latestPublishedAt":"2026-03-10T09:13:22.000Z","evidenceUrl":"https://www.youtube.com/watch?v=5yIe_SpdEms","recentPublicationDates":["2026-03-10","2026-02-01","2026-01-01"],"cadenceStatus":"INACTIVE","medianIntervalDays":34},"factualHardGate":"INACTIVE_OVER_90_DAYS","evidence":[{"url":"https://www.youtube.com/watch?v=5yIe_SpdEms","proves":"The recorded owned YouTube video is dated 10 March 2026."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"andy-marsland","decision":"DISQUALIFIED_CONFIRMED","decisionReason":"The verified Exploring Clean Energy feed's latest recorded episode is dated 18 December 2025, more than 90 days before this audit.","contentOwner":"Andy Marsland","onMicHost":"Andy Marsland","economicBuyer":"Andy Marsland","ownedLongForm":{"type":"PODCAST","latestTitle":"SAF and Sustainable Aviation: Bringing the Regions to the Runway with Jet Zero","latestPublishedAt":"2025-12-18T00:15:00.000Z","evidenceUrl":"https://feeds.transistor.fm/exploring-clean-energy","recentPublicationDates":["2025-12-18","2025-12-18","2025-12-04"],"cadenceStatus":"INACTIVE","medianIntervalDays":0},"factualHardGate":"INACTIVE_OVER_90_DAYS","evidence":[{"url":"https://feeds.transistor.fm/exploring-clean-energy","proves":"The owned Exploring Clean Energy feed's latest three publication dates are 18 December, 18 December and 4 December 2025."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"finance-meets-force","decision":"NURTURE","decisionReason":"A public YouTube channel exists, but the batch has no official evidence tying it to a named energy-content owner, current long-form cadence, buyer, offer or usable contact.","contact":{"channel":"X_DM","value":"https://x.com/2025173458641191144","evidenceUrl":"https://x.com/2025173458641191144"},"unresolvedGates":["CONTENT_OWNER_MATCH","OWNED_CURRENT_LONG_FORM","THREE_PUBLICATION_CADENCE_DATES","ECONOMIC_BUYER","VERIFIED_OFFER","INSPECTED_VIDEO_GAP"],"evidence":[{"url":"https://www.youtube.com/@FinanceMeetsForce","proves":"The existing record identifies a public Finance Meets Force YouTube channel."},{"url":"https://x.com/2025173458641191144","proves":"The existing record identifies a public X route."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"ivy-mintah","decision":"NURTURE","decisionReason":"The owned channel evidence currently resolves to a Short dated January 2026; no verified long-form cadence, commercial offer or buyer route has been established.","contentOwner":"Ivy Mintah","contact":{"channel":"X_DM","value":"https://x.com/ivydidthat","evidenceUrl":"https://x.com/ivydidthat"},"unresolvedGates":["OWNED_CURRENT_LONG_FORM","THREE_PUBLICATION_CADENCE_DATES","VERIFIED_OFFER","INSPECTED_VIDEO_GAP"],"evidence":[{"url":"https://www.youtube.com/shorts/jxtyAx6OVXI","proves":"The existing record's owned channel evidence resolves to an Ivy Mintah YouTube Short dated January 2026."},{"url":"https://x.com/ivydidthat","proves":"The existing record identifies Ivy Mintah's public X route."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"manic-energy-podcast","decision":"NURTURE","decisionReason":"The Manic Energy Podcast is current and energy-specific, but the feed alone does not establish a named owner, buyer, direct contact or commercial transaction.","ownedLongForm":{"type":"PODCAST","latestTitle":"Inside the Pipeline: Risk Management, Consulting, and a Hidden Crisis","latestPublishedAt":"2026-07-13T12:36:45.000Z","evidenceUrl":"https://anchor.fm/s/107a6fb3c/podcast/rss","recentPublicationDates":["2026-07-13","2026-06-29","2026-06-15"],"cadenceStatus":"SEMI_ACTIVE","medianIntervalDays":14},"observedFunnel":{"tof":["No owned discovery channel verified"],"mof":["Podcast"],"bof":[]},"unresolvedGates":["CONTENT_OWNER_MATCH","ECONOMIC_BUYER","VERIFIED_CONTACT","VERIFIED_OFFER","INSPECTED_VIDEO_GAP"],"evidence":[{"url":"https://anchor.fm/s/107a6fb3c/podcast/rss","proves":"The official Manic Energy Podcast feed shows a current energy episode and publication history."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"slatefr-podcasts","decision":"DISQUALIFIED_CONFIRMED","decisionReason":"The active feed is Slate.fr's French-language podcast catalogue, which fails the global English-language content requirement.","contentOwner":"Slate.fr Podcasts","ownedLongForm":{"type":"PODCAST","latestTitle":"La reco culturelle #7 du Monde devant soi","latestPublishedAt":"2026-07-13T14:00:21.000Z","evidenceUrl":"https://feeds.360.audion.fm/6vYrdDyXh5Atl8U_u-eyu"},"factualHardGate":"NON_ENGLISH","evidence":[{"url":"https://feeds.360.audion.fm/6vYrdDyXh5Atl8U_u-eyu","proves":"The current feed's latest episode title and catalogue are in French."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"tom-sullivan","decision":"DISQUALIFIED_CONFIRMED","decisionReason":"The current Tom Sullivan feed is political-news commentary rather than creator-owned energy long-form.","contentOwner":"Tom Sullivan","ownedLongForm":{"type":"PODCAST","latestTitle":"Senator Lindsey Graham Dead at 71","latestPublishedAt":"2026-07-13T21:31:20.000Z","evidenceUrl":"https://www.spreaker.com/show/6632619/episodes/feed"},"factualHardGate":"WRONG_ICP","evidence":[{"url":"https://www.spreaker.com/show/6632619/episodes/feed","proves":"The show feed's current episode catalogue is political-news commentary, not energy content."}],"auditedAt":"2026-07-14T21:44:59.281Z"},
-    {"id":"conservative-review","decision":"DISQUALIFIED_CONFIRMED","decisionReason":"The current Conservative Review feed is political commentary, not English energy creator long-form.","contentOwner":"Conservative Review","ownedLongForm":{"type":"PODCAST","latestTitle":"The GOP Scam: No Mass Deportations, $3.2T New Debt & Elizabeth Warren's Section 8 Bill","latestPublishedAt":"2026-07-13T17:23:00.000Z","evidenceUrl":"https://feeds.megaphone.fm/BMDC8713803568"},"factualHardGate":"WRONG_ICP","evidence":[{"url":"https://feeds.megaphone.fm/BMDC8713803568","proves":"The feed's current episode catalogue is political commentary, not energy content."}],"auditedAt":"2026-07-14T21:44:59.281Z"}
+    {
+      "id": "the-wilkes-center-for-climate-science",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official site identifies this as a University of Utah climate-policy center, not a creator-controlled Energy Dial account.",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "evidence": [
+        {
+          "url": "https://wilkescenter.utah.edu/about/",
+          "proves": "The center is an institutional University of Utah program with university staff and faculty leadership."
+        },
+        {
+          "url": "https://wilkescenter.utah.edu/pod/",
+          "proves": "Ross Chambless hosts and produces the institution's Talking Climate podcast."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "amrita-sen",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Amrita Sen founded and leads research at Energy Aspects, a 400-person global research house; its current YouTube and content are firm-owned enterprise marketing rather than a creator-controlled clipping account.",
+      "contentOwner": "Energy Aspects",
+      "onMicHost": "Amrita Sen",
+      "economicBuyer": "Amrita Sen",
+      "contact": {
+        "channel": "EMAIL",
+        "value": "contact@energyaspects.com",
+        "evidenceUrl": "https://www.energyaspects.com/contact"
+      },
+      "offer": {
+        "description": "Energy-market intelligence subscriptions, data and bespoke consultancy.",
+        "evidenceUrl": "https://www.energyaspects.com/ai-info-page"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Energy Aspects insights and YouTube"
+        ],
+        "mof": [
+          "EA Forum, research and webinars"
+        ],
+        "bof": [
+          "Subscription trial and consultancy"
+        ]
+      },
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "evidence": [
+        {
+          "url": "https://www.energyaspects.com/about-us/amrita-sen",
+          "proves": "Amrita is founder and Director of Market Intelligence at a global research house with over 400 employees."
+        },
+        {
+          "url": "https://www.energyaspects.com/request-a-trial",
+          "proves": "Energy Aspects sells energy data and intelligence through a trial-led subscription."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "helima-croft",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Helima Croft's energy analysis and media appearances are carried through RBC Capital Markets, a global bank; the available content is not a creator-owned media business.",
+      "contentOwner": "RBC Capital Markets",
+      "onMicHost": "Helima Croft",
+      "economicBuyer": "RBC Capital Markets",
+      "contact": {
+        "channel": "EMAIL",
+        "value": "Helima.Croft@rbccm.com",
+        "evidenceUrl": "https://www.rbccm.com/en/insights/story.page?dcr=templatedata%2Farticle%2Finsights%2Fdata%2F2020%2F09%2Fbeyond_the_ballot_with_helima_croft"
+      },
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "evidence": [
+        {
+          "url": "https://www.rbccm.com/en/insights/story.page?dcr=templatedata%2Farticle%2Finsights%2Fdata%2F2020%2F09%2Fbeyond_the_ballot_with_helima_croft",
+          "proves": "RBC identifies Croft as its Managing Director and Global Head of Commodity Strategy and MENA Research."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "josh-young",
+      "decision": "NURTURE",
+      "decisionReason": "Bison Interests verifies Josh Young as founder/CIO and provides a public contact route, but the official media page shows him as a guest on third-party shows, not owner of a current recurring long-form property.",
+      "contentOwner": "Josh Young",
+      "economicBuyer": "Josh Young",
+      "contact": {
+        "channel": "EMAIL",
+        "value": "info@bisoninterests.com",
+        "evidenceUrl": "https://bisoninterests.com/about-us"
+      },
+      "offer": {
+        "description": "Energy-focused investment management through Bison Interests.",
+        "evidenceUrl": "https://bisoninterests.com/about-us"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Third-party video and podcast appearances"
+        ],
+        "mof": [
+          "Bison media and white-paper content"
+        ],
+        "bof": [
+          "Investment-management relationship"
+        ]
+      },
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE_DATES",
+        "INSPECTED_VIDEO_GAP"
+      ],
+      "evidence": [
+        {
+          "url": "https://bisoninterests.com/about-us",
+          "proves": "Josh Young is Bison Interests' Founder and CIO and the site gives the public inquiry email."
+        },
+        {
+          "url": "https://bisoninterests.com/media",
+          "proves": "The company curates Josh Young's recent external video and podcast appearances."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "eric-nuttall",
+      "decision": "NURTURE",
+      "decisionReason": "The existing public profile identifies an energy investor and social route, but no first-party owned current long-form property or transaction page was verified in this batch.",
+      "contentOwner": "Eric Nuttall",
+      "economicBuyer": "Eric Nuttall",
+      "contact": {
+        "channel": "X_DM",
+        "value": "https://x.com/ericnuttall",
+        "evidenceUrl": "https://x.com/ericnuttall"
+      },
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE_DATES",
+        "VERIFIED_OFFER",
+        "INSPECTED_VIDEO_GAP"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/ericnuttall",
+          "proves": "The recorded public outreach route is Eric Nuttall's X profile."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "bob-mcnally",
+      "decision": "NURTURE",
+      "decisionReason": "The available channels identify Bob McNally and a Rapidan Energy Group relationship, but this batch did not verify a current owner-controlled show, three-date cadence, or a direct public contact route on an official Rapidan page.",
+      "contentOwner": "Bob McNally",
+      "economicBuyer": "Bob McNally",
+      "contact": {
+        "channel": "X_DM",
+        "value": "https://x.com/BobMcNally_RA",
+        "evidenceUrl": "https://x.com/BobMcNally_RA"
+      },
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE_DATES",
+        "VERIFIED_CONTACT",
+        "VERIFIED_OFFER",
+        "INSPECTED_VIDEO_GAP"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about",
+          "proves": "The existing prospect record points to Bob McNally's public YouTube channel."
+        },
+        {
+          "url": "https://x.com/BobMcNally_RA",
+          "proves": "The recorded public outreach route is Bob McNally's X profile."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "gary-ross",
+      "decision": "NURTURE",
+      "decisionReason": "The record identifies an energy economist with a social profile, but no official current creator-owned long-form source, contact page, or commercial transaction was verified.",
+      "contentOwner": "Gary Ross",
+      "economicBuyer": "Gary Ross",
+      "contact": {
+        "channel": "X_DM",
+        "value": "https://x.com/GaryRoss46",
+        "evidenceUrl": "https://x.com/GaryRoss46"
+      },
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE_DATES",
+        "VERIFIED_CONTACT",
+        "VERIFIED_OFFER",
+        "INSPECTED_VIDEO_GAP"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/GaryRoss46",
+          "proves": "The recorded public outreach route is Gary Ross's X profile."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "endeavor-business-media",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Oil & Gas Journal is part of EndeavorB2B's multi-industry B2B media, marketing, events and intelligence company, with an established internal editorial, sales, sponsorship and custom-publishing function.",
+      "contentOwner": "EndeavorB2B",
+      "economicBuyer": "Diana Smith",
+      "contact": {
+        "channel": "EMAIL",
+        "value": "dsmith@endeavorb2b.com",
+        "evidenceUrl": "https://energy.endeavorb2b.com/ogj-resources/"
+      },
+      "offer": {
+        "description": "B2B media, marketing, sponsorship, custom publishing and demand-generation services.",
+        "evidenceUrl": "https://www.endeavorb2b.com/company/"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Oil & Gas Journal articles, newsletter and podcast"
+        ],
+        "mof": [
+          "Editorial content and events"
+        ],
+        "bof": [
+          "Advertising, sponsorship and custom publishing"
+        ]
+      },
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "evidence": [
+        {
+          "url": "https://www.endeavorb2b.com/company/",
+          "proves": "EndeavorB2B is a multi-industry B2B media, marketing, events and intelligence company."
+        },
+        {
+          "url": "https://energy.endeavorb2b.com/ogj-resources/",
+          "proves": "Oil & Gas Journal has internal sales, sponsorship, custom publishing and editorial staff."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "anne-marie-campbell",
+      "decision": "NURTURE",
+      "decisionReason": "The legacy sources point to Bloomberg-branded distribution and an unrelated YouTube URL; the ownership, current long-form property and direct commercial buyer need a clean first-party match before any decision.",
+      "contentOwner": "Anne-Marie Campbell",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "CONTENT_OWNER_MATCH",
+        "ECONOMIC_BUYER",
+        "VERIFIED_CONTACT",
+        "VERIFIED_OFFER",
+        "INSPECTED_VIDEO_GAP"
+      ],
+      "evidence": [
+        {
+          "url": "https://bloombergpowerplay.libsyn.com/rss",
+          "proves": "The existing record's podcast evidence is a Bloomberg-branded RSS feed, not proof of Anne-Marie Campbell ownership."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "sidley-austin-llp",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Sidley Austin LLP is a global law firm; its podcast and channel are firm-owned corporate communications rather than a creator-sales prospect.",
+      "contentOwner": "Sidley Austin LLP",
+      "economicBuyer": "Sidley Austin LLP",
+      "contact": {
+        "channel": "X_DM",
+        "value": "https://x.com/SidleyLaw",
+        "evidenceUrl": "https://x.com/SidleyLaw"
+      },
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Reliability vs. Reality: Can the Grid Keep Up?",
+        "latestPublishedAt": "2026-05-04T20:00:00.000Z",
+        "evidenceUrl": "https://rss.buzzsprout.com/2276624.rss"
+      },
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "evidence": [
+        {
+          "url": "https://www.sidley.com/",
+          "proves": "Sidley Austin LLP is a law firm."
+        },
+        {
+          "url": "https://rss.buzzsprout.com/2276624.rss",
+          "proves": "The record's owned long-form evidence is a Sidley podcast feed."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "ey-canada",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "EY Canada is the Canadian member firm of a global professional-services network; Energy Drivers is enterprise content rather than an independent creator account.",
+      "contentOwner": "EY Canada",
+      "economicBuyer": "EY Canada",
+      "contact": {
+        "channel": "X_DM",
+        "value": "https://x.com/2055458552215703986",
+        "evidenceUrl": "https://x.com/2055458552215703986"
+      },
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Energy Drivers - What does nation-building look like in Canada's Arctic?",
+        "latestPublishedAt": "2026-06-08T09:04:00.000Z",
+        "evidenceUrl": "https://www.ey.com/en_ca/media/podcasts/energy-drivers"
+      },
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "evidence": [
+        {
+          "url": "https://www.ey.com/en_ca/media/podcasts/energy-drivers",
+          "proves": "EY Canada publishes the Energy Drivers podcast."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "erik-townsend",
+      "decision": "NURTURE",
+      "decisionReason": "MacroVoices is a current Erik Townsend-hosted market show with energy episodes and an accredited-investor academy, but it is broader macro/investing content and the owned video distribution quality still needs direct inspection.",
+      "contentOwner": "Erik Townsend",
+      "onMicHost": "Erik Townsend",
+      "economicBuyer": "Erik Townsend",
+      "contact": {
+        "channel": "CONTACT_FORM",
+        "value": "https://www.macrovoices.com/mobile-home/86-general-site-content",
+        "evidenceUrl": "https://www.macrovoices.com/mobile-home/86-general-site-content"
+      },
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "MacroVoices #540 Adam Parker: Beyond the AI Bubble",
+        "latestPublishedAt": "2026-07-09T00:00:00.000Z",
+        "evidenceUrl": "https://www.macrovoices.com/",
+        "recentPublicationDates": [
+          "2026-07-09",
+          "2026-07-02",
+          "2026-06-25"
+        ],
+        "cadenceStatus": "ACTIVE",
+        "medianIntervalDays": 7
+      },
+      "offer": {
+        "description": "Erik Townsend's Accredited Investor Academy and paid access/donation-supported MacroVoices materials.",
+        "evidenceUrl": "https://www.macrovoices.com/mobile-home/86-general-site-content"
+      },
+      "observedFunnel": {
+        "tof": [
+          "MacroVoices podcast and email roundup"
+        ],
+        "mof": [
+          "Free episodes, transcripts and registered supporting material"
+        ],
+        "bof": [
+          "Accredited Investor Academy and paid access/donations"
+        ]
+      },
+      "unresolvedGates": [
+        "ENERGY_ICP_SHARE",
+        "INSPECTED_VIDEO_GAP",
+        "PERSON_TIED_OUTREACH"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.macrovoices.com/",
+          "proves": "MacroVoices names Erik Townsend as host and shows current weekly episodes, including energy-market topics."
+        },
+        {
+          "url": "https://www.macrovoices.com/mobile-home/86-general-site-content",
+          "proves": "The official site describes the Accredited Investor Academy, current registration and its contact form."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "marty-rosenberg",
+      "decision": "NURTURE",
+      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "contentOwner": "Marty Rosenberg",
+      "onMicHost": "Marty Rosenberg",
+      "economicBuyer": "Marty Rosenberg",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Latest item in the Smart Grid Today RSS feed",
+        "latestPublishedAt": "2025-01-20T19:00:00.000Z",
+        "evidenceUrl": "https://rss.buzzsprout.com/677039.rss",
+        "recentPublicationDates": [
+          "2025-01-20",
+          "2025-01-07",
+          "2024-12-23"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 14
+      },
+      "evidence": [
+        {
+          "url": "https://rss.buzzsprout.com/677039.rss",
+          "proves": "The Smart Grid Today RSS feed returns publication dates of 20 January, 7 January and 23 December 2025/2024."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z",
+      "unresolvedGates": [
+        "CROSS_CHANNEL_TRUE_LATEST",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ]
+    },
+    {
+      "id": "american-uranium-asxamu",
+      "decision": "NURTURE",
+      "decisionReason": "American Uranium has a public investor contact route and investor communications, but this is company-owned investor-relations content; named buyer authority and a creator-level long-form/video-gap fit remain unresolved.",
+      "contentOwner": "American Uranium",
+      "contact": {
+        "channel": "EMAIL",
+        "value": "info@americanuranium.com.au",
+        "evidenceUrl": "https://www.americanuranium.com.au/contact"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Investor communications and YouTube"
+        ],
+        "mof": [
+          "Investor centre"
+        ],
+        "bof": [
+          "Public-market investor relationship"
+        ]
+      },
+      "unresolvedGates": [
+        "NAMED_ECONOMIC_BUYER",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE_DATES",
+        "INSPECTED_VIDEO_GAP"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.americanuranium.com.au/contact",
+          "proves": "American Uranium provides a public investor-centre contact email and phone route."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "solid-state-fusion",
+      "decision": "NURTURE",
+      "decisionReason": "The site is an educational solid-state-fusion resource with curated YouTube playlists, but no named economic buyer or commercial transaction was verified from official material.",
+      "contentOwner": "Solid State Fusion Discovery",
+      "unresolvedGates": [
+        "NAMED_ECONOMIC_BUYER",
+        "VERIFIED_CONTACT",
+        "VERIFIED_OFFER",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE_DATES",
+        "INSPECTED_VIDEO_GAP"
+      ],
+      "evidence": [
+        {
+          "url": "https://solidstatefusion.org/for-students/",
+          "proves": "The official site positions its YouTube playlists as educational resources and describes the organization as a field resource."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "sean-mcmahon",
+      "decision": "NURTURE",
+      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "contentOwner": "Sean McMahon",
+      "onMicHost": "Sean McMahon",
+      "economicBuyer": "Sean McMahon",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "How to Keep Data Centers Secure - with Bill Kleyman from Apolo.us",
+        "latestPublishedAt": "2025-12-19T15:00:00.000Z",
+        "evidenceUrl": "https://rss.buzzsprout.com/1730150.rss",
+        "recentPublicationDates": [
+          "2025-12-19",
+          "2025-11-24",
+          "2025-10-23"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 26
+      },
+      "evidence": [
+        {
+          "url": "https://rss.buzzsprout.com/1730150.rss",
+          "proves": "The owned podcast feed's latest three publication dates are 19 December, 24 November and 23 October 2025."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z",
+      "unresolvedGates": [
+        "CROSS_CHANNEL_TRUE_LATEST",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ]
+    },
+    {
+      "id": "suraj-b",
+      "decision": "NURTURE",
+      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "contentOwner": "Suraj B",
+      "onMicHost": "Suraj B",
+      "economicBuyer": "Suraj B",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Episode 25-5 - A review of UN PRI week and COP 30 in Brazil",
+        "latestPublishedAt": "2026-01-03T00:07:44.000Z",
+        "evidenceUrl": "https://anchor.fm/s/4666e8d8/podcast/rss",
+        "recentPublicationDates": [
+          "2026-01-03",
+          "2025-09-19",
+          "2025-09-12"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 7
+      },
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/4666e8d8/podcast/rss",
+          "proves": "The owned Sustainability Simplified feed's latest three publication dates are 3 January 2026, 19 September and 12 September 2025."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z",
+      "unresolvedGates": [
+        "CROSS_CHANNEL_TRUE_LATEST",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ]
+    },
+    {
+      "id": "neg8-carbon",
+      "decision": "NURTURE",
+      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "contentOwner": "NEG8 Carbon",
+      "ownedLongForm": {
+        "type": "YOUTUBE",
+        "latestTitle": "Direct Air Capture for eSAF Production",
+        "latestPublishedAt": "2026-03-10T09:13:22.000Z",
+        "evidenceUrl": "https://www.youtube.com/watch?v=5yIe_SpdEms",
+        "recentPublicationDates": [
+          "2026-03-10",
+          "2026-02-01",
+          "2026-01-01"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 34
+      },
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/watch?v=5yIe_SpdEms",
+          "proves": "The recorded owned YouTube video is dated 10 March 2026."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z",
+      "unresolvedGates": [
+        "CROSS_CHANNEL_TRUE_LATEST",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ]
+    },
+    {
+      "id": "andy-marsland",
+      "decision": "NURTURE",
+      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "contentOwner": "Andy Marsland",
+      "onMicHost": "Andy Marsland",
+      "economicBuyer": "Andy Marsland",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "SAF and Sustainable Aviation: Bringing the Regions to the Runway with Jet Zero",
+        "latestPublishedAt": "2025-12-18T00:15:00.000Z",
+        "evidenceUrl": "https://feeds.transistor.fm/exploring-clean-energy",
+        "recentPublicationDates": [
+          "2025-12-18",
+          "2025-12-18",
+          "2025-12-04"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 0
+      },
+      "evidence": [
+        {
+          "url": "https://feeds.transistor.fm/exploring-clean-energy",
+          "proves": "The owned Exploring Clean Energy feed's latest three publication dates are 18 December, 18 December and 4 December 2025."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z",
+      "unresolvedGates": [
+        "CROSS_CHANNEL_TRUE_LATEST",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ]
+    },
+    {
+      "id": "finance-meets-force",
+      "decision": "NURTURE",
+      "decisionReason": "A public YouTube channel exists, but the batch has no official evidence tying it to a named energy-content owner, current long-form cadence, buyer, offer or usable contact.",
+      "contact": {
+        "channel": "X_DM",
+        "value": "https://x.com/2025173458641191144",
+        "evidenceUrl": "https://x.com/2025173458641191144"
+      },
+      "unresolvedGates": [
+        "CONTENT_OWNER_MATCH",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE_DATES",
+        "ECONOMIC_BUYER",
+        "VERIFIED_OFFER",
+        "INSPECTED_VIDEO_GAP"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@FinanceMeetsForce",
+          "proves": "The existing record identifies a public Finance Meets Force YouTube channel."
+        },
+        {
+          "url": "https://x.com/2025173458641191144",
+          "proves": "The existing record identifies a public X route."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "ivy-mintah",
+      "decision": "NURTURE",
+      "decisionReason": "The owned channel evidence currently resolves to a Short dated January 2026; no verified long-form cadence, commercial offer or buyer route has been established.",
+      "contentOwner": "Ivy Mintah",
+      "contact": {
+        "channel": "X_DM",
+        "value": "https://x.com/ivydidthat",
+        "evidenceUrl": "https://x.com/ivydidthat"
+      },
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE_DATES",
+        "VERIFIED_OFFER",
+        "INSPECTED_VIDEO_GAP"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/shorts/jxtyAx6OVXI",
+          "proves": "The existing record's owned channel evidence resolves to an Ivy Mintah YouTube Short dated January 2026."
+        },
+        {
+          "url": "https://x.com/ivydidthat",
+          "proves": "The existing record identifies Ivy Mintah's public X route."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "manic-energy-podcast",
+      "decision": "NURTURE",
+      "decisionReason": "The Manic Energy Podcast is current and energy-specific, but the feed alone does not establish a named owner, buyer, direct contact or commercial transaction.",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Inside the Pipeline: Risk Management, Consulting, and a Hidden Crisis",
+        "latestPublishedAt": "2026-07-13T12:36:45.000Z",
+        "evidenceUrl": "https://anchor.fm/s/107a6fb3c/podcast/rss",
+        "recentPublicationDates": [
+          "2026-07-13",
+          "2026-06-29",
+          "2026-06-15"
+        ],
+        "cadenceStatus": "SEMI_ACTIVE",
+        "medianIntervalDays": 14
+      },
+      "observedFunnel": {
+        "tof": [
+          "No owned discovery channel verified"
+        ],
+        "mof": [
+          "Podcast"
+        ],
+        "bof": []
+      },
+      "unresolvedGates": [
+        "CONTENT_OWNER_MATCH",
+        "ECONOMIC_BUYER",
+        "VERIFIED_CONTACT",
+        "VERIFIED_OFFER",
+        "INSPECTED_VIDEO_GAP"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/107a6fb3c/podcast/rss",
+          "proves": "The official Manic Energy Podcast feed shows a current energy episode and publication history."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "slatefr-podcasts",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The active feed is Slate.fr's French-language podcast catalogue, which fails the global English-language content requirement.",
+      "contentOwner": "Slate.fr Podcasts",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "La reco culturelle #7 du Monde devant soi",
+        "latestPublishedAt": "2026-07-13T14:00:21.000Z",
+        "evidenceUrl": "https://feeds.360.audion.fm/6vYrdDyXh5Atl8U_u-eyu"
+      },
+      "factualHardGate": "NON_ENGLISH",
+      "evidence": [
+        {
+          "url": "https://feeds.360.audion.fm/6vYrdDyXh5Atl8U_u-eyu",
+          "proves": "The current feed's latest episode title and catalogue are in French."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "tom-sullivan",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The current Tom Sullivan feed is political-news commentary rather than creator-owned energy long-form.",
+      "contentOwner": "Tom Sullivan",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Senator Lindsey Graham Dead at 71",
+        "latestPublishedAt": "2026-07-13T21:31:20.000Z",
+        "evidenceUrl": "https://www.spreaker.com/show/6632619/episodes/feed"
+      },
+      "factualHardGate": "WRONG_ICP",
+      "evidence": [
+        {
+          "url": "https://www.spreaker.com/show/6632619/episodes/feed",
+          "proves": "The show feed's current episode catalogue is political-news commentary, not energy content."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    },
+    {
+      "id": "conservative-review",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The current Conservative Review feed is political commentary, not English energy creator long-form.",
+      "contentOwner": "Conservative Review",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "The GOP Scam: No Mass Deportations, $3.2T New Debt & Elizabeth Warren's Section 8 Bill",
+        "latestPublishedAt": "2026-07-13T17:23:00.000Z",
+        "evidenceUrl": "https://feeds.megaphone.fm/BMDC8713803568"
+      },
+      "factualHardGate": "WRONG_ICP",
+      "evidence": [
+        {
+          "url": "https://feeds.megaphone.fm/BMDC8713803568",
+          "proves": "The feed's current episode catalogue is political commentary, not energy content."
+        }
+      ],
+      "auditedAt": "2026-07-14T21:44:59.281Z"
+    }
   ]
 }
