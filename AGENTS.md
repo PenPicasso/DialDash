@@ -64,11 +64,11 @@ The 642 former REVIEW rows were finished by applying the hard gates and marking 
 
 Branch: `codex/dialdash-acquisition-system`. This is preview-only until the user approves it; do not merge to `main` or promote production.
 
-The `signability-v3` methodology has fit-ranked all 840 rows using recomputable evidence dimensions. Current methodology state:
-- `PURSUE_NOW`: 4 evidence-cleared accounts.
-- `NURTURE`: 110 ranked research candidates.
-- `DISQUALIFIED`: 726 hard-gate or duplicate-account exclusions.
-- 822 rows still require deeper buyer/offer research; this is explicit and must not be represented as completed verification.
+The `signability-v3` methodology has fit-ranked all 840 rows using recomputable evidence dimensions. On `codex/light-model-next-100`, after the light pass and Sol Medium resolution, the current methodology state is:
+- `PURSUE_NOW`: 8 evidence-cleared accounts.
+- `NURTURE`: 42 ranked research candidates.
+- `DISQUALIFIED`: 790 hard-gate or duplicate-account exclusions.
+- 749 rows still require deeper buyer/offer research; this is explicit and must not be represented as completed verification.
 
 Legacy `READY`/`REJECTED` remains in the data for compatibility, but it is not the current sales queue. Use `methodologyDecision` and `fitRank` for outreach prioritization.
 
@@ -167,6 +167,15 @@ The first 100 highest-ranked unresolved records were processed in four batches o
 New batch tooling:
 - `npm run refresh:media -- --ids=id-one,id-two`: refresh explicitly selected records regardless of legacy actionability state.
 - `npm run research:light-batch -- --offset=0 --limit=25`: write ignored per-record evidence reports and a `Sol Medium` escalation queue under `storage/prospect-runs/` without promoting data.
+
+### Sol Medium resolution of the 100-record pass
+
+The 73 light-model escalations were reviewed on the same isolated branch and are now closed in `data/solMediumResolutions.ts`. The resolution is deliberately precision-first:
+- 4 moved to `PURSUE_NOW`: Emmet Penney, Giles Parkinson, Peter Tertzakian, and David Roberts.
+- 5 remain `NURTURE` with resolved economic/cadence/video-gap reasons: Chris Keefer, Libbe HaLevy, Laurent Segalen, Trisha Curtis, and Vivek Chandra.
+- 64 are `DISQUALIFIED` for a documented hard-gate class: established production, unresolved owner/buyer, wrong or mismatched ICP media, missing transaction/video gap, or inactivity.
+
+`scripts/rank-prospects.ts` applies these resolutions and embeds the review tier, timestamp, decision reason, and evidence URLs in `data/nodes.json`. `validate:methodology` requires all 73 resolutions to remain represented and closed. This branch still must not be merged, pushed, or deployed without explicit user approval.
 
 The light-batch report accepts only direct source freshness, explicit first-party offer URLs, and public contact URLs. Missing or ambiguous owner, buyer, offer, cadence, contact, or distribution evidence is an escalation, never a promotion.
 

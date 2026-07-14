@@ -144,5 +144,9 @@ export type NodeData = {
   methodologyVersion?: string;
   methodologyReasons?: string[];
   needsDeepResearch?: boolean;
+  researchReviewTier?: "SOL_MEDIUM";
+  researchReviewedAt?: string;
+  researchDecisionReason?: string;
+  researchEvidenceUrls?: string[];
 };
 

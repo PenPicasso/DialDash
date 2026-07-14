@@ -1,12 +1,30 @@
 import { readFileSync } from "fs";
 import { join } from "path";
 import type { NodeData } from "../lib/types";
+import { solMediumResolutions } from "../data/solMediumResolutions";
 
 const DATA_PATH = join(__dirname, "..", "data", "nodes.json");
 const nodes = (JSON.parse(readFileSync(DATA_PATH, "utf8")) as { nodes: NodeData[] }).nodes;
 const errors: string[] = [];
 const ranks = new Set<number>();
 const activeOwnedChannels = new Map<string, string>();
+const nodesById = new Map(nodes.map((node) => [node.id, node]));
+
+if (Object.keys(solMediumResolutions).length !== 73) {
+  errors.push(`expected 73 Sol Medium resolutions, found ${Object.keys(solMediumResolutions).length}`);
+}
+
+for (const [id, resolution] of Object.entries(solMediumResolutions)) {
+  const node = nodesById.get(id);
+  if (!node) {
+    errors.push(`${id}: Sol Medium resolution has no prospect`);
+    continue;
+  }
+  if (node.methodologyDecision !== resolution.decision) errors.push(`${id}: Sol Medium decision was not applied`);
+  if (node.researchReviewTier !== "SOL_MEDIUM" || node.needsDeepResearch) errors.push(`${id}: Sol Medium review is not closed`);
+  if (!node.researchDecisionReason) errors.push(`${id}: Sol Medium review reason is missing`);
+  if (!node.researchEvidenceUrls?.length) errors.push(`${id}: Sol Medium evidence trail is missing`);
+}
 
 for (const node of nodes) {
   if (!node.fitRank || node.fitRank < 1 || node.fitRank > nodes.length) errors.push(`${node.id}: invalid fitRank`);

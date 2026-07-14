@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 import { pilotReports } from "../data/pilotReports";
 import type { NodeData } from "../lib/types";
+import { solMediumResolutions, solMediumReviewedAt } from "../data/solMediumResolutions";
 
 const DATA_PATH = join(__dirname, "..", "data", "nodes.json");
 const METHODOLOGY_VERSION = "signability-v3";
@@ -151,7 +152,8 @@ function rank(originalNode: NodeData) {
   const monolithText = `${node.organizationName || ""} ${node.channel || ""} ${node.rejectionReason || ""} ${(node.actionabilityReasons || []).join(" ")}`;
   const monolith = /corporate monolith/i.test(monolithText) || MONOLITH_PATTERN.test(monolithText);
   const hardFailure = monolith || !named || !reachable || (!recent && node.actionabilityStatus === "REJECTED");
-  const methodologyDecision: NodeData["methodologyDecision"] = pilotReport?.decision || (hardFailure
+  const solResolution = solMediumResolutions[node.id];
+  const methodologyDecision: NodeData["methodologyDecision"] = solResolution?.decision || pilotReport?.decision || (hardFailure
     ? "DISQUALIFIED"
     : node.actionabilityStatus === "READY" && recent && fitScore >= 65 && Boolean(node.offerUrl)
       ? "PURSUE_NOW"
@@ -164,22 +166,39 @@ function rank(originalNode: NodeData) {
     `${breakdown.reachability}/10 reachability`,
     `${breakdown.visualFit}/10 educational visual fit`,
   ];
-  if (!node.offerUrl) reasons.push("Offer page still needs first-party verification.");
+  if (!node.offerUrl && !solResolution?.offerUrl) reasons.push("Offer page still needs first-party verification.");
   if (!recent) reasons.push("No owned-channel episode verified inside 90 days.");
   if (!named) reasons.push("No named human point-man passed the deterministic identity gate.");
   if (monolith) reasons.push("Corporate-monolith pattern requires exclusion or explicit founder-led exception evidence.");
+  if (solResolution) reasons.push(`Sol Medium resolution: ${solResolution.reason}`);
 
   return {
     ...node,
-    contentOwnerName: node.contentOwnerName || node.pointManName || node.host,
-    economicBuyerName: node.economicBuyerName || node.pointManName || node.host,
+    contentOwnerName: solResolution?.contentOwnerName || node.contentOwnerName || node.pointManName || node.host,
+    economicBuyerName: solResolution?.economicBuyerName || node.economicBuyerName || node.pointManName || node.host,
+    offerUrl: solResolution?.offerUrl || node.offerUrl,
+    bofOffer: solResolution?.bofOffer || node.bofOffer,
+    contactUrl: solResolution?.contactUrl || node.contactUrl,
+    pitchHook: solResolution?.pitchHook || node.pitchHook,
     fitScore,
     fitScoreBreakdown: breakdown,
     methodologyDecision,
-    methodologyConfidence: pilotReport?.confidence || methodologyConfidence,
+    methodologyConfidence: solResolution ? 90 : pilotReport?.confidence || methodologyConfidence,
     methodologyVersion: METHODOLOGY_VERSION,
     methodologyReasons: reasons,
-    needsDeepResearch: pilotReport ? false : methodologyConfidence < 75 || !node.offerUrl || node.verificationTier === "LEGACY",
+    needsDeepResearch: solResolution || pilotReport ? false : methodologyConfidence < 75 || !node.offerUrl || node.verificationTier === "LEGACY",
+    researchReviewTier: solResolution ? "SOL_MEDIUM" : node.researchReviewTier,
+    researchReviewedAt: solResolution ? solMediumReviewedAt : node.researchReviewedAt,
+    researchDecisionReason: solResolution?.reason || node.researchDecisionReason,
+    researchEvidenceUrls: solResolution
+      ? solResolution.evidenceUrls || [
+          node.latestYoutubeEvidenceUrl,
+          node.latestPodcastEvidenceUrl,
+          node.latestNewsletterEvidenceUrl,
+          node.cadenceEvidenceUrl,
+          node.sourceEvidenceUrl,
+        ].filter((value): value is string => Boolean(value))
+      : node.researchEvidenceUrls,
   } satisfies NodeData;
 }
 
