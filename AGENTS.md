@@ -74,6 +74,20 @@ Legacy `READY`/`REJECTED` remains in the data for compatibility, but it is not t
 
 All 840 rows were refreshed with `media-v3-owned-channels`. `latestMediaPublishedAt` is derived from the newest source-specific YouTube, podcast, or newsletter timestamp during ranking; a validator prevents the primary date from drifting behind channel evidence. Shared owned-media accounts are collapsed to one best buyer candidate.
 
+### Full light-model and Sol review
+
+Branch: `codex/light-model-next-100`. This remains preview-only; do not merge to `main` or promote production until the user approves it.
+
+As of the 2026-07-14 full review:
+- All 749 previously unresolved rows were processed deterministically in resumable batches without Firecrawl.
+- Sol reviewed 294 escalations and audited 455 deterministic hard-gate exclusions.
+- All 822 records in the full run now have a durable strong-review resolution; `needsDeepResearch` is 0 across all 840 rows.
+- Current sales decisions are 12 `PURSUE_NOW`, 9 `NURTURE`, and 819 `DISQUALIFIED`.
+- Newly cleared immediate prospects are Tisha Schuller, Wes Ashworth, Mike Mauceli, and Mike Nemer via Green Insider/eRENEWABLE.
+- Nathan Gambling and Rod Adams remain `NURTURE` because their support/sponsorship economics are weaker than the immediate consulting, recruiting, investment, and energy-services transactions.
+
+Review records are in `data/solMediumRemainingResolutions.ts` and `data/deterministicSolResolutions.ts`. The dashboard detail drawer displays the strong-review reason and first-party evidence links. See `docs/SOL_REVIEW_2026-07-14.md` for the decision summary and review rules.
+
 ## Methodology Pilot (Isolated Branch)
 
 Branch: `codex/prospect-methodology-pilot`

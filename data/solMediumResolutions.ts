@@ -1,4 +1,6 @@
 import type { NodeData } from "../lib/types";
+import { deterministicSolResolutions } from "./deterministicSolResolutions";
+import { remainingSolMediumResolutions } from "./solMediumRemainingResolutions";
 
 export type SolMediumResolution = {
   decision: NonNullable<NodeData["methodologyDecision"]>;
@@ -9,10 +11,16 @@ export type SolMediumResolution = {
   contentOwnerName?: string;
   economicBuyerName?: string;
   contactUrl?: string;
+  email?: string;
+  bestOutreachChannel?: string;
+  reachabilityStatus?: NodeData["reachabilityStatus"];
+  publishingCadence?: NodeData["publishingCadence"];
+  cadenceConfidence?: NodeData["cadenceConfidence"];
+  frequencyEpisodesPerMonth?: number;
   pitchHook?: string;
 };
 
-const reviewedAt = "2026-07-14T14:44:12.000Z";
+const reviewedAt = "2026-07-14T16:20:00.000Z";
 
 const pursue: Record<string, SolMediumResolution> = {
   "emmet-penney": {
@@ -204,6 +212,8 @@ export const solMediumResolutions: Record<string, SolMediumResolution> = {
   ...exclusions(wrongIcpOrMismatchedMedia, "The refreshed owned-media evidence is outside the energy creator ICP or the stored channel belongs to an unrelated subject/person. The record cannot support an energy-specific outreach claim."),
   ...exclusions(missingTransactionOrGap, "Strong-model review did not verify both a creator-controlled commercial transaction and a commercially meaningful video-distribution gap. A missing hard gate is a final exclusion for this run."),
   ...exclusions(inactive, "Owned long-form publication is outside the 90-day activity window and historical cadence is declining. The activity hard gate fails."),
+  ...remainingSolMediumResolutions,
+  ...deterministicSolResolutions,
 };
 
 export const solMediumReviewedAt = reviewedAt;

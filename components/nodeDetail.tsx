@@ -100,7 +100,9 @@ export function NodeDetail({ node, onClose }: Props) {
       },
       bof: {
         model: node.bofOffer || bofModel,
-        detail: bofDetail
+        detail: node.bofOffer
+          ? "Verified first-party commercial transaction used to build this prospect's outreach hook."
+          : bofDetail
       }
     };
   };
@@ -187,9 +189,9 @@ export function NodeDetail({ node, onClose }: Props) {
         {/* Actionability Header */}
         <div className="flex items-center justify-between gap-3 p-3 rounded-xl bg-[#FAFAFA] dark:bg-white/5 border border-border mb-6">
           <div>
-            <div className="text-xs text-muted uppercase font-bold tracking-wider">Actionability</div>
+            <div className="text-xs text-muted uppercase font-bold tracking-wider">Decision</div>
             <div className="text-sm font-bold text-foreground mt-0.5">
-              {node.actionabilityStatus || "REVIEW"}
+              {(node.methodologyDecision || node.actionabilityStatus || "REVIEW").replace("_", " ")}
               {node.reachabilityStatus ? ` / ${node.reachabilityStatus} reach` : ""}
             </div>
           </div>
@@ -298,6 +300,33 @@ export function NodeDetail({ node, onClose }: Props) {
           {node.fitRank && <span className="text-xs font-extrabold text-brand-blue">Fit rank #{node.fitRank}</span>}
         </div>
 
+        {node.researchDecisionReason && (
+          <div className="mb-6 rounded-lg border border-brand-blue/20 bg-brand-blue/[0.04] p-4">
+            <div className="flex items-center justify-between gap-3">
+              <div className="text-[10px] font-extrabold uppercase tracking-wider text-brand-blue">Strong review</div>
+              <div className="text-[10px] font-bold uppercase text-muted">
+                {node.methodologyDecision?.replace("_", " ")} / {node.researchReviewTier?.replace("_", " ")}
+              </div>
+            </div>
+            <p className="mt-2 text-xs leading-relaxed text-foreground/80">{node.researchDecisionReason}</p>
+            {node.researchEvidenceUrls && node.researchEvidenceUrls.length > 0 && (
+              <div className="mt-3 flex flex-wrap gap-2">
+                {node.researchEvidenceUrls.slice(0, 5).map((url, index) => (
+                  <a
+                    key={`${url}-${index}`}
+                    href={url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1 rounded-md border border-brand-blue/20 bg-background px-2 py-1 text-[10px] font-bold text-brand-blue hover:border-brand-blue/50"
+                  >
+                    Evidence {index + 1}<ExternalLink size={11} />
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
         <div className="mb-6">
           <div className="mb-2 text-xs font-bold uppercase tracking-wider text-muted">Latest by owned channel</div>
           <MediaFreshness node={node} expanded />
@@ -323,11 +352,11 @@ export function NodeDetail({ node, onClose }: Props) {
             </span>
           </div>
 
-          {node.lastVerifiedAt && (
+          {(node.researchReviewedAt || node.lastVerifiedAt) && (
             <div className="flex justify-between">
               <span className="text-muted">Last Checked</span>
               <span className="font-semibold text-foreground text-xs">
-                {new Date(node.lastVerifiedAt).toLocaleDateString()}
+                {new Date(node.researchReviewedAt || node.lastVerifiedAt!).toLocaleDateString()}
               </span>
             </div>
           )}
@@ -365,7 +394,7 @@ export function NodeDetail({ node, onClose }: Props) {
           <div className="flex justify-between">
             <span className="text-muted">Verification Tier</span>
             <span className="font-semibold text-foreground text-xs uppercase">
-              {node.verificationTier || "LEGACY"}
+              {node.researchReviewTier || node.verificationTier || "LEGACY"}
             </span>
           </div>
 

@@ -10,8 +10,8 @@ const ranks = new Set<number>();
 const activeOwnedChannels = new Map<string, string>();
 const nodesById = new Map(nodes.map((node) => [node.id, node]));
 
-if (Object.keys(solMediumResolutions).length !== 73) {
-  errors.push(`expected 73 Sol Medium resolutions, found ${Object.keys(solMediumResolutions).length}`);
+if (Object.keys(solMediumResolutions).length !== 822) {
+  errors.push(`expected 822 Sol Medium resolutions, found ${Object.keys(solMediumResolutions).length}`);
 }
 
 for (const [id, resolution] of Object.entries(solMediumResolutions)) {
