@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev -p 3000",
     "dev:workspace": "powershell -ExecutionPolicy Bypass -File scripts/launch-workspace.ps1",
-    "build": "next build && opennextjs-cloudflare build --skipNextBuild && node scripts/package-sites-build.mjs",
+    "build": "node scripts/build-sites.mjs",
     "build:next": "next build",
     "start": "next start",
     "lint": "eslint app components lib --max-warnings=0",
