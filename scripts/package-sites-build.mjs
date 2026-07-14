@@ -17,13 +17,10 @@ cpSync(source, serverTarget, { recursive: true });
 copyFileSync(resolve(source, "worker.js"), resolve(serverTarget, "app.js"));
 writeFileSync(
   resolve(serverTarget, "index.js"),
-  `import app from "./app.js";
-
-export * from "./app.js";
-
-export default {
+  `export default {
   async fetch(request, env, ctx) {
     try {
+      const { default: app } = await import("./app.js");
       return await app.fetch(request, env, ctx);
     } catch (error) {
       const message = error instanceof Error ? error.stack ?? error.message : String(error);
