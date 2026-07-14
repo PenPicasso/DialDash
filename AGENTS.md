@@ -144,7 +144,8 @@ The replacement workflow is `terra-medium-recovery-v1`:
 
 Terra Medium batch progress:
 - All eight batches were processed and passed `validate:terra-medium-next-200`; the methodology and production-data validators also passed on 2026-07-14.
-- The composed result is `data/terra-medium-next-200.json`: 9 factual exclusions, 191 NURTURE records, and 0 promotions. It remains `solReviewStatus: PENDING` and the 200 must not count as completed until Sol reviews it.
+- The composed result is `data/terra-medium-next-200.json`: 17 factual exclusions, 183 NURTURE records, and 0 promotions. It remains `solReviewStatus: PENDING` and the 200 must not count as completed until Sol reviews it.
+- Terra manually resolved batch 2 on 2026-07-14: eight first-party-evidenced factual exclusions (three corporate/institutional accounts, one non-English show and four wrong-ICP feeds) and 17 NURTURE records. Named individual operators, including Martyn Lee and Paul Sankey, were deliberately retained as NURTURE pending owned-video and three-sample distribution-gap inspection.
 - `npm run research:terra-medium-evidence -- --batch=N` creates a resumable, ignored evidence pack using strict Apple discovery, official RSS parsing, cadence calculation and source probes. `npm run draft:terra-medium-batch -- --batch=N` turns that evidence into a conservative batch file.
 - A stale podcast feed is not a factual inactivity rejection. It proves only that the feed is stale; YouTube, newsletter and official-site publishing must be cross-checked for the true latest owned publication. Feed-only inactivity stays NURTURE.
 

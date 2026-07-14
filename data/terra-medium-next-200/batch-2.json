@@ -52,10 +52,11 @@
     },
     {
       "id": "fatih-birol",
-      "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Fatih Birol is the Executive Director of the International Energy Agency. His public energy communications are agency-led institutional output, not a creator-controlled Energy Dial account.",
       "contentOwner": "Fatih Birol",
       "economicBuyer": "Fatih Birol",
+      "factualHardGate": "CORPORATE_MONOLITH",
       "unresolvedGates": [
         "OWNED_CURRENT_LONG_FORM",
         "THREE_PUBLICATION_CADENCE",
@@ -68,18 +69,19 @@
       ],
       "evidence": [
         {
-          "url": "https://x.com/FatihBirol",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://www.iea.org/contributors/fatih-birol",
+          "proves": "The IEA identifies Fatih Birol as its Executive Director and describes his agency leadership role."
         }
       ],
       "auditedAt": "2026-07-14T22:19:26.292Z"
     },
     {
       "id": "daniel-yergin",
-      "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Daniel Yergin is Vice Chairman of S&P Global and chairs its CERAWeek conference. His energy media sits within a global enterprise information-services business rather than a creator-controlled account.",
       "contentOwner": "Daniel Yergin",
       "economicBuyer": "Daniel Yergin",
+      "factualHardGate": "CORPORATE_MONOLITH",
       "unresolvedGates": [
         "OWNED_CURRENT_LONG_FORM",
         "THREE_PUBLICATION_CADENCE",
@@ -92,8 +94,8 @@
       ],
       "evidence": [
         {
-          "url": "https://x.com/DanielYergin",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://www.spglobal.com/en/enterprise/experts/dan-yergin.html",
+          "proves": "S&P Global identifies Daniel Yergin as its Vice Chairman and chair of S&P's CERAWeek conference."
         }
       ],
       "auditedAt": "2026-07-14T22:19:26.292Z"
@@ -340,7 +342,8 @@
     },
     {
       "id": "thomas-grtzner-und-bernhard-seyfang",
-      "decision": "NURTURE",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "factualHardGate": "NON_ENGLISH",
       "decisionReason": "The official feed verifies Folge 48 - Energiewende in der Kritik: Haben ihre Gegner einen Punkt? at 2026-06-10T06:39:40.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
       "contentOwner": "Thomas Grützner und Bernhard Seyfang",
       "economicBuyer": "Thomas Grützner und Bernhard Seyfang",
@@ -378,7 +381,8 @@
     },
     {
       "id": "marketing-masterclasses",
-      "decision": "NURTURE",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "factualHardGate": "WRONG_ICP",
       "decisionReason": "The official feed verifies 124. From Agency Life to Building a Sustainable Brand: with Sealand Gear CEO, Adrian Hewlett at 2026-05-13T14:21:48.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
       "contentOwner": "Marketing Masterclasses",
       "economicBuyer": "Marketing Masterclasses",
@@ -416,7 +420,8 @@
     },
     {
       "id": "ad-advance",
-      "decision": "NURTURE",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "factualHardGate": "WRONG_ICP",
       "decisionReason": "The official feed verifies Expanding the Map: Amerge Joins the Podean Family at 2026-04-27T14:00:00.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
       "contentOwner": "Ad Advance",
       "economicBuyer": "Ad Advance",
@@ -492,7 +497,8 @@
     },
     {
       "id": "intentional-learning",
-      "decision": "NURTURE",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "factualHardGate": "WRONG_ICP",
       "decisionReason": "The official feed verifies Technology Skills for Today’s CPA with Derek Henry at 2026-05-28T21:33:01.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
       "contentOwner": "Intentional Learning",
       "economicBuyer": "Intentional Learning",
@@ -644,8 +650,9 @@
     },
     {
       "id": "centre-for-energy-policy-cep",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Global hydrogen markets: trends and prospects at 2026-07-06T09:14:44.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "decisionReason": "Energy Conversations is published by the University of Strathclyde's Centre for Energy Policy, an institutional research centre rather than a creator-controlled account.",
       "contentOwner": "Centre for Energy Policy (CEP",
       "economicBuyer": "Centre for Energy Policy (CEP",
       "ownedLongForm": {
@@ -682,7 +689,8 @@
     },
     {
       "id": "globaldata-energy",
-      "decision": "NURTURE",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "factualHardGate": "CORPORATE_MONOLITH",
       "decisionReason": "The official feed verifies Energy transition investment trends: where’s the money flowing? at 2026-07-07T10:59:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
       "contentOwner": "GlobalData Energy",
       "economicBuyer": "GlobalData Energy",
