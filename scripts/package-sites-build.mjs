@@ -1,4 +1,4 @@
-import { copyFileSync, cpSync, existsSync, mkdirSync, rmSync } from "node:fs";
+import { copyFileSync, cpSync, existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const source = resolve(".open-next");
@@ -14,9 +14,27 @@ cpSync(source, target, { recursive: true });
 const serverTarget = resolve(target, "server");
 mkdirSync(serverTarget, { recursive: true });
 cpSync(source, serverTarget, { recursive: true });
-copyFileSync(
-  resolve(source, "worker.js"),
-  resolve(serverTarget, "index.js")
+copyFileSync(resolve(source, "worker.js"), resolve(serverTarget, "app.js"));
+writeFileSync(
+  resolve(serverTarget, "index.js"),
+  `import app from "./app.js";
+
+export * from "./app.js";
+
+export default {
+  async fetch(request, env, ctx) {
+    try {
+      return await app.fetch(request, env, ctx);
+    } catch (error) {
+      const message = error instanceof Error ? error.stack ?? error.message : String(error);
+      return new Response(message, {
+        status: 500,
+        headers: { "content-type": "text/plain; charset=utf-8" },
+      });
+    }
+  },
+};
+`,
 );
 
 mkdirSync(resolve(target, ".openai"), { recursive: true });
