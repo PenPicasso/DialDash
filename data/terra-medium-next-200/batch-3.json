@@ -28,8 +28,9 @@
     },
     {
       "id": "gridx",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies How PSEG Long Island found its footing at 2026-06-23T10:00:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "decisionReason": "GridX's current podcast is company-owned utility-software marketing, not a creator-controlled Energy Dial account.",
       "contentOwner": "GridX",
       "economicBuyer": "GridX",
       "ownedLongForm": {
@@ -58,16 +59,17 @@
       ],
       "evidence": [
         {
-          "url": "https://feeds.simplecast.com/_NR1_RZa",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "url": "https://gridx.com/gridx-company-overview/",
+          "proves": "GridX's official company overview identifies the owner of the utility-industry podcast and platform."
         }
       ],
       "auditedAt": "2026-07-14T22:19:26.323Z"
     },
     {
       "id": "inspiratia",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies The opportunities and potential for onshore wind repowering in Europe with TRIG/ InfraRed at 2026-07-09T10:00:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "decisionReason": "inspiratia is an energy-infrastructure intelligence company; its podcast is company-owned analyst marketing rather than a creator-controlled account.",
       "contentOwner": "inspiratia",
       "economicBuyer": "inspiratia",
       "ownedLongForm": {
@@ -96,8 +98,8 @@
       ],
       "evidence": [
         {
-          "url": "https://rss.buzzsprout.com/1175864.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "url": "https://inspiratia.com/about-us",
+          "proves": "inspiratia describes its energy and infrastructure intelligence business and enterprise customer focus."
         }
       ],
       "auditedAt": "2026-07-14T22:19:26.323Z"
@@ -128,8 +130,9 @@
     },
     {
       "id": "nov",
-      "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "decisionReason": "NOV is an energy-equipment company, so its communications are enterprise-owned rather than a creator-controlled clipping prospect.",
       "contentOwner": "NOV",
       "economicBuyer": "NOV",
       "unresolvedGates": [
@@ -144,16 +147,17 @@
       ],
       "evidence": [
         {
-          "url": "https://x.com/NOVGlobal",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://investors.nov.com/company-overview/",
+          "proves": "NOV identifies its energy-equipment business and corporate product lines."
         }
       ],
       "auditedAt": "2026-07-14T22:19:26.323Z"
     },
     {
       "id": "x-energy",
-      "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "decisionReason": "X-energy is an advanced nuclear reactor and fuel company, so its content is enterprise-owned corporate communications rather than a creator-controlled clipping prospect.",
       "contentOwner": "X-energy",
       "economicBuyer": "X-energy",
       "unresolvedGates": [
@@ -168,8 +172,8 @@
       ],
       "evidence": [
         {
-          "url": "https://www.youtube.com/watch?v=XfQ1CH7AePM",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://investors.x-energy.com/",
+          "proves": "X-energy's investor site identifies a reactor-technology and fuel manufacturing company."
         }
       ],
       "auditedAt": "2026-07-14T22:19:26.323Z"
