@@ -128,22 +128,19 @@ Sol's adversarial correction added source-derived historical cadence as a promot
 
 The 87 exclusions are predominantly wrong-live-feed/ICP matches, institutions or established media, missing owned long-form, inactivity and duplicate accounts. Do not summarize them as contact failures. `nathan-gambling-betateach` is intentionally the only round-two `NURTURE`: content and identity are verified, but the durable paid transaction and buyer authority remain insufficiently explicit.
 
-### Sol next-200 review
+### Invalidated next-200 attempt and Terra Medium redo
 
 Branch: `codex/sol-next-200`. This remains preview-only and must not modify `main` or `data/nodes.json`.
 
-On 2026-07-14, the next 200 review cohort was locked into eight batches of 25 using the existing direct-source evidence queue:
-- 167 still-unreviewed judgment cases plus 33 high-ranked deterministic rejections used as a false-negative audit.
-- `PURSUE_NOW`: 0; `NURTURE`: 0; `DISQUALIFIED_CONFIRMED`: 200.
-- Every result records first-party/source URLs, failed hard gates, and whether it was carried from the prior strong-model resolution map or confirmed through the failed-gate pass.
-- The 46-record evidence/gate audit passed. This is not statistical decision precision.
-- Primary evidence deficits: no verified official offer page (200), no active/semi-active historical cadence (186), and no person-tied public contact path (154).
+The automatic `200 DISQUALIFIED_CONFIRMED` result from commit `408ac2b` is invalid and must not be counted. It converted missing legacy evidence into factual rejection, reused generic bulk-resolution text, and used a structural audit that could not detect false negatives. The tracked invalid ledger was removed. The trustworthy completed-review count remains 214 unique identities.
 
-Artifacts:
-- `storage/sol-next-200/manifest.json`: ignored fixed cohort manifest.
-- `data/sol-review-next-200.json`: tracked decision ledger.
-- `docs/SOL_NEXT_200_REVIEW.md`: plain-language result and recovery implications.
-- `npm run research:sol-next-200`, `npm run review:sol-next-200`, `npm run validate:sol-next-200 -- --batch=N`, and `npm run validate:sol-next-200-review -- --batch=N`.
+The replacement workflow is `terra-medium-recovery-v1`:
+- `npm run research:sol-next-200` rebuilds the same 200-record cohort in global fit-rank order and eight batches of 25.
+- `docs/TERRA_MEDIUM_NEXT_200.md` is the authoritative Terra Medium mission and output contract.
+- Terra writes `data/terra-medium-next-200/batch-N.json` and runs `npm run validate:terra-medium-next-200 -- --batch=N` after every batch.
+- Missing evidence must be `NURTURE`; only a proved factual hard gate can be `DISQUALIFIED_CONFIRMED`.
+- `npm run compose:terra-medium-next-200` refuses to run until all eight batches exist, then marks the result `solReviewStatus: PENDING`.
+- Sol must subsequently audit all promotions, all nurture decisions, and a rejection sample before the 200 can count as completed.
 
 ### Full light-model and Sol review
 

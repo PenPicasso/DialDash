@@ -41,12 +41,15 @@ const falseNegativeAudit = queue.deterministicDisqualifications
   .filter((record) => !complete.has(record.id) && !judgment.some((candidate) => candidate.id === record.id))
   .sort((a, b) => rank(a.fitRank) - rank(b.fitRank))
   .slice(0, 33);
-const records = [...judgment, ...falseNegativeAudit].slice(0, 200).map((record, index) => ({
-  ...record,
-  batch: Math.floor(index / 25) + 1,
-  cohortLane: judgment.some((candidate) => candidate.id === record.id) ? "JUDGMENT" : "FALSE_NEGATIVE_AUDIT",
-  auditSample: Number.parseInt(createHash("sha256").update(`sol-next-200:${record.id}`).digest("hex").slice(0, 2), 16) % 5 === 0,
-}));
+const records = [...judgment, ...falseNegativeAudit]
+  .sort((a, b) => rank(a.fitRank) - rank(b.fitRank))
+  .slice(0, 200)
+  .map((record, index) => ({
+    ...record,
+    batch: Math.floor(index / 25) + 1,
+    cohortLane: judgment.some((candidate) => candidate.id === record.id) ? "JUDGMENT" : "FALSE_NEGATIVE_AUDIT",
+    auditSample: Number.parseInt(createHash("sha256").update(`sol-next-200:${record.id}`).digest("hex").slice(0, 2), 16) % 5 === 0,
+  }));
 
 if (records.length !== 200) throw new Error(`Expected 200 records, found ${records.length}.`);
 if (new Set(records.map((record) => record.id)).size !== records.length) throw new Error("Cohort contains duplicate IDs.");
