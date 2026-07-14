@@ -140,6 +140,7 @@ The dashboard now includes:
 - Prospect data is loaded from `/api/prospects` instead of importing `data/nodes.json` into the client page, so the initial dashboard HTML stays light. The table renders in batches of 100.
 - The freshness column prioritizes YouTube and Apple Podcast/RSS evidence and expands on hover to show both platform signals.
 - Detail drawer showing TOF/MOF/BOF and the stored prospect-specific pitch hook.
+- Prospect rows use one stable `Details` action. Verified YouTube, podcast, X, email, and offer links render as direct buttons inside the detail drawer; do not restore a floating row dropdown that obscures adjacent prospects.
 - `/pilot` contains the expanded first-client acquisition playbook and links to `/portal/demo`.
 - `/portal/demo` is a manual-first client workspace preview. Media remains in Google Drive, payment uses a configured Flutterwave link, and feedback is browser-local until a real metadata backend is added.
 

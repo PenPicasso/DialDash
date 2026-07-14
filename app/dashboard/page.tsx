@@ -6,6 +6,7 @@ import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import { CATEGORIES, NodeData } from "@/lib/types";
 import {
   AlertTriangle,
+  ChevronRight,
   Moon,
   Search,
   SlidersHorizontal,
@@ -13,12 +14,6 @@ import {
   X,
 } from "lucide-react";
 import { MediaFreshness } from "@/components/mediaFreshness";
-import { ProspectActions } from "@/components/prospectActions";
-
-const VideoPreview = dynamic(
-  () => import("@/components/videoPreview").then((mod) => mod.VideoPreview),
-  { ssr: false, loading: () => null }
-);
 
 const NodeDetail = dynamic(
   () => import("@/components/nodeDetail").then((mod) => mod.NodeDetail),
@@ -201,9 +196,9 @@ function StatusPill({ status }: { status?: NodeData["actionabilityStatus"] }) {
 }
 
 function DecisionPill({ decision }: { decision?: NodeData["methodologyDecision"] }) {
-  if (decision === "PURSUE_NOW") return <span className="rounded-full border border-brand-orange/30 bg-brand-orange/10 px-2.5 py-1 text-xs font-extrabold text-brand-orange">Pursue now</span>;
-  if (decision === "NURTURE") return <span className="rounded-full border border-brand-blue/25 bg-brand-blue/5 px-2.5 py-1 text-xs font-extrabold text-brand-blue">Research next</span>;
-  return <span className="rounded-full border border-border bg-background px-2.5 py-1 text-xs font-bold text-muted">Disqualified</span>;
+  if (decision === "PURSUE_NOW") return <span className="inline-flex min-w-[108px] justify-center rounded-full border border-brand-orange/30 bg-brand-orange/10 px-2.5 py-1 text-xs font-extrabold text-brand-orange">Pursue now</span>;
+  if (decision === "NURTURE") return <span className="inline-flex min-w-[108px] justify-center rounded-full border border-brand-blue/25 bg-brand-blue/5 px-2.5 py-1 text-xs font-extrabold text-brand-blue">Research next</span>;
+  return <span className="inline-flex min-w-[108px] justify-center rounded-full border border-border bg-background px-2.5 py-1 text-xs font-bold text-muted">Disqualified</span>;
 }
 
 function priorityClasses(priority: NodeData["priority"]) {
@@ -232,7 +227,6 @@ export default function Dashboard() {
   const [priority, setPriority] = useState("");
   const [category, setCategory] = useState("");
   const [formatFilter, setFormatFilter] = useState("");
-  const [hoveredChannel, setHoveredChannel] = useState<string | null>(null);
   const [selectedNode, setSelectedNode] = useState<NodeData | null>(null);
   const [isDark, setIsDark] = useState(false);
   const [confidence, setConfidence] = useState("");
@@ -664,7 +658,9 @@ export default function Dashboard() {
             </div>
             <div className="mt-3 flex items-center justify-between gap-3">
               <span className="truncate text-[10px] font-bold uppercase text-muted">{node.category} / {node.region}</span>
-              <ProspectActions node={node} compact />
+              <button type="button" onClick={(event) => { event.stopPropagation(); setSelectedNode(node); }} className="inline-flex h-9 items-center gap-1 rounded-md bg-brand-blue px-3 text-xs font-extrabold text-white hover:bg-[#0c326a]">
+                Details<ChevronRight size={14} />
+              </button>
             </div>
           </article>
         ))}
@@ -677,7 +673,18 @@ export default function Dashboard() {
 
       <div className="hidden rounded-xl border border-border bg-panel shadow-sm md:block">
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[1140px] text-left text-sm">
+          <table className="w-full min-w-[1180px] table-fixed text-left text-sm">
+            <colgroup>
+              <col className="w-[205px]" />
+              <col className="w-[165px]" />
+              <col className="w-[70px]" />
+              <col className="w-[160px]" />
+              <col className="w-[130px]" />
+              <col className="w-[165px]" />
+              <col className="w-[100px]" />
+              <col className="w-[85px]" />
+              <col className="w-[100px]" />
+            </colgroup>
             <thead className="border-b border-border bg-background text-[10px] font-bold uppercase tracking-wider text-muted">
               <tr>
                 <th className="px-5 py-4">Host & Channel</th>
@@ -725,8 +732,6 @@ export default function Dashboard() {
                       key={node.id}
                       className="table-row-hover group relative cursor-pointer hover:bg-black/[0.025] dark:hover:bg-white/[0.035]"
                       onClick={() => setSelectedNode(node)}
-                      onMouseEnter={() => setHoveredChannel(node.channel)}
-                      onMouseLeave={() => setHoveredChannel(null)}
                     >
                       <td className="relative px-5 py-4">
                         <div className="flex items-center gap-1.5 font-bold text-foreground transition-colors group-hover:text-brand-orange">
@@ -750,17 +755,8 @@ export default function Dashboard() {
                           <span>{node.channel || (node.isXOnly ? (node.isPodcastOnly ? "Podcast only" : "X only") : "")}</span>
                           {node.fitRank && <span className="rounded bg-brand-blue/8 px-1.5 py-0.5 text-[9px] font-extrabold text-brand-blue">#{node.fitRank}</span>}
                         </div>
-                        {hoveredChannel === node.channel && node.channel && !node.isXOnly && (
-                          <div onClick={(event) => event.stopPropagation()}>
-                            <VideoPreview
-                              channelId={node.channelId}
-                              youtubeUrl={node.youtubeUrl}
-                              channelName={node.channel}
-                            />
-                          </div>
-                        )}
                       </td>
-                      <td className="px-5 py-4">
+                      <td className="px-5 py-4 align-top">
                         <div className="text-xs font-semibold text-foreground/85">{node.category}</div>
                         <div className="text-xs text-muted">{node.subcategory}</div>
                       </td>
@@ -768,19 +764,21 @@ export default function Dashboard() {
                       <td className="px-5 py-4">
                         <MediaFreshness node={node} />
                       </td>
-                      <td className="px-5 py-4">
-                        <DecisionPill decision={node.methodologyDecision} />
+                      <td className="px-5 py-4 align-top">
+                        <div className="flex min-h-[68px] w-[110px] flex-col items-start">
+                          <DecisionPill decision={node.methodologyDecision} />
                         {!node.methodologyDecision && <div className="mt-1.5"><StatusPill status={node.actionabilityStatus} /></div>}
                         {node.methodologyConfidence !== undefined && (
-                          <div className="mt-1 text-[10px] font-bold uppercase text-muted">
+                          <div className="mt-1 w-full text-center text-[10px] font-bold uppercase text-muted">
                             {node.methodologyConfidence}% confidence
                           </div>
                         )}
                         {node.reachabilityStatus && (
-                          <div className="mt-1 text-[10px] font-bold uppercase text-brand-blue dark:text-blue-300">
+                          <div className="mt-1 w-full text-center text-[10px] font-bold uppercase text-brand-blue dark:text-blue-300">
                             {node.reachabilityStatus} reach
                           </div>
                         )}
+                        </div>
                       </td>
                       <td className="px-5 py-4">
                         <div className="text-xs font-bold uppercase text-foreground/85">
@@ -806,7 +804,9 @@ export default function Dashboard() {
                         {followers.length ? followers.join(" / ") : "Unknown"}
                       </td>
                       <td className="px-5 py-4 text-right">
-                        <ProspectActions node={node} compact />
+                        <button type="button" onClick={(event) => { event.stopPropagation(); setSelectedNode(node); }} className="inline-flex h-8 items-center gap-1 rounded-md border border-brand-blue/30 px-2.5 text-[11px] font-extrabold text-brand-blue hover:bg-brand-blue/5">
+                          Details<ChevronRight size={13} />
+                        </button>
                       </td>
                     </tr>
                   );
