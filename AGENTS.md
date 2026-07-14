@@ -142,6 +142,11 @@ The replacement workflow is `terra-medium-recovery-v1`:
 - `npm run compose:terra-medium-next-200` refuses to run until all eight batches exist, then marks the result `solReviewStatus: PENDING`.
 - Sol must subsequently audit all promotions, all nurture decisions, and a rejection sample before the 200 can count as completed.
 
+Terra Medium batch progress:
+- Batch 1 of 8 was independently researched and passed `validate:terra-medium-next-200`, `validate:methodology`, and `validate:data` on 2026-07-14.
+- Its output is `data/terra-medium-next-200/batch-1.json`: 14 factual exclusions and 11 NURTURE records. No prospect was promoted.
+- Batches 2 through 8 are not started and must not be represented as completed. The full 200 remains uncounted and cannot be composed until all eight batches exist.
+
 ### Full light-model and Sol review
 
 Branch: `codex/light-model-next-100`. This remains preview-only; do not merge to `main` or promote production until the user approves it.
