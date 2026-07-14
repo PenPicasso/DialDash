@@ -6,6 +6,9 @@ type Report = {
   batch: number;
   decision: string;
   decisionReason?: string;
+  latestPublishedAt?: string;
+  sourceEvidenceUrl?: string;
+  historicalCadence?: { status: string; latestGapDays?: number; medianIntervalDays?: number; observedPublications: number };
   buyer?: string;
   pointMan?: string;
   contact?: string;
@@ -25,7 +28,7 @@ const review = JSON.parse(readFileSync(join(root, "data", "sol-review-round-2.js
   methodology: string;
   total: number;
   counts: Record<string, number>;
-  audit: { sampleSize: number; correctDecisions: number; auditedPrecision: number; passed: boolean };
+  audit: { kind: string; limitation: string; sampleSize: number; passedChecks: number; passRate: number; passed: boolean };
   reports: Report[];
 };
 const first = JSON.parse(readFileSync(join(root, "data", "terra-review.json"), "utf8")) as { reports: Array<{ id: string }> };
@@ -35,12 +38,13 @@ const rows = requestedBatch ? review.reports.filter((report) => report.batch ===
 const previous = new Set([...first.reports.map((report) => report.id), ...pilot.prospects.map((prospect) => prospect.existingNodeId || prospect.id)]);
 const errors: string[] = [];
 
-if (review.methodology !== "sol-recovery-v2") errors.push("Unexpected methodology version.");
+if (review.methodology !== "sol-recovery-v2.1") errors.push("Unexpected methodology version.");
 if (review.total !== 100 || review.reports.length !== 100) errors.push("Round two must contain exactly 100 records.");
 if (new Set(review.reports.map((report) => report.id)).size !== 100) errors.push("Round two contains duplicate IDs.");
 for (const report of review.reports) if (previous.has(report.id)) errors.push(`${report.id}: overlaps a prior completed cohort.`);
 for (let batch = 1; batch <= 4; batch += 1) if (review.reports.filter((report) => report.batch === batch).length !== 25) errors.push(`Batch ${batch} does not contain 25 records.`);
-if (!review.audit.passed || review.audit.auditedPrecision < 0.9) errors.push("Audit precision is below the 90% stop threshold.");
+if (!review.audit.passed || review.audit.passRate < 0.9) errors.push("Evidence-and-hard-gate audit is below the 90% stop threshold.");
+if (!review.audit.limitation.includes("not statistical")) errors.push("Audit must disclose that its pass rate is not statistical precision.");
 
 for (const report of rows) {
   if (!report.decisionReason) errors.push(`${report.id}: missing decision reason.`);
@@ -49,6 +53,11 @@ for (const report of rows) {
       if (!report[field]) errors.push(`${report.id}: PURSUE_NOW missing ${field}.`);
     }
     if (report.evidence.length < 1) errors.push(`${report.id}: PURSUE_NOW missing first-party evidence.`);
+    if (!report.latestPublishedAt || !report.sourceEvidenceUrl) errors.push(`${report.id}: PURSUE_NOW missing owned-source freshness evidence.`);
+    if (!report.historicalCadence || !["ACTIVE", "SEMI_ACTIVE"].includes(report.historicalCadence.status) || report.historicalCadence.observedPublications < 2) {
+      errors.push(`${report.id}: PURSUE_NOW failed historical cadence gate.`);
+    }
+    if (report.latestPublishedAt && Date.now() - new Date(report.latestPublishedAt).getTime() > 90 * 86_400_000) errors.push(`${report.id}: PURSUE_NOW freshness is over 90 days old.`);
     const requiredSamples = report.videoGapType === "WEAK_QUALITY" ? 3 : 1;
     if (report.videoGapEvidenceUrls.length < requiredSamples) errors.push(`${report.id}: video gap requires ${requiredSamples} evidence URL(s).`);
   }
@@ -59,7 +68,8 @@ for (const report of rows) {
 console.log(`Sol round-two validation${requestedBatch ? ` batch ${requestedBatch}` : ""}`);
 console.log(`- records checked: ${rows.length}`);
 console.log(`- decisions: ${JSON.stringify(rows.reduce<Record<string, number>>((acc, row) => { acc[row.decision] = (acc[row.decision] || 0) + 1; return acc; }, {}))}`);
-console.log(`- audit precision: ${(review.audit.auditedPrecision * 100).toFixed(1)}% (${review.audit.correctDecisions}/${review.audit.sampleSize})`);
+console.log(`- evidence/gate audit: ${(review.audit.passRate * 100).toFixed(1)}% (${review.audit.passedChecks}/${review.audit.sampleSize})`);
+console.log(`- audit limitation: ${review.audit.limitation}`);
 console.log(`- errors: ${errors.length}`);
 for (const error of errors) console.error(`ERROR: ${error}`);
 if (errors.length) process.exit(1);

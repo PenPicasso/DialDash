@@ -15,13 +15,24 @@ type ManifestRecord = {
   organization?: string;
   known: Record<string, string | undefined>;
   freshness: {
-    rss?: { ok: boolean; url: string; title?: string; latestTitle?: string; latestPublishedAt?: string; energyTitleCount?: number };
+    rss?: SourceFeed;
+    youtubeFeed?: SourceFeed;
+    appleDiscovery?: { ok: boolean; lookupUrl?: string; appleUrl?: string; feedUrl?: string };
     youtubePublishedAt?: string;
     youtubeEvidenceUrl?: string;
     podcastPublishedAt?: string;
     podcastEvidenceUrl?: string;
   };
 };
+
+type Cadence = {
+  status: "ACTIVE" | "SEMI_ACTIVE" | "SLOWED" | "INACTIVE" | "UNVERIFIED";
+  latestGapDays?: number;
+  medianIntervalDays?: number;
+  slowdownRatio?: number;
+  observedPublications: number;
+};
+type SourceFeed = { ok: boolean; url: string; title?: string; latestTitle?: string; latestPublishedAt?: string; energyTitleCount?: number; cadence?: Cadence };
 
 type Pursue = {
   buyer: string;
@@ -178,10 +189,21 @@ const explicitExclusions: Record<string, string> = {
 };
 
 function latestDate(record: ManifestRecord) {
-  const values = [record.freshness.rss?.latestPublishedAt, record.freshness.youtubePublishedAt, record.freshness.podcastPublishedAt]
+  const values = [record.freshness.rss?.latestPublishedAt, record.freshness.youtubeFeed?.latestPublishedAt, record.freshness.youtubePublishedAt, record.freshness.podcastPublishedAt]
     .filter((value): value is string => Boolean(value))
     .sort((a, b) => new Date(b).getTime() - new Date(a).getTime());
   return values[0];
+}
+
+function primaryFeed(record: ManifestRecord) {
+  return [record.freshness.rss, record.freshness.youtubeFeed]
+    .filter((source): source is SourceFeed => Boolean(source?.ok && source.latestPublishedAt))
+    .sort((a, b) => new Date(b.latestPublishedAt!).getTime() - new Date(a.latestPublishedAt!).getTime())[0];
+}
+
+function passesPublicationGate(record: ManifestRecord) {
+  const source = primaryFeed(record);
+  return Boolean(source && source.cadence && ["ACTIVE", "SEMI_ACTIVE"].includes(source.cadence.status) && source.cadence.observedPublications >= 2);
 }
 
 function fallbackReason(record: ManifestRecord) {
@@ -210,9 +232,13 @@ function exclusionCategory(reason: string) {
 
 const reports = manifest.records.map((record) => {
   const verified = pursue[record.id];
-  const decision: Decision = verified ? "PURSUE_NOW" : record.id === "nathan-gambling-betateach" ? "NURTURE" : "DISQUALIFIED_CONFIRMED";
+  const publicationGatePassed = passesPublicationGate(record);
+  const decision: Decision = verified && publicationGatePassed ? "PURSUE_NOW" : verified || record.id === "nathan-gambling-betateach" ? "NURTURE" : "DISQUALIFIED_CONFIRMED";
+  const source = primaryFeed(record);
   const reason = verified
-    ? "All hard gates passed with current owned content, named buyer, official transaction, public contact and manually checked video distribution."
+    ? publicationGatePassed
+      ? `All hard gates passed, including ${source?.cadence?.observedPublications} observed owned publications with a ${source?.cadence?.medianIntervalDays ?? "n/a"}-day median cadence and ${source?.cadence?.latestGapDays}-day current gap.`
+      : "Buyer, transaction and video-gap evidence are strong, but owned-source historical cadence did not pass the deterministic promotion gate."
     : record.id === "nathan-gambling-betateach"
       ? "The owned energy content, Nathan's identity and audience are verified, but the durable paid transaction and buyer authority behind BetaTeach are not explicit enough for promotion."
       : explicitExclusions[record.id] || fallbackReason(record);
@@ -228,8 +254,11 @@ const reports = manifest.records.map((record) => {
     decisionReason: reason,
     exclusionCategory: decision === "DISQUALIFIED_CONFIRMED" ? exclusionCategory(reason) : undefined,
     latestPublishedAt: latestDate(record),
-    latestTitle: record.freshness.rss?.latestTitle,
-    sourceEvidenceUrl: record.freshness.rss?.url || record.freshness.youtubeEvidenceUrl || record.freshness.podcastEvidenceUrl,
+    latestTitle: source?.latestTitle,
+    sourceEvidenceUrl: source?.url || record.freshness.youtubeEvidenceUrl || record.freshness.podcastEvidenceUrl,
+    sourceType: source === record.freshness.youtubeFeed ? "YOUTUBE" : source ? "PODCAST_RSS" : undefined,
+    feedDiscoveryUrl: record.freshness.appleDiscovery?.lookupUrl,
+    historicalCadence: source?.cadence,
     owner: verified?.buyer,
     buyer: verified?.buyer,
     pointMan: verified?.pointMan,
@@ -245,7 +274,11 @@ const reports = manifest.records.map((record) => {
     videoGapReason: verified?.videoGapReason,
     videoGapEvidenceUrls: verified?.videoGapEvidenceUrls || [],
     evidence: verified?.evidence || [],
-    missingGates: decision === "NURTURE" ? ["first-party durable offer", "economic-buyer authority", "verified BOF transaction"] : [],
+    missingGates: decision === "NURTURE"
+      ? verified
+        ? ["verified active/semi-active historical cadence"]
+        : ["first-party durable offer", "economic-buyer authority", "verified BOF transaction"]
+      : [],
   };
 });
 
@@ -254,21 +287,39 @@ const exclusionCounts = reports.filter((report) => report.exclusionCategory).red
   acc[report.exclusionCategory!] = (acc[report.exclusionCategory!] || 0) + 1;
   return acc;
 }, {});
-const auditRecords = reports.filter((report) => report.auditSample).map((report) => ({
-  id: report.id,
-  decision: report.decision,
-  correct: report.decision !== "PURSUE_NOW" || Boolean(report.buyer && report.contact && report.offer && report.pitchHook && report.videoGapReason && report.evidence.length),
-}));
-const correct = auditRecords.filter((record) => record.correct).length;
-const precision = auditRecords.length ? correct / auditRecords.length : 0;
+const auditRecords = reports.filter((report) => report.auditSample).map((report) => {
+  const checks = report.decision === "PURSUE_NOW"
+    ? {
+        publication: Boolean(report.latestPublishedAt && report.sourceEvidenceUrl && report.historicalCadence && ["ACTIVE", "SEMI_ACTIVE"].includes(report.historicalCadence.status)),
+        buyerAndContact: Boolean(report.buyer && report.pointMan && report.contact && report.contactUrl),
+        transaction: Boolean(report.offer && report.offerEvidenceUrl && report.bof?.length),
+        funnelAndPitch: Boolean(report.tof?.length && report.mof?.length && report.pitchHook),
+        videoGap: Boolean(report.videoGapReason && report.videoGapEvidenceUrls.length),
+        firstPartyEvidence: report.evidence.length > 0,
+      }
+    : report.decision === "NURTURE"
+      ? { unresolvedGatesNamed: report.missingGates.length > 0, noPromotion: true }
+      : { specificHardGateNamed: Boolean(report.exclusionCategory && report.decisionReason.length >= 35), noPromotion: true };
+  return { id: report.id, decision: report.decision, checks, passed: Object.values(checks).every(Boolean) };
+});
+const passedChecks = auditRecords.filter((record) => record.passed).length;
+const passRate = auditRecords.length ? passedChecks / auditRecords.length : 0;
 const output = {
-  methodology: "sol-recovery-v2",
+  methodology: "sol-recovery-v2.1",
   generatedAt: new Date().toISOString(),
   cohortHash: manifest.cohortHash,
   total: reports.length,
   counts,
   exclusionCounts,
-  audit: { sampleSize: auditRecords.length, correctDecisions: correct, auditedPrecision: precision, passed: precision >= 0.9, records: auditRecords },
+  audit: {
+    kind: "deterministic evidence-and-hard-gate audit",
+    limitation: "This pass rate measures evidence completeness and gate consistency; it is not statistical ground-truth precision.",
+    sampleSize: auditRecords.length,
+    passedChecks,
+    passRate,
+    passed: passRate >= 0.9,
+    records: auditRecords,
+  },
   reports,
 };
 writeFileSync(join(root, "data", "sol-review-round-2.json"), `${JSON.stringify(output, null, 2)}\n`);

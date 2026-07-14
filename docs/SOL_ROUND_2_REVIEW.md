@@ -2,7 +2,7 @@
 
 Date: 2026-07-14  
 Branch: `codex/light-model-next-100`  
-Methodology: `sol-recovery-v2`
+Methodology: `sol-recovery-v2.1`
 
 ## Outcome
 
@@ -11,8 +11,10 @@ The next non-overlapping 100 records were reviewed in four fixed batches of 25. 
 - `PURSUE_NOW`: 12
 - `NURTURE`: 1
 - `DISQUALIFIED_CONFIRMED`: 87
-- Deterministic audit sample: 26/26 decisions passed the review checks
+- Deterministic evidence-and-hard-gate sample: 26/26 records passed
 - Firecrawl calls: 0
+
+The 26/26 result is an evidence-completeness and gate-consistency pass rate. It is not statistical ground-truth precision, and the dashboard now labels it accordingly.
 
 Batch results:
 
@@ -37,6 +39,8 @@ Batch results:
 10. Libbe HaLevy - weekly Nuclear Hotseat and donation/book funnel; only one visible owned Short.
 11. Trisha Curtis - PetroNerds research/consulting; sampled Shorts use captions but little explanatory market context.
 12. Paul Chapman - current HC Commodities Podcast and co-owned search/advisory business; no verified owned YouTube distribution.
+
+Every promoted account now has a source-derived historical cadence record. Promotion requires at least two observed publications, a true owned-source latest date no more than 90 days old, and an `ACTIVE` or `SEMI_ACTIVE` cadence. Paul Chapman's stale Libsyn URL now fails closed and is recovered only through a strict Apple podcast lookup that verifies `wrapperType: track`, `kind: podcast`, an Apple Podcasts URL and a live feed URL. Trisha Curtis uses the owned PetroNerds YouTube Atom feed rather than a legacy generic date.
 
 Nathan Gambling is the only `NURTURE` record. His owned energy content and identity are clear, but the durable paid BetaTeach transaction and economic-buyer authority were not explicit enough to promote.
 

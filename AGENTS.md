@@ -108,12 +108,12 @@ Important correction: a Shorts tab or high clip count does not prove strong expl
 
 ### Sol recovery round two
 
-Completed 2026-07-14 on `codex/light-model-next-100` using `sol-recovery-v2`:
+Completed 2026-07-14 on `codex/light-model-next-100` using `sol-recovery-v2.1`:
 - 100 new, non-overlapping records in four batches of 25.
 - `PURSUE_NOW`: 12.
 - `NURTURE`: 1.
 - `DISQUALIFIED_CONFIRMED`: 87.
-- Deterministic audit sample: 26/26 passed; production rows changed: 0; Firecrawl calls: 0.
+- Deterministic evidence-and-hard-gate sample: 26/26 passed; this is not statistical ground-truth precision. Production rows changed: 0; Firecrawl calls: 0.
 - Total review decisions across pilot and both recovery rounds: 215; unique prospect identities: 214 because `bill-derasmo` appeared in both the pilot and round one.
 
 Round-two artifacts:
@@ -123,6 +123,8 @@ Round-two artifacts:
 - `npm run research:sol-round-2`: rebuild the non-overlapping 100-record manifest and live-source probes.
 - `npm run review:sol-round-2`: regenerate the tracked review ledger from the staged manifest and curated Sol evidence.
 - `npm run validate:sol-round-2 -- --batch=N`: enforce 25-record boundaries, prior-cohort exclusion, hard promotion gates and the 90% audit threshold.
+
+Sol's adversarial correction added source-derived historical cadence as a promotion gate, strict Apple podcast feed discovery when a stored RSS URL fails, and owned YouTube Atom freshness for PetroNerds. Never claim the deterministic sample pass rate as decision precision.
 
 The 87 exclusions are predominantly wrong-live-feed/ICP matches, institutions or established media, missing owned long-form, inactivity and duplicate accounts. Do not summarize them as contact failures. `nathan-gambling-betateach` is intentionally the only round-two `NURTURE`: content and identity are verified, but the durable paid transaction and buyer authority remain insufficiently explicit.
 

@@ -1,6 +1,6 @@
 {
-  "methodology": "sol-recovery-v2",
-  "generatedAt": "2026-07-14T18:56:46.759Z",
+  "methodology": "sol-recovery-v2.1",
+  "generatedAt": "2026-07-14T19:26:09.804Z",
   "cohortHash": "0783b7e9507ce731d6a4da29f75cee8d7ad9dfca23fcc0dfab85213c68a85443",
   "total": 100,
   "counts": {
@@ -12,147 +12,265 @@
     "EXISTING_VIDEO_CAPABILITY": 1,
     "INACTIVE": 6,
     "INSTITUTIONAL_OR_MEDIA": 9,
-    "WRONG_ICP": 46,
-    "OTHER_HARD_GATE": 12,
+    "WRONG_ICP": 44,
+    "OTHER_HARD_GATE": 14,
     "DUPLICATE_ACCOUNT": 4,
     "NO_OWNED_LONG_FORM": 7,
     "NO_NAMED_HUMAN": 2
   },
   "audit": {
+    "kind": "deterministic evidence-and-hard-gate audit",
+    "limitation": "This pass rate measures evidence completeness and gate consistency; it is not statistical ground-truth precision.",
     "sampleSize": 26,
-    "correctDecisions": 26,
-    "auditedPrecision": 1,
+    "passedChecks": 26,
+    "passRate": 1,
     "passed": true,
     "records": [
       {
         "id": "peter-tertzakian",
         "decision": "PURSUE_NOW",
-        "correct": true
+        "checks": {
+          "publication": true,
+          "buyerAndContact": true,
+          "transaction": true,
+          "funnelAndPitch": true,
+          "videoGap": true,
+          "firstPartyEvidence": true
+        },
+        "passed": true
       },
       {
         "id": "david-roberts",
         "decision": "PURSUE_NOW",
-        "correct": true
+        "checks": {
+          "publication": true,
+          "buyerAndContact": true,
+          "transaction": true,
+          "funnelAndPitch": true,
+          "videoGap": true,
+          "firstPartyEvidence": true
+        },
+        "passed": true
       },
       {
         "id": "libbe-halevy",
         "decision": "PURSUE_NOW",
-        "correct": true
+        "checks": {
+          "publication": true,
+          "buyerAndContact": true,
+          "transaction": true,
+          "funnelAndPitch": true,
+          "videoGap": true,
+          "firstPartyEvidence": true
+        },
+        "passed": true
       },
       {
         "id": "vivek-chandra",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "david-greely",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "aaron-murphy",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "amy-scott",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "tom-ruwitch",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "tim-roberts",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "flight-path",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "car-wash",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "allan-gray",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "patrick-l-young",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "mark-p-mills",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "sandeep-pai",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "javier-blas",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "doomberg",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "gary-ross-oil",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "eugene-shatsman",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "histoires-vraies",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "steve-saretsky",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "patricia-bright",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "cnbc-business",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "trading-markets",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "talking-headways",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       },
       {
         "id": "jacob-rushfinn",
         "decision": "DISQUALIFIED_CONFIRMED",
-        "correct": true
+        "checks": {
+          "specificHardGateNamed": true,
+          "noPromotion": true
+        },
+        "passed": true
       }
     ]
   },
@@ -166,10 +284,18 @@
       "host": "Emmet Penney",
       "organization": "Nuclear Barbarians",
       "decision": "PURSUE_NOW",
-      "decisionReason": "All hard gates passed with current owned content, named buyer, official transaction, public contact and manually checked video distribution.",
+      "decisionReason": "All hard gates passed, including 12 observed owned publications with a 20.8-day median cadence and 7.5-day current gap.",
       "latestPublishedAt": "2026-07-07T08:00:00.000Z",
       "latestTitle": "The Critical Moment ft. Matt Loszak (Aalo Atomics)",
       "sourceEvidenceUrl": "https://feeds.simplecast.com/WKRJIZqi",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 7.5,
+        "medianIntervalDays": 20.8,
+        "slowdownRatio": 0.4,
+        "observedPublications": 12
+      },
       "owner": "Emmet Penney",
       "buyer": "Emmet Penney",
       "pointMan": "Emmet Penney",
@@ -217,10 +343,18 @@
       "host": "Giles Parkinson",
       "organization": "Energy Insiders",
       "decision": "PURSUE_NOW",
-      "decisionReason": "All hard gates passed with current owned content, named buyer, official transaction, public contact and manually checked video distribution.",
+      "decisionReason": "All hard gates passed, including 12 observed owned publications with a 7-day median cadence and 4.6-day current gap.",
       "latestPublishedAt": "2026-07-10T05:04:32.000Z",
       "latestTitle": "Electric truck network starts to take shape",
       "sourceEvidenceUrl": "https://feeds.soundcloud.com/users/soundcloud:users:190464940/sounds.rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 4.6,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.7,
+        "observedPublications": 12
+      },
       "owner": "Giles Parkinson",
       "buyer": "Giles Parkinson",
       "pointMan": "Giles Parkinson",
@@ -271,10 +405,18 @@
       "host": "Peter Tertzakian",
       "organization": "ARC Energy Ideas",
       "decision": "PURSUE_NOW",
-      "decisionReason": "All hard gates passed with current owned content, named buyer, official transaction, public contact and manually checked video distribution.",
+      "decisionReason": "All hard gates passed, including 12 observed owned publications with a 7-day median cadence and 6.9-day current gap.",
       "latestPublishedAt": "2026-07-07T21:00:00.000Z",
       "latestTitle": "Oil Pipeline News, Plus Natural Gas with Enbridge’s Michele Harradence",
       "sourceEvidenceUrl": "https://rss.buzzsprout.com/1961019.rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 6.9,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 1,
+        "observedPublications": 12
+      },
       "owner": "Peter Tertzakian",
       "buyer": "Peter Tertzakian",
       "pointMan": "Peter Tertzakian",
@@ -325,10 +467,18 @@
       "host": "Green Insider / The Green Insider Powered by eRENEWABLE",
       "organization": "The Green Insider Powered by eRENEWABLE",
       "decision": "PURSUE_NOW",
-      "decisionReason": "All hard gates passed with current owned content, named buyer, official transaction, public contact and manually checked video distribution.",
+      "decisionReason": "All hard gates passed, including 12 observed owned publications with a 5.9-day median cadence and 5.8-day current gap.",
       "latestPublishedAt": "2026-07-09T00:50:59.000Z",
       "latestTitle": "Grant Funding Strategies for Energy Projects with A-Plus Grants",
       "sourceEvidenceUrl": "https://erenewable.com/feed/podcast/",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 5.8,
+        "medianIntervalDays": 5.9,
+        "slowdownRatio": 1,
+        "observedPublications": 12
+      },
       "owner": "Mike Nemer",
       "buyer": "Mike Nemer",
       "pointMan": "Mike Nemer",
@@ -376,10 +526,18 @@
       "host": "Mike Mauceli / The Energy Show",
       "organization": "The Energy Show",
       "decision": "PURSUE_NOW",
-      "decisionReason": "All hard gates passed with current owned content, named buyer, official transaction, public contact and manually checked video distribution.",
+      "decisionReason": "All hard gates passed, including 12 observed owned publications with a 16.9-day median cadence and 1-day current gap.",
       "latestPublishedAt": "2026-07-13T19:39:00.000Z",
       "latestTitle": "THE BEST AND WORST STATES FOR OIL INVESTORS",
       "sourceEvidenceUrl": "https://rss.libsyn.com/shows/578005/destinations/5007830.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 1,
+        "medianIntervalDays": 16.9,
+        "slowdownRatio": 0.1,
+        "observedPublications": 12
+      },
       "owner": "Mike Mauceli",
       "buyer": "Mike Mauceli",
       "pointMan": "Mike Mauceli",
@@ -424,10 +582,18 @@
       "host": "David Roberts",
       "organization": "Volts Podcast",
       "decision": "PURSUE_NOW",
-      "decisionReason": "All hard gates passed with current owned content, named buyer, official transaction, public contact and manually checked video distribution.",
+      "decisionReason": "All hard gates passed, including 12 observed owned publications with a 5-day median cadence and 4.4-day current gap.",
       "latestPublishedAt": "2026-07-10T10:15:00.000Z",
       "latestTitle": "Want less sprawl and more urban infill? Try a land value tax!",
       "sourceEvidenceUrl": "https://api.substack.com/feed/podcast/193024.rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 4.4,
+        "medianIntervalDays": 5,
+        "slowdownRatio": 0.9,
+        "observedPublications": 12
+      },
       "owner": "David Roberts",
       "buyer": "David Roberts",
       "pointMan": "David Roberts",
@@ -475,10 +641,18 @@
       "host": "Tisha Schuller / Adamantine Energy",
       "organization": "Adamantine Energy",
       "decision": "PURSUE_NOW",
-      "decisionReason": "All hard gates passed with current owned content, named buyer, official transaction, public contact and manually checked video distribution.",
+      "decisionReason": "All hard gates passed, including 12 observed owned publications with a 7-day median cadence and 4.3-day current gap.",
       "latestPublishedAt": "2026-07-10T11:00:00.000Z",
       "latestTitle": "\"We Win on Innovation Ten Out Of Ten Times\" – Dr. Rian Bahran, U.S. DOE Office of Nuclear Energy",
       "sourceEvidenceUrl": "https://rss.buzzsprout.com/1120160.rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 4.3,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.6,
+        "observedPublications": 12
+      },
       "owner": "Tisha Schuller",
       "buyer": "Tisha Schuller",
       "pointMan": "Tisha Schuller",
@@ -521,10 +695,18 @@
       "host": "Wes Ashworth",
       "organization": "Green Giants: Titans of Renewable Energy Podcast",
       "decision": "PURSUE_NOW",
-      "decisionReason": "All hard gates passed with current owned content, named buyer, official transaction, public contact and manually checked video distribution.",
+      "decisionReason": "All hard gates passed, including 12 observed owned publications with a 7-day median cadence and 4.3-day current gap.",
       "latestPublishedAt": "2026-07-10T11:00:00.000Z",
       "latestTitle": "Building the Power Behind AI: Nuclear, SMRs, and the Delivery Challenge",
       "sourceEvidenceUrl": "https://rss.buzzsprout.com/2277253.rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 4.3,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.6,
+        "observedPublications": 12
+      },
       "owner": "Wes Ashworth",
       "buyer": "Wes Ashworth",
       "pointMan": "Wes Ashworth",
@@ -577,6 +759,14 @@
       "latestPublishedAt": "2026-06-24T11:00:00.000Z",
       "latestTitle": "CANDU: The Truly Modular Reactor w/ Navid Badie",
       "sourceEvidenceUrl": "https://anchor.fm/s/23775178/podcast/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 20.3,
+        "medianIntervalDays": 8.2,
+        "slowdownRatio": 2.5,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -590,10 +780,18 @@
       "host": "Laurent Segalen",
       "organization": "Redefining Energy",
       "decision": "PURSUE_NOW",
-      "decisionReason": "All hard gates passed with current owned content, named buyer, official transaction, public contact and manually checked video distribution.",
+      "decisionReason": "All hard gates passed, including 12 observed owned publications with a 7-day median cadence and 1.8-day current gap.",
       "latestPublishedAt": "2026-07-13T00:25:03.000Z",
       "latestTitle": "237. Datacenters: \"Let’s get Physical\" with Quinbrook - Jul26",
       "sourceEvidenceUrl": "https://www.spreaker.com/show/3170008/episodes/feed",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 1.8,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.3,
+        "observedPublications": 12
+      },
       "owner": "Laurent Segalen",
       "buyer": "Laurent Segalen",
       "pointMan": "Laurent Segalen",
@@ -640,10 +838,19 @@
       "host": "Libbe Halevy",
       "organization": "Nuclear Hotseat",
       "decision": "PURSUE_NOW",
-      "decisionReason": "All hard gates passed with current owned content, named buyer, official transaction, public contact and manually checked video distribution.",
+      "decisionReason": "All hard gates passed, including 12 observed owned publications with a 7-day median cadence and 6-day current gap.",
       "latestPublishedAt": "2026-07-08T20:15:52.000Z",
       "latestTitle": "NH #784:  France&#8217;s Deadly Nuclear Test Legacy in French Polynesia: Hinamoeura Morgant-Cross + 100th Country Signs TPNW &#8211; UN Treaty to Abolish Nuclear Weapons",
       "sourceEvidenceUrl": "https://nuclearhotseat.com/feed/podcast/",
+      "sourceType": "PODCAST_RSS",
+      "feedDiscoveryUrl": "https://itunes.apple.com/lookup?id=458213762&entity=podcast",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 6,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.9,
+        "observedPublications": 12
+      },
       "owner": "Libbe HaLevy",
       "buyer": "Libbe HaLevy",
       "pointMan": "Libbe HaLevy",
@@ -690,9 +897,18 @@
       "host": "Trisha Curtis",
       "organization": "PetroNerds",
       "decision": "PURSUE_NOW",
-      "decisionReason": "All hard gates passed with current owned content, named buyer, official transaction, public contact and manually checked video distribution.",
+      "decisionReason": "All hard gates passed, including 12 observed owned publications with a 3.4-day median cadence and 1.6-day current gap.",
       "latestPublishedAt": "2026-07-13T05:04:23.000Z",
-      "sourceEvidenceUrl": "https://www.youtube.com/watch?v=h277t9c9u5A",
+      "latestTitle": "The War, Oil Prices, Oil Flows, the Fed, and Inflation - PetroNerds is Your One Stop Geopolitical St",
+      "sourceEvidenceUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHPx_sYrXJ1LmK__fXjWPfA",
+      "sourceType": "YOUTUBE",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 1.6,
+        "medianIntervalDays": 3.4,
+        "slowdownRatio": 0.5,
+        "observedPublications": 12
+      },
       "owner": "Trisha Curtis",
       "buyer": "Trisha Curtis",
       "pointMan": "Trisha Curtis",
@@ -747,6 +963,14 @@
       "latestPublishedAt": "2026-07-13T08:00:00.000Z",
       "latestTitle": "How the Heating Industry Scaled Incompetence",
       "sourceEvidenceUrl": "https://rss.buzzsprout.com/509671.rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 1.5,
+        "medianIntervalDays": 14.4,
+        "slowdownRatio": 0.1,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": [
@@ -769,6 +993,14 @@
       "latestPublishedAt": "2026-06-30T02:06:49.000Z",
       "latestTitle": "On My Mind: Episode 51 – March 2 2026",
       "sourceEvidenceUrl": "https://anchor.fm/s/10962398c/podcast/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "INACTIVE",
+        "latestGapDays": 134.5,
+        "medianIntervalDays": 28.1,
+        "slowdownRatio": 4.8,
+        "observedPublications": 7
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -787,6 +1019,14 @@
       "latestPublishedAt": "2026-07-13T08:00:00.000Z",
       "latestTitle": "Why AI Might Actually Create More Work for Lawyers",
       "sourceEvidenceUrl": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/8a94442e-5a74-4fa2-8b8d-ae27003a8d6b/982f5071-765c-403d-969d-ae27003a8d83/podcast.rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 1.5,
+        "medianIntervalDays": 2,
+        "slowdownRatio": 0.7,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -805,6 +1045,14 @@
       "latestPublishedAt": "2026-07-11T13:00:00.000Z",
       "latestTitle": "Summer Playlist 2026 Episode 1 | Samantha Dart, Co-Head of Global Commodities Research, Goldman Sachs",
       "sourceEvidenceUrl": "https://feed.podbean.com/smartermarkets/feed.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 3.3,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.5,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -823,6 +1071,14 @@
       "latestPublishedAt": "2026-07-02T04:30:00.000Z",
       "latestTitle": "14: The VERY First Thing I'd Do If I Wanted a Podcast Sponsor For My Show",
       "sourceEvidenceUrl": "https://rss.libsyn.com/shows/603275/destinations/5251205.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 12.6,
+        "medianIntervalDays": 14,
+        "slowdownRatio": 0.9,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -841,6 +1097,14 @@
       "latestPublishedAt": "2026-06-22T11:00:00.000Z",
       "latestTitle": "Colton Hower: What a People-First Agency Model Actually Looks Like at Scale",
       "sourceEvidenceUrl": "https://feed.podbean.com/POWERMarketingMinute/feed.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "SLOWED",
+        "latestGapDays": 22.3,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 3.2,
+        "observedPublications": 6
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -859,6 +1123,14 @@
       "latestPublishedAt": "2026-07-07T12:55:00.000Z",
       "latestTitle": "From Dreaming to Doing: The Nonprofit Founder Journey with Amy Thurston",
       "sourceEvidenceUrl": "https://media.rss.com/the-blueprint-powered-by-kmc/feed.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 7.3,
+        "medianIntervalDays": 27.9,
+        "slowdownRatio": 0.3,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -877,6 +1149,14 @@
       "latestPublishedAt": "2026-07-07T04:30:00.000Z",
       "latestTitle": "#301: It Turns Out Analysts Are Natural AI Crafters",
       "sourceEvidenceUrl": "https://rss.libsyn.com/shows/61532/destinations/239292.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 7.6,
+        "medianIntervalDays": 14,
+        "slowdownRatio": 0.5,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -890,11 +1170,12 @@
       "host": "James Altucher / The James Altucher Show",
       "organization": "The James Altucher Show",
       "decision": "DISQUALIFIED_CONFIRMED",
-      "decisionReason": "Wrong-source hard gate: the live feed is \"The James Altucher Show\" and none of its latest twelve titles is energy-focused.",
-      "exclusionCategory": "WRONG_ICP",
+      "decisionReason": "The live source is not a creator-controlled, energy-first account with a verified buyer, transaction and commercially meaningful video gap.",
+      "exclusionCategory": "OTHER_HARD_GATE",
       "latestPublishedAt": "2026-07-12T04:00:00.000Z",
-      "latestTitle": "From the Archive: Garry Kasparov on Deep Blue, Fear, and the Future of AI",
-      "sourceEvidenceUrl": "https://rss.art19.com/the-james-altucher-pod",
+      "sourceEvidenceUrl": "https://art19.com/shows/the-james-altucher-pod/episodes/5bee845f-45b1-4eab-a2ae-204aa45dbb43",
+      "sourceType": "YOUTUBE",
+      "feedDiscoveryUrl": "https://itunes.apple.com/lookup?id=794030859&entity=podcast",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -913,6 +1194,14 @@
       "latestPublishedAt": "2026-07-01T10:00:00.000Z",
       "latestTitle": "Your geoengineering questions, answered!",
       "sourceEvidenceUrl": "https://feeds.publicradio.org/public_feeds/how-we-survive",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 13.4,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 1.9,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -931,6 +1220,14 @@
       "latestPublishedAt": "2026-07-14T17:02:00.000Z",
       "latestTitle": "Suzanne Maloney on Whether Perpetual Conflict is New Normal for the Gulf",
       "sourceEvidenceUrl": "https://columbiaenergyexchange.libsyn.com/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 0.1,
+        "medianIntervalDays": 6.9,
+        "slowdownRatio": 0,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -949,6 +1246,14 @@
       "latestPublishedAt": "2026-07-09T10:00:00.000Z",
       "latestTitle": "Inside the AI power wars",
       "sourceEvidenceUrl": "https://feeds.megaphone.fm/catalyst",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 5.4,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.8,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -965,7 +1270,8 @@
       "decisionReason": "Wrong-source hard gate: the live feed is \"The Story Power Marketing Show\" and none of its latest twelve titles is energy-focused.",
       "exclusionCategory": "WRONG_ICP",
       "latestPublishedAt": "2026-07-08T06:00:31.000Z",
-      "sourceEvidenceUrl": "https://feeds.redcircle.com/69f35c6f-c009-408a-9741-f6f950ee7225",
+      "sourceEvidenceUrl": "https://redcircle.com/shows/69f35c6f-c009-408a-9741-f6f950ee7225/episodes/679e9988-0940-4abb-ae16-4904c03cd4b5",
+      "sourceType": "YOUTUBE",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -984,6 +1290,14 @@
       "latestPublishedAt": "2026-07-09T10:00:31.000Z",
       "latestTitle": "Georges Mikautadze : Départ de l'OL, Euro 2024, Ligue des Champions",
       "sourceEvidenceUrl": "https://feeds.360.audion.fm/Wmd7d5HyZ8wJGI3zZVaUq",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 5.4,
+        "medianIntervalDays": 6.9,
+        "slowdownRatio": 0.8,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1002,6 +1316,14 @@
       "latestPublishedAt": "2026-07-10T01:00:00.000Z",
       "latestTitle": "[Bande-annonce] - La grande évasion fiscale",
       "sourceEvidenceUrl": "https://feeds.audiomeans.fr/feed/658ca4f4-58be-4a7f-9248-1b402e316fa4.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 4.8,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.7,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1020,6 +1342,14 @@
       "latestPublishedAt": "2026-07-10T07:00:00.000Z",
       "latestTitle": "BNI 911: Weekly Presentation Coaching 164 - Alia Geddie - Garage Floors",
       "sourceEvidenceUrl": "https://rss.libsyn.com/shows/53882/destinations/196481.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 4.5,
+        "medianIntervalDays": 3.3,
+        "slowdownRatio": 1.4,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1035,7 +1365,18 @@
       "decision": "DISQUALIFIED_CONFIRMED",
       "decisionReason": "Institutional ownership and duplicate account: Energy 360 belongs to CSIS.",
       "exclusionCategory": "DUPLICATE_ACCOUNT",
-      "sourceEvidenceUrl": "https://csisenergy360.libsyn.com/rss",
+      "latestPublishedAt": "2026-07-09T04:00:00.000Z",
+      "latestTitle": "Illinois Mandates Third-Party Audits of Frontier Labs and Trump Lifts Export Controls on Anthropic's Fable",
+      "sourceEvidenceUrl": "https://feeds.megaphone.fm/CSIS8973369418",
+      "sourceType": "PODCAST_RSS",
+      "feedDiscoveryUrl": "https://itunes.apple.com/lookup?id=1726253148&entity=podcast",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 5.6,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.8,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1054,6 +1395,12 @@
       "latestPublishedAt": "2019-12-16T16:17:17.000Z",
       "latestTitle": "Greed For Power: Modern-Day Politics",
       "sourceEvidenceUrl": "https://anchor.fm/s/116d746c/podcast/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "INACTIVE",
+        "latestGapDays": 2402.1,
+        "observedPublications": 1
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1072,6 +1419,14 @@
       "latestPublishedAt": "2026-06-03T19:00:00.000Z",
       "latestTitle": "What is going to happen in PR and Personal Branding in 2026?",
       "sourceEvidenceUrl": "https://feeds.captivate.fm/powerful-personal-brand-podcast/",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "SEMI_ACTIVE",
+        "latestGapDays": 41,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 5.9,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1090,6 +1445,14 @@
       "latestPublishedAt": "2022-02-23T15:31:25.000Z",
       "latestTitle": "7% inflation for the next decade?!",
       "sourceEvidenceUrl": "https://media.rss.com/3fr/feed.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "INACTIVE",
+        "latestGapDays": 1602.2,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 229.5,
+        "observedPublications": 2
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1105,6 +1468,7 @@
       "decision": "DISQUALIFIED_CONFIRMED",
       "decisionReason": "No current owned long-form source; the Campaign for a Green Nuclear Deal was publicly closed by its founder.",
       "exclusionCategory": "NO_OWNED_LONG_FORM",
+      "sourceType": "YOUTUBE",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1123,6 +1487,14 @@
       "latestPublishedAt": "2026-07-13T09:00:00.000Z",
       "latestTitle": "Harnessing AI for Agile Marketing Strategies: Adapting to Rapid Market Changes",
       "sourceEvidenceUrl": "https://rss.podengine.io/ai-leadership-unlocked",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 1.4,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.2,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1141,6 +1513,14 @@
       "latestPublishedAt": "2026-06-17T09:00:00.000Z",
       "latestTitle": "Scaling AI Without Losing the Human Customer Experience with Brooke Sellas",
       "sourceEvidenceUrl": "https://feeds.captivate.fm/making-a-marketer/",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 27.4,
+        "medianIntervalDays": 15,
+        "slowdownRatio": 1.8,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1159,6 +1539,14 @@
       "latestPublishedAt": "2026-06-24T17:15:00.000Z",
       "latestTitle": "What’s on the Minds of Lifecycle Leaders & the Future of Lifecycle Marketing | Luke Kline (Hightouch)",
       "sourceEvidenceUrl": "https://feeds.captivate.fm/the-ai-powered-inbox/",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 20.1,
+        "medianIntervalDays": 14,
+        "slowdownRatio": 1.4,
+        "observedPublications": 8
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1177,6 +1565,14 @@
       "latestPublishedAt": "2026-06-29T17:54:52.000Z",
       "latestTitle": "A Midyear Road Map for U.S. Trade Policy and Enforcement",
       "sourceEvidenceUrl": "https://media.rss.com/global-markets-policy-power/feed.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 15.1,
+        "medianIntervalDays": 8,
+        "slowdownRatio": 1.9,
+        "observedPublications": 4
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1195,6 +1591,14 @@
       "latestPublishedAt": "2026-06-28T14:16:49.000Z",
       "latestTitle": "AI-Native RevOps: Turning CRM Data, Signals, and AI Workflows Into Operating Leverage",
       "sourceEvidenceUrl": "https://api.riverside.fm/hosting/W6h6S0mT.rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 16.2,
+        "medianIntervalDays": 14,
+        "slowdownRatio": 1.2,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1213,6 +1617,14 @@
       "latestPublishedAt": "2026-07-13T05:00:00.000Z",
       "latestTitle": "Episode 39: Why Your Car Wash Ads Get Ignored",
       "sourceEvidenceUrl": "https://anchor.fm/s/76662a58/podcast/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 1.6,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.2,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1231,6 +1643,14 @@
       "latestPublishedAt": "2026-07-14T04:00:57.000Z",
       "latestTitle": "Andreas Lippke – Unternehmensverkauf, IT-Transformation und neue Chancen (BNI #114)",
       "sourceEvidenceUrl": "https://power-1-2-1.de/feed/podcast/",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 0.6,
+        "medianIntervalDays": 6,
+        "slowdownRatio": 0.1,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1249,6 +1669,14 @@
       "latestPublishedAt": "2026-06-15T14:00:00.000Z",
       "latestTitle": "104. The Room Test: How to Spot Bad AI Advice in Seconds",
       "sourceEvidenceUrl": "https://rss.buzzsprout.com/1882260.rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 29.2,
+        "medianIntervalDays": 13,
+        "slowdownRatio": 2.2,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1267,6 +1695,14 @@
       "latestPublishedAt": "2026-07-13T13:00:00.000Z",
       "latestTitle": "Искусственный интеллект и йогуртовая закваска: будущее международных отношений",
       "sourceEvidenceUrl": "https://cloud.mave.digital/33881",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 1.3,
+        "medianIntervalDays": 33.5,
+        "slowdownRatio": 0,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1285,6 +1721,14 @@
       "latestPublishedAt": "2026-07-09T04:00:00.000Z",
       "latestTitle": "#623: 623|Nancy Guthrie Kidnapping Analysis part 1",
       "sourceEvidenceUrl": "https://rss.art19.com/real-crime-profile-wondery",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 5.6,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.8,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1303,6 +1747,14 @@
       "latestPublishedAt": "2026-07-08T05:01:00.000Z",
       "latestTitle": "The Grant Williams Podcast Ep. 128 - Brent Johnson",
       "sourceEvidenceUrl": "https://feed.podbean.com/ttmygh/feed.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 6.6,
+        "medianIntervalDays": 9,
+        "slowdownRatio": 0.7,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1321,6 +1773,14 @@
       "latestPublishedAt": "2026-07-12T00:00:00.000Z",
       "latestTitle": "The Politicization of the Justice Department",
       "sourceEvidenceUrl": "https://feeds.megaphone.fm/cspanafterwords",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 2.8,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.4,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1339,6 +1799,14 @@
       "latestPublishedAt": "2026-06-30T08:45:02.000Z",
       "latestTitle": "Play Energy Podcast Season 02 Episode 02: Concentrating Solar Power Systems (CSP)",
       "sourceEvidenceUrl": "https://anchor.fm/s/4ce16c88/podcast/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "INACTIVE",
+        "latestGapDays": 1238.4,
+        "medianIntervalDays": 16.2,
+        "slowdownRatio": 76.5,
+        "observedPublications": 7
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1355,8 +1823,9 @@
       "decisionReason": "Established multi-channel professional media and university-partnership operation; not a clean creator-owned clipping gap.",
       "exclusionCategory": "INSTITUTIONAL_OR_MEDIA",
       "latestPublishedAt": "2026-06-16T10:48:57.000Z",
-      "latestTitle": "From Extraction to Regeneration: Redesigning Our Relationship with Nature",
-      "sourceEvidenceUrl": "https://thecreativeprocess.squarespace.com/oneplanet1?format=rss",
+      "sourceEvidenceUrl": "https://www.creativeprocess.info/oneplanet1/anth-regen",
+      "sourceType": "YOUTUBE",
+      "feedDiscoveryUrl": "https://itunes.apple.com/lookup?id=1685450065&entity=podcast",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1375,6 +1844,14 @@
       "latestPublishedAt": "2026-06-25T05:00:00.000Z",
       "latestTitle": "EP158: Common Marketing Mistakes in Exporting (and How to Avoid Them)",
       "sourceEvidenceUrl": "https://feed.podbean.com/powerfulmarketingtips/feed.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 19.6,
+        "medianIntervalDays": 14,
+        "slowdownRatio": 1.4,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1393,6 +1870,14 @@
       "latestPublishedAt": "2026-07-01T14:49:00.000Z",
       "latestTitle": "35. The investment case for preparation over prediction",
       "sourceEvidenceUrl": "https://rss.iono.fm/rss/chan/7306",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 13.2,
+        "medianIntervalDays": 42.9,
+        "slowdownRatio": 0.3,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1411,6 +1896,14 @@
       "latestPublishedAt": "2026-07-02T07:00:00.000Z",
       "latestTitle": "A New Code for Market Structure",
       "sourceEvidenceUrl": "https://anchor.fm/s/5cf466e8/podcast/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 12.5,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 1.8,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1424,11 +1917,12 @@
       "host": "Allen Sama / The Option Genius Podcast: Options Trading For Income and Growth",
       "organization": "The Option Genius Podcast: Options Trading For Income and Growth",
       "decision": "DISQUALIFIED_CONFIRMED",
-      "decisionReason": "Wrong-source hard gate: the live feed is \"The Option Genius Podcast: Options Trading For Income and Growth\" and none of its latest twelve titles is energy-focused.",
-      "exclusionCategory": "WRONG_ICP",
+      "decisionReason": "The live source is not a creator-controlled, energy-first account with a verified buyer, transaction and commercially meaningful video gap.",
+      "exclusionCategory": "OTHER_HARD_GATE",
       "latestPublishedAt": "2026-07-03T08:17:30.000Z",
-      "latestTitle": "Should You Sell in May and Go Away - 208",
-      "sourceEvidenceUrl": "https://rss.pdrl.fm/a5944a/feeds.libsyn.com/109250/rss/?redirect=false",
+      "sourceEvidenceUrl": "https://optiongenius.libsyn.com/should-you-sell-in-may-and-go-away-208",
+      "sourceType": "YOUTUBE",
+      "feedDiscoveryUrl": "https://itunes.apple.com/lookup?id=1307838447&entity=podcast",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1447,6 +1941,14 @@
       "latestPublishedAt": "2026-07-02T13:03:54.000Z",
       "latestTitle": "#370 The Forgotten Arsenal of the Ocean: Clearing Dumped Munitions",
       "sourceEvidenceUrl": "https://engineeringmatters.reby.media/feed/podcast/",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 12.3,
+        "medianIntervalDays": 14,
+        "slowdownRatio": 0.9,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1465,6 +1967,14 @@
       "latestPublishedAt": "2026-07-07T20:05:29.000Z",
       "latestTitle": "Episode 120: The Moving Target: Caring for Athletes Who Are Still Growing",
       "sourceEvidenceUrl": "https://feed.podbean.com/stanfordmedcast/feed.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 7,
+        "medianIntervalDays": 28,
+        "slowdownRatio": 0.2,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1483,6 +1993,14 @@
       "latestPublishedAt": "2026-07-08T00:42:33.000Z",
       "latestTitle": "Dr. Diego Omar Rojas - Conoce una historia de entrega y éxito que merece ser contada.",
       "sourceEvidenceUrl": "https://anchor.fm/s/1ed78520/podcast/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 6.8,
+        "medianIntervalDays": 3.3,
+        "slowdownRatio": 2,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1498,7 +2016,18 @@
       "decision": "DISQUALIFIED_CONFIRMED",
       "decisionReason": "Inactive and institutional: The Last Optimist ended in January 2024 and is owned by the Manhattan Institute.",
       "exclusionCategory": "INACTIVE",
-      "sourceEvidenceUrl": "https://thelastoptimist.libsyn.com/rss",
+      "latestPublishedAt": "2026-07-08T15:00:25.000Z",
+      "latestTitle": "Can the Supreme Court Still Restrain Executive Power?",
+      "sourceEvidenceUrl": "https://reason.com/podcasts/the-reason-interview-with-nick-gillespie/feed/",
+      "sourceType": "PODCAST_RSS",
+      "feedDiscoveryUrl": "https://itunes.apple.com/lookup?id=1485021241&entity=podcast",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 6.2,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.9,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1517,6 +2046,14 @@
       "latestPublishedAt": "2024-11-04T05:00:00.000Z",
       "latestTitle": "The Baldwin Group",
       "sourceEvidenceUrl": "https://feeds.transistor.fm/oil-and-gas-startups-podcast",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "INACTIVE",
+        "latestGapDays": 617.6,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 88.2,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1532,7 +2069,18 @@
       "decision": "DISQUALIFIED_CONFIRMED",
       "decisionReason": "Duplicate commercial account already covered by the MCJ pilot; the content and transaction should be worked once at account level.",
       "exclusionCategory": "DUPLICATE_ACCOUNT",
-      "sourceEvidenceUrl": "https://myclimatejourney.libsyn.com/rss",
+      "latestPublishedAt": "2026-07-14T09:00:00.000Z",
+      "latestTitle": "Koloma's Bet on Buried Hydrogen for Farmers",
+      "sourceEvidenceUrl": "https://feeds.simplecast.com/XFfCG1w8",
+      "sourceType": "PODCAST_RSS",
+      "feedDiscoveryUrl": "https://itunes.apple.com/lookup?id=1462776122&entity=podcast",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 0.4,
+        "medianIntervalDays": 8,
+        "slowdownRatio": 0.1,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1548,6 +2096,7 @@
       "decision": "DISQUALIFIED_CONFIRMED",
       "decisionReason": "No verified owned long-form source; the stored YouTube URL resolves to an unrelated comedy channel.",
       "exclusionCategory": "NO_OWNED_LONG_FORM",
+      "sourceType": "YOUTUBE",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1563,6 +2112,7 @@
       "decision": "DISQUALIFIED_CONFIRMED",
       "decisionReason": "No verified owned audio/video long-form source to clip; Energy Tidbits is a written research product.",
       "exclusionCategory": "NO_OWNED_LONG_FORM",
+      "sourceType": "YOUTUBE",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1576,8 +2126,19 @@
       "host": "Paul Chapman",
       "organization": "HC Insider Podcast",
       "decision": "PURSUE_NOW",
-      "decisionReason": "All hard gates passed with current owned content, named buyer, official transaction, public contact and manually checked video distribution.",
-      "sourceEvidenceUrl": "https://hcinsider.libsyn.com/rss",
+      "decisionReason": "All hard gates passed, including 12 observed owned publications with a 7-day median cadence and 6.8-day current gap.",
+      "latestPublishedAt": "2026-07-07T23:00:00.000Z",
+      "latestTitle": "Whale Oil with Eric Jay Dolin (Summer Repeat)",
+      "sourceEvidenceUrl": "https://feeds.simplecast.com/QXaWSc4o",
+      "sourceType": "PODCAST_RSS",
+      "feedDiscoveryUrl": "https://itunes.apple.com/lookup?id=1512721188&entity=podcast",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 6.8,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 1,
+        "observedPublications": 12
+      },
       "owner": "Paul Chapman",
       "buyer": "Paul Chapman",
       "pointMan": "Paul Chapman",
@@ -1624,7 +2185,18 @@
       "decision": "DISQUALIFIED_CONFIRMED",
       "decisionReason": "Institutional and duplicate account: Columbia University owns Columbia Energy Exchange.",
       "exclusionCategory": "DUPLICATE_ACCOUNT",
-      "sourceEvidenceUrl": "https://energyexchange.libsyn.com/rss",
+      "latestPublishedAt": "2026-07-01T10:00:00.000Z",
+      "latestTitle": "Form Energy's manufacturing breakthrough",
+      "sourceEvidenceUrl": "https://feeds.megaphone.fm/carboncopy",
+      "sourceType": "PODCAST_RSS",
+      "feedDiscoveryUrl": "https://itunes.apple.com/lookup?id=1593203014&entity=podcast",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 13.4,
+        "medianIntervalDays": 14,
+        "slowdownRatio": 1,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1643,6 +2215,14 @@
       "latestPublishedAt": "2023-02-07T18:23:00.000Z",
       "latestTitle": "Tom Jensen/FREYR Battery: From Giga Arctic to Giga Americas - the most capital and operationally efficient battery plant in Europe is headed for the US State of Georgia.",
       "sourceEvidenceUrl": "https://rss.libsyn.com/shows/144947/destinations/920039.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "INACTIVE",
+        "latestGapDays": 1253,
+        "medianIntervalDays": 14,
+        "slowdownRatio": 89.5,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1658,7 +2238,18 @@
       "decision": "DISQUALIFIED_CONFIRMED",
       "decisionReason": "Institutional and duplicate account: Energy 360 belongs to CSIS.",
       "exclusionCategory": "DUPLICATE_ACCOUNT",
-      "sourceEvidenceUrl": "https://csisenergy360.libsyn.com/rss",
+      "latestPublishedAt": "2025-05-08T19:59:00.000Z",
+      "latestTitle": "The Map We Drew | Power Map",
+      "sourceEvidenceUrl": "https://feeds.megaphone.fm/CSIS5054691119",
+      "sourceType": "PODCAST_RSS",
+      "feedDiscoveryUrl": "https://itunes.apple.com/lookup?id=1227481277&entity=podcast",
+      "historicalCadence": {
+        "status": "INACTIVE",
+        "latestGapDays": 432,
+        "medianIntervalDays": 9.2,
+        "slowdownRatio": 47.1,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1674,6 +2265,7 @@
       "decision": "DISQUALIFIED_CONFIRMED",
       "decisionReason": "No owned long-form publication was verified; the stored YouTube playlist is not a creator-owned channel.",
       "exclusionCategory": "NO_OWNED_LONG_FORM",
+      "sourceType": "YOUTUBE",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1689,6 +2281,7 @@
       "decision": "DISQUALIFIED_CONFIRMED",
       "decisionReason": "No current owned audio/video long-form source was verified for clipping.",
       "exclusionCategory": "NO_OWNED_LONG_FORM",
+      "sourceType": "YOUTUBE",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1704,6 +2297,7 @@
       "decision": "DISQUALIFIED_CONFIRMED",
       "decisionReason": "Named-human hard gate fails: the publication intentionally operates through an anonymous brand persona.",
       "exclusionCategory": "NO_NAMED_HUMAN",
+      "sourceType": "YOUTUBE",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1719,6 +2313,7 @@
       "decision": "DISQUALIFIED_CONFIRMED",
       "decisionReason": "No current owned long-form publication could be verified from the supplied first-party sources.",
       "exclusionCategory": "NO_OWNED_LONG_FORM",
+      "sourceType": "YOUTUBE",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1734,6 +2329,7 @@
       "decision": "DISQUALIFIED_CONFIRMED",
       "decisionReason": "No current owned long-form publication could be verified from the supplied first-party sources.",
       "exclusionCategory": "NO_OWNED_LONG_FORM",
+      "sourceType": "YOUTUBE",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1749,6 +2345,7 @@
       "decision": "DISQUALIFIED_CONFIRMED",
       "decisionReason": "Named-human and owned-long-form gates fail; the record is a research brand rather than a verified host-owned show.",
       "exclusionCategory": "NO_NAMED_HUMAN",
+      "sourceType": "YOUTUBE",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1767,6 +2364,14 @@
       "latestPublishedAt": "2026-07-10T12:25:00.000Z",
       "latestTitle": "Warning! Q2 Numbers Need Your Attention. Make Your Proactive Plan Today",
       "sourceEvidenceUrl": "https://rss.libsyn.com/shows/38643/destinations/108649.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 4.3,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.6,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1785,6 +2390,14 @@
       "latestPublishedAt": "2026-07-13T04:30:03.000Z",
       "latestTitle": "[INÉDIT] La mort mystérieuse de Kat Restin — Papa Legba, figure du vaudou haïtien",
       "sourceEvidenceUrl": "https://feeds.360.audion.fm/x7J03xmiXrNVIvikQ-yP0",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 1.6,
+        "medianIntervalDays": 2,
+        "slowdownRatio": 0.8,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1803,6 +2416,14 @@
       "latestPublishedAt": "2026-07-14T06:20:03.000Z",
       "latestTitle": "813 • Episode 21 sur 50",
       "sourceEvidenceUrl": "https://feeds.360.audion.fm/ztqvQcKKP_4QkODE2U90h",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "SLOWED",
+        "latestGapDays": 0.5,
+        "medianIntervalDays": 0,
+        "slowdownRatio": 78.2,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1816,11 +2437,12 @@
       "host": "PowerArt Guille García Alfonsí / PowerArt Guille García Alfonsín",
       "organization": "PowerArt Guille García Alfonsín",
       "decision": "DISQUALIFIED_CONFIRMED",
-      "decisionReason": "Wrong-source hard gate: the live feed is \"PowerArt Guille García Alfonsín\" and none of its latest twelve titles is energy-focused.",
-      "exclusionCategory": "WRONG_ICP",
+      "decisionReason": "The live source is not a creator-controlled, energy-first account with a verified buyer, transaction and commercially meaningful video gap.",
+      "exclusionCategory": "OTHER_HARD_GATE",
       "latestPublishedAt": "2026-06-20T17:10:16.000Z",
-      "latestTitle": "Coches de mierda, el nuevo M3 eléctrico, caballo de Troya chino y más - #Videocast19 #PowerArt",
-      "sourceEvidenceUrl": "https://feeds.ivoox.com/feed_fg_f11036454_filtro_1.xml",
+      "sourceEvidenceUrl": "https://www.ivoox.com/coches-mierda-nuevo-m3-electrico-caballo-audios-mp3_rf_175949046_1.html",
+      "sourceType": "YOUTUBE",
+      "feedDiscoveryUrl": "https://itunes.apple.com/lookup?id=1530832489&entity=podcast",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1839,6 +2461,14 @@
       "latestPublishedAt": "2026-07-14T07:23:21.000Z",
       "latestTitle": "George Rivera - Buy Back Your Time Formula",
       "sourceEvidenceUrl": "https://feed.pod.co/the-real-power-family-radio-show",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 0.5,
+        "medianIntervalDays": 1,
+        "slowdownRatio": 0.5,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1857,6 +2487,14 @@
       "latestPublishedAt": "2026-07-10T15:00:00.000Z",
       "latestTitle": "The Open Tab : Your Space for Questions, Updates, and Clarity [05.12.26]",
       "sourceEvidenceUrl": "https://rss.buzzsprout.com/577489.rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 4.2,
+        "medianIntervalDays": 13.7,
+        "slowdownRatio": 0.3,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1875,6 +2513,14 @@
       "latestPublishedAt": "2026-06-16T08:00:00.000Z",
       "latestTitle": "Episode 20 - How the Dealership Space has Changed with Wayne Hall",
       "sourceEvidenceUrl": "https://rss.buzzsprout.com/2541555.rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 28.5,
+        "medianIntervalDays": 14,
+        "slowdownRatio": 2,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1893,6 +2539,13 @@
       "latestPublishedAt": "2026-07-13T20:00:00.000Z",
       "latestTitle": "NEOS-Rauswurf: Veit Dengler im Interview | FELLNER! LIVE",
       "sourceEvidenceUrl": "https://feeds.simplecast.com/ZbRucA6d",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 1,
+        "medianIntervalDays": 0,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1911,6 +2564,14 @@
       "latestPublishedAt": "2026-07-10T14:28:17.000Z",
       "latestTitle": "The Fiscal Bazooka is Coming- w/guest Kevin Muir",
       "sourceEvidenceUrl": "https://anchor.fm/s/103db19ac/podcast/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 4.2,
+        "medianIntervalDays": 6.9,
+        "slowdownRatio": 0.6,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1929,6 +2590,14 @@
       "latestPublishedAt": "2026-07-14T06:57:10.000Z",
       "latestTitle": "developing a connection between flow charts and this podcast on the google chrome extension called https://decopy.ai on Youtube and also a video game from web 3 based video + music NFT making?",
       "sourceEvidenceUrl": "https://anchor.fm/s/9499e0b4/podcast/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 0.5,
+        "medianIntervalDays": 1,
+        "slowdownRatio": 0.5,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1947,6 +2616,14 @@
       "latestPublishedAt": "2026-07-10T10:20:00.000Z",
       "latestTitle": "Ranking My Best Investments",
       "sourceEvidenceUrl": "https://feeds.megaphone.fm/patricia-bright",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 4.4,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 0.6,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1965,6 +2642,14 @@
       "latestPublishedAt": "2026-07-14T16:36:20.000Z",
       "latestTitle": "Market Midday: Stocks Mixed, IBM Weighs On Dow; JPMorgan Replaces Jobs With AI • 7/14/26",
       "sourceEvidenceUrl": "https://feeds.simplecast.com/oloBAvaH",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 0.1,
+        "medianIntervalDays": 0.2,
+        "slowdownRatio": 0.7,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -1983,6 +2668,14 @@
       "latestPublishedAt": "2026-07-13T04:00:00.000Z",
       "latestTitle": "Prof. Jonathan Fortney of the University of California, Santa Cruz on Exoplanets",
       "sourceEvidenceUrl": "https://anchor.fm/s/21a37980/podcast/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 1.6,
+        "medianIntervalDays": 4,
+        "slowdownRatio": 0.4,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2001,6 +2694,14 @@
       "latestPublishedAt": "2026-06-25T15:17:00.000Z",
       "latestTitle": "Retail investors back China over US in global AI race",
       "sourceEvidenceUrl": "https://www.omnycontent.com/d/playlist/f394c808-f86c-40a7-9329-b463006205f9/ffb1bd6f-b7dc-47c1-ac0f-b46b00eba92b/2fcb4a35-60d4-4e10-bf79-b46b00eba9de/podcast.rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "SLOWED",
+        "latestGapDays": 19.2,
+        "medianIntervalDays": 6.9,
+        "slowdownRatio": 2.8,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2017,7 +2718,9 @@
       "decisionReason": "The live source is not a creator-controlled, energy-first account with a verified buyer, transaction and commercially meaningful video gap.",
       "exclusionCategory": "OTHER_HARD_GATE",
       "latestPublishedAt": "2026-07-13T16:30:00.000Z",
-      "sourceEvidenceUrl": "https://cdn.julephosting.de/podcasts/1022-mario-lochner-weil-dein-geld-mehr-kann/feed.rss",
+      "sourceEvidenceUrl": "https://mario-lochner-weil-dein-geld-mehr-kann.blogs.audiorella.com/426-new-episode",
+      "sourceType": "YOUTUBE",
+      "feedDiscoveryUrl": "https://itunes.apple.com/lookup?id=1645907329&entity=podcast",
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2036,6 +2739,14 @@
       "latestPublishedAt": "2026-07-01T12:32:26.000Z",
       "latestTitle": "Resenha Mensal do Mercado de Energia Elétrica • Ano XIX • Número 225 • Junho 2026",
       "sourceEvidenceUrl": "https://anchor.fm/s/34c3f06c/podcast/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 13.3,
+        "medianIntervalDays": 30,
+        "slowdownRatio": 0.4,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2054,6 +2765,14 @@
       "latestPublishedAt": "2026-07-14T04:36:00.000Z",
       "latestTitle": "Episode 195: Mondays at The Overhead Wire - Han Solo Returns",
       "sourceEvidenceUrl": "https://rss.libsyn.com/shows/49347/destinations/170891.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 0.6,
+        "medianIntervalDays": 5.1,
+        "slowdownRatio": 0.1,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2072,6 +2791,14 @@
       "latestPublishedAt": "2026-07-08T07:00:00.000Z",
       "latestTitle": "Think Like Everyone Else, Lose Like Everyone Else | Brent Donnelly",
       "sourceEvidenceUrl": "https://feeds.megaphone.fm/forwardguidance",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 6.5,
+        "medianIntervalDays": 4.8,
+        "slowdownRatio": 1.4,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2090,6 +2817,14 @@
       "latestPublishedAt": "2026-07-14T07:00:00.000Z",
       "latestTitle": "Fomo Co-Founders on Building the Social Network for Finance",
       "sourceEvidenceUrl": "https://feeds.megaphone.fm/empire",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 0.5,
+        "medianIntervalDays": 4,
+        "slowdownRatio": 0.1,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2108,6 +2843,13 @@
       "latestPublishedAt": "2026-07-01T14:15:30.000Z",
       "latestTitle": "tasty Extras - June 15, 2026 - tasty Extras - Segment 3",
       "sourceEvidenceUrl": "https://feeds.tastylive.com/podcast.rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 29.2,
+        "medianIntervalDays": 0,
+        "observedPublications": 4
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2126,6 +2868,14 @@
       "latestPublishedAt": "2026-07-10T20:47:00.000Z",
       "latestTitle": "#424 Peter Thiel on How to Build a Creative Monopoly",
       "sourceEvidenceUrl": "https://feeds.megaphone.fm/DSLLC6297708582",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 3.9,
+        "medianIntervalDays": 9.4,
+        "slowdownRatio": 0.4,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2142,7 +2892,17 @@
       "decisionReason": "The live source is not a creator-controlled, energy-first account with a verified buyer, transaction and commercially meaningful video gap.",
       "exclusionCategory": "OTHER_HARD_GATE",
       "latestPublishedAt": "2026-07-13T23:00:00.000Z",
+      "latestTitle": "7/13/26 Flying Cars, Family Trusts and Free Backpacks",
       "sourceEvidenceUrl": "https://rss.libsyn.com/shows/50276/destinations/176029.xml",
+      "sourceType": "PODCAST_RSS",
+      "feedDiscoveryUrl": "https://itunes.apple.com/lookup?id=792935866&entity=podcast",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 0.8,
+        "medianIntervalDays": 1.1,
+        "slowdownRatio": 0.8,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2156,10 +2916,19 @@
       "host": "Jesse Allen / American Ag Network",
       "organization": "American Ag Network",
       "decision": "DISQUALIFIED_CONFIRMED",
-      "decisionReason": "The live source is not a creator-controlled, energy-first account with a verified buyer, transaction and commercially meaningful video gap.",
-      "exclusionCategory": "OTHER_HARD_GATE",
-      "latestPublishedAt": "2026-07-13T15:31:00.000Z",
+      "decisionReason": "Wrong-source hard gate: the live feed is \"Agriculture of America\" and none of its latest twelve titles is energy-focused.",
+      "exclusionCategory": "WRONG_ICP",
+      "latestPublishedAt": "2026-07-14T15:09:00.000Z",
+      "latestTitle": "AOA Tuesday 7-14-2026",
       "sourceEvidenceUrl": "https://rss.libsyn.com/shows/541047/destinations/4662342.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 0.2,
+        "medianIntervalDays": 1,
+        "slowdownRatio": 0.2,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2178,6 +2947,14 @@
       "latestPublishedAt": "2026-07-06T20:49:00.000Z",
       "latestTitle": "Happy 4th Wave!",
       "sourceEvidenceUrl": "https://marketwrapwithmoe.libsyn.com/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 7.9,
+        "medianIntervalDays": 7,
+        "slowdownRatio": 1.1,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2196,6 +2973,14 @@
       "latestPublishedAt": "2026-07-14T13:20:16.000Z",
       "latestTitle": "Virtue Is Key To Preserving The Republic",
       "sourceEvidenceUrl": "https://www.spreaker.com/show/5457726/episodes/feed",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 0.3,
+        "medianIntervalDays": 1.1,
+        "slowdownRatio": 0.2,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2214,6 +2999,14 @@
       "latestPublishedAt": "2026-07-14T16:23:11.000Z",
       "latestTitle": "Episode 1482: Think Tank: Hormuz tensions bring renewed threats to oil and chemical markets",
       "sourceEvidenceUrl": "https://icisnews-europe.podomatic.com/rss2.xml",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 0.1,
+        "medianIntervalDays": 3.8,
+        "slowdownRatio": 0,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2232,6 +3025,14 @@
       "latestPublishedAt": "2026-07-12T03:55:31.000Z",
       "latestTitle": "Minnesota Democrats Pardoned a Convicted Child Rapist. President Trump Deported Him.",
       "sourceEvidenceUrl": "https://anchor.fm/s/100f20570/podcast/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "SLOWED",
+        "latestGapDays": 2.6,
+        "medianIntervalDays": 0,
+        "slowdownRatio": 1856.7,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2250,6 +3051,14 @@
       "latestPublishedAt": "2026-07-14T11:00:00.000Z",
       "latestTitle": "20: Opal Killed the Quiz Funnel. What's up next?",
       "sourceEvidenceUrl": "https://feeds.transistor.fm/price-power",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 0.3,
+        "medianIntervalDays": 14,
+        "slowdownRatio": 0,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2268,6 +3077,14 @@
       "latestPublishedAt": "2026-07-09T07:00:00.000Z",
       "latestTitle": "Is Distribution Crypto's Biggest Moat?",
       "sourceEvidenceUrl": "https://feeds.megaphone.fm/inflectionpoint",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 5.5,
+        "medianIntervalDays": 6.8,
+        "slowdownRatio": 0.8,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2286,6 +3103,14 @@
       "latestPublishedAt": "2026-06-17T19:33:00.000Z",
       "latestTitle": "markets club podcast",
       "sourceEvidenceUrl": "https://feeds.libsyn.com/471810/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "SLOWED",
+        "latestGapDays": 27,
+        "medianIntervalDays": 6.9,
+        "slowdownRatio": 3.9,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
@@ -2304,6 +3129,14 @@
       "latestPublishedAt": "2026-07-13T20:18:43.000Z",
       "latestTitle": "What's Next for Small Caps After a Stellar First Half?",
       "sourceEvidenceUrl": "https://etfspotlight.libsyn.com/rss",
+      "sourceType": "PODCAST_RSS",
+      "historicalCadence": {
+        "status": "ACTIVE",
+        "latestGapDays": 1,
+        "medianIntervalDays": 7.1,
+        "slowdownRatio": 0.1,
+        "observedPublications": 12
+      },
       "videoGapEvidenceUrls": [],
       "evidence": [],
       "missingGates": []
