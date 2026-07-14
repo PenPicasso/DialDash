@@ -106,6 +106,26 @@ Tracked review artifacts:
 
 Important correction: a Shorts tab or high clip count does not prove strong explanatory distribution. Sol sampled three public Shorts each for the pursue records. Amber Kanwar has high short volume but only captioned speaker cuts; Marine Cornelis has limited basic remote-call clips; Michelle Fraser's sampled Shorts are static cover art over audio. Their opportunity is explanatory quality, not merely clip volume.
 
+### Sol recovery round two
+
+Completed 2026-07-14 on `codex/light-model-next-100` using `sol-recovery-v2`:
+- 100 new, non-overlapping records in four batches of 25.
+- `PURSUE_NOW`: 12.
+- `NURTURE`: 1.
+- `DISQUALIFIED_CONFIRMED`: 87.
+- Deterministic audit sample: 26/26 passed; production rows changed: 0; Firecrawl calls: 0.
+- Total review decisions across pilot and both recovery rounds: 215; unique prospect identities: 214 because `bill-derasmo` appeared in both the pilot and round one.
+
+Round-two artifacts:
+- `data/sol-review-round-2.json`: all decisions, controlling exclusion categories, verified transactions and pitch hooks.
+- `docs/SOL_ROUND_2_REVIEW.md`: plain-language report.
+- `/recovery/round-2`: read-only review UI.
+- `npm run research:sol-round-2`: rebuild the non-overlapping 100-record manifest and live-source probes.
+- `npm run review:sol-round-2`: regenerate the tracked review ledger from the staged manifest and curated Sol evidence.
+- `npm run validate:sol-round-2 -- --batch=N`: enforce 25-record boundaries, prior-cohort exclusion, hard promotion gates and the 90% audit threshold.
+
+The 87 exclusions are predominantly wrong-live-feed/ICP matches, institutions or established media, missing owned long-form, inactivity and duplicate accounts. Do not summarize them as contact failures. `nathan-gambling-betateach` is intentionally the only round-two `NURTURE`: content and identity are verified, but the durable paid transaction and buyer authority remain insufficiently explicit.
+
 ### Full light-model and Sol review
 
 Branch: `codex/light-model-next-100`. This remains preview-only; do not merge to `main` or promote production until the user approves it.

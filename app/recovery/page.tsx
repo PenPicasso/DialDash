@@ -29,9 +29,10 @@ export default function RecoveryPage() {
               Four batches of 25. Live source evidence is separated from commercial verification, so missing research stays visible instead of becoming a false rejection.
             </p>
           </div>
-          <Link href="/dashboard" className="rounded-md border border-[var(--border)] bg-[var(--panel)] px-3 py-2 text-sm font-medium hover:border-[#113E80]/50">
-            Dashboard
-          </Link>
+          <div className="flex flex-wrap gap-2">
+            <Link href="/recovery/round-2" className="rounded-md bg-[#113E80] px-3 py-2 text-sm font-semibold text-white hover:bg-[#0d3268]">Round two</Link>
+            <Link href="/dashboard" className="rounded-md border border-[var(--border)] bg-[var(--panel)] px-3 py-2 text-sm font-medium hover:border-[#113E80]/50">Dashboard</Link>
+          </div>
         </header>
 
         <section className="grid gap-px border-b border-[var(--border)] bg-[var(--border)] sm:grid-cols-2 lg:grid-cols-5">
