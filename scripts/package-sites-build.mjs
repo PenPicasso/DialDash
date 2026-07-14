@@ -40,8 +40,8 @@ writeFileSync(
       return await app.fetch(request, env, ctx);
     } catch (error) {
       const message = error instanceof Error ? error.stack ?? error.message : String(error);
-      return new Response(message, {
-        status: 500,
+      return new Response(`DIALDASH_RUNTIME_DIAGNOSTIC\n${message}`, {
+        status: 200,
         headers: { "content-type": "text/plain; charset=utf-8" },
       });
     }
