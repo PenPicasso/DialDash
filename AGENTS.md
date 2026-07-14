@@ -167,6 +167,7 @@ The first 100 highest-ranked unresolved records were processed in four batches o
 New batch tooling:
 - `npm run refresh:media -- --ids=id-one,id-two`: refresh explicitly selected records regardless of legacy actionability state.
 - `npm run research:light-batch -- --offset=0 --limit=25`: write ignored per-record evidence reports and a `Sol Medium` escalation queue under `storage/prospect-runs/` without promoting data.
+- `npm run research:sol-queue`: consolidate light-batch reports into one ignored Sol review queue, keeping deterministic rejections separate from records requiring judgement.
 
 ### Sol Medium resolution of the 100-record pass
 
@@ -176,6 +177,15 @@ The 73 light-model escalations were reviewed on the same isolated branch and are
 - 64 are `DISQUALIFIED` for a documented hard-gate class: established production, unresolved owner/buyer, wrong or mismatched ICP media, missing transaction/video gap, or inactivity.
 
 `scripts/rank-prospects.ts` applies these resolutions and embeds the review tier, timestamp, decision reason, and evidence URLs in `data/nodes.json`. `validate:methodology` requires all 73 resolutions to remain represented and closed. This branch still must not be merged, pushed, or deployed without explicit user approval.
+
+### Full Light-Model Queue for Sol Review
+
+On 2026-07-14, the remaining 749 `needsDeepResearch` records were processed in 30 fresh batches of 25 or fewer after the first 100-record pass. This was a deterministic evidence pass only: it did not promote or alter production decisions.
+- 455 records have deterministic hard-gate disqualifications.
+- 294 records are now the complete Sol review queue because they have a genuine owner, buyer, offer, cadence, contact, or video-gap judgement issue.
+- Every batch passed the mechanical promotion-precision check; no record was auto-promoted.
+
+The current local consolidated queue is under `storage/prospect-runs/sol-review-2026-07-14T15-05-47-171Z/sol-review-queue.json`. Regenerate it in any worktree after recreating light batches with `npm run research:sol-queue`. Sol should review the 294 `solReview` entries first, never the deterministic disqualification list, and should persist final decisions through the same resolution-map pattern used for the first 73.
 
 The light-batch report accepts only direct source freshness, explicit first-party offer URLs, and public contact URLs. Missing or ambiguous owner, buyer, offer, cadence, contact, or distribution evidence is an escalation, never a promotion.
 
