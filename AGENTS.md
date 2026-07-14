@@ -128,6 +128,23 @@ Sol's adversarial correction added source-derived historical cadence as a promot
 
 The 87 exclusions are predominantly wrong-live-feed/ICP matches, institutions or established media, missing owned long-form, inactivity and duplicate accounts. Do not summarize them as contact failures. `nathan-gambling-betateach` is intentionally the only round-two `NURTURE`: content and identity are verified, but the durable paid transaction and buyer authority remain insufficiently explicit.
 
+### Sol next-200 review
+
+Branch: `codex/sol-next-200`. This remains preview-only and must not modify `main` or `data/nodes.json`.
+
+On 2026-07-14, the next 200 review cohort was locked into eight batches of 25 using the existing direct-source evidence queue:
+- 167 still-unreviewed judgment cases plus 33 high-ranked deterministic rejections used as a false-negative audit.
+- `PURSUE_NOW`: 0; `NURTURE`: 0; `DISQUALIFIED_CONFIRMED`: 200.
+- Every result records first-party/source URLs, failed hard gates, and whether it was carried from the prior strong-model resolution map or confirmed through the failed-gate pass.
+- The 46-record evidence/gate audit passed. This is not statistical decision precision.
+- Primary evidence deficits: no verified official offer page (200), no active/semi-active historical cadence (186), and no person-tied public contact path (154).
+
+Artifacts:
+- `storage/sol-next-200/manifest.json`: ignored fixed cohort manifest.
+- `data/sol-review-next-200.json`: tracked decision ledger.
+- `docs/SOL_NEXT_200_REVIEW.md`: plain-language result and recovery implications.
+- `npm run research:sol-next-200`, `npm run review:sol-next-200`, `npm run validate:sol-next-200 -- --batch=N`, and `npm run validate:sol-next-200-review -- --batch=N`.
+
 ### Full light-model and Sol review
 
 Branch: `codex/light-model-next-100`. This remains preview-only; do not merge to `main` or promote production until the user approves it.
