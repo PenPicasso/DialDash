@@ -74,6 +74,22 @@ Legacy `READY`/`REJECTED` remains in the data for compatibility, but it is not t
 
 All 840 rows were refreshed with `media-v3-owned-channels`. `latestMediaPublishedAt` is derived from the newest source-specific YouTube, podcast, or newsletter timestamp during ranking; a validator prevents the primary date from drifting behind channel evidence. Shared owned-media accounts are collapsed to one best buyer candidate.
 
+### Terra Light Recovery Queue
+
+Branch: `codex/light-model-next-100`. This is a staged, recovery-only workflow; do not merge to `main`, deploy, or write its findings into `data/nodes.json` without an explicit Sol review.
+
+The first recovery cohort contains 100 currently publishing, source-validated prospects in four batches of 25:
+- Batches 1-2: 50 podcast-led records validated against their live RSS feeds.
+- Batch 3: 9 remaining podcast-led records and 16 direct YouTube-channel records.
+- Batch 4: 25 direct YouTube-channel records.
+
+Artifacts are ignored under `storage/terra-recovery/`. The runners verify feed/channel ownership, actual latest publication, and energy-topic relevance before a record enters a batch. They deliberately do not infer a buyer, offer, contact path, funnel, or final sales decision. Missing first-party evidence must remain `UNVERIFIED`; only factual evidence can support a confirmed exclusion. No Firecrawl is used.
+
+Run:
+- `npm run research:terra-batch -- --batch=1 --refresh` to rebuild the podcast source audit.
+- `npm run research:terra-youtube` to validate the YouTube supplement from official channel and uploads feeds.
+- `npm run research:terra-compose` to rebuild the four 25-record batches.
+
 ### Full light-model and Sol review
 
 Branch: `codex/light-model-next-100`. This remains preview-only; do not merge to `main` or promote production until the user approves it.
