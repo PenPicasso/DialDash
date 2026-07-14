@@ -27,6 +27,7 @@ import type {
   PilotPayload,
   PilotReport,
 } from "@/lib/pilotTypes";
+import { AcquisitionPlaybook } from "@/components/playbook/acquisitionPlaybook";
 
 type View = "review" | "method" | "playbook";
 type ReviewState = "UNREVIEWED" | "APPROVED" | "NEEDS_CORRECTION" | "NEEDS_RESEARCH";
@@ -440,22 +441,6 @@ function MethodView({ payload }: { payload: PilotPayload }) {
   );
 }
 
-function PlaybookView() {
-  const packages = [
-    ["Weekly", "4 educational clips", "$997", "4 source hours"],
-    ["Twice weekly", "8 educational clips", "$1,850", "8 source hours"],
-    ["Weekday daily", "20 educational clips", "$3,750", "16 source hours"],
-  ];
-  return (
-    <div className="rounded-lg border border-zinc-200 bg-white shadow-sm">
-      <div className="border-b border-zinc-200 px-5 py-7 lg:px-8"><div className="text-xs font-extrabold uppercase tracking-[0.14em] text-brand-blue">First-client playbook</div><h2 className="mt-2 text-3xl font-black text-zinc-950">Sell technical judgment, not editing volume</h2><p className="mt-3 max-w-4xl text-base leading-7 text-zinc-600">Energy Dial preserves the expert&apos;s words and makes the idea easier to understand with relevant maps, labels, persistent numbers, diagrams, and restrained motion. Petroleum-engineering judgment is the reason the clip selection and visuals stay credible.</p></div>
-      <section className="border-b border-zinc-200 px-5 py-7 lg:px-8"><SectionHeading title="Founding pricing" /><div className="overflow-x-auto rounded-md border border-zinc-200"><table className="w-full min-w-[680px] text-left text-sm"><thead className="bg-zinc-50 text-[10px] font-extrabold uppercase tracking-wider text-zinc-500"><tr><th className="p-3">Package</th><th className="p-3">Monthly output</th><th className="p-3">Founding price</th><th className="p-3">Source review included</th></tr></thead><tbody className="divide-y divide-zinc-200">{packages.map((row) => <tr key={row[0]}>{row.map((cell, index) => <td key={cell} className={`p-3 ${index === 2 ? "font-black text-brand-orange" : index === 0 ? "font-extrabold text-zinc-950" : "text-zinc-700"}`}>{cell}</td>)}</tr>)}</tbody></table></div><p className="mt-3 text-sm leading-6 text-zinc-600">Charge $150 per source hour above the included allowance. This prices the real labor difference between a 20-minute and a 90-minute source without making the package difficult to understand.</p></section>
-      <section className="grid gap-8 border-b border-zinc-200 px-5 py-7 lg:grid-cols-2 lg:px-8"><div><SectionHeading title="Close the $997 package" /><ol className="space-y-3">{["Make one private 20-45 second sample from a recent episode.", "DM one specific observation, the private link, and the three-clip free trial.", "If interest is positive, confirm platform, approval owner, and posting workflow.", "Close asynchronously with a one-page scope and payment link; offer a 15-minute call but do not force it.", "If the DM is ignored, send one email 2-3 business days later using the same sample."].map((item, index) => <li key={item} className="grid grid-cols-[24px_1fr] gap-2 text-sm leading-6 text-zinc-700"><span className="font-black text-brand-orange">{index + 1}.</span>{item}</li>)}</ol></div><div><SectionHeading title="Protect the premium" /><ul className="space-y-3 text-sm leading-6 text-zinc-700"><li className="flex gap-2"><XCircle size={16} className="mt-1 shrink-0 text-rose-600" />Do not post and tag a speculative sample before permission.</li><li className="flex gap-2"><XCircle size={16} className="mt-1 shrink-0 text-rose-600" />Do not recommend publishing the raw cut beside the finished edit.</li><li className="flex gap-2"><CheckCircle2 size={16} className="mt-1 shrink-0 text-emerald-600" />Deliver the raw/select cut privately as a client asset when useful.</li><li className="flex gap-2"><CheckCircle2 size={16} className="mt-1 shrink-0 text-emerald-600" />Use a call for the $8,000 package because scope and approval risk are larger.</li></ul></div></section>
-      <section className="grid gap-8 px-5 py-7 lg:grid-cols-[1fr_1fr] lg:px-8"><div><SectionHeading title="$8,000 long-form starting scope" /><p className="text-sm leading-6 text-zinc-700">Four long-form edits per month, up to 90 delivered minutes each, four thumbnails, 48-hour turnaround after asset receipt, and a defined revision limit. Derivative shorts must be explicitly included or sold separately.</p></div><div><SectionHeading title="Posting reality" /><p className="text-sm leading-6 text-zinc-700">Four clips per month cannot support a daily-posting promise. Recommend weekly posting for the $997 package, twice weekly for the eight-clip package, and weekday daily only for the 20-clip package. The finished edit is the public product; the raw cut is a private asset.</p></div></section>
-    </div>
-  );
-}
-
 export function PilotWorkspace({ payload }: { payload: PilotPayload }) {
   const [view, setView] = useState<View>("review");
   const [selectedId, setSelectedId] = useState("");
@@ -542,7 +527,7 @@ export function PilotWorkspace({ payload }: { payload: PilotPayload }) {
         </section>
 
         {view === "method" && <MethodView payload={payload} />}
-        {view === "playbook" && <PlaybookView />}
+        {view === "playbook" && <AcquisitionPlaybook />}
         {view === "review" && (
           <div className="grid items-start gap-4 lg:grid-cols-[310px_minmax(0,1fr)]">
             <aside className="overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)]">
