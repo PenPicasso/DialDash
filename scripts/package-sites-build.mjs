@@ -1,4 +1,12 @@
-import { copyFileSync, cpSync, existsSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import {
+  copyFileSync,
+  cpSync,
+  existsSync,
+  mkdirSync,
+  readFileSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { resolve } from "node:path";
 
 const source = resolve(".open-next");
@@ -14,7 +22,15 @@ cpSync(source, target, { recursive: true });
 const serverTarget = resolve(target, "server");
 mkdirSync(serverTarget, { recursive: true });
 cpSync(source, serverTarget, { recursive: true });
-copyFileSync(resolve(source, "worker.js"), resolve(serverTarget, "app.js"));
+const appTarget = resolve(serverTarget, "app.js");
+copyFileSync(resolve(source, "worker.js"), appTarget);
+
+// Sites does not need OpenNext's optional cache/queue Durable Objects.
+const appSource = readFileSync(appTarget, "utf8").replace(
+  /^export \{ (?:DOQueueHandler|DOShardedTagCache|BucketCachePurge) \} from .*;\r?\n/gm,
+  "",
+);
+writeFileSync(appTarget, appSource);
 writeFileSync(
   resolve(serverTarget, "index.js"),
   `export default {
