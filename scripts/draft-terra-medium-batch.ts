@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, writeFileSync } from "fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "fs";
 import { join } from "path";
 
 type Probe = { url: string; ok: boolean; finalUrl?: string; title?: string };
@@ -31,8 +31,10 @@ type EvidenceRecord = {
 
 const root = join(__dirname, "..");
 const batch = Number(process.argv.find((arg) => arg.startsWith("--batch="))?.split("=")[1] || 0);
-if (!Number.isInteger(batch) || batch < 2 || batch > 8) throw new Error("Pass --batch=2 through --batch=8.");
-const evidencePath = join(root, "storage", "terra-medium-next-200", `evidence-batch-${batch}.json`);
+const cohort = process.argv.find((arg) => arg.startsWith("--cohort="))?.split("=")[1] || "next-200";
+if (!/^[a-z0-9-]+$/.test(cohort)) throw new Error("Cohort must use lowercase letters, numbers, and hyphens only.");
+if (!Number.isInteger(batch) || batch < 1 || batch > 8) throw new Error("Pass --batch=1 through --batch=8.");
+const evidencePath = join(root, "storage", `terra-medium-${cohort}`, `evidence-batch-${batch}.json`);
 if (!existsSync(evidencePath)) throw new Error(`Run research:terra-medium-evidence for batch ${batch} first.`);
 
 const input = JSON.parse(readFileSync(evidencePath, "utf8")) as { records: EvidenceRecord[] };
@@ -85,5 +87,7 @@ const records = input.records.map((record) => {
   };
 });
 
-writeFileSync(join(root, "data", "terra-medium-next-200", `batch-${batch}.json`), `${JSON.stringify({ methodology: "terra-medium-recovery-v1", batch, records }, null, 2)}\n`);
-console.log(JSON.stringify({ batch, records: records.length, decisions: records.reduce<Record<string, number>>((counts, record) => { counts[record.decision] = (counts[record.decision] || 0) + 1; return counts; }, {}) }, null, 2));
+const outputRoot = join(root, "data", `terra-medium-${cohort}`);
+mkdirSync(outputRoot, { recursive: true });
+writeFileSync(join(outputRoot, `batch-${batch}.json`), `${JSON.stringify({ methodology: "terra-medium-recovery-v1", cohort, batch, records }, null, 2)}\n`);
+console.log(JSON.stringify({ cohort, batch, records: records.length, decisions: records.reduce<Record<string, number>>((counts, record) => { counts[record.decision] = (counts[record.decision] || 0) + 1; return counts; }, {}) }, null, 2));

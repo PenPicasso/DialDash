@@ -1,0 +1,759 @@
+{
+  "methodology": "terra-medium-recovery-v1",
+  "cohort": "next-200-b",
+  "batch": 2,
+  "records": [
+    {
+      "id": "geoffrey-cann",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies The $50B Junk Drawer: Turning Oilpatch Surplus Into Serious Cash at 2026-05-20T12:30:00.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Geoffrey Cann",
+      "economicBuyer": "Geoffrey Cann",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "The $50B Junk Drawer: Turning Oilpatch Surplus Into Serious Cash",
+        "latestPublishedAt": "2026-05-20T12:30:00.000Z",
+        "evidenceUrl": "https://digitaloilgas.libsyn.com/rss",
+        "recentPublicationDates": [
+          "2026-05-20T12:30:00.000Z",
+          "2026-05-13T14:23:01.000Z",
+          "2026-05-06T12:30:00.000Z",
+          "2026-04-29T12:30:00.000Z",
+          "2026-04-25T15:24:55.000Z",
+          "2026-04-15T12:30:00.000Z"
+        ],
+        "cadenceStatus": "SEMI_ACTIVE",
+        "medianIntervalDays": 7
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://digitaloilgas.libsyn.com/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "force-finance",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Force & Finance",
+      "economicBuyer": "Force & Finance",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@ForceFinance-q6k?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "talking-transitions",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Inspiring and empowering energy consumers to lead the way at 2024-06-25T13:00:54.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Talking Transitions",
+      "economicBuyer": "Talking Transitions",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Inspiring and empowering energy consumers to lead the way",
+        "latestPublishedAt": "2024-06-25T13:00:54.000Z",
+        "evidenceUrl": "https://feeds.acast.com/public/shows/655bc55264b7080012a29f22",
+        "recentPublicationDates": [
+          "2024-06-25T13:00:54.000Z",
+          "2024-06-18T13:00:15.000Z",
+          "2024-06-11T13:00:24.000Z",
+          "2024-06-04T13:00:13.000Z",
+          "2024-05-30T12:41:30.000Z",
+          "2024-05-21T13:30:30.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 7
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.acast.com/public/shows/655bc55264b7080012a29f22",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "tim-pawul",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies EPISODE #10 - Interview w/ Tim Pawul, the \"Voice of the SLU\" at 2021-02-03T05:39:51.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Tim Pawul",
+      "economicBuyer": "Tim Pawul",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "EPISODE #10 - Interview w/ Tim Pawul, the \"Voice of the SLU\"",
+        "latestPublishedAt": "2021-02-03T05:39:51.000Z",
+        "evidenceUrl": "https://anchor.fm/s/3f1a6ec4/podcast/rss",
+        "recentPublicationDates": [
+          "2021-02-03T05:39:51.000Z",
+          "2020-12-15T14:20:37.000Z",
+          "2020-12-15T14:20:25.000Z",
+          "2020-12-15T14:20:13.000Z",
+          "2020-12-15T14:20:03.000Z",
+          "2020-12-15T14:19:53.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 0
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/3f1a6ec4/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "saas-marketing",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies The 2 fold secret of SaaS headlines at 2023-05-30T13:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "SaaS Marketing",
+      "economicBuyer": "SaaS Marketing",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "The 2 fold secret of SaaS headlines",
+        "latestPublishedAt": "2023-05-30T13:00:00.000Z",
+        "evidenceUrl": "https://feeds.transistor.fm/saas-snacks-by-powered-by-search",
+        "recentPublicationDates": [
+          "2023-05-30T13:00:00.000Z",
+          "2023-05-23T13:00:00.000Z",
+          "2023-05-16T13:00:00.000Z",
+          "2023-05-09T11:00:00.000Z",
+          "2023-05-02T13:00:00.000Z",
+          "2023-04-25T13:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 7
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.transistor.fm/saas-snacks-by-powered-by-search",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "ai-powered",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Season 2 Wrap: Meet Monsieur Link, Your AI Guide for Cannes at 2025-06-25T03:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "AI Powered",
+      "economicBuyer": "AI Powered",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Season 2 Wrap: Meet Monsieur Link, Your AI Guide for Cannes",
+        "latestPublishedAt": "2025-06-25T03:00:00.000Z",
+        "evidenceUrl": "https://rss.buzzsprout.com/2297714.rss",
+        "recentPublicationDates": [
+          "2025-06-25T03:00:00.000Z",
+          "2025-06-17T06:00:00.000Z",
+          "2025-06-10T06:00:00.000Z",
+          "2025-06-03T06:00:00.000Z",
+          "2025-05-27T06:00:00.000Z",
+          "2025-05-20T07:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 7
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://rss.buzzsprout.com/2297714.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "week-ahead",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies WEEK AHEAD COMMODITY REPORT: Gold, Silver & Crude Oil Price Forecast: 18 - 22 May 2020 at 2020-05-19T16:00:06.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "WEEK AHEAD",
+      "economicBuyer": "WEEK AHEAD",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "WEEK AHEAD COMMODITY REPORT: Gold, Silver & Crude Oil Price Forecast: 18 - 22 May 2020",
+        "latestPublishedAt": "2020-05-19T16:00:06.000Z",
+        "evidenceUrl": "https://anchor.fm/s/43c93f4/podcast/rss",
+        "recentPublicationDates": [
+          "2020-05-19T16:00:06.000Z",
+          "2020-05-11T21:46:20.000Z",
+          "2020-05-05T16:51:35.000Z",
+          "2020-05-05T13:56:04.000Z",
+          "2020-05-05T13:41:20.000Z",
+          "2020-05-05T12:20:05.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 0.1
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/43c93f4/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "joe-wells",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies S1E7: Billion Dollar Whale - The Man Who Fooled Wall Street, Hollywood, and the World at 2024-05-09T10:20:22.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Joe Wells",
+      "economicBuyer": "Joe Wells",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "S1E7: Billion Dollar Whale - The Man Who Fooled Wall Street, Hollywood, and the World",
+        "latestPublishedAt": "2024-05-09T10:20:22.000Z",
+        "evidenceUrl": "https://feeds.transistor.fm/better-than-b-school",
+        "recentPublicationDates": [
+          "2024-05-09T10:20:22.000Z",
+          "2024-03-14T17:03:00.000Z",
+          "2024-03-07T23:44:26.000Z",
+          "2024-01-04T12:30:31.000Z",
+          "2023-12-15T01:10:12.000Z",
+          "2023-12-08T00:44:08.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 7.1
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.transistor.fm/better-than-b-school",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "inbound-fit",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Ep. 4 — The Inbound Methodology: Attract at 2015-05-19T16:34:48.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Inbound Fit",
+      "economicBuyer": "Inbound Fit",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Ep. 4 — The Inbound Methodology: Attract",
+        "latestPublishedAt": "2015-05-19T16:34:48.000Z",
+        "evidenceUrl": "https://feeds.soundcloud.com/users/soundcloud:users:140804674/sounds.rss",
+        "recentPublicationDates": [
+          "2015-05-19T16:34:48.000Z",
+          "2015-05-01T23:17:23.000Z",
+          "2015-03-04T05:09:13.000Z",
+          "2015-02-28T01:15:25.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 17.7
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.soundcloud.com/users/soundcloud:users:140804674/sounds.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "myles-allen",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Myles Allen",
+      "economicBuyer": "Myles Allen",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/mylesallen",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "dieter-helm",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Dieter Helm",
+      "economicBuyer": "Dieter Helm",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/Dieter_Helm",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "tim-gould",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Tim Gould is the International Energy Agency's Chief Energy Economist and heads its Office of the Chief Energy Economist. His energy analysis is agency-led institutional output, not a creator-controlled Energy Dial buyer chain.",
+      "contentOwner": "Tim Gould",
+      "economicBuyer": "Tim Gould",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "evidence": [
+        {
+          "url": "https://www.iea.org/about",
+          "proves": "The IEA identifies Tim Gould as its Chief Energy Economist and head of the relevant office."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:35:54.498Z"
+    },
+    {
+      "id": "laura-cozzi",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Laura Cozzi is the International Energy Agency's Director of Sustainability, Technology and Outlooks and co-leads its flagship World Energy Outlook. Her energy communication is agency-led institutional output, not a creator-controlled Energy Dial buyer chain.",
+      "contentOwner": "Laura Cozzi",
+      "economicBuyer": "Laura Cozzi",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "evidence": [
+        {
+          "url": "https://www.iea.org/contributors/laura-cozzi",
+          "proves": "The IEA identifies Laura Cozzi as its Director of Sustainability, Technology and Outlooks."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:35:54.498Z"
+    },
+    {
+      "id": "jim-krane",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Jim Krane",
+      "economicBuyer": "Jim Krane",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/jimkrane",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "policy-dispatch",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Reviewing Britain’s power market review at 2025-07-30T04:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Policy Dispatch",
+      "economicBuyer": "Policy Dispatch",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Reviewing Britain’s power market review",
+        "latestPublishedAt": "2025-07-30T04:00:00.000Z",
+        "evidenceUrl": "https://feeds.acast.com/public/shows/65aa87888ce71c001652fdcd",
+        "recentPublicationDates": [
+          "2025-07-30T04:00:00.000Z",
+          "2025-07-09T16:00:00.000Z",
+          "2025-06-25T04:00:00.000Z",
+          "2025-06-11T04:00:00.000Z",
+          "2025-05-28T04:00:00.000Z",
+          "2025-05-14T04:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 14
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.acast.com/public/shows/65aa87888ce71c001652fdcd",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "raj-gupta",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies How to close $5000 client in 2022? Marketing Gurukul Ep 09 | Ft. Shreya Pattar at 2022-04-23T15:31:56.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Raj Gupta",
+      "economicBuyer": "Raj Gupta",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "How to close $5000 client in 2022? Marketing Gurukul Ep 09 | Ft. Shreya Pattar",
+        "latestPublishedAt": "2022-04-23T15:31:56.000Z",
+        "evidenceUrl": "https://anchor.fm/s/48eb3000/podcast/rss",
+        "recentPublicationDates": [
+          "2022-04-23T15:31:56.000Z",
+          "2022-04-04T01:30:00.000Z",
+          "2022-03-28T01:30:00.000Z",
+          "2022-02-07T01:30:00.000Z",
+          "2022-01-24T06:32:00.000Z",
+          "2022-01-17T02:36:49.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 7
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/48eb3000/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "sander-cordero",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Podcast 1 at 2021-04-25T18:23:30.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Sander Cordero",
+      "economicBuyer": "Sander Cordero",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Podcast 1",
+        "latestPublishedAt": "2021-04-25T18:23:30.000Z",
+        "evidenceUrl": "https://anchor.fm/s/56764764/podcast/rss",
+        "recentPublicationDates": [
+          "2021-04-25T18:23:30.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/56764764/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "gregory-brew",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Gregory Brew",
+      "economicBuyer": "Gregory Brew",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/gbrew1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "arpit-dwivedi",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Place Based Decarbonisation at 2020-07-29T11:17:06.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Arpit Dwivedi",
+      "economicBuyer": "Arpit Dwivedi",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Place Based Decarbonisation",
+        "latestPublishedAt": "2020-07-29T11:17:06.000Z",
+        "evidenceUrl": "https://anchor.fm/s/26e46bc0/podcast/rss",
+        "recentPublicationDates": [
+          "2020-07-29T11:17:06.000Z",
+          "2020-06-24T16:21:03.000Z",
+          "2020-06-24T16:15:19.000Z",
+          "2020-06-24T16:11:57.000Z",
+          "2020-06-17T16:08:08.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 3.5
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/26e46bc0/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "bjarne-schieldrop",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Bjarne Schieldrop",
+      "economicBuyer": "Bjarne Schieldrop",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/BjarneSchieldrop",
+          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "giovanni-staunovo",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Giovanni Staunovo",
+      "economicBuyer": "Giovanni Staunovo",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/gstaunovo",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "fereidun-fesharaki",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Fereidun Fesharaki",
+      "economicBuyer": "Fereidun Fesharaki",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/FesharakiF",
+          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "francisco-blanch",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Francisco Blanch",
+      "economicBuyer": "Francisco Blanch",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/FranBlanch",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "damien-courvalin",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Damien Courvalin",
+      "economicBuyer": "Damien Courvalin",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/dcourvalin",
+          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    },
+    {
+      "id": "nikos-tsafos",
+      "decision": "NURTURE",
+      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Nikos Tsafos",
+      "economicBuyer": "Nikos Tsafos",
+      "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/NikosTsafos",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:40:21.972Z"
+    }
+  ]
+}

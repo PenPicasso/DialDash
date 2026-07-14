@@ -16,7 +16,9 @@ type Probe = { url: string; ok: boolean; status?: number; finalUrl?: string; tit
 
 const root = join(__dirname, "..");
 const batch = Number(process.argv.find((arg) => arg.startsWith("--batch="))?.split("=")[1] || 0);
-if (!Number.isInteger(batch) || batch < 2 || batch > 8) throw new Error("Pass --batch=2 through --batch=8.");
+const cohort = process.argv.find((arg) => arg.startsWith("--cohort="))?.split("=")[1] || "next-200";
+if (!/^[a-z0-9-]+$/.test(cohort)) throw new Error("Cohort must use lowercase letters, numbers, and hyphens only.");
+if (!Number.isInteger(batch) || batch < 1 || batch > 8) throw new Error("Pass --batch=1 through --batch=8.");
 
 const now = Date.now();
 const parser = new XMLParser({ ignoreAttributes: false, trimValues: true, parseTagValue: false });
@@ -118,7 +120,7 @@ async function pooled<T, R>(items: T[], worker: (item: T) => Promise<R>) {
 }
 
 async function main() {
-  const manifest = JSON.parse(readFileSync(join(root, "storage", "sol-next-200", `batch-${batch}.json`), "utf8")) as { records: ManifestRecord[] };
+  const manifest = JSON.parse(readFileSync(join(root, "storage", `sol-${cohort}`, `batch-${batch}.json`), "utf8")) as { records: ManifestRecord[] };
   const nodes = (JSON.parse(readFileSync(join(root, "data", "nodes.json"), "utf8")) as { nodes: NodeData[] }).nodes;
   const byId = new Map(nodes.map((node) => [node.id, node]));
   const records = await pooled(manifest.records, async (record) => {
@@ -166,10 +168,10 @@ async function main() {
     };
   });
   records.sort((a, b) => (a.fitRank || Number.MAX_SAFE_INTEGER) - (b.fitRank || Number.MAX_SAFE_INTEGER));
-  const outputRoot = join(root, "storage", "terra-medium-next-200");
+  const outputRoot = join(root, "storage", `terra-medium-${cohort}`);
   mkdirSync(outputRoot, { recursive: true });
-  writeFileSync(join(outputRoot, `evidence-batch-${batch}.json`), `${JSON.stringify({ methodology: "terra-medium-evidence-v1", batch, generatedAt: new Date().toISOString(), firecrawlCalls: 0, records }, null, 2)}\n`);
-  console.log(JSON.stringify({ batch, records: records.length, staleFeedsNeedingCrossChannelCheck: records.filter((record) => record.deterministicFinding.finding).length, manualReview: records.length }, null, 2));
+  writeFileSync(join(outputRoot, `evidence-batch-${batch}.json`), `${JSON.stringify({ methodology: "terra-medium-evidence-v1", cohort, batch, generatedAt: new Date().toISOString(), firecrawlCalls: 0, records }, null, 2)}\n`);
+  console.log(JSON.stringify({ cohort, batch, records: records.length, staleFeedsNeedingCrossChannelCheck: records.filter((record) => record.deterministicFinding.finding).length, manualReview: records.length }, null, 2));
 }
 
 void main();

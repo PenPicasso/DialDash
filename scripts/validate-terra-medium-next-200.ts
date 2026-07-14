@@ -23,14 +23,16 @@ type Resolution = {
 
 const root = join(__dirname, "..");
 const batch = Number(process.argv.find((arg) => arg.startsWith("--batch="))?.split("=")[1] || 0);
+const cohort = process.argv.find((arg) => arg.startsWith("--cohort="))?.split("=")[1] || "next-200";
+if (!/^[a-z0-9-]+$/.test(cohort)) throw new Error("Cohort must use lowercase letters, numbers, and hyphens only.");
 if (!Number.isInteger(batch) || batch < 1 || batch > 8) throw new Error("Pass --batch=1 through --batch=8.");
-const manifestPath = join(root, "storage", "sol-next-200", `batch-${batch}.json`);
-const resultPath = join(root, "data", "terra-medium-next-200", `batch-${batch}.json`);
-if (!existsSync(manifestPath)) throw new Error("Run npm run research:sol-next-200 first.");
+const manifestPath = join(root, "storage", `sol-${cohort}`, `batch-${batch}.json`);
+const resultPath = join(root, "data", `terra-medium-${cohort}`, `batch-${batch}.json`);
+if (!existsSync(manifestPath)) throw new Error(`Create the ${cohort} manifest first.`);
 if (!existsSync(resultPath)) throw new Error(`Missing Terra Medium result: ${resultPath}`);
 
 const expected = JSON.parse(readFileSync(manifestPath, "utf8")) as { records: Array<{ id: string }> };
-const result = JSON.parse(readFileSync(resultPath, "utf8")) as { methodology: string; batch: number; records: Resolution[] };
+const result = JSON.parse(readFileSync(resultPath, "utf8")) as { methodology: string; cohort?: string; batch: number; records: Resolution[] };
 const errors: string[] = [];
 const expectedIds = expected.records.map((record) => record.id).sort();
 const actualIds = result.records.map((record) => record.id).sort();
@@ -49,7 +51,7 @@ const factualHardGates = new Set([
 const now = Date.now();
 const ninetyDaysMs = 90 * 24 * 60 * 60 * 1_000;
 
-if (result.methodology !== "terra-medium-recovery-v1" || result.batch !== batch) errors.push("Unexpected methodology or batch number.");
+if (result.methodology !== "terra-medium-recovery-v1" || result.batch !== batch || (result.cohort && result.cohort !== cohort)) errors.push("Unexpected methodology, cohort, or batch number.");
 if (result.records.length !== 25 || JSON.stringify(expectedIds) !== JSON.stringify(actualIds)) errors.push("Result IDs must exactly match the fixed 25-record batch.");
 if (new Set(actualIds).size !== 25) errors.push("Batch contains duplicate IDs.");
 
@@ -88,7 +90,7 @@ for (const record of result.records) {
   }
 }
 
-console.log(`Terra Medium next-200 validation batch ${batch}`);
+console.log(`Terra Medium ${cohort} validation batch ${batch}`);
 console.log(`- records: ${result.records.length}`);
 console.log(`- decisions: ${JSON.stringify(result.records.reduce<Record<string, number>>((counts, record) => { counts[record.decision] = (counts[record.decision] || 0) + 1; return counts; }, {}))}`);
 console.log(`- errors: ${errors.length}`);
