@@ -90,6 +90,22 @@ Run:
 - `npm run research:terra-youtube` to validate the YouTube supplement from official channel and uploads feeds.
 - `npm run research:terra-compose` to rebuild the four 25-record batches.
 
+Sol review completed on 2026-07-14 using `sol-recovery-v1`:
+- `PURSUE_NOW`: 3 (`amber-kanwar`, `marine-cornelis`, `michelle-fraser`).
+- `NURTURE`: 60 current energy accounts with one or more commercial gates still unverified.
+- `DISQUALIFIED_CONFIRMED`: 37 evidence-backed duplicate, institutional/corporate owner, wrong-ICP/language, or existing professional-media exclusions.
+- Deterministic audit sample: 18/18 correct; the 90% stop gate passed.
+- Production rows changed: 0.
+
+Tracked review artifacts:
+- `data/terra-review.json`: all 100 decisions, evidence, exact missing gates, and pitch hooks for the three pursue records.
+- `docs/SOL_TERRA_REVIEW.md`: plain-language review summary.
+- `/recovery`: read-only review UI.
+- `npm run research:sol-terra`: regenerate the tracked report from the staged cohort and curated Sol evidence.
+- `npm run validate:terra`: validate cohort size, decision requirements, batch size, and audit threshold.
+
+Important correction: a Shorts tab or high clip count does not prove strong explanatory distribution. Sol sampled three public Shorts each for the pursue records. Amber Kanwar has high short volume but only captioned speaker cuts; Marine Cornelis has limited basic remote-call clips; Michelle Fraser's sampled Shorts are static cover art over audio. Their opportunity is explanatory quality, not merely clip volume.
+
 ### Full light-model and Sol review
 
 Branch: `codex/light-model-next-100`. This remains preview-only; do not merge to `main` or promote production until the user approves it.
