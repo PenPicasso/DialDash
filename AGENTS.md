@@ -185,6 +185,7 @@ For UI changes, also smoke-test `/dashboard` locally or on a Vercel preview and 
 - The Sites dashboard adds an owner-only workspace shell, `Ctrl/Cmd+K` command menu, `/` search shortcut, persistent theme, and a browser-local focus queue stored under `dialdash:focus:v1`.
 - Focus queue changes are intentionally local and do not modify `data/nodes.json`. Prospect promotion still requires the repository validators and explicit production-write workflow.
 - Sites deployments are versioned production artifacts. Keep access owner-only unless the user explicitly asks to share the workspace.
+- `npm run build` creates the Sites `dist` artifact with the Cloudflare OpenNext adapter. Use `npm run build:next` for a Vercel-native or Windows-only Next.js build check.
 
 The branch `codex/quality-gated-prospect-scaling` was deployed to Vercel preview successfully before this record was added. Preview deployments may return `401` to unauthenticated users because Vercel Deployment Protection is enabled on the project.
 
