@@ -2,15 +2,23 @@
 
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { useDeferredValue, useEffect, useMemo, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { CATEGORIES, NodeData } from "@/lib/types";
 import {
   AlertTriangle,
+  Bookmark,
+  BookmarkCheck,
+  BookOpen,
   ChevronRight,
+  Command,
+  FlaskConical,
+  LayoutDashboard,
+  LockKeyhole,
   Moon,
   Search,
   SlidersHorizontal,
   Sun,
+  UserRoundCheck,
   X,
 } from "lucide-react";
 import { MediaFreshness } from "@/components/mediaFreshness";
@@ -218,6 +226,7 @@ function priorityClasses(priority: NodeData["priority"]) {
 }
 
 export default function Dashboard() {
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const [nodes, setNodes] = useState<NodeData[]>([]);
   const [summary, setSummary] = useState<ProspectPayload["summary"]>();
   const [loadedAll, setLoadedAll] = useState(false);
@@ -237,7 +246,36 @@ export default function Dashboard() {
   const [leadSource, setLeadSource] = useState("");
   const [funnel, setFunnel] = useState("");
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const [commandOpen, setCommandOpen] = useState(false);
+  const [focusOnly, setFocusOnly] = useState(false);
+  const [focusedIds, setFocusedIds] = useState<string[]>([]);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+
+  useEffect(() => {
+    try {
+      setFocusedIds(JSON.parse(localStorage.getItem("dialdash:focus:v1") || "[]") as string[]);
+      setIsDark(localStorage.getItem("dialdash:theme:v1") === "dark");
+    } catch {
+      setFocusedIds([]);
+    }
+  }, []);
+
+  useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") {
+        event.preventDefault();
+        setCommandOpen((open) => !open);
+      } else if (event.key === "/" && document.activeElement?.tagName !== "INPUT") {
+        event.preventDefault();
+        searchInputRef.current?.focus();
+      } else if (event.key === "Escape") {
+        setCommandOpen(false);
+        setSelectedNode(null);
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
 
   useEffect(() => {
     let active = true;
@@ -300,7 +338,18 @@ export default function Dashboard() {
     } else {
       root.classList.remove("dark");
     }
+    localStorage.setItem("dialdash:theme:v1", isDark ? "dark" : "light");
   }, [isDark]);
+
+  const toggleFocus = (nodeId: string) => {
+    setFocusedIds((current) => {
+      const next = current.includes(nodeId)
+        ? current.filter((id) => id !== nodeId)
+        : [...current, nodeId];
+      localStorage.setItem("dialdash:focus:v1", JSON.stringify(next));
+      return next;
+    });
+  };
 
   const filterOptions = useMemo(() => {
     const priorityOrder = ["HOT", "WARM", "MEDIUM", "COLD"];
@@ -355,6 +404,7 @@ export default function Dashboard() {
       const matchReachability = reachability ? node.reachabilityStatus === reachability : true;
       const matchOutreach = outreach ? node.bestOutreachChannel === outreach : true;
       const matchLeadSource = leadSource ? node.leadSource === leadSource : true;
+      const matchFocus = focusOnly ? focusedIds.includes(node.id) : true;
       const matchFunnel =
         funnel === "video-gap"
           ? Boolean(node.videoGapReason && !node.videoGapReason.toLowerCase().includes("existing large"))
@@ -380,6 +430,7 @@ export default function Dashboard() {
         matchReachability &&
         matchOutreach &&
         matchLeadSource &&
+        matchFocus &&
         matchFunnel &&
         matchFormat
       );
@@ -391,6 +442,8 @@ export default function Dashboard() {
     deferredSearch,
     formatFilter,
     funnel,
+    focusOnly,
+    focusedIds,
     leadSource,
     methodologyDecision,
     nodes,
@@ -401,7 +454,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
-  }, [actionability, category, confidence, deferredSearch, formatFilter, funnel, leadSource, methodologyDecision, outreach, priority, reachability]);
+  }, [actionability, category, confidence, deferredSearch, focusOnly, formatFilter, funnel, leadSource, methodologyDecision, outreach, priority, reachability]);
 
   const loadedStats = useMemo(
     () => ({
@@ -443,6 +496,7 @@ export default function Dashboard() {
       actionability ||
       priority ||
       reachability ||
+      focusOnly ||
       hasAdvancedFilters
   );
 
@@ -458,6 +512,7 @@ export default function Dashboard() {
     setOutreach("");
     setLeadSource("");
     setFunnel("");
+    setFocusOnly(false);
   };
 
   const applyViewPreset = (value: string) => {
@@ -485,35 +540,45 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="min-h-screen bg-background p-4 text-foreground transition-colors duration-300 md:p-8">
-      <header className="mb-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+    <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
+      <nav className="sticky top-0 z-40 border-b border-border/80 bg-panel/95 px-4 backdrop-blur-xl md:px-8">
+        <div className="mx-auto flex h-16 max-w-[1560px] items-center justify-between gap-4">
+          <div className="flex min-w-0 items-center gap-7">
+            <Link href="/dashboard" className="flex shrink-0 items-center gap-2.5" aria-label="DialDash dashboard">
+              <span className="grid h-9 w-9 place-items-center rounded-lg bg-brand-blue text-sm font-black text-white shadow-[inset_0_-2px_0_rgba(0,0,0,0.15)]">DD</span>
+              <span className="hidden text-base font-black tracking-tight sm:block">Dial<span className="text-brand-orange">Dash</span></span>
+            </Link>
+            <div className="hidden items-center gap-1 lg:flex">
+              <Link href="/dashboard" className="inline-flex h-9 items-center gap-2 rounded-md bg-brand-blue/8 px-3 text-xs font-extrabold text-brand-blue"><LayoutDashboard size={15} />Prospects</Link>
+              <Link href="/pilot" className="inline-flex h-9 items-center gap-2 rounded-md px-3 text-xs font-bold text-muted hover:bg-background hover:text-foreground"><FlaskConical size={15} />Research</Link>
+              <Link href="/pilot" className="inline-flex h-9 items-center gap-2 rounded-md px-3 text-xs font-bold text-muted hover:bg-background hover:text-foreground"><BookOpen size={15} />Playbook</Link>
+              <Link href="/portal/demo" className="inline-flex h-9 items-center gap-2 rounded-md px-3 text-xs font-bold text-muted hover:bg-background hover:text-foreground"><UserRoundCheck size={15} />Client portal</Link>
+            </div>
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="hidden items-center gap-1.5 rounded-full border border-emerald-600/20 bg-emerald-500/8 px-2.5 py-1 text-[10px] font-extrabold uppercase text-emerald-700 dark:text-emerald-300 sm:inline-flex"><LockKeyhole size={11} />Private workspace</span>
+            <button onClick={() => setCommandOpen(true)} className="inline-flex h-9 w-9 items-center justify-center gap-2 rounded-md border border-border bg-background text-xs font-bold text-muted hover:border-brand-blue hover:text-brand-blue sm:w-auto sm:px-2.5" type="button" title="Open command menu" aria-label="Open command menu"><Command size={14} /><span className="hidden sm:inline">Menu</span><kbd className="hidden rounded border border-border bg-panel px-1.5 py-0.5 text-[9px] sm:inline">Ctrl K</kbd></button>
+            <button onClick={() => setIsDark(!isDark)} className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-border bg-background text-muted transition-colors hover:border-brand-blue hover:text-brand-blue" title="Toggle theme" type="button">{isDark ? <Sun size={17} /> : <Moon size={17} />}</button>
+          </div>
+        </div>
+      </nav>
+
+      <main className="mx-auto max-w-[1560px] p-4 md:p-8">
+      <header className="mb-5 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div>
-          <h1 className="mb-1 flex items-center gap-3 text-4xl font-extrabold tracking-tight">
-            <span className="text-gradient">Energy Dial</span> Network
-          </h1>
-          <p className="text-sm text-muted">
+          <div className="mb-2 text-[10px] font-extrabold uppercase tracking-[0.16em] text-brand-orange">Prospect intelligence</div>
+          <h1 className="text-3xl font-black tracking-tight md:text-4xl">Your next Energy Dial clients</h1>
+          <p className="mt-1.5 text-sm text-muted">
             {databaseStats.pursue} evidence-cleared now &middot; {databaseStats.nurture} research next &middot; {databaseStats.total} ranked records
           </p>
         </div>
-        <div className="flex items-center gap-2">
-          <Link
-            href="/pilot"
-            className="inline-flex h-10 items-center rounded-lg border border-brand-blue/25 bg-brand-blue/5 px-3 text-sm font-bold text-brand-blue transition-colors hover:border-brand-blue"
-          >
-            Review 15-prospect pilot
-          </Link>
-          <button
-            onClick={() => setIsDark(!isDark)}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-panel text-muted transition-colors hover:border-brand-blue hover:text-brand-blue"
-            title="Toggle theme"
-            type="button"
-          >
-            {isDark ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
-        </div>
+        <button type="button" onClick={() => setFocusOnly((current) => !current)} className={`inline-flex h-10 items-center gap-2 self-start rounded-md border px-3 text-xs font-extrabold transition-colors md:self-auto ${focusOnly ? "border-brand-orange bg-brand-orange text-white" : "border-border bg-panel text-foreground hover:border-brand-orange"}`}>
+          {focusOnly ? <BookmarkCheck size={15} /> : <Bookmark size={15} />}
+          Focus queue <span className={`rounded-full px-1.5 py-0.5 text-[10px] ${focusOnly ? "bg-white/20" : "bg-background text-muted"}`}>{focusedIds.length}</span>
+        </button>
       </header>
 
-      <section className="mb-5 grid gap-3 md:grid-cols-4">
+      <section className="mb-5 grid grid-cols-2 gap-3 xl:grid-cols-4">
         <Metric label="Pursue Now" value={databaseStats.pursue} tone="orange" />
         <Metric label="Research Next" value={databaseStats.nurture} />
         <Metric label="Strong Reach" value={databaseStats.strongReady} tone="blue" />
@@ -527,8 +592,9 @@ export default function Dashboard() {
           <div className="relative min-w-0 flex-1">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-brand-blue" size={18} />
             <input
+              ref={searchInputRef}
               type="text"
-              placeholder="Search host, channel, point-man, organization..."
+              placeholder="Search host, show, buyer or organization...  ( / )"
               className="h-11 w-full rounded-lg border border-border bg-input-bg pl-10 pr-3 text-sm font-medium text-foreground outline-none transition-colors placeholder:text-placeholder focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
@@ -646,7 +712,10 @@ export default function Dashboard() {
                 </div>
                 <p className="mt-1 line-clamp-2 text-xs text-muted">{node.channel}</p>
               </div>
-              <DecisionPill decision={node.methodologyDecision} />
+              <div className="flex items-center gap-2">
+                <button type="button" aria-label={focusedIds.includes(node.id) ? `Remove ${node.host} from focus queue` : `Add ${node.host} to focus queue`} onClick={(event) => { event.stopPropagation(); toggleFocus(node.id); }} className={`grid h-8 w-8 place-items-center rounded-md border ${focusedIds.includes(node.id) ? "border-brand-orange/35 bg-brand-orange/10 text-brand-orange" : "border-border text-muted"}`}>{focusedIds.includes(node.id) ? <BookmarkCheck size={15} /> : <Bookmark size={15} />}</button>
+                <DecisionPill decision={node.methodologyDecision} />
+              </div>
             </div>
             <div className="mt-3 grid grid-cols-2 gap-2 border-y border-border py-3">
               <MediaFreshness node={node} />
@@ -730,10 +799,11 @@ export default function Dashboard() {
                   return (
                     <tr
                       key={node.id}
-                      className="table-row-hover group relative cursor-pointer hover:bg-black/[0.025] dark:hover:bg-white/[0.035]"
+                      className="prospect-row table-row-hover group relative cursor-pointer hover:bg-black/[0.025] dark:hover:bg-white/[0.035]"
                       onClick={() => setSelectedNode(node)}
                     >
                       <td className="relative px-5 py-4">
+                        <button type="button" aria-label={focusedIds.includes(node.id) ? `Remove ${node.host} from focus queue` : `Add ${node.host} to focus queue`} onClick={(event) => { event.stopPropagation(); toggleFocus(node.id); }} className={`absolute right-2 top-3 grid h-7 w-7 place-items-center rounded-md opacity-0 transition-opacity group-hover:opacity-100 focus:opacity-100 ${focusedIds.includes(node.id) ? "bg-brand-orange/10 text-brand-orange opacity-100" : "text-muted hover:bg-background hover:text-brand-orange"}`}>{focusedIds.includes(node.id) ? <BookmarkCheck size={14} /> : <Bookmark size={14} />}</button>
                         <div className="flex items-center gap-1.5 font-bold text-foreground transition-colors group-hover:text-brand-orange">
                           {node.host}
                           {node.needsManualReview && (
@@ -837,6 +907,30 @@ export default function Dashboard() {
       </div>
 
       {selectedNode && <NodeDetail node={selectedNode} onClose={() => setSelectedNode(null)} />}
+      </main>
+
+      {commandOpen && (
+        <div className="fixed inset-0 z-[70] flex items-start justify-center bg-black/35 px-4 pt-[12vh] backdrop-blur-sm" onMouseDown={() => setCommandOpen(false)}>
+          <div className="w-full max-w-lg overflow-hidden rounded-lg border border-border bg-panel shadow-2xl" onMouseDown={(event) => event.stopPropagation()} role="dialog" aria-modal="true" aria-label="DialDash command menu">
+            <div className="flex items-center gap-3 border-b border-border px-4 py-3"><Command size={17} className="text-brand-blue" /><div><div className="text-sm font-extrabold">Go to a working view</div><div className="text-[10px] text-muted">Keyboard-first navigation for the prospect queue</div></div><button type="button" onClick={() => setCommandOpen(false)} className="ml-auto rounded p-1 text-muted hover:bg-background"><X size={16} /></button></div>
+            <div className="grid gap-1 p-2">
+              {[
+                { label: "Pursue now", detail: "Evidence-cleared prospects ready for outreach", value: "pursue" },
+                { label: "Research next", detail: "Promising records that need one more verification pass", value: "research" },
+                { label: "My focus queue", detail: `${focusedIds.length} prospects saved in this workspace`, value: "focus" },
+                { label: "Search prospects", detail: "Jump directly to host, show, buyer or organization search", value: "search" },
+                { label: "Research and playbook", detail: "Open the methodology pilot and acquisition system", value: "research" },
+                { label: "Client portal", detail: "Preview the delivery and feedback experience", value: "portal" },
+              ].map((item) => (
+                <button key={item.value} type="button" onClick={() => { if (item.value === "focus") setFocusOnly(true); else if (item.value === "search") setTimeout(() => searchInputRef.current?.focus(), 0); else if (item.value === "research") window.location.href = "/pilot"; else if (item.value === "portal") window.location.href = "/portal/demo"; else applyViewPreset(item.value); setCommandOpen(false); }} className="flex items-center gap-3 rounded-md px-3 py-3 text-left hover:bg-brand-blue/5">
+                  <span className="grid h-8 w-8 shrink-0 place-items-center rounded-md border border-border bg-background text-brand-blue">{item.value === "focus" ? <BookmarkCheck size={15} /> : item.value === "search" ? <Search size={15} /> : <ChevronRight size={15} />}</span>
+                  <span><span className="block text-sm font-extrabold">{item.label}</span><span className="block text-xs text-muted">{item.detail}</span></span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

@@ -178,6 +178,14 @@ For UI changes, also smoke-test `/dashboard` locally or on a Vercel preview and 
 
 ## Deployment Notes
 
+### OpenAI Sites workspace
+
+- Branch: `codex/dialdash-sites`.
+- Sites project binding is stored in `.openai/hosting.json`; always reuse that opaque `project_id` and never create a second Sites project for this repository.
+- The Sites dashboard adds an owner-only workspace shell, `Ctrl/Cmd+K` command menu, `/` search shortcut, persistent theme, and a browser-local focus queue stored under `dialdash:focus:v1`.
+- Focus queue changes are intentionally local and do not modify `data/nodes.json`. Prospect promotion still requires the repository validators and explicit production-write workflow.
+- Sites deployments are versioned production artifacts. Keep access owner-only unless the user explicitly asks to share the workspace.
+
 The branch `codex/quality-gated-prospect-scaling` was deployed to Vercel preview successfully before this record was added. Preview deployments may return `401` to unauthenticated users because Vercel Deployment Protection is enabled on the project.
 
 The methodology pilot is published separately:
