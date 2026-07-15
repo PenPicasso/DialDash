@@ -62,8 +62,8 @@ const ninetyDaysMs = 90 * 24 * 60 * 60 * 1_000;
 const requiredAuditChecks = ["ownedLongForm", "cadence", "roles", "contact", "offer", "funnel", "videoGap", "pitchHook"];
 
 if (result.methodology !== "terra-medium-recovery-v1" || result.batch !== batch || (result.cohort && result.cohort !== cohort)) errors.push("Unexpected methodology, cohort, or batch number.");
-if (result.records.length !== 25 || JSON.stringify(expectedIds) !== JSON.stringify(actualIds)) errors.push("Result IDs must exactly match the fixed 25-record batch.");
-if (new Set(actualIds).size !== 25) errors.push("Batch contains duplicate IDs.");
+if (result.records.length !== expected.records.length || JSON.stringify(expectedIds) !== JSON.stringify(actualIds)) errors.push(`Result IDs must exactly match the fixed ${expected.records.length}-record batch.`);
+if (new Set(actualIds).size !== expected.records.length) errors.push("Batch contains duplicate IDs.");
 
 for (const record of result.records) {
   const structurallyCompleteExclusion = record.decision === "DISQUALIFIED_CONFIRMED" && Boolean(record.factualHardGate) && !record.unresolvedGates?.length;

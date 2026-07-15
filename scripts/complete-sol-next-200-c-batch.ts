@@ -13,7 +13,9 @@ type EvidenceRecord = {
 
 const root = join(__dirname, "..");
 const batch = Number(process.argv.find((arg) => arg.startsWith("--batch="))?.split("=")[1] || 0);
-if (!Number.isInteger(batch) || batch < 2 || batch > 8) throw new Error("Pass --batch=2 through --batch=8.");
+const cohort = process.argv.find((arg) => arg.startsWith("--cohort="))?.split("=")[1] || "next-200-c";
+if (!new Set(["next-200", "next-200-c"]).has(cohort)) throw new Error("Supported cohorts are next-200 and next-200-c.");
+if (!Number.isInteger(batch) || batch < 1 || batch > 8) throw new Error("Pass --batch=1 through --batch=8.");
 
 const hardGates: Record<string, { gate: string; reason: string }> = {
   "kai-yan": { gate: "NON_ENGLISH", reason: "The owned show is predominantly Mandarin-language marketing content, not English-language energy content." },
@@ -45,6 +47,24 @@ const hardGates: Record<string, { gate: string; reason: string }> = {
   "sany-renewable-energy": { gate: "CORPORATE_MONOLITH", reason: "SANY Renewable Energy is a major industrial manufacturer's institutional product and communications channel." },
   "oxford-programme-on-integrating-renewable-energy": { gate: "CORPORATE_MONOLITH", reason: "The Oxford Programme on Integrating Renewable Energy is a university institutional program, not a creator-controlled commercial buyer." },
   "climatetech-energy-prize-at-mit": { gate: "CORPORATE_MONOLITH", reason: "The ClimateTech & Energy Prize is an MIT institutional program rather than a creator-controlled buyer." },
+  "iterorganization": { gate: "CORPORATE_MONOLITH", reason: "ITER's channel is the institutional communications operation of an intergovernmental fusion megaproject." },
+  "helion": { gate: "CORPORATE_MONOLITH", reason: "Helion's videos are company-owned technology and recruiting communications rather than a creator-controlled media property." },
+  "tokamak-energy": { gate: "CORPORATE_MONOLITH", reason: "Tokamak Energy's channel is company-owned technology and investor communications rather than a creator-controlled account." },
+  "deloitte-uk": { gate: "CORPORATE_MONOLITH", reason: "Deloitte UK is part of a global professional-services network with an institutional marketing operation." },
+  "politico": { gate: "CORPORATE_MONOLITH", reason: "POLITICO is an established international media company with its own editorial and commercial production operation." },
+  "rio-tinto-mining": { gate: "CORPORATE_MONOLITH", reason: "Rio Tinto is a global mining corporation with an institutional communications operation." },
+  "iogp-international-association-of-oil-and-gas-producers": { gate: "CORPORATE_MONOLITH", reason: "IOGP is an international industry association whose content is institutionally owned and governed." },
+  "mastec-clean-energy-infrastructure": { gate: "CORPORATE_MONOLITH", reason: "MasTec Clean Energy & Infrastructure is a division of a large public infrastructure contractor with corporate marketing." },
+  "ampin-energy-transitionformerly-amp-energy-india": { gate: "CORPORATE_MONOLITH", reason: "AMPIN Energy Transition is a utility-scale energy company whose channel is institutional project marketing." },
+  "convergent-energy-and-power": { gate: "CORPORATE_MONOLITH", reason: "Convergent Energy and Power is a company-owned project and sales channel rather than creator-controlled media." },
+  "american-public-power-association": { gate: "CORPORATE_MONOLITH", reason: "APPA is a national trade association with institutionally controlled communications." },
+  "energy-transitions-commission": { gate: "CORPORATE_MONOLITH", reason: "The Energy Transitions Commission is an institutional coalition with organization-owned communications." },
+  "sustainable-energy-for-all": { gate: "CORPORATE_MONOLITH", reason: "Sustainable Energy for All is an international institutional organization rather than a creator-controlled buyer." },
+  "climate-trace": { gate: "CORPORATE_MONOLITH", reason: "Climate TRACE is an institutional emissions-data coalition with organization-owned communications." },
+  "isaac-asimov": { gate: "NO_NAMED_HUMAN_BY_DESIGN", reason: "The feed is branded around deceased author Isaac Asimov and exposes no living creator or buyer who can purchase the service." },
+  "logistics-updates": { gate: "WRONG_ICP", reason: "The resolved Fathom channel covers logistics and e-commerce rather than the energy industry." },
+  "electricity-market-in-india": { gate: "WRONG_ICP", reason: "The resolved channel's current publication is generic peace/relax content rather than electricity-market education." },
+  "your-utilities-hub": { gate: "WRONG_ICP", reason: "The resolved channel currently publishes household composting content rather than an energy-industry long-form property." },
 };
 
 const additionalOfficialRoutes: Record<string, string> = {
@@ -83,14 +103,15 @@ async function supplementalRoute(url: string) {
 }
 
 async function main() {
-  const evidencePath = join(root, "storage", "terra-medium-next-200-c", `evidence-batch-${batch}.json`);
+  const evidencePath = join(root, "storage", `terra-medium-${cohort}`, `evidence-batch-${batch}.json`);
   const evidencePayload = JSON.parse(readFileSync(evidencePath, "utf8")) as { records: EvidenceRecord[] };
   const evidenceById = new Map(evidencePayload.records.map((record) => [record.id, record]));
-  const targetPath = join(root, "data", "terra-medium-next-200-c", `batch-${batch}.json`);
+  const targetPath = join(root, "data", `terra-medium-${cohort}`, `batch-${batch}.json`);
   const target = JSON.parse(readFileSync(targetPath, "utf8")) as { records: Array<Record<string, unknown> & { id: string }> };
   const reviewedAt = new Date().toISOString();
 
   for (const record of target.records) {
+    if (record.decision === "DISQUALIFIED_CONFIRMED" && record.factualHardGate && !((record.unresolvedGates as unknown[]) || []).length) continue;
     const research = evidenceById.get(record.id);
     if (!research) throw new Error(`Missing deterministic evidence for ${record.id}.`);
     const probe = research.sourceProbes?.find((item) => item.ok) || research.sourceProbes?.[0];

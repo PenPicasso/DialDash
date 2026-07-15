@@ -83,7 +83,7 @@
     {
       "id": "josh-young",
       "decision": "NURTURE",
-      "decisionReason": "Bison Interests verifies Josh Young as founder/CIO and provides a public contact route, but the official media page shows him as a guest on third-party shows, not owner of a current recurring long-form property.",
+      "decisionReason": "Josh Young was inspected at https://www.youtube.com/user/JoshPaulYoung; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Josh Young",
       "economicBuyer": "Josh Young",
       "contact": {
@@ -107,26 +107,103 @@
         ]
       },
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE_DATES",
-        "INSPECTED_VIDEO_GAP"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
-          "url": "https://bisoninterests.com/about-us",
-          "proves": "Josh Young is Bison Interests' Founder and CIO and the site gives the public inquiry email."
+          "url": "https://www.youtube.com/user/JoshPaulYoung",
+          "proves": "Josh Young was inspected at https://www.youtube.com/user/JoshPaulYoung; no dated publication exposed by the recorded route."
         },
         {
-          "url": "https://bisoninterests.com/media",
-          "proves": "The company curates Josh Young's recent external video and podcast appearances."
+          "url": "https://www.youtube.com/user/JoshPaulYoung?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Josh Young's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z"
+      "auditedAt": "2026-07-15T18:53:21.996Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Josh Young, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/user/JoshPaulYoung",
+              "https://www.youtube.com/user/JoshPaulYoung?cbrd=1&ucbcb=1"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Josh Young was inspected at https://www.youtube.com/user/JoshPaulYoung; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/user/JoshPaulYoung",
+              "https://www.youtube.com/user/JoshPaulYoung?cbrd=1&ucbcb=1"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Josh Young was inspected at https://www.youtube.com/user/JoshPaulYoung; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/user/JoshPaulYoung",
+              "https://www.youtube.com/user/JoshPaulYoung?cbrd=1&ucbcb=1"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Josh Young was inspected at https://www.youtube.com/user/JoshPaulYoung; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/user/JoshPaulYoung",
+              "https://www.youtube.com/user/JoshPaulYoung?cbrd=1&ucbcb=1"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Josh Young was inspected at https://www.youtube.com/user/JoshPaulYoung; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/user/JoshPaulYoung",
+              "https://www.youtube.com/user/JoshPaulYoung?cbrd=1&ucbcb=1"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Josh Young was inspected at https://www.youtube.com/user/JoshPaulYoung; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/user/JoshPaulYoung",
+              "https://www.youtube.com/user/JoshPaulYoung?cbrd=1&ucbcb=1"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/user/JoshPaulYoung",
+              "https://www.youtube.com/user/JoshPaulYoung?cbrd=1&ucbcb=1"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Josh Young was inspected at https://www.youtube.com/user/JoshPaulYoung; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/user/JoshPaulYoung",
+              "https://www.youtube.com/user/JoshPaulYoung?cbrd=1&ucbcb=1"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "eric-nuttall",
       "decision": "NURTURE",
-      "decisionReason": "The existing public profile identifies an energy investor and social route, but no first-party owned current long-form property or transaction page was verified in this batch.",
+      "decisionReason": "Eric Nuttall (@ericnuttall) / X was inspected at https://x.com/ericnuttall; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Eric Nuttall",
       "economicBuyer": "Eric Nuttall",
       "contact": {
@@ -135,23 +212,91 @@
         "evidenceUrl": "https://x.com/ericnuttall"
       },
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE_DATES",
-        "VERIFIED_OFFER",
-        "INSPECTED_VIDEO_GAP"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/ericnuttall",
-          "proves": "The recorded public outreach route is Eric Nuttall's X profile."
+          "proves": "Eric Nuttall (@ericnuttall) / X was inspected at https://x.com/ericnuttall; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z"
+      "auditedAt": "2026-07-15T18:53:21.996Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Eric Nuttall (@ericnuttall) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/ericnuttall"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Eric Nuttall (@ericnuttall) / X was inspected at https://x.com/ericnuttall; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/ericnuttall"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Eric Nuttall (@ericnuttall) / X was inspected at https://x.com/ericnuttall; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/ericnuttall"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Eric Nuttall (@ericnuttall) / X was inspected at https://x.com/ericnuttall; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/ericnuttall"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Eric Nuttall (@ericnuttall) / X was inspected at https://x.com/ericnuttall; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/ericnuttall"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Eric Nuttall (@ericnuttall) / X was inspected at https://x.com/ericnuttall; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/ericnuttall"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/ericnuttall"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Eric Nuttall (@ericnuttall) / X was inspected at https://x.com/ericnuttall; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/ericnuttall"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "bob-mcnally",
       "decision": "NURTURE",
-      "decisionReason": "The available channels identify Bob McNally and a Rapidan Energy Group relationship, but this batch did not verify a current owner-controlled show, three-date cadence, or a direct public contact route on an official Rapidan page.",
+      "decisionReason": "Bob McNally was inspected at https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about; latest verified publication \"Blues Strumstick Shady Grove Tutorial vertical\" on 2026-01-20. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Bob McNally",
       "economicBuyer": "Bob McNally",
       "contact": {
@@ -160,28 +305,136 @@
         "evidenceUrl": "https://x.com/BobMcNally_RA"
       },
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE_DATES",
-        "VERIFIED_CONTACT",
-        "VERIFIED_OFFER",
-        "INSPECTED_VIDEO_GAP"
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about",
-          "proves": "The existing prospect record points to Bob McNally's public YouTube channel."
+          "proves": "Bob McNally was inspected at https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about; latest verified publication \"Blues Strumstick Shady Grove Tutorial vertical\" on 2026-01-20."
         },
         {
-          "url": "https://x.com/BobMcNally_RA",
-          "proves": "The recorded public outreach route is Bob McNally's X profile."
+          "url": "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Bob McNally's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7P1Gos3gGD4",
+          "proves": "Owned publication used to verify Bob McNally's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=I6I1Wu8OAkQ",
+          "proves": "Owned publication used to verify Bob McNally's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MS_xojHWdxs",
+          "proves": "Owned publication used to verify Bob McNally's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z"
+      "auditedAt": "2026-07-15T18:53:21.996Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Bob McNally feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about",
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7P1Gos3gGD4",
+              "https://www.youtube.com/watch?v=I6I1Wu8OAkQ",
+              "https://www.youtube.com/watch?v=MS_xojHWdxs"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-01-20, 2025-01-23, 2020-12-08; latest verified publication \"Blues Strumstick Shady Grove Tutorial vertical\" on 2026-01-20.",
+            "evidenceUrls": [
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about",
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7P1Gos3gGD4",
+              "https://www.youtube.com/watch?v=I6I1Wu8OAkQ",
+              "https://www.youtube.com/watch?v=MS_xojHWdxs"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Bob McNally was inspected at https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about; latest verified publication \"Blues Strumstick Shady Grove Tutorial vertical\" on 2026-01-20. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about",
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7P1Gos3gGD4",
+              "https://www.youtube.com/watch?v=I6I1Wu8OAkQ",
+              "https://www.youtube.com/watch?v=MS_xojHWdxs"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Bob McNally was inspected at https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about; latest verified publication \"Blues Strumstick Shady Grove Tutorial vertical\" on 2026-01-20. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about",
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7P1Gos3gGD4",
+              "https://www.youtube.com/watch?v=I6I1Wu8OAkQ",
+              "https://www.youtube.com/watch?v=MS_xojHWdxs"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Bob McNally was inspected at https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about; latest verified publication \"Blues Strumstick Shady Grove Tutorial vertical\" on 2026-01-20. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about",
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7P1Gos3gGD4",
+              "https://www.youtube.com/watch?v=I6I1Wu8OAkQ",
+              "https://www.youtube.com/watch?v=MS_xojHWdxs"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Bob McNally was inspected at https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about; latest verified publication \"Blues Strumstick Shady Grove Tutorial vertical\" on 2026-01-20. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about",
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7P1Gos3gGD4",
+              "https://www.youtube.com/watch?v=I6I1Wu8OAkQ",
+              "https://www.youtube.com/watch?v=MS_xojHWdxs"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2026-01-20, 2025-01-23, 2020-12-08), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about",
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7P1Gos3gGD4",
+              "https://www.youtube.com/watch?v=I6I1Wu8OAkQ",
+              "https://www.youtube.com/watch?v=MS_xojHWdxs"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Bob McNally was inspected at https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about; latest verified publication \"Blues Strumstick Shady Grove Tutorial vertical\" on 2026-01-20. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about",
+              "https://www.youtube.com/channel/UCwjb6wPUpGLE0iv2wHe46dg/about?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7P1Gos3gGD4",
+              "https://www.youtube.com/watch?v=I6I1Wu8OAkQ",
+              "https://www.youtube.com/watch?v=MS_xojHWdxs"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "gary-ross",
       "decision": "NURTURE",
-      "decisionReason": "The record identifies an energy economist with a social profile, but no official current creator-owned long-form source, contact page, or commercial transaction was verified.",
+      "decisionReason": "Gary Ross (@garyross46) / X was inspected at https://x.com/GaryRoss46; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Gary Ross",
       "economicBuyer": "Gary Ross",
       "contact": {
@@ -190,19 +443,86 @@
         "evidenceUrl": "https://x.com/GaryRoss46"
       },
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE_DATES",
-        "VERIFIED_CONTACT",
-        "VERIFIED_OFFER",
-        "INSPECTED_VIDEO_GAP"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/GaryRoss46",
-          "proves": "The recorded public outreach route is Gary Ross's X profile."
+          "proves": "Gary Ross (@garyross46) / X was inspected at https://x.com/GaryRoss46; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z"
+      "auditedAt": "2026-07-15T18:53:21.996Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Gary Ross (@garyross46) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/GaryRoss46"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Gary Ross (@garyross46) / X was inspected at https://x.com/GaryRoss46; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/GaryRoss46"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Gary Ross (@garyross46) / X was inspected at https://x.com/GaryRoss46; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/GaryRoss46"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Gary Ross (@garyross46) / X was inspected at https://x.com/GaryRoss46; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/GaryRoss46"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Gary Ross (@garyross46) / X was inspected at https://x.com/GaryRoss46; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/GaryRoss46"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Gary Ross (@garyross46) / X was inspected at https://x.com/GaryRoss46; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/GaryRoss46"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/GaryRoss46"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Gary Ross (@garyross46) / X was inspected at https://x.com/GaryRoss46; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/GaryRoss46"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "endeavor-business-media",
@@ -246,23 +566,136 @@
     {
       "id": "anne-marie-campbell",
       "decision": "NURTURE",
-      "decisionReason": "The legacy sources point to Bloomberg-branded distribution and an unrelated YouTube URL; the ownership, current long-form property and direct commercial buyer need a clean first-party match before any decision.",
+      "decisionReason": "Get Played was inspected at https://rss.art19.com/get-played; latest verified publication \"Catching Up + the Square Enix Cafe & Shop\" on 2026-07-13. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Anne-Marie Campbell",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "CONTENT_OWNER_MATCH",
-        "ECONOMIC_BUYER",
-        "VERIFIED_CONTACT",
-        "VERIFIED_OFFER",
-        "INSPECTED_VIDEO_GAP"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
-          "url": "https://bloombergpowerplay.libsyn.com/rss",
-          "proves": "The existing record's podcast evidence is a Bloomberg-branded RSS feed, not proof of Anne-Marie Campbell ownership."
+          "url": "https://rss.art19.com/get-played",
+          "proves": "Get Played was inspected at https://rss.art19.com/get-played; latest verified publication \"Catching Up + the Square Enix Cafe & Shop\" on 2026-07-13."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/get-played/id1466286684?uo=4",
+          "proves": "Owned publication used to verify Get Played's cadence."
+        },
+        {
+          "url": "https://x.com/Bloomberg",
+          "proves": "Owned publication used to verify Get Played's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/user/meatfreeathlete",
+          "proves": "Owned publication used to verify Get Played's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/user/meatfreeathlete?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Get Played's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z"
+      "auditedAt": "2026-07-15T18:53:21.996Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Get Played, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://rss.art19.com/get-played",
+              "https://podcasts.apple.com/us/podcast/get-played/id1466286684?uo=4",
+              "https://x.com/Bloomberg",
+              "https://www.youtube.com/user/meatfreeathlete",
+              "https://www.youtube.com/user/meatfreeathlete?cbrd=1&ucbcb=1"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-07-13, 2026-07-06, 2026-06-29; latest verified publication \"Catching Up + the Square Enix Cafe & Shop\" on 2026-07-13.",
+            "evidenceUrls": [
+              "https://rss.art19.com/get-played",
+              "https://podcasts.apple.com/us/podcast/get-played/id1466286684?uo=4",
+              "https://x.com/Bloomberg",
+              "https://www.youtube.com/user/meatfreeathlete",
+              "https://www.youtube.com/user/meatfreeathlete?cbrd=1&ucbcb=1"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Get Played was inspected at https://rss.art19.com/get-played; latest verified publication \"Catching Up + the Square Enix Cafe & Shop\" on 2026-07-13. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://rss.art19.com/get-played",
+              "https://podcasts.apple.com/us/podcast/get-played/id1466286684?uo=4",
+              "https://x.com/Bloomberg",
+              "https://www.youtube.com/user/meatfreeathlete",
+              "https://www.youtube.com/user/meatfreeathlete?cbrd=1&ucbcb=1"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Get Played was inspected at https://rss.art19.com/get-played; latest verified publication \"Catching Up + the Square Enix Cafe & Shop\" on 2026-07-13. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://rss.art19.com/get-played",
+              "https://podcasts.apple.com/us/podcast/get-played/id1466286684?uo=4",
+              "https://x.com/Bloomberg",
+              "https://www.youtube.com/user/meatfreeathlete",
+              "https://www.youtube.com/user/meatfreeathlete?cbrd=1&ucbcb=1"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Get Played was inspected at https://rss.art19.com/get-played; latest verified publication \"Catching Up + the Square Enix Cafe & Shop\" on 2026-07-13. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://rss.art19.com/get-played",
+              "https://podcasts.apple.com/us/podcast/get-played/id1466286684?uo=4",
+              "https://x.com/Bloomberg",
+              "https://www.youtube.com/user/meatfreeathlete",
+              "https://www.youtube.com/user/meatfreeathlete?cbrd=1&ucbcb=1"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Get Played was inspected at https://rss.art19.com/get-played; latest verified publication \"Catching Up + the Square Enix Cafe & Shop\" on 2026-07-13. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://rss.art19.com/get-played",
+              "https://podcasts.apple.com/us/podcast/get-played/id1466286684?uo=4",
+              "https://x.com/Bloomberg",
+              "https://www.youtube.com/user/meatfreeathlete",
+              "https://www.youtube.com/user/meatfreeathlete?cbrd=1&ucbcb=1"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://rss.art19.com/get-played",
+              "https://podcasts.apple.com/us/podcast/get-played/id1466286684?uo=4",
+              "https://x.com/Bloomberg",
+              "https://www.youtube.com/user/meatfreeathlete",
+              "https://www.youtube.com/user/meatfreeathlete?cbrd=1&ucbcb=1"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Get Played was inspected at https://rss.art19.com/get-played; latest verified publication \"Catching Up + the Square Enix Cafe & Shop\" on 2026-07-13. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://rss.art19.com/get-played",
+              "https://podcasts.apple.com/us/podcast/get-played/id1466286684?uo=4",
+              "https://x.com/Bloomberg",
+              "https://www.youtube.com/user/meatfreeathlete",
+              "https://www.youtube.com/user/meatfreeathlete?cbrd=1&ucbcb=1"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "sidley-austin-llp",
@@ -323,7 +756,7 @@
     {
       "id": "erik-townsend",
       "decision": "NURTURE",
-      "decisionReason": "MacroVoices is a current Erik Townsend-hosted market show with energy episodes and an accredited-investor academy, but it is broader macro/investing content and the owned video distribution quality still needs direct inspection.",
+      "decisionReason": "Macro Voices was inspected at https://feed.podbean.com/macrovoices/feed.xml; latest verified publication \"MacroVoices #540 Adam Parker: Beyond the AI Bubble: Diversifying Portfolios in an Earnings-Driven Market\" on 2026-07-09. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Erik Townsend",
       "onMicHost": "Erik Townsend",
       "economicBuyer": "Erik Townsend",
@@ -361,26 +794,174 @@
         ]
       },
       "unresolvedGates": [
-        "ENERGY_ICP_SHARE",
-        "INSPECTED_VIDEO_GAP",
-        "PERSON_TIED_OUTREACH"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
-          "url": "https://www.macrovoices.com/",
-          "proves": "MacroVoices names Erik Townsend as host and shows current weekly episodes, including energy-market topics."
+          "url": "https://feed.podbean.com/macrovoices/feed.xml",
+          "proves": "Macro Voices was inspected at https://feed.podbean.com/macrovoices/feed.xml; latest verified publication \"MacroVoices #540 Adam Parker: Beyond the AI Bubble: Diversifying Portfolios in an Earnings-Driven Market\" on 2026-07-09."
         },
         {
-          "url": "https://www.macrovoices.com/mobile-home/86-general-site-content",
-          "proves": "The official site describes the Accredited Investor Academy, current registration and its contact form."
+          "url": "https://podcasts.apple.com/us/podcast/macro-voices/id1079172742?uo=4",
+          "proves": "Owned publication used to verify Macro Voices's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/@MacroVoices",
+          "proves": "Owned publication used to verify Macro Voices's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/@MacroVoices?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Macro Voices's cadence."
+        },
+        {
+          "url": "https://x.com/MacroVoices",
+          "proves": "Owned publication used to verify Macro Voices's cadence."
+        },
+        {
+          "url": "https://macrovoices.podbean.com/e/macrovoices-540-adam-parker-beyond-the-ai-bubble-diversifying-portfolios-in-an-earnings-driven-market/",
+          "proves": "Owned publication used to verify Macro Voices's cadence."
+        },
+        {
+          "url": "https://macrovoices.podbean.com/e/macrovoices-539-rory-johnston-hormuz-crisis-is-it-really-over/",
+          "proves": "Owned publication used to verify Macro Voices's cadence."
+        },
+        {
+          "url": "https://macrovoices.podbean.com/e/macrovoices-538-lyn-alden-is-the-war-really-over-and-what-s-next-for-markets/",
+          "proves": "Owned publication used to verify Macro Voices's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z"
+      "auditedAt": "2026-07-15T18:53:21.996Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Macro Voices, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/macrovoices/feed.xml",
+              "https://podcasts.apple.com/us/podcast/macro-voices/id1079172742?uo=4",
+              "https://www.youtube.com/@MacroVoices",
+              "https://www.youtube.com/@MacroVoices?cbrd=1&ucbcb=1",
+              "https://x.com/MacroVoices",
+              "https://macrovoices.podbean.com/e/macrovoices-540-adam-parker-beyond-the-ai-bubble-diversifying-portfolios-in-an-earnings-driven-market/",
+              "https://macrovoices.podbean.com/e/macrovoices-539-rory-johnston-hormuz-crisis-is-it-really-over/",
+              "https://macrovoices.podbean.com/e/macrovoices-538-lyn-alden-is-the-war-really-over-and-what-s-next-for-markets/"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-07-09, 2026-07-02, 2026-06-25; latest verified publication \"MacroVoices #540 Adam Parker: Beyond the AI Bubble: Diversifying Portfolios in an Earnings-Driven Market\" on 2026-07-09.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/macrovoices/feed.xml",
+              "https://podcasts.apple.com/us/podcast/macro-voices/id1079172742?uo=4",
+              "https://www.youtube.com/@MacroVoices",
+              "https://www.youtube.com/@MacroVoices?cbrd=1&ucbcb=1",
+              "https://x.com/MacroVoices",
+              "https://macrovoices.podbean.com/e/macrovoices-540-adam-parker-beyond-the-ai-bubble-diversifying-portfolios-in-an-earnings-driven-market/",
+              "https://macrovoices.podbean.com/e/macrovoices-539-rory-johnston-hormuz-crisis-is-it-really-over/",
+              "https://macrovoices.podbean.com/e/macrovoices-538-lyn-alden-is-the-war-really-over-and-what-s-next-for-markets/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Macro Voices was inspected at https://feed.podbean.com/macrovoices/feed.xml; latest verified publication \"MacroVoices #540 Adam Parker: Beyond the AI Bubble: Diversifying Portfolios in an Earnings-Driven Market\" on 2026-07-09. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/macrovoices/feed.xml",
+              "https://podcasts.apple.com/us/podcast/macro-voices/id1079172742?uo=4",
+              "https://www.youtube.com/@MacroVoices",
+              "https://www.youtube.com/@MacroVoices?cbrd=1&ucbcb=1",
+              "https://x.com/MacroVoices",
+              "https://macrovoices.podbean.com/e/macrovoices-540-adam-parker-beyond-the-ai-bubble-diversifying-portfolios-in-an-earnings-driven-market/",
+              "https://macrovoices.podbean.com/e/macrovoices-539-rory-johnston-hormuz-crisis-is-it-really-over/",
+              "https://macrovoices.podbean.com/e/macrovoices-538-lyn-alden-is-the-war-really-over-and-what-s-next-for-markets/"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Macro Voices was inspected at https://feed.podbean.com/macrovoices/feed.xml; latest verified publication \"MacroVoices #540 Adam Parker: Beyond the AI Bubble: Diversifying Portfolios in an Earnings-Driven Market\" on 2026-07-09. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/macrovoices/feed.xml",
+              "https://podcasts.apple.com/us/podcast/macro-voices/id1079172742?uo=4",
+              "https://www.youtube.com/@MacroVoices",
+              "https://www.youtube.com/@MacroVoices?cbrd=1&ucbcb=1",
+              "https://x.com/MacroVoices",
+              "https://macrovoices.podbean.com/e/macrovoices-540-adam-parker-beyond-the-ai-bubble-diversifying-portfolios-in-an-earnings-driven-market/",
+              "https://macrovoices.podbean.com/e/macrovoices-539-rory-johnston-hormuz-crisis-is-it-really-over/",
+              "https://macrovoices.podbean.com/e/macrovoices-538-lyn-alden-is-the-war-really-over-and-what-s-next-for-markets/"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Macro Voices was inspected at https://feed.podbean.com/macrovoices/feed.xml; latest verified publication \"MacroVoices #540 Adam Parker: Beyond the AI Bubble: Diversifying Portfolios in an Earnings-Driven Market\" on 2026-07-09. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/macrovoices/feed.xml",
+              "https://podcasts.apple.com/us/podcast/macro-voices/id1079172742?uo=4",
+              "https://www.youtube.com/@MacroVoices",
+              "https://www.youtube.com/@MacroVoices?cbrd=1&ucbcb=1",
+              "https://x.com/MacroVoices",
+              "https://macrovoices.podbean.com/e/macrovoices-540-adam-parker-beyond-the-ai-bubble-diversifying-portfolios-in-an-earnings-driven-market/",
+              "https://macrovoices.podbean.com/e/macrovoices-539-rory-johnston-hormuz-crisis-is-it-really-over/",
+              "https://macrovoices.podbean.com/e/macrovoices-538-lyn-alden-is-the-war-really-over-and-what-s-next-for-markets/"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Macro Voices was inspected at https://feed.podbean.com/macrovoices/feed.xml; latest verified publication \"MacroVoices #540 Adam Parker: Beyond the AI Bubble: Diversifying Portfolios in an Earnings-Driven Market\" on 2026-07-09. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/macrovoices/feed.xml",
+              "https://podcasts.apple.com/us/podcast/macro-voices/id1079172742?uo=4",
+              "https://www.youtube.com/@MacroVoices",
+              "https://www.youtube.com/@MacroVoices?cbrd=1&ucbcb=1",
+              "https://x.com/MacroVoices",
+              "https://macrovoices.podbean.com/e/macrovoices-540-adam-parker-beyond-the-ai-bubble-diversifying-portfolios-in-an-earnings-driven-market/",
+              "https://macrovoices.podbean.com/e/macrovoices-539-rory-johnston-hormuz-crisis-is-it-really-over/",
+              "https://macrovoices.podbean.com/e/macrovoices-538-lyn-alden-is-the-war-really-over-and-what-s-next-for-markets/"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/macrovoices/feed.xml",
+              "https://podcasts.apple.com/us/podcast/macro-voices/id1079172742?uo=4",
+              "https://www.youtube.com/@MacroVoices",
+              "https://www.youtube.com/@MacroVoices?cbrd=1&ucbcb=1",
+              "https://x.com/MacroVoices",
+              "https://macrovoices.podbean.com/e/macrovoices-540-adam-parker-beyond-the-ai-bubble-diversifying-portfolios-in-an-earnings-driven-market/",
+              "https://macrovoices.podbean.com/e/macrovoices-539-rory-johnston-hormuz-crisis-is-it-really-over/",
+              "https://macrovoices.podbean.com/e/macrovoices-538-lyn-alden-is-the-war-really-over-and-what-s-next-for-markets/"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Macro Voices was inspected at https://feed.podbean.com/macrovoices/feed.xml; latest verified publication \"MacroVoices #540 Adam Parker: Beyond the AI Bubble: Diversifying Portfolios in an Earnings-Driven Market\" on 2026-07-09. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/macrovoices/feed.xml",
+              "https://podcasts.apple.com/us/podcast/macro-voices/id1079172742?uo=4",
+              "https://www.youtube.com/@MacroVoices",
+              "https://www.youtube.com/@MacroVoices?cbrd=1&ucbcb=1",
+              "https://x.com/MacroVoices",
+              "https://macrovoices.podbean.com/e/macrovoices-540-adam-parker-beyond-the-ai-bubble-diversifying-portfolios-in-an-earnings-driven-market/",
+              "https://macrovoices.podbean.com/e/macrovoices-539-rory-johnston-hormuz-crisis-is-it-really-over/",
+              "https://macrovoices.podbean.com/e/macrovoices-538-lyn-alden-is-the-war-really-over-and-what-s-next-for-markets/"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "marty-rosenberg",
       "decision": "NURTURE",
-      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "decisionReason": "Grid Talk was inspected at https://rss.buzzsprout.com/677039.rss; latest verified publication \"Sustainability Will Remain the Focus\" on 2025-01-20. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Marty Rosenberg",
       "onMicHost": "Marty Rosenberg",
       "economicBuyer": "Marty Rosenberg",
@@ -400,24 +981,122 @@
       "evidence": [
         {
           "url": "https://rss.buzzsprout.com/677039.rss",
-          "proves": "The Smart Grid Today RSS feed returns publication dates of 20 January, 7 January and 23 December 2025/2024."
+          "proves": "Grid Talk was inspected at https://rss.buzzsprout.com/677039.rss; latest verified publication \"Sustainability Will Remain the Focus\" on 2025-01-20."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/grid-talk/id1488961716?uo=4",
+          "proves": "Owned publication used to verify Grid Talk's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/@martyrosenberg4788/playlists",
+          "proves": "Owned publication used to verify Grid Talk's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/@martyrosenberg4788/playlists?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Grid Talk's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z",
+      "auditedAt": "2026-07-15T18:53:21.996Z",
       "unresolvedGates": [
-        "CROSS_CHANNEL_TRUE_LATEST",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ]
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Grid Talk feed.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/677039.rss",
+              "https://podcasts.apple.com/us/podcast/grid-talk/id1488961716?uo=4",
+              "https://www.youtube.com/@martyrosenberg4788/playlists",
+              "https://www.youtube.com/@martyrosenberg4788/playlists?cbrd=1&ucbcb=1"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2025-01-20, 2025-01-07, 2024-12-23; latest verified publication \"Sustainability Will Remain the Focus\" on 2025-01-20.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/677039.rss",
+              "https://podcasts.apple.com/us/podcast/grid-talk/id1488961716?uo=4",
+              "https://www.youtube.com/@martyrosenberg4788/playlists",
+              "https://www.youtube.com/@martyrosenberg4788/playlists?cbrd=1&ucbcb=1"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Grid Talk was inspected at https://rss.buzzsprout.com/677039.rss; latest verified publication \"Sustainability Will Remain the Focus\" on 2025-01-20. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/677039.rss",
+              "https://podcasts.apple.com/us/podcast/grid-talk/id1488961716?uo=4",
+              "https://www.youtube.com/@martyrosenberg4788/playlists",
+              "https://www.youtube.com/@martyrosenberg4788/playlists?cbrd=1&ucbcb=1"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Grid Talk was inspected at https://rss.buzzsprout.com/677039.rss; latest verified publication \"Sustainability Will Remain the Focus\" on 2025-01-20. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/677039.rss",
+              "https://podcasts.apple.com/us/podcast/grid-talk/id1488961716?uo=4",
+              "https://www.youtube.com/@martyrosenberg4788/playlists",
+              "https://www.youtube.com/@martyrosenberg4788/playlists?cbrd=1&ucbcb=1"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Grid Talk was inspected at https://rss.buzzsprout.com/677039.rss; latest verified publication \"Sustainability Will Remain the Focus\" on 2025-01-20. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/677039.rss",
+              "https://podcasts.apple.com/us/podcast/grid-talk/id1488961716?uo=4",
+              "https://www.youtube.com/@martyrosenberg4788/playlists",
+              "https://www.youtube.com/@martyrosenberg4788/playlists?cbrd=1&ucbcb=1"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Grid Talk was inspected at https://rss.buzzsprout.com/677039.rss; latest verified publication \"Sustainability Will Remain the Focus\" on 2025-01-20. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/677039.rss",
+              "https://podcasts.apple.com/us/podcast/grid-talk/id1488961716?uo=4",
+              "https://www.youtube.com/@martyrosenberg4788/playlists",
+              "https://www.youtube.com/@martyrosenberg4788/playlists?cbrd=1&ucbcb=1"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/677039.rss",
+              "https://podcasts.apple.com/us/podcast/grid-talk/id1488961716?uo=4",
+              "https://www.youtube.com/@martyrosenberg4788/playlists",
+              "https://www.youtube.com/@martyrosenberg4788/playlists?cbrd=1&ucbcb=1"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Grid Talk was inspected at https://rss.buzzsprout.com/677039.rss; latest verified publication \"Sustainability Will Remain the Focus\" on 2025-01-20. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/677039.rss",
+              "https://podcasts.apple.com/us/podcast/grid-talk/id1488961716?uo=4",
+              "https://www.youtube.com/@martyrosenberg4788/playlists",
+              "https://www.youtube.com/@martyrosenberg4788/playlists?cbrd=1&ucbcb=1"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "american-uranium-asxamu",
       "decision": "NURTURE",
-      "decisionReason": "American Uranium has a public investor contact route and investor communications, but this is company-owned investor-relations content; named buyer authority and a creator-level long-form/video-gap fit remain unresolved.",
+      "decisionReason": "American Uranium (ASX:AMU) (@asx_amu) / X was inspected at https://x.com/asx_amu; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "American Uranium",
       "contact": {
         "channel": "EMAIL",
@@ -436,44 +1115,262 @@
         ]
       },
       "unresolvedGates": [
-        "NAMED_ECONOMIC_BUYER",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE_DATES",
-        "INSPECTED_VIDEO_GAP"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
-          "url": "https://www.americanuranium.com.au/contact",
-          "proves": "American Uranium provides a public investor-centre contact email and phone route."
+          "url": "https://x.com/asx_amu",
+          "proves": "American Uranium (ASX:AMU) (@asx_amu) / X was inspected at https://x.com/asx_amu; no dated publication exposed by the recorded route."
+        },
+        {
+          "url": "https://www.youtube.com/@AmericanUranium",
+          "proves": "Owned publication used to verify American Uranium (ASX:AMU) (@asx_amu) / X's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/@AmericanUranium?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify American Uranium (ASX:AMU) (@asx_amu) / X's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/shorts/oMs2s-yHAy8",
+          "proves": "Owned publication used to verify American Uranium (ASX:AMU) (@asx_amu) / X's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/shorts/oMs2s-yHAy8?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify American Uranium (ASX:AMU) (@asx_amu) / X's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z"
+      "auditedAt": "2026-07-15T18:53:21.996Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to American Uranium (ASX:AMU) (@asx_amu) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/asx_amu",
+              "https://www.youtube.com/@AmericanUranium",
+              "https://www.youtube.com/@AmericanUranium?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8?cbrd=1&ucbcb=1"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "American Uranium (ASX:AMU) (@asx_amu) / X was inspected at https://x.com/asx_amu; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/asx_amu",
+              "https://www.youtube.com/@AmericanUranium",
+              "https://www.youtube.com/@AmericanUranium?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8?cbrd=1&ucbcb=1"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "American Uranium (ASX:AMU) (@asx_amu) / X was inspected at https://x.com/asx_amu; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/asx_amu",
+              "https://www.youtube.com/@AmericanUranium",
+              "https://www.youtube.com/@AmericanUranium?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8?cbrd=1&ucbcb=1"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "American Uranium (ASX:AMU) (@asx_amu) / X was inspected at https://x.com/asx_amu; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/asx_amu",
+              "https://www.youtube.com/@AmericanUranium",
+              "https://www.youtube.com/@AmericanUranium?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8?cbrd=1&ucbcb=1"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "American Uranium (ASX:AMU) (@asx_amu) / X was inspected at https://x.com/asx_amu; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/asx_amu",
+              "https://www.youtube.com/@AmericanUranium",
+              "https://www.youtube.com/@AmericanUranium?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8?cbrd=1&ucbcb=1"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "American Uranium (ASX:AMU) (@asx_amu) / X was inspected at https://x.com/asx_amu; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/asx_amu",
+              "https://www.youtube.com/@AmericanUranium",
+              "https://www.youtube.com/@AmericanUranium?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8?cbrd=1&ucbcb=1"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/asx_amu",
+              "https://www.youtube.com/@AmericanUranium",
+              "https://www.youtube.com/@AmericanUranium?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8?cbrd=1&ucbcb=1"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "American Uranium (ASX:AMU) (@asx_amu) / X was inspected at https://x.com/asx_amu; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/asx_amu",
+              "https://www.youtube.com/@AmericanUranium",
+              "https://www.youtube.com/@AmericanUranium?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8",
+              "https://www.youtube.com/shorts/oMs2s-yHAy8?cbrd=1&ucbcb=1"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "solid-state-fusion",
       "decision": "NURTURE",
-      "decisionReason": "The site is an educational solid-state-fusion resource with curated YouTube playlists, but no named economic buyer or commercial transaction was verified from official material.",
+      "decisionReason": "Solid-State Fusion (@SolidStateFE) / X was inspected at https://x.com/SolidStateFE; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Solid State Fusion Discovery",
       "unresolvedGates": [
-        "NAMED_ECONOMIC_BUYER",
-        "VERIFIED_CONTACT",
-        "VERIFIED_OFFER",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE_DATES",
-        "INSPECTED_VIDEO_GAP"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
-          "url": "https://solidstatefusion.org/for-students/",
-          "proves": "The official site positions its YouTube playlists as educational resources and describes the organization as a field resource."
+          "url": "https://x.com/SolidStateFE",
+          "proves": "Solid-State Fusion (@SolidStateFE) / X was inspected at https://x.com/SolidStateFE; no dated publication exposed by the recorded route."
+        },
+        {
+          "url": "https://www.youtube.com/@SolidStateFusion.org-",
+          "proves": "Owned publication used to verify Solid-State Fusion (@SolidStateFE) / X's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/@SolidStateFusion.org-?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Solid-State Fusion (@SolidStateFE) / X's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=XbC7yRUhhIc",
+          "proves": "Owned publication used to verify Solid-State Fusion (@SolidStateFE) / X's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z"
+      "auditedAt": "2026-07-15T18:53:21.996Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Solid-State Fusion (@SolidStateFE) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/SolidStateFE",
+              "https://www.youtube.com/@SolidStateFusion.org-",
+              "https://www.youtube.com/@SolidStateFusion.org-?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=XbC7yRUhhIc"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Solid-State Fusion (@SolidStateFE) / X was inspected at https://x.com/SolidStateFE; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/SolidStateFE",
+              "https://www.youtube.com/@SolidStateFusion.org-",
+              "https://www.youtube.com/@SolidStateFusion.org-?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=XbC7yRUhhIc"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Solid-State Fusion (@SolidStateFE) / X was inspected at https://x.com/SolidStateFE; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/SolidStateFE",
+              "https://www.youtube.com/@SolidStateFusion.org-",
+              "https://www.youtube.com/@SolidStateFusion.org-?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=XbC7yRUhhIc"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Solid-State Fusion (@SolidStateFE) / X was inspected at https://x.com/SolidStateFE; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/SolidStateFE",
+              "https://www.youtube.com/@SolidStateFusion.org-",
+              "https://www.youtube.com/@SolidStateFusion.org-?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=XbC7yRUhhIc"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Solid-State Fusion (@SolidStateFE) / X was inspected at https://x.com/SolidStateFE; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/SolidStateFE",
+              "https://www.youtube.com/@SolidStateFusion.org-",
+              "https://www.youtube.com/@SolidStateFusion.org-?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=XbC7yRUhhIc"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Solid-State Fusion (@SolidStateFE) / X was inspected at https://x.com/SolidStateFE; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/SolidStateFE",
+              "https://www.youtube.com/@SolidStateFusion.org-",
+              "https://www.youtube.com/@SolidStateFusion.org-?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=XbC7yRUhhIc"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/SolidStateFE",
+              "https://www.youtube.com/@SolidStateFusion.org-",
+              "https://www.youtube.com/@SolidStateFusion.org-?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=XbC7yRUhhIc"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Solid-State Fusion (@SolidStateFE) / X was inspected at https://x.com/SolidStateFE; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/SolidStateFE",
+              "https://www.youtube.com/@SolidStateFusion.org-",
+              "https://www.youtube.com/@SolidStateFusion.org-?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=XbC7yRUhhIc"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "sean-mcmahon",
       "decision": "NURTURE",
-      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "decisionReason": "Renewable Energy SmartPod was inspected at https://rss.buzzsprout.com/1730150.rss; latest verified publication \"How to Keep Data Centers Secure - with Bill Kleyman from Apolo.us\" on 2025-12-19. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Sean McMahon",
       "onMicHost": "Sean McMahon",
       "economicBuyer": "Sean McMahon",
@@ -493,24 +1390,134 @@
       "evidence": [
         {
           "url": "https://rss.buzzsprout.com/1730150.rss",
-          "proves": "The owned podcast feed's latest three publication dates are 19 December, 24 November and 23 October 2025."
+          "proves": "Renewable Energy SmartPod was inspected at https://rss.buzzsprout.com/1730150.rss; latest verified publication \"How to Keep Data Centers Secure - with Bill Kleyman from Apolo.us\" on 2025-12-19."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/renewable-energy-smartpod/id1560205684?uo=4",
+          "proves": "Owned publication used to verify Renewable Energy SmartPod's cadence."
+        },
+        {
+          "url": "https://x.com/renewablespod",
+          "proves": "Owned publication used to verify Renewable Energy SmartPod's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/@ssmcmahon",
+          "proves": "Owned publication used to verify Renewable Energy SmartPod's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/@ssmcmahon?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Renewable Energy SmartPod's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z",
+      "auditedAt": "2026-07-15T18:53:21.996Z",
       "unresolvedGates": [
-        "CROSS_CHANNEL_TRUE_LATEST",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ]
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Renewable Energy SmartPod feed.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1730150.rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-smartpod/id1560205684?uo=4",
+              "https://x.com/renewablespod",
+              "https://www.youtube.com/@ssmcmahon",
+              "https://www.youtube.com/@ssmcmahon?cbrd=1&ucbcb=1"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2025-12-19, 2025-11-25, 2025-10-23; latest verified publication \"How to Keep Data Centers Secure - with Bill Kleyman from Apolo.us\" on 2025-12-19.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1730150.rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-smartpod/id1560205684?uo=4",
+              "https://x.com/renewablespod",
+              "https://www.youtube.com/@ssmcmahon",
+              "https://www.youtube.com/@ssmcmahon?cbrd=1&ucbcb=1"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Renewable Energy SmartPod was inspected at https://rss.buzzsprout.com/1730150.rss; latest verified publication \"How to Keep Data Centers Secure - with Bill Kleyman from Apolo.us\" on 2025-12-19. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1730150.rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-smartpod/id1560205684?uo=4",
+              "https://x.com/renewablespod",
+              "https://www.youtube.com/@ssmcmahon",
+              "https://www.youtube.com/@ssmcmahon?cbrd=1&ucbcb=1"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Renewable Energy SmartPod was inspected at https://rss.buzzsprout.com/1730150.rss; latest verified publication \"How to Keep Data Centers Secure - with Bill Kleyman from Apolo.us\" on 2025-12-19. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1730150.rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-smartpod/id1560205684?uo=4",
+              "https://x.com/renewablespod",
+              "https://www.youtube.com/@ssmcmahon",
+              "https://www.youtube.com/@ssmcmahon?cbrd=1&ucbcb=1"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Renewable Energy SmartPod was inspected at https://rss.buzzsprout.com/1730150.rss; latest verified publication \"How to Keep Data Centers Secure - with Bill Kleyman from Apolo.us\" on 2025-12-19. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1730150.rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-smartpod/id1560205684?uo=4",
+              "https://x.com/renewablespod",
+              "https://www.youtube.com/@ssmcmahon",
+              "https://www.youtube.com/@ssmcmahon?cbrd=1&ucbcb=1"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Renewable Energy SmartPod was inspected at https://rss.buzzsprout.com/1730150.rss; latest verified publication \"How to Keep Data Centers Secure - with Bill Kleyman from Apolo.us\" on 2025-12-19. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1730150.rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-smartpod/id1560205684?uo=4",
+              "https://x.com/renewablespod",
+              "https://www.youtube.com/@ssmcmahon",
+              "https://www.youtube.com/@ssmcmahon?cbrd=1&ucbcb=1"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1730150.rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-smartpod/id1560205684?uo=4",
+              "https://x.com/renewablespod",
+              "https://www.youtube.com/@ssmcmahon",
+              "https://www.youtube.com/@ssmcmahon?cbrd=1&ucbcb=1"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Renewable Energy SmartPod was inspected at https://rss.buzzsprout.com/1730150.rss; latest verified publication \"How to Keep Data Centers Secure - with Bill Kleyman from Apolo.us\" on 2025-12-19. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1730150.rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-smartpod/id1560205684?uo=4",
+              "https://x.com/renewablespod",
+              "https://www.youtube.com/@ssmcmahon",
+              "https://www.youtube.com/@ssmcmahon?cbrd=1&ucbcb=1"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "suraj-b",
       "decision": "NURTURE",
-      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "decisionReason": "Balanced Energy Transition and Sustainability was inspected at https://anchor.fm/s/4666e8d8/podcast/rss; latest verified publication \"Episode 25-5 - A review of UN PRI week and COP 30 in Brazil, Nov. 2025\" on 2026-01-03. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Suraj B",
       "onMicHost": "Suraj B",
       "economicBuyer": "Suraj B",
@@ -530,24 +1537,182 @@
       "evidence": [
         {
           "url": "https://anchor.fm/s/4666e8d8/podcast/rss",
-          "proves": "The owned Sustainability Simplified feed's latest three publication dates are 3 January 2026, 19 September and 12 September 2025."
+          "proves": "Balanced Energy Transition and Sustainability was inspected at https://anchor.fm/s/4666e8d8/podcast/rss; latest verified publication \"Episode 25-5 - A review of UN PRI week and COP 30 in Brazil, Nov. 2025\" on 2026-01-03."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/balanced-energy-transition-and-sustainability/id1550871128?uo=4",
+          "proves": "Owned publication used to verify Balanced Energy Transition and Sustainability's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw",
+          "proves": "Owned publication used to verify Balanced Energy Transition and Sustainability's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Balanced Energy Transition and Sustainability's cadence."
+        },
+        {
+          "url": "https://x.com/surajb",
+          "proves": "Owned publication used to verify Balanced Energy Transition and Sustainability's cadence."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+          "proves": "Owned publication used to verify Balanced Energy Transition and Sustainability's cadence."
+        },
+        {
+          "url": "https://creators.spotify.com/pod/profile/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+          "proves": "Owned publication used to verify Balanced Energy Transition and Sustainability's cadence."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-4-Tracing-Nuclear-Power-Thinking---1979-to-2025--The-China-Syndrome--3-Mile-Island-and-present-day-e383mtg",
+          "proves": "Owned publication used to verify Balanced Energy Transition and Sustainability's cadence."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-3-The-Middle-East-e3851bv",
+          "proves": "Owned publication used to verify Balanced Energy Transition and Sustainability's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z",
+      "auditedAt": "2026-07-15T18:53:21.996Z",
       "unresolvedGates": [
-        "CROSS_CHANNEL_TRUE_LATEST",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ]
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Balanced Energy Transition and Sustainability feed.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4666e8d8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/balanced-energy-transition-and-sustainability/id1550871128?uo=4",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw?cbrd=1&ucbcb=1",
+              "https://x.com/surajb",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://creators.spotify.com/pod/profile/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-4-Tracing-Nuclear-Power-Thinking---1979-to-2025--The-China-Syndrome--3-Mile-Island-and-present-day-e383mtg",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-3-The-Middle-East-e3851bv"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-01-03, 2025-09-19, 2025-09-12; latest verified publication \"Episode 25-5 - A review of UN PRI week and COP 30 in Brazil, Nov. 2025\" on 2026-01-03.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4666e8d8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/balanced-energy-transition-and-sustainability/id1550871128?uo=4",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw?cbrd=1&ucbcb=1",
+              "https://x.com/surajb",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://creators.spotify.com/pod/profile/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-4-Tracing-Nuclear-Power-Thinking---1979-to-2025--The-China-Syndrome--3-Mile-Island-and-present-day-e383mtg",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-3-The-Middle-East-e3851bv"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Balanced Energy Transition and Sustainability was inspected at https://anchor.fm/s/4666e8d8/podcast/rss; latest verified publication \"Episode 25-5 - A review of UN PRI week and COP 30 in Brazil, Nov. 2025\" on 2026-01-03. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4666e8d8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/balanced-energy-transition-and-sustainability/id1550871128?uo=4",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw?cbrd=1&ucbcb=1",
+              "https://x.com/surajb",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://creators.spotify.com/pod/profile/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-4-Tracing-Nuclear-Power-Thinking---1979-to-2025--The-China-Syndrome--3-Mile-Island-and-present-day-e383mtg",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-3-The-Middle-East-e3851bv"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Balanced Energy Transition and Sustainability was inspected at https://anchor.fm/s/4666e8d8/podcast/rss; latest verified publication \"Episode 25-5 - A review of UN PRI week and COP 30 in Brazil, Nov. 2025\" on 2026-01-03. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4666e8d8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/balanced-energy-transition-and-sustainability/id1550871128?uo=4",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw?cbrd=1&ucbcb=1",
+              "https://x.com/surajb",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://creators.spotify.com/pod/profile/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-4-Tracing-Nuclear-Power-Thinking---1979-to-2025--The-China-Syndrome--3-Mile-Island-and-present-day-e383mtg",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-3-The-Middle-East-e3851bv"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Balanced Energy Transition and Sustainability was inspected at https://anchor.fm/s/4666e8d8/podcast/rss; latest verified publication \"Episode 25-5 - A review of UN PRI week and COP 30 in Brazil, Nov. 2025\" on 2026-01-03. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4666e8d8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/balanced-energy-transition-and-sustainability/id1550871128?uo=4",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw?cbrd=1&ucbcb=1",
+              "https://x.com/surajb",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://creators.spotify.com/pod/profile/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-4-Tracing-Nuclear-Power-Thinking---1979-to-2025--The-China-Syndrome--3-Mile-Island-and-present-day-e383mtg",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-3-The-Middle-East-e3851bv"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Balanced Energy Transition and Sustainability was inspected at https://anchor.fm/s/4666e8d8/podcast/rss; latest verified publication \"Episode 25-5 - A review of UN PRI week and COP 30 in Brazil, Nov. 2025\" on 2026-01-03. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4666e8d8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/balanced-energy-transition-and-sustainability/id1550871128?uo=4",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw?cbrd=1&ucbcb=1",
+              "https://x.com/surajb",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://creators.spotify.com/pod/profile/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-4-Tracing-Nuclear-Power-Thinking---1979-to-2025--The-China-Syndrome--3-Mile-Island-and-present-day-e383mtg",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-3-The-Middle-East-e3851bv"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4666e8d8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/balanced-energy-transition-and-sustainability/id1550871128?uo=4",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw?cbrd=1&ucbcb=1",
+              "https://x.com/surajb",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://creators.spotify.com/pod/profile/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-4-Tracing-Nuclear-Power-Thinking---1979-to-2025--The-China-Syndrome--3-Mile-Island-and-present-day-e383mtg",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-3-The-Middle-East-e3851bv"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Balanced Energy Transition and Sustainability was inspected at https://anchor.fm/s/4666e8d8/podcast/rss; latest verified publication \"Episode 25-5 - A review of UN PRI week and COP 30 in Brazil, Nov. 2025\" on 2026-01-03. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4666e8d8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/balanced-energy-transition-and-sustainability/id1550871128?uo=4",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw",
+              "https://www.youtube.com/channel/UCJ5yDRYO55JOgem5gpw77Pw?cbrd=1&ucbcb=1",
+              "https://x.com/surajb",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://creators.spotify.com/pod/profile/sustainabilitysimplified/episodes/Episode-25-5---A-review-of-UN-PRI-week-and-COP-30-in-Brazil--Nov--2025-e3d3rd5",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-4-Tracing-Nuclear-Power-Thinking---1979-to-2025--The-China-Syndrome--3-Mile-Island-and-present-day-e383mtg",
+              "https://podcasters.spotify.com/pod/show/sustainabilitysimplified/episodes/Episode-25-3-The-Middle-East-e3851bv"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "neg8-carbon",
       "decision": "NURTURE",
-      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "decisionReason": "NEG8 (@NEG8Carbon) / X was inspected at https://x.com/NEG8Carbon; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "NEG8 Carbon",
       "ownedLongForm": {
         "type": "YOUTUBE",
@@ -564,25 +1729,126 @@
       },
       "evidence": [
         {
+          "url": "https://x.com/NEG8Carbon",
+          "proves": "NEG8 (@NEG8Carbon) / X was inspected at https://x.com/NEG8Carbon; no dated publication exposed by the recorded route."
+        },
+        {
+          "url": "https://www.youtube.com/@NEG8Carbon",
+          "proves": "Owned publication used to verify NEG8 (@NEG8Carbon) / X's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/@NEG8Carbon?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify NEG8 (@NEG8Carbon) / X's cadence."
+        },
+        {
           "url": "https://www.youtube.com/watch?v=5yIe_SpdEms",
-          "proves": "The recorded owned YouTube video is dated 10 March 2026."
+          "proves": "Owned publication used to verify NEG8 (@NEG8Carbon) / X's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z",
+      "auditedAt": "2026-07-15T18:53:21.996Z",
       "unresolvedGates": [
-        "CROSS_CHANNEL_TRUE_LATEST",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ]
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to NEG8 (@NEG8Carbon) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=5yIe_SpdEms"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "NEG8 (@NEG8Carbon) / X was inspected at https://x.com/NEG8Carbon; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=5yIe_SpdEms"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "NEG8 (@NEG8Carbon) / X was inspected at https://x.com/NEG8Carbon; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=5yIe_SpdEms"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "NEG8 (@NEG8Carbon) / X was inspected at https://x.com/NEG8Carbon; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=5yIe_SpdEms"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "NEG8 (@NEG8Carbon) / X was inspected at https://x.com/NEG8Carbon; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=5yIe_SpdEms"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "NEG8 (@NEG8Carbon) / X was inspected at https://x.com/NEG8Carbon; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=5yIe_SpdEms"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=5yIe_SpdEms"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "NEG8 (@NEG8Carbon) / X was inspected at https://x.com/NEG8Carbon; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon",
+              "https://www.youtube.com/@NEG8Carbon?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=5yIe_SpdEms"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "andy-marsland",
       "decision": "NURTURE",
-      "decisionReason": "The official podcast or video source is more than 90 days old, but the true latest publication across every owned channel has not been cross-checked. This is unresolved inactivity evidence, not a factual rejection.",
+      "decisionReason": "Exploring Clean Energy was inspected at https://feeds.transistor.fm/exploring-clean-energy; latest verified publication \"SAF and Sustainable Aviation: Bringing the Regions to the Runway with Jet Zero\" on 2025-12-18. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Andy Marsland",
       "onMicHost": "Andy Marsland",
       "economicBuyer": "Andy Marsland",
@@ -602,53 +1868,249 @@
       "evidence": [
         {
           "url": "https://feeds.transistor.fm/exploring-clean-energy",
-          "proves": "The owned Exploring Clean Energy feed's latest three publication dates are 18 December, 18 December and 4 December 2025."
+          "proves": "Exploring Clean Energy was inspected at https://feeds.transistor.fm/exploring-clean-energy; latest verified publication \"SAF and Sustainable Aviation: Bringing the Regions to the Runway with Jet Zero\" on 2025-12-18."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/exploring-clean-energy/id1592935378?uo=4",
+          "proves": "Owned publication used to verify Exploring Clean Energy's cadence."
+        },
+        {
+          "url": "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw",
+          "proves": "Owned publication used to verify Exploring Clean Energy's cadence."
+        },
+        {
+          "url": "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw&cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Exploring Clean Energy's cadence."
+        },
+        {
+          "url": "https://share.transistor.fm/s/d58ebac4",
+          "proves": "Owned publication used to verify Exploring Clean Energy's cadence."
+        },
+        {
+          "url": "https://share.transistor.fm/s/0fdd823e",
+          "proves": "Owned publication used to verify Exploring Clean Energy's cadence."
+        },
+        {
+          "url": "https://share.transistor.fm/s/2ffcb910",
+          "proves": "Owned publication used to verify Exploring Clean Energy's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z",
+      "auditedAt": "2026-07-15T18:53:21.996Z",
       "unresolvedGates": [
-        "CROSS_CHANNEL_TRUE_LATEST",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ]
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Exploring Clean Energy feed.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/exploring-clean-energy",
+              "https://podcasts.apple.com/us/podcast/exploring-clean-energy/id1592935378?uo=4",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw&cbrd=1&ucbcb=1",
+              "https://share.transistor.fm/s/d58ebac4",
+              "https://share.transistor.fm/s/0fdd823e",
+              "https://share.transistor.fm/s/2ffcb910"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2025-12-18, 2025-12-03, 2025-11-12; latest verified publication \"SAF and Sustainable Aviation: Bringing the Regions to the Runway with Jet Zero\" on 2025-12-18.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/exploring-clean-energy",
+              "https://podcasts.apple.com/us/podcast/exploring-clean-energy/id1592935378?uo=4",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw&cbrd=1&ucbcb=1",
+              "https://share.transistor.fm/s/d58ebac4",
+              "https://share.transistor.fm/s/0fdd823e",
+              "https://share.transistor.fm/s/2ffcb910"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Exploring Clean Energy was inspected at https://feeds.transistor.fm/exploring-clean-energy; latest verified publication \"SAF and Sustainable Aviation: Bringing the Regions to the Runway with Jet Zero\" on 2025-12-18. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/exploring-clean-energy",
+              "https://podcasts.apple.com/us/podcast/exploring-clean-energy/id1592935378?uo=4",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw&cbrd=1&ucbcb=1",
+              "https://share.transistor.fm/s/d58ebac4",
+              "https://share.transistor.fm/s/0fdd823e",
+              "https://share.transistor.fm/s/2ffcb910"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Exploring Clean Energy was inspected at https://feeds.transistor.fm/exploring-clean-energy; latest verified publication \"SAF and Sustainable Aviation: Bringing the Regions to the Runway with Jet Zero\" on 2025-12-18. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/exploring-clean-energy",
+              "https://podcasts.apple.com/us/podcast/exploring-clean-energy/id1592935378?uo=4",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw&cbrd=1&ucbcb=1",
+              "https://share.transistor.fm/s/d58ebac4",
+              "https://share.transistor.fm/s/0fdd823e",
+              "https://share.transistor.fm/s/2ffcb910"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Exploring Clean Energy was inspected at https://feeds.transistor.fm/exploring-clean-energy; latest verified publication \"SAF and Sustainable Aviation: Bringing the Regions to the Runway with Jet Zero\" on 2025-12-18. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/exploring-clean-energy",
+              "https://podcasts.apple.com/us/podcast/exploring-clean-energy/id1592935378?uo=4",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw&cbrd=1&ucbcb=1",
+              "https://share.transistor.fm/s/d58ebac4",
+              "https://share.transistor.fm/s/0fdd823e",
+              "https://share.transistor.fm/s/2ffcb910"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Exploring Clean Energy was inspected at https://feeds.transistor.fm/exploring-clean-energy; latest verified publication \"SAF and Sustainable Aviation: Bringing the Regions to the Runway with Jet Zero\" on 2025-12-18. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/exploring-clean-energy",
+              "https://podcasts.apple.com/us/podcast/exploring-clean-energy/id1592935378?uo=4",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw&cbrd=1&ucbcb=1",
+              "https://share.transistor.fm/s/d58ebac4",
+              "https://share.transistor.fm/s/0fdd823e",
+              "https://share.transistor.fm/s/2ffcb910"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/exploring-clean-energy",
+              "https://podcasts.apple.com/us/podcast/exploring-clean-energy/id1592935378?uo=4",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw&cbrd=1&ucbcb=1",
+              "https://share.transistor.fm/s/d58ebac4",
+              "https://share.transistor.fm/s/0fdd823e",
+              "https://share.transistor.fm/s/2ffcb910"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Exploring Clean Energy was inspected at https://feeds.transistor.fm/exploring-clean-energy; latest verified publication \"SAF and Sustainable Aviation: Bringing the Regions to the Runway with Jet Zero\" on 2025-12-18. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/exploring-clean-energy",
+              "https://podcasts.apple.com/us/podcast/exploring-clean-energy/id1592935378?uo=4",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw",
+              "https://music.youtube.com/playlist?list=OLIioWqpsb_54KATRQTu2x5cFotPlAt85Uw&cbrd=1&ucbcb=1",
+              "https://share.transistor.fm/s/d58ebac4",
+              "https://share.transistor.fm/s/0fdd823e",
+              "https://share.transistor.fm/s/2ffcb910"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "finance-meets-force",
       "decision": "NURTURE",
-      "decisionReason": "A public YouTube channel exists, but the batch has no official evidence tying it to a named energy-content owner, current long-form cadence, buyer, offer or usable contact.",
+      "decisionReason": "User Profile Not Found - X | 404 Error was inspected at https://x.com/2025173458641191144; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contact": {
         "channel": "X_DM",
         "value": "https://x.com/2025173458641191144",
         "evidenceUrl": "https://x.com/2025173458641191144"
       },
       "unresolvedGates": [
-        "CONTENT_OWNER_MATCH",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE_DATES",
-        "ECONOMIC_BUYER",
-        "VERIFIED_OFFER",
-        "INSPECTED_VIDEO_GAP"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
-          "url": "https://www.youtube.com/@FinanceMeetsForce",
-          "proves": "The existing record identifies a public Finance Meets Force YouTube channel."
-        },
-        {
           "url": "https://x.com/2025173458641191144",
-          "proves": "The existing record identifies a public X route."
+          "proves": "User Profile Not Found - X | 404 Error was inspected at https://x.com/2025173458641191144; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z"
+      "auditedAt": "2026-07-15T18:53:21.996Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to User Profile Not Found - X | 404 Error, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/2025173458641191144"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/2025173458641191144; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/2025173458641191144"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/2025173458641191144; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/2025173458641191144"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/2025173458641191144; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/2025173458641191144"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/2025173458641191144; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/2025173458641191144"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/2025173458641191144; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/2025173458641191144"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/2025173458641191144"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/2025173458641191144; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/2025173458641191144"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "ivy-mintah",
       "decision": "NURTURE",
-      "decisionReason": "The owned channel evidence currently resolves to a Short dated January 2026; no verified long-form cadence, commercial offer or buyer route has been established.",
+      "decisionReason": "Ivy Mintah (@ivydidthat) / X was inspected at https://x.com/ivydidthat; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Ivy Mintah",
       "contact": {
         "channel": "X_DM",
@@ -656,27 +2118,139 @@
         "evidenceUrl": "https://x.com/ivydidthat"
       },
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE_DATES",
-        "VERIFIED_OFFER",
-        "INSPECTED_VIDEO_GAP"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
-          "url": "https://www.youtube.com/shorts/jxtyAx6OVXI",
-          "proves": "The existing record's owned channel evidence resolves to an Ivy Mintah YouTube Short dated January 2026."
+          "url": "https://x.com/ivydidthat",
+          "proves": "Ivy Mintah (@ivydidthat) / X was inspected at https://x.com/ivydidthat; no dated publication exposed by the recorded route."
         },
         {
-          "url": "https://x.com/ivydidthat",
-          "proves": "The existing record identifies Ivy Mintah's public X route."
+          "url": "https://www.youtube.com/@ivycantalk",
+          "proves": "Owned publication used to verify Ivy Mintah (@ivydidthat) / X's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/@ivycantalk?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Ivy Mintah (@ivydidthat) / X's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/shorts/jxtyAx6OVXI",
+          "proves": "Owned publication used to verify Ivy Mintah (@ivydidthat) / X's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/shorts/jxtyAx6OVXI?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Ivy Mintah (@ivydidthat) / X's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z"
+      "auditedAt": "2026-07-15T18:53:21.996Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Ivy Mintah (@ivydidthat) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/ivydidthat",
+              "https://www.youtube.com/@ivycantalk",
+              "https://www.youtube.com/@ivycantalk?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI?cbrd=1&ucbcb=1"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Ivy Mintah (@ivydidthat) / X was inspected at https://x.com/ivydidthat; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/ivydidthat",
+              "https://www.youtube.com/@ivycantalk",
+              "https://www.youtube.com/@ivycantalk?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI?cbrd=1&ucbcb=1"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Ivy Mintah (@ivydidthat) / X was inspected at https://x.com/ivydidthat; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/ivydidthat",
+              "https://www.youtube.com/@ivycantalk",
+              "https://www.youtube.com/@ivycantalk?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI?cbrd=1&ucbcb=1"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Ivy Mintah (@ivydidthat) / X was inspected at https://x.com/ivydidthat; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/ivydidthat",
+              "https://www.youtube.com/@ivycantalk",
+              "https://www.youtube.com/@ivycantalk?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI?cbrd=1&ucbcb=1"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Ivy Mintah (@ivydidthat) / X was inspected at https://x.com/ivydidthat; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/ivydidthat",
+              "https://www.youtube.com/@ivycantalk",
+              "https://www.youtube.com/@ivycantalk?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI?cbrd=1&ucbcb=1"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Ivy Mintah (@ivydidthat) / X was inspected at https://x.com/ivydidthat; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/ivydidthat",
+              "https://www.youtube.com/@ivycantalk",
+              "https://www.youtube.com/@ivycantalk?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI?cbrd=1&ucbcb=1"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/ivydidthat",
+              "https://www.youtube.com/@ivycantalk",
+              "https://www.youtube.com/@ivycantalk?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI?cbrd=1&ucbcb=1"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Ivy Mintah (@ivydidthat) / X was inspected at https://x.com/ivydidthat; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/ivydidthat",
+              "https://www.youtube.com/@ivycantalk",
+              "https://www.youtube.com/@ivycantalk?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI",
+              "https://www.youtube.com/shorts/jxtyAx6OVXI?cbrd=1&ucbcb=1"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "manic-energy-podcast",
       "decision": "NURTURE",
-      "decisionReason": "The Manic Energy Podcast is current and energy-specific, but the feed alone does not establish a named owner, buyer, direct contact or commercial transaction.",
+      "decisionReason": "Manic Energy Podcast was inspected at https://anchor.fm/s/107a6fb3c/podcast/rss; latest verified publication \"Inside the Pipeline: Risk Management, Consulting, and a Hidden Crisis\" on 2026-07-13. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "ownedLongForm": {
         "type": "PODCAST",
         "latestTitle": "Inside the Pipeline: Risk Management, Consulting, and a Hidden Crisis",
@@ -700,19 +2274,145 @@
         "bof": []
       },
       "unresolvedGates": [
-        "CONTENT_OWNER_MATCH",
-        "ECONOMIC_BUYER",
-        "VERIFIED_CONTACT",
-        "VERIFIED_OFFER",
-        "INSPECTED_VIDEO_GAP"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://anchor.fm/s/107a6fb3c/podcast/rss",
-          "proves": "The official Manic Energy Podcast feed shows a current energy episode and publication history."
+          "proves": "Manic Energy Podcast was inspected at https://anchor.fm/s/107a6fb3c/podcast/rss; latest verified publication \"Inside the Pipeline: Risk Management, Consulting, and a Hidden Crisis\" on 2026-07-13."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/manic-energy-podcast/id1835310072?uo=4",
+          "proves": "Owned publication used to verify Manic Energy Podcast's cadence."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+          "proves": "Owned publication used to verify Manic Energy Podcast's cadence."
+        },
+        {
+          "url": "https://creators.spotify.com/pod/profile/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+          "proves": "Owned publication used to verify Manic Energy Podcast's cadence."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/How-We-Built-a-Real-Strategic-Plan-Starting-From-Bar-Napkins-and-Happy-Hours-Dave-Hokanson-PART-TWO-e3lasg2",
+          "proves": "Owned publication used to verify Manic Energy Podcast's cadence."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/The-Deal-That-Fell-Apart-and-Came-Back-Together-with-Dave-Hokanson-PART-1-e3kn5fn",
+          "proves": "Owned publication used to verify Manic Energy Podcast's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T21:44:59.281Z"
+      "auditedAt": "2026-07-15T18:53:21.996Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:53:21.996Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Manic Energy Podcast, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/107a6fb3c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/manic-energy-podcast/id1835310072?uo=4",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://creators.spotify.com/pod/profile/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/How-We-Built-a-Real-Strategic-Plan-Starting-From-Bar-Napkins-and-Happy-Hours-Dave-Hokanson-PART-TWO-e3lasg2",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/The-Deal-That-Fell-Apart-and-Came-Back-Together-with-Dave-Hokanson-PART-1-e3kn5fn"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-07-13, 2026-06-29, 2026-06-15; latest verified publication \"Inside the Pipeline: Risk Management, Consulting, and a Hidden Crisis\" on 2026-07-13.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/107a6fb3c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/manic-energy-podcast/id1835310072?uo=4",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://creators.spotify.com/pod/profile/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/How-We-Built-a-Real-Strategic-Plan-Starting-From-Bar-Napkins-and-Happy-Hours-Dave-Hokanson-PART-TWO-e3lasg2",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/The-Deal-That-Fell-Apart-and-Came-Back-Together-with-Dave-Hokanson-PART-1-e3kn5fn"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Manic Energy Podcast was inspected at https://anchor.fm/s/107a6fb3c/podcast/rss; latest verified publication \"Inside the Pipeline: Risk Management, Consulting, and a Hidden Crisis\" on 2026-07-13. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/107a6fb3c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/manic-energy-podcast/id1835310072?uo=4",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://creators.spotify.com/pod/profile/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/How-We-Built-a-Real-Strategic-Plan-Starting-From-Bar-Napkins-and-Happy-Hours-Dave-Hokanson-PART-TWO-e3lasg2",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/The-Deal-That-Fell-Apart-and-Came-Back-Together-with-Dave-Hokanson-PART-1-e3kn5fn"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Manic Energy Podcast was inspected at https://anchor.fm/s/107a6fb3c/podcast/rss; latest verified publication \"Inside the Pipeline: Risk Management, Consulting, and a Hidden Crisis\" on 2026-07-13. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/107a6fb3c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/manic-energy-podcast/id1835310072?uo=4",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://creators.spotify.com/pod/profile/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/How-We-Built-a-Real-Strategic-Plan-Starting-From-Bar-Napkins-and-Happy-Hours-Dave-Hokanson-PART-TWO-e3lasg2",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/The-Deal-That-Fell-Apart-and-Came-Back-Together-with-Dave-Hokanson-PART-1-e3kn5fn"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Manic Energy Podcast was inspected at https://anchor.fm/s/107a6fb3c/podcast/rss; latest verified publication \"Inside the Pipeline: Risk Management, Consulting, and a Hidden Crisis\" on 2026-07-13. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/107a6fb3c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/manic-energy-podcast/id1835310072?uo=4",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://creators.spotify.com/pod/profile/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/How-We-Built-a-Real-Strategic-Plan-Starting-From-Bar-Napkins-and-Happy-Hours-Dave-Hokanson-PART-TWO-e3lasg2",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/The-Deal-That-Fell-Apart-and-Came-Back-Together-with-Dave-Hokanson-PART-1-e3kn5fn"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Manic Energy Podcast was inspected at https://anchor.fm/s/107a6fb3c/podcast/rss; latest verified publication \"Inside the Pipeline: Risk Management, Consulting, and a Hidden Crisis\" on 2026-07-13. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/107a6fb3c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/manic-energy-podcast/id1835310072?uo=4",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://creators.spotify.com/pod/profile/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/How-We-Built-a-Real-Strategic-Plan-Starting-From-Bar-Napkins-and-Happy-Hours-Dave-Hokanson-PART-TWO-e3lasg2",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/The-Deal-That-Fell-Apart-and-Came-Back-Together-with-Dave-Hokanson-PART-1-e3kn5fn"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/107a6fb3c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/manic-energy-podcast/id1835310072?uo=4",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://creators.spotify.com/pod/profile/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/How-We-Built-a-Real-Strategic-Plan-Starting-From-Bar-Napkins-and-Happy-Hours-Dave-Hokanson-PART-TWO-e3lasg2",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/The-Deal-That-Fell-Apart-and-Came-Back-Together-with-Dave-Hokanson-PART-1-e3kn5fn"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Manic Energy Podcast was inspected at https://anchor.fm/s/107a6fb3c/podcast/rss; latest verified publication \"Inside the Pipeline: Risk Management, Consulting, and a Hidden Crisis\" on 2026-07-13. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/107a6fb3c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/manic-energy-podcast/id1835310072?uo=4",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://creators.spotify.com/pod/profile/manic-energy-podcast/episodes/Inside-the-Pipeline-Risk-Management--Consulting--and-a-Hidden-Crisis-e3m0kvs",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/How-We-Built-a-Real-Strategic-Plan-Starting-From-Bar-Napkins-and-Happy-Hours-Dave-Hokanson-PART-TWO-e3lasg2",
+              "https://podcasters.spotify.com/pod/show/manic-energy-podcast/episodes/The-Deal-That-Fell-Apart-and-Came-Back-Together-with-Dave-Hokanson-PART-1-e3kn5fn"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "slatefr-podcasts",

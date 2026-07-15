@@ -5,50 +5,190 @@
     {
       "id": "inception-point-ai",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Daily Crude Oil Price Tracker with Vanessa Clark - Podcast - Apple Podcasts was inspected at https://feeds.megaphone.fm/NPTNI5170726596; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Inception Point AI",
       "economicBuyer": "Inception Point AI",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
+          "url": "https://feeds.megaphone.fm/NPTNI5170726596",
+          "proves": "Daily Crude Oil Price Tracker with Vanessa Clark - Podcast - Apple Podcasts was inspected at https://feeds.megaphone.fm/NPTNI5170726596; no dated publication exposed by the recorded route."
+        },
+        {
           "url": "https://podcasts.apple.com/us/podcast/daily-crude-oil-price-tracker-with-vanessa-clark/id1846175519?uo=4",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "proves": "Owned publication used to verify Daily Crude Oil Price Tracker with Vanessa Clark - Podcast - Apple Podcasts's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Daily Crude Oil Price Tracker with Vanessa Clark - Podcast - Apple Podcasts, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/NPTNI5170726596",
+              "https://podcasts.apple.com/us/podcast/daily-crude-oil-price-tracker-with-vanessa-clark/id1846175519?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Daily Crude Oil Price Tracker with Vanessa Clark - Podcast - Apple Podcasts was inspected at https://feeds.megaphone.fm/NPTNI5170726596; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/NPTNI5170726596",
+              "https://podcasts.apple.com/us/podcast/daily-crude-oil-price-tracker-with-vanessa-clark/id1846175519?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Daily Crude Oil Price Tracker with Vanessa Clark - Podcast - Apple Podcasts was inspected at https://feeds.megaphone.fm/NPTNI5170726596; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/NPTNI5170726596",
+              "https://podcasts.apple.com/us/podcast/daily-crude-oil-price-tracker-with-vanessa-clark/id1846175519?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Daily Crude Oil Price Tracker with Vanessa Clark - Podcast - Apple Podcasts was inspected at https://feeds.megaphone.fm/NPTNI5170726596; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/NPTNI5170726596",
+              "https://podcasts.apple.com/us/podcast/daily-crude-oil-price-tracker-with-vanessa-clark/id1846175519?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Daily Crude Oil Price Tracker with Vanessa Clark - Podcast - Apple Podcasts was inspected at https://feeds.megaphone.fm/NPTNI5170726596; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/NPTNI5170726596",
+              "https://podcasts.apple.com/us/podcast/daily-crude-oil-price-tracker-with-vanessa-clark/id1846175519?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Daily Crude Oil Price Tracker with Vanessa Clark - Podcast - Apple Podcasts was inspected at https://feeds.megaphone.fm/NPTNI5170726596; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/NPTNI5170726596",
+              "https://podcasts.apple.com/us/podcast/daily-crude-oil-price-tracker-with-vanessa-clark/id1846175519?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/NPTNI5170726596",
+              "https://podcasts.apple.com/us/podcast/daily-crude-oil-price-tracker-with-vanessa-clark/id1846175519?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Daily Crude Oil Price Tracker with Vanessa Clark - Podcast - Apple Podcasts was inspected at https://feeds.megaphone.fm/NPTNI5170726596; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/NPTNI5170726596",
+              "https://podcasts.apple.com/us/podcast/daily-crude-oil-price-tracker-with-vanessa-clark/id1846175519?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "david-sheppard",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "User Profile Not Found - X | 404 Error was inspected at https://x.com/DavidSheppardFT; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "David Sheppard",
       "economicBuyer": "David Sheppard",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/DavidSheppardFT",
-          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+          "proves": "User Profile Not Found - X | 404 Error was inspected at https://x.com/DavidSheppardFT; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to User Profile Not Found - X | 404 Error, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/DavidSheppardFT"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/DavidSheppardFT; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/DavidSheppardFT"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/DavidSheppardFT; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/DavidSheppardFT"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/DavidSheppardFT; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/DavidSheppardFT"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/DavidSheppardFT; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/DavidSheppardFT"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/DavidSheppardFT; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/DavidSheppardFT"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/DavidSheppardFT"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/DavidSheppardFT; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/DavidSheppardFT"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "fatih-birol",
@@ -83,242 +223,930 @@
     {
       "id": "luke-gromen",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Luke Gromen (@LukeGromen) / X was inspected at https://x.com/LukeGromen; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Luke Gromen",
       "economicBuyer": "Luke Gromen",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/LukeGromen",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "proves": "Luke Gromen (@LukeGromen) / X was inspected at https://x.com/LukeGromen; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Luke Gromen (@LukeGromen) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/LukeGromen"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Luke Gromen (@LukeGromen) / X was inspected at https://x.com/LukeGromen; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/LukeGromen"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Luke Gromen (@LukeGromen) / X was inspected at https://x.com/LukeGromen; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/LukeGromen"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Luke Gromen (@LukeGromen) / X was inspected at https://x.com/LukeGromen; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/LukeGromen"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Luke Gromen (@LukeGromen) / X was inspected at https://x.com/LukeGromen; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/LukeGromen"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Luke Gromen (@LukeGromen) / X was inspected at https://x.com/LukeGromen; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/LukeGromen"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/LukeGromen"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Luke Gromen (@LukeGromen) / X was inspected at https://x.com/LukeGromen; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/LukeGromen"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "harris-kupperman",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Kuppy (@hkuppy) / X was inspected at https://x.com/hkuppy; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Harris Kupperman",
       "economicBuyer": "Harris Kupperman",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/hkuppy",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "proves": "Kuppy (@hkuppy) / X was inspected at https://x.com/hkuppy; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Kuppy (@hkuppy) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/hkuppy"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Kuppy (@hkuppy) / X was inspected at https://x.com/hkuppy; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/hkuppy"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Kuppy (@hkuppy) / X was inspected at https://x.com/hkuppy; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/hkuppy"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Kuppy (@hkuppy) / X was inspected at https://x.com/hkuppy; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/hkuppy"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Kuppy (@hkuppy) / X was inspected at https://x.com/hkuppy; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/hkuppy"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Kuppy (@hkuppy) / X was inspected at https://x.com/hkuppy; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/hkuppy"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/hkuppy"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Kuppy (@hkuppy) / X was inspected at https://x.com/hkuppy; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/hkuppy"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "zoltan-pozsar",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Zoltan Pozsar (@zoltanpozsar) / X was inspected at https://x.com/ZoltanPozsar; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Zoltan Pozsar",
       "economicBuyer": "Zoltan Pozsar",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/ZoltanPozsar",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "proves": "Zoltan Pozsar (@zoltanpozsar) / X was inspected at https://x.com/ZoltanPozsar; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Zoltan Pozsar (@zoltanpozsar) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/ZoltanPozsar"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Zoltan Pozsar (@zoltanpozsar) / X was inspected at https://x.com/ZoltanPozsar; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/ZoltanPozsar"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Zoltan Pozsar (@zoltanpozsar) / X was inspected at https://x.com/ZoltanPozsar; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/ZoltanPozsar"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Zoltan Pozsar (@zoltanpozsar) / X was inspected at https://x.com/ZoltanPozsar; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/ZoltanPozsar"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Zoltan Pozsar (@zoltanpozsar) / X was inspected at https://x.com/ZoltanPozsar; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/ZoltanPozsar"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Zoltan Pozsar (@zoltanpozsar) / X was inspected at https://x.com/ZoltanPozsar; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/ZoltanPozsar"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/ZoltanPozsar"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Zoltan Pozsar (@zoltanpozsar) / X was inspected at https://x.com/ZoltanPozsar; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/ZoltanPozsar"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "paul-rodden",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Paul Rodden (@HydrogenPodcast) / X was inspected at https://rss.buzzsprout.com/1744323.rss; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Paul Rodden",
       "economicBuyer": "Paul Rodden",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
+          "url": "https://rss.buzzsprout.com/1744323.rss",
+          "proves": "Paul Rodden (@HydrogenPodcast) / X was inspected at https://rss.buzzsprout.com/1744323.rss; no dated publication exposed by the recorded route."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/the-hydrogen-podcast/id1560907194?uo=4",
+          "proves": "Owned publication used to verify Paul Rodden (@HydrogenPodcast) / X's cadence."
+        },
+        {
           "url": "https://x.com/hydrogenpodcast",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "proves": "Owned publication used to verify Paul Rodden (@HydrogenPodcast) / X's cadence."
+        },
+        {
+          "url": "https://music.apple.com/us/album/thank-you-baba/1550965377?i=1550965384&uo=4",
+          "proves": "Owned publication used to verify Paul Rodden (@HydrogenPodcast) / X's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Paul Rodden (@HydrogenPodcast) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1744323.rss",
+              "https://podcasts.apple.com/us/podcast/the-hydrogen-podcast/id1560907194?uo=4",
+              "https://x.com/hydrogenpodcast",
+              "https://music.apple.com/us/album/thank-you-baba/1550965377?i=1550965384&uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Paul Rodden (@HydrogenPodcast) / X was inspected at https://rss.buzzsprout.com/1744323.rss; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1744323.rss",
+              "https://podcasts.apple.com/us/podcast/the-hydrogen-podcast/id1560907194?uo=4",
+              "https://x.com/hydrogenpodcast",
+              "https://music.apple.com/us/album/thank-you-baba/1550965377?i=1550965384&uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Paul Rodden (@HydrogenPodcast) / X was inspected at https://rss.buzzsprout.com/1744323.rss; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1744323.rss",
+              "https://podcasts.apple.com/us/podcast/the-hydrogen-podcast/id1560907194?uo=4",
+              "https://x.com/hydrogenpodcast",
+              "https://music.apple.com/us/album/thank-you-baba/1550965377?i=1550965384&uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Paul Rodden (@HydrogenPodcast) / X was inspected at https://rss.buzzsprout.com/1744323.rss; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1744323.rss",
+              "https://podcasts.apple.com/us/podcast/the-hydrogen-podcast/id1560907194?uo=4",
+              "https://x.com/hydrogenpodcast",
+              "https://music.apple.com/us/album/thank-you-baba/1550965377?i=1550965384&uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Paul Rodden (@HydrogenPodcast) / X was inspected at https://rss.buzzsprout.com/1744323.rss; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1744323.rss",
+              "https://podcasts.apple.com/us/podcast/the-hydrogen-podcast/id1560907194?uo=4",
+              "https://x.com/hydrogenpodcast",
+              "https://music.apple.com/us/album/thank-you-baba/1550965377?i=1550965384&uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Paul Rodden (@HydrogenPodcast) / X was inspected at https://rss.buzzsprout.com/1744323.rss; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1744323.rss",
+              "https://podcasts.apple.com/us/podcast/the-hydrogen-podcast/id1560907194?uo=4",
+              "https://x.com/hydrogenpodcast",
+              "https://music.apple.com/us/album/thank-you-baba/1550965377?i=1550965384&uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1744323.rss",
+              "https://podcasts.apple.com/us/podcast/the-hydrogen-podcast/id1560907194?uo=4",
+              "https://x.com/hydrogenpodcast",
+              "https://music.apple.com/us/album/thank-you-baba/1550965377?i=1550965384&uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Paul Rodden (@HydrogenPodcast) / X was inspected at https://rss.buzzsprout.com/1744323.rss; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1744323.rss",
+              "https://podcasts.apple.com/us/podcast/the-hydrogen-podcast/id1560907194?uo=4",
+              "https://x.com/hydrogenpodcast",
+              "https://music.apple.com/us/album/thank-you-baba/1550965377?i=1550965384&uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "aldo-spahiu",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Aldo Spahiu (@AldoSpahiu) / X was inspected at https://feed.podbean.com/powermarkets/feed.xml; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Aldo Spahiu",
       "economicBuyer": "Aldo Spahiu",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
+          "url": "https://feed.podbean.com/powermarkets/feed.xml",
+          "proves": "Aldo Spahiu (@AldoSpahiu) / X was inspected at https://feed.podbean.com/powermarkets/feed.xml; no dated publication exposed by the recorded route."
+        },
+        {
           "url": "https://x.com/AldoSpahiu",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "proves": "Owned publication used to verify Aldo Spahiu (@AldoSpahiu) / X's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Aldo Spahiu (@AldoSpahiu) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/powermarkets/feed.xml",
+              "https://x.com/AldoSpahiu"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Aldo Spahiu (@AldoSpahiu) / X was inspected at https://feed.podbean.com/powermarkets/feed.xml; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/powermarkets/feed.xml",
+              "https://x.com/AldoSpahiu"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Aldo Spahiu (@AldoSpahiu) / X was inspected at https://feed.podbean.com/powermarkets/feed.xml; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/powermarkets/feed.xml",
+              "https://x.com/AldoSpahiu"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Aldo Spahiu (@AldoSpahiu) / X was inspected at https://feed.podbean.com/powermarkets/feed.xml; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/powermarkets/feed.xml",
+              "https://x.com/AldoSpahiu"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Aldo Spahiu (@AldoSpahiu) / X was inspected at https://feed.podbean.com/powermarkets/feed.xml; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/powermarkets/feed.xml",
+              "https://x.com/AldoSpahiu"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Aldo Spahiu (@AldoSpahiu) / X was inspected at https://feed.podbean.com/powermarkets/feed.xml; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/powermarkets/feed.xml",
+              "https://x.com/AldoSpahiu"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/powermarkets/feed.xml",
+              "https://x.com/AldoSpahiu"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Aldo Spahiu (@AldoSpahiu) / X was inspected at https://feed.podbean.com/powermarkets/feed.xml; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/powermarkets/feed.xml",
+              "https://x.com/AldoSpahiu"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "robin-mills",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Robin Mills (@robinenergy) / X was inspected at https://x.com/robinenergy; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Robin Mills",
       "economicBuyer": "Robin Mills",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/robinenergy",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "proves": "Robin Mills (@robinenergy) / X was inspected at https://x.com/robinenergy; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Robin Mills (@robinenergy) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/robinenergy"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Robin Mills (@robinenergy) / X was inspected at https://x.com/robinenergy; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/robinenergy"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Robin Mills (@robinenergy) / X was inspected at https://x.com/robinenergy; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/robinenergy"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Robin Mills (@robinenergy) / X was inspected at https://x.com/robinenergy; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/robinenergy"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Robin Mills (@robinenergy) / X was inspected at https://x.com/robinenergy; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/robinenergy"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Robin Mills (@robinenergy) / X was inspected at https://x.com/robinenergy; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/robinenergy"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/robinenergy"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Robin Mills (@robinenergy) / X was inspected at https://x.com/robinenergy; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/robinenergy"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "john-quiggin",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JohnQuiggin; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "John Quiggin",
       "economicBuyer": "John Quiggin",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/JohnQuiggin",
-          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+          "proves": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JohnQuiggin; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to User Profile Not Found - X | 404 Error, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/JohnQuiggin"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JohnQuiggin; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/JohnQuiggin"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JohnQuiggin; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/JohnQuiggin"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JohnQuiggin; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/JohnQuiggin"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JohnQuiggin; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/JohnQuiggin"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JohnQuiggin; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/JohnQuiggin"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/JohnQuiggin"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JohnQuiggin; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/JohnQuiggin"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "derek-brower",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Derek Brower (@derek_brower) / X was inspected at https://x.com/derek_brower; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Derek Brower",
       "economicBuyer": "Derek Brower",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/derek_brower",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "proves": "Derek Brower (@derek_brower) / X was inspected at https://x.com/derek_brower; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Derek Brower (@derek_brower) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/derek_brower"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Derek Brower (@derek_brower) / X was inspected at https://x.com/derek_brower; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/derek_brower"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Derek Brower (@derek_brower) / X was inspected at https://x.com/derek_brower; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/derek_brower"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Derek Brower (@derek_brower) / X was inspected at https://x.com/derek_brower; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/derek_brower"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Derek Brower (@derek_brower) / X was inspected at https://x.com/derek_brower; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/derek_brower"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Derek Brower (@derek_brower) / X was inspected at https://x.com/derek_brower; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/derek_brower"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/derek_brower"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Derek Brower (@derek_brower) / X was inspected at https://x.com/derek_brower; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/derek_brower"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "sven-delpozzo",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "User Profile Not Found - X | 404 Error was inspected at https://x.com/SvenDelpozzo; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Sven Delpozzo",
       "economicBuyer": "Sven Delpozzo",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/SvenDelpozzo",
-          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+          "proves": "User Profile Not Found - X | 404 Error was inspected at https://x.com/SvenDelpozzo; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to User Profile Not Found - X | 404 Error, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/SvenDelpozzo"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/SvenDelpozzo; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/SvenDelpozzo"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/SvenDelpozzo; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/SvenDelpozzo"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/SvenDelpozzo; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/SvenDelpozzo"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/SvenDelpozzo; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/SvenDelpozzo"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/SvenDelpozzo; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/SvenDelpozzo"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/SvenDelpozzo"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/SvenDelpozzo; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/SvenDelpozzo"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "jacob-klimstra",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JacobKlimstra; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Jacob Klimstra",
       "economicBuyer": "Jacob Klimstra",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/JacobKlimstra",
-          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+          "proves": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JacobKlimstra; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to User Profile Not Found - X | 404 Error, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/JacobKlimstra"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JacobKlimstra; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/JacobKlimstra"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JacobKlimstra; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/JacobKlimstra"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JacobKlimstra; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/JacobKlimstra"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JacobKlimstra; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/JacobKlimstra"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JacobKlimstra; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/JacobKlimstra"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/JacobKlimstra"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "User Profile Not Found - X | 404 Error was inspected at https://x.com/JacobKlimstra; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/JacobKlimstra"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "thomas-grtzner-und-bernhard-seyfang",
@@ -416,7 +1244,7 @@
     {
       "id": "paul-louis-holi",
       "decision": "NURTURE",
-      "decisionReason": "The official feed verifies 86. 38 Years as a Shipbroker | S&P, Demolition, Tankers, Dry Bulk Explained | Clive Page at 2026-06-01T14:31:49.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The maritime vision was inspected at https://media.rss.com/themaritimevision/feed.xml; latest verified publication \"86. 38 Years as a Shipbroker | S&P, Demolition, Tankers, Dry Bulk Explained | Clive Page\" on 2026-06-01. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Paul-louis Holi",
       "economicBuyer": "Paul-louis Holi",
       "ownedLongForm": {
@@ -436,20 +1264,133 @@
         "medianIntervalDays": 28.2
       },
       "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://media.rss.com/themaritimevision/feed.xml",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "The maritime vision was inspected at https://media.rss.com/themaritimevision/feed.xml; latest verified publication \"86. 38 Years as a Shipbroker | S&P, Demolition, Tankers, Dry Bulk Explained | Clive Page\" on 2026-06-01."
+        },
+        {
+          "url": "https://rss.com/podcasts/themaritimevision/2875810",
+          "proves": "Owned publication used to verify The maritime vision's cadence."
+        },
+        {
+          "url": "https://rss.com/podcasts/themaritimevision/2875810/",
+          "proves": "Owned publication used to verify The maritime vision's cadence."
+        },
+        {
+          "url": "https://rss.com/podcasts/themaritimevision/2611731",
+          "proves": "Owned publication used to verify The maritime vision's cadence."
+        },
+        {
+          "url": "https://rss.com/podcasts/themaritimevision/2460477",
+          "proves": "Owned publication used to verify The maritime vision's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to The maritime vision, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://media.rss.com/themaritimevision/feed.xml",
+              "https://rss.com/podcasts/themaritimevision/2875810",
+              "https://rss.com/podcasts/themaritimevision/2875810/",
+              "https://rss.com/podcasts/themaritimevision/2611731",
+              "https://rss.com/podcasts/themaritimevision/2460477"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-06-01, 2026-03-09, 2026-01-14; latest verified publication \"86. 38 Years as a Shipbroker | S&P, Demolition, Tankers, Dry Bulk Explained | Clive Page\" on 2026-06-01.",
+            "evidenceUrls": [
+              "https://media.rss.com/themaritimevision/feed.xml",
+              "https://rss.com/podcasts/themaritimevision/2875810",
+              "https://rss.com/podcasts/themaritimevision/2875810/",
+              "https://rss.com/podcasts/themaritimevision/2611731",
+              "https://rss.com/podcasts/themaritimevision/2460477"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The maritime vision was inspected at https://media.rss.com/themaritimevision/feed.xml; latest verified publication \"86. 38 Years as a Shipbroker | S&P, Demolition, Tankers, Dry Bulk Explained | Clive Page\" on 2026-06-01. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://media.rss.com/themaritimevision/feed.xml",
+              "https://rss.com/podcasts/themaritimevision/2875810",
+              "https://rss.com/podcasts/themaritimevision/2875810/",
+              "https://rss.com/podcasts/themaritimevision/2611731",
+              "https://rss.com/podcasts/themaritimevision/2460477"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The maritime vision was inspected at https://media.rss.com/themaritimevision/feed.xml; latest verified publication \"86. 38 Years as a Shipbroker | S&P, Demolition, Tankers, Dry Bulk Explained | Clive Page\" on 2026-06-01. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://media.rss.com/themaritimevision/feed.xml",
+              "https://rss.com/podcasts/themaritimevision/2875810",
+              "https://rss.com/podcasts/themaritimevision/2875810/",
+              "https://rss.com/podcasts/themaritimevision/2611731",
+              "https://rss.com/podcasts/themaritimevision/2460477"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "The maritime vision was inspected at https://media.rss.com/themaritimevision/feed.xml; latest verified publication \"86. 38 Years as a Shipbroker | S&P, Demolition, Tankers, Dry Bulk Explained | Clive Page\" on 2026-06-01. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://media.rss.com/themaritimevision/feed.xml",
+              "https://rss.com/podcasts/themaritimevision/2875810",
+              "https://rss.com/podcasts/themaritimevision/2875810/",
+              "https://rss.com/podcasts/themaritimevision/2611731",
+              "https://rss.com/podcasts/themaritimevision/2460477"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "The maritime vision was inspected at https://media.rss.com/themaritimevision/feed.xml; latest verified publication \"86. 38 Years as a Shipbroker | S&P, Demolition, Tankers, Dry Bulk Explained | Clive Page\" on 2026-06-01. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://media.rss.com/themaritimevision/feed.xml",
+              "https://rss.com/podcasts/themaritimevision/2875810",
+              "https://rss.com/podcasts/themaritimevision/2875810/",
+              "https://rss.com/podcasts/themaritimevision/2611731",
+              "https://rss.com/podcasts/themaritimevision/2460477"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://media.rss.com/themaritimevision/feed.xml",
+              "https://rss.com/podcasts/themaritimevision/2875810",
+              "https://rss.com/podcasts/themaritimevision/2875810/",
+              "https://rss.com/podcasts/themaritimevision/2611731",
+              "https://rss.com/podcasts/themaritimevision/2460477"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "The maritime vision was inspected at https://media.rss.com/themaritimevision/feed.xml; latest verified publication \"86. 38 Years as a Shipbroker | S&P, Demolition, Tankers, Dry Bulk Explained | Clive Page\" on 2026-06-01. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://media.rss.com/themaritimevision/feed.xml",
+              "https://rss.com/podcasts/themaritimevision/2875810",
+              "https://rss.com/podcasts/themaritimevision/2875810/",
+              "https://rss.com/podcasts/themaritimevision/2611731",
+              "https://rss.com/podcasts/themaritimevision/2460477"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "intentional-learning",
@@ -485,7 +1426,7 @@
     {
       "id": "hugh-hendry",
       "decision": "NURTURE",
-      "decisionReason": "The official feed verifies the drugs work. at 2026-06-09T22:00:00.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The ACID Capitalist Podcast was inspected at https://rss.buzzsprout.com/1017043.rss; latest verified publication \"the drugs work.\" on 2026-06-09. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Hugh Hendry",
       "economicBuyer": "Hugh Hendry",
       "ownedLongForm": {
@@ -505,25 +1446,90 @@
         "medianIntervalDays": 11.3
       },
       "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://rss.buzzsprout.com/1017043.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "The ACID Capitalist Podcast was inspected at https://rss.buzzsprout.com/1017043.rss; latest verified publication \"the drugs work.\" on 2026-06-09."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to The ACID Capitalist Podcast, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1017043.rss"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-06-09, 2026-05-29, 2026-05-08; latest verified publication \"the drugs work.\" on 2026-06-09.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1017043.rss"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The ACID Capitalist Podcast was inspected at https://rss.buzzsprout.com/1017043.rss; latest verified publication \"the drugs work.\" on 2026-06-09. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1017043.rss"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The ACID Capitalist Podcast was inspected at https://rss.buzzsprout.com/1017043.rss; latest verified publication \"the drugs work.\" on 2026-06-09. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1017043.rss"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "The ACID Capitalist Podcast was inspected at https://rss.buzzsprout.com/1017043.rss; latest verified publication \"the drugs work.\" on 2026-06-09. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1017043.rss"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "The ACID Capitalist Podcast was inspected at https://rss.buzzsprout.com/1017043.rss; latest verified publication \"the drugs work.\" on 2026-06-09. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1017043.rss"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1017043.rss"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "The ACID Capitalist Podcast was inspected at https://rss.buzzsprout.com/1017043.rss; latest verified publication \"the drugs work.\" on 2026-06-09. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/1017043.rss"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "jsa-podcasts",
       "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Phillip Koblence on Inspiring the Next Generation of Digital Infrastructure Talent at 2026-06-09T20:00:00.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "JSA Podcasts | Telecom, Digital Infrastructure and Data Center News, Insights + More was inspected at https://rss.buzzsprout.com/860047.rss; latest verified publication \"Phillip Koblence on Inspiring the Next Generation of Digital Infrastructure Talent\" on 2026-06-09. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "JSA Podcasts",
       "economicBuyer": "JSA Podcasts",
       "ownedLongForm": {
@@ -543,25 +1549,90 @@
         "medianIntervalDays": 0
       },
       "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://rss.buzzsprout.com/860047.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "JSA Podcasts | Telecom, Digital Infrastructure and Data Center News, Insights + More was inspected at https://rss.buzzsprout.com/860047.rss; latest verified publication \"Phillip Koblence on Inspiring the Next Generation of Digital Infrastructure Talent\" on 2026-06-09."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to JSA Podcasts | Telecom, Digital Infrastructure and Data Center News, Insights + More, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/860047.rss"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-06-09, 2026-06-09, 2026-06-09; latest verified publication \"Phillip Koblence on Inspiring the Next Generation of Digital Infrastructure Talent\" on 2026-06-09.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/860047.rss"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "JSA Podcasts | Telecom, Digital Infrastructure and Data Center News, Insights + More was inspected at https://rss.buzzsprout.com/860047.rss; latest verified publication \"Phillip Koblence on Inspiring the Next Generation of Digital Infrastructure Talent\" on 2026-06-09. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/860047.rss"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "JSA Podcasts | Telecom, Digital Infrastructure and Data Center News, Insights + More was inspected at https://rss.buzzsprout.com/860047.rss; latest verified publication \"Phillip Koblence on Inspiring the Next Generation of Digital Infrastructure Talent\" on 2026-06-09. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/860047.rss"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "JSA Podcasts | Telecom, Digital Infrastructure and Data Center News, Insights + More was inspected at https://rss.buzzsprout.com/860047.rss; latest verified publication \"Phillip Koblence on Inspiring the Next Generation of Digital Infrastructure Talent\" on 2026-06-09. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/860047.rss"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "JSA Podcasts | Telecom, Digital Infrastructure and Data Center News, Insights + More was inspected at https://rss.buzzsprout.com/860047.rss; latest verified publication \"Phillip Koblence on Inspiring the Next Generation of Digital Infrastructure Talent\" on 2026-06-09. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/860047.rss"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/860047.rss"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "JSA Podcasts | Telecom, Digital Infrastructure and Data Center News, Insights + More was inspected at https://rss.buzzsprout.com/860047.rss; latest verified publication \"Phillip Koblence on Inspiring the Next Generation of Digital Infrastructure Talent\" on 2026-06-09. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/860047.rss"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "martyn-lee",
       "decision": "NURTURE",
-      "decisionReason": "The official feed verifies DAILY: ID. Polo GTI, BMW V2H and GM Cuts Bolt Costs | 18 May 2026 at 2026-05-19T20:23:48.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "EV News Daily - Technology and Business of EVs was inspected at https://audioboom.com/channels/5051980.rss; latest verified publication \"DAILY: ID. Polo GTI, BMW V2H and GM Cuts Bolt Costs | 18 May 2026\" on 2026-05-19. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Martyn Lee",
       "economicBuyer": "Martyn Lee",
       "ownedLongForm": {
@@ -581,20 +1652,145 @@
         "medianIntervalDays": 0
       },
       "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://audioboom.com/channels/5051980.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "EV News Daily - Technology and Business of EVs was inspected at https://audioboom.com/channels/5051980.rss; latest verified publication \"DAILY: ID. Polo GTI, BMW V2H and GM Cuts Bolt Costs | 18 May 2026\" on 2026-05-19."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/ev-news-daily-technology-and-business-of-evs/id1340970714?uo=4",
+          "proves": "Owned publication used to verify EV News Daily - Technology and Business of EVs's cadence."
+        },
+        {
+          "url": "https://audioboom.com/posts/8905561",
+          "proves": "Owned publication used to verify EV News Daily - Technology and Business of EVs's cadence."
+        },
+        {
+          "url": "https://audioboom.com/posts/8905561-daily-id-polo-gti-bmw-v2h-and-gm-cuts-bolt-costs-18-may-2026",
+          "proves": "Owned publication used to verify EV News Daily - Technology and Business of EVs's cadence."
+        },
+        {
+          "url": "https://audioboom.com/posts/8905558",
+          "proves": "Owned publication used to verify EV News Daily - Technology and Business of EVs's cadence."
+        },
+        {
+          "url": "https://audioboom.com/posts/8905330",
+          "proves": "Owned publication used to verify EV News Daily - Technology and Business of EVs's cadence."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to EV News Daily - Technology and Business of EVs, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://audioboom.com/channels/5051980.rss",
+              "https://podcasts.apple.com/us/podcast/ev-news-daily-technology-and-business-of-evs/id1340970714?uo=4",
+              "https://audioboom.com/posts/8905561",
+              "https://audioboom.com/posts/8905561-daily-id-polo-gti-bmw-v2h-and-gm-cuts-bolt-costs-18-may-2026",
+              "https://audioboom.com/posts/8905558",
+              "https://audioboom.com/posts/8905330"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-05-19, 2026-05-19, 2026-05-19; latest verified publication \"DAILY: ID. Polo GTI, BMW V2H and GM Cuts Bolt Costs | 18 May 2026\" on 2026-05-19.",
+            "evidenceUrls": [
+              "https://audioboom.com/channels/5051980.rss",
+              "https://podcasts.apple.com/us/podcast/ev-news-daily-technology-and-business-of-evs/id1340970714?uo=4",
+              "https://audioboom.com/posts/8905561",
+              "https://audioboom.com/posts/8905561-daily-id-polo-gti-bmw-v2h-and-gm-cuts-bolt-costs-18-may-2026",
+              "https://audioboom.com/posts/8905558",
+              "https://audioboom.com/posts/8905330"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "EV News Daily - Technology and Business of EVs was inspected at https://audioboom.com/channels/5051980.rss; latest verified publication \"DAILY: ID. Polo GTI, BMW V2H and GM Cuts Bolt Costs | 18 May 2026\" on 2026-05-19. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://audioboom.com/channels/5051980.rss",
+              "https://podcasts.apple.com/us/podcast/ev-news-daily-technology-and-business-of-evs/id1340970714?uo=4",
+              "https://audioboom.com/posts/8905561",
+              "https://audioboom.com/posts/8905561-daily-id-polo-gti-bmw-v2h-and-gm-cuts-bolt-costs-18-may-2026",
+              "https://audioboom.com/posts/8905558",
+              "https://audioboom.com/posts/8905330"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "EV News Daily - Technology and Business of EVs was inspected at https://audioboom.com/channels/5051980.rss; latest verified publication \"DAILY: ID. Polo GTI, BMW V2H and GM Cuts Bolt Costs | 18 May 2026\" on 2026-05-19. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://audioboom.com/channels/5051980.rss",
+              "https://podcasts.apple.com/us/podcast/ev-news-daily-technology-and-business-of-evs/id1340970714?uo=4",
+              "https://audioboom.com/posts/8905561",
+              "https://audioboom.com/posts/8905561-daily-id-polo-gti-bmw-v2h-and-gm-cuts-bolt-costs-18-may-2026",
+              "https://audioboom.com/posts/8905558",
+              "https://audioboom.com/posts/8905330"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "EV News Daily - Technology and Business of EVs was inspected at https://audioboom.com/channels/5051980.rss; latest verified publication \"DAILY: ID. Polo GTI, BMW V2H and GM Cuts Bolt Costs | 18 May 2026\" on 2026-05-19. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://audioboom.com/channels/5051980.rss",
+              "https://podcasts.apple.com/us/podcast/ev-news-daily-technology-and-business-of-evs/id1340970714?uo=4",
+              "https://audioboom.com/posts/8905561",
+              "https://audioboom.com/posts/8905561-daily-id-polo-gti-bmw-v2h-and-gm-cuts-bolt-costs-18-may-2026",
+              "https://audioboom.com/posts/8905558",
+              "https://audioboom.com/posts/8905330"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "EV News Daily - Technology and Business of EVs was inspected at https://audioboom.com/channels/5051980.rss; latest verified publication \"DAILY: ID. Polo GTI, BMW V2H and GM Cuts Bolt Costs | 18 May 2026\" on 2026-05-19. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://audioboom.com/channels/5051980.rss",
+              "https://podcasts.apple.com/us/podcast/ev-news-daily-technology-and-business-of-evs/id1340970714?uo=4",
+              "https://audioboom.com/posts/8905561",
+              "https://audioboom.com/posts/8905561-daily-id-polo-gti-bmw-v2h-and-gm-cuts-bolt-costs-18-may-2026",
+              "https://audioboom.com/posts/8905558",
+              "https://audioboom.com/posts/8905330"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://audioboom.com/channels/5051980.rss",
+              "https://podcasts.apple.com/us/podcast/ev-news-daily-technology-and-business-of-evs/id1340970714?uo=4",
+              "https://audioboom.com/posts/8905561",
+              "https://audioboom.com/posts/8905561-daily-id-polo-gti-bmw-v2h-and-gm-cuts-bolt-costs-18-may-2026",
+              "https://audioboom.com/posts/8905558",
+              "https://audioboom.com/posts/8905330"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "EV News Daily - Technology and Business of EVs was inspected at https://audioboom.com/channels/5051980.rss; latest verified publication \"DAILY: ID. Polo GTI, BMW V2H and GM Cuts Bolt Costs | 18 May 2026\" on 2026-05-19. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://audioboom.com/channels/5051980.rss",
+              "https://podcasts.apple.com/us/podcast/ev-news-daily-technology-and-business-of-evs/id1340970714?uo=4",
+              "https://audioboom.com/posts/8905561",
+              "https://audioboom.com/posts/8905561-daily-id-polo-gti-bmw-v2h-and-gm-cuts-bolt-costs-18-may-2026",
+              "https://audioboom.com/posts/8905558",
+              "https://audioboom.com/posts/8905330"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "centre-for-energy-policy-cep",
@@ -661,26 +1857,90 @@
     {
       "id": "paul-sankey",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "paul sankey (@paulsankey11) / X was inspected at https://x.com/PaulSankey11; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Paul Sankey",
       "economicBuyer": "Paul Sankey",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/PaulSankey11",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "proves": "paul sankey (@paulsankey11) / X was inspected at https://x.com/PaulSankey11; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-14T22:19:26.292Z"
+      "auditedAt": "2026-07-15T18:54:35.789Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T18:54:35.789Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to paul sankey (@paulsankey11) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/PaulSankey11"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "paul sankey (@paulsankey11) / X was inspected at https://x.com/PaulSankey11; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://x.com/PaulSankey11"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "paul sankey (@paulsankey11) / X was inspected at https://x.com/PaulSankey11; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/PaulSankey11"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "paul sankey (@paulsankey11) / X was inspected at https://x.com/PaulSankey11; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://x.com/PaulSankey11"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "paul sankey (@paulsankey11) / X was inspected at https://x.com/PaulSankey11; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://x.com/PaulSankey11"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "paul sankey (@paulsankey11) / X was inspected at https://x.com/PaulSankey11; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://x.com/PaulSankey11"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://x.com/PaulSankey11"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "paul sankey (@paulsankey11) / X was inspected at https://x.com/PaulSankey11; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://x.com/PaulSankey11"
+            ]
+          }
+        }
+      }
     }
   ]
 }

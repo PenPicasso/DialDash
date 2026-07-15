@@ -3,14 +3,16 @@ import { join } from "path";
 
 const root = join(__dirname, "..");
 const cohort = process.argv.find((arg) => arg.startsWith("--cohort="))?.split("=")[1] || "next-200";
+const batchCount = Number(process.argv.find((arg) => arg.startsWith("--batches="))?.split("=")[1] || 8);
 if (!/^[a-z0-9-]+$/.test(cohort)) throw new Error("Cohort must use lowercase letters, numbers, and hyphens only.");
 const inputRoot = join(root, "data", `terra-medium-${cohort}`);
 const records: Array<{ id?: string }> = [];
-for (let batch = 1; batch <= 8; batch += 1) {
+for (let batch = 1; batch <= batchCount; batch += 1) {
   const path = join(inputRoot, `batch-${batch}.json`);
-  if (!existsSync(path)) throw new Error(`Missing batch ${batch}; Terra Medium must complete all eight batches first.`);
+  if (!existsSync(path)) throw new Error(`Missing batch ${batch}; Terra Medium must complete all ${batchCount} batches first.`);
   const result = JSON.parse(readFileSync(path, "utf8")) as { methodology?: string; batch?: number; records?: Array<{ id?: string }> };
-  if (result.methodology !== "terra-medium-recovery-v1" || result.batch !== batch || result.records?.length !== 25) {
+  const manifest = JSON.parse(readFileSync(join(root, "storage", `sol-${cohort}`, `batch-${batch}.json`), "utf8")) as { records?: Array<{ id?: string }> };
+  if (result.methodology !== "terra-medium-recovery-v1" || result.batch !== batch || result.records?.length !== manifest.records?.length) {
     throw new Error(`Batch ${batch} has invalid methodology, batch number, or record count.`);
   }
   records.push(...result.records);

@@ -179,13 +179,24 @@ The replacement workflow is `terra-medium-recovery-v1`:
 - Sol must subsequently audit all promotions, all nurture decisions, and a rejection sample before the 200 can count as completed.
 
 Terra Medium batch progress:
-- All eight batches were processed and passed `validate:terra-medium-next-200`; the methodology and production-data validators also passed on 2026-07-14.
-- The composed result is `data/terra-medium-next-200.json`: 19 factual exclusions, 181 NURTURE records, and 0 promotions. It remains `solReviewStatus: PENDING` and the 200 must not count as completed until Sol reviews it.
+- All eight batches were processed and passed `validate:terra-medium-next-200`; the methodology and production-data validators also passed on 2026-07-15.
+- Sol replaced the 181 automated nurture drafts with prospect-specific official-route reviews, preserved missing evidence as `NURTURE`, and corrected factual institutional/wrong-ICP misses found by the adversarial sample.
+- The composed result is `data/terra-medium-next-200.json`: 37 factual exclusions, 163 `NURTURE`, zero promotions, and `solReviewStatus: PASSED`.
+- The fixed audit passed at 46/46 explicit Sol verdicts and 100% measured precision against the 90% gate. Durable verdicts are in `data/sol-next-200-audit-verdicts.json`.
 - Terra manually resolved batch 2 on 2026-07-14: eight first-party-evidenced factual exclusions (three corporate/institutional accounts, one non-English show and four wrong-ICP feeds) and 17 NURTURE records. Named individual operators, including Martyn Lee and Paul Sankey, were deliberately retained as NURTURE pending owned-video and three-sample distribution-gap inspection.
 - Sol corrected batch 3 on 2026-07-14: NOV and X-energy remain confirmed enterprise exclusions; GridX and inspiratia returned to NURTURE because company ownership alone does not prove the corporate-monolith gate. inspiratia now retains only buyer-authority and three-sample video-gap checks.
 - Confirmed exclusions cannot retain `unresolvedGates`, and rejection language that says evidence is missing or the record cannot be factually rejected now fails `validate:terra-medium-next-200`.
 - `npm run research:terra-medium-evidence -- --batch=N` creates a resumable, ignored evidence pack using strict Apple discovery, official RSS parsing, cadence calculation and source probes. `npm run draft:terra-medium-batch -- --batch=N` turns that evidence into a conservative batch file.
 - A stale podcast feed is not a factual inactivity rejection. It proves only that the feed is stale; YouTube, newsletter and official-site publishing must be cross-checked for the true latest owned publication. Feed-only inactivity stays NURTURE.
+
+### Final Terra 31
+
+- After the three 200-record recovery cohorts passed Sol review, 809 of 840 dashboard prospects had completed Sol-reviewed cohort research.
+- The remaining 31 are fixed under ignored `storage/sol-final-31/`, fit ranks 810-840, in batches of 25 and 6 with an 8-record audit sample.
+- Authoritative mission: `docs/TERRA_FINAL_31.md`.
+- Prepare/validate: `npm run research:sol-final-31` and `npm run validate:sol-final-31`.
+- Terra evidence/draft/validation: `npm run research:terra-final-31-evidence -- --batch=N`, `npm run draft:terra-final-31 -- --batch=N`, and `npm run validate:terra-final-31 -- --batch=N`.
+- Missing evidence remains `NURTURE`; no Firecrawl, production write, main change, push, or deploy is allowed. Compose with `npm run compose:terra-final-31` and leave it `PENDING` for Sol.
 
 ### Second Terra recovery cohort
 
