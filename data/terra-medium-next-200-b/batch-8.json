@@ -1,0 +1,953 @@
+{
+  "methodology": "terra-medium-recovery-v1",
+  "cohort": "next-200-b",
+  "batch": 8,
+  "records": [
+    {
+      "id": "marketing-tc",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies BLG Podcast: New Opportunities in the Alberta Electricity Market at 2018-03-08T22:31:12.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Marketing TC",
+      "economicBuyer": "Marketing TC",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "BLG Podcast: New Opportunities in the Alberta Electricity Market",
+        "latestPublishedAt": "2018-03-08T22:31:12.000Z",
+        "evidenceUrl": "https://feeds.soundcloud.com/users/soundcloud:users:412079211/sounds.rss",
+        "recentPublicationDates": [
+          "2018-03-08T22:31:12.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.soundcloud.com/users/soundcloud:users:412079211/sounds.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "marketing-chat",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies 🗣️ Happy New Year ! Welcome S3E1 Uplifting Music🎶 at 2021-01-05T04:31:43.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Marketing CHAT",
+      "economicBuyer": "Marketing CHAT",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "🗣️ Happy New Year ! Welcome S3E1 Uplifting Music🎶",
+        "latestPublishedAt": "2021-01-05T04:31:43.000Z",
+        "evidenceUrl": "https://anchor.fm/s/2add444/podcast/rss",
+        "recentPublicationDates": [
+          "2021-01-05T04:31:43.000Z",
+          "2020-12-31T05:58:04.000Z",
+          "2020-12-30T15:51:10.000Z",
+          "2020-12-13T00:52:17.000Z",
+          "2020-12-02T18:30:49.000Z",
+          "2020-12-01T20:59:11.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 4.9
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/2add444/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "small-business",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies What You Should Know About the Customer Journey | Small Business Small Talk at 2025-09-05T14:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Small Business",
+      "economicBuyer": "Small Business",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "What You Should Know About the Customer Journey | Small Business Small Talk",
+        "latestPublishedAt": "2025-09-05T14:00:00.000Z",
+        "evidenceUrl": "https://rss.buzzsprout.com/802691.rss",
+        "recentPublicationDates": [
+          "2025-09-05T14:00:00.000Z",
+          "2025-07-22T20:00:00.000Z",
+          "2024-12-10T20:00:00.000Z",
+          "2024-07-23T18:00:00.000Z",
+          "2024-06-04T14:00:00.000Z",
+          "2024-05-10T17:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 106
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://rss.buzzsprout.com/802691.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "marketing-procurement",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies This is Unsustainable w/ Caroline Johnson at 2023-11-15T09:33:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Marketing Procurement",
+      "economicBuyer": "Marketing Procurement",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "This is Unsustainable w/ Caroline Johnson",
+        "latestPublishedAt": "2023-11-15T09:33:00.000Z",
+        "evidenceUrl": "https://rss.libsyn.com/shows/440751/destinations/3684918.xml",
+        "recentPublicationDates": [
+          "2023-11-15T09:33:00.000Z",
+          "2023-11-01T08:45:00.000Z",
+          "2023-10-18T08:34:00.000Z",
+          "2023-10-04T22:03:00.000Z",
+          "2023-09-20T08:32:00.000Z",
+          "2023-09-06T09:34:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 14
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://rss.libsyn.com/shows/440751/destinations/3684918.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "victor-powers",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Why Entrepreneurs Don't Do It All at 2021-05-22T22:39:54.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Victor Powers",
+      "economicBuyer": "Victor Powers",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Why Entrepreneurs Don't Do It All",
+        "latestPublishedAt": "2021-05-22T22:39:54.000Z",
+        "evidenceUrl": "https://anchor.fm/s/ef2130/podcast/rss",
+        "recentPublicationDates": [
+          "2021-05-22T22:39:54.000Z",
+          "2021-05-22T03:06:40.000Z",
+          "2021-05-22T01:46:26.000Z",
+          "2020-09-17T22:12:49.000Z",
+          "2019-10-08T11:00:00.000Z",
+          "2019-10-03T10:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 4
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/ef2130/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "nicola-j-rowley",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies From Rock Bottom to Role Model: Matt Selby's Journey of Redemption and Resilience at 2025-06-19T00:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Nicola J. Rowley",
+      "economicBuyer": "Nicola J. Rowley",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "From Rock Bottom to Role Model: Matt Selby's Journey of Redemption and Resilience",
+        "latestPublishedAt": "2025-06-19T00:00:00.000Z",
+        "evidenceUrl": "https://feeds.transistor.fm/the-power-of-storytelling",
+        "recentPublicationDates": [
+          "2025-06-19T00:00:00.000Z",
+          "2025-06-12T00:29:00.000Z",
+          "2025-04-17T00:00:00.000Z",
+          "2025-04-10T00:00:00.000Z",
+          "2025-03-27T01:00:00.000Z",
+          "2025-03-20T01:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 7
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.transistor.fm/the-power-of-storytelling",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "ford-motor-company",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Episode 13: Motorcraft® – Tried & True Since 1972 at 2022-08-26T17:15:12.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Ford Motor Company",
+      "economicBuyer": "Ford Motor Company",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Episode 13: Motorcraft® – Tried & True Since 1972",
+        "latestPublishedAt": "2022-08-26T17:15:12.000Z",
+        "evidenceUrl": "https://feeds.simplecast.com/nsnX_2AB",
+        "recentPublicationDates": [
+          "2022-08-26T17:15:12.000Z",
+          "2022-03-03T21:36:53.000Z",
+          "2022-03-03T21:31:03.000Z",
+          "2022-03-03T21:21:59.000Z",
+          "2021-12-03T16:21:51.000Z",
+          "2021-10-22T01:20:39.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 6.6
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.simplecast.com/nsnX_2AB",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "jaar-energiemarkt",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies De Marketeers van de Stroommarkt at 2024-05-31T11:13:49.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Jaar Energiemarkt",
+      "economicBuyer": "Jaar Energiemarkt",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "De Marketeers van de Stroommarkt",
+        "latestPublishedAt": "2024-05-31T11:13:49.000Z",
+        "evidenceUrl": "https://feeds.transistor.fm/lessen-uit-25-jaar-energiemarkt",
+        "recentPublicationDates": [
+          "2024-05-31T11:13:49.000Z",
+          "2024-05-24T09:57:59.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 7.1
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.transistor.fm/lessen-uit-25-jaar-energiemarkt",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "market-suomi",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Energiatehokkuutta jäähalleihin I EP 08 Mirika Knuutila, Energy Plus Engineering at 2024-06-28T05:19:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Market Suomi",
+      "economicBuyer": "Market Suomi",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Energiatehokkuutta jäähalleihin I EP 08 Mirika Knuutila, Energy Plus Engineering",
+        "latestPublishedAt": "2024-06-28T05:19:00.000Z",
+        "evidenceUrl": "https://anchor.fm/s/f2dfbbe4/podcast/rss",
+        "recentPublicationDates": [
+          "2024-06-28T05:19:00.000Z",
+          "2024-06-19T05:19:00.000Z",
+          "2024-06-14T05:16:00.000Z",
+          "2024-05-17T05:14:00.000Z",
+          "2024-04-19T05:15:00.000Z",
+          "2024-03-28T06:30:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 20
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/f2dfbbe4/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "gamerboy-gaming",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Geothermal energy at 2018-04-30T22:21:44.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "GamerBoy Gaming",
+      "economicBuyer": "GamerBoy Gaming",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Geothermal energy",
+        "latestPublishedAt": "2018-04-30T22:21:44.000Z",
+        "evidenceUrl": "https://anchor.fm/s/3a8b0f8/podcast/rss",
+        "recentPublicationDates": [
+          "2018-04-30T22:21:44.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/3a8b0f8/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "natalie-muenster",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Tough Enough: Caroline Cuffe, Oil Trader at 2021-05-31T13:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Natalie Muenster",
+      "economicBuyer": "Natalie Muenster",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Tough Enough: Caroline Cuffe, Oil Trader",
+        "latestPublishedAt": "2021-05-31T13:00:00.000Z",
+        "evidenceUrl": "https://feed.podbean.com/statementmondays/feed.xml",
+        "recentPublicationDates": [
+          "2021-05-31T13:00:00.000Z",
+          "2021-05-31T10:00:00.000Z",
+          "2021-05-24T10:00:00.000Z",
+          "2021-05-10T10:00:00.000Z",
+          "2021-05-03T09:00:00.000Z",
+          "2021-04-26T12:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 7
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feed.podbean.com/statementmondays/feed.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "intelligence-squared",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Ending Oil at 2023-11-01T21:55:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Intelligence Squared",
+      "economicBuyer": "Intelligence Squared",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Ending Oil",
+        "latestPublishedAt": "2023-11-01T21:55:00.000Z",
+        "evidenceUrl": "https://feeds.megaphone.fm/tidesoftransformation",
+        "recentPublicationDates": [
+          "2023-11-01T21:55:00.000Z",
+          "2023-10-25T18:10:00.000Z",
+          "2023-10-18T16:26:00.000Z",
+          "2023-10-11T16:32:00.000Z",
+          "2023-10-10T07:25:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 7
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.megaphone.fm/tidesoftransformation",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "fundamental-value",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Ep. 69 Building an Industry Leading Crypto Publication with Jon Rice (Blockworks) at 2023-06-28T11:30:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Fundamental Value",
+      "economicBuyer": "Fundamental Value",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Ep. 69 Building an Industry Leading Crypto Publication with Jon Rice (Blockworks)",
+        "latestPublishedAt": "2023-06-28T11:30:00.000Z",
+        "evidenceUrl": "https://feeds.transistor.fm/fundamental-value-a-bitcoin-podcast",
+        "recentPublicationDates": [
+          "2023-06-28T11:30:00.000Z",
+          "2023-06-26T11:30:00.000Z",
+          "2023-05-04T11:30:00.000Z",
+          "2023-04-18T11:30:00.000Z",
+          "2023-04-12T10:00:00.000Z",
+          "2023-02-07T12:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 16
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.transistor.fm/fundamental-value-a-bitcoin-podcast",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "jim-malone",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Tesla Tumbles On Price Cuts at 2023-08-14T23:19:47.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Jim Malone",
+      "economicBuyer": "Jim Malone",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Tesla Tumbles On Price Cuts",
+        "latestPublishedAt": "2023-08-14T23:19:47.000Z",
+        "evidenceUrl": "https://anchor.fm/s/2fea598c/podcast/rss",
+        "recentPublicationDates": [
+          "2023-08-14T23:19:47.000Z",
+          "2023-08-02T23:32:32.000Z",
+          "2023-08-01T23:09:35.000Z",
+          "2023-07-31T23:00:08.000Z",
+          "2023-07-24T23:28:21.000Z",
+          "2023-07-17T23:03:31.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 3
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/2fea598c/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "hyfindr-tech",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies #19 – Hyfindr Tech Talks – Hydrogen Tank Systems & Refueling | Jan Andreas – Argo-Anleg at 2025-10-23T06:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Hyfindr Tech",
+      "economicBuyer": "Hyfindr Tech",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "#19 – Hyfindr Tech Talks – Hydrogen Tank Systems & Refueling | Jan Andreas – Argo-Anleg",
+        "latestPublishedAt": "2025-10-23T06:00:00.000Z",
+        "evidenceUrl": "https://anchor.fm/s/10844d690/podcast/rss",
+        "recentPublicationDates": [
+          "2025-10-23T06:00:00.000Z",
+          "2025-10-20T12:27:59.000Z",
+          "2025-10-16T06:00:00.000Z",
+          "2025-10-13T06:00:00.000Z",
+          "2025-10-09T06:00:00.000Z",
+          "2025-10-06T06:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 3.3
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/10844d690/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "albert-rettenmaier",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Under Pressure - Hydrogen Storage at 2020-11-25T03:05:04.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Albert Rettenmaier",
+      "economicBuyer": "Albert Rettenmaier",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Under Pressure - Hydrogen Storage",
+        "latestPublishedAt": "2020-11-25T03:05:04.000Z",
+        "evidenceUrl": "https://anchor.fm/s/413a9b5c/podcast/rss",
+        "recentPublicationDates": [
+          "2020-11-25T03:05:04.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/413a9b5c/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "earth-sciences",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Ep 1: Camilla Thomson and Mathieu Lucquiaud at 2021-11-02T10:59:56.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Earth Sciences",
+      "economicBuyer": "Earth Sciences",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Ep 1: Camilla Thomson and Mathieu Lucquiaud",
+        "latestPublishedAt": "2021-11-02T10:59:56.000Z",
+        "evidenceUrl": "https://anchor.fm/s/71c75738/podcast/rss",
+        "recentPublicationDates": [
+          "2021-11-02T10:59:56.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/71c75738/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "paul-dockery",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Headliners: Crystal Ball, Mark Nelson, and Emeka Anyanwu @ Gridliance Transmission Symposium at 2024-12-20T16:28:05.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Paul Dockery",
+      "economicBuyer": "Paul Dockery",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Headliners: Crystal Ball, Mark Nelson, and Emeka Anyanwu @ Gridliance Transmission Symposium",
+        "latestPublishedAt": "2024-12-20T16:28:05.000Z",
+        "evidenceUrl": "https://api.substack.com/feed/podcast/272880.rss",
+        "recentPublicationDates": [
+          "2024-12-20T16:28:05.000Z",
+          "2024-12-17T17:00:00.000Z",
+          "2024-10-11T14:34:23.000Z",
+          "2024-09-27T14:26:33.000Z",
+          "2024-09-20T13:48:58.000Z",
+          "2024-09-13T13:33:40.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 13
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://api.substack.com/feed/podcast/272880.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "recehan-ebt",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies REcehSnap | Ep 2 - Isu TKDN, lphone16 ditahan masuk ke Indonesia at 2024-10-12T13:30:39.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "REcehan EBT",
+      "economicBuyer": "REcehan EBT",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "REcehSnap | Ep 2 - Isu TKDN, lphone16 ditahan masuk ke Indonesia",
+        "latestPublishedAt": "2024-10-12T13:30:39.000Z",
+        "evidenceUrl": "https://anchor.fm/s/4d385e58/podcast/rss",
+        "recentPublicationDates": [
+          "2024-10-12T13:30:39.000Z",
+          "2024-10-08T12:10:06.000Z",
+          "2021-12-30T03:29:57.000Z",
+          "2021-12-30T02:04:13.000Z",
+          "2021-12-28T02:12:19.000Z",
+          "2021-12-24T07:49:09.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 4.1
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/4d385e58/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "girish-shivakumar",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies 116: How Nuclear Can Power the AI Revolution Sustainably at 2025-09-20T08:30:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Girish Shivakumar",
+      "economicBuyer": "Girish Shivakumar",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "116: How Nuclear Can Power the AI Revolution Sustainably",
+        "latestPublishedAt": "2025-09-20T08:30:00.000Z",
+        "evidenceUrl": "https://audioboom.com/channels/4992635.rss",
+        "recentPublicationDates": [
+          "2025-09-20T08:30:00.000Z",
+          "2025-09-06T12:30:00.000Z",
+          "2025-08-16T02:30:00.000Z",
+          "2025-08-03T02:30:00.000Z",
+          "2025-07-06T02:30:00.000Z",
+          "2025-05-24T02:30:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 14
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://audioboom.com/channels/4992635.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "lakeside-labs",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies The Next Big Thing in Artificial Evolution at 2014-04-22T07:52:53.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Lakeside Labs",
+      "economicBuyer": "Lakeside Labs",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "The Next Big Thing in Artificial Evolution",
+        "latestPublishedAt": "2014-04-22T07:52:53.000Z",
+        "evidenceUrl": "http://static.lakeside-labs.com/iTunesU/feeds/colloquia-from-science-leaders-and-technology-innovators-sd.xml",
+        "recentPublicationDates": [
+          "2014-04-22T07:52:53.000Z",
+          "2013-07-16T07:12:25.000Z",
+          "2013-07-16T07:12:40.000Z",
+          "2013-04-29T13:11:29.000Z",
+          "2012-10-22T12:22:46.000Z",
+          "2012-10-22T12:13:37.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 0
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "http://static.lakeside-labs.com/iTunesU/feeds/colloquia-from-science-leaders-and-technology-innovators-sd.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "ashwati-ramesh",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Smarter Spaces: Building Intelligence with Clairco | Spill the C #14 at 2025-08-13T06:05:19.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Ashwati Ramesh",
+      "economicBuyer": "Ashwati Ramesh",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Smarter Spaces: Building Intelligence with Clairco | Spill the C #14",
+        "latestPublishedAt": "2025-08-13T06:05:19.000Z",
+        "evidenceUrl": "https://anchor.fm/s/10153dcb4/podcast/rss",
+        "recentPublicationDates": [
+          "2025-08-13T06:05:19.000Z",
+          "2025-07-17T03:37:34.000Z",
+          "2025-07-02T06:19:27.000Z",
+          "2025-06-24T14:29:48.000Z",
+          "2025-05-27T05:25:23.000Z",
+          "2025-05-22T04:30:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 12.9
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/10153dcb4/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "thomas-b-linquist",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Lyceum's Cybersecurity Series Part 1: \"What You Don't Know CAN Hurt YOU\" at 2025-11-12T21:38:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Thomas B. Linquist",
+      "economicBuyer": "Thomas B. Linquist",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Lyceum's Cybersecurity Series Part 1: \"What You Don't Know CAN Hurt YOU\"",
+        "latestPublishedAt": "2025-11-12T21:38:00.000Z",
+        "evidenceUrl": "https://rss.libsyn.com/shows/80657/destinations/372299.xml",
+        "recentPublicationDates": [
+          "2025-11-12T21:38:00.000Z",
+          "2025-10-29T14:43:00.000Z",
+          "2025-01-22T22:44:57.000Z",
+          "2023-05-12T14:15:00.000Z",
+          "2023-03-12T20:23:07.000Z",
+          "2021-02-24T21:41:08.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 60.7
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://rss.libsyn.com/shows/80657/destinations/372299.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "ikea-australia",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Discussion | How IKEA is securing its renewable future with Karol Gobczynski at 2021-06-11T06:00:14.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "IKEA Australia",
+      "economicBuyer": "IKEA Australia",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Discussion | How IKEA is securing its renewable future with Karol Gobczynski",
+        "latestPublishedAt": "2021-06-11T06:00:14.000Z",
+        "evidenceUrl": "https://feeds.acast.com/public/shows/5f040d6d251e940fa24dace0",
+        "recentPublicationDates": [
+          "2021-06-11T06:00:14.000Z",
+          "2021-06-07T05:09:20.000Z",
+          "2021-03-17T17:10:25.000Z",
+          "2021-03-17T17:05:45.000Z",
+          "2021-03-17T17:00:12.000Z",
+          "2020-11-11T05:09:22.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 14
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.acast.com/public/shows/5f040d6d251e940fa24dace0",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    },
+    {
+      "id": "bdo-uk-llp",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies The Megawatt Hour Episode 10: Back to the future at 2023-12-20T15:20:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "BDO UK LLP",
+      "economicBuyer": "BDO UK LLP",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "The Megawatt Hour Episode 10: Back to the future",
+        "latestPublishedAt": "2023-12-20T15:20:00.000Z",
+        "evidenceUrl": "https://rss.libsyn.com/shows/205241/destinations/1471379.xml",
+        "recentPublicationDates": [
+          "2023-12-20T15:20:00.000Z",
+          "2023-08-30T12:19:00.000Z",
+          "2023-07-18T15:17:00.000Z",
+          "2023-05-15T11:35:53.000Z",
+          "2023-02-23T14:24:00.000Z",
+          "2022-11-15T10:05:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 42.9
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://rss.libsyn.com/shows/205241/destinations/1471379.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T00:00:27.315Z"
+    }
+  ]
+}

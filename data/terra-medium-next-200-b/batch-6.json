@@ -1,0 +1,891 @@
+{
+  "methodology": "terra-medium-recovery-v1",
+  "cohort": "next-200-b",
+  "batch": 6,
+  "records": [
+    {
+      "id": "ekt-interactive",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Oil 101 &#8211; Introduction to Downstream Oil and Gas at 2020-07-18T16:18:12.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "EKT Interactive",
+      "economicBuyer": "EKT Interactive",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Oil 101 &#8211; Introduction to Downstream Oil and Gas",
+        "latestPublishedAt": "2020-07-18T16:18:12.000Z",
+        "evidenceUrl": "https://ektinteractive.com/feed/podcast/oil-101-podcast/?",
+        "recentPublicationDates": [
+          "2020-07-18T16:18:12.000Z",
+          "2020-07-17T19:18:26.000Z",
+          "2020-07-15T19:38:21.000Z",
+          "2020-07-10T19:54:02.000Z",
+          "2020-07-10T17:20:15.000Z",
+          "2020-07-01T18:37:52.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 8.9
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://ektinteractive.com/feed/podcast/oil-101-podcast/?",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "spod-media-llc",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Energy Crossroads: Trump, Musk, and Global Challenges with Peyto and New Zealand's Gas Dilemma at 2024-08-15T21:19:57.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Spod Media LLC",
+      "economicBuyer": "Spod Media LLC",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Energy Crossroads: Trump, Musk, and Global Challenges with Peyto and New Zealand's Gas Dilemma",
+        "latestPublishedAt": "2024-08-15T21:19:57.000Z",
+        "evidenceUrl": "https://www.spreaker.com/show/6170379/episodes/feed",
+        "recentPublicationDates": [
+          "2024-08-15T21:19:57.000Z",
+          "2024-08-08T21:49:44.000Z",
+          "2024-08-01T17:35:55.000Z",
+          "2024-07-25T17:49:15.000Z",
+          "2024-07-19T21:04:59.000Z",
+          "2024-07-18T18:05:09.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 7
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.spreaker.com/show/6170379/episodes/feed",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "marty-stetzer",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Promoting Digital Energy Education in The Classroom with Eleanor Cannon at 2023-05-25T18:30:01.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Marty Stetzer",
+      "economicBuyer": "Marty Stetzer",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Promoting Digital Energy Education in The Classroom with Eleanor Cannon",
+        "latestPublishedAt": "2023-05-25T18:30:01.000Z",
+        "evidenceUrl": "https://ektinteractive.com/feed/podcast/the-drill-down/?",
+        "recentPublicationDates": [
+          "2023-05-25T18:30:01.000Z",
+          "2023-03-29T18:28:01.000Z",
+          "2021-04-20T13:32:11.000Z",
+          "2018-04-26T18:32:11.000Z",
+          "2018-03-15T21:22:42.000Z",
+          "2018-02-24T19:04:16.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 41.9
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://ektinteractive.com/feed/podcast/the-drill-down/?",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "oil",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies #19 - Career Transition to Renewables at 2021-06-11T12:45:03.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Oil",
+      "economicBuyer": "Oil",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "#19 - Career Transition to Renewables",
+        "latestPublishedAt": "2021-06-11T12:45:03.000Z",
+        "evidenceUrl": "https://anchor.fm/s/e76a3e74/podcast/rss",
+        "recentPublicationDates": [
+          "2021-06-11T12:45:03.000Z",
+          "2021-05-24T23:00:10.000Z",
+          "2021-05-05T23:00:11.000Z",
+          "2020-12-15T05:37:30.000Z",
+          "2020-12-03T23:01:05.000Z",
+          "2020-11-18T00:23:10.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 19
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/e76a3e74/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "mark-smith",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Digital Twins 2.0: Remotely Monitor and Manage Your Assets Using Computer Vision at 2022-11-25T21:25:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Mark Smith",
+      "economicBuyer": "Mark Smith",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Digital Twins 2.0: Remotely Monitor and Manage Your Assets Using Computer Vision",
+        "latestPublishedAt": "2022-11-25T21:25:00.000Z",
+        "evidenceUrl": "https://rss.libsyn.com/shows/304325/destinations/2429453.xml",
+        "recentPublicationDates": [
+          "2022-11-25T21:25:00.000Z",
+          "2022-11-25T21:14:00.000Z",
+          "2022-04-20T17:47:16.000Z",
+          "2022-04-06T17:45:17.000Z",
+          "2022-03-24T15:56:45.000Z",
+          "2022-03-09T19:07:50.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 14.9
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://rss.libsyn.com/shows/304325/destinations/2429453.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "enercom-inc-oil",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Exclusive 360 Energy Expert Network Discussion: Mother Nature Messing with Texas at 2021-02-17T23:33:51.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "EnerCom Inc. | Oil",
+      "economicBuyer": "EnerCom Inc. | Oil",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Exclusive 360 Energy Expert Network Discussion: Mother Nature Messing with Texas",
+        "latestPublishedAt": "2021-02-17T23:33:51.000Z",
+        "evidenceUrl": "https://feeds.blubrry.com/feeds/energy_360_enercom.xml",
+        "recentPublicationDates": [
+          "2021-02-17T23:33:51.000Z",
+          "2020-12-17T12:00:00.000Z",
+          "2020-12-16T14:08:01.000Z",
+          "2020-12-16T14:06:04.000Z",
+          "2020-12-14T11:47:00.000Z",
+          "2020-12-01T16:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 3.8
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.blubrry.com/feeds/energy_360_enercom.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "international-atomic-energy-agency",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The International Atomic Energy Agency is an intergovernmental organisation. Its communications are institution-controlled public-agency output, not a creator-controlled Energy Dial buyer chain.",
+      "contentOwner": "International Atomic Energy Agency",
+      "economicBuyer": "International Atomic Energy Agency",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "evidence": [
+        {
+          "url": "https://www.iaea.org/about/overview",
+          "proves": "The IAEA identifies itself as an intergovernmental organisation."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "utility-dive",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Utility Dive is a leading publication operated by Informa TechTarget, with journalists serving 14 million decision makers. It is established corporate media rather than a creator-controlled buyer chain.",
+      "contentOwner": "Utility Dive",
+      "economicBuyer": "Utility Dive",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "EPS Ep. 12: An on-the-ground account of coal ash pollution in Texas",
+        "latestPublishedAt": "2019-05-07T21:19:30.000Z",
+        "evidenceUrl": "https://feeds.soundcloud.com/users/soundcloud:users:535875192/sounds.rss",
+        "recentPublicationDates": [
+          "2019-05-07T21:19:30.000Z",
+          "2019-04-16T13:02:01.000Z",
+          "2019-03-25T13:52:54.000Z",
+          "2019-03-19T11:14:52.000Z",
+          "2019-03-06T13:58:24.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 17.1
+      },
+      "evidence": [
+        {
+          "url": "https://www.utilitydive.com/about/",
+          "proves": "Utility Dive identifies its Informa TechTarget ownership and enterprise media scale."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "citizens-utility-board",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Illinois' Winter Heating Crisis at 2021-11-19T01:02:36.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Citizens Utility Board",
+      "economicBuyer": "Citizens Utility Board",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Illinois' Winter Heating Crisis",
+        "latestPublishedAt": "2021-11-19T01:02:36.000Z",
+        "evidenceUrl": "https://feeds.soundcloud.com/users/soundcloud:users:816800905/sounds.rss",
+        "recentPublicationDates": [
+          "2021-11-19T01:02:36.000Z",
+          "2021-10-07T16:01:28.000Z",
+          "2021-04-28T18:38:59.000Z",
+          "2021-03-12T18:04:04.000Z",
+          "2021-01-25T15:38:32.000Z",
+          "2020-11-05T17:40:24.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 39.9
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.soundcloud.com/users/soundcloud:users:816800905/sounds.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "anthony-j-conklin",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Ep. 15: Selling MORE Solar in 2023! at 2023-01-03T18:19:16.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Anthony J. Conklin",
+      "economicBuyer": "Anthony J. Conklin",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Ep. 15: Selling MORE Solar in 2023!",
+        "latestPublishedAt": "2023-01-03T18:19:16.000Z",
+        "evidenceUrl": "https://anchor.fm/s/8378043c/podcast/rss",
+        "recentPublicationDates": [
+          "2023-01-03T18:19:16.000Z",
+          "2022-11-28T22:12:10.000Z",
+          "2022-09-06T13:00:38.000Z",
+          "2022-08-30T20:29:43.000Z",
+          "2022-07-19T23:37:49.000Z",
+          "2022-06-12T22:57:40.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 7.4
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/8378043c/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "megan-tran",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Episode 23: Solar Energy at 2021-01-30T02:27:01.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Megan Tran",
+      "economicBuyer": "Megan Tran",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Episode 23: Solar Energy",
+        "latestPublishedAt": "2021-01-30T02:27:01.000Z",
+        "evidenceUrl": "https://anchor.fm/s/4a3d2788/podcast/rss",
+        "recentPublicationDates": [
+          "2021-01-30T02:27:01.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/4a3d2788/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "sabnoor-sandhu",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Sabnoor Sandhu 2020 Solar energy at 2020-04-07T04:27:24.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Sabnoor Sandhu",
+      "economicBuyer": "Sabnoor Sandhu",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Sabnoor Sandhu 2020 Solar energy",
+        "latestPublishedAt": "2020-04-07T04:27:24.000Z",
+        "evidenceUrl": "https://anchor.fm/s/1baa1034/podcast/rss",
+        "recentPublicationDates": [
+          "2020-04-07T04:27:24.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/1baa1034/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "oliver-graybill-roberts",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Understanding Wind Energy at 2021-02-12T21:55:16.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Oliver Graybill-Roberts",
+      "economicBuyer": "Oliver Graybill-Roberts",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Understanding Wind Energy",
+        "latestPublishedAt": "2021-02-12T21:55:16.000Z",
+        "evidenceUrl": "https://anchor.fm/s/4b0a1158/podcast/rss",
+        "recentPublicationDates": [
+          "2021-02-12T21:55:16.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/4b0a1158/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "anna-belle-phillips",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Wind Energy Podcast at 2019-05-08T19:16:04.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Anna Belle Phillips",
+      "economicBuyer": "Anna Belle Phillips",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Wind Energy Podcast",
+        "latestPublishedAt": "2019-05-08T19:16:04.000Z",
+        "evidenceUrl": "https://anchor.fm/s/afaee70/podcast/rss",
+        "recentPublicationDates": [
+          "2019-05-08T19:16:04.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/afaee70/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "mia",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies The Energy of Wind at 2021-02-12T17:51:32.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Mia",
+      "economicBuyer": "Mia",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "The Energy of Wind",
+        "latestPublishedAt": "2021-02-12T17:51:32.000Z",
+        "evidenceUrl": "https://anchor.fm/s/4b0151e4/podcast/rss",
+        "recentPublicationDates": [
+          "2021-02-12T17:51:32.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/4b0151e4/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "yale-clean-energy-future",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Yale Clean Energy Future is produced by Yale's Center for Business and the Environment as an educational programme. The university centre controls the content and transaction, not a creator-controlled buyer chain.",
+      "contentOwner": "Yale Clean Energy Future",
+      "economicBuyer": "Yale Clean Energy Future",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Episode Six: Energy is Power—Decolonizing Energy Production on Indigenous Lands in the West",
+        "latestPublishedAt": "2022-02-08T14:13:41.000Z",
+        "evidenceUrl": "https://yalepodcasts.blubrry.net/category/yale-clean-energy-future/feed/podcast/",
+        "recentPublicationDates": [
+          "2022-02-08T14:13:41.000Z",
+          "2021-10-28T16:49:53.000Z",
+          "2021-10-04T14:55:58.000Z",
+          "2021-09-13T16:30:48.000Z",
+          "2021-06-24T13:59:24.000Z",
+          "2021-06-24T13:56:34.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 22.5
+      },
+      "evidence": [
+        {
+          "url": "https://cbey.yale.edu/research/yale-clean-energy-future",
+          "proves": "Yale identifies the podcast as produced by its Center for Business and the Environment."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "national-grid",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "National Grid is a public energy-network company operating electricity and gas networks in the UK and US. Its programme is corporate communications, not a creator-controlled buyer chain.",
+      "contentOwner": "National Grid",
+      "economicBuyer": "National Grid",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Meet the unsung heroes of the electricity grid | Behind the scenes with overhead lineworkers",
+        "latestPublishedAt": "2025-01-30T16:00:00.000Z",
+        "evidenceUrl": "https://feeds.megaphone.fm/TPGL9883769817/",
+        "recentPublicationDates": [
+          "2025-01-30T16:00:00.000Z",
+          "2024-12-16T06:00:00.000Z",
+          "2024-11-13T07:00:00.000Z",
+          "2024-10-24T11:05:00.000Z",
+          "2024-09-20T07:00:00.000Z",
+          "2024-08-19T06:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 32
+      },
+      "evidence": [
+        {
+          "url": "https://www.nationalgrid.com/about-us/what-we-do",
+          "proves": "National Grid identifies its electricity and gas network operations in the UK and US."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "tae-technologies",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Proving FRC fusion stability at scale, with Senior Scientist Roelof Groenewald at 2025-08-27T20:16:12.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "TAE Technologies",
+      "economicBuyer": "TAE Technologies",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Proving FRC fusion stability at scale, with Senior Scientist Roelof Groenewald",
+        "latestPublishedAt": "2025-08-27T20:16:12.000Z",
+        "evidenceUrl": "https://feeds.acast.com/public/shows/66bbc92da7f4fbb99112daaa",
+        "recentPublicationDates": [
+          "2025-08-27T20:16:12.000Z",
+          "2025-07-14T19:19:33.000Z",
+          "2025-06-04T17:33:46.000Z",
+          "2025-05-21T18:16:18.000Z",
+          "2025-04-15T14:17:21.000Z",
+          "2025-04-15T14:15:37.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 23.8
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.acast.com/public/shows/66bbc92da7f4fbb99112daaa",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "aden-richie",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Climate Crisis and Clean Energy at 2021-02-04T13:56:26.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Aden Richie",
+      "economicBuyer": "Aden Richie",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Climate Crisis and Clean Energy",
+        "latestPublishedAt": "2021-02-04T13:56:26.000Z",
+        "evidenceUrl": "https://anchor.fm/s/43be23e4/podcast/rss",
+        "recentPublicationDates": [
+          "2021-02-04T13:56:26.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/43be23e4/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "indigenous-clean-energy",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Kaawaapamatin miina (See you again) at 2025-01-23T13:30:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Indigenous Clean Energy",
+      "economicBuyer": "Indigenous Clean Energy",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Kaawaapamatin miina (See you again)",
+        "latestPublishedAt": "2025-01-23T13:30:00.000Z",
+        "evidenceUrl": "https://anchor.fm/s/59985b08/podcast/rss",
+        "recentPublicationDates": [
+          "2025-01-23T13:30:00.000Z",
+          "2024-06-26T13:15:00.000Z",
+          "2024-05-13T18:24:01.000Z",
+          "2024-03-27T19:57:20.000Z",
+          "2023-12-21T16:58:44.000Z",
+          "2023-12-14T18:30:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 43.8
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/59985b08/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "clean-energy-resource-teams",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Planting seeds for community-led clean energy projects with Lissa Pawlisch & Joel Haskard at 2021-09-27T19:57:56.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Clean Energy Resource Teams",
+      "economicBuyer": "Clean Energy Resource Teams",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Planting seeds for community-led clean energy projects with Lissa Pawlisch & Joel Haskard",
+        "latestPublishedAt": "2021-09-27T19:57:56.000Z",
+        "evidenceUrl": "https://anchor.fm/s/36d34678/podcast/rss",
+        "recentPublicationDates": [
+          "2021-09-27T19:57:56.000Z",
+          "2021-06-30T12:07:30.000Z",
+          "2021-06-16T03:33:32.000Z",
+          "2021-04-29T11:14:47.000Z",
+          "2021-04-23T04:59:37.000Z",
+          "2021-03-23T12:12:47.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 26.3
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/36d34678/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "utah-clean-energy",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Charging Ahead: Battery storage breakthroughs that are changing the way we use energy at 2024-07-15T19:31:32.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Utah Clean Energy",
+      "economicBuyer": "Utah Clean Energy",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Charging Ahead: Battery storage breakthroughs that are changing the way we use energy",
+        "latestPublishedAt": "2024-07-15T19:31:32.000Z",
+        "evidenceUrl": "https://anchor.fm/s/88b065e8/podcast/rss",
+        "recentPublicationDates": [
+          "2024-07-15T19:31:32.000Z",
+          "2023-12-07T17:44:57.000Z",
+          "2023-06-14T16:32:41.000Z",
+          "2023-05-04T20:33:26.000Z",
+          "2022-12-05T15:10:30.000Z",
+          "2022-11-15T15:59:24.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 40.8
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/88b065e8/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "clean-energy-north-carolina",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies NC Clean Energy Champions at 2019-12-17T17:04:43.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Clean Energy North Carolina",
+      "economicBuyer": "Clean Energy North Carolina",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "NC Clean Energy Champions",
+        "latestPublishedAt": "2019-12-17T17:04:43.000Z",
+        "evidenceUrl": "https://feeds.soundcloud.com/users/soundcloud:users:750626101/sounds.rss",
+        "recentPublicationDates": [
+          "2019-12-17T17:04:43.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.soundcloud.com/users/soundcloud:users:750626101/sounds.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "clean-energy-radio-archives-webtalkradionet",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Clean Energy Radio – Can Synthetic Fuels Change the World Energy Picture? at 2011-06-06T22:56:13.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Clean Energy Radio Archives - WebTalkRadio.net",
+      "economicBuyer": "Clean Energy Radio Archives - WebTalkRadio.net",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Clean Energy Radio – Can Synthetic Fuels Change the World Energy Picture?",
+        "latestPublishedAt": "2011-06-06T22:56:13.000Z",
+        "evidenceUrl": "https://webtalkradio.net/internet-talk-radio/category/podcasts/clean-energy-radio/feed/",
+        "recentPublicationDates": [
+          "2011-06-06T22:56:13.000Z",
+          "2011-05-23T05:01:06.000Z",
+          "2011-05-16T05:01:49.000Z",
+          "2011-05-09T05:01:51.000Z",
+          "2011-04-18T05:01:05.000Z",
+          "2011-04-11T05:01:30.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 7
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://webtalkradio.net/internet-talk-radio/category/podcasts/clean-energy-radio/feed/",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    },
+    {
+      "id": "wastetoenergynow",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Episode 5 - The Rational View podcast with host Dr. Al Scott - Recycling Nuclear Waste - June 19, 2021 at 2021-06-21T15:16:18.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "wastetoenergynow",
+      "economicBuyer": "wastetoenergynow",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Episode 5 - The Rational View podcast with host Dr. Al Scott - Recycling Nuclear Waste - June 19, 2021",
+        "latestPublishedAt": "2021-06-21T15:16:18.000Z",
+        "evidenceUrl": "https://anchor.fm/s/57198be0/podcast/rss",
+        "recentPublicationDates": [
+          "2021-06-21T15:16:18.000Z",
+          "2021-06-07T20:27:25.000Z",
+          "2021-05-22T14:13:54.000Z",
+          "2021-04-18T01:17:35.000Z",
+          "2021-04-17T21:20:45.000Z",
+          "2021-04-16T21:20:45.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 13.8
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/57198be0/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:55:14.464Z"
+    }
+  ]
+}

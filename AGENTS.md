@@ -151,6 +151,12 @@ Terra Medium batch progress:
 - `npm run research:terra-medium-evidence -- --batch=N` creates a resumable, ignored evidence pack using strict Apple discovery, official RSS parsing, cadence calculation and source probes. `npm run draft:terra-medium-batch -- --batch=N` turns that evidence into a conservative batch file.
 - A stale podcast feed is not a factual inactivity rejection. It proves only that the feed is stale; YouTube, newsletter and official-site publishing must be cross-checked for the true latest owned publication. Feed-only inactivity stays NURTURE.
 
+### Second Terra recovery cohort
+
+- `next-200-b` is a distinct, preview-only recovery cohort. It excludes the prior Terra ledger and does not write `data/nodes.json`, deploy, push, or modify `main`.
+- Its source manifest contains 200 previously deterministic-disqualified records ranked 178-502. No remaining unreviewed production `NURTURE` records existed after the prior ledgers were excluded, so this cohort deliberately tests likely false negatives instead of claiming a new sales queue.
+- All eight `data/terra-medium-next-200-b/batch-N.json` files passed their batch validator plus `validate:methodology` and `validate:data` on 2026-07-15. The composed `data/terra-medium-next-200-b.json` contains 179 `NURTURE`, 21 first-party-evidenced `DISQUALIFIED_CONFIRMED`, and zero promotions. It remains `solReviewStatus: PENDING`; it is not a completed review and must not be promoted into production.
+
 ### Full light-model and Sol review
 
 Branch: `codex/light-model-next-100`. This remains preview-only; do not merge to `main` or promote production until the user approves it.

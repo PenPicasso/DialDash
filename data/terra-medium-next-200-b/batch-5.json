@@ -1,0 +1,897 @@
+{
+  "methodology": "terra-medium-recovery-v1",
+  "cohort": "next-200-b",
+  "batch": 5,
+  "records": [
+    {
+      "id": "ecologic-institute",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Ecologic Institute is an established independent academic think tank with more than 100 staff, funded through institutional project work. Its content and transaction are controlled by an institution rather than a creator-controlled buyer chain.",
+      "contentOwner": "Ecologic Institute",
+      "economicBuyer": "Ecologic Institute",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "The Buzz - Coming to a Sale Near You",
+        "latestPublishedAt": "2026-07-10T09:00:00.000Z",
+        "evidenceUrl": "https://feeds.simplecast.com/wsnMIVIk",
+        "recentPublicationDates": [
+          "2026-07-10T09:00:00.000Z",
+          "2026-07-03T09:00:00.000Z",
+          "2026-06-26T09:00:00.000Z",
+          "2026-06-19T09:00:00.000Z",
+          "2026-06-12T09:00:00.000Z",
+          "2026-06-05T09:00:00.000Z"
+        ],
+        "cadenceStatus": "ACTIVE",
+        "medianIntervalDays": 7
+      },
+      "evidence": [
+        {
+          "url": "https://www.ecologic.eu/about?p=5",
+          "proves": "Ecologic identifies itself as an independent academic think tank and describes its institutional research organisation."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "harvard-law-school",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Harvard Law School is a large university law school. Its content is university-controlled education and institutional communications, rather than a creator-controlled Energy Dial buyer chain.",
+      "contentOwner": "Harvard Law School",
+      "economicBuyer": "Harvard Law School",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Ep. 10: Civil v. Common Law Myths",
+        "latestPublishedAt": "2024-09-03T14:37:10.000Z",
+        "evidenceUrl": "https://anchor.fm/s/f89542ac/podcast/rss",
+        "recentPublicationDates": [
+          "2024-09-03T14:37:10.000Z",
+          "2024-08-27T20:08:20.000Z",
+          "2024-08-19T16:20:13.000Z",
+          "2024-08-12T18:24:04.000Z",
+          "2024-08-05T18:39:10.000Z",
+          "2024-07-29T14:45:35.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 6.9
+      },
+      "evidence": [
+        {
+          "url": "https://hls.harvard.edu/about/",
+          "proves": "Harvard identifies Harvard Law School as a university law school with a large academic institution."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "university-of-southern-california-ershaghi-center-for-energy-transition",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies S3E13 | Is Oil a Blessing or a Curse? at 2025-08-03T21:30:05.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "University of Southern California | Ershaghi Center for Energy Transition",
+      "economicBuyer": "University of Southern California | Ershaghi Center for Energy Transition",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "S3E13 | Is Oil a Blessing or a Curse?",
+        "latestPublishedAt": "2025-08-03T21:30:05.000Z",
+        "evidenceUrl": "https://anchor.fm/s/e948f154/podcast/rss",
+        "recentPublicationDates": [
+          "2025-08-03T21:30:05.000Z",
+          "2025-08-03T21:25:11.000Z",
+          "2025-07-26T00:19:13.000Z",
+          "2025-07-26T00:13:04.000Z",
+          "2025-07-17T19:09:04.000Z",
+          "2025-07-17T19:01:25.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 0
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/e948f154/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "the-open-university",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The Open University is a global higher-education institution. Its programme is university educational output, not a creator-controlled Energy Dial buyer chain.",
+      "contentOwner": "The Open University",
+      "economicBuyer": "The Open University",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "renewables-scotland-independence",
+        "latestPublishedAt": "2014-07-16T17:07:31.000Z",
+        "evidenceUrl": "https://media-podcast.open.ac.uk/feeds/2931_renewableenergythescottishstory/ipod-all/rss2.xml",
+        "recentPublicationDates": [
+          "2014-07-16T17:07:31.000Z",
+          "2014-07-16T17:07:30.000Z",
+          "2014-07-11T11:52:00.000Z",
+          "2014-07-11T11:51:59.000Z",
+          "2014-07-11T11:29:29.000Z",
+          "2014-07-11T11:29:28.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 0
+      },
+      "evidence": [
+        {
+          "url": "https://about.open.ac.uk/",
+          "proves": "The Open University identifies itself as a global higher-education institution."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "marketscale",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies How Becton Dickinson Tackles Its ESG Strategy at 2021-11-17T20:41:08.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "MarketScale",
+      "economicBuyer": "MarketScale",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "How Becton Dickinson Tackles Its ESG Strategy",
+        "latestPublishedAt": "2021-11-17T20:41:08.000Z",
+        "evidenceUrl": "https://fast.wistia.com/channels/luimhb95tk/rss",
+        "recentPublicationDates": [
+          "2021-11-17T20:41:08.000Z",
+          "2021-07-28T21:33:40.000Z",
+          "2021-07-21T11:30:05.000Z",
+          "2021-07-14T15:11:57.000Z",
+          "2021-07-14T15:30:22.000Z",
+          "2021-06-30T15:10:18.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 7.2
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://fast.wistia.com/channels/luimhb95tk/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "kam-ghaffarian",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Energy resources: nuclear energy at 2011-06-06T00:15:53.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Kam Ghaffarian",
+      "economicBuyer": "Kam Ghaffarian",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Energy resources: nuclear energy",
+        "latestPublishedAt": "2011-06-06T00:15:53.000Z",
+        "evidenceUrl": "https://media-podcast.open.ac.uk/feeds/epub-s278-4/epub/rss2.xml",
+        "recentPublicationDates": [
+          "2011-06-06T00:15:53.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://media-podcast.open.ac.uk/feeds/epub-s278-4/epub/rss2.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "john-kastrinos",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Energy resources: geothermal energy at 2011-06-06T00:14:53.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "John Kastrinos",
+      "economicBuyer": "John Kastrinos",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Energy resources: geothermal energy",
+        "latestPublishedAt": "2011-06-06T00:14:53.000Z",
+        "evidenceUrl": "https://media-podcast.open.ac.uk/feeds/epub-s278-5/epub/rss2.xml",
+        "recentPublicationDates": [
+          "2011-06-06T00:14:53.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://media-podcast.open.ac.uk/feeds/epub-s278-5/epub/rss2.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "max-gagliardi",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies #224: Sweaty Start Up - Nick Huber at 2025-04-29T18:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Max Gagliardi",
+      "economicBuyer": "Max Gagliardi",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "#224: Sweaty Start Up - Nick Huber",
+        "latestPublishedAt": "2025-04-29T18:00:00.000Z",
+        "evidenceUrl": "https://rss.buzzsprout.com/1499227.rss",
+        "recentPublicationDates": [
+          "2025-04-29T18:00:00.000Z",
+          "2025-04-15T21:00:00.000Z",
+          "2025-02-27T19:00:00.000Z",
+          "2025-02-11T16:00:00.000Z",
+          "2025-02-07T18:00:00.000Z",
+          "2025-01-13T19:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 21
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://rss.buzzsprout.com/1499227.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "macro-crude",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Zero Deals: Inside the US LNG Stall of 2025 at 2025-04-15T05:17:36.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Macro Crude",
+      "economicBuyer": "Macro Crude",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Zero Deals: Inside the US LNG Stall of 2025",
+        "latestPublishedAt": "2025-04-15T05:17:36.000Z",
+        "evidenceUrl": "https://anchor.fm/s/25db6d14/podcast/rss",
+        "recentPublicationDates": [
+          "2025-04-15T05:17:36.000Z",
+          "2025-03-29T02:54:22.000Z",
+          "2025-03-27T08:42:26.000Z",
+          "2025-03-27T02:34:44.000Z",
+          "2023-09-21T11:31:43.000Z",
+          "2022-11-24T07:42:10.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 17.1
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/25db6d14/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "grid-geeks",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Electrify This! - S1E1- Plugging In to the Electrification Movement at 2020-11-24T19:01:09.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Grid Geeks",
+      "economicBuyer": "Grid Geeks",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Electrify This! - S1E1- Plugging In to the Electrification Movement",
+        "latestPublishedAt": "2020-11-24T19:01:09.000Z",
+        "evidenceUrl": "https://feeds.soundcloud.com/users/soundcloud:users:308030304/sounds.rss",
+        "recentPublicationDates": [
+          "2020-11-24T19:01:09.000Z",
+          "2020-11-02T23:22:33.000Z",
+          "2020-09-16T20:52:19.000Z",
+          "2020-06-05T18:14:58.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 47.1
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.soundcloud.com/users/soundcloud:users:308030304/sounds.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "bret-kugelmass",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Ep 458: Brian Woods - Head, School of Nuclear Science & Engineering, Oregon State University at 2024-10-10T19:20:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Bret Kugelmass",
+      "economicBuyer": "Bret Kugelmass",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Ep 458: Brian Woods - Head, School of Nuclear Science & Engineering, Oregon State University",
+        "latestPublishedAt": "2024-10-10T19:20:00.000Z",
+        "evidenceUrl": "https://rss.libsyn.com/shows/107828/destinations/585143.xml",
+        "recentPublicationDates": [
+          "2024-10-10T19:20:00.000Z",
+          "2024-09-16T18:35:00.000Z",
+          "2024-09-16T17:03:00.000Z",
+          "2024-07-17T13:34:00.000Z",
+          "2024-07-09T17:13:00.000Z",
+          "2024-06-25T18:46:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 8.2
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://rss.libsyn.com/shows/107828/destinations/585143.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "westwood-global-energy-group",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Westwood Energy Transition Now Podcast - Pavan Chilukuri 21st November 2024 at 2024-11-21T09:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Westwood Global Energy Group",
+      "economicBuyer": "Westwood Global Energy Group",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Westwood Energy Transition Now Podcast - Pavan Chilukuri 21st November 2024",
+        "latestPublishedAt": "2024-11-21T09:00:00.000Z",
+        "evidenceUrl": "https://rss.buzzsprout.com/1779351.rss",
+        "recentPublicationDates": [
+          "2024-11-21T09:00:00.000Z",
+          "2024-08-29T11:00:00.000Z",
+          "2024-06-13T10:00:00.000Z",
+          "2024-05-23T06:00:00.000Z",
+          "2024-05-09T10:00:00.000Z",
+          "2023-11-23T09:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 25.5
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://rss.buzzsprout.com/1779351.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "tortoise-media",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies A warming world: the urgency of the energy transition at 2022-07-13T09:42:18.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Tortoise Media",
+      "economicBuyer": "Tortoise Media",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "A warming world: the urgency of the energy transition",
+        "latestPublishedAt": "2022-07-13T09:42:18.000Z",
+        "evidenceUrl": "https://feeds.acast.com/public/shows/inside-the-energy-transition",
+        "recentPublicationDates": [
+          "2022-07-13T09:42:18.000Z",
+          "2022-05-11T05:00:38.000Z",
+          "2022-04-27T05:00:18.000Z",
+          "2022-04-13T05:00:49.000Z",
+          "2022-03-30T05:00:32.000Z",
+          "2022-03-16T06:00:44.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 14
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.acast.com/public/shows/inside-the-energy-transition",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "ohros-consulting-group",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Phil Caffyn - How to Make AM Happen in Really Small Companies at 2022-02-04T11:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "OHROS Consulting Group",
+      "economicBuyer": "OHROS Consulting Group",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Phil Caffyn - How to Make AM Happen in Really Small Companies",
+        "latestPublishedAt": "2022-02-04T11:00:00.000Z",
+        "evidenceUrl": "https://rss.buzzsprout.com/1184822.rss",
+        "recentPublicationDates": [
+          "2022-02-04T11:00:00.000Z",
+          "2021-08-25T10:00:00.000Z",
+          "2021-06-16T08:00:00.000Z",
+          "2021-05-26T08:00:00.000Z",
+          "2021-02-23T08:00:00.000Z",
+          "2021-01-11T07:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 43
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://rss.buzzsprout.com/1184822.rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "energytransitionconversations",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Energy Access with Richard Scotney at 2020-02-07T09:38:57.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "energytransitionconversations",
+      "economicBuyer": "energytransitionconversations",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Energy Access with Richard Scotney",
+        "latestPublishedAt": "2020-02-07T09:38:57.000Z",
+        "evidenceUrl": "https://feed.podbean.com/energytransitionconversations/feed.xml",
+        "recentPublicationDates": [
+          "2020-02-07T09:38:57.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://feed.podbean.com/energytransitionconversations/feed.xml",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "after-oil",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Episode 6 - Politics after Academia Part 2: Ends at 2023-01-09T06:29:01.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "After Oil",
+      "economicBuyer": "After Oil",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Episode 6 - Politics after Academia Part 2: Ends",
+        "latestPublishedAt": "2023-01-09T06:29:01.000Z",
+        "evidenceUrl": "https://anchor.fm/s/d1b5a690/podcast/rss",
+        "recentPublicationDates": [
+          "2023-01-09T06:29:01.000Z",
+          "2023-01-09T06:27:47.000Z",
+          "2023-01-09T06:26:07.000Z",
+          "2023-01-09T06:00:08.000Z",
+          "2022-12-09T03:41:06.000Z",
+          "2022-12-09T03:08:34.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 0
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/d1b5a690/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "vania-duggal",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Renewable energy at 2020-04-08T01:38:30.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Vania Duggal",
+      "economicBuyer": "Vania Duggal",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Renewable energy",
+        "latestPublishedAt": "2020-04-08T01:38:30.000Z",
+        "evidenceUrl": "https://anchor.fm/s/1bf84d1c/podcast/rss",
+        "recentPublicationDates": [
+          "2020-04-08T01:38:30.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/1bf84d1c/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "madhu-solartech",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Renewable Energy and Climate Change at 2021-08-19T15:53:12.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Madhu Solartech",
+      "economicBuyer": "Madhu Solartech",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Renewable Energy and Climate Change",
+        "latestPublishedAt": "2021-08-19T15:53:12.000Z",
+        "evidenceUrl": "https://anchor.fm/s/67c245cc/podcast/rss",
+        "recentPublicationDates": [
+          "2021-08-19T15:53:12.000Z",
+          "2021-08-15T13:00:26.000Z",
+          "2021-08-14T11:24:27.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 2.6
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/67c245cc/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "ilea",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Which renewal source is better in the US at 2021-07-21T20:01:47.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Ilea",
+      "economicBuyer": "Ilea",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Which renewal source is better in the US",
+        "latestPublishedAt": "2021-07-21T20:01:47.000Z",
+        "evidenceUrl": "https://anchor.fm/s/64f8f728/podcast/rss",
+        "recentPublicationDates": [
+          "2021-07-21T20:01:47.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/64f8f728/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "sean",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Microgrids with Renewable Energy  (Trailer) at 2019-12-08T21:28:19.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Sean",
+      "economicBuyer": "Sean",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Microgrids with Renewable Energy  (Trailer)",
+        "latestPublishedAt": "2019-12-08T21:28:19.000Z",
+        "evidenceUrl": "https://anchor.fm/s/11590f54/podcast/rss",
+        "recentPublicationDates": [
+          "2019-12-08T21:28:19.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/11590f54/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "soundville-holdings",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Hydrogen storage systems and more at 2025-10-08T20:36:04.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Soundville Holdings",
+      "economicBuyer": "Soundville Holdings",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Hydrogen storage systems and more",
+        "latestPublishedAt": "2025-10-08T20:36:04.000Z",
+        "evidenceUrl": "https://feeds.simplecast.com/UFM5U4DC",
+        "recentPublicationDates": [
+          "2025-10-08T20:36:04.000Z",
+          "2025-10-08T18:43:26.000Z",
+          "2025-10-08T16:51:09.000Z",
+          "2025-10-08T15:12:17.000Z",
+          "2025-10-08T13:21:35.000Z",
+          "2025-10-07T21:46:12.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 0.1
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://feeds.simplecast.com/UFM5U4DC",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "alireza-zabihi",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Introduction Of Renewable Energy Sources at 2020-11-16T12:27:49.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "alireza zabihi",
+      "economicBuyer": "alireza zabihi",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Introduction Of Renewable Energy Sources",
+        "latestPublishedAt": "2020-11-16T12:27:49.000Z",
+        "evidenceUrl": "https://anchor.fm/s/3f3dc98c/podcast/rss",
+        "recentPublicationDates": [
+          "2020-11-16T12:27:49.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/3f3dc98c/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "indiana-agriculture-coalition-for-renewable-energy",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Sunny Side Up: 1.1mW Solar at MPS Egg Farms by PSG Energy Group at 2020-08-06T19:20:42.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Indiana Agriculture Coalition for Renewable Energy",
+      "economicBuyer": "Indiana Agriculture Coalition for Renewable Energy",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Sunny Side Up: 1.1mW Solar at MPS Egg Farms by PSG Energy Group",
+        "latestPublishedAt": "2020-08-06T19:20:42.000Z",
+        "evidenceUrl": "https://anchor.fm/s/2fdfc940/podcast/rss",
+        "recentPublicationDates": [
+          "2020-08-06T19:20:42.000Z"
+        ],
+        "cadenceStatus": "INACTIVE"
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/2fdfc940/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "francisco-julian-lopez-rocha",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies Fallas técnicas at 2021-03-18T18:43:08.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Francisco Julian Lopez Rocha",
+      "economicBuyer": "Francisco Julian Lopez Rocha",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Fallas técnicas",
+        "latestPublishedAt": "2021-03-18T18:43:08.000Z",
+        "evidenceUrl": "https://anchor.fm/s/16e0ed70/podcast/rss",
+        "recentPublicationDates": [
+          "2021-03-18T18:43:08.000Z",
+          "2021-03-18T18:17:39.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 0
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/16e0ed70/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    },
+    {
+      "id": "keyiasha-tye",
+      "decision": "NURTURE",
+      "decisionReason": "The official feed verifies solar energy at 2020-11-10T04:39:16.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Keyiasha Tye",
+      "economicBuyer": "Keyiasha Tye",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "solar energy",
+        "latestPublishedAt": "2020-11-10T04:39:16.000Z",
+        "evidenceUrl": "https://anchor.fm/s/30d93534/podcast/rss",
+        "recentPublicationDates": [
+          "2020-11-10T04:39:16.000Z",
+          "2020-10-27T19:10:10.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 13.4
+      },
+      "unresolvedGates": [
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anchor.fm/s/30d93534/podcast/rss",
+          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-14T23:52:28.667Z"
+    }
+  ]
+}
