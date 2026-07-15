@@ -23,9 +23,17 @@ if (!/^[a-z0-9-]+$/.test(cohort)) throw new Error("Cohort must use lowercase let
 const terraPath = join(root, "data", `terra-medium-${cohort}.json`);
 const manifestPath = join(root, "storage", `sol-${cohort}`, "manifest.json");
 if (!existsSync(terraPath) || !existsSync(manifestPath)) throw new Error("Missing composed Terra result or Sol manifest.");
-const terra = JSON.parse(readFileSync(terraPath, "utf8")) as { records: TerraRecord[] };
+const terra = JSON.parse(readFileSync(terraPath, "utf8")) as {
+  records: TerraRecord[];
+  solReviewStatus?: string;
+  warning?: string;
+  solReview?: Record<string, unknown>;
+};
 const manifest = JSON.parse(readFileSync(manifestPath, "utf8")) as { records: ManifestRecord[] };
-const verdictPath = join(root, "storage", `sol-${cohort}`, "audit-verdicts.json");
+const durableVerdictPath = join(root, "data", `sol-${cohort}-audit-verdicts.json`);
+const verdictPath = existsSync(durableVerdictPath)
+  ? durableVerdictPath
+  : join(root, "storage", `sol-${cohort}`, "audit-verdicts.json");
 const verdicts = existsSync(verdictPath)
   ? JSON.parse(readFileSync(verdictPath, "utf8")) as AuditVerdict[]
   : [];
@@ -82,6 +90,19 @@ const report = {
 const outputRoot = join(root, "storage", `sol-${cohort}`);
 mkdirSync(outputRoot, { recursive: true });
 writeFileSync(join(outputRoot, "review.json"), `${JSON.stringify(report, null, 2)}\n`);
+if (passed) {
+  terra.solReviewStatus = "PASSED";
+  terra.warning = "Sol's deterministic audit passed; production remains unchanged until an explicit promotion workflow is approved.";
+  terra.solReview = {
+    reviewedAt: report.reviewedAt,
+    accepted: report.totals.accepted,
+    returnedToResearch: report.totals.returnedToResearch,
+    auditRequested: report.audit.requested,
+    auditReviewed: report.audit.reviewed,
+    auditPrecision: report.audit.precision,
+  };
+  writeFileSync(terraPath, `${JSON.stringify(terra, null, 2)}\n`);
+}
 console.log(JSON.stringify(verbose ? report : {
   methodology: report.methodology,
   cohort: report.cohort,

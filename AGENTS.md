@@ -67,11 +67,13 @@ Branch: `codex/sol-next-200`. This is isolated research work; do not merge, depl
 Sol returned 179 records from `next-200-b` because the first pass marked them complete without evidence-backed ownership, buyer, offer, funnel, cadence, and video-gap checks. The redo queue is fixed under ignored `storage/terra-redo-next-200-b/` and the durable findings ledger is `data/terraRedoFindings.ts`.
 
 Current redo progress:
-- Batches complete: 6 of 8 (150 of 179 records).
-- Decisions: 3 `PURSUE_NOW`, 51 `NURTURE`, 96 `DISQUALIFIED_CONFIRMED`.
+- Batches complete: 8 of 8 (179 of 179 records).
+- Decisions: 3 `PURSUE_NOW`, 51 `NURTURE`, 125 `DISQUALIFIED_CONFIRMED`.
 - New pursue accounts: Lisa Cohn, Dieter Helm, and Leslie Palti-Guzman.
 - Batches 3-4 resolve official-feed inactivity, clear wrong-ICP matches, and corporate-monolith accounts as factual exclusions; incomplete active accounts stay `NURTURE`.
 - Batches 5-6 are dominated by official RSS/Apple feeds with publications outside the 90-day activity window; these are inactivity exclusions, not missing-contact or missing-offer exclusions.
+- The recomposed 200-record cohort passed Sol review: 200 accepted decisions, zero returned drafts, and 40/40 deterministic audit verdicts correct (100% precision against a 90% gate).
+- Sol audit verdicts are durable at `data/sol-next-200-b-audit-verdicts.json`; `scripts/review-terra-medium-cohort.ts` records a passing summary in the composed cohort while production remains unchanged.
 - Every completed record has `researchCompleteness: "COMPLETE"` plus eight evidence-backed `researchAudit` checks.
 - `npm run validate:terra-redo -- --batch=N` validates each redo tranche before the original fixed-cohort validator runs.
 - `scripts/apply-terra-redo-findings.ts` applies the durable ledger back to the original `data/terra-medium-next-200-b/batch-N.json` files.

@@ -5,8 +5,8 @@
   "records": [
     {
       "id": "marketing-tc",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies BLG Podcast: New Opportunities in the Alberta Electricity Market at 2018-03-08T22:31:12.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place AlbertaPowerMarket's latest owned long-form publication at 2018-03-08T22:31:12.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Marketing TC",
       "economicBuyer": "Marketing TC",
       "ownedLongForm": {
@@ -19,27 +19,87 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://feeds.soundcloud.com/users/soundcloud:users:412079211/sounds.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/albertapowermarket/id1357363726?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://soundcloud.com/user-993150914-482418055/the-blg-podcast-new-opportunities-in-the-alberta-electricity-market",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2018-03-08T22:31:12.000Z.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:412079211/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/albertapowermarket/id1357363726?uo=4",
+              "https://soundcloud.com/user-993150914-482418055/the-blg-podcast-new-opportunities-in-the-alberta-electricity-market"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:412079211/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/albertapowermarket/id1357363726?uo=4",
+              "https://soundcloud.com/user-993150914-482418055/the-blg-podcast-new-opportunities-in-the-alberta-electricity-market"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Marketing TC / AlbertaPowerMarket is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:412079211/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/albertapowermarket/id1357363726?uo=4",
+              "https://soundcloud.com/user-993150914-482418055/the-blg-podcast-new-opportunities-in-the-alberta-electricity-market"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "marketing-chat",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies 🗣️ Happy New Year ! Welcome S3E1 Uplifting Music🎶 at 2021-01-05T04:31:43.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Lester \"El Negro\" Ortiz is a Marketing CHAT / Lester \"El Negro\" Ortiz-identified show or account whose recorded subject is not an energy-industry creator transaction, so it fails DialDash's energy ICP.",
       "contentOwner": "Marketing CHAT",
       "economicBuyer": "Marketing CHAT",
       "ownedLongForm": {
@@ -58,27 +118,91 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 4.9
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/2add444/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/oley-power-marketing-chat/id1533336656?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/oleypmchat/episodes/Happy-New-Year---Welcome-S3E1-Uplifting-Music-eoh9f8",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "WRONG_ICP",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2021-01-05T04:31:43.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2add444/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/oley-power-marketing-chat/id1533336656?uo=4",
+              "https://podcasters.spotify.com/pod/show/oleypmchat/episodes/Happy-New-Year---Welcome-S3E1-Uplifting-Music-eoh9f8"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2add444/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/oley-power-marketing-chat/id1533336656?uo=4",
+              "https://podcasters.spotify.com/pod/show/oleypmchat/episodes/Happy-New-Year---Welcome-S3E1-Uplifting-Music-eoh9f8"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Marketing CHAT / Lester \"El Negro\" Ortiz is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2add444/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/oley-power-marketing-chat/id1533336656?uo=4",
+              "https://podcasters.spotify.com/pod/show/oleypmchat/episodes/Happy-New-Year---Welcome-S3E1-Uplifting-Music-eoh9f8"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The observed subject and transaction are outside the energy creator market.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2add444/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/oley-power-marketing-chat/id1533336656?uo=4",
+              "https://podcasters.spotify.com/pod/show/oleypmchat/episodes/Happy-New-Year---Welcome-S3E1-Uplifting-Music-eoh9f8"
+            ]
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "small-business",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies What You Should Know About the Customer Journey | Small Business Small Talk at 2025-09-05T14:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Hibu. Smart Digital Marketing Made Easy. is a Small Business / Hibu. Smart Digital Marketing Made Easy.-identified show or account whose recorded subject is not an energy-industry creator transaction, so it fails DialDash's energy ICP.",
       "contentOwner": "Small Business",
       "economicBuyer": "Small Business",
       "ownedLongForm": {
@@ -97,27 +221,83 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 106
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://rss.buzzsprout.com/802691.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/small-business-small-talk-powered-by-hibu/id1501880760?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "WRONG_ICP",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-09-05T14:00:00.000Z.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/802691.rss",
+              "https://podcasts.apple.com/us/podcast/small-business-small-talk-powered-by-hibu/id1501880760?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/802691.rss",
+              "https://podcasts.apple.com/us/podcast/small-business-small-talk-powered-by-hibu/id1501880760?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Small Business / Hibu. Smart Digital Marketing Made Easy. is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/802691.rss",
+              "https://podcasts.apple.com/us/podcast/small-business-small-talk-powered-by-hibu/id1501880760?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The observed subject and transaction are outside the energy creator market.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/802691.rss",
+              "https://podcasts.apple.com/us/podcast/small-business-small-talk-powered-by-hibu/id1501880760?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "marketing-procurement",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies This is Unsustainable w/ Caroline Johnson at 2023-11-15T09:33:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Blair Enns and Leah Power is a Marketing Procurement / Blair Enns and Leah Power-identified show or account whose recorded subject is not an energy-industry creator transaction, so it fails DialDash's energy ICP.",
       "contentOwner": "Marketing Procurement",
       "economicBuyer": "Marketing Procurement",
       "ownedLongForm": {
@@ -136,27 +316,91 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 14
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://rss.libsyn.com/shows/440751/destinations/3684918.xml",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/20-the-marketing-procurement-podcast/id1647986688?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.20percent.com/podcast/this-is-unsustainable-caroline-johnson",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "WRONG_ICP",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2023-11-15T09:33:00.000Z.",
+            "evidenceUrls": [
+              "https://rss.libsyn.com/shows/440751/destinations/3684918.xml",
+              "https://podcasts.apple.com/us/podcast/20-the-marketing-procurement-podcast/id1647986688?uo=4",
+              "https://www.20percent.com/podcast/this-is-unsustainable-caroline-johnson"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://rss.libsyn.com/shows/440751/destinations/3684918.xml",
+              "https://podcasts.apple.com/us/podcast/20-the-marketing-procurement-podcast/id1647986688?uo=4",
+              "https://www.20percent.com/podcast/this-is-unsustainable-caroline-johnson"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Marketing Procurement / Blair Enns and Leah Power is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://rss.libsyn.com/shows/440751/destinations/3684918.xml",
+              "https://podcasts.apple.com/us/podcast/20-the-marketing-procurement-podcast/id1647986688?uo=4",
+              "https://www.20percent.com/podcast/this-is-unsustainable-caroline-johnson"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The observed subject and transaction are outside the energy creator market.",
+            "evidenceUrls": [
+              "https://rss.libsyn.com/shows/440751/destinations/3684918.xml",
+              "https://podcasts.apple.com/us/podcast/20-the-marketing-procurement-podcast/id1647986688?uo=4",
+              "https://www.20percent.com/podcast/this-is-unsustainable-caroline-johnson"
+            ]
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "victor-powers",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Why Entrepreneurs Don't Do It All at 2021-05-22T22:39:54.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Victor Powers ~ Marketing Power is a Victor Powers / Victor Powers ~ Marketing Power-identified show or account whose recorded subject is not an energy-industry creator transaction, so it fails DialDash's energy ICP.",
       "contentOwner": "Victor Powers",
       "economicBuyer": "Victor Powers",
       "ownedLongForm": {
@@ -175,27 +419,91 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 4
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/ef2130/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/marketing-power/id1356351453?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/marketingpower/episodes/Why-Entrepreneurs-Dont-Do-It-All-e11d8e5",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "WRONG_ICP",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2021-05-22T22:39:54.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/ef2130/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/marketing-power/id1356351453?uo=4",
+              "https://podcasters.spotify.com/pod/show/marketingpower/episodes/Why-Entrepreneurs-Dont-Do-It-All-e11d8e5"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/ef2130/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/marketing-power/id1356351453?uo=4",
+              "https://podcasters.spotify.com/pod/show/marketingpower/episodes/Why-Entrepreneurs-Dont-Do-It-All-e11d8e5"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Victor Powers / Victor Powers ~ Marketing Power is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/ef2130/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/marketing-power/id1356351453?uo=4",
+              "https://podcasters.spotify.com/pod/show/marketingpower/episodes/Why-Entrepreneurs-Dont-Do-It-All-e11d8e5"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The observed subject and transaction are outside the energy creator market.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/ef2130/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/marketing-power/id1356351453?uo=4",
+              "https://podcasters.spotify.com/pod/show/marketingpower/episodes/Why-Entrepreneurs-Dont-Do-It-All-e11d8e5"
+            ]
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "nicola-j-rowley",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies From Rock Bottom to Role Model: Matt Selby's Journey of Redemption and Resilience at 2025-06-19T00:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The Power of Storytelling is a Nicola J. Rowley / The Power of Storytelling-identified show or account whose recorded subject is not an energy-industry creator transaction, so it fails DialDash's energy ICP.",
       "contentOwner": "Nicola J. Rowley",
       "economicBuyer": "Nicola J. Rowley",
       "ownedLongForm": {
@@ -214,27 +522,91 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 7
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://feeds.transistor.fm/the-power-of-storytelling",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/the-power-of-storytelling/id1667627082?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://share.transistor.fm/s/cd41906e",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "WRONG_ICP",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-06-19T00:00:00.000Z.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/the-power-of-storytelling",
+              "https://podcasts.apple.com/us/podcast/the-power-of-storytelling/id1667627082?uo=4",
+              "https://share.transistor.fm/s/cd41906e"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/the-power-of-storytelling",
+              "https://podcasts.apple.com/us/podcast/the-power-of-storytelling/id1667627082?uo=4",
+              "https://share.transistor.fm/s/cd41906e"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Nicola J. Rowley / The Power of Storytelling is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/the-power-of-storytelling",
+              "https://podcasts.apple.com/us/podcast/the-power-of-storytelling/id1667627082?uo=4",
+              "https://share.transistor.fm/s/cd41906e"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The observed subject and transaction are outside the energy creator market.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/the-power-of-storytelling",
+              "https://podcasts.apple.com/us/podcast/the-power-of-storytelling/id1667627082?uo=4",
+              "https://share.transistor.fm/s/cd41906e"
+            ]
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "ford-motor-company",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Episode 13: Motorcraft® – Tried & True Since 1972 at 2022-08-26T17:15:12.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "THE LIFT Powered by Ford is an organization-controlled corporate account rather than a creator-controlled sales account with a named human economic buyer, so it fails the corporate-monolith gate.",
       "contentOwner": "Ford Motor Company",
       "economicBuyer": "Ford Motor Company",
       "ownedLongForm": {
@@ -253,27 +625,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 6.6
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://feeds.simplecast.com/nsnX_2AB",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/the-lift-powered-by-ford/id1583409293?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://the-lift-powered-by-ford.simplecast.com/episodes/episode-13-motorcraft-tried-true-since-1972-DNql5PgX",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2022-08-26T17:15:12.000Z.",
+            "evidenceUrls": [
+              "https://feeds.simplecast.com/nsnX_2AB",
+              "https://podcasts.apple.com/us/podcast/the-lift-powered-by-ford/id1583409293?uo=4",
+              "https://the-lift-powered-by-ford.simplecast.com/episodes/episode-13-motorcraft-tried-true-since-1972-DNql5PgX"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://feeds.simplecast.com/nsnX_2AB",
+              "https://podcasts.apple.com/us/podcast/the-lift-powered-by-ford/id1583409293?uo=4",
+              "https://the-lift-powered-by-ford.simplecast.com/episodes/episode-13-motorcraft-tried-true-since-1972-DNql5PgX"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "The official identity is a corporate organization, not a creator account with a named human buyer.",
+            "evidenceUrls": [
+              "https://feeds.simplecast.com/nsnX_2AB",
+              "https://podcasts.apple.com/us/podcast/the-lift-powered-by-ford/id1583409293?uo=4",
+              "https://the-lift-powered-by-ford.simplecast.com/episodes/episode-13-motorcraft-tried-true-since-1972-DNql5PgX"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "jaar-energiemarkt",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies De Marketeers van de Stroommarkt at 2024-05-31T11:13:49.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Erasmus Commodity & Trade Centre's latest owned long-form publication at 2024-05-31T11:13:49.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Jaar Energiemarkt",
       "economicBuyer": "Jaar Energiemarkt",
       "ownedLongForm": {
@@ -288,27 +720,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 7.1
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://feeds.transistor.fm/lessen-uit-25-jaar-energiemarkt",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/lessen-uit-25-jaar-energiemarkt/id1748087081?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://share.transistor.fm/s/e96b7178",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2024-05-31T11:13:49.000Z.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/lessen-uit-25-jaar-energiemarkt",
+              "https://podcasts.apple.com/us/podcast/lessen-uit-25-jaar-energiemarkt/id1748087081?uo=4",
+              "https://share.transistor.fm/s/e96b7178"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/lessen-uit-25-jaar-energiemarkt",
+              "https://podcasts.apple.com/us/podcast/lessen-uit-25-jaar-energiemarkt/id1748087081?uo=4",
+              "https://share.transistor.fm/s/e96b7178"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Jaar Energiemarkt / Erasmus Commodity & Trade Centre is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/lessen-uit-25-jaar-energiemarkt",
+              "https://podcasts.apple.com/us/podcast/lessen-uit-25-jaar-energiemarkt/id1748087081?uo=4",
+              "https://share.transistor.fm/s/e96b7178"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "market-suomi",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Energiatehokkuutta jäähalleihin I EP 08 Mirika Knuutila, Energy Plus Engineering at 2024-06-28T05:19:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Tarja Teppo, Action Energy Finance's latest owned long-form publication at 2024-06-28T05:19:00.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Market Suomi",
       "economicBuyer": "Market Suomi",
       "ownedLongForm": {
@@ -327,27 +819,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 20
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/f2dfbbe4/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/action-energy-market-suomi/id1733810862?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/aem-suomi/episodes/Energiatehokkuutta-jhalleihin-I-EP-08-Mirika-Knuutila--Energy-Plus-Engineering-e2l6tdv",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2024-06-28T05:19:00.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/f2dfbbe4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/action-energy-market-suomi/id1733810862?uo=4",
+              "https://podcasters.spotify.com/pod/show/aem-suomi/episodes/Energiatehokkuutta-jhalleihin-I-EP-08-Mirika-Knuutila--Energy-Plus-Engineering-e2l6tdv"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/f2dfbbe4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/action-energy-market-suomi/id1733810862?uo=4",
+              "https://podcasters.spotify.com/pod/show/aem-suomi/episodes/Energiatehokkuutta-jhalleihin-I-EP-08-Mirika-Knuutila--Energy-Plus-Engineering-e2l6tdv"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Market Suomi / Tarja Teppo, Action Energy Finance is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/f2dfbbe4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/action-energy-market-suomi/id1733810862?uo=4",
+              "https://podcasters.spotify.com/pod/show/aem-suomi/episodes/Energiatehokkuutta-jhalleihin-I-EP-08-Mirika-Knuutila--Energy-Plus-Engineering-e2l6tdv"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "gamerboy-gaming",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Geothermal energy at 2018-04-30T22:21:44.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "GamerBoy Gaming Channel is a GamerBoy Gaming / GamerBoy Gaming Channel-identified show or account whose recorded subject is not an energy-industry creator transaction, so it fails DialDash's energy ICP.",
       "contentOwner": "GamerBoy Gaming",
       "economicBuyer": "GamerBoy Gaming",
       "ownedLongForm": {
@@ -360,27 +912,91 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/3a8b0f8/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/geothermal-energy/id1378503178?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/gamerboy-gaming-channel/episodes/Geothermal-energy-e1d4k1",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "WRONG_ICP",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2018-04-30T22:21:44.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3a8b0f8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/geothermal-energy/id1378503178?uo=4",
+              "https://podcasters.spotify.com/pod/show/gamerboy-gaming-channel/episodes/Geothermal-energy-e1d4k1"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3a8b0f8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/geothermal-energy/id1378503178?uo=4",
+              "https://podcasters.spotify.com/pod/show/gamerboy-gaming-channel/episodes/Geothermal-energy-e1d4k1"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "GamerBoy Gaming / GamerBoy Gaming Channel is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3a8b0f8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/geothermal-energy/id1378503178?uo=4",
+              "https://podcasters.spotify.com/pod/show/gamerboy-gaming-channel/episodes/Geothermal-energy-e1d4k1"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The observed subject and transaction are outside the energy creator market.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3a8b0f8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/geothermal-energy/id1378503178?uo=4",
+              "https://podcasters.spotify.com/pod/show/gamerboy-gaming-channel/episodes/Geothermal-energy-e1d4k1"
+            ]
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "natalie-muenster",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Tough Enough: Caroline Cuffe, Oil Trader at 2021-05-31T13:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Statement Mondays: Interviews With Women Who Wear ”Heels” to Work is a Natalie Muenster / Statement Mondays: Interviews With Women Who Wear ”Heels” to Work-identified show or account whose recorded subject is not an energy-industry creator transaction, so it fails DialDash's energy ICP.",
       "contentOwner": "Natalie Muenster",
       "economicBuyer": "Natalie Muenster",
       "ownedLongForm": {
@@ -399,27 +1015,91 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 7
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://feed.podbean.com/statementmondays/feed.xml",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/statement-mondays-interviews-with-women-who-wear-heels/id1550805452?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://statementmondays.podbean.com/e/tough-enough-caroline-cuffe-oil-trader/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "WRONG_ICP",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2021-05-31T13:00:00.000Z.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/statementmondays/feed.xml",
+              "https://podcasts.apple.com/us/podcast/statement-mondays-interviews-with-women-who-wear-heels/id1550805452?uo=4",
+              "https://statementmondays.podbean.com/e/tough-enough-caroline-cuffe-oil-trader/"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/statementmondays/feed.xml",
+              "https://podcasts.apple.com/us/podcast/statement-mondays-interviews-with-women-who-wear-heels/id1550805452?uo=4",
+              "https://statementmondays.podbean.com/e/tough-enough-caroline-cuffe-oil-trader/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Natalie Muenster / Statement Mondays: Interviews With Women Who Wear ”Heels” to Work is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/statementmondays/feed.xml",
+              "https://podcasts.apple.com/us/podcast/statement-mondays-interviews-with-women-who-wear-heels/id1550805452?uo=4",
+              "https://statementmondays.podbean.com/e/tough-enough-caroline-cuffe-oil-trader/"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The observed subject and transaction are outside the energy creator market.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/statementmondays/feed.xml",
+              "https://podcasts.apple.com/us/podcast/statement-mondays-interviews-with-women-who-wear-heels/id1550805452?uo=4",
+              "https://statementmondays.podbean.com/e/tough-enough-caroline-cuffe-oil-trader/"
+            ]
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "intelligence-squared",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Ending Oil at 2023-11-01T21:55:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Tides of Transformation: An Oil Story's latest owned long-form publication at 2023-11-01T21:55:00.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Intelligence Squared",
       "economicBuyer": "Intelligence Squared",
       "ownedLongForm": {
@@ -437,27 +1117,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 7
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://feeds.megaphone.fm/tidesoftransformation",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/tides-of-transformation-an-oil-story/id1711174799?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://intelligencesquared.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2023-11-01T21:55:00.000Z.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/tidesoftransformation",
+              "https://podcasts.apple.com/us/podcast/tides-of-transformation-an-oil-story/id1711174799?uo=4",
+              "https://intelligencesquared.com/"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/tidesoftransformation",
+              "https://podcasts.apple.com/us/podcast/tides-of-transformation-an-oil-story/id1711174799?uo=4",
+              "https://intelligencesquared.com/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Intelligence Squared / Tides of Transformation: An Oil Story is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/tidesoftransformation",
+              "https://podcasts.apple.com/us/podcast/tides-of-transformation-an-oil-story/id1711174799?uo=4",
+              "https://intelligencesquared.com/"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "fundamental-value",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Ep. 69 Building an Industry Leading Crypto Publication with Jon Rice (Blockworks) at 2023-06-28T11:30:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The TIE is a Fundamental Value / The TIE-identified show or account whose recorded subject is not an energy-industry creator transaction, so it fails DialDash's energy ICP.",
       "contentOwner": "Fundamental Value",
       "economicBuyer": "Fundamental Value",
       "ownedLongForm": {
@@ -476,27 +1216,91 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 16
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://feeds.transistor.fm/fundamental-value-a-bitcoin-podcast",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/fundamental-value-digital-assets-uncovered/id1526563536?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://share.transistor.fm/s/7e97f843",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "WRONG_ICP",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2023-06-28T11:30:00.000Z.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/fundamental-value-a-bitcoin-podcast",
+              "https://podcasts.apple.com/us/podcast/fundamental-value-digital-assets-uncovered/id1526563536?uo=4",
+              "https://share.transistor.fm/s/7e97f843"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/fundamental-value-a-bitcoin-podcast",
+              "https://podcasts.apple.com/us/podcast/fundamental-value-digital-assets-uncovered/id1526563536?uo=4",
+              "https://share.transistor.fm/s/7e97f843"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Fundamental Value / The TIE is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/fundamental-value-a-bitcoin-podcast",
+              "https://podcasts.apple.com/us/podcast/fundamental-value-digital-assets-uncovered/id1526563536?uo=4",
+              "https://share.transistor.fm/s/7e97f843"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The observed subject and transaction are outside the energy creator market.",
+            "evidenceUrls": [
+              "https://feeds.transistor.fm/fundamental-value-a-bitcoin-podcast",
+              "https://podcasts.apple.com/us/podcast/fundamental-value-digital-assets-uncovered/id1526563536?uo=4",
+              "https://share.transistor.fm/s/7e97f843"
+            ]
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "jim-malone",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Tesla Tumbles On Price Cuts at 2023-08-14T23:19:47.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Dallas Trading Floor's latest owned long-form publication at 2023-08-14T23:19:47.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Jim Malone",
       "economicBuyer": "Jim Malone",
       "ownedLongForm": {
@@ -515,27 +1319,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 3
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/2fea598c/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/dallas-trading-floor/id1538712671?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/dallastradingfloor/episodes/Tesla-Tumbles-On-Price-Cuts-e2841et",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2023-08-14T23:19:47.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2fea598c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/dallas-trading-floor/id1538712671?uo=4",
+              "https://podcasters.spotify.com/pod/show/dallastradingfloor/episodes/Tesla-Tumbles-On-Price-Cuts-e2841et"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2fea598c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/dallas-trading-floor/id1538712671?uo=4",
+              "https://podcasters.spotify.com/pod/show/dallastradingfloor/episodes/Tesla-Tumbles-On-Price-Cuts-e2841et"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Jim Malone / Dallas Trading Floor is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2fea598c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/dallas-trading-floor/id1538712671?uo=4",
+              "https://podcasters.spotify.com/pod/show/dallastradingfloor/episodes/Tesla-Tumbles-On-Price-Cuts-e2841et"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "hyfindr-tech",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies #19 – Hyfindr Tech Talks – Hydrogen Tank Systems & Refueling | Jan Andreas – Argo-Anleg at 2025-10-23T06:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Hyfindr - Let us build the Hydrogen Economy together!'s latest owned long-form publication at 2025-10-23T06:00:00.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Hyfindr Tech",
       "economicBuyer": "Hyfindr Tech",
       "ownedLongForm": {
@@ -554,27 +1418,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 3.3
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/10844d690/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/hyfindr-tech-talks-hydrogen-fuel-cell-technology/id1833467423?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/the-hydrogen-leader5/episodes/19--Hyfindr-Tech-Talks--Hydrogen-Tank-Systems--Refueling--Jan-Andreas--Argo-Anleg-e39p4t8",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-10-23T06:00:00.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/10844d690/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/hyfindr-tech-talks-hydrogen-fuel-cell-technology/id1833467423?uo=4",
+              "https://podcasters.spotify.com/pod/show/the-hydrogen-leader5/episodes/19--Hyfindr-Tech-Talks--Hydrogen-Tank-Systems--Refueling--Jan-Andreas--Argo-Anleg-e39p4t8"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/10844d690/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/hyfindr-tech-talks-hydrogen-fuel-cell-technology/id1833467423?uo=4",
+              "https://podcasters.spotify.com/pod/show/the-hydrogen-leader5/episodes/19--Hyfindr-Tech-Talks--Hydrogen-Tank-Systems--Refueling--Jan-Andreas--Argo-Anleg-e39p4t8"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Hyfindr Tech / Hyfindr - Let us build the Hydrogen Economy together! is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/10844d690/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/hyfindr-tech-talks-hydrogen-fuel-cell-technology/id1833467423?uo=4",
+              "https://podcasters.spotify.com/pod/show/the-hydrogen-leader5/episodes/19--Hyfindr-Tech-Talks--Hydrogen-Tank-Systems--Refueling--Jan-Andreas--Argo-Anleg-e39p4t8"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "albert-rettenmaier",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Under Pressure - Hydrogen Storage at 2020-11-25T03:05:04.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place The New Hydrogen Economy with Al Rettenmaier's latest owned long-form publication at 2020-11-25T03:05:04.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Albert Rettenmaier",
       "economicBuyer": "Albert Rettenmaier",
       "ownedLongForm": {
@@ -587,27 +1511,87 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/413a9b5c/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/the-new-hydrogen-economy-with-al-rettenmaier/id1541971326?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/albert-rettenmaier/episodes/Under-Pressure---Hydrogen-Storage-emv0og",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2020-11-25T03:05:04.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/413a9b5c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/the-new-hydrogen-economy-with-al-rettenmaier/id1541971326?uo=4",
+              "https://podcasters.spotify.com/pod/show/albert-rettenmaier/episodes/Under-Pressure---Hydrogen-Storage-emv0og"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/413a9b5c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/the-new-hydrogen-economy-with-al-rettenmaier/id1541971326?uo=4",
+              "https://podcasters.spotify.com/pod/show/albert-rettenmaier/episodes/Under-Pressure---Hydrogen-Storage-emv0og"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Albert Rettenmaier / The New Hydrogen Economy with Al Rettenmaier is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/413a9b5c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/the-new-hydrogen-economy-with-al-rettenmaier/id1541971326?uo=4",
+              "https://podcasters.spotify.com/pod/show/albert-rettenmaier/episodes/Under-Pressure---Hydrogen-Storage-emv0og"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "earth-sciences",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Ep 1: Camilla Thomson and Mathieu Lucquiaud at 2021-11-02T10:59:56.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Scottish Carbon Capture & Storage's latest owned long-form publication at 2021-11-02T10:59:56.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Earth Sciences",
       "economicBuyer": "Earth Sciences",
       "ownedLongForm": {
@@ -620,27 +1604,87 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/71c75738/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/sccs-podcast/id1592667028?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/scotccs/episodes/Ep-1-Camilla-Thomson-and-Mathieu-Lucquiaud-e19jqc2",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2021-11-02T10:59:56.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/71c75738/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/sccs-podcast/id1592667028?uo=4",
+              "https://podcasters.spotify.com/pod/show/scotccs/episodes/Ep-1-Camilla-Thomson-and-Mathieu-Lucquiaud-e19jqc2"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/71c75738/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/sccs-podcast/id1592667028?uo=4",
+              "https://podcasters.spotify.com/pod/show/scotccs/episodes/Ep-1-Camilla-Thomson-and-Mathieu-Lucquiaud-e19jqc2"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Earth Sciences / Scottish Carbon Capture & Storage is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/71c75738/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/sccs-podcast/id1592667028?uo=4",
+              "https://podcasters.spotify.com/pod/show/scotccs/episodes/Ep-1-Camilla-Thomson-and-Mathieu-Lucquiaud-e19jqc2"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "paul-dockery",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Headliners: Crystal Ball, Mark Nelson, and Emeka Anyanwu @ Gridliance Transmission Symposium at 2024-12-20T16:28:05.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Public Power Underground's latest owned long-form publication at 2024-12-20T16:28:05.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Paul Dockery",
       "economicBuyer": "Paul Dockery",
       "ownedLongForm": {
@@ -659,27 +1703,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 13
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://api.substack.com/feed/podcast/272880.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/public-power-underground/id1549717372?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://publicpowerunderground.substack.com/p/headliners-crystal-ball-mark-nelson",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2024-12-20T16:28:05.000Z.",
+            "evidenceUrls": [
+              "https://api.substack.com/feed/podcast/272880.rss",
+              "https://podcasts.apple.com/us/podcast/public-power-underground/id1549717372?uo=4",
+              "https://publicpowerunderground.substack.com/p/headliners-crystal-ball-mark-nelson"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://api.substack.com/feed/podcast/272880.rss",
+              "https://podcasts.apple.com/us/podcast/public-power-underground/id1549717372?uo=4",
+              "https://publicpowerunderground.substack.com/p/headliners-crystal-ball-mark-nelson"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Paul Dockery / Public Power Underground is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://api.substack.com/feed/podcast/272880.rss",
+              "https://podcasts.apple.com/us/podcast/public-power-underground/id1549717372?uo=4",
+              "https://publicpowerunderground.substack.com/p/headliners-crystal-ball-mark-nelson"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "recehan-ebt",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies REcehSnap | Ep 2 - Isu TKDN, lphone16 ditahan masuk ke Indonesia at 2024-10-12T13:30:39.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place REcehan Energi Terbarukan's latest owned long-form publication at 2024-10-12T13:30:39.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "REcehan EBT",
       "economicBuyer": "REcehan EBT",
       "ownedLongForm": {
@@ -698,27 +1802,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 4.1
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/4d385e58/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/recehan-energi-terbarukan/id1556244397?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/recehan-ebt/episodes/REcehSnap--Ep-2---Isu-TKDN--lphone16-ditahan-masuk-ke-Indonesia-e2pikqn",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2024-10-12T13:30:39.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4d385e58/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/recehan-energi-terbarukan/id1556244397?uo=4",
+              "https://podcasters.spotify.com/pod/show/recehan-ebt/episodes/REcehSnap--Ep-2---Isu-TKDN--lphone16-ditahan-masuk-ke-Indonesia-e2pikqn"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4d385e58/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/recehan-energi-terbarukan/id1556244397?uo=4",
+              "https://podcasters.spotify.com/pod/show/recehan-ebt/episodes/REcehSnap--Ep-2---Isu-TKDN--lphone16-ditahan-masuk-ke-Indonesia-e2pikqn"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "REcehan EBT / REcehan Energi Terbarukan is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4d385e58/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/recehan-energi-terbarukan/id1556244397?uo=4",
+              "https://podcasters.spotify.com/pod/show/recehan-ebt/episodes/REcehSnap--Ep-2---Isu-TKDN--lphone16-ditahan-masuk-ke-Indonesia-e2pikqn"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "girish-shivakumar",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies 116: How Nuclear Can Power the AI Revolution Sustainably at 2025-09-20T08:30:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Mission Shunya's latest owned long-form publication at 2025-09-20T08:30:00.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Girish Shivakumar",
       "economicBuyer": "Girish Shivakumar",
       "ownedLongForm": {
@@ -737,27 +1901,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 14
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://audioboom.com/channels/4992635.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/mission-shunya/id1460138702?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://audioboom.com/posts/8779672",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-09-20T08:30:00.000Z.",
+            "evidenceUrls": [
+              "https://audioboom.com/channels/4992635.rss",
+              "https://podcasts.apple.com/us/podcast/mission-shunya/id1460138702?uo=4",
+              "https://audioboom.com/posts/8779672"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://audioboom.com/channels/4992635.rss",
+              "https://podcasts.apple.com/us/podcast/mission-shunya/id1460138702?uo=4",
+              "https://audioboom.com/posts/8779672"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Girish Shivakumar / Mission Shunya is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://audioboom.com/channels/4992635.rss",
+              "https://podcasts.apple.com/us/podcast/mission-shunya/id1460138702?uo=4",
+              "https://audioboom.com/posts/8779672"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "lakeside-labs",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies The Next Big Thing in Artificial Evolution at 2014-04-22T07:52:53.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Colloquia from science leaders and technology innovators SD is a Lakeside Labs / Colloquia from science leaders and technology innovators SD-identified show or account whose recorded subject is not an energy-industry creator transaction, so it fails DialDash's energy ICP.",
       "contentOwner": "Lakeside Labs",
       "economicBuyer": "Lakeside Labs",
       "ownedLongForm": {
@@ -776,27 +2000,91 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 0
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "http://static.lakeside-labs.com/iTunesU/feeds/colloquia-from-science-leaders-and-technology-innovators-sd.xml",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/colloquia-from-science-leaders-and-technology/id428912120?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "http://www.Lakeside-Labs.com",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "WRONG_ICP",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2014-04-22T07:52:53.000Z.",
+            "evidenceUrls": [
+              "http://static.lakeside-labs.com/iTunesU/feeds/colloquia-from-science-leaders-and-technology-innovators-sd.xml",
+              "https://podcasts.apple.com/us/podcast/colloquia-from-science-leaders-and-technology/id428912120?uo=4",
+              "http://www.Lakeside-Labs.com"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "http://static.lakeside-labs.com/iTunesU/feeds/colloquia-from-science-leaders-and-technology-innovators-sd.xml",
+              "https://podcasts.apple.com/us/podcast/colloquia-from-science-leaders-and-technology/id428912120?uo=4",
+              "http://www.Lakeside-Labs.com"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Lakeside Labs / Colloquia from science leaders and technology innovators SD is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "http://static.lakeside-labs.com/iTunesU/feeds/colloquia-from-science-leaders-and-technology-innovators-sd.xml",
+              "https://podcasts.apple.com/us/podcast/colloquia-from-science-leaders-and-technology/id428912120?uo=4",
+              "http://www.Lakeside-Labs.com"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The observed subject and transaction are outside the energy creator market.",
+            "evidenceUrls": [
+              "http://static.lakeside-labs.com/iTunesU/feeds/colloquia-from-science-leaders-and-technology-innovators-sd.xml",
+              "https://podcasts.apple.com/us/podcast/colloquia-from-science-leaders-and-technology/id428912120?uo=4",
+              "http://www.Lakeside-Labs.com"
+            ]
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "ashwati-ramesh",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Smarter Spaces: Building Intelligence with Clairco | Spill the C #14 at 2025-08-13T06:05:19.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Spill the C's latest owned long-form publication at 2025-08-13T06:05:19.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Ashwati Ramesh",
       "economicBuyer": "Ashwati Ramesh",
       "ownedLongForm": {
@@ -815,27 +2103,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 12.9
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/10153dcb4/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/spill-the-c/id1796851602?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/ashwati-ramesh/episodes/Smarter-Spaces-Building-Intelligence-with-Clairco--Spill-the-C-14-e36ptp8",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:33.770Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:33.770Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-08-13T06:05:19.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/10153dcb4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/spill-the-c/id1796851602?uo=4",
+              "https://podcasters.spotify.com/pod/show/ashwati-ramesh/episodes/Smarter-Spaces-Building-Intelligence-with-Clairco--Spill-the-C-14-e36ptp8"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/10153dcb4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/spill-the-c/id1796851602?uo=4",
+              "https://podcasters.spotify.com/pod/show/ashwati-ramesh/episodes/Smarter-Spaces-Building-Intelligence-with-Clairco--Spill-the-C-14-e36ptp8"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Ashwati Ramesh / Spill the C is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/10153dcb4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/spill-the-c/id1796851602?uo=4",
+              "https://podcasters.spotify.com/pod/show/ashwati-ramesh/episodes/Smarter-Spaces-Building-Intelligence-with-Clairco--Spill-the-C-14-e36ptp8"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "thomas-b-linquist",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Lyceum's Cybersecurity Series Part 1: \"What You Don't Know CAN Hurt YOU\" at 2025-11-12T21:38:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Leadership Lyceum: A CEO's Virtual Mentor's latest owned long-form publication at 2025-11-12T21:38:00.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Thomas B. Linquist",
       "economicBuyer": "Thomas B. Linquist",
       "ownedLongForm": {
@@ -854,27 +2202,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 60.7
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://rss.libsyn.com/shows/80657/destinations/372299.xml",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/leadership-lyceum-a-ceos-virtual-mentor/id1118682019?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://leadershiplyceum.libsyn.com/lyceums-cybersecurity-series-part-1-what-you-dont-know-can-hurt-you",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:33.770Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:33.770Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-11-12T21:38:00.000Z.",
+            "evidenceUrls": [
+              "https://rss.libsyn.com/shows/80657/destinations/372299.xml",
+              "https://podcasts.apple.com/us/podcast/leadership-lyceum-a-ceos-virtual-mentor/id1118682019?uo=4",
+              "https://leadershiplyceum.libsyn.com/lyceums-cybersecurity-series-part-1-what-you-dont-know-can-hurt-you"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://rss.libsyn.com/shows/80657/destinations/372299.xml",
+              "https://podcasts.apple.com/us/podcast/leadership-lyceum-a-ceos-virtual-mentor/id1118682019?uo=4",
+              "https://leadershiplyceum.libsyn.com/lyceums-cybersecurity-series-part-1-what-you-dont-know-can-hurt-you"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Thomas B. Linquist / Leadership Lyceum: A CEO's Virtual Mentor is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://rss.libsyn.com/shows/80657/destinations/372299.xml",
+              "https://podcasts.apple.com/us/podcast/leadership-lyceum-a-ceos-virtual-mentor/id1118682019?uo=4",
+              "https://leadershiplyceum.libsyn.com/lyceums-cybersecurity-series-part-1-what-you-dont-know-can-hurt-you"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "ikea-australia",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Discussion | How IKEA is securing its renewable future with Karol Gobczynski at 2021-06-11T06:00:14.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "ikeaau is an organization-controlled corporate account rather than a creator-controlled sales account with a named human economic buyer, so it fails the corporate-monolith gate.",
       "contentOwner": "IKEA Australia",
       "economicBuyer": "IKEA Australia",
       "ownedLongForm": {
@@ -893,27 +2301,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 14
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://feeds.acast.com/public/shows/5f040d6d251e940fa24dace0",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/the-ikea-australia-podcast-series/id1458555544?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://shows.acast.com/importing-286/episodes/discussion-how-ikea-is-securing-its-renewable-future-with-ka",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:33.770Z",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:33.770Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2021-06-11T06:00:14.000Z.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/5f040d6d251e940fa24dace0",
+              "https://podcasts.apple.com/us/podcast/the-ikea-australia-podcast-series/id1458555544?uo=4",
+              "https://shows.acast.com/importing-286/episodes/discussion-how-ikea-is-securing-its-renewable-future-with-ka"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/5f040d6d251e940fa24dace0",
+              "https://podcasts.apple.com/us/podcast/the-ikea-australia-podcast-series/id1458555544?uo=4",
+              "https://shows.acast.com/importing-286/episodes/discussion-how-ikea-is-securing-its-renewable-future-with-ka"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "The official identity is a corporate organization, not a creator account with a named human buyer.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/5f040d6d251e940fa24dace0",
+              "https://podcasts.apple.com/us/podcast/the-ikea-australia-podcast-series/id1458555544?uo=4",
+              "https://shows.acast.com/importing-286/episodes/discussion-how-ikea-is-securing-its-renewable-future-with-ka"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "bdo-uk-llp",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies The Megawatt Hour Episode 10: Back to the future at 2023-12-20T15:20:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "BDO UK is an organization-controlled corporate account rather than a creator-controlled sales account with a named human economic buyer, so it fails the corporate-monolith gate.",
       "contentOwner": "BDO UK LLP",
       "economicBuyer": "BDO UK LLP",
       "ownedLongForm": {
@@ -932,22 +2400,82 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 42.9
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://rss.libsyn.com/shows/205241/destinations/1471379.xml",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/bdo-uk/id1531882234?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://bdoukllp.libsyn.com/the-megawatt-hour-episode-10-back-to-the-future",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-15T00:00:27.315Z"
+      "auditedAt": "2026-07-15T02:20:33.770Z",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:33.770Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2023-12-20T15:20:00.000Z.",
+            "evidenceUrls": [
+              "https://rss.libsyn.com/shows/205241/destinations/1471379.xml",
+              "https://podcasts.apple.com/us/podcast/bdo-uk/id1531882234?uo=4",
+              "https://bdoukllp.libsyn.com/the-megawatt-hour-episode-10-back-to-the-future"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://rss.libsyn.com/shows/205241/destinations/1471379.xml",
+              "https://podcasts.apple.com/us/podcast/bdo-uk/id1531882234?uo=4",
+              "https://bdoukllp.libsyn.com/the-megawatt-hour-episode-10-back-to-the-future"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "The official identity is a corporate organization, not a creator account with a named human buyer.",
+            "evidenceUrls": [
+              "https://rss.libsyn.com/shows/205241/destinations/1471379.xml",
+              "https://podcasts.apple.com/us/podcast/bdo-uk/id1531882234?uo=4",
+              "https://bdoukllp.libsyn.com/the-megawatt-hour-episode-10-back-to-the-future"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     }
   ]
 }

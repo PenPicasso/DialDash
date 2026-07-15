@@ -2012,8 +2012,8 @@
     },
     {
       "id": "prssishkn-hinta",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Mitkä tekijät vaikuttavat sähkön hinnan päivittäisiin ja tuntikohtaisiin vaihteluihin Suomessa? at 2025-06-25T09:50:21.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Electricity Market Prices Finland's latest owned long-form publication at 2025-06-25T09:50:21.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Pörssisähkön Hinta",
       "economicBuyer": "Pörssisähkön Hinta",
       "ownedLongForm": {
@@ -2026,27 +2026,87 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/10692a3e0/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/electricity-market-prices-finland/id1822771045?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/prssishkn-hinta/episodes/Mitk-tekijt-vaikuttavat-shkn-hinnan-pivittisiin-ja-tuntikohtaisiin-vaihteluihin-Suomessa-e34n3d4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-06-25T09:50:21.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/10692a3e0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/electricity-market-prices-finland/id1822771045?uo=4",
+              "https://podcasters.spotify.com/pod/show/prssishkn-hinta/episodes/Mitk-tekijt-vaikuttavat-shkn-hinnan-pivittisiin-ja-tuntikohtaisiin-vaihteluihin-Suomessa-e34n3d4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/10692a3e0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/electricity-market-prices-finland/id1822771045?uo=4",
+              "https://podcasters.spotify.com/pod/show/prssishkn-hinta/episodes/Mitk-tekijt-vaikuttavat-shkn-hinnan-pivittisiin-ja-tuntikohtaisiin-vaihteluihin-Suomessa-e34n3d4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Pörssisähkön Hinta is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/10692a3e0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/electricity-market-prices-finland/id1822771045?uo=4",
+              "https://podcasters.spotify.com/pod/show/prssishkn-hinta/episodes/Mitk-tekijt-vaikuttavat-shkn-hinnan-pivittisiin-ja-tuntikohtaisiin-vaihteluihin-Suomessa-e34n3d4"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "brian-devine",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Content Creation Essentials: Building a Strong Online Presence for Your Orthodontic Practice at 2025-01-28T00:51:47.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "PracticeFuel's Braces & Bytes: AI-Powered Marketing for Orthodontists is a Brian Devine / PracticeFuel's Braces & Bytes: AI-Powered Marketing for Orthodontists-identified show or account whose recorded subject is not an energy-industry creator transaction, so it fails DialDash's energy ICP.",
       "contentOwner": "Brian Devine",
       "economicBuyer": "Brian Devine",
       "ownedLongForm": {
@@ -2065,27 +2125,83 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 11.2
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://rss.podengine.io/braces-bytes-ai-powered-marketing-for-orthodontists",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/practicefuels-braces-bytes-ai-powered-marketing-for/id1784826143?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "WRONG_ICP",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-01-28T05:51:00.000Z.",
+            "evidenceUrls": [
+              "https://rss.podengine.io/braces-bytes-ai-powered-marketing-for-orthodontists",
+              "https://podcasts.apple.com/us/podcast/practicefuels-braces-bytes-ai-powered-marketing-for/id1784826143?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://rss.podengine.io/braces-bytes-ai-powered-marketing-for-orthodontists",
+              "https://podcasts.apple.com/us/podcast/practicefuels-braces-bytes-ai-powered-marketing-for/id1784826143?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Brian Devine / PracticeFuel's Braces & Bytes: AI-Powered Marketing for Orthodontists is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://rss.podengine.io/braces-bytes-ai-powered-marketing-for-orthodontists",
+              "https://podcasts.apple.com/us/podcast/practicefuels-braces-bytes-ai-powered-marketing-for/id1784826143?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The observed subject and transaction are outside the energy creator market.",
+            "evidenceUrls": [
+              "https://rss.podengine.io/braces-bytes-ai-powered-marketing-for-orthodontists",
+              "https://podcasts.apple.com/us/podcast/practicefuels-braces-bytes-ai-powered-marketing-for/id1784826143?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "community-powered-marketing",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Consumer-guided Digital Marketing ft. Tiffany Pegues at 2024-01-24T16:15:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Community Powered Marketing is a Community Powered Marketing-identified show or account whose recorded subject is not an energy-industry creator transaction, so it fails DialDash's energy ICP.",
       "contentOwner": "Community Powered Marketing",
       "economicBuyer": "Community Powered Marketing",
       "ownedLongForm": {
@@ -2104,27 +2220,91 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 7
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/eafa5d94/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/community-powered-marketing/id1713428704?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/communitypoweredmarketing/episodes/Consumer-guided-Digital-Marketing-ft--Tiffany-Pegues-e2eu825",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "WRONG_ICP",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2024-01-24T16:15:00.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/eafa5d94/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/community-powered-marketing/id1713428704?uo=4",
+              "https://podcasters.spotify.com/pod/show/communitypoweredmarketing/episodes/Consumer-guided-Digital-Marketing-ft--Tiffany-Pegues-e2eu825"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/eafa5d94/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/community-powered-marketing/id1713428704?uo=4",
+              "https://podcasters.spotify.com/pod/show/communitypoweredmarketing/episodes/Consumer-guided-Digital-Marketing-ft--Tiffany-Pegues-e2eu825"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Community Powered Marketing is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/eafa5d94/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/community-powered-marketing/id1713428704?uo=4",
+              "https://podcasters.spotify.com/pod/show/communitypoweredmarketing/episodes/Consumer-guided-Digital-Marketing-ft--Tiffany-Pegues-e2eu825"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The observed subject and transaction are outside the energy creator market.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/eafa5d94/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/community-powered-marketing/id1713428704?uo=4",
+              "https://podcasters.spotify.com/pod/show/communitypoweredmarketing/episodes/Consumer-guided-Digital-Marketing-ft--Tiffany-Pegues-e2eu825"
+            ]
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "made-simple",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Clean Energy Made Simple: PowerMarket Podcast (Trailer) at 2025-09-02T10:08:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place PowerMarket's latest owned long-form publication at 2025-09-02T10:08:00.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Made Simple",
       "economicBuyer": "Made Simple",
       "ownedLongForm": {
@@ -2137,22 +2317,82 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/108b574a4/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/clean-energy-made-simple/id1838139753?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/powermarket/episodes/Clean-Energy-Made-Simple-PowerMarket-Podcast-Trailer-e37ktqe",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:20:23.521Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:20:23.521Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-09-02T10:08:00.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/108b574a4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/clean-energy-made-simple/id1838139753?uo=4",
+              "https://podcasters.spotify.com/pod/show/powermarket/episodes/Clean-Energy-Made-Simple-PowerMarket-Podcast-Trailer-e37ktqe"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/108b574a4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/clean-energy-made-simple/id1838139753?uo=4",
+              "https://podcasters.spotify.com/pod/show/powermarket/episodes/Clean-Energy-Made-Simple-PowerMarket-Podcast-Trailer-e37ktqe"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Made Simple / PowerMarket is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/108b574a4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/clean-energy-made-simple/id1838139753?uo=4",
+              "https://podcasters.spotify.com/pod/show/powermarket/episodes/Clean-Energy-Made-Simple-PowerMarket-Podcast-Trailer-e37ktqe"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     }
   ]
 }
