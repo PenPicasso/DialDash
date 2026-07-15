@@ -13,6 +13,8 @@ export type TerraRedoFinding = {
   overrides?: Record<string, unknown>;
 };
 
+import { terraRedoRemainingFindings } from "./terraRedoRemainingFindings";
+
 const c = (status: AuditStatus, note: string, evidenceUrls?: string[]): AuditCheck => ({ status, note, evidenceUrls });
 
 export const terraRedoFindings: TerraRedoFinding[] = [
@@ -360,4 +362,5 @@ export const terraRedoFindings: TerraRedoFinding[] = [
     evidenceUrls: ["https://www.bloomberg.com/professional/insights/podcasts/switched-on/", "https://www.bloomberg.com/company/"],
     checks: { ownedLongForm: c("CONFIRMED", "Bloomberg owns and distributes Switched On."), cadence: c("CONFIRMED", "The corporate show remains active."), roles: c("UNRESOLVED", "Hosts rotate inside Bloomberg; the final procurement buyer is not a creator."), contact: c("NOT_APPLICABLE", "Enterprise procurement is outside the ICP."), offer: c("CONFIRMED", "The content supports BloombergNEF and Bloomberg's enterprise products."), funnel: c("CONFIRMED", "Podcast authority feeds a corporate data and media funnel."), videoGap: c("NOT_APPLICABLE", "Bloomberg already has professional production capability."), pitchHook: c("NOT_APPLICABLE", "This is not a signable founder-led creator account.") },
   },
+  ...terraRedoRemainingFindings,
 ];

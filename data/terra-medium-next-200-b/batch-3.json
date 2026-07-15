@@ -1009,7 +1009,7 @@
     {
       "id": "mia-funk",
       "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Reincarnation, Food & Memory: AMITAV GHOSH on What Connects Us in an Age of Climate Crisis at 2026-06-24T10:28:53.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Sustainability, Climate Change, Renewable Energy, Politics, Activism, Biodiversity, Carbon Footprint, Wildlife, Regenerative was researched across its recorded official feed or channel and public identity route, but one or more owner, buyer, offer, contact, funnel, or three-sample video gates remain unverified; it stays NURTURE rather than being falsely rejected.",
       "contentOwner": "Mia Funk",
       "economicBuyer": "Mia Funk",
       "ownedLongForm": {
@@ -1029,6 +1029,8 @@
         "medianIntervalDays": 6.5
       },
       "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
         "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
         "VERIFIED_COMMERCIAL_OFFER",
@@ -1039,15 +1041,110 @@
       "evidence": [
         {
           "url": "https://media.rss.com/oneplanet/feed.xml",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/sustainability-climate-change-renewable-energy-politics/id1594016117?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.youtube.com/playlist?list=OLAK5uy_lCeKhKKvSRfujdayl_aXKQfoBbOKzrK-w",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://x.com/miafunk",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://rss.com/podcasts/oneplanet/2940358",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T02:14:29.747Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:14:29.747Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The recorded channel was checked, but current creator ownership was not proven strongly enough for promotion.",
+            "evidenceUrls": [
+              "https://media.rss.com/oneplanet/feed.xml",
+              "https://podcasts.apple.com/us/podcast/sustainability-climate-change-renewable-energy-politics/id1594016117?uo=4",
+              "https://www.youtube.com/playlist?list=OLAK5uy_lCeKhKKvSRfujdayl_aXKQfoBbOKzrK-w"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "A promotion-grade set of three current owned publication dates was not verified for this account.",
+            "evidenceUrls": [
+              "https://media.rss.com/oneplanet/feed.xml",
+              "https://podcasts.apple.com/us/podcast/sustainability-climate-change-renewable-energy-politics/id1594016117?uo=4",
+              "https://www.youtube.com/playlist?list=OLAK5uy_lCeKhKKvSRfujdayl_aXKQfoBbOKzrK-w"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Mia Funk is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://media.rss.com/oneplanet/feed.xml",
+              "https://podcasts.apple.com/us/podcast/sustainability-climate-change-renewable-energy-politics/id1594016117?uo=4",
+              "https://www.youtube.com/playlist?list=OLAK5uy_lCeKhKKvSRfujdayl_aXKQfoBbOKzrK-w"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No promotion-grade public contact path tied to the named economic buyer was verified.",
+            "evidenceUrls": [
+              "https://media.rss.com/oneplanet/feed.xml",
+              "https://podcasts.apple.com/us/podcast/sustainability-climate-change-renewable-energy-politics/id1594016117?uo=4",
+              "https://www.youtube.com/playlist?list=OLAK5uy_lCeKhKKvSRfujdayl_aXKQfoBbOKzrK-w"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "A current paid commercial offer controlled by the prospective buyer remains unverified.",
+            "evidenceUrls": [
+              "https://media.rss.com/oneplanet/feed.xml",
+              "https://podcasts.apple.com/us/podcast/sustainability-climate-change-renewable-energy-politics/id1594016117?uo=4",
+              "https://www.youtube.com/playlist?list=OLAK5uy_lCeKhKKvSRfujdayl_aXKQfoBbOKzrK-w"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Observed TOF, MOF, and BOF could not all be tied to one real controlled transaction.",
+            "evidenceUrls": [
+              "https://media.rss.com/oneplanet/feed.xml",
+              "https://podcasts.apple.com/us/podcast/sustainability-climate-change-renewable-energy-politics/id1594016117?uo=4",
+              "https://www.youtube.com/playlist?list=OLAK5uy_lCeKhKKvSRfujdayl_aXKQfoBbOKzrK-w"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned video samples were not available or sufficient to prove an educational-quality gap.",
+            "evidenceUrls": [
+              "https://media.rss.com/oneplanet/feed.xml",
+              "https://podcasts.apple.com/us/podcast/sustainability-climate-change-renewable-energy-politics/id1594016117?uo=4",
+              "https://www.youtube.com/playlist?list=OLAK5uy_lCeKhKKvSRfujdayl_aXKQfoBbOKzrK-w"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified buyer, offer, funnel, and video gap, a transaction-specific pitch would be speculative.",
+            "evidenceUrls": [
+              "https://media.rss.com/oneplanet/feed.xml",
+              "https://podcasts.apple.com/us/podcast/sustainability-climate-change-renewable-energy-politics/id1594016117?uo=4",
+              "https://www.youtube.com/playlist?list=OLAK5uy_lCeKhKKvSRfujdayl_aXKQfoBbOKzrK-w"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "michael-a-gayed",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Alex Shahidi: Commodity Producers, Inflation & the RPAR/UPAR Case | Lead-Lag Live at 2026-07-14T17:41:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Lead-Lag Live is a Michael A. Gayed-identified show or account whose recorded subject is not an energy-industry creator transaction, so it fails DialDash's energy ICP.",
       "contentOwner": "Michael A. Gayed",
       "economicBuyer": "Michael A. Gayed",
       "ownedLongForm": {
@@ -1066,26 +1163,99 @@
         "cadenceStatus": "ACTIVE",
         "medianIntervalDays": 1
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://rss.buzzsprout.com/2034153.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/lead-lag-live/id1639931934?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.youtube.com/c/theleadlagreport",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://x.com/leadlagreport",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qMLQcfsYZDQ",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T02:14:29.747Z",
+      "factualHardGate": "WRONG_ICP",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:14:29.747Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The recorded channel was checked, but current creator ownership was not proven strongly enough for promotion.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2034153.rss",
+              "https://podcasts.apple.com/us/podcast/lead-lag-live/id1639931934?uo=4",
+              "https://www.youtube.com/c/theleadlagreport"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "A promotion-grade set of three current owned publication dates was not verified for this account.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2034153.rss",
+              "https://podcasts.apple.com/us/podcast/lead-lag-live/id1639931934?uo=4",
+              "https://www.youtube.com/c/theleadlagreport"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Michael A. Gayed is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2034153.rss",
+              "https://podcasts.apple.com/us/podcast/lead-lag-live/id1639931934?uo=4",
+              "https://www.youtube.com/c/theleadlagreport"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The observed subject and transaction are outside the energy creator market.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2034153.rss",
+              "https://podcasts.apple.com/us/podcast/lead-lag-live/id1639931934?uo=4",
+              "https://www.youtube.com/c/theleadlagreport"
+            ]
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual WRONG_ICP gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "paul-schuster",
       "decision": "NURTURE",
-      "decisionReason": "The official feed verifies A Pragmatic Reset? Why New York, Massachusetts, and California Are Rolling Back Climate Action - Episode 127 at 2026-07-06T17:00:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Eight Minute Climate Fix | Clean Energy & Climate Policy Insights was researched across its recorded official feed or channel and public identity route, but one or more owner, buyer, offer, contact, funnel, or three-sample video gates remain unverified; it stays NURTURE rather than being falsely rejected.",
       "contentOwner": "Paul Schuster",
       "economicBuyer": "Paul Schuster",
       "ownedLongForm": {
@@ -1105,6 +1275,8 @@
         "medianIntervalDays": 12.9
       },
       "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
         "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
         "VERIFIED_COMMERCIAL_OFFER",
@@ -1115,15 +1287,106 @@
       "evidence": [
         {
           "url": "https://rss.buzzsprout.com/2064554.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/eight-minute-climate-fix-clean-energy-climate-policy/id1655737425?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.youtube.com/PaulSchusterOfficial",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://x.com/p_schuster",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T02:14:29.747Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:14:29.747Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The recorded channel was checked, but current creator ownership was not proven strongly enough for promotion.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2064554.rss",
+              "https://podcasts.apple.com/us/podcast/eight-minute-climate-fix-clean-energy-climate-policy/id1655737425?uo=4",
+              "https://www.youtube.com/PaulSchusterOfficial"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "A promotion-grade set of three current owned publication dates was not verified for this account.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2064554.rss",
+              "https://podcasts.apple.com/us/podcast/eight-minute-climate-fix-clean-energy-climate-policy/id1655737425?uo=4",
+              "https://www.youtube.com/PaulSchusterOfficial"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Paul Schuster is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2064554.rss",
+              "https://podcasts.apple.com/us/podcast/eight-minute-climate-fix-clean-energy-climate-policy/id1655737425?uo=4",
+              "https://www.youtube.com/PaulSchusterOfficial"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No promotion-grade public contact path tied to the named economic buyer was verified.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2064554.rss",
+              "https://podcasts.apple.com/us/podcast/eight-minute-climate-fix-clean-energy-climate-policy/id1655737425?uo=4",
+              "https://www.youtube.com/PaulSchusterOfficial"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "A current paid commercial offer controlled by the prospective buyer remains unverified.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2064554.rss",
+              "https://podcasts.apple.com/us/podcast/eight-minute-climate-fix-clean-energy-climate-policy/id1655737425?uo=4",
+              "https://www.youtube.com/PaulSchusterOfficial"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Observed TOF, MOF, and BOF could not all be tied to one real controlled transaction.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2064554.rss",
+              "https://podcasts.apple.com/us/podcast/eight-minute-climate-fix-clean-energy-climate-policy/id1655737425?uo=4",
+              "https://www.youtube.com/PaulSchusterOfficial"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned video samples were not available or sufficient to prove an educational-quality gap.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2064554.rss",
+              "https://podcasts.apple.com/us/podcast/eight-minute-climate-fix-clean-energy-climate-policy/id1655737425?uo=4",
+              "https://www.youtube.com/PaulSchusterOfficial"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified buyer, offer, funnel, and video gap, a transaction-specific pitch would be speculative.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2064554.rss",
+              "https://podcasts.apple.com/us/podcast/eight-minute-climate-fix-clean-energy-climate-policy/id1655737425?uo=4",
+              "https://www.youtube.com/PaulSchusterOfficial"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "emre-hatipoglu",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "KAPSARC Energy was researched across its recorded official feed or channel and public identity route, but one or more owner, buyer, offer, contact, funnel, or three-sample video gates remain unverified; it stays NURTURE rather than being falsely rejected.",
       "contentOwner": "Emre Hatipoglu",
       "economicBuyer": "Emre Hatipoglu",
       "unresolvedGates": [
@@ -1139,15 +1402,90 @@
       "evidence": [
         {
           "url": "https://x.com/ehatipog",
-          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.kapsarc.org/our-team/emre-hatipoglu/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T02:14:29.747Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:14:29.747Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The recorded channel was checked, but current creator ownership was not proven strongly enough for promotion.",
+            "evidenceUrls": [
+              "https://x.com/ehatipog",
+              "https://www.kapsarc.org/our-team/emre-hatipoglu/"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "A promotion-grade set of three current owned publication dates was not verified for this account.",
+            "evidenceUrls": [
+              "https://x.com/ehatipog",
+              "https://www.kapsarc.org/our-team/emre-hatipoglu/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Emre Hatipoglu is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://x.com/ehatipog",
+              "https://www.kapsarc.org/our-team/emre-hatipoglu/"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No promotion-grade public contact path tied to the named economic buyer was verified.",
+            "evidenceUrls": [
+              "https://x.com/ehatipog",
+              "https://www.kapsarc.org/our-team/emre-hatipoglu/"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "A current paid commercial offer controlled by the prospective buyer remains unverified.",
+            "evidenceUrls": [
+              "https://x.com/ehatipog",
+              "https://www.kapsarc.org/our-team/emre-hatipoglu/"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Observed TOF, MOF, and BOF could not all be tied to one real controlled transaction.",
+            "evidenceUrls": [
+              "https://x.com/ehatipog",
+              "https://www.kapsarc.org/our-team/emre-hatipoglu/"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned video samples were not available or sufficient to prove an educational-quality gap.",
+            "evidenceUrls": [
+              "https://x.com/ehatipog",
+              "https://www.kapsarc.org/our-team/emre-hatipoglu/"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified buyer, offer, funnel, and video gap, a transaction-specific pitch would be speculative.",
+            "evidenceUrls": [
+              "https://x.com/ehatipog",
+              "https://www.kapsarc.org/our-team/emre-hatipoglu/"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "jorge-montepeque",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Independent was researched across its recorded official feed or channel and public identity route, but one or more owner, buyer, offer, contact, funnel, or three-sample video gates remain unverified; it stays NURTURE rather than being falsely rejected.",
       "contentOwner": "Jorge Montepeque",
       "economicBuyer": "Jorge Montepeque",
       "unresolvedGates": [
@@ -1163,15 +1501,90 @@
       "evidence": [
         {
           "url": "https://x.com/jmontepeque",
-          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.onyxcapitalgroup.com/the-officials",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T02:14:29.747Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:14:29.747Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The recorded channel was checked, but current creator ownership was not proven strongly enough for promotion.",
+            "evidenceUrls": [
+              "https://x.com/jmontepeque",
+              "https://www.onyxcapitalgroup.com/the-officials"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "A promotion-grade set of three current owned publication dates was not verified for this account.",
+            "evidenceUrls": [
+              "https://x.com/jmontepeque",
+              "https://www.onyxcapitalgroup.com/the-officials"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Jorge Montepeque is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://x.com/jmontepeque",
+              "https://www.onyxcapitalgroup.com/the-officials"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No promotion-grade public contact path tied to the named economic buyer was verified.",
+            "evidenceUrls": [
+              "https://x.com/jmontepeque",
+              "https://www.onyxcapitalgroup.com/the-officials"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "A current paid commercial offer controlled by the prospective buyer remains unverified.",
+            "evidenceUrls": [
+              "https://x.com/jmontepeque",
+              "https://www.onyxcapitalgroup.com/the-officials"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Observed TOF, MOF, and BOF could not all be tied to one real controlled transaction.",
+            "evidenceUrls": [
+              "https://x.com/jmontepeque",
+              "https://www.onyxcapitalgroup.com/the-officials"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned video samples were not available or sufficient to prove an educational-quality gap.",
+            "evidenceUrls": [
+              "https://x.com/jmontepeque",
+              "https://www.onyxcapitalgroup.com/the-officials"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified buyer, offer, funnel, and video gap, a transaction-specific pitch would be speculative.",
+            "evidenceUrls": [
+              "https://x.com/jmontepeque",
+              "https://www.onyxcapitalgroup.com/the-officials"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "jan-stuart",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Independent was researched across its recorded official feed or channel and public identity route, but one or more owner, buyer, offer, contact, funnel, or three-sample video gates remain unverified; it stays NURTURE rather than being falsely rejected.",
       "contentOwner": "Jan Stuart",
       "economicBuyer": "Jan Stuart",
       "unresolvedGates": [
@@ -1187,15 +1600,90 @@
       "evidence": [
         {
           "url": "https://x.com/JanStuart_Enrgy",
-          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.piper.sandler.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T02:14:29.747Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:14:29.747Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The recorded channel was checked, but current creator ownership was not proven strongly enough for promotion.",
+            "evidenceUrls": [
+              "https://x.com/JanStuart_Enrgy",
+              "https://www.piper.sandler.com/"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "A promotion-grade set of three current owned publication dates was not verified for this account.",
+            "evidenceUrls": [
+              "https://x.com/JanStuart_Enrgy",
+              "https://www.piper.sandler.com/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Jan Stuart is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://x.com/JanStuart_Enrgy",
+              "https://www.piper.sandler.com/"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No promotion-grade public contact path tied to the named economic buyer was verified.",
+            "evidenceUrls": [
+              "https://x.com/JanStuart_Enrgy",
+              "https://www.piper.sandler.com/"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "A current paid commercial offer controlled by the prospective buyer remains unverified.",
+            "evidenceUrls": [
+              "https://x.com/JanStuart_Enrgy",
+              "https://www.piper.sandler.com/"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Observed TOF, MOF, and BOF could not all be tied to one real controlled transaction.",
+            "evidenceUrls": [
+              "https://x.com/JanStuart_Enrgy",
+              "https://www.piper.sandler.com/"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned video samples were not available or sufficient to prove an educational-quality gap.",
+            "evidenceUrls": [
+              "https://x.com/JanStuart_Enrgy",
+              "https://www.piper.sandler.com/"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified buyer, offer, funnel, and video gap, a transaction-specific pitch would be speculative.",
+            "evidenceUrls": [
+              "https://x.com/JanStuart_Enrgy",
+              "https://www.piper.sandler.com/"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "charif-souki",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Independent was researched across its recorded official feed or channel and public identity route, but one or more owner, buyer, offer, contact, funnel, or three-sample video gates remain unverified; it stays NURTURE rather than being falsely rejected.",
       "contentOwner": "Charif Souki",
       "economicBuyer": "Charif Souki",
       "unresolvedGates": [
@@ -1211,15 +1699,90 @@
       "evidence": [
         {
           "url": "https://x.com/SoukiCharif",
-          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.tellurianinc.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T02:14:29.747Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:14:29.747Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The recorded channel was checked, but current creator ownership was not proven strongly enough for promotion.",
+            "evidenceUrls": [
+              "https://x.com/SoukiCharif",
+              "https://www.tellurianinc.com/"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "A promotion-grade set of three current owned publication dates was not verified for this account.",
+            "evidenceUrls": [
+              "https://x.com/SoukiCharif",
+              "https://www.tellurianinc.com/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Charif Souki is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://x.com/SoukiCharif",
+              "https://www.tellurianinc.com/"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No promotion-grade public contact path tied to the named economic buyer was verified.",
+            "evidenceUrls": [
+              "https://x.com/SoukiCharif",
+              "https://www.tellurianinc.com/"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "A current paid commercial offer controlled by the prospective buyer remains unverified.",
+            "evidenceUrls": [
+              "https://x.com/SoukiCharif",
+              "https://www.tellurianinc.com/"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Observed TOF, MOF, and BOF could not all be tied to one real controlled transaction.",
+            "evidenceUrls": [
+              "https://x.com/SoukiCharif",
+              "https://www.tellurianinc.com/"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned video samples were not available or sufficient to prove an educational-quality gap.",
+            "evidenceUrls": [
+              "https://x.com/SoukiCharif",
+              "https://www.tellurianinc.com/"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified buyer, offer, funnel, and video gap, a transaction-specific pitch would be speculative.",
+            "evidenceUrls": [
+              "https://x.com/SoukiCharif",
+              "https://www.tellurianinc.com/"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "mike-fulwood",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Independent was researched across its recorded official feed or channel and public identity route, but one or more owner, buyer, offer, contact, funnel, or three-sample video gates remain unverified; it stays NURTURE rather than being falsely rejected.",
       "contentOwner": "Mike Fulwood",
       "economicBuyer": "Mike Fulwood",
       "unresolvedGates": [
@@ -1235,15 +1798,90 @@
       "evidence": [
         {
           "url": "https://x.com/MikeFulwood",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.oxfordenergy.org/authors/mike-fulwood/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T02:14:29.747Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:14:29.747Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The recorded channel was checked, but current creator ownership was not proven strongly enough for promotion.",
+            "evidenceUrls": [
+              "https://x.com/MikeFulwood",
+              "https://www.oxfordenergy.org/authors/mike-fulwood/"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "A promotion-grade set of three current owned publication dates was not verified for this account.",
+            "evidenceUrls": [
+              "https://x.com/MikeFulwood",
+              "https://www.oxfordenergy.org/authors/mike-fulwood/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Mike Fulwood is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://x.com/MikeFulwood",
+              "https://www.oxfordenergy.org/authors/mike-fulwood/"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No promotion-grade public contact path tied to the named economic buyer was verified.",
+            "evidenceUrls": [
+              "https://x.com/MikeFulwood",
+              "https://www.oxfordenergy.org/authors/mike-fulwood/"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "A current paid commercial offer controlled by the prospective buyer remains unverified.",
+            "evidenceUrls": [
+              "https://x.com/MikeFulwood",
+              "https://www.oxfordenergy.org/authors/mike-fulwood/"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Observed TOF, MOF, and BOF could not all be tied to one real controlled transaction.",
+            "evidenceUrls": [
+              "https://x.com/MikeFulwood",
+              "https://www.oxfordenergy.org/authors/mike-fulwood/"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned video samples were not available or sufficient to prove an educational-quality gap.",
+            "evidenceUrls": [
+              "https://x.com/MikeFulwood",
+              "https://www.oxfordenergy.org/authors/mike-fulwood/"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified buyer, offer, funnel, and video gap, a transaction-specific pitch would be speculative.",
+            "evidenceUrls": [
+              "https://x.com/MikeFulwood",
+              "https://www.oxfordenergy.org/authors/mike-fulwood/"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "mike-rothman",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Independent was researched across its recorded official feed or channel and public identity route, but one or more owner, buyer, offer, contact, funnel, or three-sample video gates remain unverified; it stays NURTURE rather than being falsely rejected.",
       "contentOwner": "Mike Rothman",
       "economicBuyer": "Mike Rothman",
       "unresolvedGates": [
@@ -1259,15 +1897,90 @@
       "evidence": [
         {
           "url": "https://x.com/CornerStoneAnlx",
-          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://site.cornerstoneanalytics.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T02:14:29.747Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:14:29.747Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The recorded channel was checked, but current creator ownership was not proven strongly enough for promotion.",
+            "evidenceUrls": [
+              "https://x.com/CornerStoneAnlx",
+              "https://site.cornerstoneanalytics.com/"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "A promotion-grade set of three current owned publication dates was not verified for this account.",
+            "evidenceUrls": [
+              "https://x.com/CornerStoneAnlx",
+              "https://site.cornerstoneanalytics.com/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Mike Rothman is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://x.com/CornerStoneAnlx",
+              "https://site.cornerstoneanalytics.com/"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No promotion-grade public contact path tied to the named economic buyer was verified.",
+            "evidenceUrls": [
+              "https://x.com/CornerStoneAnlx",
+              "https://site.cornerstoneanalytics.com/"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "A current paid commercial offer controlled by the prospective buyer remains unverified.",
+            "evidenceUrls": [
+              "https://x.com/CornerStoneAnlx",
+              "https://site.cornerstoneanalytics.com/"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Observed TOF, MOF, and BOF could not all be tied to one real controlled transaction.",
+            "evidenceUrls": [
+              "https://x.com/CornerStoneAnlx",
+              "https://site.cornerstoneanalytics.com/"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned video samples were not available or sufficient to prove an educational-quality gap.",
+            "evidenceUrls": [
+              "https://x.com/CornerStoneAnlx",
+              "https://site.cornerstoneanalytics.com/"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified buyer, offer, funnel, and video gap, a transaction-specific pitch would be speculative.",
+            "evidenceUrls": [
+              "https://x.com/CornerStoneAnlx",
+              "https://site.cornerstoneanalytics.com/"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "mike-shellman",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Independent was researched across its recorded official feed or channel and public identity route, but one or more owner, buyer, offer, contact, funnel, or three-sample video gates remain unverified; it stays NURTURE rather than being falsely rejected.",
       "contentOwner": "Mike Shellman",
       "economicBuyer": "Mike Shellman",
       "unresolvedGates": [
@@ -1283,10 +1996,85 @@
       "evidence": [
         {
           "url": "https://x.com/ShaleProfile",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.linkedin.com/in/mike-shellman-38250821/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T02:14:29.747Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:14:29.747Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The recorded channel was checked, but current creator ownership was not proven strongly enough for promotion.",
+            "evidenceUrls": [
+              "https://x.com/ShaleProfile",
+              "https://www.linkedin.com/in/mike-shellman-38250821/"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "A promotion-grade set of three current owned publication dates was not verified for this account.",
+            "evidenceUrls": [
+              "https://x.com/ShaleProfile",
+              "https://www.linkedin.com/in/mike-shellman-38250821/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Mike Shellman is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://x.com/ShaleProfile",
+              "https://www.linkedin.com/in/mike-shellman-38250821/"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No promotion-grade public contact path tied to the named economic buyer was verified.",
+            "evidenceUrls": [
+              "https://x.com/ShaleProfile",
+              "https://www.linkedin.com/in/mike-shellman-38250821/"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "A current paid commercial offer controlled by the prospective buyer remains unverified.",
+            "evidenceUrls": [
+              "https://x.com/ShaleProfile",
+              "https://www.linkedin.com/in/mike-shellman-38250821/"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Observed TOF, MOF, and BOF could not all be tied to one real controlled transaction.",
+            "evidenceUrls": [
+              "https://x.com/ShaleProfile",
+              "https://www.linkedin.com/in/mike-shellman-38250821/"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned video samples were not available or sufficient to prove an educational-quality gap.",
+            "evidenceUrls": [
+              "https://x.com/ShaleProfile",
+              "https://www.linkedin.com/in/mike-shellman-38250821/"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified buyer, offer, funnel, and video gap, a transaction-specific pitch would be speculative.",
+            "evidenceUrls": [
+              "https://x.com/ShaleProfile",
+              "https://www.linkedin.com/in/mike-shellman-38250821/"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "sp-global-commodity-insights",
@@ -1321,32 +2109,91 @@
     },
     {
       "id": "general-fusion",
-      "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "General Fusion is an organization-controlled corporate account rather than a creator-controlled sales account with a named human economic buyer, so it fails the corporate-monolith gate.",
       "contentOwner": "General Fusion",
       "economicBuyer": "General Fusion",
-      "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
+          "url": "https://www.youtube.com/@GeneralFusionInc",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
           "url": "https://x.com/GeneralFusion",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=FBagXLxzNu0",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T02:14:29.747Z",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:14:29.747Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The recorded channel was checked, but current creator ownership was not proven strongly enough for promotion.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@GeneralFusionInc",
+              "https://x.com/GeneralFusion",
+              "https://www.youtube.com/watch?v=FBagXLxzNu0"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "A promotion-grade set of three current owned publication dates was not verified for this account.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@GeneralFusionInc",
+              "https://x.com/GeneralFusion",
+              "https://www.youtube.com/watch?v=FBagXLxzNu0"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "The official identity is a corporate organization, not a creator account with a named human buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@GeneralFusionInc",
+              "https://x.com/GeneralFusion",
+              "https://www.youtube.com/watch?v=FBagXLxzNu0"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual CORPORATE_MONOLITH gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "phil-zeringue",
       "decision": "NURTURE",
-      "decisionReason": "The official feed verifies The New Nuclear Workforce: Humans, Robots, and AI Together at 2026-05-01T15:00:00.000Z with semi_active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The Future of Nuclear Energy, hosted by Phil Zeringue was researched across its recorded official feed or channel and public identity route, but one or more owner, buyer, offer, contact, funnel, or three-sample video gates remain unverified; it stays NURTURE rather than being falsely rejected.",
       "contentOwner": "Phil Zeringue",
       "economicBuyer": "Phil Zeringue",
       "ownedLongForm": {
@@ -1366,6 +2213,8 @@
         "medianIntervalDays": 35.4
       },
       "unresolvedGates": [
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
         "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
         "VERIFIED_COMMERCIAL_OFFER",
@@ -1376,15 +2225,106 @@
       "evidence": [
         {
           "url": "https://rss.buzzsprout.com/2429938.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/the-future-of-nuclear-energy-hosted-by-phil-zeringue/id1783347430?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.youtube.com/shorts/PnNtLj66geU",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://x.com/p_zinger",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T02:14:29.747Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:14:29.747Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The recorded channel was checked, but current creator ownership was not proven strongly enough for promotion.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2429938.rss",
+              "https://podcasts.apple.com/us/podcast/the-future-of-nuclear-energy-hosted-by-phil-zeringue/id1783347430?uo=4",
+              "https://www.youtube.com/shorts/PnNtLj66geU"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "A promotion-grade set of three current owned publication dates was not verified for this account.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2429938.rss",
+              "https://podcasts.apple.com/us/podcast/the-future-of-nuclear-energy-hosted-by-phil-zeringue/id1783347430?uo=4",
+              "https://www.youtube.com/shorts/PnNtLj66geU"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Phil Zeringue is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2429938.rss",
+              "https://podcasts.apple.com/us/podcast/the-future-of-nuclear-energy-hosted-by-phil-zeringue/id1783347430?uo=4",
+              "https://www.youtube.com/shorts/PnNtLj66geU"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No promotion-grade public contact path tied to the named economic buyer was verified.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2429938.rss",
+              "https://podcasts.apple.com/us/podcast/the-future-of-nuclear-energy-hosted-by-phil-zeringue/id1783347430?uo=4",
+              "https://www.youtube.com/shorts/PnNtLj66geU"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "A current paid commercial offer controlled by the prospective buyer remains unverified.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2429938.rss",
+              "https://podcasts.apple.com/us/podcast/the-future-of-nuclear-energy-hosted-by-phil-zeringue/id1783347430?uo=4",
+              "https://www.youtube.com/shorts/PnNtLj66geU"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Observed TOF, MOF, and BOF could not all be tied to one real controlled transaction.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2429938.rss",
+              "https://podcasts.apple.com/us/podcast/the-future-of-nuclear-energy-hosted-by-phil-zeringue/id1783347430?uo=4",
+              "https://www.youtube.com/shorts/PnNtLj66geU"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned video samples were not available or sufficient to prove an educational-quality gap.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2429938.rss",
+              "https://podcasts.apple.com/us/podcast/the-future-of-nuclear-energy-hosted-by-phil-zeringue/id1783347430?uo=4",
+              "https://www.youtube.com/shorts/PnNtLj66geU"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified buyer, offer, funnel, and video gap, a transaction-specific pitch would be speculative.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2429938.rss",
+              "https://podcasts.apple.com/us/podcast/the-future-of-nuclear-energy-hosted-by-phil-zeringue/id1783347430?uo=4",
+              "https://www.youtube.com/shorts/PnNtLj66geU"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "canary-media",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The Interchange was researched across its recorded official feed or channel and public identity route, but one or more owner, buyer, offer, contact, funnel, or three-sample video gates remain unverified; it stays NURTURE rather than being falsely rejected.",
       "contentOwner": "Canary Media",
       "economicBuyer": "Canary Media",
       "unresolvedGates": [
@@ -1399,11 +2339,86 @@
       ],
       "evidence": [
         {
-          "url": "https://www.youtube.com/@CanaryMediaInc?cbrd=1&ucbcb=1",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://www.youtube.com/@CanaryMediaInc",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://x.com/CanaryMediaInc",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T02:14:29.747Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:14:29.747Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The recorded channel was checked, but current creator ownership was not proven strongly enough for promotion.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@CanaryMediaInc",
+              "https://x.com/CanaryMediaInc"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "A promotion-grade set of three current owned publication dates was not verified for this account.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@CanaryMediaInc",
+              "https://x.com/CanaryMediaInc"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Canary Media is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@CanaryMediaInc",
+              "https://x.com/CanaryMediaInc"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No promotion-grade public contact path tied to the named economic buyer was verified.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@CanaryMediaInc",
+              "https://x.com/CanaryMediaInc"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "A current paid commercial offer controlled by the prospective buyer remains unverified.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@CanaryMediaInc",
+              "https://x.com/CanaryMediaInc"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Observed TOF, MOF, and BOF could not all be tied to one real controlled transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@CanaryMediaInc",
+              "https://x.com/CanaryMediaInc"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned video samples were not available or sufficient to prove an educational-quality gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@CanaryMediaInc",
+              "https://x.com/CanaryMediaInc"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified buyer, offer, funnel, and video gap, a transaction-specific pitch would be speculative.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@CanaryMediaInc",
+              "https://x.com/CanaryMediaInc"
+            ]
+          }
+        }
+      }
     }
   ]
 }
