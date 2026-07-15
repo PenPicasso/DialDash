@@ -60,6 +60,21 @@ As of the latest audit:
 
 The 642 former REVIEW rows were finished by applying the hard gates and marking non-actionable rows as `REJECTED` with reasons embedded in `actionabilityReasons` and `rejectionReason`.
 
+### Terra redo of returned next-200-b records
+
+Branch: `codex/sol-next-200`. This is isolated research work; do not merge, deploy, or write `data/nodes.json` until Sol reviews the completed cohort.
+
+Sol returned 179 records from `next-200-b` because the first pass marked them complete without evidence-backed ownership, buyer, offer, funnel, cadence, and video-gap checks. The redo queue is fixed under ignored `storage/terra-redo-next-200-b/` and the durable findings ledger is `data/terraRedoFindings.ts`.
+
+Current redo progress:
+- Batches complete: 2 of 8 (50 of 179 records).
+- Decisions: 3 `PURSUE_NOW`, 30 `NURTURE`, 17 `DISQUALIFIED_CONFIRMED`.
+- New pursue accounts: Lisa Cohn, Dieter Helm, and Leslie Palti-Guzman.
+- Every completed record has `researchCompleteness: "COMPLETE"` plus eight evidence-backed `researchAudit` checks.
+- `npm run validate:terra-redo -- --batch=N` validates each redo tranche before the original fixed-cohort validator runs.
+- `scripts/apply-terra-redo-findings.ts` applies the durable ledger back to the original `data/terra-medium-next-200-b/batch-N.json` files.
+- No Firecrawl, production writes, deployment, or main-branch changes are permitted during this redo.
+
 ### Acquisition-system branch
 
 Branch: `codex/dialdash-acquisition-system`. This is preview-only until the user approves it; do not merge to `main` or promote production.

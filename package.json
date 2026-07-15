@@ -40,6 +40,7 @@
     "draft:terra-medium-next-200-b": "npx tsx scripts/draft-terra-medium-batch.ts --cohort=next-200-b",
     "validate:terra-medium-next-200-b": "npx tsx scripts/validate-terra-medium-next-200.ts --cohort=next-200-b",
     "compose:terra-medium-next-200-b": "npx tsx scripts/compose-terra-medium-next-200.ts --cohort=next-200-b",
+    "validate:terra-redo": "npx tsx scripts/validate-terra-redo.ts --cohort=next-200-b",
     "research:sol-queue": "npx tsx scripts/aggregate-sol-review-queue.ts",
     "pilot:research": "npx tsx scripts/research-pilot.ts",
     "source:dry-run": "npx tsx scripts/source-dry-run.ts",

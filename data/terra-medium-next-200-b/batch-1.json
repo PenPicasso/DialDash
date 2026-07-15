@@ -5,8 +5,8 @@
   "records": [
     {
       "id": "alfred-johnson",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Building a Business with Heart: Tyler's Story at 2026-03-02T14:28:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The recorded Apple show and the prospect's official material are about general B2B marketing, not energy, so this account is outside DialDash's energy-creator ICP.",
       "contentOwner": "Alfred Johnson",
       "economicBuyer": "Alfred Johnson",
       "ownedLongForm": {
@@ -25,29 +25,84 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 6.8
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
-          "url": "https://anchor.fm/s/f0a6ef00/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "url": "https://podcasts.apple.com/us/podcast/power-tools-and-profit-marketing-podcast/id1860384780",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://cruxkc.com/podcast/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "factualHardGate": "WRONG_ICP",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The recorded show is a marketing podcast rather than an energy show.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/power-tools-and-profit-marketing-podcast/id1860384780",
+              "https://cruxkc.com/podcast/"
+            ]
+          },
+          "cadence": {
+            "status": "NOT_APPLICABLE",
+            "note": "Cadence cannot overcome the confirmed wrong-industry gate.",
+            "evidenceUrls": []
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The record also conflates Alfred Johnson with a marketing organization.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/power-tools-and-profit-marketing-podcast/id1860384780",
+              "https://cruxkc.com/podcast/"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research stopped after the factual ICP failure.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The observed transaction is marketing services, not an energy-sector offer.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/power-tools-and-profit-marketing-podcast/id1860384780",
+              "https://cruxkc.com/podcast/"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "The visible funnel serves general B2B marketing customers.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/power-tools-and-profit-marketing-podcast/id1860384780",
+              "https://cruxkc.com/podcast/"
+            ]
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video opportunity is irrelevant after the wrong-ICP finding.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial transaction-specific pitch should be created for this account.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "john-farrell",
       "decision": "NURTURE",
-      "decisionReason": "The official feed verifies How This Mountain Town Funds Its Own Climate Future — Episode 274 at 2026-07-01T11:45:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
-      "contentOwner": "John Farrell",
-      "economicBuyer": "John Farrell",
+      "decisionReason": "ILSR verifies John Farrell produces the active biweekly Local Energy Rules podcast, but the content is institution-owned and no person-tied commercial buyer or paid offer is verified.",
+      "contentOwner": "Institute for Local Self-Reliance",
       "ownedLongForm": {
         "type": "PODCAST",
         "latestTitle": "How This Mountain Town Funds Its Own Climate Future — Episode 274",
@@ -65,26 +120,101 @@
         "medianIntervalDays": 14
       },
       "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "ECONOMIC_BUYER_AUTHORITY",
         "VERIFIED_PERSON_TIED_CONTACT",
         "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
         "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
-          "url": "https://feeds.transistor.fm/local-energy-rules",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "url": "https://ilsr.org/energy/local-energy-rules-podcast/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://ilsr.org/about-the-institute-for-local-self-reliance/staff-and-board/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "onMicHost": "John Farrell",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "ILSR identifies Local Energy Rules as its owned podcast project.",
+            "evidenceUrls": [
+              "https://ilsr.org/energy/local-energy-rules-podcast/",
+              "https://ilsr.org/about-the-institute-for-local-self-reliance/staff-and-board/"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The official page describes the show as a biweekly podcast.",
+            "evidenceUrls": [
+              "https://ilsr.org/energy/local-energy-rules-podcast/",
+              "https://ilsr.org/about-the-institute-for-local-self-reliance/staff-and-board/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "John produces the show, but ILSR controls the channel and transaction.",
+            "evidenceUrls": [
+              "https://ilsr.org/energy/local-energy-rules-podcast/",
+              "https://ilsr.org/about-the-institute-for-local-self-reliance/staff-and-board/"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Only institutional routes were found, not a verified outreach path tied to John.",
+            "evidenceUrls": [
+              "https://ilsr.org/energy/local-energy-rules-podcast/",
+              "https://ilsr.org/about-the-institute-for-local-self-reliance/staff-and-board/"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "The official pages show nonprofit research, not a paid creator offer.",
+            "evidenceUrls": [
+              "https://ilsr.org/energy/local-energy-rules-podcast/",
+              "https://ilsr.org/about-the-institute-for-local-self-reliance/staff-and-board/"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Podcast episodes lead into ILSR energy-democracy research and resources.",
+            "evidenceUrls": [
+              "https://ilsr.org/energy/local-energy-rules-podcast/",
+              "https://ilsr.org/about-the-institute-for-local-self-reliance/staff-and-board/"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The official page links YouTube but three owned samples were not inspected.",
+            "evidenceUrls": [
+              "https://ilsr.org/energy/local-energy-rules-podcast/",
+              "https://ilsr.org/about-the-institute-for-local-self-reliance/staff-and-board/"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Without a paid transaction and buyer, a sales hook would be speculative.",
+            "evidenceUrls": [
+              "https://ilsr.org/energy/local-energy-rules-podcast/",
+              "https://ilsr.org/about-the-institute-for-local-self-reliance/staff-and-board/"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "chris-frostad",
       "decision": "NURTURE",
-      "decisionReason": "The official feed verifies July 14 2026: Term market is where the real demand signal lives at 2026-07-14T11:00:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
-      "contentOwner": "Chris Frostad",
+      "decisionReason": "Chris Frostad owns and hosts an active weekly uranium podcast and leads Purepoint Uranium, but the show-specific paid transaction, direct outreach route, and three-sample video gap remain unresolved.",
+      "contentOwner": "Chris Frostad / Uranium Spotlight",
       "economicBuyer": "Chris Frostad",
       "ownedLongForm": {
         "type": "PODCAST",
@@ -103,27 +233,100 @@
         "medianIntervalDays": 7
       },
       "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
         "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
         "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
-          "url": "https://rss.buzzsprout.com/2224575.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "url": "https://uraniumspotlight.com/about-the-author",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/ca/podcast/uranium-spotlight-nuclears-resurgence-in-a-clean/id1701870358",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "onMicHost": "Chris Frostad",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official author page identifies Chris as host of Uranium Spotlight.",
+            "evidenceUrls": [
+              "https://uraniumspotlight.com/about-the-author",
+              "https://podcasts.apple.com/ca/podcast/uranium-spotlight-nuclears-resurgence-in-a-clean/id1701870358"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Apple and the owned feed show a current weekly publishing pattern.",
+            "evidenceUrls": [
+              "https://uraniumspotlight.com/about-the-author",
+              "https://podcasts.apple.com/ca/podcast/uranium-spotlight-nuclears-resurgence-in-a-clean/id1701870358"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "Chris is host, site author, and Purepoint founding partner and CEO.",
+            "evidenceUrls": [
+              "https://uraniumspotlight.com/about-the-author",
+              "https://podcasts.apple.com/ca/podcast/uranium-spotlight-nuclears-resurgence-in-a-clean/id1701870358"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No public person-tied email or verified direct contact route was found.",
+            "evidenceUrls": [
+              "https://uraniumspotlight.com/about-the-author",
+              "https://podcasts.apple.com/ca/podcast/uranium-spotlight-nuclears-resurgence-in-a-clean/id1701870358"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "The free investor series and sponsor relationship do not prove a show-owned paid offer.",
+            "evidenceUrls": [
+              "https://uraniumspotlight.com/about-the-author",
+              "https://podcasts.apple.com/ca/podcast/uranium-spotlight-nuclears-resurgence-in-a-clean/id1701870358"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Podcast discovery leads to uranium education and Purepoint investor awareness.",
+            "evidenceUrls": [
+              "https://uraniumspotlight.com/about-the-author",
+              "https://podcasts.apple.com/ca/podcast/uranium-spotlight-nuclears-resurgence-in-a-clean/id1701870358"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded YouTube channel requires identity confirmation and three-sample inspection.",
+            "evidenceUrls": [
+              "https://uraniumspotlight.com/about-the-author",
+              "https://podcasts.apple.com/ca/podcast/uranium-spotlight-nuclears-resurgence-in-a-clean/id1701870358"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A pitch cannot yet be tied to a verified paid show transaction.",
+            "evidenceUrls": [
+              "https://uraniumspotlight.com/about-the-author",
+              "https://podcasts.apple.com/ca/podcast/uranium-spotlight-nuclears-resurgence-in-a-clean/id1701870358"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "charge-events",
       "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Data Centres in the Crosshairs: Responding to Public Concerns with Jeff Hahn and Jason Stephenson at 2026-06-24T12:00:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
-      "contentOwner": "CHARGE Events",
-      "economicBuyer": "CHARGE Events",
+      "decisionReason": "CHARGE owns an active energy-branding podcast and sells conference access and sponsorship, but its rotating host and final economic buyer are not yet verified and its video quality needs inspection.",
+      "contentOwner": "CHARGE - Powering Energy Brands",
       "ownedLongForm": {
         "type": "PODCAST",
         "latestTitle": "Data Centres in the Crosshairs: Responding to Public Concerns with Jeff Hahn and Jason Stephenson",
@@ -142,26 +345,132 @@
       },
       "unresolvedGates": [
         "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "THREE_SAMPLE_VIDEO_GAP"
       ],
       "evidence": [
         {
-          "url": "https://rss.buzzsprout.com/2322999.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "url": "https://charge.events/podcast/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://charge.events/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://charge.events/wp-content/uploads/221011_Charge_Reykjavik_okt_2022-1.pdf",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "contact": {
+        "channel": "EMAIL",
+        "value": "info@charge.events",
+        "evidenceUrl": "https://charge.events/podcast/"
+      },
+      "offer": {
+        "description": "Energy-branding conference tickets and sponsorship packages",
+        "evidenceUrl": "https://charge.events/"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Podcast",
+          "LinkedIn newsletter"
+        ],
+        "mof": [
+          "Event agenda",
+          "Speaker and brand content"
+        ],
+        "bof": [
+          "Conference registration",
+          "Sponsorship enquiry"
+        ]
+      },
+      "pitchHook": "Turn each CHARGE interview into clear educational clips that keep speakers and event themes circulating between conferences and point energy-brand marketers toward registration and sponsorship.",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "CHARGE's official podcast page contains current owned energy-branding episodes.",
+            "evidenceUrls": [
+              "https://charge.events/podcast/",
+              "https://charge.events/",
+              "https://charge.events/wp-content/uploads/221011_Charge_Reykjavik_okt_2022-1.pdf"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed contains repeated 2026 publications across multiple months.",
+            "evidenceUrls": [
+              "https://charge.events/podcast/",
+              "https://charge.events/",
+              "https://charge.events/wp-content/uploads/221011_Charge_Reykjavik_okt_2022-1.pdf"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "CHARGE owns the channel, but the recurring host and final buyer need confirmation.",
+            "evidenceUrls": [
+              "https://charge.events/podcast/",
+              "https://charge.events/",
+              "https://charge.events/wp-content/uploads/221011_Charge_Reykjavik_okt_2022-1.pdf"
+            ]
+          },
+          "contact": {
+            "status": "CONFIRMED",
+            "note": "The official podcast page publishes info@charge.events as the contact route.",
+            "evidenceUrls": [
+              "https://charge.events/podcast/",
+              "https://charge.events/",
+              "https://charge.events/wp-content/uploads/221011_Charge_Reykjavik_okt_2022-1.pdf"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "CHARGE sells conference attendance and sponsor visibility to energy brands.",
+            "evidenceUrls": [
+              "https://charge.events/podcast/",
+              "https://charge.events/",
+              "https://charge.events/wp-content/uploads/221011_Charge_Reykjavik_okt_2022-1.pdf"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Podcast and newsletter attention feed conference registration and sponsorship.",
+            "evidenceUrls": [
+              "https://charge.events/podcast/",
+              "https://charge.events/",
+              "https://charge.events/wp-content/uploads/221011_Charge_Reykjavik_okt_2022-1.pdf"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three owned video samples have not yet been inspected for clipping quality.",
+            "evidenceUrls": [
+              "https://charge.events/podcast/",
+              "https://charge.events/",
+              "https://charge.events/wp-content/uploads/221011_Charge_Reykjavik_okt_2022-1.pdf"
+            ]
+          },
+          "pitchHook": {
+            "status": "CONFIRMED",
+            "note": "Daily educational clips can keep CHARGE speakers visible between events and lead viewers toward registration and sponsorship.",
+            "evidenceUrls": [
+              "https://charge.events/podcast/",
+              "https://charge.events/",
+              "https://charge.events/wp-content/uploads/221011_Charge_Reykjavik_okt_2022-1.pdf"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "joe-batir",
       "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Edge Computing: Increasing Safety, Increasing Efficiency with Phil Trickovic &#124; Tintri &#124; Ep 235 at 2026-07-08T10:21:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
-      "contentOwner": "Joe Batir",
-      "economicBuyer": "Joe Batir",
+      "decisionReason": "Joe Batir hosts an active weekly OGGN energy-transition show and OGGN sells podcast sponsorships, but OGGN owns the channel and the buyer/contact chain and three-sample video gap are incomplete.",
+      "contentOwner": "Oil and Gas Global Network",
       "ownedLongForm": {
         "type": "PODCAST",
         "latestTitle": "Edge Computing: Increasing Safety, Increasing Efficiency with Phil Trickovic &#124; Tintri &#124; Ep 235",
@@ -179,26 +488,132 @@
         "medianIntervalDays": 7
       },
       "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "ECONOMIC_BUYER_AUTHORITY",
         "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "THREE_SAMPLE_VIDEO_GAP"
       ],
       "evidence": [
         {
-          "url": "https://feeds.oggn.com/category/ets/feed/",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "url": "https://oggn.com/ets/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://oggn.com/product/dedicated-podcast-sponsorship/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://oggn.com/contact/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "onMicHost": "Joe Batir",
+      "contact": {
+        "channel": "FORM",
+        "value": "OGGN advertising contact form",
+        "evidenceUrl": "https://oggn.com/contact/"
+      },
+      "offer": {
+        "description": "OGGN podcast sponsorship packages priced at $6,000-$18,000 per month",
+        "evidenceUrl": "https://oggn.com/product/dedicated-podcast-sponsorship/"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Weekly Energy Transition Solutions podcast"
+        ],
+        "mof": [
+          "OGGN network and newsletters"
+        ],
+        "bof": [
+          "Podcast sponsorship enquiry"
+        ]
+      },
+      "pitchHook": "Package Joe Batir's technical conversations into accurate educational clips that create additional sponsor inventory and send qualified energy-industry viewers toward OGGN's sponsorship offer.",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "OGGN lists Energy Transition Solutions as an active network show.",
+            "evidenceUrls": [
+              "https://oggn.com/ets/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/",
+              "https://oggn.com/contact/"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The verified OGGN feed shows consecutive weekly 2026 episodes.",
+            "evidenceUrls": [
+              "https://oggn.com/ets/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/",
+              "https://oggn.com/contact/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Joe hosts the show, while OGGN owns distribution and likely controls spend.",
+            "evidenceUrls": [
+              "https://oggn.com/ets/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/",
+              "https://oggn.com/contact/"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "OGGN provides an advertising form but no person-tied buyer route for this show.",
+            "evidenceUrls": [
+              "https://oggn.com/ets/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/",
+              "https://oggn.com/contact/"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "OGGN sells dedicated podcast sponsorships from six to eighteen thousand dollars monthly.",
+            "evidenceUrls": [
+              "https://oggn.com/ets/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/",
+              "https://oggn.com/contact/"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Episodes feed OGGN reach, sponsor pages, and advertising enquiries.",
+            "evidenceUrls": [
+              "https://oggn.com/ets/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/",
+              "https://oggn.com/contact/"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The music-channel link is not adequate for a three-sample owned-video inspection.",
+            "evidenceUrls": [
+              "https://oggn.com/ets/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/",
+              "https://oggn.com/contact/"
+            ]
+          },
+          "pitchHook": {
+            "status": "CONFIRMED",
+            "note": "Educational clips could extend sponsor inventory and route energy audiences to OGGN sponsorship packages.",
+            "evidenceUrls": [
+              "https://oggn.com/ets/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/",
+              "https://oggn.com/contact/"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "lisa-cohn",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Iceland Project Tests Synfuel Production that Integrates Geothermal Energy at 2026-06-30T23:20:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
-      "contentOwner": "Lisa Cohn",
+      "decision": "PURSUE_NOW",
+      "decisionReason": "Lisa Cohn owns and hosts an active clean-energy podcast, publishes a direct business email, and sells energy writing services; her official properties show no verified owned YouTube distribution, creating a clear repurposing opportunity.",
+      "contentOwner": "Lisa Cohn / Clean Energy Writers",
       "economicBuyer": "Lisa Cohn",
       "ownedLongForm": {
         "type": "PODCAST",
@@ -216,26 +631,139 @@
         "cadenceStatus": "ACTIVE",
         "medianIntervalDays": 17.1
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
-          "url": "https://rss.libsyn.com/shows/580740/destinations/5035595.xml",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "url": "https://www.lisaecohn.com/new-podcast-clean-energy-today/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://cleanenergywriters.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://cleanenergywriters.com/contact/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "onMicHost": "Lisa Cohn",
+      "contact": {
+        "channel": "EMAIL",
+        "value": "Lisa@CleanEnergyWriters.com",
+        "evidenceUrl": "https://cleanenergywriters.com/contact/"
+      },
+      "offer": {
+        "description": "Paid clean-energy writing including newsletters, white papers, thought leadership, ghostwriting, blogs, and website content",
+        "evidenceUrl": "https://cleanenergywriters.com/"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Clean Energy Today podcast",
+          "Clean Energy Conversations blog"
+        ],
+        "mof": [
+          "Writing samples",
+          "Newsletter subscription"
+        ],
+        "bof": [
+          "Clean Energy Writers service enquiry"
+        ]
+      },
+      "videoGap": {
+        "distribution": "Active podcast and written content without a verified owned YouTube channel",
+        "educationalQuality": "NO_OWNED_VIDEO_CHANNEL",
+        "reason": "Lisa has current expert audio suitable for visual explanation, but her official properties do not expose owned YouTube distribution.",
+        "evidenceUrls": [
+          "https://www.lisaecohn.com/new-podcast-clean-energy-today/",
+          "https://cleanenergywriters.com/"
+        ]
+      },
+      "pitchHook": "Turn Lisa's current clean-energy interviews into restrained, technically accurate visual clips with maps, process imagery, and persistent numbers, then point qualified clean-energy companies to her writing-services enquiry.",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "Lisa's own site announces and identifies her Clean Energy Today podcast.",
+            "evidenceUrls": [
+              "https://www.lisaecohn.com/new-podcast-clean-energy-today/",
+              "https://cleanenergywriters.com/",
+              "https://cleanenergywriters.com/contact/"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed contains six current publications with active cadence.",
+            "evidenceUrls": [
+              "https://www.lisaecohn.com/new-podcast-clean-energy-today/",
+              "https://cleanenergywriters.com/",
+              "https://cleanenergywriters.com/contact/"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "Lisa is the host, content owner, service owner, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.lisaecohn.com/new-podcast-clean-energy-today/",
+              "https://cleanenergywriters.com/",
+              "https://cleanenergywriters.com/contact/"
+            ]
+          },
+          "contact": {
+            "status": "CONFIRMED",
+            "note": "Her official sites publish Lisa@CleanEnergyWriters.com for direct enquiries.",
+            "evidenceUrls": [
+              "https://www.lisaecohn.com/new-podcast-clean-energy-today/",
+              "https://cleanenergywriters.com/",
+              "https://cleanenergywriters.com/contact/"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "Clean Energy Writers sells newsletters, white papers, thought leadership, and related writing.",
+            "evidenceUrls": [
+              "https://www.lisaecohn.com/new-podcast-clean-energy-today/",
+              "https://cleanenergywriters.com/",
+              "https://cleanenergywriters.com/contact/"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Podcast and blog discovery lead to writing samples, service pages, and direct enquiry.",
+            "evidenceUrls": [
+              "https://www.lisaecohn.com/new-podcast-clean-energy-today/",
+              "https://cleanenergywriters.com/",
+              "https://cleanenergywriters.com/contact/"
+            ]
+          },
+          "videoGap": {
+            "status": "CONFIRMED",
+            "note": "Official podcast and service pages expose audio and written content but no owned YouTube channel.",
+            "evidenceUrls": [
+              "https://www.lisaecohn.com/new-podcast-clean-energy-today/",
+              "https://cleanenergywriters.com/",
+              "https://cleanenergywriters.com/contact/"
+            ]
+          },
+          "pitchHook": {
+            "status": "CONFIRMED",
+            "note": "Repurpose current interviews into technically accurate visual clips that demonstrate Lisa's expertise and lead clean-energy firms to her writing services.",
+            "evidenceUrls": [
+              "https://www.lisaecohn.com/new-podcast-clean-energy-today/",
+              "https://cleanenergywriters.com/",
+              "https://cleanenergywriters.com/contact/"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "ron-baker",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Episode 595 - Second interview with David Barrett at 2026-07-10T21:31:00.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The Soul of Enterprise is an accounting, pricing, and knowledge-economy show rather than an energy show, so Ron Baker falls outside the energy-creator ICP.",
       "contentOwner": "Ron Baker",
       "economicBuyer": "Ron Baker",
       "ownedLongForm": {
@@ -254,21 +782,81 @@
         "cadenceStatus": "ACTIVE",
         "medianIntervalDays": 7
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
-          "url": "https://rss.libsyn.com/shows/587985/destinations/5104630.xml",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "url": "https://www.thesoulofenterprise.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/the-soul-of-enterprise-business-in/id893874169",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "factualHardGate": "WRONG_ICP",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The owned show covers value pricing and knowledge-economy businesses.",
+            "evidenceUrls": [
+              "https://www.thesoulofenterprise.com/",
+              "https://podcasts.apple.com/us/podcast/the-soul-of-enterprise-business-in/id893874169"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The show remains active, but cadence cannot cure the ICP mismatch.",
+            "evidenceUrls": [
+              "https://www.thesoulofenterprise.com/",
+              "https://podcasts.apple.com/us/podcast/the-soul-of-enterprise-business-in/id893874169"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "Ron Baker and Ed Kless are identified as the show's hosts.",
+            "evidenceUrls": [
+              "https://www.thesoulofenterprise.com/",
+              "https://podcasts.apple.com/us/podcast/the-soul-of-enterprise-business-in/id893874169"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Outreach research stopped after confirming the wrong industry.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "Books, Patreon, and professional pricing education are non-energy transactions.",
+            "evidenceUrls": [
+              "https://www.thesoulofenterprise.com/",
+              "https://podcasts.apple.com/us/podcast/the-soul-of-enterprise-business-in/id893874169"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "The funnel serves accounting and professional-services audiences.",
+            "evidenceUrls": [
+              "https://www.thesoulofenterprise.com/",
+              "https://podcasts.apple.com/us/podcast/the-soul-of-enterprise-business-in/id893874169"
+            ]
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video quality is irrelevant after the energy ICP failure.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be created for this non-energy account.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "ee-times-on-air",
@@ -335,55 +923,222 @@
     {
       "id": "samir-madani",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
-      "contentOwner": "Samir Madani",
-      "economicBuyer": "Samir Madani",
+      "decisionReason": "Samir Madani is a named TankerTrackers co-founder with a high-value subscription and research transaction, but no current owned long-form series was verified for clipping rights.",
+      "economicBuyer": "Samir Madani / TankerTrackers",
       "unresolvedGates": [
         "OWNED_CURRENT_LONG_FORM",
         "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
         "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
-          "url": "https://x.com/Samir_Madani",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://tankertrackers.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://tankertrackers.com/faq/entry/what-products-and-services-are-available",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://tankertrackers.com/faq/entry/what-is-the-best-way-to-get-in-touch-with-tankertrackers-com",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "onMicHost": "Samir Madani",
+      "contact": {
+        "channel": "FORM",
+        "value": "Monitored TankerTrackers contact form",
+        "evidenceUrl": "https://tankertrackers.com/faq/entry/what-is-the-best-way-to-get-in-touch-with-tankertrackers-com"
+      },
+      "offer": {
+        "description": "Corporate subscriptions and bespoke tanker-tracking research",
+        "evidenceUrl": "https://tankertrackers.com/faq/entry/what-products-and-services-are-available"
+      },
+      "observedFunnel": {
+        "tof": [
+          "X analysis",
+          "Media commentary"
+        ],
+        "mof": [
+          "TankerTrackers product information"
+        ],
+        "bof": [
+          "Corporate subscription",
+          "Bespoke research enquiry"
+        ]
+      },
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "No current Samir-owned podcast or repeatable long-form series was verified.",
+            "evidenceUrls": [
+              "https://tankertrackers.com/",
+              "https://tankertrackers.com/faq/entry/what-products-and-services-are-available",
+              "https://tankertrackers.com/faq/entry/what-is-the-best-way-to-get-in-touch-with-tankertrackers-com"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Without an owned series there are no three publication dates to audit.",
+            "evidenceUrls": [
+              "https://tankertrackers.com/",
+              "https://tankertrackers.com/faq/entry/what-products-and-services-are-available",
+              "https://tankertrackers.com/faq/entry/what-is-the-best-way-to-get-in-touch-with-tankertrackers-com"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "Samir is a co-founder and public expert for TankerTrackers.",
+            "evidenceUrls": [
+              "https://tankertrackers.com/",
+              "https://tankertrackers.com/faq/entry/what-products-and-services-are-available",
+              "https://tankertrackers.com/faq/entry/what-is-the-best-way-to-get-in-touch-with-tankertrackers-com"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The monitored contact form reaches the company, not Samir personally.",
+            "evidenceUrls": [
+              "https://tankertrackers.com/",
+              "https://tankertrackers.com/faq/entry/what-products-and-services-are-available",
+              "https://tankertrackers.com/faq/entry/what-is-the-best-way-to-get-in-touch-with-tankertrackers-com"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "TankerTrackers sells corporate subscriptions and bespoke maritime research.",
+            "evidenceUrls": [
+              "https://tankertrackers.com/",
+              "https://tankertrackers.com/faq/entry/what-products-and-services-are-available",
+              "https://tankertrackers.com/faq/entry/what-is-the-best-way-to-get-in-touch-with-tankertrackers-com"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Public oil-flow analysis leads to product pages, subscriptions, and research enquiries.",
+            "evidenceUrls": [
+              "https://tankertrackers.com/",
+              "https://tankertrackers.com/faq/entry/what-products-and-services-are-available",
+              "https://tankertrackers.com/faq/entry/what-is-the-best-way-to-get-in-touch-with-tankertrackers-com"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No owned long-form channel exists to inspect for a video gap.",
+            "evidenceUrls": [
+              "https://tankertrackers.com/",
+              "https://tankertrackers.com/faq/entry/what-products-and-services-are-available",
+              "https://tankertrackers.com/faq/entry/what-is-the-best-way-to-get-in-touch-with-tankertrackers-com"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A clipping pitch is premature until Samir controls recurring source content.",
+            "evidenceUrls": [
+              "https://tankertrackers.com/",
+              "https://tankertrackers.com/faq/entry/what-products-and-services-are-available",
+              "https://tankertrackers.com/faq/entry/what-is-the-best-way-to-get-in-touch-with-tankertrackers-com"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "goehring-rozencwajg",
-      "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "This organization record and the Adam Rozencwajg record resolve to the same Goehring & Rozencwajg owned account; the named-human Adam record is retained for buyer research.",
       "contentOwner": "Goehring & Rozencwajg",
       "economicBuyer": "Goehring & Rozencwajg",
-      "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
-          "url": "https://x.com/GoRozen",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://www.gorozen.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "factualHardGate": "DUPLICATE_ACCOUNT",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The firm publishes research and guest appearances but no owned recurring show was verified.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Guest appearances cannot establish cadence for an owned channel.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "The site identifies Adam and Leigh as the firm's founders.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg"
+            ]
+          },
+          "contact": {
+            "status": "CONFIRMED",
+            "note": "The firm publishes info@gorozen.com as its public contact.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The firm offers investment access through its natural-resources fund.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Research and guest appearances lead to commentary subscriptions and fund information.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg"
+            ]
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "This duplicate is collapsed into the named-human Adam record.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "Outreach should target the retained Adam record rather than duplicate the account.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "jeff-currie",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Jeff Currie is a major energy commentator, but no recurring long-form channel he owns or controls, person-tied outreach path, or personal commercial transaction was verified.",
       "contentOwner": "Jeff Currie",
       "economicBuyer": "Jeff Currie",
       "unresolvedGates": [
@@ -392,185 +1147,886 @@
         "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
         "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
         "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
-          "url": "https://x.com/JeffCurrie_",
-          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+          "url": "https://www.carlyle.com/corporate-overview/leadership/jeff-currie",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://epic.uchicago.edu/about/leadership/jeff-currie/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "Media appearances were found, but no Jeff-owned recurring show was verified.",
+            "evidenceUrls": [
+              "https://www.carlyle.com/corporate-overview/leadership/jeff-currie",
+              "https://epic.uchicago.edu/about/leadership/jeff-currie/"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Third-party television appearances do not establish owned publishing cadence.",
+            "evidenceUrls": [
+              "https://www.carlyle.com/corporate-overview/leadership/jeff-currie",
+              "https://epic.uchicago.edu/about/leadership/jeff-currie/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Jeff is the speaker, while Carlyle or publishers control the content and budget.",
+            "evidenceUrls": [
+              "https://www.carlyle.com/corporate-overview/leadership/jeff-currie",
+              "https://epic.uchicago.edu/about/leadership/jeff-currie/"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No verified direct public outreach route tied to Jeff was found.",
+            "evidenceUrls": [
+              "https://www.carlyle.com/corporate-overview/leadership/jeff-currie",
+              "https://epic.uchicago.edu/about/leadership/jeff-currie/"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Carlyle's institutional investment offer is not a Jeff-owned creator transaction.",
+            "evidenceUrls": [
+              "https://www.carlyle.com/corporate-overview/leadership/jeff-currie",
+              "https://epic.uchicago.edu/about/leadership/jeff-currie/"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Media commentary supports Carlyle and EPIC authority, not a personal creator funnel.",
+            "evidenceUrls": [
+              "https://www.carlyle.com/corporate-overview/leadership/jeff-currie",
+              "https://epic.uchicago.edu/about/leadership/jeff-currie/"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "There is no verified owned channel on which to inspect three samples.",
+            "evidenceUrls": [
+              "https://www.carlyle.com/corporate-overview/leadership/jeff-currie",
+              "https://epic.uchicago.edu/about/leadership/jeff-currie/"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Without content ownership and a transaction, a clipping pitch would be untethered.",
+            "evidenceUrls": [
+              "https://www.carlyle.com/corporate-overview/leadership/jeff-currie",
+              "https://epic.uchicago.edu/about/leadership/jeff-currie/"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "nat-bullard",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Nat Bullard has a direct consulting and speaking offer plus an owned energy newsletter, but no current owned audio or video series with three cadence dates was verified.",
       "contentOwner": "Nat Bullard",
       "economicBuyer": "Nat Bullard",
       "unresolvedGates": [
         "OWNED_CURRENT_LONG_FORM",
         "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "THREE_SAMPLE_VIDEO_GAP"
       ],
       "evidence": [
         {
-          "url": "https://x.com/NatBullard",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://www.nathanielbullard.com/about",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.nathanielbullard.com/blog",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.nathanielbullard.com/blog/decarbonization-no-11-on-deck",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "onMicHost": "Nat Bullard",
+      "offer": {
+        "description": "Energy and climate keynotes, board strategy facilitation, consulting, and advisory services",
+        "evidenceUrl": "https://www.nathanielbullard.com/about"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Decarbonization newsletter",
+          "Annual presentation"
+        ],
+        "mof": [
+          "Energy analysis archive"
+        ],
+        "bof": [
+          "Keynote",
+          "Board briefing",
+          "Consulting enquiry"
+        ]
+      },
+      "pitchHook": "Convert Nat Bullard's data-heavy talks into restrained visual explainers that preserve charts and causal logic, then route executive viewers toward his keynote, board-briefing, and consulting work.",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "Nat owns a newsletter, but no recurring owned audio or video series was verified.",
+            "evidenceUrls": [
+              "https://www.nathanielbullard.com/about",
+              "https://www.nathanielbullard.com/blog",
+              "https://www.nathanielbullard.com/blog/decarbonization-no-11-on-deck"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "The visible newsletter archive does not show three current 2026 long-form dates.",
+            "evidenceUrls": [
+              "https://www.nathanielbullard.com/about",
+              "https://www.nathanielbullard.com/blog",
+              "https://www.nathanielbullard.com/blog/decarbonization-no-11-on-deck"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "Nat owns Business Climate and is the newsletter author and economic buyer.",
+            "evidenceUrls": [
+              "https://www.nathanielbullard.com/about",
+              "https://www.nathanielbullard.com/blog",
+              "https://www.nathanielbullard.com/blog/decarbonization-no-11-on-deck"
+            ]
+          },
+          "contact": {
+            "status": "CONFIRMED",
+            "note": "His official about page provides a direct get-in-touch route.",
+            "evidenceUrls": [
+              "https://www.nathanielbullard.com/about",
+              "https://www.nathanielbullard.com/blog",
+              "https://www.nathanielbullard.com/blog/decarbonization-no-11-on-deck"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "Nat sells keynotes, board strategy facilitation, consulting, and advisory work.",
+            "evidenceUrls": [
+              "https://www.nathanielbullard.com/about",
+              "https://www.nathanielbullard.com/blog",
+              "https://www.nathanielbullard.com/blog/decarbonization-no-11-on-deck"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Newsletter and annual presentation lead to speaking and board-briefing enquiries.",
+            "evidenceUrls": [
+              "https://www.nathanielbullard.com/about",
+              "https://www.nathanielbullard.com/blog",
+              "https://www.nathanielbullard.com/blog/decarbonization-no-11-on-deck"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No owned video channel with three inspectable samples was verified.",
+            "evidenceUrls": [
+              "https://www.nathanielbullard.com/about",
+              "https://www.nathanielbullard.com/blog",
+              "https://www.nathanielbullard.com/blog/decarbonization-no-11-on-deck"
+            ]
+          },
+          "pitchHook": {
+            "status": "CONFIRMED",
+            "note": "Educational visual clips from future talks could lead executives toward Nat's board briefings and consulting.",
+            "evidenceUrls": [
+              "https://www.nathanielbullard.com/about",
+              "https://www.nathanielbullard.com/blog",
+              "https://www.nathanielbullard.com/blog/decarbonization-no-11-on-deck"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "jesse-jenkins",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
-      "contentOwner": "Jesse Jenkins",
-      "economicBuyer": "Jesse Jenkins",
+      "decisionReason": "Jesse Jenkins co-created Shift Key but has transitioned from regular co-host to occasional guest while Heatmap controls the show and subscription transaction, so the buyer and content-control chain is incomplete.",
+      "contentOwner": "Heatmap News",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
         "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
         "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
-          "url": "https://x.com/JesseJenkins",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://www.heatmap.news/podcast/shift-key",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.linkedin.com/posts/jessedjenkins_the-power-grid-just-passed-its-biggest-test-activity-7429652479715430400-_ZoR",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "onMicHost": "Robinson Meyer; Jesse Jenkins occasionally",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "Shift Key is a current Heatmap-owned energy-transition podcast.",
+            "evidenceUrls": [
+              "https://www.heatmap.news/podcast/shift-key",
+              "https://www.linkedin.com/posts/jessedjenkins_the-power-grid-just-passed-its-biggest-test-activity-7429652479715430400-_ZoR"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The show publishes weekly, but Jesse is no longer the regular co-host.",
+            "evidenceUrls": [
+              "https://www.heatmap.news/podcast/shift-key",
+              "https://www.linkedin.com/posts/jessedjenkins_the-power-grid-just-passed-its-biggest-test-activity-7429652479715430400-_ZoR"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Jesse is an occasional guest host while Heatmap and Robinson Meyer control the show.",
+            "evidenceUrls": [
+              "https://www.heatmap.news/podcast/shift-key",
+              "https://www.linkedin.com/posts/jessedjenkins_the-power-grid-just-passed-its-biggest-test-activity-7429652479715430400-_ZoR"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No verified public contact tied to the show's economic buyer was found.",
+            "evidenceUrls": [
+              "https://www.heatmap.news/podcast/shift-key",
+              "https://www.linkedin.com/posts/jessedjenkins_the-power-grid-just-passed-its-biggest-test-activity-7429652479715430400-_ZoR"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "Heatmap sells subscriptions that include full Shift Key transcripts and journalism.",
+            "evidenceUrls": [
+              "https://www.heatmap.news/podcast/shift-key",
+              "https://www.linkedin.com/posts/jessedjenkins_the-power-grid-just-passed-its-biggest-test-activity-7429652479715430400-_ZoR"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Podcast reach leads to Heatmap articles, transcripts, and paid membership.",
+            "evidenceUrls": [
+              "https://www.heatmap.news/podcast/shift-key",
+              "https://www.linkedin.com/posts/jessedjenkins_the-power-grid-just-passed-its-biggest-test-activity-7429652479715430400-_ZoR"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three current Heatmap-owned video samples were not inspected.",
+            "evidenceUrls": [
+              "https://www.heatmap.news/podcast/shift-key",
+              "https://www.linkedin.com/posts/jessedjenkins_the-power-grid-just-passed-its-biggest-test-activity-7429652479715430400-_ZoR"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "The pitch must target Heatmap's buyer, not Jesse, before it is actionable.",
+            "evidenceUrls": [
+              "https://www.heatmap.news/podcast/shift-key",
+              "https://www.linkedin.com/posts/jessedjenkins_the-power-grid-just-passed-its-biggest-test-activity-7429652479715430400-_ZoR"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "ramez-naam",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Ramez Naam owns a current writing and speaking platform, but no recurring owned energy audio/video series, current cadence chain, or verified direct booking transaction was established.",
       "contentOwner": "Ramez Naam",
       "economicBuyer": "Ramez Naam",
       "unresolvedGates": [
         "OWNED_CURRENT_LONG_FORM",
         "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
         "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
         "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
-          "url": "https://x.com/ramez",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://www.rameznaam.com/archive",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.rameznaam.com/speaking",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The archive contains talks and writing but no repeatable owned energy show.",
+            "evidenceUrls": [
+              "https://www.rameznaam.com/archive",
+              "https://www.rameznaam.com/speaking"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Recent posts focus on AI and do not establish energy long-form cadence.",
+            "evidenceUrls": [
+              "https://www.rameznaam.com/archive",
+              "https://www.rameznaam.com/speaking"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "Ramez owns and authors the personal site and appears in its talks.",
+            "evidenceUrls": [
+              "https://www.rameznaam.com/archive",
+              "https://www.rameznaam.com/speaking"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "A public person-tied booking route was not verified in this pass.",
+            "evidenceUrls": [
+              "https://www.rameznaam.com/archive",
+              "https://www.rameznaam.com/speaking"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Speaking is advertised, but a current booking path and terms were not verified.",
+            "evidenceUrls": [
+              "https://www.rameznaam.com/archive",
+              "https://www.rameznaam.com/speaking"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Articles and talks build authority for books, investing, and speaking.",
+            "evidenceUrls": [
+              "https://www.rameznaam.com/archive",
+              "https://www.rameznaam.com/speaking"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No owned channel with three current energy samples was found.",
+            "evidenceUrls": [
+              "https://www.rameznaam.com/archive",
+              "https://www.rameznaam.com/speaking"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A clip offer needs recurring energy source material and a verified booking transaction.",
+            "evidenceUrls": [
+              "https://www.rameznaam.com/archive",
+              "https://www.rameznaam.com/speaking"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "kingsmill-bond",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Kingsmill Bond has current energy research, video presentations, and a public email, but Ember owns the core content and no Kingsmill-controlled paid transaction or recurring owned show is verified.",
       "contentOwner": "Kingsmill Bond",
       "economicBuyer": "Kingsmill Bond",
       "unresolvedGates": [
         "OWNED_CURRENT_LONG_FORM",
         "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
+        "ECONOMIC_BUYER_AUTHORITY",
         "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
         "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
-          "url": "https://x.com/KingsmillBond",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://www.kingsmillbond.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.kingsmillbond.com/publications/category/Report",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The site embeds Ember webinars and guest podcasts rather than a Kingsmill-owned show.",
+            "evidenceUrls": [
+              "https://www.kingsmillbond.com/",
+              "https://www.kingsmillbond.com/publications/category/Report"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Reports are current, but owned audio or video cadence is not established.",
+            "evidenceUrls": [
+              "https://www.kingsmillbond.com/",
+              "https://www.kingsmillbond.com/publications/category/Report"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Kingsmill is the expert while Ember owns the research and likely budget.",
+            "evidenceUrls": [
+              "https://www.kingsmillbond.com/",
+              "https://www.kingsmillbond.com/publications/category/Report"
+            ]
+          },
+          "contact": {
+            "status": "CONFIRMED",
+            "note": "His official personal site exposes an email contact route.",
+            "evidenceUrls": [
+              "https://www.kingsmillbond.com/",
+              "https://www.kingsmillbond.com/publications/category/Report"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No paid Kingsmill-controlled offer is published on the official site.",
+            "evidenceUrls": [
+              "https://www.kingsmillbond.com/",
+              "https://www.kingsmillbond.com/publications/category/Report"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Reports, webinars, and Substack drive attention toward Ember research.",
+            "evidenceUrls": [
+              "https://www.kingsmillbond.com/",
+              "https://www.kingsmillbond.com/publications/category/Report"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Ember's video samples and existing production quality require inspection.",
+            "evidenceUrls": [
+              "https://www.kingsmillbond.com/",
+              "https://www.kingsmillbond.com/publications/category/Report"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "The transaction and economic buyer must be resolved before pitching.",
+            "evidenceUrls": [
+              "https://www.kingsmillbond.com/",
+              "https://www.kingsmillbond.com/publications/category/Report"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "adam-rozencwajg",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
-      "contentOwner": "Adam Rozencwajg",
+      "decisionReason": "Adam Rozencwajg is a named managing partner with a clear investment transaction and active research appearances, but those appearances are third-party and no owned recurring long-form channel is verified.",
+      "contentOwner": "Goehring & Rozencwajg",
       "economicBuyer": "Adam Rozencwajg",
       "unresolvedGates": [
         "OWNED_CURRENT_LONG_FORM",
         "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "THREE_SAMPLE_VIDEO_GAP"
       ],
       "evidence": [
         {
-          "url": "https://x.com/AdamRozencwajg",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://www.gorozen.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://blog.gorozen.com/hubfs/Compliance%20Files/G%26R%20Website%20Privacy%20Policy.pdf",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "onMicHost": "Adam Rozencwajg",
+      "contact": {
+        "channel": "EMAIL",
+        "value": "info@gorozen.com",
+        "evidenceUrl": "https://blog.gorozen.com/hubfs/Compliance%20Files/G%26R%20Website%20Privacy%20Policy.pdf"
+      },
+      "offer": {
+        "description": "Natural-resources investment fund",
+        "evidenceUrl": "https://www.gorozen.com/"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Research commentary",
+          "Guest podcast appearances"
+        ],
+        "mof": [
+          "Quarterly commentary subscription"
+        ],
+        "bof": [
+          "Fund information and investment enquiry"
+        ]
+      },
+      "pitchHook": "Build a G&R-owned interview series around Adam's research themes, then turn each discussion into accurate commodity explainers that keep the firm's thesis visible and route qualified investors toward the fund.",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "Recent podcast appearances are hosted by third parties, not owned by Adam.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg",
+              "https://blog.gorozen.com/hubfs/Compliance%20Files/G%26R%20Website%20Privacy%20Policy.pdf"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Guest appearances do not prove a controllable long-form publishing cadence.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg",
+              "https://blog.gorozen.com/hubfs/Compliance%20Files/G%26R%20Website%20Privacy%20Policy.pdf"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "Adam is a G&R co-founder, managing partner, spokesperson, and buyer candidate.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg",
+              "https://blog.gorozen.com/hubfs/Compliance%20Files/G%26R%20Website%20Privacy%20Policy.pdf"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The public info@gorozen.com address is firm-wide rather than person-tied.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg",
+              "https://blog.gorozen.com/hubfs/Compliance%20Files/G%26R%20Website%20Privacy%20Policy.pdf"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "G&R invites qualified prospects to learn how to invest in its fund.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg",
+              "https://blog.gorozen.com/hubfs/Compliance%20Files/G%26R%20Website%20Privacy%20Policy.pdf"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Research and guest podcasts lead to commentary subscriptions and fund information.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg",
+              "https://blog.gorozen.com/hubfs/Compliance%20Files/G%26R%20Website%20Privacy%20Policy.pdf"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No Adam-owned channel exists for a three-sample quality review.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg",
+              "https://blog.gorozen.com/hubfs/Compliance%20Files/G%26R%20Website%20Privacy%20Policy.pdf"
+            ]
+          },
+          "pitchHook": {
+            "status": "CONFIRMED",
+            "note": "An owned interview series could convert research themes into investor education that points toward fund enquiries.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/blog/podcast-energy-shock-oil-markets-the-new-commodity-cycle-with-adam-rozencwajg",
+              "https://blog.gorozen.com/hubfs/Compliance%20Files/G%26R%20Website%20Privacy%20Policy.pdf"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "art-berman",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Art Berman has a direct consulting, speaking, and expert-witness transaction plus public contact, but no current owned recurring long-form series with three verified publication dates was found.",
       "contentOwner": "Art Berman",
       "economicBuyer": "Art Berman",
       "unresolvedGates": [
         "OWNED_CURRENT_LONG_FORM",
         "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "THREE_SAMPLE_VIDEO_GAP"
       ],
       "evidence": [
         {
-          "url": "https://x.com/ArtBerman_",
-          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+          "url": "https://www.artberman.com/contact/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.artberman.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "onMicHost": "Art Berman",
+      "contact": {
+        "channel": "FORM",
+        "value": "Art Berman service inquiry",
+        "evidenceUrl": "https://www.artberman.com/contact/"
+      },
+      "offer": {
+        "description": "Energy consulting, keynote speaking, expert-witness, and one-on-one services",
+        "evidenceUrl": "https://www.artberman.com/contact/"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Energy commentary",
+          "Newsletter"
+        ],
+        "mof": [
+          "Service explanations"
+        ],
+        "bof": [
+          "Book a conversation",
+          "Service inquiry"
+        ]
+      },
+      "pitchHook": "Turn Art Berman's next technical talk into sober visual explainers with field imagery, maps, and persistent figures, then route qualified viewers toward his consulting and keynote inquiry.",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The site contains commentary but no verified recurring owned podcast series.",
+            "evidenceUrls": [
+              "https://www.artberman.com/contact/",
+              "https://www.artberman.com/"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Three current long-form publication dates were not established.",
+            "evidenceUrls": [
+              "https://www.artberman.com/contact/",
+              "https://www.artberman.com/"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "Art is the expert, service owner, public face, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.artberman.com/contact/",
+              "https://www.artberman.com/"
+            ]
+          },
+          "contact": {
+            "status": "CONFIRMED",
+            "note": "The official contact page provides email, inquiry form, and booking call.",
+            "evidenceUrls": [
+              "https://www.artberman.com/contact/",
+              "https://www.artberman.com/"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "Art sells energy consulting, keynotes, expert-witness work, and one-on-one services.",
+            "evidenceUrls": [
+              "https://www.artberman.com/contact/",
+              "https://www.artberman.com/"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Commentary and newsletter attention lead to a service-specific inquiry form.",
+            "evidenceUrls": [
+              "https://www.artberman.com/contact/",
+              "https://www.artberman.com/"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No verified owned channel exists for three-sample inspection.",
+            "evidenceUrls": [
+              "https://www.artberman.com/contact/",
+              "https://www.artberman.com/"
+            ]
+          },
+          "pitchHook": {
+            "status": "CONFIRMED",
+            "note": "Accurate educational clips from future talks could route technical audiences toward consulting and speaking enquiries.",
+            "evidenceUrls": [
+              "https://www.artberman.com/contact/",
+              "https://www.artberman.com/"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "energy-aspects",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Energy Aspects has current webinars, podcasts, a trial offer, and public contact, but the database record lacks a named recurring host, economic buyer, and inspected three-video distribution gap.",
       "contentOwner": "Energy Aspects",
-      "economicBuyer": "Energy Aspects",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
         "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "THREE_PUBLICATION_CADENCE",
+        "THREE_SAMPLE_VIDEO_GAP"
       ],
       "evidence": [
         {
-          "url": "https://x.com/EnergyAspects",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://www.energyaspects.com/resources",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.energyaspects.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.energyaspects.com/contact",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "contact": {
+        "channel": "EMAIL",
+        "value": "contact@energyaspects.com",
+        "evidenceUrl": "https://www.energyaspects.com/contact"
+      },
+      "offer": {
+        "description": "Energy market research, data analytics, consultancy, events, and trial access",
+        "evidenceUrl": "https://www.energyaspects.com/"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Insights",
+          "Media commentary",
+          "Podcasts"
+        ],
+        "mof": [
+          "Webinars",
+          "Reports",
+          "Events"
+        ],
+        "bof": [
+          "Request a trial",
+          "Client enquiry"
+        ]
+      },
+      "pitchHook": "Extract precise educational clips from Energy Aspects webinars and podcasts, preserving charts and market logic, then direct institutional viewers toward a research trial.",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official resource hub publishes podcasts and on-demand webinars.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/",
+              "https://www.energyaspects.com/contact"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Three dates for one recurring owned show were not established.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/",
+              "https://www.energyaspects.com/contact"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The company owns the content, but no recurring host or final buyer is named.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/",
+              "https://www.energyaspects.com/contact"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Public company emails are available, but no person-tied buyer route is verified.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/",
+              "https://www.energyaspects.com/contact"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "Energy Aspects sells research, data analytics, consultancy, and trial access.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/",
+              "https://www.energyaspects.com/contact"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Insights, media, and webinars lead to trial requests and client enquiries.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/",
+              "https://www.energyaspects.com/contact"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three owned webinar or video samples need quality inspection.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/",
+              "https://www.energyaspects.com/contact"
+            ]
+          },
+          "pitchHook": {
+            "status": "CONFIRMED",
+            "note": "Expert webinar clips could maintain analyst visibility and route institutional viewers toward a research trial.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/",
+              "https://www.energyaspects.com/contact"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "platts",
@@ -666,9 +2122,8 @@
     {
       "id": "oil-ground-up",
       "decision": "NURTURE",
-      "decisionReason": "The official feed verifies The Fragile Peace Reshaping Global Oil Markets at 2026-07-09T14:16:16.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
-      "contentOwner": "Oil Ground Up",
-      "economicBuyer": "Oil Ground Up",
+      "decisionReason": "Oil Ground Up is active and OGGN has a high-value sponsorship funnel, but Rory Johnston hosts while OGGN owns the channel and the final buyer, direct route, and current video quality remain unresolved.",
+      "contentOwner": "Oil and Gas Global Network",
       "ownedLongForm": {
         "type": "PODCAST",
         "latestTitle": "The Fragile Peace Reshaping Global Oil Markets",
@@ -688,18 +2143,124 @@
       "unresolvedGates": [
         "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "THREE_SAMPLE_VIDEO_GAP"
       ],
       "evidence": [
         {
-          "url": "https://anchor.fm/s/be62e120/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "url": "https://podcasts.apple.com/us/podcast/oil-ground-up/id1666068669",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://oggn.com/podcasts/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://oggn.com/product/dedicated-podcast-sponsorship/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:30:56.045Z"
+      "auditedAt": "2026-07-15T01:27:56.122Z",
+      "onMicHost": "Rory Johnston",
+      "contact": {
+        "channel": "FORM",
+        "value": "OGGN advertising contact form",
+        "evidenceUrl": "https://oggn.com/contact/"
+      },
+      "offer": {
+        "description": "OGGN dedicated podcast sponsorship packages",
+        "evidenceUrl": "https://oggn.com/product/dedicated-podcast-sponsorship/"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Oil Ground Up podcast"
+        ],
+        "mof": [
+          "OGGN network and media kit"
+        ],
+        "bof": [
+          "Podcast sponsorship enquiry"
+        ]
+      },
+      "pitchHook": "Turn Rory Johnston's oil-market discussions into map-led, number-forward clips that create daily sponsor inventory and point industry viewers toward OGGN's dedicated sponsorship packages.",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:27:56.122Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "OGGN lists Oil Ground Up among its active owned shows.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/oil-ground-up/id1666068669",
+              "https://oggn.com/podcasts/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The official listing and feed show current monthly-to-weekly 2026 episodes.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/oil-ground-up/id1666068669",
+              "https://oggn.com/podcasts/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Rory Johnston hosts, while OGGN owns distribution and controls sponsorship.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/oil-ground-up/id1666068669",
+              "https://oggn.com/podcasts/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "OGGN's advertising form is verified, but no person-tied buyer route is available.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/oil-ground-up/id1666068669",
+              "https://oggn.com/podcasts/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "OGGN sells dedicated show sponsorships priced from six to eighteen thousand dollars monthly.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/oil-ground-up/id1666068669",
+              "https://oggn.com/podcasts/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Expert oil interviews lead into OGGN reach and sponsorship enquiries.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/oil-ground-up/id1666068669",
+              "https://oggn.com/podcasts/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded music link is not sufficient for three owned-video samples.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/oil-ground-up/id1666068669",
+              "https://oggn.com/podcasts/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/"
+            ]
+          },
+          "pitchHook": {
+            "status": "CONFIRMED",
+            "note": "Visual market explainers could create daily sponsor inventory and keep OGGN's paid packages top of mind.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/oil-ground-up/id1666068669",
+              "https://oggn.com/podcasts/",
+              "https://oggn.com/product/dedicated-podcast-sponsorship/"
+            ]
+          }
+        }
+      }
     }
   ]
 }

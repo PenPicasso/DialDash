@@ -6,103 +6,458 @@
     {
       "id": "thierry-bros",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Thierry Bros sells consulting and speaking and is an active media commentator, but the broadcasts are publisher-owned and no recurring long-form channel he controls was verified.",
       "contentOwner": "Thierry Bros",
       "economicBuyer": "Thierry Bros",
       "unresolvedGates": [
         "OWNED_CURRENT_LONG_FORM",
         "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "THREE_SAMPLE_VIDEO_GAP"
       ],
       "evidence": [
         {
-          "url": "https://x.com/thierry_bros",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://www.thierrybros.com/media-commentator",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.thierrybros.com/strategy-energy-consulting",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.thierrybros.com/contact-thierry-bros",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T01:50:55.492Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:50:55.492Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "His current appearances are on FranceInfo, France24, BFM, and other third parties.",
+            "evidenceUrls": [
+              "https://www.thierrybros.com/media-commentator",
+              "https://www.thierrybros.com/strategy-energy-consulting",
+              "https://www.thierrybros.com/contact-thierry-bros"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Frequent guest spots are not owned cadence.",
+            "evidenceUrls": [
+              "https://www.thierrybros.com/media-commentator",
+              "https://www.thierrybros.com/strategy-energy-consulting",
+              "https://www.thierrybros.com/contact-thierry-bros"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "Thierry owns the consulting and speaking offer and is the buyer.",
+            "evidenceUrls": [
+              "https://www.thierrybros.com/media-commentator",
+              "https://www.thierrybros.com/strategy-energy-consulting",
+              "https://www.thierrybros.com/contact-thierry-bros"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The official contact page exposes a form but no direct person-tied email.",
+            "evidenceUrls": [
+              "https://www.thierrybros.com/media-commentator",
+              "https://www.thierrybros.com/strategy-energy-consulting",
+              "https://www.thierrybros.com/contact-thierry-bros"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "He sells independent advice, training, expertise, and speaking.",
+            "evidenceUrls": [
+              "https://www.thierrybros.com/media-commentator",
+              "https://www.thierrybros.com/strategy-energy-consulting",
+              "https://www.thierrybros.com/contact-thierry-bros"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Media authority leads to consulting and speaking booking.",
+            "evidenceUrls": [
+              "https://www.thierrybros.com/media-commentator",
+              "https://www.thierrybros.com/strategy-energy-consulting",
+              "https://www.thierrybros.com/contact-thierry-bros"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No owned long-form channel exists for inspection.",
+            "evidenceUrls": [
+              "https://www.thierrybros.com/media-commentator",
+              "https://www.thierrybros.com/strategy-energy-consulting",
+              "https://www.thierrybros.com/contact-thierry-bros"
+            ]
+          },
+          "pitchHook": {
+            "status": "CONFIRMED",
+            "note": "An owned analysis series could convert his frequent broadcast commentary into map-led energy explainers that drive consulting and speaking enquiries.",
+            "evidenceUrls": [
+              "https://www.thierrybros.com/media-commentator",
+              "https://www.thierrybros.com/strategy-energy-consulting",
+              "https://www.thierrybros.com/contact-thierry-bros"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "leslie-palti-guzman",
-      "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
-      "contentOwner": "Leslie Palti-Guzman",
+      "decision": "PURSUE_NOW",
+      "decisionReason": "Leslie owns and hosts the active Energy Vista podcast, leads the Energy Vista advisory firm, has a direct LinkedIn route, and publishes simple caption-only clips whose three-sample educational treatment is materially below DialDash's map-and-data format.",
+      "contentOwner": "Leslie Palti-Guzman / Energy Vista LLC",
       "economicBuyer": "Leslie Palti-Guzman",
-      "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
-          "url": "https://x.com/LesliePalti",
-          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+          "url": "https://podcasts.apple.com/us/podcast/energy-vista/id1441858833",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.linkedin.com/company/energy-vista",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.linkedin.com/in/lesliepalti",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.youtube.com/@lesliepalti/videos",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T01:50:55.492Z",
+      "onMicHost": "Leslie Palti-Guzman",
+      "contact": {
+        "channel": "LINKEDIN",
+        "value": "https://www.linkedin.com/in/lesliepalti",
+        "evidenceUrl": "https://www.linkedin.com/in/lesliepalti"
+      },
+      "offer": {
+        "description": "Strategic advisory, scenario planning and market intelligence for energy, shipping and geopolitical leaders",
+        "evidenceUrl": "https://www.linkedin.com/company/energy-vista"
+      },
+      "observedFunnel": {
+        "tof": [
+          "Energy Vista podcast",
+          "YouTube clips",
+          "LinkedIn"
+        ],
+        "mof": [
+          "Substack analysis",
+          "Full video interviews"
+        ],
+        "bof": [
+          "Energy Vista strategic advisory enquiry"
+        ]
+      },
+      "videoGap": {
+        "distribution": "Active full video and short clips already exist",
+        "educationalQuality": "BASIC_CAPTION_ONLY_CLIPS",
+        "reason": "Three inspected recent clips use split-screen webcam footage and captions but no maps, arrows, persistent numbers, facilities, or other explanatory B-roll.",
+        "evidenceUrls": [
+          "https://www.youtube.com/watch?v=yXc5cDprbHk",
+          "https://www.youtube.com/watch?v=eQ6mPFwmDvw",
+          "https://www.youtube.com/watch?v=-1kKCxorFiQ"
+        ]
+      },
+      "pitchHook": "Take one current Energy Vista discussion and turn its strongest 60-90 seconds into a restrained visual intelligence brief using Hormuz maps, shipping routes, persistent flow figures, and facility imagery, then point executive viewers to Leslie's scenario-planning and advisory work.",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:50:55.492Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "Apple identifies Leslie and Energy Vista LLC as creator and owner.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/energy-vista/id1441858833",
+              "https://www.linkedin.com/company/energy-vista",
+              "https://www.linkedin.com/in/lesliepalti",
+              "https://www.youtube.com/@lesliepalti/videos"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Current official-platform episodes include June 12, June 5, and May 8, 2026.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/energy-vista/id1441858833",
+              "https://www.linkedin.com/company/energy-vista",
+              "https://www.linkedin.com/in/lesliepalti",
+              "https://www.youtube.com/@lesliepalti/videos"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "Leslie is host, Energy Vista founder, service owner, and buyer.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/energy-vista/id1441858833",
+              "https://www.linkedin.com/company/energy-vista",
+              "https://www.linkedin.com/in/lesliepalti",
+              "https://www.youtube.com/@lesliepalti/videos"
+            ]
+          },
+          "contact": {
+            "status": "CONFIRMED",
+            "note": "Her current verified LinkedIn profile is a direct named-person outreach route.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/energy-vista/id1441858833",
+              "https://www.linkedin.com/company/energy-vista",
+              "https://www.linkedin.com/in/lesliepalti",
+              "https://www.youtube.com/@lesliepalti/videos"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "Energy Vista sells strategic advisory, foresight, scenario planning, and market intelligence.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/energy-vista/id1441858833",
+              "https://www.linkedin.com/company/energy-vista",
+              "https://www.linkedin.com/in/lesliepalti",
+              "https://www.youtube.com/@lesliepalti/videos"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Podcast, short clips, and Substack feed advisory credibility and client outreach.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/energy-vista/id1441858833",
+              "https://www.linkedin.com/company/energy-vista",
+              "https://www.linkedin.com/in/lesliepalti",
+              "https://www.youtube.com/@lesliepalti/videos"
+            ]
+          },
+          "videoGap": {
+            "status": "CONFIRMED",
+            "note": "Three recent clips were inspected: each is a captioned split-screen talking-head cut without explanatory maps, persistent figures, or energy-system imagery.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/energy-vista/id1441858833",
+              "https://www.linkedin.com/company/energy-vista",
+              "https://www.linkedin.com/in/lesliepalti",
+              "https://www.youtube.com/@lesliepalti/videos"
+            ]
+          },
+          "pitchHook": {
+            "status": "CONFIRMED",
+            "note": "Upgrade her existing clips into substantive visual briefings that demonstrate the same foresight clients buy and route executives to Energy Vista advisory.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/energy-vista/id1441858833",
+              "https://www.linkedin.com/company/energy-vista",
+              "https://www.linkedin.com/in/lesliepalti",
+              "https://www.youtube.com/@lesliepalti/videos"
+            ]
+          }
+        }
+      },
+      "ownedLongForm": {
+        "type": "VIDEO_PODCAST",
+        "latestTitle": "Leslie Chats With Daniel Benaim on the Future of the Gulf Order, Iran, and the Strait of Hormuz",
+        "latestPublishedAt": "2026-06-12T00:00:00.000Z",
+        "evidenceUrl": "https://podcasts.apple.com/us/podcast/energy-vista/id1441858833",
+        "recentPublicationDates": [
+          "2026-06-12T00:00:00.000Z",
+          "2026-06-05T00:00:00.000Z",
+          "2026-05-08T00:00:00.000Z"
+        ],
+        "cadenceStatus": "SEMI_ACTIVE",
+        "medianIntervalDays": 18
+      }
     },
     {
       "id": "michael-barnard",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Michael Barnard hosted Redefining Energy Tech, but that feed's last listed episode was October 8, 2025 and its copyright belongs to the wider Redefining Energy account; current owner, buyer, and personal offer need resolution.",
       "contentOwner": "Michael Barnard",
       "economicBuyer": "Michael Barnard",
       "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "CROSS_CHANNEL_TRUE_LATEST",
+        "ECONOMIC_BUYER_AUTHORITY",
         "VERIFIED_PERSON_TIED_CONTACT",
         "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
         "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
-          "url": "https://x.com/mbarnardCA",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://redefining-energy.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/redefining-energy-tech/id1675126007",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T01:50:55.492Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:50:55.492Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "Michael is the named Tech host, but the umbrella account is jointly controlled.",
+            "evidenceUrls": [
+              "https://redefining-energy.com/",
+              "https://podcasts.apple.com/us/podcast/redefining-energy-tech/id1675126007"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "The Tech feed ended October 2025 while the main show remains active without Michael as regular host.",
+            "evidenceUrls": [
+              "https://redefining-energy.com/",
+              "https://podcasts.apple.com/us/podcast/redefining-energy-tech/id1675126007"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Michael hosts Tech; Laurent Segalen and Gerard Reid own the umbrella account and likely budget.",
+            "evidenceUrls": [
+              "https://redefining-energy.com/",
+              "https://podcasts.apple.com/us/podcast/redefining-energy-tech/id1675126007"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "No direct buyer route was verified.",
+            "evidenceUrls": [
+              "https://redefining-energy.com/",
+              "https://podcasts.apple.com/us/podcast/redefining-energy-tech/id1675126007"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Michael's executive advisory work is described but no enquiry transaction is linked.",
+            "evidenceUrls": [
+              "https://redefining-energy.com/",
+              "https://podcasts.apple.com/us/podcast/redefining-energy-tech/id1675126007"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "The show builds energy authority and investment visibility.",
+            "evidenceUrls": [
+              "https://redefining-energy.com/",
+              "https://podcasts.apple.com/us/podcast/redefining-energy-tech/id1675126007"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Current Tech video output requires three-sample review if the series returns.",
+            "evidenceUrls": [
+              "https://redefining-energy.com/",
+              "https://podcasts.apple.com/us/podcast/redefining-energy-tech/id1675126007"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Ownership and the current transaction remain ambiguous.",
+            "evidenceUrls": [
+              "https://redefining-energy.com/",
+              "https://podcasts.apple.com/us/podcast/redefining-energy-tech/id1675126007"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "leigh-goehring",
-      "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Leigh Goehring resolves to the same Goehring & Rozencwajg content, offer, contact, and buyer account already retained under Adam Rozencwajg.",
       "contentOwner": "Leigh Goehring",
       "economicBuyer": "Leigh Goehring",
-      "unresolvedGates": [
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
-          "url": "https://x.com/LeighGoehring",
-          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+          "url": "https://www.gorozen.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://blog.gorozen.com/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T01:50:55.492Z",
+      "factualHardGate": "DUPLICATE_ACCOUNT",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:50:55.492Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The firm has research and guest appearances, not an owned recurring show.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "No owned cadence exists.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "Leigh and Adam are co-founders of the same firm.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/"
+            ]
+          },
+          "contact": {
+            "status": "CONFIRMED",
+            "note": "Both records share the firm contact.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "Both lead to the same natural-resources fund.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "The research-to-fund funnel is one account.",
+            "evidenceUrls": [
+              "https://www.gorozen.com/",
+              "https://blog.gorozen.com/"
+            ]
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "The duplicate is collapsed.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "Outreach belongs on the retained Adam record.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "livia-gallarati",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Livia Gallarati is an Energy Aspects analyst appearing in company and third-party content, but no Livia-owned recurring show, direct buyer route, or personal commercial offer was verified.",
       "contentOwner": "Livia Gallarati",
       "economicBuyer": "Livia Gallarati",
       "unresolvedGates": [
@@ -111,46 +466,214 @@
         "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
         "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
         "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
-          "url": "https://x.com/LiviaGallarati",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://www.energyaspects.com/resources",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.energyaspects.com/contact",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T01:50:55.492Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:50:55.492Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "Energy Aspects and publishers own the media.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/contact"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "No Livia-hosted three-date series is shown.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/contact"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Livia is an analyst, while Energy Aspects controls content and budget.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/contact"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Only company contact is public.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/contact"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "The paid research offer belongs to Energy Aspects.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/contact"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Analyst appearances support research trials and client enquiries.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/contact"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No Livia-owned channel exists.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/contact"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "The buyer and source rights are missing.",
+            "evidenceUrls": [
+              "https://www.energyaspects.com/resources",
+              "https://www.energyaspects.com/contact"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "vandana-hari",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Vandana Hari owns a strong paid research, briefing, and training funnel with direct enquiry, but no recurring owned audio or video long-form series with three dates was verified.",
       "contentOwner": "Vandana Hari",
       "economicBuyer": "Vandana Hari",
       "unresolvedGates": [
         "OWNED_CURRENT_LONG_FORM",
         "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "THREE_SAMPLE_VIDEO_GAP"
       ],
       "evidence": [
         {
-          "url": "https://x.com/VandanaHari",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://www.vandainsights.com/about-us",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.vandainsights.com/services",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.vandainsights.com/publications",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://vandainsights.com/contact-us",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T01:50:55.492Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:50:55.492Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "Vanda owns frequent written analysis but no recurring owned podcast or video show was verified.",
+            "evidenceUrls": [
+              "https://www.vandainsights.com/about-us",
+              "https://www.vandainsights.com/services",
+              "https://www.vandainsights.com/publications",
+              "https://vandainsights.com/contact-us"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Daily and weekly publications are text, not clip-ready long-form audio/video.",
+            "evidenceUrls": [
+              "https://www.vandainsights.com/about-us",
+              "https://www.vandainsights.com/services",
+              "https://www.vandainsights.com/publications",
+              "https://vandainsights.com/contact-us"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "Vandana is founder, analyst, service owner, and buyer.",
+            "evidenceUrls": [
+              "https://www.vandainsights.com/about-us",
+              "https://www.vandainsights.com/services",
+              "https://www.vandainsights.com/publications",
+              "https://vandainsights.com/contact-us"
+            ]
+          },
+          "contact": {
+            "status": "CONFIRMED",
+            "note": "The official site provides a service-enquiry form and free-trial route.",
+            "evidenceUrls": [
+              "https://www.vandainsights.com/about-us",
+              "https://www.vandainsights.com/services",
+              "https://www.vandainsights.com/publications",
+              "https://vandainsights.com/contact-us"
+            ]
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "Vanda sells publications, market briefings, custom research, presentations, and training.",
+            "evidenceUrls": [
+              "https://www.vandainsights.com/about-us",
+              "https://www.vandainsights.com/services",
+              "https://www.vandainsights.com/publications",
+              "https://vandainsights.com/contact-us"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Free analysis and media commentary lead to trial requests and service enquiries.",
+            "evidenceUrls": [
+              "https://www.vandainsights.com/about-us",
+              "https://www.vandainsights.com/services",
+              "https://www.vandainsights.com/publications",
+              "https://vandainsights.com/contact-us"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "There is no owned repeat long-form video source to inspect.",
+            "evidenceUrls": [
+              "https://www.vandainsights.com/about-us",
+              "https://www.vandainsights.com/services",
+              "https://www.vandainsights.com/publications",
+              "https://vandainsights.com/contact-us"
+            ]
+          },
+          "pitchHook": {
+            "status": "CONFIRMED",
+            "note": "A Vanda-owned monthly market briefing could generate map-led clips that keep the daily paid intelligence offer visible.",
+            "evidenceUrls": [
+              "https://www.vandainsights.com/about-us",
+              "https://www.vandainsights.com/services",
+              "https://www.vandainsights.com/publications",
+              "https://vandainsights.com/contact-us"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "harriet-haycock",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Hat and Hav Podcast: Geothermal Energy at 2021-02-12T22:05:12.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Hat and Hav is a single 15-minute geothermal episode published February 12, 2021, with no subsequent series.",
       "contentOwner": "Harriet Haycock",
       "economicBuyer": "Harriet Haycock",
       "ownedLongForm": {
@@ -163,22 +686,81 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
+          "url": "https://podcasts.apple.com/us/podcast/hat-and-hav-podcast-geothermal-energy/id1553656079",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
           "url": "https://anchor.fm/s/4b0a35ac/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T01:50:55.492Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:50:55.492Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "Apple names Harriet Haycock as creator.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/hat-and-hav-podcast-geothermal-energy/id1553656079",
+              "https://anchor.fm/s/4b0a35ac/podcast/rss"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The only episode is dated February 12, 2021.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/hat-and-hav-podcast-geothermal-energy/id1553656079",
+              "https://anchor.fm/s/4b0a35ac/podcast/rss"
+            ]
+          },
+          "roles": {
+            "status": "CONFIRMED",
+            "note": "Harriet is the named creator.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/hat-and-hav-podcast-geothermal-energy/id1553656079",
+              "https://anchor.fm/s/4b0a35ac/podcast/rss"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research stopped because confirmed multi-year inactivity is decisive.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No commercial offer is visible.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/hat-and-hav-podcast-geothermal-energy/id1553656079",
+              "https://anchor.fm/s/4b0a35ac/podcast/rss"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "A single episode does not establish a funnel.",
+            "evidenceUrls": [
+              "https://podcasts.apple.com/us/podcast/hat-and-hav-podcast-geothermal-energy/id1553656079",
+              "https://anchor.fm/s/4b0a35ac/podcast/rss"
+            ]
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "No active source content exists.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No current transaction exists.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "vicki-hollub",
@@ -198,10 +780,11 @@
     {
       "id": "sunclean-tech",
       "decision": "NURTURE",
-      "decisionReason": "No valid owned feed was resolved from the official URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "SunClean Tech is a small clean-energy company, but the recorded YouTube identity, named host, true media cadence, economic buyer, and commercial transaction could not be tied together with first-party evidence.",
       "contentOwner": "SunClean Tech",
       "economicBuyer": "SunClean Tech",
       "unresolvedGates": [
+        "SOURCE_IDENTITY",
         "OWNED_CURRENT_LONG_FORM",
         "THREE_PUBLICATION_CADENCE",
         "FIRST_PARTY_OWNER_HOST_BUYER",
@@ -213,16 +796,91 @@
       ],
       "evidence": [
         {
-          "url": "https://www.youtube.com/@SunCleanTech?cbrd=1&ucbcb=1",
-          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+          "url": "https://sunclean.in/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.youtube.com/@SunCleanTech",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T01:50:55.492Z",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:50:55.492Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The official site does not expose a verified recurring show.",
+            "evidenceUrls": [
+              "https://sunclean.in/",
+              "https://www.youtube.com/@SunCleanTech"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "No official three-date publication history is available.",
+            "evidenceUrls": [
+              "https://sunclean.in/",
+              "https://www.youtube.com/@SunCleanTech"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "No named content owner, host, or buyer is published.",
+            "evidenceUrls": [
+              "https://sunclean.in/",
+              "https://www.youtube.com/@SunCleanTech"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Only a generic company contact surface is visible.",
+            "evidenceUrls": [
+              "https://sunclean.in/",
+              "https://www.youtube.com/@SunCleanTech"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "The site signals clean-energy services but does not provide a clear transaction.",
+            "evidenceUrls": [
+              "https://sunclean.in/",
+              "https://www.youtube.com/@SunCleanTech"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "The TOF-MOF-BOF path cannot be observed.",
+            "evidenceUrls": [
+              "https://sunclean.in/",
+              "https://www.youtube.com/@SunCleanTech"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded channel needs identity and three-sample verification.",
+            "evidenceUrls": [
+              "https://sunclean.in/",
+              "https://www.youtube.com/@SunCleanTech"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A transaction-specific pitch would be fabricated.",
+            "evidenceUrls": [
+              "https://sunclean.in/",
+              "https://www.youtube.com/@SunCleanTech"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "bloomberg",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies How Bitcoin Could Save Texas From an AI Power Crunch at 2026-07-09T09:28:02.000Z with active cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Switched On is owned by Bloomberg, a global media and financial-data corporation with established professional video production and no small named creator buyer suitable for DialDash's first-client motion.",
       "contentOwner": "Bloomberg",
       "economicBuyer": "Bloomberg",
       "ownedLongForm": {
@@ -241,21 +899,81 @@
         "cadenceStatus": "ACTIVE",
         "medianIntervalDays": 4.2
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
-          "url": "https://www.omnycontent.com/d/playlist/e73c998e-6e60-432f-8610-ae210140c5b1/01a10738-3608-4dec-883c-ae3c00026b36/6d114f63-833d-4b78-bbf5-ae3c00026b44/podcast.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "url": "https://www.bloomberg.com/professional/insights/podcasts/switched-on/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.bloomberg.com/company/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:45:56.699Z"
+      "auditedAt": "2026-07-15T01:50:55.492Z",
+      "factualHardGate": "CORPORATE_MONOLITH",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T01:50:55.492Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "Bloomberg owns and distributes Switched On.",
+            "evidenceUrls": [
+              "https://www.bloomberg.com/professional/insights/podcasts/switched-on/",
+              "https://www.bloomberg.com/company/"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The corporate show remains active.",
+            "evidenceUrls": [
+              "https://www.bloomberg.com/professional/insights/podcasts/switched-on/",
+              "https://www.bloomberg.com/company/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Hosts rotate inside Bloomberg; the final procurement buyer is not a creator.",
+            "evidenceUrls": [
+              "https://www.bloomberg.com/professional/insights/podcasts/switched-on/",
+              "https://www.bloomberg.com/company/"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Enterprise procurement is outside the ICP.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "CONFIRMED",
+            "note": "The content supports BloombergNEF and Bloomberg's enterprise products.",
+            "evidenceUrls": [
+              "https://www.bloomberg.com/professional/insights/podcasts/switched-on/",
+              "https://www.bloomberg.com/company/"
+            ]
+          },
+          "funnel": {
+            "status": "CONFIRMED",
+            "note": "Podcast authority feeds a corporate data and media funnel.",
+            "evidenceUrls": [
+              "https://www.bloomberg.com/professional/insights/podcasts/switched-on/",
+              "https://www.bloomberg.com/company/"
+            ]
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Bloomberg already has professional production capability.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "This is not a signable founder-led creator account.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "enlit-europe",
