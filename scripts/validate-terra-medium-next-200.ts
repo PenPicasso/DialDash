@@ -5,6 +5,11 @@ type Decision = "PURSUE_NOW" | "NURTURE" | "DISQUALIFIED_CONFIRMED";
 type Resolution = {
   id: string;
   researchCompleteness?: "DRAFT" | "COMPLETE";
+  researchAudit?: {
+    reviewedBy?: string;
+    reviewedAt?: string;
+    checks?: Record<string, { status?: "CONFIRMED" | "UNRESOLVED" | "NOT_APPLICABLE"; note?: string; evidenceUrls?: string[] }>;
+  };
   decision: Decision;
   decisionReason: string;
   contentOwner?: string;
@@ -52,6 +57,7 @@ const factualHardGates = new Set([
 ]);
 const now = Date.now();
 const ninetyDaysMs = 90 * 24 * 60 * 60 * 1_000;
+const requiredAuditChecks = ["ownedLongForm", "cadence", "roles", "contact", "offer", "funnel", "videoGap", "pitchHook"];
 
 if (result.methodology !== "terra-medium-recovery-v1" || result.batch !== batch || (result.cohort && result.cohort !== cohort)) errors.push("Unexpected methodology, cohort, or batch number.");
 if (result.records.length !== 25 || JSON.stringify(expectedIds) !== JSON.stringify(actualIds)) errors.push("Result IDs must exactly match the fixed 25-record batch.");
@@ -61,6 +67,18 @@ for (const record of result.records) {
   const structurallyCompleteExclusion = record.decision === "DISQUALIFIED_CONFIRMED" && Boolean(record.factualHardGate) && !record.unresolvedGates?.length;
   if (!allowDraft && record.researchCompleteness !== "COMPLETE" && !structurallyCompleteExclusion) errors.push(`${record.id}: research is a deterministic draft, not a completed manual review.`);
   if (record.researchCompleteness === "DRAFT" && record.decision !== "NURTURE") errors.push(`${record.id}: a draft record must remain NURTURE.`);
+  if (record.researchCompleteness === "COMPLETE") {
+    if (!record.researchAudit?.reviewedBy || !record.researchAudit?.reviewedAt) errors.push(`${record.id}: complete research requires a named reviewer and review timestamp.`);
+    const reviewedAt = new Date(record.researchAudit?.reviewedAt || "").getTime();
+    if (!Number.isFinite(reviewedAt) || reviewedAt > now + 60_000) errors.push(`${record.id}: complete research has an invalid review timestamp.`);
+    for (const check of requiredAuditChecks) {
+      const audit = record.researchAudit?.checks?.[check];
+      if (!audit || !audit.status || !audit.note || audit.note.length < 24) errors.push(`${record.id}: complete research is missing the ${check} audit note.`);
+      if (audit?.status !== "NOT_APPLICABLE" && !audit?.evidenceUrls?.some(url)) errors.push(`${record.id}: ${check} needs a first-party evidence URL or an explicit NOT_APPLICABLE finding.`);
+    }
+    const auditUrls = new Set(requiredAuditChecks.flatMap((check) => record.researchAudit?.checks?.[check]?.evidenceUrls || []).filter(url));
+    if (auditUrls.size < 2) errors.push(`${record.id}: complete research requires at least two distinct evidence URLs across the audit.`);
+  }
   if (!record.decisionReason || !record.auditedAt || !record.evidence?.length) errors.push(`${record.id}: missing reason, audit timestamp, or evidence.`);
   const auditedAt = new Date(record.auditedAt || "").getTime();
   if (!Number.isFinite(auditedAt) || auditedAt > now + 60_000) errors.push(`${record.id}: invalid or future audit timestamp.`);
