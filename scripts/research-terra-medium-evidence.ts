@@ -14,6 +14,8 @@ type ManifestRecord = {
 type FeedItem = { title: string; publishedAt?: string; url?: string };
 type Probe = { url: string; ok: boolean; status?: number; finalUrl?: string; title?: string; error?: string };
 
+const identityStopWords = new Set(["and", "the", "with", "for", "from", "energy", "podcast", "show", "media", "group", "company", "inc", "llc", "ltd", "news", "radio", "network", "daily", "weekly", "business", "marketing"]);
+
 const root = join(__dirname, "..");
 const batch = Number(process.argv.find((arg) => arg.startsWith("--batch="))?.split("=")[1] || 0);
 const cohort = process.argv.find((arg) => arg.startsWith("--cohort="))?.split("=")[1] || "next-200";
@@ -55,10 +57,38 @@ async function appleFeed(appleUrl?: string) {
     const match = payload.results?.find((item) => item.wrapperType === "track" && item.kind === "podcast");
     const feedUrl = typeof match?.feedUrl === "string" ? match.feedUrl : undefined;
     const officialAppleUrl = typeof match?.collectionViewUrl === "string" ? match.collectionViewUrl : undefined;
-    return feedUrl && officialAppleUrl?.startsWith("https://podcasts.apple.com/") ? { feedUrl, appleUrl: officialAppleUrl } : undefined;
+    const collectionName = typeof match?.collectionName === "string" ? match.collectionName : undefined;
+    return feedUrl && officialAppleUrl?.startsWith("https://podcasts.apple.com/") ? { feedUrl, appleUrl: officialAppleUrl, collectionName } : undefined;
   } catch {
     return undefined;
   }
+}
+
+function identityTokens(...values: Array<string | undefined>) {
+  return new Set(values
+    .flatMap((value) => (value || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").split(" "))
+    .filter((token) => token.length >= 3 && !identityStopWords.has(token)));
+}
+
+function sameUrl(left?: string, right?: string) {
+  const normalize = (value?: string) => value?.toLowerCase().replace(/^https?:\/\//, "").replace(/\/$/, "");
+  return Boolean(left && right && normalize(left) === normalize(right));
+}
+
+function verifyFeedOwnership(
+  ownedFeed: Awaited<ReturnType<typeof feed>>,
+  apple: Awaited<ReturnType<typeof appleFeed>>,
+  node: NodeData,
+) {
+  if (!ownedFeed?.ok) return { ownershipVerified: false, ownershipReason: "No readable feed was resolved." };
+  const appleBindsFeed = Boolean(apple?.feedUrl && (sameUrl(ownedFeed.url, apple.feedUrl) || sameUrl(ownedFeed.finalUrl, apple.feedUrl)));
+  const prospectTokens = identityTokens(node.host, node.organizationName, node.contentOwnerName, node.onMicHost);
+  const feedTokens = identityTokens(ownedFeed.channelTitle, apple?.collectionName);
+  const matches = [...feedTokens].filter((token) => prospectTokens.has(token));
+  const strongMatch = matches.length >= 2 || matches.some((token) => token.length >= 7);
+  return strongMatch
+    ? { ownershipVerified: true, ownershipReason: `${appleBindsFeed ? "Apple binds the listing to this feed, and the" : "The"} feed identity matches prospect token(s): ${matches.join(", ")}.` }
+    : { ownershipVerified: false, ownershipReason: "Feed/listing title does not strongly match the prospect identity; Apple binding alone does not prove prospect ownership." };
 }
 
 async function feed(url?: string) {
@@ -127,8 +157,9 @@ async function main() {
     const node = byId.get(record.id);
     if (!node) throw new Error(`Missing production lookup row ${record.id}`);
     const direct = await feed(node.rssUrl);
-    const apple = direct?.ok ? undefined : await appleFeed(node.podcastAppleUrl);
+    const apple = await appleFeed(node.podcastAppleUrl);
     const ownedFeed = direct?.ok ? direct : apple?.feedUrl ? await feed(apple.feedUrl) : direct;
+    const feedOwnership = verifyFeedOwnership(ownedFeed, apple, node);
     const sourceUrls = [...new Set([
       ownedFeed?.url,
       apple?.appleUrl,
@@ -159,7 +190,7 @@ async function main() {
         offerUrl: node.offerUrl,
       },
       appleDiscovery: apple,
-      ownedFeed,
+      ownedFeed: ownedFeed ? { ...ownedFeed, ...feedOwnership } : undefined,
       sourceProbes: probes,
       deterministicFinding: staleFeed
         ? { decision: "MANUAL_REVIEW", finding: "STALE_FEED_REQUIRES_CROSS_CHANNEL_TRUE_LATEST" }

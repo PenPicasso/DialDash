@@ -24,6 +24,8 @@ type EvidenceRecord = {
     cadenceStatus?: string;
     medianIntervalDays?: number;
     latestGapDays?: number;
+    ownershipVerified?: boolean;
+    ownershipReason?: string;
   };
   sourceProbes: Array<Probe | undefined>;
   deterministicFinding: { decision: string; factualHardGate?: string; finding?: string };
@@ -41,7 +43,8 @@ const input = JSON.parse(readFileSync(evidencePath, "utf8")) as { records: Evide
 const auditedAt = new Date().toISOString();
 
 function source(record: EvidenceRecord) {
-  if (record.ownedFeed?.ok) return { url: record.ownedFeed.url, proves: "The official owned feed supplies the channel identity, current episode titles, and publication dates." };
+  if (record.ownedFeed?.ok && record.ownedFeed.ownershipVerified) return { url: record.ownedFeed.url, proves: "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates." };
+  if (record.ownedFeed?.ok) return { url: record.ownedFeed.url, proves: `The feed resolves, but ownership remains unverified: ${record.ownedFeed.ownershipReason || "no identity match was established"}` };
   const probe = record.sourceProbes.find((item) => item?.ok) || record.sourceProbes.find(Boolean);
   if (!probe) throw new Error(`${record.id}: no source URL is available for an evidence-safe NURTURE record.`);
   return { url: probe.finalUrl || probe.url, proves: probe.ok ? "The source URL resolves and supplies the currently available public prospect evidence." : "The source URL is the recorded public route, but its contents still require manual verification." };
@@ -49,7 +52,7 @@ function source(record: EvidenceRecord) {
 
 const records = input.records.map((record) => {
   const latest = record.ownedFeed?.items?.find((item) => item.publishedAt);
-  const ownedLongForm = record.ownedFeed?.ok && latest?.publishedAt ? {
+  const ownedLongForm = record.ownedFeed?.ok && record.ownedFeed.ownershipVerified && latest?.publishedAt ? {
     type: "PODCAST",
     latestTitle: latest.title || record.ownedFeed.channelTitle || "Latest owned-feed publication",
     latestPublishedAt: latest.publishedAt,
@@ -60,6 +63,7 @@ const records = input.records.map((record) => {
   } : undefined;
 
   const unresolvedGates = [
+    !record.ownedFeed?.ownershipVerified ? "SOURCE_IDENTITY" : undefined,
     !ownedLongForm ? "OWNED_CURRENT_LONG_FORM" : undefined,
     !ownedLongForm || (ownedLongForm.recentPublicationDates?.length || 0) < 3 ? "THREE_PUBLICATION_CADENCE" : undefined,
     "FIRST_PARTY_OWNER_HOST_BUYER",
@@ -71,10 +75,11 @@ const records = input.records.map((record) => {
     record.deterministicFinding.finding === "STALE_FEED_REQUIRES_CROSS_CHANNEL_TRUE_LATEST" ? "CROSS_CHANNEL_TRUE_LATEST" : undefined,
   ].filter((value): value is string => Boolean(value));
   const freshness = ownedLongForm
-    ? `The official feed verifies ${ownedLongForm.latestTitle} at ${ownedLongForm.latestPublishedAt} with ${ownedLongForm.cadenceStatus.toLowerCase()} cadence.`
-    : "No valid owned feed was resolved from the official URLs in this deterministic pass.";
+    ? `The ownership-verified feed confirms ${ownedLongForm.latestTitle} at ${ownedLongForm.latestPublishedAt} with ${ownedLongForm.cadenceStatus.toLowerCase()} cadence.`
+    : "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass.";
   return {
     id: record.id,
+    researchCompleteness: "DRAFT",
     decision: "NURTURE",
     decisionReason: `${freshness} The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.`,
     contentOwner: record.known.contentOwner,

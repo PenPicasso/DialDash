@@ -4,6 +4,7 @@ import { join } from "path";
 type Decision = "PURSUE_NOW" | "NURTURE" | "DISQUALIFIED_CONFIRMED";
 type Resolution = {
   id: string;
+  researchCompleteness?: "DRAFT" | "COMPLETE";
   decision: Decision;
   decisionReason: string;
   contentOwner?: string;
@@ -24,6 +25,7 @@ type Resolution = {
 const root = join(__dirname, "..");
 const batch = Number(process.argv.find((arg) => arg.startsWith("--batch="))?.split("=")[1] || 0);
 const cohort = process.argv.find((arg) => arg.startsWith("--cohort="))?.split("=")[1] || "next-200";
+const allowDraft = process.argv.includes("--allow-draft");
 if (!/^[a-z0-9-]+$/.test(cohort)) throw new Error("Cohort must use lowercase letters, numbers, and hyphens only.");
 if (!Number.isInteger(batch) || batch < 1 || batch > 8) throw new Error("Pass --batch=1 through --batch=8.");
 const manifestPath = join(root, "storage", `sol-${cohort}`, `batch-${batch}.json`);
@@ -56,6 +58,9 @@ if (result.records.length !== 25 || JSON.stringify(expectedIds) !== JSON.stringi
 if (new Set(actualIds).size !== 25) errors.push("Batch contains duplicate IDs.");
 
 for (const record of result.records) {
+  const structurallyCompleteExclusion = record.decision === "DISQUALIFIED_CONFIRMED" && Boolean(record.factualHardGate) && !record.unresolvedGates?.length;
+  if (!allowDraft && record.researchCompleteness !== "COMPLETE" && !structurallyCompleteExclusion) errors.push(`${record.id}: research is a deterministic draft, not a completed manual review.`);
+  if (record.researchCompleteness === "DRAFT" && record.decision !== "NURTURE") errors.push(`${record.id}: a draft record must remain NURTURE.`);
   if (!record.decisionReason || !record.auditedAt || !record.evidence?.length) errors.push(`${record.id}: missing reason, audit timestamp, or evidence.`);
   const auditedAt = new Date(record.auditedAt || "").getTime();
   if (!Number.isFinite(auditedAt) || auditedAt > now + 60_000) errors.push(`${record.id}: invalid or future audit timestamp.`);
@@ -83,6 +88,7 @@ for (const record of result.records) {
     if (record.unresolvedGates?.length || record.factualHardGate) errors.push(`${record.id}: promotion cannot retain unresolved or failed gates.`);
   }
   if (record.decision === "NURTURE" && !record.unresolvedGates?.length) errors.push(`${record.id}: NURTURE must name unresolved gates.`);
+  if (record.researchCompleteness === "DRAFT" && !record.unresolvedGates?.includes("SOURCE_IDENTITY") && /ownership remains unverified/i.test(record.evidence?.map((item) => item.proves).join(" ") || "")) errors.push(`${record.id}: unverified source ownership must remain an explicit gate.`);
   if (record.decision === "DISQUALIFIED_CONFIRMED") {
     if (!record.factualHardGate || genericRejection.test(record.decisionReason)) errors.push(`${record.id}: confirmed rejection requires a factual hard gate, not missing evidence.`);
     if (record.factualHardGate && !factualHardGates.has(record.factualHardGate)) errors.push(`${record.id}: unrecognized factual hard gate.`);
