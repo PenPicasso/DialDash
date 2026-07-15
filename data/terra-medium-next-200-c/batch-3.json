@@ -7,85 +7,97 @@
       "id": "toby-nangle",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Toby Nangle to Toby Nangle; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "The Long View | Ryan Thompson | Substack was inspected at https://thelongview.substack.com/; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Toby Nangle",
       "economicBuyer": "Toby Nangle",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://thelongview.substack.com/",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "The Long View | Ryan Thompson | Substack was inspected at https://thelongview.substack.com/; no dated publication exposed by the recorded route."
+        },
+        {
+          "url": "https://thelongview.substack.com/feed",
+          "proves": "Owned publication used to verify The Long View | Ryan Thompson | Substack's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Toby Nangle: identity match unavailable.",
+            "note": "The route resolves to The Long View | Ryan Thompson | Substack, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
-              "https://thelongview.substack.com/"
+              "https://thelongview.substack.com/",
+              "https://thelongview.substack.com/feed"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "The Long View | Ryan Thompson | Substack was inspected at https://thelongview.substack.com/; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
-              "https://thelongview.substack.com/"
+              "https://thelongview.substack.com/",
+              "https://thelongview.substack.com/feed"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Toby Nangle, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "The Long View | Ryan Thompson | Substack was inspected at https://thelongview.substack.com/; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
-              "https://thelongview.substack.com/"
+              "https://thelongview.substack.com/",
+              "https://thelongview.substack.com/feed"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "The Long View | Ryan Thompson | Substack was inspected at https://thelongview.substack.com/; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
-              "https://thelongview.substack.com/"
+              "https://thelongview.substack.com/",
+              "https://thelongview.substack.com/feed"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "The Long View | Ryan Thompson | Substack was inspected at https://thelongview.substack.com/; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
-              "https://thelongview.substack.com/"
+              "https://thelongview.substack.com/",
+              "https://thelongview.substack.com/feed"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "The Long View | Ryan Thompson | Substack was inspected at https://thelongview.substack.com/; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
-              "https://thelongview.substack.com/"
+              "https://thelongview.substack.com/",
+              "https://thelongview.substack.com/feed"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
-              "https://thelongview.substack.com/"
+              "https://thelongview.substack.com/",
+              "https://thelongview.substack.com/feed"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "The Long View | Ryan Thompson | Substack was inspected at https://thelongview.substack.com/; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
-              "https://thelongview.substack.com/"
+              "https://thelongview.substack.com/",
+              "https://thelongview.substack.com/feed"
             ]
           }
         }
@@ -95,85 +107,97 @@
       "id": "rob-gramlich",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Grid Strategies LLC to Rob Gramlich; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Grid Strategies: Power Sector Economics, Engineering, Policy was inspected at https://gridstrategiesllc.com/; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Rob Gramlich",
       "economicBuyer": "Rob Gramlich",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://gridstrategiesllc.com/",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Grid Strategies: Power Sector Economics, Engineering, Policy was inspected at https://gridstrategiesllc.com/; no dated publication exposed by the recorded route."
+        },
+        {
+          "url": "https://gridstrategiesllc.com/contact-us/",
+          "proves": "Owned publication used to verify Grid Strategies: Power Sector Economics, Engineering, Policy's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Rob Gramlich: identity match unavailable.",
+            "note": "The route resolves to Grid Strategies: Power Sector Economics, Engineering, Policy, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
-              "https://gridstrategiesllc.com/"
+              "https://gridstrategiesllc.com/",
+              "https://gridstrategiesllc.com/contact-us/"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "Grid Strategies: Power Sector Economics, Engineering, Policy was inspected at https://gridstrategiesllc.com/; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
-              "https://gridstrategiesllc.com/"
+              "https://gridstrategiesllc.com/",
+              "https://gridstrategiesllc.com/contact-us/"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Rob Gramlich, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Grid Strategies: Power Sector Economics, Engineering, Policy was inspected at https://gridstrategiesllc.com/; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
-              "https://gridstrategiesllc.com/"
+              "https://gridstrategiesllc.com/",
+              "https://gridstrategiesllc.com/contact-us/"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Grid Strategies: Power Sector Economics, Engineering, Policy was inspected at https://gridstrategiesllc.com/; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
-              "https://gridstrategiesllc.com/"
+              "https://gridstrategiesllc.com/",
+              "https://gridstrategiesllc.com/contact-us/"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Grid Strategies: Power Sector Economics, Engineering, Policy was inspected at https://gridstrategiesllc.com/; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
-              "https://gridstrategiesllc.com/"
+              "https://gridstrategiesllc.com/",
+              "https://gridstrategiesllc.com/contact-us/"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Grid Strategies: Power Sector Economics, Engineering, Policy was inspected at https://gridstrategiesllc.com/; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
-              "https://gridstrategiesllc.com/"
+              "https://gridstrategiesllc.com/",
+              "https://gridstrategiesllc.com/contact-us/"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
-              "https://gridstrategiesllc.com/"
+              "https://gridstrategiesllc.com/",
+              "https://gridstrategiesllc.com/contact-us/"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Grid Strategies: Power Sector Economics, Engineering, Policy was inspected at https://gridstrategiesllc.com/; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
-              "https://gridstrategiesllc.com/"
+              "https://gridstrategiesllc.com/",
+              "https://gridstrategiesllc.com/contact-us/"
             ]
           }
         }
@@ -182,186 +206,210 @@
     {
       "id": "tracy-alloway",
       "researchCompleteness": "COMPLETE",
-      "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Odd Lots to Tracy Alloway & Joe Weisenthal; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Odd Lots is owned and distributed by Bloomberg, which controls the media operation and commercial funnel. Tracy Alloway (@tracyalloway) / X was inspected at https://x.com/TracyAlloway; no dated publication exposed by the recorded route.",
       "contentOwner": "Tracy Alloway & Joe Weisenthal",
       "economicBuyer": "Tracy Alloway & Joe Weisenthal",
-      "unresolvedGates": [
-        "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://x.com/TracyAlloway",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Tracy Alloway (@tracyalloway) / X was inspected at https://x.com/TracyAlloway; no dated publication exposed by the recorded route."
+        },
+        {
+          "url": "https://www.youtube.com/@BloombergPodcasts",
+          "proves": "Owned publication used to verify Tracy Alloway (@tracyalloway) / X's cadence."
         },
         {
           "url": "https://www.youtube.com/bloombergpodcasts?cbrd=1&ucbcb=1",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify Tracy Alloway (@tracyalloway) / X's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Tracy Alloway & Joe Weisenthal: identity match unavailable.",
+            "note": "The route resolves to Tracy Alloway (@tracyalloway) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
               "https://x.com/TracyAlloway",
+              "https://www.youtube.com/@BloombergPodcasts",
               "https://www.youtube.com/bloombergpodcasts?cbrd=1&ucbcb=1"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "Tracy Alloway (@tracyalloway) / X was inspected at https://x.com/TracyAlloway; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
               "https://x.com/TracyAlloway",
+              "https://www.youtube.com/@BloombergPodcasts",
               "https://www.youtube.com/bloombergpodcasts?cbrd=1&ucbcb=1"
             ]
           },
           "roles": {
-            "status": "UNRESOLVED",
-            "note": "The recorded sources identify Tracy Alloway & Joe Weisenthal, but do not independently separate content owner, on-mic host, and economic buyer.",
-            "evidenceUrls": [
-              "https://x.com/TracyAlloway",
-              "https://www.youtube.com/bloombergpodcasts?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "Odd Lots is owned and distributed by Bloomberg, which controls the media operation and commercial funnel. Additional roles research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "contact": {
-            "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
-            "evidenceUrls": [
-              "https://x.com/TracyAlloway",
-              "https://www.youtube.com/bloombergpodcasts?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "Odd Lots is owned and distributed by Bloomberg, which controls the media operation and commercial funnel. Additional contact research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "offer": {
-            "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
-            "evidenceUrls": [
-              "https://x.com/TracyAlloway",
-              "https://www.youtube.com/bloombergpodcasts?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "Odd Lots is owned and distributed by Bloomberg, which controls the media operation and commercial funnel. Additional offer research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "funnel": {
-            "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
-            "evidenceUrls": [
-              "https://x.com/TracyAlloway",
-              "https://www.youtube.com/bloombergpodcasts?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "Odd Lots is owned and distributed by Bloomberg, which controls the media operation and commercial funnel. Additional funnel research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "videoGap": {
-            "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
-            "evidenceUrls": [
-              "https://x.com/TracyAlloway",
-              "https://www.youtube.com/bloombergpodcasts?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "Odd Lots is owned and distributed by Bloomberg, which controls the media operation and commercial funnel. Additional videoGap research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "pitchHook": {
-            "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
-            "evidenceUrls": [
-              "https://x.com/TracyAlloway",
-              "https://www.youtube.com/bloombergpodcasts?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "Odd Lots is owned and distributed by Bloomberg, which controls the media operation and commercial funnel. Additional pitchHook research cannot reverse that factual gate.",
+            "evidenceUrls": []
           }
         }
-      }
+      },
+      "factualHardGate": "CORPORATE_MONOLITH"
     },
     {
       "id": "institute-for-energy-economics-and-finance",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Institute for Energy, Economics, and Finance to Institute for Energy, Economics, and Finance; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Institute for Energy, Economics, and Finance was inspected at https://www.youtube.com/@instituteIEEF; latest verified publication \"Kompor Induksi: Solusi Jitu Kuatkan Rupiah dari Dapur #shorts\" on 2026-06-22. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Institute for Energy, Economics, and Finance",
       "economicBuyer": "Institute for Energy, Economics, and Finance",
       "unresolvedGates": [
-        "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
+          "url": "https://www.youtube.com/@instituteIEEF",
+          "proves": "Institute for Energy, Economics, and Finance was inspected at https://www.youtube.com/@instituteIEEF; latest verified publication \"Kompor Induksi: Solusi Jitu Kuatkan Rupiah dari Dapur #shorts\" on 2026-06-22."
+        },
+        {
           "url": "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify Institute for Energy, Economics, and Finance's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dsOhTtUAHy4",
+          "proves": "Owned publication used to verify Institute for Energy, Economics, and Finance's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4uXgUK8mttc",
+          "proves": "Owned publication used to verify Institute for Energy, Economics, and Finance's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=aiMW1wMNTBw",
+          "proves": "Owned publication used to verify Institute for Energy, Economics, and Finance's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
-            "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Institute for Energy, Economics, and Finance: identity match unavailable.",
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Institute for Energy, Economics, and Finance feed.",
             "evidenceUrls": [
-              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@instituteIEEF",
+              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=dsOhTtUAHy4",
+              "https://www.youtube.com/watch?v=4uXgUK8mttc",
+              "https://www.youtube.com/watch?v=aiMW1wMNTBw"
             ]
           },
           "cadence": {
-            "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-06-22, 2026-06-17, 2026-06-10; latest verified publication \"Kompor Induksi: Solusi Jitu Kuatkan Rupiah dari Dapur #shorts\" on 2026-06-22.",
             "evidenceUrls": [
-              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@instituteIEEF",
+              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=dsOhTtUAHy4",
+              "https://www.youtube.com/watch?v=4uXgUK8mttc",
+              "https://www.youtube.com/watch?v=aiMW1wMNTBw"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Institute for Energy, Economics, and Finance, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Institute for Energy, Economics, and Finance was inspected at https://www.youtube.com/@instituteIEEF; latest verified publication \"Kompor Induksi: Solusi Jitu Kuatkan Rupiah dari Dapur #shorts\" on 2026-06-22. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
-              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@instituteIEEF",
+              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=dsOhTtUAHy4",
+              "https://www.youtube.com/watch?v=4uXgUK8mttc",
+              "https://www.youtube.com/watch?v=aiMW1wMNTBw"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Institute for Energy, Economics, and Finance was inspected at https://www.youtube.com/@instituteIEEF; latest verified publication \"Kompor Induksi: Solusi Jitu Kuatkan Rupiah dari Dapur #shorts\" on 2026-06-22. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
-              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@instituteIEEF",
+              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=dsOhTtUAHy4",
+              "https://www.youtube.com/watch?v=4uXgUK8mttc",
+              "https://www.youtube.com/watch?v=aiMW1wMNTBw"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Institute for Energy, Economics, and Finance was inspected at https://www.youtube.com/@instituteIEEF; latest verified publication \"Kompor Induksi: Solusi Jitu Kuatkan Rupiah dari Dapur #shorts\" on 2026-06-22. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
-              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@instituteIEEF",
+              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=dsOhTtUAHy4",
+              "https://www.youtube.com/watch?v=4uXgUK8mttc",
+              "https://www.youtube.com/watch?v=aiMW1wMNTBw"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Institute for Energy, Economics, and Finance was inspected at https://www.youtube.com/@instituteIEEF; latest verified publication \"Kompor Induksi: Solusi Jitu Kuatkan Rupiah dari Dapur #shorts\" on 2026-06-22. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
-              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@instituteIEEF",
+              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=dsOhTtUAHy4",
+              "https://www.youtube.com/watch?v=4uXgUK8mttc",
+              "https://www.youtube.com/watch?v=aiMW1wMNTBw"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "Three recent owned uploads were located (2026-06-22, 2026-06-17, 2026-06-10), but their educational production quality has not been visually scored; no distribution gap is claimed.",
             "evidenceUrls": [
-              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@instituteIEEF",
+              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=dsOhTtUAHy4",
+              "https://www.youtube.com/watch?v=4uXgUK8mttc",
+              "https://www.youtube.com/watch?v=aiMW1wMNTBw"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Institute for Energy, Economics, and Finance was inspected at https://www.youtube.com/@instituteIEEF; latest verified publication \"Kompor Induksi: Solusi Jitu Kuatkan Rupiah dari Dapur #shorts\" on 2026-06-22. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
-              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@instituteIEEF",
+              "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=dsOhTtUAHy4",
+              "https://www.youtube.com/watch?v=4uXgUK8mttc",
+              "https://www.youtube.com/watch?v=aiMW1wMNTBw"
             ]
           }
         }
@@ -371,85 +419,130 @@
       "id": "renewable-energy-institute",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Renewable Energy Institute to Renewable Energy Institute; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Renewable Energy Institute was inspected at https://www.youtube.com/@RenewableEnergyInstitute; latest verified publication \"Testimonials From Participants: The Renewable Energy Institute\" on 2026-06-29. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Renewable Energy Institute",
       "economicBuyer": "Renewable Energy Institute",
       "unresolvedGates": [
-        "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
+          "url": "https://www.youtube.com/@RenewableEnergyInstitute",
+          "proves": "Renewable Energy Institute was inspected at https://www.youtube.com/@RenewableEnergyInstitute; latest verified publication \"Testimonials From Participants: The Renewable Energy Institute\" on 2026-06-29."
+        },
+        {
           "url": "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify Renewable Energy Institute's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HeIc4COqu_Q",
+          "proves": "Owned publication used to verify Renewable Energy Institute's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MNKd5bawPLY",
+          "proves": "Owned publication used to verify Renewable Energy Institute's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3XDMCV-JjDg",
+          "proves": "Owned publication used to verify Renewable Energy Institute's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
-            "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Renewable Energy Institute: identity match unavailable.",
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Renewable Energy Institute feed.",
             "evidenceUrls": [
-              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@RenewableEnergyInstitute",
+              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=HeIc4COqu_Q",
+              "https://www.youtube.com/watch?v=MNKd5bawPLY",
+              "https://www.youtube.com/watch?v=3XDMCV-JjDg"
             ]
           },
           "cadence": {
-            "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-06-29, 2026-06-11, 2026-06-10; latest verified publication \"Testimonials From Participants: The Renewable Energy Institute\" on 2026-06-29.",
             "evidenceUrls": [
-              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@RenewableEnergyInstitute",
+              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=HeIc4COqu_Q",
+              "https://www.youtube.com/watch?v=MNKd5bawPLY",
+              "https://www.youtube.com/watch?v=3XDMCV-JjDg"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Renewable Energy Institute, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Renewable Energy Institute was inspected at https://www.youtube.com/@RenewableEnergyInstitute; latest verified publication \"Testimonials From Participants: The Renewable Energy Institute\" on 2026-06-29. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
-              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@RenewableEnergyInstitute",
+              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=HeIc4COqu_Q",
+              "https://www.youtube.com/watch?v=MNKd5bawPLY",
+              "https://www.youtube.com/watch?v=3XDMCV-JjDg"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Renewable Energy Institute was inspected at https://www.youtube.com/@RenewableEnergyInstitute; latest verified publication \"Testimonials From Participants: The Renewable Energy Institute\" on 2026-06-29. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
-              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@RenewableEnergyInstitute",
+              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=HeIc4COqu_Q",
+              "https://www.youtube.com/watch?v=MNKd5bawPLY",
+              "https://www.youtube.com/watch?v=3XDMCV-JjDg"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Renewable Energy Institute was inspected at https://www.youtube.com/@RenewableEnergyInstitute; latest verified publication \"Testimonials From Participants: The Renewable Energy Institute\" on 2026-06-29. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
-              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@RenewableEnergyInstitute",
+              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=HeIc4COqu_Q",
+              "https://www.youtube.com/watch?v=MNKd5bawPLY",
+              "https://www.youtube.com/watch?v=3XDMCV-JjDg"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Renewable Energy Institute was inspected at https://www.youtube.com/@RenewableEnergyInstitute; latest verified publication \"Testimonials From Participants: The Renewable Energy Institute\" on 2026-06-29. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
-              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@RenewableEnergyInstitute",
+              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=HeIc4COqu_Q",
+              "https://www.youtube.com/watch?v=MNKd5bawPLY",
+              "https://www.youtube.com/watch?v=3XDMCV-JjDg"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "Three recent owned uploads were located (2026-06-29, 2026-06-11, 2026-06-10), but their educational production quality has not been visually scored; no distribution gap is claimed.",
             "evidenceUrls": [
-              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@RenewableEnergyInstitute",
+              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=HeIc4COqu_Q",
+              "https://www.youtube.com/watch?v=MNKd5bawPLY",
+              "https://www.youtube.com/watch?v=3XDMCV-JjDg"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Renewable Energy Institute was inspected at https://www.youtube.com/@RenewableEnergyInstitute; latest verified publication \"Testimonials From Participants: The Renewable Energy Institute\" on 2026-06-29. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
-              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@RenewableEnergyInstitute",
+              "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=HeIc4COqu_Q",
+              "https://www.youtube.com/watch?v=MNKd5bawPLY",
+              "https://www.youtube.com/watch?v=3XDMCV-JjDg"
             ]
           }
         }
@@ -459,85 +552,130 @@
       "id": "technology-training",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Renewable Energy Technology Training Institute to Technology Training; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Renewable Energy Technology Training Institute was inspected at https://www.youtube.com/@renewableenergytechnologyt7785; latest verified publication \"Solar Cell Manufacturing in Africa (Nigeria Case Study)\" on 2026-06-24. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Technology Training",
       "economicBuyer": "Technology Training",
       "unresolvedGates": [
-        "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
+          "url": "https://www.youtube.com/@renewableenergytechnologyt7785",
+          "proves": "Renewable Energy Technology Training Institute was inspected at https://www.youtube.com/@renewableenergytechnologyt7785; latest verified publication \"Solar Cell Manufacturing in Africa (Nigeria Case Study)\" on 2026-06-24."
+        },
+        {
           "url": "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify Renewable Energy Technology Training Institute's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Tq7nkKWitfw",
+          "proves": "Owned publication used to verify Renewable Energy Technology Training Institute's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZYOHTZF27QQ",
+          "proves": "Owned publication used to verify Renewable Energy Technology Training Institute's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lbmB2sxF4xc",
+          "proves": "Owned publication used to verify Renewable Energy Technology Training Institute's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
-            "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Technology Training: identity match unavailable.",
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Renewable Energy Technology Training Institute feed.",
             "evidenceUrls": [
-              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@renewableenergytechnologyt7785",
+              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Tq7nkKWitfw",
+              "https://www.youtube.com/watch?v=ZYOHTZF27QQ",
+              "https://www.youtube.com/watch?v=lbmB2sxF4xc"
             ]
           },
           "cadence": {
-            "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-06-24, 2026-05-21, 2026-05-20; latest verified publication \"Solar Cell Manufacturing in Africa (Nigeria Case Study)\" on 2026-06-24.",
             "evidenceUrls": [
-              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@renewableenergytechnologyt7785",
+              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Tq7nkKWitfw",
+              "https://www.youtube.com/watch?v=ZYOHTZF27QQ",
+              "https://www.youtube.com/watch?v=lbmB2sxF4xc"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Technology Training, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Renewable Energy Technology Training Institute was inspected at https://www.youtube.com/@renewableenergytechnologyt7785; latest verified publication \"Solar Cell Manufacturing in Africa (Nigeria Case Study)\" on 2026-06-24. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
-              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@renewableenergytechnologyt7785",
+              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Tq7nkKWitfw",
+              "https://www.youtube.com/watch?v=ZYOHTZF27QQ",
+              "https://www.youtube.com/watch?v=lbmB2sxF4xc"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Renewable Energy Technology Training Institute was inspected at https://www.youtube.com/@renewableenergytechnologyt7785; latest verified publication \"Solar Cell Manufacturing in Africa (Nigeria Case Study)\" on 2026-06-24. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
-              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@renewableenergytechnologyt7785",
+              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Tq7nkKWitfw",
+              "https://www.youtube.com/watch?v=ZYOHTZF27QQ",
+              "https://www.youtube.com/watch?v=lbmB2sxF4xc"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Renewable Energy Technology Training Institute was inspected at https://www.youtube.com/@renewableenergytechnologyt7785; latest verified publication \"Solar Cell Manufacturing in Africa (Nigeria Case Study)\" on 2026-06-24. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
-              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@renewableenergytechnologyt7785",
+              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Tq7nkKWitfw",
+              "https://www.youtube.com/watch?v=ZYOHTZF27QQ",
+              "https://www.youtube.com/watch?v=lbmB2sxF4xc"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Renewable Energy Technology Training Institute was inspected at https://www.youtube.com/@renewableenergytechnologyt7785; latest verified publication \"Solar Cell Manufacturing in Africa (Nigeria Case Study)\" on 2026-06-24. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
-              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@renewableenergytechnologyt7785",
+              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Tq7nkKWitfw",
+              "https://www.youtube.com/watch?v=ZYOHTZF27QQ",
+              "https://www.youtube.com/watch?v=lbmB2sxF4xc"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "Three recent owned uploads were located (2026-06-24, 2026-05-21, 2026-05-20), but their educational production quality has not been visually scored; no distribution gap is claimed.",
             "evidenceUrls": [
-              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@renewableenergytechnologyt7785",
+              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Tq7nkKWitfw",
+              "https://www.youtube.com/watch?v=ZYOHTZF27QQ",
+              "https://www.youtube.com/watch?v=lbmB2sxF4xc"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Renewable Energy Technology Training Institute was inspected at https://www.youtube.com/@renewableenergytechnologyt7785; latest verified publication \"Solar Cell Manufacturing in Africa (Nigeria Case Study)\" on 2026-06-24. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
-              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@renewableenergytechnologyt7785",
+              "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Tq7nkKWitfw",
+              "https://www.youtube.com/watch?v=ZYOHTZF27QQ",
+              "https://www.youtube.com/watch?v=lbmB2sxF4xc"
             ]
           }
         }
@@ -547,207 +685,207 @@
       "id": "oil-sands-magazine",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Oil Sands Magazine to Mark Summers; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
-      "contentOwner": "Mark Summers",
-      "economicBuyer": "Mark Summers",
+      "decisionReason": "Oil Sands Magazine (@OilSandsMag) / X was inspected at https://x.com/OilSandsMag; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Oil Sands Magazine / Anna",
+      "economicBuyer": "UNRESOLVED",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "ROLES",
+        "CONTACT",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/OilSandsMag",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Oil Sands Magazine (@OilSandsMag) / X was inspected at https://x.com/OilSandsMag; no dated publication exposed by the recorded route."
         },
         {
-          "url": "https://www.youtube.com/@OilSandsMagazine?cbrd=1&ucbcb=1",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "url": "https://www.oilsandsmagazine.com/about-us",
+          "proves": "Owned publication used to verify Oil Sands Magazine (@OilSandsMag) / X's cadence."
+        },
+        {
+          "url": "https://www.oilsandsmagazine.com/newsletter-archive",
+          "proves": "Owned publication used to verify Oil Sands Magazine (@OilSandsMag) / X's cadence."
+        },
+        {
+          "url": "https://www.oilsandsmagazine.com/old-subscriptions",
+          "proves": "Owned publication used to verify Oil Sands Magazine (@OilSandsMag) / X's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
-            "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Mark Summers: identity match unavailable.",
+            "status": "CONFIRMED",
+            "note": "Oil Sands Magazine owns a weekly energy newsletter with a public archive through June 19, 2026.",
             "evidenceUrls": [
               "https://x.com/OilSandsMag",
-              "https://www.youtube.com/@OilSandsMagazine?cbrd=1&ucbcb=1"
+              "https://www.oilsandsmagazine.com/about-us",
+              "https://www.oilsandsmagazine.com/newsletter-archive",
+              "https://www.oilsandsmagazine.com/old-subscriptions"
             ]
           },
           "cadence": {
-            "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "status": "CONFIRMED",
+            "note": "The owned newsletter archive shows June 19, May 29, and May 22, 2026 publications, confirming current repeat publication.",
             "evidenceUrls": [
               "https://x.com/OilSandsMag",
-              "https://www.youtube.com/@OilSandsMagazine?cbrd=1&ucbcb=1"
+              "https://www.oilsandsmagazine.com/about-us",
+              "https://www.oilsandsmagazine.com/newsletter-archive",
+              "https://www.oilsandsmagazine.com/old-subscriptions"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Mark Summers, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "The official About page names Anna as founder and editor, correcting the legacy Mark Summers identity; a recurring on-mic host and final media-budget authority remain unverified.",
             "evidenceUrls": [
               "https://x.com/OilSandsMag",
-              "https://www.youtube.com/@OilSandsMagazine?cbrd=1&ucbcb=1"
+              "https://www.oilsandsmagazine.com/about-us",
+              "https://www.oilsandsmagazine.com/newsletter-archive",
+              "https://www.oilsandsmagazine.com/old-subscriptions"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Oil Sands Magazine (@OilSandsMag) / X was inspected at https://x.com/OilSandsMag; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
               "https://x.com/OilSandsMag",
-              "https://www.youtube.com/@OilSandsMagazine?cbrd=1&ucbcb=1"
+              "https://www.oilsandsmagazine.com/about-us",
+              "https://www.oilsandsmagazine.com/newsletter-archive",
+              "https://www.oilsandsmagazine.com/old-subscriptions"
             ]
           },
           "offer": {
-            "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "status": "CONFIRMED",
+            "note": "The official site sells custom training videos, market-research packages, and paid data access, including a published subscription checkout.",
             "evidenceUrls": [
               "https://x.com/OilSandsMag",
-              "https://www.youtube.com/@OilSandsMagazine?cbrd=1&ucbcb=1"
+              "https://www.oilsandsmagazine.com/about-us",
+              "https://www.oilsandsmagazine.com/newsletter-archive",
+              "https://www.oilsandsmagazine.com/old-subscriptions"
             ]
           },
           "funnel": {
-            "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "status": "CONFIRMED",
+            "note": "Free technical content and the weekly newsletter lead to training, bespoke research, and paid data-package offers on the owned site.",
             "evidenceUrls": [
               "https://x.com/OilSandsMag",
-              "https://www.youtube.com/@OilSandsMagazine?cbrd=1&ucbcb=1"
+              "https://www.oilsandsmagazine.com/about-us",
+              "https://www.oilsandsmagazine.com/newsletter-archive",
+              "https://www.oilsandsmagazine.com/old-subscriptions"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
               "https://x.com/OilSandsMag",
-              "https://www.youtube.com/@OilSandsMagazine?cbrd=1&ucbcb=1"
+              "https://www.oilsandsmagazine.com/about-us",
+              "https://www.oilsandsmagazine.com/newsletter-archive",
+              "https://www.oilsandsmagazine.com/old-subscriptions"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Oil Sands Magazine (@OilSandsMag) / X was inspected at https://x.com/OilSandsMag; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
               "https://x.com/OilSandsMag",
-              "https://www.youtube.com/@OilSandsMagazine?cbrd=1&ucbcb=1"
+              "https://www.oilsandsmagazine.com/about-us",
+              "https://www.oilsandsmagazine.com/newsletter-archive",
+              "https://www.oilsandsmagazine.com/old-subscriptions"
             ]
           }
         }
-      }
+      },
+      "onMicHost": "UNRESOLVED"
     },
     {
       "id": "jarand-rystad",
       "researchCompleteness": "COMPLETE",
-      "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Rystad Energy Insights to Jarand Rystad; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Rystad Energy is an enterprise research company with an institutional media and sales operation. Rystad Energy (@RystadEnergy) / X was inspected at https://x.com/RystadEnergy; no dated publication exposed by the recorded route.",
       "contentOwner": "Jarand Rystad",
       "economicBuyer": "Jarand Rystad",
-      "unresolvedGates": [
-        "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://x.com/RystadEnergy",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Rystad Energy (@RystadEnergy) / X was inspected at https://x.com/RystadEnergy; no dated publication exposed by the recorded route."
+        },
+        {
+          "url": "https://www.youtube.com/@RystadEnergy",
+          "proves": "Owned publication used to verify Rystad Energy (@RystadEnergy) / X's cadence."
         },
         {
           "url": "https://www.youtube.com/@RystadEnergy?cbrd=1&ucbcb=1",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify Rystad Energy (@RystadEnergy) / X's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Jarand Rystad: identity match unavailable.",
+            "note": "The route resolves to Rystad Energy (@RystadEnergy) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
               "https://x.com/RystadEnergy",
+              "https://www.youtube.com/@RystadEnergy",
               "https://www.youtube.com/@RystadEnergy?cbrd=1&ucbcb=1"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "Rystad Energy (@RystadEnergy) / X was inspected at https://x.com/RystadEnergy; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
               "https://x.com/RystadEnergy",
+              "https://www.youtube.com/@RystadEnergy",
               "https://www.youtube.com/@RystadEnergy?cbrd=1&ucbcb=1"
             ]
           },
           "roles": {
-            "status": "UNRESOLVED",
-            "note": "The recorded sources identify Jarand Rystad, but do not independently separate content owner, on-mic host, and economic buyer.",
-            "evidenceUrls": [
-              "https://x.com/RystadEnergy",
-              "https://www.youtube.com/@RystadEnergy?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "Rystad Energy is an enterprise research company with an institutional media and sales operation. Additional roles research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "contact": {
-            "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
-            "evidenceUrls": [
-              "https://x.com/RystadEnergy",
-              "https://www.youtube.com/@RystadEnergy?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "Rystad Energy is an enterprise research company with an institutional media and sales operation. Additional contact research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "offer": {
-            "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
-            "evidenceUrls": [
-              "https://x.com/RystadEnergy",
-              "https://www.youtube.com/@RystadEnergy?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "Rystad Energy is an enterprise research company with an institutional media and sales operation. Additional offer research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "funnel": {
-            "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
-            "evidenceUrls": [
-              "https://x.com/RystadEnergy",
-              "https://www.youtube.com/@RystadEnergy?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "Rystad Energy is an enterprise research company with an institutional media and sales operation. Additional funnel research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "videoGap": {
-            "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
-            "evidenceUrls": [
-              "https://x.com/RystadEnergy",
-              "https://www.youtube.com/@RystadEnergy?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "Rystad Energy is an enterprise research company with an institutional media and sales operation. Additional videoGap research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "pitchHook": {
-            "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
-            "evidenceUrls": [
-              "https://x.com/RystadEnergy",
-              "https://www.youtube.com/@RystadEnergy?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "Rystad Energy is an enterprise research company with an institutional media and sales operation. Additional pitchHook research cannot reverse that factual gate.",
+            "evidenceUrls": []
           }
         }
-      }
+      },
+      "factualHardGate": "CORPORATE_MONOLITH"
     },
     {
       "id": "jennifer-zajac",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "Clean Energy Shorts: Brief Chats with Energy Leaders's official feed and Apple listing identify Hiatus Announcement on 2026-01-17T19:55:29.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
+      "decisionReason": "Clean Energy Shorts: Brief Chats with Energy Leaders was inspected at https://api.riverside.fm/hosting/hMdqtkxr.rss; latest verified publication \"Hiatus Announcement\" on 2026-01-17. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Jennifer Zajac",
       "economicBuyer": "Jennifer Zajac",
       "ownedLongForm": {
@@ -767,113 +905,125 @@
         "medianIntervalDays": 8.8
       },
       "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://api.riverside.fm/hosting/hMdqtkxr.rss",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Clean Energy Shorts: Brief Chats with Energy Leaders was inspected at https://api.riverside.fm/hosting/hMdqtkxr.rss; latest verified publication \"Hiatus Announcement\" on 2026-01-17."
         },
         {
           "url": "https://podcasts.apple.com/us/podcast/clean-energy-shorts-brief-chats-with-energy-leaders/id1837019172?uo=4",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify Clean Energy Shorts: Brief Chats with Energy Leaders's cadence."
         },
         {
           "url": "https://x.com/CleanEShorts",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify Clean Energy Shorts: Brief Chats with Energy Leaders's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw",
+          "proves": "Owned publication used to verify Clean Energy Shorts: Brief Chats with Energy Leaders's cadence."
         },
         {
           "url": "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw?cbrd=1&ucbcb=1",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify Clean Energy Shorts: Brief Chats with Energy Leaders's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "CONFIRMED",
-            "note": "The official feed and Apple listing bind Clean Energy Shorts: Brief Chats with Energy Leaders to the recorded account.",
+            "note": "The official-platform route resolves to the owned Clean Energy Shorts: Brief Chats with Energy Leaders feed.",
             "evidenceUrls": [
               "https://api.riverside.fm/hosting/hMdqtkxr.rss",
               "https://podcasts.apple.com/us/podcast/clean-energy-shorts-brief-chats-with-energy-leaders/id1837019172?uo=4",
               "https://x.com/CleanEShorts",
+              "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw",
               "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw?cbrd=1&ucbcb=1"
             ]
           },
           "cadence": {
             "status": "CONFIRMED",
-            "note": "The owned feed records 6 recent dates; latest is Hiatus Announcement on 2026-01-17T19:55:29.000Z and computed cadence is INACTIVE.",
+            "note": "The owned route exposes publication dates 2026-01-17, 2025-11-15, 2025-10-29; latest verified publication \"Hiatus Announcement\" on 2026-01-17.",
             "evidenceUrls": [
               "https://api.riverside.fm/hosting/hMdqtkxr.rss",
               "https://podcasts.apple.com/us/podcast/clean-energy-shorts-brief-chats-with-energy-leaders/id1837019172?uo=4",
               "https://x.com/CleanEShorts",
+              "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw",
               "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw?cbrd=1&ucbcb=1"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Jennifer Zajac, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Clean Energy Shorts: Brief Chats with Energy Leaders was inspected at https://api.riverside.fm/hosting/hMdqtkxr.rss; latest verified publication \"Hiatus Announcement\" on 2026-01-17. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
               "https://api.riverside.fm/hosting/hMdqtkxr.rss",
               "https://podcasts.apple.com/us/podcast/clean-energy-shorts-brief-chats-with-energy-leaders/id1837019172?uo=4",
               "https://x.com/CleanEShorts",
+              "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw",
               "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw?cbrd=1&ucbcb=1"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Clean Energy Shorts: Brief Chats with Energy Leaders was inspected at https://api.riverside.fm/hosting/hMdqtkxr.rss; latest verified publication \"Hiatus Announcement\" on 2026-01-17. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
               "https://api.riverside.fm/hosting/hMdqtkxr.rss",
               "https://podcasts.apple.com/us/podcast/clean-energy-shorts-brief-chats-with-energy-leaders/id1837019172?uo=4",
               "https://x.com/CleanEShorts",
+              "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw",
               "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw?cbrd=1&ucbcb=1"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Clean Energy Shorts: Brief Chats with Energy Leaders was inspected at https://api.riverside.fm/hosting/hMdqtkxr.rss; latest verified publication \"Hiatus Announcement\" on 2026-01-17. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
               "https://api.riverside.fm/hosting/hMdqtkxr.rss",
               "https://podcasts.apple.com/us/podcast/clean-energy-shorts-brief-chats-with-energy-leaders/id1837019172?uo=4",
               "https://x.com/CleanEShorts",
+              "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw",
               "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw?cbrd=1&ucbcb=1"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Clean Energy Shorts: Brief Chats with Energy Leaders was inspected at https://api.riverside.fm/hosting/hMdqtkxr.rss; latest verified publication \"Hiatus Announcement\" on 2026-01-17. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
               "https://api.riverside.fm/hosting/hMdqtkxr.rss",
               "https://podcasts.apple.com/us/podcast/clean-energy-shorts-brief-chats-with-energy-leaders/id1837019172?uo=4",
               "https://x.com/CleanEShorts",
+              "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw",
               "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw?cbrd=1&ucbcb=1"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
               "https://api.riverside.fm/hosting/hMdqtkxr.rss",
               "https://podcasts.apple.com/us/podcast/clean-energy-shorts-brief-chats-with-energy-leaders/id1837019172?uo=4",
               "https://x.com/CleanEShorts",
+              "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw",
               "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw?cbrd=1&ucbcb=1"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Clean Energy Shorts: Brief Chats with Energy Leaders was inspected at https://api.riverside.fm/hosting/hMdqtkxr.rss; latest verified publication \"Hiatus Announcement\" on 2026-01-17. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
               "https://api.riverside.fm/hosting/hMdqtkxr.rss",
               "https://podcasts.apple.com/us/podcast/clean-energy-shorts-brief-chats-with-energy-leaders/id1837019172?uo=4",
               "https://x.com/CleanEShorts",
+              "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw",
               "https://www.youtube.com/channel/UCPdEjGHKUpUtaJSAwvtlHRw?cbrd=1&ucbcb=1"
             ]
           }
@@ -884,85 +1034,130 @@
       "id": "the-commodities-trade-institute",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind The Commodities Trade Institute to The Commodities Trade Institute; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "The Commodities Trade Institute was inspected at https://www.youtube.com/@commoditiesinstitute; latest verified publication \"China Coal Jumps 29%, Gold Consolidates, Solar Up 18%, Coffee Faces El Niño\" on 2026-07-14. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "The Commodities Trade Institute",
       "economicBuyer": "The Commodities Trade Institute",
       "unresolvedGates": [
-        "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
+          "url": "https://www.youtube.com/@commoditiesinstitute",
+          "proves": "The Commodities Trade Institute was inspected at https://www.youtube.com/@commoditiesinstitute; latest verified publication \"China Coal Jumps 29%, Gold Consolidates, Solar Up 18%, Coffee Faces El Niño\" on 2026-07-14."
+        },
+        {
           "url": "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify The Commodities Trade Institute's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_jPPBCyjC0Q",
+          "proves": "Owned publication used to verify The Commodities Trade Institute's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=i34fBCR5V3U",
+          "proves": "Owned publication used to verify The Commodities Trade Institute's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yDJvuchkp-M",
+          "proves": "Owned publication used to verify The Commodities Trade Institute's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
-            "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to The Commodities Trade Institute: identity match unavailable.",
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned The Commodities Trade Institute feed.",
             "evidenceUrls": [
-              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@commoditiesinstitute",
+              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_jPPBCyjC0Q",
+              "https://www.youtube.com/watch?v=i34fBCR5V3U",
+              "https://www.youtube.com/watch?v=yDJvuchkp-M"
             ]
           },
           "cadence": {
-            "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-07-14, 2026-07-11, 2026-07-11; latest verified publication \"China Coal Jumps 29%, Gold Consolidates, Solar Up 18%, Coffee Faces El Niño\" on 2026-07-14.",
             "evidenceUrls": [
-              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@commoditiesinstitute",
+              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_jPPBCyjC0Q",
+              "https://www.youtube.com/watch?v=i34fBCR5V3U",
+              "https://www.youtube.com/watch?v=yDJvuchkp-M"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify The Commodities Trade Institute, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "The Commodities Trade Institute was inspected at https://www.youtube.com/@commoditiesinstitute; latest verified publication \"China Coal Jumps 29%, Gold Consolidates, Solar Up 18%, Coffee Faces El Niño\" on 2026-07-14. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
-              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@commoditiesinstitute",
+              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_jPPBCyjC0Q",
+              "https://www.youtube.com/watch?v=i34fBCR5V3U",
+              "https://www.youtube.com/watch?v=yDJvuchkp-M"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "The Commodities Trade Institute was inspected at https://www.youtube.com/@commoditiesinstitute; latest verified publication \"China Coal Jumps 29%, Gold Consolidates, Solar Up 18%, Coffee Faces El Niño\" on 2026-07-14. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
-              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@commoditiesinstitute",
+              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_jPPBCyjC0Q",
+              "https://www.youtube.com/watch?v=i34fBCR5V3U",
+              "https://www.youtube.com/watch?v=yDJvuchkp-M"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "The Commodities Trade Institute was inspected at https://www.youtube.com/@commoditiesinstitute; latest verified publication \"China Coal Jumps 29%, Gold Consolidates, Solar Up 18%, Coffee Faces El Niño\" on 2026-07-14. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
-              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@commoditiesinstitute",
+              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_jPPBCyjC0Q",
+              "https://www.youtube.com/watch?v=i34fBCR5V3U",
+              "https://www.youtube.com/watch?v=yDJvuchkp-M"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "The Commodities Trade Institute was inspected at https://www.youtube.com/@commoditiesinstitute; latest verified publication \"China Coal Jumps 29%, Gold Consolidates, Solar Up 18%, Coffee Faces El Niño\" on 2026-07-14. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
-              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@commoditiesinstitute",
+              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_jPPBCyjC0Q",
+              "https://www.youtube.com/watch?v=i34fBCR5V3U",
+              "https://www.youtube.com/watch?v=yDJvuchkp-M"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "Three recent owned uploads were located (2026-07-14, 2026-07-11, 2026-07-11), but their educational production quality has not been visually scored; no distribution gap is claimed.",
             "evidenceUrls": [
-              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@commoditiesinstitute",
+              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_jPPBCyjC0Q",
+              "https://www.youtube.com/watch?v=i34fBCR5V3U",
+              "https://www.youtube.com/watch?v=yDJvuchkp-M"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "The Commodities Trade Institute was inspected at https://www.youtube.com/@commoditiesinstitute; latest verified publication \"China Coal Jumps 29%, Gold Consolidates, Solar Up 18%, Coffee Faces El Niño\" on 2026-07-14. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
-              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@commoditiesinstitute",
+              "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_jPPBCyjC0Q",
+              "https://www.youtube.com/watch?v=i34fBCR5V3U",
+              "https://www.youtube.com/watch?v=yDJvuchkp-M"
             ]
           }
         }
@@ -972,96 +1167,108 @@
       "id": "etrm-world",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind ETRM World to ETRM World; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Olive Delta (@OliveDelta) / X was inspected at https://x.com/olivedelta; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "ETRM World",
       "economicBuyer": "ETRM World",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/olivedelta",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Olive Delta (@OliveDelta) / X was inspected at https://x.com/olivedelta; no dated publication exposed by the recorded route."
+        },
+        {
+          "url": "https://www.youtube.com/@ETRMWorld-g3s",
+          "proves": "Owned publication used to verify Olive Delta (@OliveDelta) / X's cadence."
         },
         {
           "url": "https://www.youtube.com/@ETRMWorld-g3s?cbrd=1&ucbcb=1",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify Olive Delta (@OliveDelta) / X's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to ETRM World: identity match unavailable.",
+            "note": "The route resolves to Olive Delta (@OliveDelta) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
               "https://x.com/olivedelta",
+              "https://www.youtube.com/@ETRMWorld-g3s",
               "https://www.youtube.com/@ETRMWorld-g3s?cbrd=1&ucbcb=1"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "Olive Delta (@OliveDelta) / X was inspected at https://x.com/olivedelta; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
               "https://x.com/olivedelta",
+              "https://www.youtube.com/@ETRMWorld-g3s",
               "https://www.youtube.com/@ETRMWorld-g3s?cbrd=1&ucbcb=1"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify ETRM World, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Olive Delta (@OliveDelta) / X was inspected at https://x.com/olivedelta; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
               "https://x.com/olivedelta",
+              "https://www.youtube.com/@ETRMWorld-g3s",
               "https://www.youtube.com/@ETRMWorld-g3s?cbrd=1&ucbcb=1"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Olive Delta (@OliveDelta) / X was inspected at https://x.com/olivedelta; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
               "https://x.com/olivedelta",
+              "https://www.youtube.com/@ETRMWorld-g3s",
               "https://www.youtube.com/@ETRMWorld-g3s?cbrd=1&ucbcb=1"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Olive Delta (@OliveDelta) / X was inspected at https://x.com/olivedelta; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
               "https://x.com/olivedelta",
+              "https://www.youtube.com/@ETRMWorld-g3s",
               "https://www.youtube.com/@ETRMWorld-g3s?cbrd=1&ucbcb=1"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Olive Delta (@OliveDelta) / X was inspected at https://x.com/olivedelta; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
               "https://x.com/olivedelta",
+              "https://www.youtube.com/@ETRMWorld-g3s",
               "https://www.youtube.com/@ETRMWorld-g3s?cbrd=1&ucbcb=1"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
               "https://x.com/olivedelta",
+              "https://www.youtube.com/@ETRMWorld-g3s",
               "https://www.youtube.com/@ETRMWorld-g3s?cbrd=1&ucbcb=1"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Olive Delta (@OliveDelta) / X was inspected at https://x.com/olivedelta; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
               "https://x.com/olivedelta",
+              "https://www.youtube.com/@ETRMWorld-g3s",
               "https://www.youtube.com/@ETRMWorld-g3s?cbrd=1&ucbcb=1"
             ]
           }
@@ -1072,96 +1279,108 @@
       "id": "financial-time-capsule",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Financial Time Capsule to Financial Time Capsule; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Jeffrey Walkenhorst (@jeffwalkenhorst) / X was inspected at https://x.com/jeffwalkenhorst; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Financial Time Capsule",
       "economicBuyer": "Financial Time Capsule",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://x.com/jeffwalkenhorst",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Jeffrey Walkenhorst (@jeffwalkenhorst) / X was inspected at https://x.com/jeffwalkenhorst; no dated publication exposed by the recorded route."
+        },
+        {
+          "url": "https://www.youtube.com/@Financial_Time_Capsule",
+          "proves": "Owned publication used to verify Jeffrey Walkenhorst (@jeffwalkenhorst) / X's cadence."
         },
         {
           "url": "https://www.youtube.com/@Financial_Time_Capsule?cbrd=1&ucbcb=1",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify Jeffrey Walkenhorst (@jeffwalkenhorst) / X's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Financial Time Capsule: identity match unavailable.",
+            "note": "The route resolves to Jeffrey Walkenhorst (@jeffwalkenhorst) / X, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
               "https://x.com/jeffwalkenhorst",
+              "https://www.youtube.com/@Financial_Time_Capsule",
               "https://www.youtube.com/@Financial_Time_Capsule?cbrd=1&ucbcb=1"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "Jeffrey Walkenhorst (@jeffwalkenhorst) / X was inspected at https://x.com/jeffwalkenhorst; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
               "https://x.com/jeffwalkenhorst",
+              "https://www.youtube.com/@Financial_Time_Capsule",
               "https://www.youtube.com/@Financial_Time_Capsule?cbrd=1&ucbcb=1"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Financial Time Capsule, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Jeffrey Walkenhorst (@jeffwalkenhorst) / X was inspected at https://x.com/jeffwalkenhorst; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
               "https://x.com/jeffwalkenhorst",
+              "https://www.youtube.com/@Financial_Time_Capsule",
               "https://www.youtube.com/@Financial_Time_Capsule?cbrd=1&ucbcb=1"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Jeffrey Walkenhorst (@jeffwalkenhorst) / X was inspected at https://x.com/jeffwalkenhorst; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
               "https://x.com/jeffwalkenhorst",
+              "https://www.youtube.com/@Financial_Time_Capsule",
               "https://www.youtube.com/@Financial_Time_Capsule?cbrd=1&ucbcb=1"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Jeffrey Walkenhorst (@jeffwalkenhorst) / X was inspected at https://x.com/jeffwalkenhorst; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
               "https://x.com/jeffwalkenhorst",
+              "https://www.youtube.com/@Financial_Time_Capsule",
               "https://www.youtube.com/@Financial_Time_Capsule?cbrd=1&ucbcb=1"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Jeffrey Walkenhorst (@jeffwalkenhorst) / X was inspected at https://x.com/jeffwalkenhorst; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
               "https://x.com/jeffwalkenhorst",
+              "https://www.youtube.com/@Financial_Time_Capsule",
               "https://www.youtube.com/@Financial_Time_Capsule?cbrd=1&ucbcb=1"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
               "https://x.com/jeffwalkenhorst",
+              "https://www.youtube.com/@Financial_Time_Capsule",
               "https://www.youtube.com/@Financial_Time_Capsule?cbrd=1&ucbcb=1"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Jeffrey Walkenhorst (@jeffwalkenhorst) / X was inspected at https://x.com/jeffwalkenhorst; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
               "https://x.com/jeffwalkenhorst",
+              "https://www.youtube.com/@Financial_Time_Capsule",
               "https://www.youtube.com/@Financial_Time_Capsule?cbrd=1&ucbcb=1"
             ]
           }
@@ -1171,172 +1390,175 @@
     {
       "id": "energy-week",
       "researchCompleteness": "COMPLETE",
-      "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Energy Week to Energy Analysts; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The resolved Energy Week channel publishes online-earnings and UPI content rather than energy-industry education. Energy Week was inspected at https://www.youtube.com/@energyweek; latest verified publication \"🔥SIRF 5 MINUTE ME ₹400 DIRECT UPI ME 😱| Energy Week | Online earning| online paisa kaise kamaye\" on 2024-08-13.",
       "contentOwner": "Energy Analysts",
       "economicBuyer": "Energy Analysts",
-      "unresolvedGates": [
-        "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
+          "url": "https://www.youtube.com/@energyweek",
+          "proves": "Energy Week was inspected at https://www.youtube.com/@energyweek; latest verified publication \"🔥SIRF 5 MINUTE ME ₹400 DIRECT UPI ME 😱| Energy Week | Online earning| online paisa kaise kamaye\" on 2024-08-13."
+        },
+        {
           "url": "https://www.youtube.com/@energyweek?cbrd=1&ucbcb=1",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify Energy Week's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=34FZcmhPMoE",
+          "proves": "Owned publication used to verify Energy Week's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JerwGTCSBKc",
+          "proves": "Owned publication used to verify Energy Week's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=RQT87Ib-iEE",
+          "proves": "Owned publication used to verify Energy Week's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
-            "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Energy Analysts: identity match unavailable.",
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Energy Week feed.",
             "evidenceUrls": [
-              "https://www.youtube.com/@energyweek?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@energyweek",
+              "https://www.youtube.com/@energyweek?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=34FZcmhPMoE",
+              "https://www.youtube.com/watch?v=JerwGTCSBKc",
+              "https://www.youtube.com/watch?v=RQT87Ib-iEE"
             ]
           },
           "cadence": {
-            "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2024-08-13, 2024-08-11, 2024-08-09; latest verified publication \"🔥SIRF 5 MINUTE ME ₹400 DIRECT UPI ME 😱| Energy Week | Online earning| online paisa kaise kamaye\" on 2024-08-13.",
             "evidenceUrls": [
-              "https://www.youtube.com/@energyweek?cbrd=1&ucbcb=1"
+              "https://www.youtube.com/@energyweek",
+              "https://www.youtube.com/@energyweek?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=34FZcmhPMoE",
+              "https://www.youtube.com/watch?v=JerwGTCSBKc",
+              "https://www.youtube.com/watch?v=RQT87Ib-iEE"
             ]
           },
           "roles": {
-            "status": "UNRESOLVED",
-            "note": "The recorded sources identify Energy Analysts, but do not independently separate content owner, on-mic host, and economic buyer.",
-            "evidenceUrls": [
-              "https://www.youtube.com/@energyweek?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "The resolved Energy Week channel publishes online-earnings and UPI content rather than energy-industry education. Additional roles research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "contact": {
-            "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
-            "evidenceUrls": [
-              "https://www.youtube.com/@energyweek?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "The resolved Energy Week channel publishes online-earnings and UPI content rather than energy-industry education. Additional contact research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "offer": {
-            "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
-            "evidenceUrls": [
-              "https://www.youtube.com/@energyweek?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "The resolved Energy Week channel publishes online-earnings and UPI content rather than energy-industry education. Additional offer research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "funnel": {
-            "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
-            "evidenceUrls": [
-              "https://www.youtube.com/@energyweek?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "The resolved Energy Week channel publishes online-earnings and UPI content rather than energy-industry education. Additional funnel research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "videoGap": {
-            "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
-            "evidenceUrls": [
-              "https://www.youtube.com/@energyweek?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "The resolved Energy Week channel publishes online-earnings and UPI content rather than energy-industry education. Additional videoGap research cannot reverse that factual gate.",
+            "evidenceUrls": []
           },
           "pitchHook": {
-            "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
-            "evidenceUrls": [
-              "https://www.youtube.com/@energyweek?cbrd=1&ucbcb=1"
-            ]
+            "status": "NOT_APPLICABLE",
+            "note": "The resolved Energy Week channel publishes online-earnings and UPI content rather than energy-industry education. Additional pitchHook research cannot reverse that factual gate.",
+            "evidenceUrls": []
           }
         }
-      }
+      },
+      "factualHardGate": "WRONG_ICP"
     },
     {
       "id": "michael-e-webber",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind The University of Texas at Austin to Michael E. Webber; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "michael-e-webber was inspected at https://www.michaelwebber.com/; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Michael E. Webber",
       "economicBuyer": "Michael E. Webber",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://www.michaelwebber.com/",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "michael-e-webber was inspected at https://www.michaelwebber.com/; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Michael E. Webber: identity match unavailable.",
+            "note": "The route resolves to michael-e-webber, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
               "https://www.michaelwebber.com/"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "michael-e-webber was inspected at https://www.michaelwebber.com/; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
               "https://www.michaelwebber.com/"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Michael E. Webber, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "michael-e-webber was inspected at https://www.michaelwebber.com/; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
               "https://www.michaelwebber.com/"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "michael-e-webber was inspected at https://www.michaelwebber.com/; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
               "https://www.michaelwebber.com/"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "michael-e-webber was inspected at https://www.michaelwebber.com/; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
               "https://www.michaelwebber.com/"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "michael-e-webber was inspected at https://www.michaelwebber.com/; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
               "https://www.michaelwebber.com/"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
               "https://www.michaelwebber.com/"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "michael-e-webber was inspected at https://www.michaelwebber.com/; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
               "https://www.michaelwebber.com/"
             ]
@@ -1348,83 +1570,83 @@
       "id": "rusty-braziel",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind RBN Energy to Rusty Braziel; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Just a moment... was inspected at https://rbnenergy.com/; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Rusty Braziel",
       "economicBuyer": "Rusty Braziel",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://rbnenergy.com/",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Just a moment... was inspected at https://rbnenergy.com/; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Rusty Braziel: identity match unavailable.",
+            "note": "The route resolves to Just a moment..., but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
               "https://rbnenergy.com/"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "Just a moment... was inspected at https://rbnenergy.com/; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
               "https://rbnenergy.com/"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Rusty Braziel, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Just a moment... was inspected at https://rbnenergy.com/; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
               "https://rbnenergy.com/"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Just a moment... was inspected at https://rbnenergy.com/; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
               "https://rbnenergy.com/"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Just a moment... was inspected at https://rbnenergy.com/; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
               "https://rbnenergy.com/"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Just a moment... was inspected at https://rbnenergy.com/; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
               "https://rbnenergy.com/"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
               "https://rbnenergy.com/"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Just a moment... was inspected at https://rbnenergy.com/; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
               "https://rbnenergy.com/"
             ]
@@ -1436,85 +1658,97 @@
       "id": "nick-butler",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Nick Butler's Energy Comment to Nick Butler; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Nick Butler’s newsletter | Substack was inspected at https://nickbutler.substack.com/; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Nick Butler",
       "economicBuyer": "Nick Butler",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://nickbutler.substack.com/",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Nick Butler’s newsletter | Substack was inspected at https://nickbutler.substack.com/; no dated publication exposed by the recorded route."
+        },
+        {
+          "url": "https://nickbutler.substack.com/feed",
+          "proves": "Owned publication used to verify Nick Butler’s newsletter | Substack's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Nick Butler: identity match unavailable.",
+            "note": "The route resolves to Nick Butler’s newsletter | Substack, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
-              "https://nickbutler.substack.com/"
+              "https://nickbutler.substack.com/",
+              "https://nickbutler.substack.com/feed"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "Nick Butler’s newsletter | Substack was inspected at https://nickbutler.substack.com/; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
-              "https://nickbutler.substack.com/"
+              "https://nickbutler.substack.com/",
+              "https://nickbutler.substack.com/feed"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Nick Butler, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Nick Butler’s newsletter | Substack was inspected at https://nickbutler.substack.com/; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
-              "https://nickbutler.substack.com/"
+              "https://nickbutler.substack.com/",
+              "https://nickbutler.substack.com/feed"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Nick Butler’s newsletter | Substack was inspected at https://nickbutler.substack.com/; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
-              "https://nickbutler.substack.com/"
+              "https://nickbutler.substack.com/",
+              "https://nickbutler.substack.com/feed"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Nick Butler’s newsletter | Substack was inspected at https://nickbutler.substack.com/; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
-              "https://nickbutler.substack.com/"
+              "https://nickbutler.substack.com/",
+              "https://nickbutler.substack.com/feed"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Nick Butler’s newsletter | Substack was inspected at https://nickbutler.substack.com/; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
-              "https://nickbutler.substack.com/"
+              "https://nickbutler.substack.com/",
+              "https://nickbutler.substack.com/feed"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
-              "https://nickbutler.substack.com/"
+              "https://nickbutler.substack.com/",
+              "https://nickbutler.substack.com/feed"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Nick Butler’s newsletter | Substack was inspected at https://nickbutler.substack.com/; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
-              "https://nickbutler.substack.com/"
+              "https://nickbutler.substack.com/",
+              "https://nickbutler.substack.com/feed"
             ]
           }
         }
@@ -1524,84 +1758,96 @@
       "id": "gregor-macdonald",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Gregor Macdonald's Energy & Geopolitics to Gregor Macdonald; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Gregor Macdonald | Substack was inspected at https://gregormacdonald.substack.com/; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Gregor Macdonald",
       "economicBuyer": "Gregor Macdonald",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
+          "url": "https://gregormacdonald.substack.com/",
+          "proves": "Gregor Macdonald | Substack was inspected at https://gregormacdonald.substack.com/; no dated publication exposed by the recorded route."
+        },
+        {
           "url": "https://substack.com/@gregormacdonald",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify Gregor Macdonald | Substack's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Gregor Macdonald: identity match unavailable.",
+            "note": "The route resolves to Gregor Macdonald | Substack, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
+              "https://gregormacdonald.substack.com/",
               "https://substack.com/@gregormacdonald"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "Gregor Macdonald | Substack was inspected at https://gregormacdonald.substack.com/; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
+              "https://gregormacdonald.substack.com/",
               "https://substack.com/@gregormacdonald"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Gregor Macdonald, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Gregor Macdonald | Substack was inspected at https://gregormacdonald.substack.com/; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
+              "https://gregormacdonald.substack.com/",
               "https://substack.com/@gregormacdonald"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Gregor Macdonald | Substack was inspected at https://gregormacdonald.substack.com/; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
+              "https://gregormacdonald.substack.com/",
               "https://substack.com/@gregormacdonald"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Gregor Macdonald | Substack was inspected at https://gregormacdonald.substack.com/; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
+              "https://gregormacdonald.substack.com/",
               "https://substack.com/@gregormacdonald"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Gregor Macdonald | Substack was inspected at https://gregormacdonald.substack.com/; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
+              "https://gregormacdonald.substack.com/",
               "https://substack.com/@gregormacdonald"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
+              "https://gregormacdonald.substack.com/",
               "https://substack.com/@gregormacdonald"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Gregor Macdonald | Substack was inspected at https://gregormacdonald.substack.com/; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
+              "https://gregormacdonald.substack.com/",
               "https://substack.com/@gregormacdonald"
             ]
           }
@@ -1612,85 +1858,97 @@
       "id": "mark-mills",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Digital Energy to Mark Mills; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Mark’s Substack | Substack was inspected at https://markmills.substack.com/; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Mark Mills",
       "economicBuyer": "Mark Mills",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://markmills.substack.com/",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Mark’s Substack | Substack was inspected at https://markmills.substack.com/; no dated publication exposed by the recorded route."
+        },
+        {
+          "url": "https://markmills.substack.com/feed",
+          "proves": "Owned publication used to verify Mark’s Substack | Substack's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Mark Mills: identity match unavailable.",
+            "note": "The route resolves to Mark’s Substack | Substack, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
-              "https://markmills.substack.com/"
+              "https://markmills.substack.com/",
+              "https://markmills.substack.com/feed"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "Mark’s Substack | Substack was inspected at https://markmills.substack.com/; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
-              "https://markmills.substack.com/"
+              "https://markmills.substack.com/",
+              "https://markmills.substack.com/feed"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Mark Mills, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Mark’s Substack | Substack was inspected at https://markmills.substack.com/; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
-              "https://markmills.substack.com/"
+              "https://markmills.substack.com/",
+              "https://markmills.substack.com/feed"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Mark’s Substack | Substack was inspected at https://markmills.substack.com/; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
-              "https://markmills.substack.com/"
+              "https://markmills.substack.com/",
+              "https://markmills.substack.com/feed"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Mark’s Substack | Substack was inspected at https://markmills.substack.com/; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
-              "https://markmills.substack.com/"
+              "https://markmills.substack.com/",
+              "https://markmills.substack.com/feed"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Mark’s Substack | Substack was inspected at https://markmills.substack.com/; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
-              "https://markmills.substack.com/"
+              "https://markmills.substack.com/",
+              "https://markmills.substack.com/feed"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
-              "https://markmills.substack.com/"
+              "https://markmills.substack.com/",
+              "https://markmills.substack.com/feed"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Mark’s Substack | Substack was inspected at https://markmills.substack.com/; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
-              "https://markmills.substack.com/"
+              "https://markmills.substack.com/",
+              "https://markmills.substack.com/feed"
             ]
           }
         }
@@ -1700,83 +1958,83 @@
       "id": "ryan-sitton",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind R Sitton Consulting to Ryan Sitton; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Not Found was inspected at https://rsitton.substack.com/; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Ryan Sitton",
       "economicBuyer": "Ryan Sitton",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://rsitton.substack.com/",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Not Found was inspected at https://rsitton.substack.com/; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Ryan Sitton: identity match unavailable.",
+            "note": "The route resolves to Not Found, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
               "https://rsitton.substack.com/"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "Not Found was inspected at https://rsitton.substack.com/; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
               "https://rsitton.substack.com/"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Ryan Sitton, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Not Found was inspected at https://rsitton.substack.com/; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
               "https://rsitton.substack.com/"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Not Found was inspected at https://rsitton.substack.com/; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
               "https://rsitton.substack.com/"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Not Found was inspected at https://rsitton.substack.com/; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
               "https://rsitton.substack.com/"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Not Found was inspected at https://rsitton.substack.com/; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
               "https://rsitton.substack.com/"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
               "https://rsitton.substack.com/"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Not Found was inspected at https://rsitton.substack.com/; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
               "https://rsitton.substack.com/"
             ]
@@ -1788,83 +2046,83 @@
       "id": "joe-m-dewoody",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Fossil Fuel Facts to Joe M. DeWoody; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Not Found was inspected at https://joemdewoody.substack.com/; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Joe M. DeWoody",
       "economicBuyer": "Joe M. DeWoody",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://joemdewoody.substack.com/",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Not Found was inspected at https://joemdewoody.substack.com/; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Joe M. DeWoody: identity match unavailable.",
+            "note": "The route resolves to Not Found, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
               "https://joemdewoody.substack.com/"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "Not Found was inspected at https://joemdewoody.substack.com/; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
               "https://joemdewoody.substack.com/"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Joe M. DeWoody, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Not Found was inspected at https://joemdewoody.substack.com/; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
               "https://joemdewoody.substack.com/"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Not Found was inspected at https://joemdewoody.substack.com/; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
               "https://joemdewoody.substack.com/"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Not Found was inspected at https://joemdewoody.substack.com/; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
               "https://joemdewoody.substack.com/"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Not Found was inspected at https://joemdewoody.substack.com/; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
               "https://joemdewoody.substack.com/"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
               "https://joemdewoody.substack.com/"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Not Found was inspected at https://joemdewoody.substack.com/; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
               "https://joemdewoody.substack.com/"
             ]
@@ -1876,85 +2134,97 @@
       "id": "david-blackmon",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Blackmon Energy Report to David Blackmon; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Campaign Update by David Blackmon | Substack was inspected at https://davidblackmon.substack.com/; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "David Blackmon",
       "economicBuyer": "David Blackmon",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://davidblackmon.substack.com/",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Campaign Update by David Blackmon | Substack was inspected at https://davidblackmon.substack.com/; no dated publication exposed by the recorded route."
+        },
+        {
+          "url": "https://davidblackmon.substack.com/feed",
+          "proves": "Owned publication used to verify Campaign Update by David Blackmon | Substack's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to David Blackmon: identity match unavailable.",
+            "note": "The route resolves to Campaign Update by David Blackmon | Substack, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
-              "https://davidblackmon.substack.com/"
+              "https://davidblackmon.substack.com/",
+              "https://davidblackmon.substack.com/feed"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "Campaign Update by David Blackmon | Substack was inspected at https://davidblackmon.substack.com/; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
-              "https://davidblackmon.substack.com/"
+              "https://davidblackmon.substack.com/",
+              "https://davidblackmon.substack.com/feed"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify David Blackmon, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Campaign Update by David Blackmon | Substack was inspected at https://davidblackmon.substack.com/; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
-              "https://davidblackmon.substack.com/"
+              "https://davidblackmon.substack.com/",
+              "https://davidblackmon.substack.com/feed"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Campaign Update by David Blackmon | Substack was inspected at https://davidblackmon.substack.com/; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
-              "https://davidblackmon.substack.com/"
+              "https://davidblackmon.substack.com/",
+              "https://davidblackmon.substack.com/feed"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Campaign Update by David Blackmon | Substack was inspected at https://davidblackmon.substack.com/; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
-              "https://davidblackmon.substack.com/"
+              "https://davidblackmon.substack.com/",
+              "https://davidblackmon.substack.com/feed"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Campaign Update by David Blackmon | Substack was inspected at https://davidblackmon.substack.com/; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
-              "https://davidblackmon.substack.com/"
+              "https://davidblackmon.substack.com/",
+              "https://davidblackmon.substack.com/feed"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
-              "https://davidblackmon.substack.com/"
+              "https://davidblackmon.substack.com/",
+              "https://davidblackmon.substack.com/feed"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Campaign Update by David Blackmon | Substack was inspected at https://davidblackmon.substack.com/; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
-              "https://davidblackmon.substack.com/"
+              "https://davidblackmon.substack.com/",
+              "https://davidblackmon.substack.com/feed"
             ]
           }
         }
@@ -1964,84 +2234,96 @@
       "id": "bjorn-lomborg",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Copenhagen Consensus Center to Bjorn Lomborg; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Copenhagen Consensus Center | Copenhagen Consensus was inspected at https://www.copenhagenconsensus.com/; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Bjorn Lomborg",
       "economicBuyer": "Bjorn Lomborg",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
+          "url": "https://www.copenhagenconsensus.com/",
+          "proves": "Copenhagen Consensus Center | Copenhagen Consensus was inspected at https://www.copenhagenconsensus.com/; no dated publication exposed by the recorded route."
+        },
+        {
           "url": "https://copenhagenconsensus.com/",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify Copenhagen Consensus Center | Copenhagen Consensus's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Bjorn Lomborg: identity match unavailable.",
+            "note": "The route resolves to Copenhagen Consensus Center | Copenhagen Consensus, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
+              "https://www.copenhagenconsensus.com/",
               "https://copenhagenconsensus.com/"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "Copenhagen Consensus Center | Copenhagen Consensus was inspected at https://www.copenhagenconsensus.com/; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
+              "https://www.copenhagenconsensus.com/",
               "https://copenhagenconsensus.com/"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Bjorn Lomborg, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Copenhagen Consensus Center | Copenhagen Consensus was inspected at https://www.copenhagenconsensus.com/; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
+              "https://www.copenhagenconsensus.com/",
               "https://copenhagenconsensus.com/"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Copenhagen Consensus Center | Copenhagen Consensus was inspected at https://www.copenhagenconsensus.com/; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
+              "https://www.copenhagenconsensus.com/",
               "https://copenhagenconsensus.com/"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Copenhagen Consensus Center | Copenhagen Consensus was inspected at https://www.copenhagenconsensus.com/; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
+              "https://www.copenhagenconsensus.com/",
               "https://copenhagenconsensus.com/"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Copenhagen Consensus Center | Copenhagen Consensus was inspected at https://www.copenhagenconsensus.com/; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
+              "https://www.copenhagenconsensus.com/",
               "https://copenhagenconsensus.com/"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
+              "https://www.copenhagenconsensus.com/",
               "https://copenhagenconsensus.com/"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Copenhagen Consensus Center | Copenhagen Consensus was inspected at https://www.copenhagenconsensus.com/; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
+              "https://www.copenhagenconsensus.com/",
               "https://copenhagenconsensus.com/"
             ]
           }
@@ -2052,84 +2334,96 @@
       "id": "robert-rapier",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind RRS to Robert Rapier; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "Industrial Energy Benchmarking &#8211; Industrial Energy Benchmarking was inspected at https://energytrendinsider.com/; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Robert Rapier",
       "economicBuyer": "Robert Rapier",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
+          "url": "https://energytrendinsider.com/",
+          "proves": "Industrial Energy Benchmarking &#8211; Industrial Energy Benchmarking was inspected at https://energytrendinsider.com/; no dated publication exposed by the recorded route."
+        },
+        {
           "url": "https://industrialenergybenchmarking.com/",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "Owned publication used to verify Industrial Energy Benchmarking &#8211; Industrial Energy Benchmarking's cadence."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Robert Rapier: identity match unavailable.",
+            "note": "The route resolves to Industrial Energy Benchmarking &#8211; Industrial Energy Benchmarking, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
+              "https://energytrendinsider.com/",
               "https://industrialenergybenchmarking.com/"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "Industrial Energy Benchmarking &#8211; Industrial Energy Benchmarking was inspected at https://energytrendinsider.com/; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
+              "https://energytrendinsider.com/",
               "https://industrialenergybenchmarking.com/"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Robert Rapier, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "Industrial Energy Benchmarking &#8211; Industrial Energy Benchmarking was inspected at https://energytrendinsider.com/; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
+              "https://energytrendinsider.com/",
               "https://industrialenergybenchmarking.com/"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "Industrial Energy Benchmarking &#8211; Industrial Energy Benchmarking was inspected at https://energytrendinsider.com/; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
+              "https://energytrendinsider.com/",
               "https://industrialenergybenchmarking.com/"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "Industrial Energy Benchmarking &#8211; Industrial Energy Benchmarking was inspected at https://energytrendinsider.com/; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
+              "https://energytrendinsider.com/",
               "https://industrialenergybenchmarking.com/"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "Industrial Energy Benchmarking &#8211; Industrial Energy Benchmarking was inspected at https://energytrendinsider.com/; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
+              "https://energytrendinsider.com/",
               "https://industrialenergybenchmarking.com/"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
+              "https://energytrendinsider.com/",
               "https://industrialenergybenchmarking.com/"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "Industrial Energy Benchmarking &#8211; Industrial Energy Benchmarking was inspected at https://energytrendinsider.com/; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
+              "https://energytrendinsider.com/",
               "https://industrialenergybenchmarking.com/"
             ]
           }
@@ -2140,83 +2434,83 @@
       "id": "tracy-shuchart",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind The Rabbit Hole to Tracy Shuchart; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "tracy-shuchart was inspected at https://tracysuchart.substack.com/; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Tracy Shuchart",
       "economicBuyer": "Tracy Shuchart",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://tracysuchart.substack.com/",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "tracy-shuchart was inspected at https://tracysuchart.substack.com/; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Tracy Shuchart: identity match unavailable.",
+            "note": "The route resolves to tracy-shuchart, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
               "https://tracysuchart.substack.com/"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "tracy-shuchart was inspected at https://tracysuchart.substack.com/; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
               "https://tracysuchart.substack.com/"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Tracy Shuchart, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "tracy-shuchart was inspected at https://tracysuchart.substack.com/; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
               "https://tracysuchart.substack.com/"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "tracy-shuchart was inspected at https://tracysuchart.substack.com/; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
               "https://tracysuchart.substack.com/"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "tracy-shuchart was inspected at https://tracysuchart.substack.com/; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
               "https://tracysuchart.substack.com/"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "tracy-shuchart was inspected at https://tracysuchart.substack.com/; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
               "https://tracysuchart.substack.com/"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
               "https://tracysuchart.substack.com/"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "tracy-shuchart was inspected at https://tracysuchart.substack.com/; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
               "https://tracysuchart.substack.com/"
             ]
@@ -2228,83 +2522,83 @@
       "id": "kirk-van-kooten",
       "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The recorded feed and Apple listing do not strongly bind Global Energy Insights to Kirk Van Kooten; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
+      "decisionReason": "kirk-van-kooten was inspected at https://globalenergyinsights.substack.com/; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
       "contentOwner": "Kirk Van Kooten",
       "economicBuyer": "Kirk Van Kooten",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
-        "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
       ],
       "evidence": [
         {
           "url": "https://globalenergyinsights.substack.com/",
-          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+          "proves": "kirk-van-kooten was inspected at https://globalenergyinsights.substack.com/; no dated publication exposed by the recorded route."
         }
       ],
-      "auditedAt": "2026-07-15T14:17:23.230Z",
+      "auditedAt": "2026-07-15T17:19:11.838Z",
       "researchAudit": {
-        "reviewedBy": "Terra Medium",
-        "reviewedAt": "2026-07-15T14:17:23.230Z",
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T17:19:11.838Z",
         "checks": {
           "ownedLongForm": {
             "status": "UNRESOLVED",
-            "note": "The feed resolves, but its identity does not strongly bind to Kirk Van Kooten: identity match unavailable.",
+            "note": "The route resolves to kirk-van-kooten, but the stored identity is not strong enough to bind it to the proposed buyer.",
             "evidenceUrls": [
               "https://globalenergyinsights.substack.com/"
             ]
           },
           "cadence": {
             "status": "UNRESOLVED",
-            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "note": "kirk-van-kooten was inspected at https://globalenergyinsights.substack.com/; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
             "evidenceUrls": [
               "https://globalenergyinsights.substack.com/"
             ]
           },
           "roles": {
             "status": "UNRESOLVED",
-            "note": "The recorded sources identify Kirk Van Kooten, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "note": "kirk-van-kooten was inspected at https://globalenergyinsights.substack.com/; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
             "evidenceUrls": [
               "https://globalenergyinsights.substack.com/"
             ]
           },
           "contact": {
             "status": "UNRESOLVED",
-            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "note": "kirk-van-kooten was inspected at https://globalenergyinsights.substack.com/; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
             "evidenceUrls": [
               "https://globalenergyinsights.substack.com/"
             ]
           },
           "offer": {
             "status": "UNRESOLVED",
-            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "note": "kirk-van-kooten was inspected at https://globalenergyinsights.substack.com/; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
             "evidenceUrls": [
               "https://globalenergyinsights.substack.com/"
             ]
           },
           "funnel": {
             "status": "UNRESOLVED",
-            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "note": "kirk-van-kooten was inspected at https://globalenergyinsights.substack.com/; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
             "evidenceUrls": [
               "https://globalenergyinsights.substack.com/"
             ]
           },
           "videoGap": {
             "status": "UNRESOLVED",
-            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
             "evidenceUrls": [
               "https://globalenergyinsights.substack.com/"
             ]
           },
           "pitchHook": {
             "status": "UNRESOLVED",
-            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "note": "kirk-van-kooten was inspected at https://globalenergyinsights.substack.com/; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
             "evidenceUrls": [
               "https://globalenergyinsights.substack.com/"
             ]

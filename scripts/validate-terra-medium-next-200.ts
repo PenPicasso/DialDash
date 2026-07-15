@@ -45,6 +45,8 @@ const expectedIds = expected.records.map((record) => record.id).sort();
 const actualIds = result.records.map((record) => record.id).sort();
 const url = (value?: string) => Boolean(value && /^https?:\/\//i.test(value));
 const genericRejection = /could not verify|did not verify|missing evidence|unverified|incomplete chain|cannot be (?:factually )?rejected|remaining .+ require manual/i;
+const bulkRouteAudit = /recorded first-party routes do not yet establish|recorded feed and Apple listing do not strongly bind/i;
+const genericEvidenceClaim = "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit.";
 const factualHardGates = new Set([
   "INACTIVE_OVER_90_DAYS",
   "CORPORATE_MONOLITH",
@@ -68,6 +70,13 @@ for (const record of result.records) {
   if (!allowDraft && record.researchCompleteness !== "COMPLETE" && !structurallyCompleteExclusion) errors.push(`${record.id}: research is a deterministic draft, not a completed manual review.`);
   if (record.researchCompleteness === "DRAFT" && record.decision !== "NURTURE") errors.push(`${record.id}: a draft record must remain NURTURE.`);
   if (record.researchCompleteness === "COMPLETE") {
+    const substantiveChecks = ["roles", "contact", "offer", "funnel", "videoGap", "pitchHook"];
+    const allSubstantiveChecksUnresolved = substantiveChecks.every((check) => record.researchAudit?.checks?.[check]?.status === "UNRESOLVED");
+    const generatedRouteAudit = bulkRouteAudit.test(record.decisionReason || "")
+      && allSubstantiveChecksUnresolved
+      && Boolean(record.evidence?.length)
+      && record.evidence?.every((item) => item.proves === genericEvidenceClaim);
+    if (generatedRouteAudit) errors.push(`${record.id}: a bulk-generated route audit cannot be marked COMPLETE.`);
     if (!record.researchAudit?.reviewedBy || !record.researchAudit?.reviewedAt) errors.push(`${record.id}: complete research requires a named reviewer and review timestamp.`);
     const reviewedAt = new Date(record.researchAudit?.reviewedAt || "").getTime();
     if (!Number.isFinite(reviewedAt) || reviewedAt > now + 60_000) errors.push(`${record.id}: complete research has an invalid review timestamp.`);

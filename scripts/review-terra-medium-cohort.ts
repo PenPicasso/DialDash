@@ -10,6 +10,9 @@ type TerraRecord = {
   factualHardGate?: string;
   unresolvedGates?: string[];
   evidence?: Array<{ url?: string; proves?: string }>;
+  researchAudit?: {
+    checks?: Record<string, { status?: string; note?: string; evidenceUrls?: string[] }>;
+  };
 };
 type ManifestRecord = { id: string; auditSample?: boolean };
 type AuditVerdict = { id: string; correct: boolean; notes: string };
@@ -40,9 +43,19 @@ const verdicts = existsSync(verdictPath)
 const verdictById = new Map(verdicts.map((verdict) => [verdict.id, verdict]));
 const byManifest = new Map(manifest.records.map((record) => [record.id, record]));
 const genericDraft = /remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual/i;
+const bulkRouteAudit = /recorded first-party routes do not yet establish|recorded feed and Apple listing do not strongly bind/i;
+const genericEvidenceClaim = "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit.";
 
 const records = terra.records.map((record) => {
-  const implicitDraft = record.researchCompleteness !== "COMPLETE" || genericDraft.test(record.decisionReason || "");
+  const substantiveChecks = ["roles", "contact", "offer", "funnel", "videoGap", "pitchHook"];
+  const allSubstantiveChecksUnresolved = substantiveChecks.every((check) => record.researchAudit?.checks?.[check]?.status === "UNRESOLVED");
+  const generatedRouteAudit = bulkRouteAudit.test(record.decisionReason || "")
+    && allSubstantiveChecksUnresolved
+    && Boolean(record.evidence?.length)
+    && record.evidence?.every((item) => item.proves === genericEvidenceClaim);
+  const implicitDraft = record.researchCompleteness !== "COMPLETE"
+    || genericDraft.test(record.decisionReason || "")
+    || generatedRouteAudit;
   const confirmedExclusion = record.decision === "DISQUALIFIED_CONFIRMED"
     && Boolean(record.factualHardGate)
     && Boolean(record.evidence?.some((item) => /^https?:\/\//i.test(item.url || "")))
@@ -52,7 +65,11 @@ const records = terra.records.map((record) => {
     id: record.id,
     auditSample: Boolean(byManifest.get(record.id)?.auditSample),
     outcome: complete ? "ACCEPTED" : "RETURNED_TO_RESEARCH",
-    reason: complete ? "Decision contains a factual gate and cited evidence." : "The record is still an automated draft with unresolved manual gates.",
+    reason: complete
+      ? "Decision contains prospect-specific completed research or a factual exclusion with cited evidence."
+      : generatedRouteAudit
+        ? "The bulk-generated route audit leaves buyer, contact, offer, funnel, video gap, and pitch hook unresolved; COMPLETE is unsupported."
+        : "The record is still an automated draft with unresolved manual gates.",
   };
 });
 

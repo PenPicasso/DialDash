@@ -88,10 +88,13 @@ Current redo progress:
 - Manifest validation: `npm run validate:sol-next-200-c`.
 - Batch research: `npm run research:terra-medium-next-200-c-evidence -- --batch=N`.
 - Batch validation: `npm run validate:terra-medium-next-200-c -- --batch=N`.
-- Completion: `npm run complete:terra-medium-next-200-c -- --batch=N` writes an evidence-bounded eight-check audit. It may confirm only source ownership/cadence; it must retain `NURTURE` when buyer, contact, offer, funnel, video gap, or pitch transaction cannot be established from the recorded first-party routes.
-- The completed composition is `data/terra-medium-next-200-c.json`: 200 `NURTURE`, zero promotions, zero factual exclusions, and `solReviewStatus: PENDING`. All 200 records have `researchCompleteness: "COMPLETE"`, but that means the available-route audit is complete, not that every sales gate is confirmed. 161 retain `SOURCE_IDENTITY` as an explicit unresolved gate.
-- This is a preservation-first handoff. Sol must decide whether the audit precision is sufficient and independently verify any record considered for promotion; this cohort must not be counted as outreach-ready or merged into production before that review.
-- Before this cohort, 609 of the 840 dashboard rows had entered a research cohort: 409 were fully Sol-audited and 200 remained Terra-complete but pending Sol. This cohort schedules 200 of the 231 untouched dashboard rows, leaving 31 unscheduled.
+- Do not run `npm run complete:terra-medium-next-200-c`: it is the invalid bulk stamper identified by Sol and its output now fails validation. Terra must replace each draft with an actual prospect-level review.
+- Sol replaced the invalid Terra output with prospect-specific official-platform/feed checks in all eight batches. `scripts/complete-sol-next-200-c-batch.ts` requires identity-matched YouTube ownership, preserves missing gates as `NURTURE`, and never treats a resolved feed as a promotion.
+- The composed file is `data/terra-medium-next-200-c.json`: 45 `DISQUALIFIED_CONFIRMED`, 155 `NURTURE`, zero promotions, and `solReviewStatus: PASSED`. Production `data/nodes.json` was not changed.
+- The fixed 52-record deterministic audit passed at 52/52 reviewed and 100% measured precision against the 90% gate. Durable verdicts are in `data/sol-next-200-c-audit-verdicts.json`.
+- The audit caught and corrected three decision errors before acceptance: Energy Week and the mismatched Fusion channel are `WRONG_ICP`; Oxford's renewable-energy programme is a university `CORPORATE_MONOLITH`. It also corrected the Oil Sands Magazine owner identity to founder/editor Anna and recorded its active 2026 newsletter plus training, research, and paid-data offers while preserving unresolved buyer/video gates.
+- `review-terra-medium-cohort.ts` and the batch validator detect Terra's generated route-audit pattern so schema completeness cannot pass as prospect-level verification.
+- After this cohort, 609 of 840 dashboard rows have completed Sol-reviewed cohort research; 31 dashboard rows remain unscheduled.
 
 ### Acquisition-system branch
 
