@@ -5,8 +5,8 @@
   "records": [
     {
       "id": "abdul-hannan",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Energy Market Update: Australia's Q1 2025 Trends at 2025-06-06T02:30:57.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Power Shift: Australia’s Clean Energy Future's latest owned long-form publication at 2025-06-06T02:30:57.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Abdul Hannan",
       "economicBuyer": "Abdul Hannan",
       "ownedLongForm": {
@@ -23,27 +23,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 11.1
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/1047edd1c/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/power-shift-australias-clean-energy-future/id1815652466?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/abdul-hannan00/episodes/Energy-Market-Update-Australias-Q1-2025-Trends-e33sbef",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-06-06T02:30:57.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/1047edd1c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/power-shift-australias-clean-energy-future/id1815652466?uo=4",
+              "https://podcasters.spotify.com/pod/show/abdul-hannan00/episodes/Energy-Market-Update-Australias-Q1-2025-Trends-e33sbef"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/1047edd1c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/power-shift-australias-clean-energy-future/id1815652466?uo=4",
+              "https://podcasters.spotify.com/pod/show/abdul-hannan00/episodes/Energy-Market-Update-Australias-Q1-2025-Trends-e33sbef"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Abdul Hannan is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/1047edd1c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/power-shift-australias-clean-energy-future/id1815652466?uo=4",
+              "https://podcasters.spotify.com/pod/show/abdul-hannan00/episodes/Energy-Market-Update-Australias-Q1-2025-Trends-e33sbef"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "pfl-petroleum-services",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies The PFL Markets Report August 10th 2020 at 2020-10-07T00:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place PFL Petroleum Services's latest owned long-form publication at 2020-10-07T00:00:00.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "PFL Petroleum Services",
       "economicBuyer": "PFL Petroleum Services",
       "ownedLongForm": {
@@ -58,27 +118,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 50.5
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://feeds.soundcloud.com/users/soundcloud:users:866479354/sounds.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/pfl-petroleum-services/id1527571586?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://soundcloud.com/pflpetroleum/the-pfl-markets-report-august-10th-2020",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2020-10-07T00:00:00.000Z.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:866479354/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/pfl-petroleum-services/id1527571586?uo=4",
+              "https://soundcloud.com/pflpetroleum/the-pfl-markets-report-august-10th-2020"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:866479354/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/pfl-petroleum-services/id1527571586?uo=4",
+              "https://soundcloud.com/pflpetroleum/the-pfl-markets-report-august-10th-2020"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "PFL Petroleum Services is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:866479354/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/pfl-petroleum-services/id1527571586?uo=4",
+              "https://soundcloud.com/pflpetroleum/the-pfl-markets-report-august-10th-2020"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "icis-energy-editorial",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Episode 22: What is the impact of the low-carbon hydrogen delegated act? at 2025-07-18T14:02:02.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place ICIS Hydrogen Insights's latest owned long-form publication at 2025-07-18T14:02:02.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "ICIS Energy Editorial",
       "economicBuyer": "ICIS Energy Editorial",
       "ownedLongForm": {
@@ -97,27 +217,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 34
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://icis-hydrogen-insights.podomatic.com/rss2.xml",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/icis-hydrogen-insights/id1688190820?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://www.podomatic.com/podcasts/icis-hydrogen-insights/episodes/2025-07-18T07_02_02-07_00",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-07-18T14:02:02.000Z.",
+            "evidenceUrls": [
+              "https://icis-hydrogen-insights.podomatic.com/rss2.xml",
+              "https://podcasts.apple.com/us/podcast/icis-hydrogen-insights/id1688190820?uo=4",
+              "https://www.podomatic.com/podcasts/icis-hydrogen-insights/episodes/2025-07-18T07_02_02-07_00"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://icis-hydrogen-insights.podomatic.com/rss2.xml",
+              "https://podcasts.apple.com/us/podcast/icis-hydrogen-insights/id1688190820?uo=4",
+              "https://www.podomatic.com/podcasts/icis-hydrogen-insights/episodes/2025-07-18T07_02_02-07_00"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "ICIS Energy Editorial is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://icis-hydrogen-insights.podomatic.com/rss2.xml",
+              "https://podcasts.apple.com/us/podcast/icis-hydrogen-insights/id1688190820?uo=4",
+              "https://www.podomatic.com/podcasts/icis-hydrogen-insights/episodes/2025-07-18T07_02_02-07_00"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "marcia-leonard",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies 035: Geothermal 101 with Baseload Capital - Enhanced Geothermal Systems at 2024-08-01T07:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Elemental Energy: Simplifying Decarbonization's latest owned long-form publication at 2024-08-01T07:00:00.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Marcia Leonard",
       "economicBuyer": "Marcia Leonard",
       "ownedLongForm": {
@@ -136,27 +316,80 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 14
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://rss.buzzsprout.com/2158864.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/elemental-energy-simplifying-decarbonization/id1685234662?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2024-08-01T07:00:00.000Z.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2158864.rss",
+              "https://podcasts.apple.com/us/podcast/elemental-energy-simplifying-decarbonization/id1685234662?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2158864.rss",
+              "https://podcasts.apple.com/us/podcast/elemental-energy-simplifying-decarbonization/id1685234662?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Marcia Leonard is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2158864.rss",
+              "https://podcasts.apple.com/us/podcast/elemental-energy-simplifying-decarbonization/id1685234662?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "les-dcarbons",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Un jardin nourricier dans sa cour at 2025-11-21T18:06:28.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Les Décarbonés's latest owned long-form publication at 2025-11-21T18:06:28.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Les Décarbonés",
       "economicBuyer": "Les Décarbonés",
       "ownedLongForm": {
@@ -175,27 +408,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 6.7
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/103b26494/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/les-d%C3%A9carbon%C3%A9s/id1809252595?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/lesdecarbones/episodes/Un-jardin-nourricier-dans-sa-cour-e3b9ssb",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-11-21T18:06:28.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/103b26494/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/les-d%C3%A9carbon%C3%A9s/id1809252595?uo=4",
+              "https://podcasters.spotify.com/pod/show/lesdecarbones/episodes/Un-jardin-nourricier-dans-sa-cour-e3b9ssb"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/103b26494/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/les-d%C3%A9carbon%C3%A9s/id1809252595?uo=4",
+              "https://podcasters.spotify.com/pod/show/lesdecarbones/episodes/Un-jardin-nourricier-dans-sa-cour-e3b9ssb"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Les Décarbonés is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/103b26494/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/les-d%C3%A9carbon%C3%A9s/id1809252595?uo=4",
+              "https://podcasters.spotify.com/pod/show/lesdecarbones/episodes/Un-jardin-nourricier-dans-sa-cour-e3b9ssb"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "tarja-teppo",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Smart buildings I EP 10 Ken Dooley, Granlund at 2024-06-07T05:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Action Energy Market Global's latest owned long-form publication at 2024-06-07T05:00:00.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Tarja Teppo",
       "economicBuyer": "Tarja Teppo",
       "ownedLongForm": {
@@ -214,27 +507,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 7
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/f36cfcd4/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/action-energy-market-global/id1736070660?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/tarja-teppo/episodes/Smart-buildings-I-EP-10-Ken-Dooley--Granlund-e2kijn4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2024-06-07T05:00:00.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/f36cfcd4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/action-energy-market-global/id1736070660?uo=4",
+              "https://podcasters.spotify.com/pod/show/tarja-teppo/episodes/Smart-buildings-I-EP-10-Ken-Dooley--Granlund-e2kijn4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/f36cfcd4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/action-energy-market-global/id1736070660?uo=4",
+              "https://podcasters.spotify.com/pod/show/tarja-teppo/episodes/Smart-buildings-I-EP-10-Ken-Dooley--Granlund-e2kijn4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Tarja Teppo is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/f36cfcd4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/action-energy-market-global/id1736070660?uo=4",
+              "https://podcasters.spotify.com/pod/show/tarja-teppo/episodes/Smart-buildings-I-EP-10-Ken-Dooley--Granlund-e2kijn4"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "commodity-research-group",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies January 2025 Oil Market Analysis &#8211; Commodity Research Group at 2025-01-22T23:13:28.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Commodity Research Group's latest owned long-form publication at 2025-01-22T23:13:28.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Commodity Research Group",
       "economicBuyer": "Commodity Research Group",
       "ownedLongForm": {
@@ -253,27 +606,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 35
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://ektinteractive.com/feed/podcast/commodity-research-group/?",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/commodity-research-group/id1195929648?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://ektinteractive.com/podcast/commodity-research-group/january-2025-oil-market-analysis-commodity-research-group/",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-01-22T23:13:28.000Z.",
+            "evidenceUrls": [
+              "https://ektinteractive.com/feed/podcast/commodity-research-group/?",
+              "https://podcasts.apple.com/us/podcast/commodity-research-group/id1195929648?uo=4",
+              "https://ektinteractive.com/podcast/commodity-research-group/january-2025-oil-market-analysis-commodity-research-group/"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://ektinteractive.com/feed/podcast/commodity-research-group/?",
+              "https://podcasts.apple.com/us/podcast/commodity-research-group/id1195929648?uo=4",
+              "https://ektinteractive.com/podcast/commodity-research-group/january-2025-oil-market-analysis-commodity-research-group/"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Commodity Research Group is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://ektinteractive.com/feed/podcast/commodity-research-group/?",
+              "https://podcasts.apple.com/us/podcast/commodity-research-group/id1195929648?uo=4",
+              "https://ektinteractive.com/podcast/commodity-research-group/january-2025-oil-market-analysis-commodity-research-group/"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "justin-rao",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Episode 20: Could direct from air carbon capture ever be economical? at 2023-02-25T13:39:10.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Energy Explained's latest owned long-form publication at 2023-02-25T13:39:10.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Justin Rao",
       "economicBuyer": "Justin Rao",
       "ownedLongForm": {
@@ -292,27 +705,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 46.2
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/5047d204/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/energy-explained/id1567684721?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/energy-explained/episodes/Episode-20-Could-direct-from-air-carbon-capture-ever-be-economical-e1vgk4h",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2023-02-25T13:39:10.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/5047d204/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/energy-explained/id1567684721?uo=4",
+              "https://podcasters.spotify.com/pod/show/energy-explained/episodes/Episode-20-Could-direct-from-air-carbon-capture-ever-be-economical-e1vgk4h"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/5047d204/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/energy-explained/id1567684721?uo=4",
+              "https://podcasters.spotify.com/pod/show/energy-explained/episodes/Episode-20-Could-direct-from-air-carbon-capture-ever-be-economical-e1vgk4h"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Justin Rao is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/5047d204/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/energy-explained/id1567684721?uo=4",
+              "https://podcasters.spotify.com/pod/show/energy-explained/episodes/Episode-20-Could-direct-from-air-carbon-capture-ever-be-economical-e1vgk4h"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "alyssa-jensen",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Let’s Talk Nuclear Energy at 2021-02-17T22:36:02.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Let’s Talk Nuclear Energy's latest owned long-form publication at 2021-02-17T22:36:02.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Alyssa Jensen",
       "economicBuyer": "Alyssa Jensen",
       "ownedLongForm": {
@@ -325,27 +798,87 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/4b0bf810/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/lets-talk-nuclear-energy/id1554215800?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/alyssa-jensen/episodes/Lets-Talk-Nuclear-Energy-eq80al",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2021-02-17T22:36:02.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4b0bf810/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/lets-talk-nuclear-energy/id1554215800?uo=4",
+              "https://podcasters.spotify.com/pod/show/alyssa-jensen/episodes/Lets-Talk-Nuclear-Energy-eq80al"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4b0bf810/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/lets-talk-nuclear-energy/id1554215800?uo=4",
+              "https://podcasters.spotify.com/pod/show/alyssa-jensen/episodes/Lets-Talk-Nuclear-Energy-eq80al"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Alyssa Jensen is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4b0bf810/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/lets-talk-nuclear-energy/id1554215800?uo=4",
+              "https://podcasters.spotify.com/pod/show/alyssa-jensen/episodes/Lets-Talk-Nuclear-Energy-eq80al"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "gianluca-caputo",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Nuclear energy at 2021-05-21T13:25:31.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Nuclear energy's latest owned long-form publication at 2021-05-21T13:25:31.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Gianluca Caputo",
       "economicBuyer": "Gianluca Caputo",
       "ownedLongForm": {
@@ -358,27 +891,87 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/5c07ce8c/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/nuclear-energy/id1568780511?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/gianluca-caputo0/episodes/Nuclear-energy-e119ahv",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2021-05-21T13:25:31.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/5c07ce8c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/nuclear-energy/id1568780511?uo=4",
+              "https://podcasters.spotify.com/pod/show/gianluca-caputo0/episodes/Nuclear-energy-e119ahv"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/5c07ce8c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/nuclear-energy/id1568780511?uo=4",
+              "https://podcasters.spotify.com/pod/show/gianluca-caputo0/episodes/Nuclear-energy-e119ahv"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Gianluca Caputo is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/5c07ce8c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/nuclear-energy/id1568780511?uo=4",
+              "https://podcasters.spotify.com/pod/show/gianluca-caputo0/episodes/Nuclear-energy-e119ahv"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "katya",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Nuclear Energy at 2018-11-11T08:29:48.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Nuclear Energy's latest owned long-form publication at 2018-11-11T08:29:48.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Katya",
       "economicBuyer": "Katya",
       "ownedLongForm": {
@@ -391,27 +984,87 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/7b115f0/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/nuclear-energy/id1441926169?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/katya4/episodes/Nuclear-Energy-e2il16",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2018-11-11T08:29:48.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/7b115f0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/nuclear-energy/id1441926169?uo=4",
+              "https://podcasters.spotify.com/pod/show/katya4/episodes/Nuclear-Energy-e2il16"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/7b115f0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/nuclear-energy/id1441926169?uo=4",
+              "https://podcasters.spotify.com/pod/show/katya4/episodes/Nuclear-Energy-e2il16"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Katya is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/7b115f0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/nuclear-energy/id1441926169?uo=4",
+              "https://podcasters.spotify.com/pod/show/katya4/episodes/Nuclear-Energy-e2il16"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "sheela-thomas",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies sources of energy at 2020-06-06T11:59:19.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place nuclear energy's latest owned long-form publication at 2020-06-06T11:59:19.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Sheela Thomas",
       "economicBuyer": "Sheela Thomas",
       "ownedLongForm": {
@@ -424,27 +1077,87 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/2429d1f4/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/nuclear-energy/id1517428404?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/sheela-thomas2/episodes/sources-of-energy-ef2kbl",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2020-06-06T11:59:19.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2429d1f4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/nuclear-energy/id1517428404?uo=4",
+              "https://podcasters.spotify.com/pod/show/sheela-thomas2/episodes/sources-of-energy-ef2kbl"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2429d1f4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/nuclear-energy/id1517428404?uo=4",
+              "https://podcasters.spotify.com/pod/show/sheela-thomas2/episodes/sources-of-energy-ef2kbl"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Sheela Thomas is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2429d1f4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/nuclear-energy/id1517428404?uo=4",
+              "https://podcasters.spotify.com/pod/show/sheela-thomas2/episodes/sources-of-energy-ef2kbl"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "power-utilities-australia",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies FOCUS on Utilities | EP4 | Diversifying the Grid: Trends in Inclusion Across Energy and Beyond at 2024-03-07T22:00:25.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Focus on Utilities's latest owned long-form publication at 2024-03-07T22:00:25.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Power + Utilities Australia",
       "economicBuyer": "Power + Utilities Australia",
       "ownedLongForm": {
@@ -461,27 +1174,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 35
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://media.rss.com/powerutilitiesaustralia/feed.xml",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/focus-on-utilities/id1720879802?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://rss.com/podcasts/powerutilitiesaustralia/1374095",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2024-03-07T22:00:25.000Z.",
+            "evidenceUrls": [
+              "https://media.rss.com/powerutilitiesaustralia/feed.xml",
+              "https://podcasts.apple.com/us/podcast/focus-on-utilities/id1720879802?uo=4",
+              "https://rss.com/podcasts/powerutilitiesaustralia/1374095"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://media.rss.com/powerutilitiesaustralia/feed.xml",
+              "https://podcasts.apple.com/us/podcast/focus-on-utilities/id1720879802?uo=4",
+              "https://rss.com/podcasts/powerutilitiesaustralia/1374095"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Power + Utilities Australia is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://media.rss.com/powerutilitiesaustralia/feed.xml",
+              "https://podcasts.apple.com/us/podcast/focus-on-utilities/id1720879802?uo=4",
+              "https://rss.com/podcasts/powerutilitiesaustralia/1374095"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "oscar-petrie",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Solar energy at 2021-02-04T16:55:06.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Solar energy's latest owned long-form publication at 2021-02-04T16:55:06.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Oscar Petrie",
       "economicBuyer": "Oscar Petrie",
       "ownedLongForm": {
@@ -494,27 +1267,87 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/490819f4/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/solar-energy/id1552449552?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/oscar-petrie/episodes/Solar-energy-ep9jl7",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2021-02-04T16:55:06.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/490819f4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/solar-energy/id1552449552?uo=4",
+              "https://podcasters.spotify.com/pod/show/oscar-petrie/episodes/Solar-energy-ep9jl7"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/490819f4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/solar-energy/id1552449552?uo=4",
+              "https://podcasters.spotify.com/pod/show/oscar-petrie/episodes/Solar-energy-ep9jl7"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Oscar Petrie is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/490819f4/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/solar-energy/id1552449552?uo=4",
+              "https://podcasters.spotify.com/pod/show/oscar-petrie/episodes/Solar-energy-ep9jl7"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "aaminah-shaikh",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Solar energy at 2019-05-23T18:01:28.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Solar Energy's latest owned long-form publication at 2019-05-23T18:01:28.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Aaminah Shaikh",
       "economicBuyer": "Aaminah Shaikh",
       "ownedLongForm": {
@@ -527,27 +1360,87 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/b59ed30/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/solar-energy/id1465410565?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/solar%20energy%20aaminah-shaikh/episodes/Solar-energy-e44bhh",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2019-05-23T18:01:28.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/b59ed30/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/solar-energy/id1465410565?uo=4",
+              "https://podcasters.spotify.com/pod/show/solar%20energy%20aaminah-shaikh/episodes/Solar-energy-e44bhh"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/b59ed30/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/solar-energy/id1465410565?uo=4",
+              "https://podcasters.spotify.com/pod/show/solar%20energy%20aaminah-shaikh/episodes/Solar-energy-e44bhh"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Aaminah Shaikh is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/b59ed30/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/solar-energy/id1465410565?uo=4",
+              "https://podcasters.spotify.com/pod/show/solar%20energy%20aaminah-shaikh/episodes/Solar-energy-e44bhh"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "love-solar-energy-services",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Best Solar Company in Andover CT at 2023-01-12T07:15:48.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Love Solar Energy Services's latest owned long-form publication at 2023-01-12T07:15:00.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Love Solar Energy Services",
       "economicBuyer": "Love Solar Energy Services",
       "ownedLongForm": {
@@ -566,27 +1459,80 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 0
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://feeds.hubhopper.com/ee284446f9362bc0092b925c04a36d6a.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/love-solar-energy-services/id1821819970?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2023-01-12T07:15:00.000Z.",
+            "evidenceUrls": [
+              "https://feeds.hubhopper.com/ee284446f9362bc0092b925c04a36d6a.rss",
+              "https://podcasts.apple.com/us/podcast/love-solar-energy-services/id1821819970?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://feeds.hubhopper.com/ee284446f9362bc0092b925c04a36d6a.rss",
+              "https://podcasts.apple.com/us/podcast/love-solar-energy-services/id1821819970?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Love Solar Energy Services is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://feeds.hubhopper.com/ee284446f9362bc0092b925c04a36d6a.rss",
+              "https://podcasts.apple.com/us/podcast/love-solar-energy-services/id1821819970?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "solar-pro",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Solar Pro Talk: Episode 27 ☀️ Managing Shaded Solar Panels in NYC at 2025-11-10T14:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Solar Pro Talk: Illuminating the Path to Green Energy's latest owned long-form publication at 2025-11-10T14:00:00.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Solar Pro",
       "economicBuyer": "Solar Pro",
       "ownedLongForm": {
@@ -605,27 +1551,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 7
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/107c7c240/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/solar-pro-talk-illuminating-the-path-to-green-energy/id1785045188?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/solar-pro/episodes/Solar-Pro-Talk-Episode-27--Managing-Shaded-Solar-Panels-in-NYC-e3a7nsh",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-11-10T14:00:00.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/107c7c240/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/solar-pro-talk-illuminating-the-path-to-green-energy/id1785045188?uo=4",
+              "https://podcasters.spotify.com/pod/show/solar-pro/episodes/Solar-Pro-Talk-Episode-27--Managing-Shaded-Solar-Panels-in-NYC-e3a7nsh"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/107c7c240/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/solar-pro-talk-illuminating-the-path-to-green-energy/id1785045188?uo=4",
+              "https://podcasters.spotify.com/pod/show/solar-pro/episodes/Solar-Pro-Talk-Episode-27--Managing-Shaded-Solar-Panels-in-NYC-e3a7nsh"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Solar Pro is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/107c7c240/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/solar-pro-talk-illuminating-the-path-to-green-energy/id1785045188?uo=4",
+              "https://podcasters.spotify.com/pod/show/solar-pro/episodes/Solar-Pro-Talk-Episode-27--Managing-Shaded-Solar-Panels-in-NYC-e3a7nsh"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "bill-gallagher",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Listen to Bill Speak with VP of AGC Brian Turmail About His Career and The Challenges America Faces When Training Workers to Meet Industry Demands at 2025-03-27T19:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Solar-Fit Renewable Energy Radio's latest owned long-form publication at 2025-03-27T19:00:00.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Bill Gallagher",
       "economicBuyer": "Bill Gallagher",
       "ownedLongForm": {
@@ -644,27 +1650,80 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 9.1
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://rss.buzzsprout.com/235989.rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/solar-fit-renewable-energy-radio/id1450386655?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-03-27T19:00:00.000Z.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/235989.rss",
+              "https://podcasts.apple.com/us/podcast/solar-fit-renewable-energy-radio/id1450386655?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/235989.rss",
+              "https://podcasts.apple.com/us/podcast/solar-fit-renewable-energy-radio/id1450386655?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Bill Gallagher is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/235989.rss",
+              "https://podcasts.apple.com/us/podcast/solar-fit-renewable-energy-radio/id1450386655?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "various-hosts",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies The Great Reopening: What The End of China’s Zero-Covid Strategy Means For Global Energy And Natural Resources at 2023-03-30T09:57:55.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Horizons's latest owned long-form publication at 2023-03-30T09:57:55.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Various Hosts",
       "economicBuyer": "Various Hosts",
       "ownedLongForm": {
@@ -683,27 +1742,80 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 28.9
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://rss.art19.com/horizons",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/horizons/id1591056249?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2023-03-30T09:57:55.000Z.",
+            "evidenceUrls": [
+              "https://rss.art19.com/horizons",
+              "https://podcasts.apple.com/us/podcast/horizons/id1591056249?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://rss.art19.com/horizons",
+              "https://podcasts.apple.com/us/podcast/horizons/id1591056249?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Various Hosts is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://rss.art19.com/horizons",
+              "https://podcasts.apple.com/us/podcast/horizons/id1591056249?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "smarter-grid-solutions",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Smart Green Energy Transition Podcast Mini Episode: Reforming the US Interconnection Process: FERC Order No. 2023 at 2023-08-29T20:12:17.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Smart Green Energy Transition's latest owned long-form publication at 2023-08-29T20:12:17.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Smarter Grid Solutions",
       "economicBuyer": "Smarter Grid Solutions",
       "ownedLongForm": {
@@ -722,27 +1834,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 0.7
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/705dc51c/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/smart-green-energy-transition/id1591635004?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/smartergridsolutions/episodes/Smart-Green-Energy-Transition-Podcast-Mini-Episode-Reforming-the-US-Interconnection-Process-FERC-Order-No--2023-e28ma8b",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2023-08-29T20:12:17.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/705dc51c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/smart-green-energy-transition/id1591635004?uo=4",
+              "https://podcasters.spotify.com/pod/show/smartergridsolutions/episodes/Smart-Green-Energy-Transition-Podcast-Mini-Episode-Reforming-the-US-Interconnection-Process-FERC-Order-No--2023-e28ma8b"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/705dc51c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/smart-green-energy-transition/id1591635004?uo=4",
+              "https://podcasters.spotify.com/pod/show/smartergridsolutions/episodes/Smart-Green-Energy-Transition-Podcast-Mini-Episode-Reforming-the-US-Interconnection-Process-FERC-Order-No--2023-e28ma8b"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Smarter Grid Solutions is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/705dc51c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/smart-green-energy-transition/id1591635004?uo=4",
+              "https://podcasters.spotify.com/pod/show/smartergridsolutions/episodes/Smart-Green-Energy-Transition-Podcast-Mini-Episode-Reforming-the-US-Interconnection-Process-FERC-Order-No--2023-e28ma8b"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "the-interstate-renewable-energy-council-irec",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Episode 08: In Our Lifetime: Tribal Energy Sovereignty and Equity at 2025-02-19T08:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place The Energy Optimist's latest owned long-form publication at 2025-02-19T08:00:00.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "The Interstate Renewable Energy Council (IREC",
       "economicBuyer": "The Interstate Renewable Energy Council (IREC",
       "ownedLongForm": {
@@ -761,22 +1933,82 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 58.6
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://rss.libsyn.com/shows/461112/destinations/3889539.xml",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/the-energy-optimist/id1678643975?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://60494137-b10d-4a61-bd99-710741d34b04.libsyn.com/episode-08-in-our-lifetime-tribal-energy-sovereignty-and-equity",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:58:11.979Z"
+      "auditedAt": "2026-07-15T02:17:51.869Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:51.869Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-02-19T08:00:00.000Z.",
+            "evidenceUrls": [
+              "https://rss.libsyn.com/shows/461112/destinations/3889539.xml",
+              "https://podcasts.apple.com/us/podcast/the-energy-optimist/id1678643975?uo=4",
+              "https://60494137-b10d-4a61-bd99-710741d34b04.libsyn.com/episode-08-in-our-lifetime-tribal-energy-sovereignty-and-equity"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://rss.libsyn.com/shows/461112/destinations/3889539.xml",
+              "https://podcasts.apple.com/us/podcast/the-energy-optimist/id1678643975?uo=4",
+              "https://60494137-b10d-4a61-bd99-710741d34b04.libsyn.com/episode-08-in-our-lifetime-tribal-energy-sovereignty-and-equity"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The Interstate Renewable Energy Council (IREC is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://rss.libsyn.com/shows/461112/destinations/3889539.xml",
+              "https://podcasts.apple.com/us/podcast/the-energy-optimist/id1678643975?uo=4",
+              "https://60494137-b10d-4a61-bd99-710741d34b04.libsyn.com/episode-08-in-our-lifetime-tribal-energy-sovereignty-and-equity"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "prssishkn-hinta",

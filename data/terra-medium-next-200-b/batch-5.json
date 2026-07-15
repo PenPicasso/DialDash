@@ -1430,8 +1430,8 @@
     },
     {
       "id": "madhu-solartech",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Renewable Energy and Climate Change at 2021-08-19T15:53:12.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Renewable Energy's latest owned long-form publication at 2021-08-19T15:53:12.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Madhu Solartech",
       "economicBuyer": "Madhu Solartech",
       "ownedLongForm": {
@@ -1447,27 +1447,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 2.6
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/67c245cc/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/renewable-energy/id1583083539?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/madhu-solartech/episodes/Renewable-Energy-and-Climate-Change-e1653e5",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:52:28.667Z"
+      "auditedAt": "2026-07-15T02:17:33.726Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:33.726Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2021-08-19T15:53:12.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/67c245cc/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy/id1583083539?uo=4",
+              "https://podcasters.spotify.com/pod/show/madhu-solartech/episodes/Renewable-Energy-and-Climate-Change-e1653e5"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/67c245cc/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy/id1583083539?uo=4",
+              "https://podcasters.spotify.com/pod/show/madhu-solartech/episodes/Renewable-Energy-and-Climate-Change-e1653e5"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Madhu Solartech is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/67c245cc/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy/id1583083539?uo=4",
+              "https://podcasters.spotify.com/pod/show/madhu-solartech/episodes/Renewable-Energy-and-Climate-Change-e1653e5"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "ilea",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Which renewal source is better in the US at 2021-07-21T20:01:47.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Renewable Energy's latest owned long-form publication at 2021-07-21T20:01:47.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Ilea",
       "economicBuyer": "Ilea",
       "ownedLongForm": {
@@ -1480,27 +1540,87 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/64f8f728/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/renewable-energy/id1578902626?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/ilea9/episodes/Which-renewal-source-is-better-in-the-US-e14qekf",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:52:28.667Z"
+      "auditedAt": "2026-07-15T02:17:33.726Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:33.726Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2021-07-21T20:01:47.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/64f8f728/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy/id1578902626?uo=4",
+              "https://podcasters.spotify.com/pod/show/ilea9/episodes/Which-renewal-source-is-better-in-the-US-e14qekf"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/64f8f728/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy/id1578902626?uo=4",
+              "https://podcasters.spotify.com/pod/show/ilea9/episodes/Which-renewal-source-is-better-in-the-US-e14qekf"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Ilea is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/64f8f728/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy/id1578902626?uo=4",
+              "https://podcasters.spotify.com/pod/show/ilea9/episodes/Which-renewal-source-is-better-in-the-US-e14qekf"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "sean",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Microgrids with Renewable Energy  (Trailer) at 2019-12-08T21:28:19.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Microgrids with Renewable Energy's latest owned long-form publication at 2019-12-08T21:28:19.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Sean",
       "economicBuyer": "Sean",
       "ownedLongForm": {
@@ -1513,27 +1633,87 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/11590f54/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/microgrids-with-renewable-energy/id1495066147?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/sean3240/episodes/ep-e9dkh5",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:52:28.667Z"
+      "auditedAt": "2026-07-15T02:17:33.726Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:33.726Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2019-12-08T21:28:19.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/11590f54/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/microgrids-with-renewable-energy/id1495066147?uo=4",
+              "https://podcasters.spotify.com/pod/show/sean3240/episodes/ep-e9dkh5"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/11590f54/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/microgrids-with-renewable-energy/id1495066147?uo=4",
+              "https://podcasters.spotify.com/pod/show/sean3240/episodes/ep-e9dkh5"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Sean is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/11590f54/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/microgrids-with-renewable-energy/id1495066147?uo=4",
+              "https://podcasters.spotify.com/pod/show/sean3240/episodes/ep-e9dkh5"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "soundville-holdings",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Hydrogen storage systems and more at 2025-10-08T20:36:04.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place 100 Sources of Renewable Energy's latest owned long-form publication at 2025-10-08T20:36:04.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Soundville Holdings",
       "economicBuyer": "Soundville Holdings",
       "ownedLongForm": {
@@ -1552,27 +1732,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 0.1
       },
-      "unresolvedGates": [
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://feeds.simplecast.com/UFM5U4DC",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/100-sources-of-renewable-energy/id1754847631?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://100-sources-of-renewable-energy.simplecast.com/episodes/hydrogen-storage-systems-and-more-2QsVLM7R",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:52:28.667Z"
+      "auditedAt": "2026-07-15T02:17:33.726Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:33.726Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2025-10-08T20:36:04.000Z.",
+            "evidenceUrls": [
+              "https://feeds.simplecast.com/UFM5U4DC",
+              "https://podcasts.apple.com/us/podcast/100-sources-of-renewable-energy/id1754847631?uo=4",
+              "https://100-sources-of-renewable-energy.simplecast.com/episodes/hydrogen-storage-systems-and-more-2QsVLM7R"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://feeds.simplecast.com/UFM5U4DC",
+              "https://podcasts.apple.com/us/podcast/100-sources-of-renewable-energy/id1754847631?uo=4",
+              "https://100-sources-of-renewable-energy.simplecast.com/episodes/hydrogen-storage-systems-and-more-2QsVLM7R"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Soundville Holdings is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://feeds.simplecast.com/UFM5U4DC",
+              "https://podcasts.apple.com/us/podcast/100-sources-of-renewable-energy/id1754847631?uo=4",
+              "https://100-sources-of-renewable-energy.simplecast.com/episodes/hydrogen-storage-systems-and-more-2QsVLM7R"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "alireza-zabihi",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Introduction Of Renewable Energy Sources at 2020-11-16T12:27:49.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Renewable Energy Sources's latest owned long-form publication at 2020-11-16T12:27:49.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "alireza zabihi",
       "economicBuyer": "alireza zabihi",
       "ownedLongForm": {
@@ -1585,27 +1825,87 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/3f3dc98c/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/renewable-energy-sources/id1540890092?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/alireza-zabihi/episodes/Introduction-Of-Renewable-Energy-Sources-emhsic",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:52:28.667Z"
+      "auditedAt": "2026-07-15T02:17:33.726Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:33.726Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2020-11-16T12:27:49.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3f3dc98c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-sources/id1540890092?uo=4",
+              "https://podcasters.spotify.com/pod/show/alireza-zabihi/episodes/Introduction-Of-Renewable-Energy-Sources-emhsic"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3f3dc98c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-sources/id1540890092?uo=4",
+              "https://podcasters.spotify.com/pod/show/alireza-zabihi/episodes/Introduction-Of-Renewable-Energy-Sources-emhsic"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "alireza zabihi is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3f3dc98c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-sources/id1540890092?uo=4",
+              "https://podcasters.spotify.com/pod/show/alireza-zabihi/episodes/Introduction-Of-Renewable-Energy-Sources-emhsic"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "indiana-agriculture-coalition-for-renewable-energy",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Sunny Side Up: 1.1mW Solar at MPS Egg Farms by PSG Energy Group at 2020-08-06T19:20:42.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place IN-ACRE: Indiana Agriculture Coalition for Renewable Energy's latest owned long-form publication at 2020-08-06T19:20:42.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Indiana Agriculture Coalition for Renewable Energy",
       "economicBuyer": "Indiana Agriculture Coalition for Renewable Energy",
       "ownedLongForm": {
@@ -1618,27 +1918,87 @@
         ],
         "cadenceStatus": "INACTIVE"
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/2fdfc940/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/in-acre-indiana-agriculture-coalition-for-renewable/id1526853345?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/indiana-agriculture-coalition-for-renewable-energy/episodes/Sunny-Side-Up-1-1mW-Solar-at-MPS-Egg-Farms-by-PSG-Energy-Group-ehpf42",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:52:28.667Z"
+      "auditedAt": "2026-07-15T02:17:33.726Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:33.726Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2020-08-06T19:20:42.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2fdfc940/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/in-acre-indiana-agriculture-coalition-for-renewable/id1526853345?uo=4",
+              "https://podcasters.spotify.com/pod/show/indiana-agriculture-coalition-for-renewable-energy/episodes/Sunny-Side-Up-1-1mW-Solar-at-MPS-Egg-Farms-by-PSG-Energy-Group-ehpf42"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2fdfc940/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/in-acre-indiana-agriculture-coalition-for-renewable/id1526853345?uo=4",
+              "https://podcasters.spotify.com/pod/show/indiana-agriculture-coalition-for-renewable-energy/episodes/Sunny-Side-Up-1-1mW-Solar-at-MPS-Egg-Farms-by-PSG-Energy-Group-ehpf42"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Indiana Agriculture Coalition for Renewable Energy is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2fdfc940/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/in-acre-indiana-agriculture-coalition-for-renewable/id1526853345?uo=4",
+              "https://podcasters.spotify.com/pod/show/indiana-agriculture-coalition-for-renewable-energy/episodes/Sunny-Side-Up-1-1mW-Solar-at-MPS-Egg-Farms-by-PSG-Energy-Group-ehpf42"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "francisco-julian-lopez-rocha",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies Fallas técnicas at 2021-03-18T18:43:08.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place RENEWABLE ENERGY ⚡️'s latest owned long-form publication at 2021-03-18T18:43:08.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Francisco Julian Lopez Rocha",
       "economicBuyer": "Francisco Julian Lopez Rocha",
       "ownedLongForm": {
@@ -1653,27 +2013,87 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 0
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/16e0ed70/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/renewable-energy/id1559417782?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/francisco-julian-lopez-rocha/episodes/Fallas-tcnicas-esu9m0",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:52:28.667Z"
+      "auditedAt": "2026-07-15T02:17:33.726Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:33.726Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2021-03-18T18:43:08.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/16e0ed70/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy/id1559417782?uo=4",
+              "https://podcasters.spotify.com/pod/show/francisco-julian-lopez-rocha/episodes/Fallas-tcnicas-esu9m0"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/16e0ed70/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy/id1559417782?uo=4",
+              "https://podcasters.spotify.com/pod/show/francisco-julian-lopez-rocha/episodes/Fallas-tcnicas-esu9m0"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Francisco Julian Lopez Rocha is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/16e0ed70/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy/id1559417782?uo=4",
+              "https://podcasters.spotify.com/pod/show/francisco-julian-lopez-rocha/episodes/Fallas-tcnicas-esu9m0"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     },
     {
       "id": "keyiasha-tye",
-      "decision": "NURTURE",
-      "decisionReason": "The official feed verifies solar energy at 2020-11-10T04:39:16.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The official feed and Apple listing place Renewable energy's latest owned long-form publication at 2020-11-10T04:39:16.000Z; that is outside the 90-day activity gate.",
       "contentOwner": "Keyiasha Tye",
       "economicBuyer": "Keyiasha Tye",
       "ownedLongForm": {
@@ -1688,22 +2108,82 @@
         "cadenceStatus": "INACTIVE",
         "medianIntervalDays": 13.4
       },
-      "unresolvedGates": [
-        "THREE_PUBLICATION_CADENCE",
-        "FIRST_PARTY_OWNER_HOST_BUYER",
-        "VERIFIED_PERSON_TIED_CONTACT",
-        "VERIFIED_COMMERCIAL_OFFER",
-        "OBSERVED_TOF_MOF_BOF",
-        "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK"
-      ],
+      "unresolvedGates": [],
       "evidence": [
         {
           "url": "https://anchor.fm/s/30d93534/podcast/rss",
-          "proves": "The official owned feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/renewable-energy/id1537851676?uo=4",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
+        },
+        {
+          "url": "https://podcasters.spotify.com/pod/show/keyiasha-tye/episodes/solar-energy-em92c2",
+          "proves": "First-party or official-platform evidence used in the completed Terra recovery review."
         }
       ],
-      "auditedAt": "2026-07-14T23:52:28.667Z"
+      "auditedAt": "2026-07-15T02:17:33.726Z",
+      "factualHardGate": "INACTIVE_OVER_90_DAYS",
+      "researchCompleteness": "COMPLETE",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T02:17:33.726Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed identifies the owned show and its last recorded publication at 2020-11-10T04:39:16.000Z.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/30d93534/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy/id1537851676?uo=4",
+              "https://podcasters.spotify.com/pod/show/keyiasha-tye/episodes/solar-energy-em92c2"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "Official feed dates place the latest publication beyond the required 90-day activity window.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/30d93534/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy/id1537851676?uo=4",
+              "https://podcasters.spotify.com/pod/show/keyiasha-tye/episodes/solar-energy-em92c2"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Keyiasha Tye is the recorded identity, but owner, on-mic host, and spending authority were not all independently verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/30d93534/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/renewable-energy/id1537851676?uo=4",
+              "https://podcasters.spotify.com/pod/show/keyiasha-tye/episodes/solar-energy-em92c2"
+            ]
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Contact research is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Offer research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Funnel research cannot cure the confirmed INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Video inspection is immaterial after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "No Energy Dial pitch should be produced after the factual INACTIVE_OVER_90_DAYS gate.",
+            "evidenceUrls": []
+          }
+        }
+      }
     }
   ]
 }
