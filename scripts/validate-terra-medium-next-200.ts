@@ -77,7 +77,11 @@ for (const record of result.records) {
       if (audit?.status !== "NOT_APPLICABLE" && !audit?.evidenceUrls?.some(url)) errors.push(`${record.id}: ${check} needs a first-party evidence URL or an explicit NOT_APPLICABLE finding.`);
     }
     const auditUrls = new Set(requiredAuditChecks.flatMap((check) => record.researchAudit?.checks?.[check]?.evidenceUrls || []).filter(url));
-    if (auditUrls.size < 2) errors.push(`${record.id}: complete research requires at least two distinct evidence URLs across the audit.`);
+    // A single recorded public route can conclusively establish only that a
+    // source could not be corroborated. Preserve that as NURTURE instead of
+    // forcing a fabricated second URL or a rejection.
+    const sourceIdentityOnly = record.decision === "NURTURE" && record.unresolvedGates?.includes("SOURCE_IDENTITY");
+    if (auditUrls.size < (sourceIdentityOnly ? 1 : 2)) errors.push(`${record.id}: complete research requires ${sourceIdentityOnly ? "at least one" : "at least two distinct"} evidence URL${sourceIdentityOnly ? "" : "s"} across the audit.`);
   }
   if (!record.decisionReason || !record.auditedAt || !record.evidence?.length) errors.push(`${record.id}: missing reason, audit timestamp, or evidence.`);
   const auditedAt = new Date(record.auditedAt || "").getTime();

@@ -5,36 +5,108 @@
   "records": [
     {
       "id": "jay-dauenhauer",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The recorded feed and Apple listing do not strongly bind Energy Cast to Jay Dauenhauer; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
       "contentOwner": "Jay Dauenhauer",
       "economicBuyer": "Jay Dauenhauer",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
         "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
         "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://energy-cast.com/podcasts/podcast_rss.xml",
-          "proves": "The feed resolves, but ownership remains unverified: Feed/listing title does not strongly match the prospect identity; Apple binding alone does not prove prospect ownership."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/energy-cast/id1571027285?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The feed resolves, but its identity does not strongly bind to Jay Dauenhauer: Feed/listing title does not strongly match the prospect identity; Apple binding alone does not prove prospect ownership..",
+            "evidenceUrls": [
+              "https://energy-cast.com/podcasts/podcast_rss.xml",
+              "https://podcasts.apple.com/us/podcast/energy-cast/id1571027285?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is 185 | Transformer Transition | Hitachi Energy on 2025-03-10T15:00:00.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://energy-cast.com/podcasts/podcast_rss.xml",
+              "https://podcasts.apple.com/us/podcast/energy-cast/id1571027285?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Jay Dauenhauer, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://energy-cast.com/podcasts/podcast_rss.xml",
+              "https://podcasts.apple.com/us/podcast/energy-cast/id1571027285?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://energy-cast.com/podcasts/podcast_rss.xml",
+              "https://podcasts.apple.com/us/podcast/energy-cast/id1571027285?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://energy-cast.com/podcasts/podcast_rss.xml",
+              "https://podcasts.apple.com/us/podcast/energy-cast/id1571027285?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://energy-cast.com/podcasts/podcast_rss.xml",
+              "https://podcasts.apple.com/us/podcast/energy-cast/id1571027285?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://energy-cast.com/podcasts/podcast_rss.xml",
+              "https://podcasts.apple.com/us/podcast/energy-cast/id1571027285?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://energy-cast.com/podcasts/podcast_rss.xml",
+              "https://podcasts.apple.com/us/podcast/energy-cast/id1571027285?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "kevin-lee",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Critical Events Management & B2B marketing lessons: a conversation with David Alexander, of Everbridge at 2024-04-24T17:34:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Power Marketing with Kevin Lee's official feed and Apple listing identify Critical Events Management & B2B marketing lessons: a conversation with David Alexander, of Everbridge on 2024-04-24T17:34:00.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Kevin Lee",
       "economicBuyer": "Kevin Lee",
       "ownedLongForm": {
@@ -59,22 +131,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://feeds.megaphone.fm/powermarketing",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/power-marketing-with-kevin-lee/id1688738021?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Power Marketing with Kevin Lee to the recorded account.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/powermarketing",
+              "https://podcasts.apple.com/us/podcast/power-marketing-with-kevin-lee/id1688738021?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is Critical Events Management & B2B marketing lessons: a conversation with David Alexander, of Everbridge on 2024-04-24T17:34:00.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/powermarketing",
+              "https://podcasts.apple.com/us/podcast/power-marketing-with-kevin-lee/id1688738021?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Kevin Lee, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/powermarketing",
+              "https://podcasts.apple.com/us/podcast/power-marketing-with-kevin-lee/id1688738021?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/powermarketing",
+              "https://podcasts.apple.com/us/podcast/power-marketing-with-kevin-lee/id1688738021?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/powermarketing",
+              "https://podcasts.apple.com/us/podcast/power-marketing-with-kevin-lee/id1688738021?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/powermarketing",
+              "https://podcasts.apple.com/us/podcast/power-marketing-with-kevin-lee/id1688738021?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/powermarketing",
+              "https://podcasts.apple.com/us/podcast/power-marketing-with-kevin-lee/id1688738021?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://feeds.megaphone.fm/powermarketing",
+              "https://podcasts.apple.com/us/podcast/power-marketing-with-kevin-lee/id1688738021?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "americans-for-nuclear-energy",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Episode 22: Saving Diablo Canyon at 2022-11-04T20:45:41.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Climate Fix Podcast's official feed and Apple listing identify Episode 22: Saving Diablo Canyon on 2022-11-04T20:45:41.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Americans for Nuclear Energy",
       "economicBuyer": "Americans for Nuclear Energy",
       "ownedLongForm": {
@@ -99,22 +244,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://feeds.soundcloud.com/users/soundcloud:users:476353806/sounds.rss",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/climate-fix-podcast/id1431556502?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Climate Fix Podcast to the recorded account.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:476353806/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/climate-fix-podcast/id1431556502?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is Episode 22: Saving Diablo Canyon on 2022-11-04T20:45:41.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:476353806/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/climate-fix-podcast/id1431556502?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Americans for Nuclear Energy, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:476353806/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/climate-fix-podcast/id1431556502?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:476353806/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/climate-fix-podcast/id1431556502?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:476353806/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/climate-fix-podcast/id1431556502?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:476353806/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/climate-fix-podcast/id1431556502?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:476353806/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/climate-fix-podcast/id1431556502?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:476353806/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/climate-fix-podcast/id1431556502?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "solar-energy-international-sei",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms SEI Podcast Episode: The Importance of Understanding Solar Energy Production Calculators at 2019-05-10T17:13:29.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Solar Energy International(SEI) Podcast Series's official feed and Apple listing identify SEI Podcast Episode: The Importance of Understanding Solar Energy Production Calculators on 2019-05-10T17:13:29.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Solar Energy International (SEI",
       "economicBuyer": "Solar Energy International (SEI",
       "ownedLongForm": {
@@ -136,22 +354,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://feeds.soundcloud.com/users/soundcloud:users:587481552/sounds.rss",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/solar-energy-international-sei-podcast-series/id1456471032?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Solar Energy International(SEI) Podcast Series to the recorded account.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:587481552/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/solar-energy-international-sei-podcast-series/id1456471032?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 3 recent dates; latest is SEI Podcast Episode: The Importance of Understanding Solar Energy Production Calculators on 2019-05-10T17:13:29.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:587481552/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/solar-energy-international-sei-podcast-series/id1456471032?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Solar Energy International (SEI, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:587481552/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/solar-energy-international-sei-podcast-series/id1456471032?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:587481552/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/solar-energy-international-sei-podcast-series/id1456471032?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:587481552/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/solar-energy-international-sei-podcast-series/id1456471032?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:587481552/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/solar-energy-international-sei-podcast-series/id1456471032?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:587481552/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/solar-energy-international-sei-podcast-series/id1456471032?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:587481552/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/solar-energy-international-sei-podcast-series/id1456471032?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "derivative-pod",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Episode 15: Technical Difficulties at 2022-12-04T17:24:41.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The Derivative Podcast Podcast's official feed and Apple listing identify Episode 15: Technical Difficulties on 2022-12-04T17:24:41.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Derivative Pod",
       "economicBuyer": "Derivative Pod",
       "ownedLongForm": {
@@ -176,22 +467,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://anchor.fm/s/4ae05624/podcast/rss",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/the-derivative-podcast-podcast/id1552825311?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind The Derivative Podcast Podcast to the recorded account.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ae05624/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/the-derivative-podcast-podcast/id1552825311?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is Episode 15: Technical Difficulties on 2022-12-04T17:24:41.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ae05624/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/the-derivative-podcast-podcast/id1552825311?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Derivative Pod, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ae05624/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/the-derivative-podcast-podcast/id1552825311?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ae05624/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/the-derivative-podcast-podcast/id1552825311?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ae05624/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/the-derivative-podcast-podcast/id1552825311?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ae05624/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/the-derivative-podcast-podcast/id1552825311?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ae05624/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/the-derivative-podcast-podcast/id1552825311?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ae05624/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/the-derivative-podcast-podcast/id1552825311?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "ntnu-energy-transition-initiative",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms #86 The Grid Gets Honest: Who Gets Access, and What Needs to Change (with Audhild Kvam, Tensio) at 2025-06-27T04:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "NTNU Energy Transition Podcast's official feed and Apple listing identify #86 The Grid Gets Honest: Who Gets Access, and What Needs to Change (with Audhild Kvam, Tensio) on 2025-06-27T04:00:00.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "NTNU Energy Transition Initiative",
       "economicBuyer": "NTNU Energy Transition Initiative",
       "ownedLongForm": {
@@ -216,22 +580,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://anchor.fm/s/580ae2b0/podcast/rss",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/ntnu-energy-transition-podcast/id1564538733?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind NTNU Energy Transition Podcast to the recorded account.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/580ae2b0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ntnu-energy-transition-podcast/id1564538733?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is #86 The Grid Gets Honest: Who Gets Access, and What Needs to Change (with Audhild Kvam, Tensio) on 2025-06-27T04:00:00.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/580ae2b0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ntnu-energy-transition-podcast/id1564538733?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify NTNU Energy Transition Initiative, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/580ae2b0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ntnu-energy-transition-podcast/id1564538733?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/580ae2b0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ntnu-energy-transition-podcast/id1564538733?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/580ae2b0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ntnu-energy-transition-podcast/id1564538733?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/580ae2b0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ntnu-energy-transition-podcast/id1564538733?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/580ae2b0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ntnu-energy-transition-podcast/id1564538733?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/580ae2b0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ntnu-energy-transition-podcast/id1564538733?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "the-global-energy-transition-podcast",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms S03E02 Carbon capture and storage | The Global Energy Transition Podcast at 2023-12-15T10:40:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The Global Energy Transition Podcast's official feed and Apple listing identify S03E02 Carbon capture and storage | The Global Energy Transition Podcast on 2023-12-15T10:40:00.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "The Global Energy Transition Podcast",
       "economicBuyer": "The Global Energy Transition Podcast",
       "ownedLongForm": {
@@ -256,49 +693,194 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://global-energy-transition.podigee.io/feed/mp3",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/the-global-energy-transition-podcast/id1589071265?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind The Global Energy Transition Podcast to the recorded account.",
+            "evidenceUrls": [
+              "https://global-energy-transition.podigee.io/feed/mp3",
+              "https://podcasts.apple.com/us/podcast/the-global-energy-transition-podcast/id1589071265?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is S03E02 Carbon capture and storage | The Global Energy Transition Podcast on 2023-12-15T10:40:00.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://global-energy-transition.podigee.io/feed/mp3",
+              "https://podcasts.apple.com/us/podcast/the-global-energy-transition-podcast/id1589071265?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify The Global Energy Transition Podcast, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://global-energy-transition.podigee.io/feed/mp3",
+              "https://podcasts.apple.com/us/podcast/the-global-energy-transition-podcast/id1589071265?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://global-energy-transition.podigee.io/feed/mp3",
+              "https://podcasts.apple.com/us/podcast/the-global-energy-transition-podcast/id1589071265?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://global-energy-transition.podigee.io/feed/mp3",
+              "https://podcasts.apple.com/us/podcast/the-global-energy-transition-podcast/id1589071265?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://global-energy-transition.podigee.io/feed/mp3",
+              "https://podcasts.apple.com/us/podcast/the-global-energy-transition-podcast/id1589071265?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://global-energy-transition.podigee.io/feed/mp3",
+              "https://podcasts.apple.com/us/podcast/the-global-energy-transition-podcast/id1589071265?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://global-energy-transition.podigee.io/feed/mp3",
+              "https://podcasts.apple.com/us/podcast/the-global-energy-transition-podcast/id1589071265?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "algerian-energy-transition-dialogue",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The recorded feed and Apple listing do not strongly bind Play Energy Podcast to Algerian Energy Transition Dialogue; ownership, buyer, offer, contact, funnel, and video-gap gates remain unresolved, so this account remains NURTURE.",
       "contentOwner": "Algerian Energy Transition Dialogue",
       "economicBuyer": "Algerian Energy Transition Dialogue",
       "unresolvedGates": [
         "SOURCE_IDENTITY",
         "OWNED_CURRENT_LONG_FORM",
-        "THREE_PUBLICATION_CADENCE",
         "FIRST_PARTY_OWNER_HOST_BUYER",
         "VERIFIED_PERSON_TIED_CONTACT",
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://anchor.fm/s/4ce16c88/podcast/rss",
-          "proves": "The feed resolves, but ownership remains unverified: Feed/listing title does not strongly match the prospect identity; Apple binding alone does not prove prospect ownership."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/play-energy-podcast/id1553847578?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The feed resolves, but its identity does not strongly bind to Algerian Energy Transition Dialogue: Feed/listing title does not strongly match the prospect identity; Apple binding alone does not prove prospect ownership..",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ce16c88/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/play-energy-podcast/id1553847578?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is Play Energy Podcast Season 02 Episode 02: Concentrating Solar Power Systems (CSP) on 2023-02-22T10:20:01.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ce16c88/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/play-energy-podcast/id1553847578?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Algerian Energy Transition Dialogue, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ce16c88/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/play-energy-podcast/id1553847578?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ce16c88/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/play-energy-podcast/id1553847578?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ce16c88/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/play-energy-podcast/id1553847578?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ce16c88/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/play-energy-podcast/id1553847578?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ce16c88/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/play-energy-podcast/id1553847578?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/4ce16c88/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/play-energy-podcast/id1553847578?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "lynette-purves",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms REP002 - Pumped Storage Hydro Schemes at 2015-01-01T21:42:31.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Renewable Energy Podcast's official feed and Apple listing identify REP002 - Pumped Storage Hydro Schemes on 2015-01-01T21:42:31.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Lynette Purves",
       "economicBuyer": "Lynette Purves",
       "ownedLongForm": {
@@ -325,16 +907,90 @@
       "evidence": [
         {
           "url": "https://feed.podbean.com/renewableenergypodcast/feed.xml",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/renewable-energy-podcast/id933741735?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Renewable Energy Podcast to the recorded account.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/renewableenergypodcast/feed.xml",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-podcast/id933741735?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/renewableenergypodcast/feed.xml",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-podcast/id933741735?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Lynette Purves, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/renewableenergypodcast/feed.xml",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-podcast/id933741735?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/renewableenergypodcast/feed.xml",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-podcast/id933741735?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/renewableenergypodcast/feed.xml",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-podcast/id933741735?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/renewableenergypodcast/feed.xml",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-podcast/id933741735?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/renewableenergypodcast/feed.xml",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-podcast/id933741735?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/renewableenergypodcast/feed.xml",
+              "https://podcasts.apple.com/us/podcast/renewable-energy-podcast/id933741735?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "environmental-solutions-one-planet-podcast-creative-process-original-series",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Carl Safina - Ecologist - Founding President of Safina Center - NYTimes Bestselling Author at 2022-09-15T13:07:24.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Environment, Climate Change, Renewable Energy, Regeneration, Sustainability, Nature, Politics, Circular Economy - One Planet Podcast 2021-2022's official feed and Apple listing identify Carl Safina - Ecologist - Founding President of Safina Center - NYTimes Bestselling Author on 2022-09-15T13:07:24.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Environmental Solutions - One Planet Podcast - Creative Process Original Series",
       "economicBuyer": "Environmental Solutions - One Planet Podcast - Creative Process Original Series",
       "ownedLongForm": {
@@ -359,22 +1015,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://thecreativeprocess.squarespace.com/one-planet-podcast-2021-2022?format=rss",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/environment-climate-change-renewable-energy-regeneration/id1779482531?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Environment, Climate Change, Renewable Energy, Regeneration, Sustainability, Nature, Politics, Circular Economy - One Planet Podcast 2021-2022 to the recorded account.",
+            "evidenceUrls": [
+              "https://thecreativeprocess.squarespace.com/one-planet-podcast-2021-2022?format=rss",
+              "https://podcasts.apple.com/us/podcast/environment-climate-change-renewable-energy-regeneration/id1779482531?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is Carl Safina - Ecologist - Founding President of Safina Center - NYTimes Bestselling Author on 2022-09-15T13:07:24.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://thecreativeprocess.squarespace.com/one-planet-podcast-2021-2022?format=rss",
+              "https://podcasts.apple.com/us/podcast/environment-climate-change-renewable-energy-regeneration/id1779482531?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Environmental Solutions - One Planet Podcast - Creative Process Original Series, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://thecreativeprocess.squarespace.com/one-planet-podcast-2021-2022?format=rss",
+              "https://podcasts.apple.com/us/podcast/environment-climate-change-renewable-energy-regeneration/id1779482531?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://thecreativeprocess.squarespace.com/one-planet-podcast-2021-2022?format=rss",
+              "https://podcasts.apple.com/us/podcast/environment-climate-change-renewable-energy-regeneration/id1779482531?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://thecreativeprocess.squarespace.com/one-planet-podcast-2021-2022?format=rss",
+              "https://podcasts.apple.com/us/podcast/environment-climate-change-renewable-energy-regeneration/id1779482531?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://thecreativeprocess.squarespace.com/one-planet-podcast-2021-2022?format=rss",
+              "https://podcasts.apple.com/us/podcast/environment-climate-change-renewable-energy-regeneration/id1779482531?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://thecreativeprocess.squarespace.com/one-planet-podcast-2021-2022?format=rss",
+              "https://podcasts.apple.com/us/podcast/environment-climate-change-renewable-energy-regeneration/id1779482531?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://thecreativeprocess.squarespace.com/one-planet-podcast-2021-2022?format=rss",
+              "https://podcasts.apple.com/us/podcast/environment-climate-change-renewable-energy-regeneration/id1779482531?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "fairewinds-energy-education",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms A Lost Opportunity: $8.2 Trillion on New Nukes cuts CO2 only 9%? at 2016-11-17T14:42:43.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Fairewinds Energy Education Podcast - Nuclear Power Info's official feed and Apple listing identify A Lost Opportunity: $8.2 Trillion on New Nukes cuts CO2 only 9%? on 2016-11-17T14:42:43.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Fairewinds Energy Education",
       "economicBuyer": "Fairewinds Energy Education",
       "ownedLongForm": {
@@ -399,22 +1128,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://fairewinds.squarespace.com/podcast?format=rss",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/fairewinds-energy-education-podcast-nuclear-power-info/id1077815578?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Fairewinds Energy Education Podcast - Nuclear Power Info to the recorded account.",
+            "evidenceUrls": [
+              "https://fairewinds.squarespace.com/podcast?format=rss",
+              "https://podcasts.apple.com/us/podcast/fairewinds-energy-education-podcast-nuclear-power-info/id1077815578?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is A Lost Opportunity: $8.2 Trillion on New Nukes cuts CO2 only 9%? on 2016-11-17T14:42:43.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://fairewinds.squarespace.com/podcast?format=rss",
+              "https://podcasts.apple.com/us/podcast/fairewinds-energy-education-podcast-nuclear-power-info/id1077815578?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Fairewinds Energy Education, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://fairewinds.squarespace.com/podcast?format=rss",
+              "https://podcasts.apple.com/us/podcast/fairewinds-energy-education-podcast-nuclear-power-info/id1077815578?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://fairewinds.squarespace.com/podcast?format=rss",
+              "https://podcasts.apple.com/us/podcast/fairewinds-energy-education-podcast-nuclear-power-info/id1077815578?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://fairewinds.squarespace.com/podcast?format=rss",
+              "https://podcasts.apple.com/us/podcast/fairewinds-energy-education-podcast-nuclear-power-info/id1077815578?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://fairewinds.squarespace.com/podcast?format=rss",
+              "https://podcasts.apple.com/us/podcast/fairewinds-energy-education-podcast-nuclear-power-info/id1077815578?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://fairewinds.squarespace.com/podcast?format=rss",
+              "https://podcasts.apple.com/us/podcast/fairewinds-energy-education-podcast-nuclear-power-info/id1077815578?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://fairewinds.squarespace.com/podcast?format=rss",
+              "https://podcasts.apple.com/us/podcast/fairewinds-energy-education-podcast-nuclear-power-info/id1077815578?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "nxtgen-energy",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms UK Attitudes and Myths About Solar Panel Installation at 2025-03-21T13:01:28.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Solar Life Podcast with NxtGen Energy's official feed and Apple listing identify UK Attitudes and Myths About Solar Panel Installation on 2025-03-21T13:01:28.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "NxtGen Energy",
       "economicBuyer": "NxtGen Energy",
       "ownedLongForm": {
@@ -439,22 +1241,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://feed.podbean.com/nxtgenenergy/feed.xml",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/solar-life-podcast-with-nxtgen-energy/id1772229196?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Solar Life Podcast with NxtGen Energy to the recorded account.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/nxtgenenergy/feed.xml",
+              "https://podcasts.apple.com/us/podcast/solar-life-podcast-with-nxtgen-energy/id1772229196?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is UK Attitudes and Myths About Solar Panel Installation on 2025-03-21T13:01:28.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/nxtgenenergy/feed.xml",
+              "https://podcasts.apple.com/us/podcast/solar-life-podcast-with-nxtgen-energy/id1772229196?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify NxtGen Energy, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/nxtgenenergy/feed.xml",
+              "https://podcasts.apple.com/us/podcast/solar-life-podcast-with-nxtgen-energy/id1772229196?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/nxtgenenergy/feed.xml",
+              "https://podcasts.apple.com/us/podcast/solar-life-podcast-with-nxtgen-energy/id1772229196?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/nxtgenenergy/feed.xml",
+              "https://podcasts.apple.com/us/podcast/solar-life-podcast-with-nxtgen-energy/id1772229196?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/nxtgenenergy/feed.xml",
+              "https://podcasts.apple.com/us/podcast/solar-life-podcast-with-nxtgen-energy/id1772229196?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/nxtgenenergy/feed.xml",
+              "https://podcasts.apple.com/us/podcast/solar-life-podcast-with-nxtgen-energy/id1772229196?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://feed.podbean.com/nxtgenenergy/feed.xml",
+              "https://podcasts.apple.com/us/podcast/solar-life-podcast-with-nxtgen-energy/id1772229196?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "solar-warrior",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Insentif PLTS Atap NAIK, Makin Banyak Pengguna PLTS Atap, Energi Kotor BERKURANG at 2022-01-07T10:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Energy Bar Podcast by Solar Warrior Indonesia's official feed and Apple listing identify Insentif PLTS Atap NAIK, Makin Banyak Pengguna PLTS Atap, Energi Kotor BERKURANG on 2022-01-07T10:00:00.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Solar Warrior",
       "economicBuyer": "Solar Warrior",
       "ownedLongForm": {
@@ -478,22 +1353,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://anchor.fm/s/3aba72c0/podcast/rss",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/energy-bar-podcast-by-solar-warrior-indonesia/id1539124542?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Energy Bar Podcast by Solar Warrior Indonesia to the recorded account.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3aba72c0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/energy-bar-podcast-by-solar-warrior-indonesia/id1539124542?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 5 recent dates; latest is Insentif PLTS Atap NAIK, Makin Banyak Pengguna PLTS Atap, Energi Kotor BERKURANG on 2022-01-07T10:00:00.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3aba72c0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/energy-bar-podcast-by-solar-warrior-indonesia/id1539124542?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Solar Warrior, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3aba72c0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/energy-bar-podcast-by-solar-warrior-indonesia/id1539124542?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3aba72c0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/energy-bar-podcast-by-solar-warrior-indonesia/id1539124542?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3aba72c0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/energy-bar-podcast-by-solar-warrior-indonesia/id1539124542?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3aba72c0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/energy-bar-podcast-by-solar-warrior-indonesia/id1539124542?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3aba72c0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/energy-bar-podcast-by-solar-warrior-indonesia/id1539124542?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/3aba72c0/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/energy-bar-podcast-by-solar-warrior-indonesia/id1539124542?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "ensolar",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Die Herausforderungen und Chancen im Energiemarkt: Ein umfassender Blick auf Trends und Entwicklungen at 2023-12-19T08:28:56.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Energy (R)Evolution - Ein Solar Podcast's official feed and Apple listing identify Die Herausforderungen und Chancen im Energiemarkt: Ein umfassender Blick auf Trends und Entwicklungen on 2023-12-19T08:28:56.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "EN.SOLAR",
       "economicBuyer": "EN.SOLAR",
       "ownedLongForm": {
@@ -520,16 +1468,90 @@
       "evidence": [
         {
           "url": "https://en.solar/feed/podcast/default-podcast/",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/energy-r-evolution-ein-solar-podcast/id1718075806?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Energy (R)Evolution - Ein Solar Podcast to the recorded account.",
+            "evidenceUrls": [
+              "https://en.solar/feed/podcast/default-podcast/",
+              "https://podcasts.apple.com/us/podcast/energy-r-evolution-ein-solar-podcast/id1718075806?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "evidenceUrls": [
+              "https://en.solar/feed/podcast/default-podcast/",
+              "https://podcasts.apple.com/us/podcast/energy-r-evolution-ein-solar-podcast/id1718075806?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify EN.SOLAR, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://en.solar/feed/podcast/default-podcast/",
+              "https://podcasts.apple.com/us/podcast/energy-r-evolution-ein-solar-podcast/id1718075806?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://en.solar/feed/podcast/default-podcast/",
+              "https://podcasts.apple.com/us/podcast/energy-r-evolution-ein-solar-podcast/id1718075806?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://en.solar/feed/podcast/default-podcast/",
+              "https://podcasts.apple.com/us/podcast/energy-r-evolution-ein-solar-podcast/id1718075806?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://en.solar/feed/podcast/default-podcast/",
+              "https://podcasts.apple.com/us/podcast/energy-r-evolution-ein-solar-podcast/id1718075806?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://en.solar/feed/podcast/default-podcast/",
+              "https://podcasts.apple.com/us/podcast/energy-r-evolution-ein-solar-podcast/id1718075806?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://en.solar/feed/podcast/default-podcast/",
+              "https://podcasts.apple.com/us/podcast/energy-r-evolution-ein-solar-podcast/id1718075806?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "podcastai",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Offshore Wind, Solar Initiatives, and Green Ammonia Projects Worldwide at 2025-01-20T23:30:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The Clean Energy Weekly Brief's official feed and Apple listing identify Offshore Wind, Solar Initiatives, and Green Ammonia Projects Worldwide on 2025-01-20T23:30:00.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "PodcastAI",
       "economicBuyer": "PodcastAI",
       "ownedLongForm": {
@@ -554,22 +1576,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://feeds.podcastai.com/AcN1AaXLobNy3so06UzNzX.xml",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/the-clean-energy-weekly-brief/id1781112965?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind The Clean Energy Weekly Brief to the recorded account.",
+            "evidenceUrls": [
+              "https://feeds.podcastai.com/AcN1AaXLobNy3so06UzNzX.xml",
+              "https://podcasts.apple.com/us/podcast/the-clean-energy-weekly-brief/id1781112965?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is Offshore Wind, Solar Initiatives, and Green Ammonia Projects Worldwide on 2025-01-20T23:30:00.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://feeds.podcastai.com/AcN1AaXLobNy3so06UzNzX.xml",
+              "https://podcasts.apple.com/us/podcast/the-clean-energy-weekly-brief/id1781112965?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify PodcastAI, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.podcastai.com/AcN1AaXLobNy3so06UzNzX.xml",
+              "https://podcasts.apple.com/us/podcast/the-clean-energy-weekly-brief/id1781112965?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.podcastai.com/AcN1AaXLobNy3so06UzNzX.xml",
+              "https://podcasts.apple.com/us/podcast/the-clean-energy-weekly-brief/id1781112965?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://feeds.podcastai.com/AcN1AaXLobNy3so06UzNzX.xml",
+              "https://podcasts.apple.com/us/podcast/the-clean-energy-weekly-brief/id1781112965?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://feeds.podcastai.com/AcN1AaXLobNy3so06UzNzX.xml",
+              "https://podcasts.apple.com/us/podcast/the-clean-energy-weekly-brief/id1781112965?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://feeds.podcastai.com/AcN1AaXLobNy3so06UzNzX.xml",
+              "https://podcasts.apple.com/us/podcast/the-clean-energy-weekly-brief/id1781112965?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://feeds.podcastai.com/AcN1AaXLobNy3so06UzNzX.xml",
+              "https://podcasts.apple.com/us/podcast/the-clean-energy-weekly-brief/id1781112965?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "clean-energy-4-africa",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Building The Grand Ethiopian Renaissance Dam (GERD): The Optimum Solution or means of Dilution? at 2022-03-30T18:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Clean Energy 4 Africa Podcast's official feed and Apple listing identify Building The Grand Ethiopian Renaissance Dam (GERD): The Optimum Solution or means of Dilution? on 2022-03-30T18:00:00.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Clean Energy 4 Africa",
       "economicBuyer": "Clean Energy 4 Africa",
       "ownedLongForm": {
@@ -594,22 +1689,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://anchor.fm/s/6c43da98/podcast/rss",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/clean-energy-4-africa-podcast/id1593369397?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Clean Energy 4 Africa Podcast to the recorded account.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/6c43da98/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/clean-energy-4-africa-podcast/id1593369397?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is Building The Grand Ethiopian Renaissance Dam (GERD): The Optimum Solution or means of Dilution? on 2022-03-30T18:00:00.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/6c43da98/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/clean-energy-4-africa-podcast/id1593369397?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Clean Energy 4 Africa, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/6c43da98/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/clean-energy-4-africa-podcast/id1593369397?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/6c43da98/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/clean-energy-4-africa-podcast/id1593369397?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/6c43da98/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/clean-energy-4-africa-podcast/id1593369397?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/6c43da98/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/clean-energy-4-africa-podcast/id1593369397?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/6c43da98/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/clean-energy-4-africa-podcast/id1593369397?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/6c43da98/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/clean-energy-4-africa-podcast/id1593369397?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "nathan-pierson",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Sustainable and clean energy podcast at 2021-05-20T17:44:20.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Sustainable and clean energy podcast's official feed and Apple listing identify Sustainable and clean energy podcast on 2021-05-20T17:44:20.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Nathan Pierson",
       "economicBuyer": "Nathan Pierson",
       "ownedLongForm": {
@@ -634,16 +1802,90 @@
       "evidence": [
         {
           "url": "https://anchor.fm/s/5c0585c8/podcast/rss",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/sustainable-and-clean-energy-podcast/id1568649858?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Sustainable and clean energy podcast to the recorded account.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/5c0585c8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/sustainable-and-clean-energy-podcast/id1568649858?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/5c0585c8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/sustainable-and-clean-energy-podcast/id1568649858?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Nathan Pierson, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/5c0585c8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/sustainable-and-clean-energy-podcast/id1568649858?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/5c0585c8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/sustainable-and-clean-energy-podcast/id1568649858?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/5c0585c8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/sustainable-and-clean-energy-podcast/id1568649858?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/5c0585c8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/sustainable-and-clean-energy-podcast/id1568649858?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/5c0585c8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/sustainable-and-clean-energy-podcast/id1568649858?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/5c0585c8/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/sustainable-and-clean-energy-podcast/id1568649858?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "mm-isac",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Trailer at 2023-03-12T23:35:03.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Cyber Resilience in Mining and Metals: A Podcast by MM-ISAC's official feed and Apple listing identify Trailer on 2023-03-12T23:35:03.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "MM-ISAC",
       "economicBuyer": "MM-ISAC",
       "ownedLongForm": {
@@ -668,16 +1910,90 @@
       "evidence": [
         {
           "url": "https://anchor.fm/s/dbf2c854/podcast/rss",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/cyber-resilience-in-mining-and-metals-a-podcast-by-mm-isac/id1676863256?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Cyber Resilience in Mining and Metals: A Podcast by MM-ISAC to the recorded account.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/dbf2c854/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/cyber-resilience-in-mining-and-metals-a-podcast-by-mm-isac/id1676863256?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "The recorded feed exposes fewer than three reliable publication dates, so historical cadence is unresolved.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/dbf2c854/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/cyber-resilience-in-mining-and-metals-a-podcast-by-mm-isac/id1676863256?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify MM-ISAC, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/dbf2c854/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/cyber-resilience-in-mining-and-metals-a-podcast-by-mm-isac/id1676863256?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/dbf2c854/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/cyber-resilience-in-mining-and-metals-a-podcast-by-mm-isac/id1676863256?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/dbf2c854/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/cyber-resilience-in-mining-and-metals-a-podcast-by-mm-isac/id1676863256?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/dbf2c854/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/cyber-resilience-in-mining-and-metals-a-podcast-by-mm-isac/id1676863256?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/dbf2c854/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/cyber-resilience-in-mining-and-metals-a-podcast-by-mm-isac/id1676863256?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/dbf2c854/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/cyber-resilience-in-mining-and-metals-a-podcast-by-mm-isac/id1676863256?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "energy-policy-institute-at-the-university-of-chicago",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Republicans & Climate Change: A Conversation with Carlos Curbelo at 2022-08-18T14:53:24.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Off The Charts Energy Podcast's official feed and Apple listing identify Republicans & Climate Change: A Conversation with Carlos Curbelo on 2022-08-18T14:53:24.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Energy Policy Institute at the University of Chicago",
       "economicBuyer": "Energy Policy Institute at the University of Chicago",
       "ownedLongForm": {
@@ -699,22 +2015,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://feeds.soundcloud.com/users/soundcloud:users:190751018/sounds.rss",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/off-the-charts-energy-podcast/id1107598182?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Off The Charts Energy Podcast to the recorded account.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:190751018/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/off-the-charts-energy-podcast/id1107598182?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 3 recent dates; latest is Republicans & Climate Change: A Conversation with Carlos Curbelo on 2022-08-18T14:53:24.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:190751018/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/off-the-charts-energy-podcast/id1107598182?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Energy Policy Institute at the University of Chicago, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:190751018/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/off-the-charts-energy-podcast/id1107598182?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:190751018/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/off-the-charts-energy-podcast/id1107598182?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:190751018/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/off-the-charts-energy-podcast/id1107598182?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:190751018/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/off-the-charts-energy-podcast/id1107598182?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:190751018/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/off-the-charts-energy-podcast/id1107598182?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://feeds.soundcloud.com/users/soundcloud:users:190751018/sounds.rss",
+              "https://podcasts.apple.com/us/podcast/off-the-charts-energy-podcast/id1107598182?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "energy-perspectives-podcast",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms The Journey to a Sustainable and Developed Guyana at 2023-02-15T16:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Energy Perspectives Podcast's official feed and Apple listing identify The Journey to a Sustainable and Developed Guyana on 2023-02-15T16:00:00.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Energy Perspectives Podcast",
       "economicBuyer": "Energy Perspectives Podcast",
       "ownedLongForm": {
@@ -736,22 +2125,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://rss.buzzsprout.com/2095172.rss",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/energy-perspectives-podcast/id1668452276?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Energy Perspectives Podcast to the recorded account.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2095172.rss",
+              "https://podcasts.apple.com/us/podcast/energy-perspectives-podcast/id1668452276?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 3 recent dates; latest is The Journey to a Sustainable and Developed Guyana on 2023-02-15T16:00:00.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2095172.rss",
+              "https://podcasts.apple.com/us/podcast/energy-perspectives-podcast/id1668452276?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Energy Perspectives Podcast, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2095172.rss",
+              "https://podcasts.apple.com/us/podcast/energy-perspectives-podcast/id1668452276?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2095172.rss",
+              "https://podcasts.apple.com/us/podcast/energy-perspectives-podcast/id1668452276?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2095172.rss",
+              "https://podcasts.apple.com/us/podcast/energy-perspectives-podcast/id1668452276?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2095172.rss",
+              "https://podcasts.apple.com/us/podcast/energy-perspectives-podcast/id1668452276?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2095172.rss",
+              "https://podcasts.apple.com/us/podcast/energy-perspectives-podcast/id1668452276?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2095172.rss",
+              "https://podcasts.apple.com/us/podcast/energy-perspectives-podcast/id1668452276?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "ethiopian-energy",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Ethiopian Energy podcast at 2022-01-31T05:05:03.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Ethiopian Energy Podcast's official feed and Apple listing identify Ethiopian Energy podcast on 2022-01-31T05:05:03.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Ethiopian Energy",
       "economicBuyer": "Ethiopian Energy",
       "ownedLongForm": {
@@ -773,22 +2235,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://anchor.fm/s/2264ee1c/podcast/rss",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/ethiopian-energy-podcast/id1515809394?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Ethiopian Energy Podcast to the recorded account.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2264ee1c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ethiopian-energy-podcast/id1515809394?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 3 recent dates; latest is Ethiopian Energy podcast on 2022-01-31T05:05:03.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2264ee1c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ethiopian-energy-podcast/id1515809394?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Ethiopian Energy, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2264ee1c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ethiopian-energy-podcast/id1515809394?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2264ee1c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ethiopian-energy-podcast/id1515809394?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2264ee1c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ethiopian-energy-podcast/id1515809394?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2264ee1c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ethiopian-energy-podcast/id1515809394?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2264ee1c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ethiopian-energy-podcast/id1515809394?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://anchor.fm/s/2264ee1c/podcast/rss",
+              "https://podcasts.apple.com/us/podcast/ethiopian-energy-podcast/id1515809394?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "gary-covert",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Bitcoin and the Future of Money: A Practical Guide for Real Asset Investors with Eric Runge at 2025-11-21T00:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The Oil Gas and Real Estate Podcast's official feed and Apple listing identify Bitcoin and the Future of Money: A Practical Guide for Real Asset Investors with Eric Runge on 2025-11-21T00:00:00.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Gary Covert",
       "economicBuyer": "Gary Covert",
       "ownedLongForm": {
@@ -813,22 +2348,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://rss.buzzsprout.com/2463503.rss",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/the-oil-gas-and-real-estate-podcast/id1803957640?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind The Oil Gas and Real Estate Podcast to the recorded account.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2463503.rss",
+              "https://podcasts.apple.com/us/podcast/the-oil-gas-and-real-estate-podcast/id1803957640?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is Bitcoin and the Future of Money: A Practical Guide for Real Asset Investors with Eric Runge on 2025-11-21T00:00:00.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2463503.rss",
+              "https://podcasts.apple.com/us/podcast/the-oil-gas-and-real-estate-podcast/id1803957640?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Gary Covert, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2463503.rss",
+              "https://podcasts.apple.com/us/podcast/the-oil-gas-and-real-estate-podcast/id1803957640?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2463503.rss",
+              "https://podcasts.apple.com/us/podcast/the-oil-gas-and-real-estate-podcast/id1803957640?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2463503.rss",
+              "https://podcasts.apple.com/us/podcast/the-oil-gas-and-real-estate-podcast/id1803957640?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2463503.rss",
+              "https://podcasts.apple.com/us/podcast/the-oil-gas-and-real-estate-podcast/id1803957640?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2463503.rss",
+              "https://podcasts.apple.com/us/podcast/the-oil-gas-and-real-estate-podcast/id1803957640?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://rss.buzzsprout.com/2463503.rss",
+              "https://podcasts.apple.com/us/podcast/the-oil-gas-and-real-estate-podcast/id1803957640?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "david-weston",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Understanding higher education’s role in decarbonisation at 2025-07-18T04:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Energy Enablers: The FORESIGHT podcast with those making a difference in the energy transition's official feed and Apple listing identify Understanding higher education’s role in decarbonisation on 2025-07-18T04:00:00.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "David Weston",
       "economicBuyer": "David Weston",
       "ownedLongForm": {
@@ -853,22 +2461,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://feeds.acast.com/public/shows/65aa875743029e0016541030",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/energy-enablers-the-foresight-podcast-with-those/id1667260514?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Energy Enablers: The FORESIGHT podcast with those making a difference in the energy transition to the recorded account.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa875743029e0016541030",
+              "https://podcasts.apple.com/us/podcast/energy-enablers-the-foresight-podcast-with-those/id1667260514?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is Understanding higher education’s role in decarbonisation on 2025-07-18T04:00:00.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa875743029e0016541030",
+              "https://podcasts.apple.com/us/podcast/energy-enablers-the-foresight-podcast-with-those/id1667260514?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify David Weston, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa875743029e0016541030",
+              "https://podcasts.apple.com/us/podcast/energy-enablers-the-foresight-podcast-with-those/id1667260514?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa875743029e0016541030",
+              "https://podcasts.apple.com/us/podcast/energy-enablers-the-foresight-podcast-with-those/id1667260514?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa875743029e0016541030",
+              "https://podcasts.apple.com/us/podcast/energy-enablers-the-foresight-podcast-with-those/id1667260514?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa875743029e0016541030",
+              "https://podcasts.apple.com/us/podcast/energy-enablers-the-foresight-podcast-with-those/id1667260514?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa875743029e0016541030",
+              "https://podcasts.apple.com/us/podcast/energy-enablers-the-foresight-podcast-with-those/id1667260514?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa875743029e0016541030",
+              "https://podcasts.apple.com/us/podcast/energy-enablers-the-foresight-podcast-with-those/id1667260514?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "watt-matters",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms A competitive energy transition at 2025-05-26T04:00:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "Watt Matters: The FORESIGHT energy transition podcast's official feed and Apple listing identify A competitive energy transition on 2025-05-26T04:00:00.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Watt Matters",
       "economicBuyer": "Watt Matters",
       "ownedLongForm": {
@@ -893,22 +2574,95 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://feeds.acast.com/public/shows/65aa870b43029e00165401f4",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/watt-matters-the-foresight-energy-transition-podcast/id1598096221?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind Watt Matters: The FORESIGHT energy transition podcast to the recorded account.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa870b43029e00165401f4",
+              "https://podcasts.apple.com/us/podcast/watt-matters-the-foresight-energy-transition-podcast/id1598096221?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is A competitive energy transition on 2025-05-26T04:00:00.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa870b43029e00165401f4",
+              "https://podcasts.apple.com/us/podcast/watt-matters-the-foresight-energy-transition-podcast/id1598096221?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Watt Matters, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa870b43029e00165401f4",
+              "https://podcasts.apple.com/us/podcast/watt-matters-the-foresight-energy-transition-podcast/id1598096221?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa870b43029e00165401f4",
+              "https://podcasts.apple.com/us/podcast/watt-matters-the-foresight-energy-transition-podcast/id1598096221?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa870b43029e00165401f4",
+              "https://podcasts.apple.com/us/podcast/watt-matters-the-foresight-energy-transition-podcast/id1598096221?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa870b43029e00165401f4",
+              "https://podcasts.apple.com/us/podcast/watt-matters-the-foresight-energy-transition-podcast/id1598096221?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa870b43029e00165401f4",
+              "https://podcasts.apple.com/us/podcast/watt-matters-the-foresight-energy-transition-podcast/id1598096221?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://feeds.acast.com/public/shows/65aa870b43029e00165401f4",
+              "https://podcasts.apple.com/us/podcast/watt-matters-the-foresight-energy-transition-podcast/id1598096221?uo=4"
+            ]
+          }
+        }
+      }
     },
     {
       "id": "erika-vieira",
-      "researchCompleteness": "DRAFT",
+      "researchCompleteness": "COMPLETE",
       "decision": "NURTURE",
-      "decisionReason": "The ownership-verified feed confirms Huge life update + is this podcast over? at 2024-04-10T16:58:00.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "decisionReason": "The YouTube Power Hour Podcast's official feed and Apple listing identify Huge life update + is this podcast over? on 2024-04-10T16:58:00.000Z; the recorded first-party routes do not yet establish a person-tied commercial buyer, outreach path, offer, observed funnel, or inspected video gap, so this account remains NURTURE.",
       "contentOwner": "Erika Vieira",
       "economicBuyer": "Erika Vieira",
       "ownedLongForm": {
@@ -933,16 +2687,89 @@
         "VERIFIED_COMMERCIAL_OFFER",
         "OBSERVED_TOF_MOF_BOF",
         "THREE_SAMPLE_VIDEO_GAP",
-        "TRANSACTION_SPECIFIC_PITCH_HOOK",
-        "CROSS_CHANNEL_TRUE_LATEST"
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
       ],
       "evidence": [
         {
           "url": "https://app.kajabi.com/podcasts/2147998220/feed",
-          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
+        },
+        {
+          "url": "https://podcasts.apple.com/us/podcast/the-youtube-power-hour-podcast/id941015904?uo=4",
+          "proves": "Official feed, Apple podcast listing, or recorded first-party route reviewed for this Terra audit."
         }
       ],
-      "auditedAt": "2026-07-15T03:10:03.236Z"
+      "auditedAt": "2026-07-15T14:12:46.737Z",
+      "researchAudit": {
+        "reviewedBy": "Terra Medium",
+        "reviewedAt": "2026-07-15T14:12:46.737Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official feed and Apple listing bind The YouTube Power Hour Podcast to the recorded account.",
+            "evidenceUrls": [
+              "https://app.kajabi.com/podcasts/2147998220/feed",
+              "https://podcasts.apple.com/us/podcast/the-youtube-power-hour-podcast/id941015904?uo=4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned feed records 6 recent dates; latest is Huge life update + is this podcast over? on 2024-04-10T16:58:00.000Z and computed cadence is INACTIVE.",
+            "evidenceUrls": [
+              "https://app.kajabi.com/podcasts/2147998220/feed",
+              "https://podcasts.apple.com/us/podcast/the-youtube-power-hour-podcast/id941015904?uo=4"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The recorded sources identify Erika Vieira, but do not independently separate content owner, on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://app.kajabi.com/podcasts/2147998220/feed",
+              "https://podcasts.apple.com/us/podcast/the-youtube-power-hour-podcast/id941015904?uo=4"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The recorded official feed and Apple listing do not provide a public contact route tied to the economic buyer.",
+            "evidenceUrls": [
+              "https://app.kajabi.com/podcasts/2147998220/feed",
+              "https://podcasts.apple.com/us/podcast/the-youtube-power-hour-podcast/id941015904?uo=4"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "No official offer, pricing, sponsorship, booking, service, membership, or support page was verified from the recorded first-party routes.",
+            "evidenceUrls": [
+              "https://app.kajabi.com/podcasts/2147998220/feed",
+              "https://podcasts.apple.com/us/podcast/the-youtube-power-hour-podcast/id941015904?uo=4"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Without a verified commercial offer and buyer, observed TOF, MOF, and BOF cannot be tied to one real transaction.",
+            "evidenceUrls": [
+              "https://app.kajabi.com/podcasts/2147998220/feed",
+              "https://podcasts.apple.com/us/podcast/the-youtube-power-hour-podcast/id941015904?uo=4"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "No three-sample owned video set was verified from the recorded routes; absence of a stored channel is not treated as proof of no video distribution.",
+            "evidenceUrls": [
+              "https://app.kajabi.com/podcasts/2147998220/feed",
+              "https://podcasts.apple.com/us/podcast/the-youtube-power-hour-podcast/id941015904?uo=4"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "A prospect-specific clipping hook would be speculative until the buyer, commercial offer, and inspectable distribution gap are verified.",
+            "evidenceUrls": [
+              "https://app.kajabi.com/podcasts/2147998220/feed",
+              "https://podcasts.apple.com/us/podcast/the-youtube-power-hour-podcast/id941015904?uo=4"
+            ]
+          }
+        }
+      }
     }
   ]
 }

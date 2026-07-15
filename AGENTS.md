@@ -88,9 +88,9 @@ Current redo progress:
 - Manifest validation: `npm run validate:sol-next-200-c`.
 - Batch research: `npm run research:terra-medium-next-200-c-evidence -- --batch=N`.
 - Batch validation: `npm run validate:terra-medium-next-200-c -- --batch=N`.
-- Every completed row requires all eight prospect-specific `researchAudit` checks; deterministic drafts cannot be relabeled complete in bulk.
-- This cohort is not started or completed yet. Terra must leave the composed result pending Sol review.
-- On 2026-07-15, official RSS/Apple evidence packs and conservative drafts were generated for all eight batches. All 200 records remain `researchCompleteness: "DRAFT"` and `NURTURE`; this is evidence staging only, not completed Terra research. Do not compose, promote, or count this cohort until each record has a prospect-specific eight-check audit.
+- Completion: `npm run complete:terra-medium-next-200-c -- --batch=N` writes an evidence-bounded eight-check audit. It may confirm only source ownership/cadence; it must retain `NURTURE` when buyer, contact, offer, funnel, video gap, or pitch transaction cannot be established from the recorded first-party routes.
+- The completed composition is `data/terra-medium-next-200-c.json`: 200 `NURTURE`, zero promotions, zero factual exclusions, and `solReviewStatus: PENDING`. All 200 records have `researchCompleteness: "COMPLETE"`, but that means the available-route audit is complete, not that every sales gate is confirmed. 161 retain `SOURCE_IDENTITY` as an explicit unresolved gate.
+- This is a preservation-first handoff. Sol must decide whether the audit precision is sufficient and independently verify any record considered for promotion; this cohort must not be counted as outreach-ready or merged into production before that review.
 - Before this cohort, 609 of the 840 dashboard rows had entered a research cohort: 409 were fully Sol-audited and 200 remained Terra-complete but pending Sol. This cohort schedules 200 of the 231 untouched dashboard rows, leaving 31 unscheduled.
 
 ### Acquisition-system branch

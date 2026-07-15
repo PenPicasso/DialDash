@@ -44,6 +44,7 @@
     "compose:terra-medium-next-200-b": "npx tsx scripts/compose-terra-medium-next-200.ts --cohort=next-200-b",
     "research:terra-medium-next-200-c-evidence": "npx tsx scripts/research-terra-medium-evidence.ts --cohort=next-200-c",
     "draft:terra-medium-next-200-c": "npx tsx scripts/draft-terra-medium-batch.ts --cohort=next-200-c",
+    "complete:terra-medium-next-200-c": "npx tsx scripts/complete-terra-next-200-c.ts",
     "validate:terra-medium-next-200-c": "npx tsx scripts/validate-terra-medium-next-200.ts --cohort=next-200-c",
     "compose:terra-medium-next-200-c": "npx tsx scripts/compose-terra-medium-next-200.ts --cohort=next-200-c",
     "review:sol-next-200-c": "npx tsx scripts/review-terra-medium-cohort.ts --cohort=next-200-c",
