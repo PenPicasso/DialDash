@@ -1,0 +1,657 @@
+{
+  "methodology": "terra-medium-recovery-v1",
+  "cohort": "next-200-c",
+  "batch": 4,
+  "records": [
+    {
+      "id": "anand-singh",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Anand Singh",
+      "economicBuyer": "Anand Singh",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://anandsingh.substack.com/",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "kevin-book",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Kevin Book",
+      "economicBuyer": "Kevin Book",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.clearviewenergy.com/",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "shailesh-kumar",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Shailesh Kumar",
+      "economicBuyer": "Shailesh Kumar",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://shaileshkumar.substack.com/",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "gaurav-sharma",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Gaurav Sharma",
+      "economicBuyer": "Gaurav Sharma",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://gauravsharma.substack.com/",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "saul-griffith",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Saul Griffith",
+      "economicBuyer": "Saul Griffith",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.rewiringamerica.org/",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "anthony-watts",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Anthony Watts",
+      "economicBuyer": "Anthony Watts",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://wattsupwiththat.com/",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "capra-energy-group",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Capra Energy Group",
+      "economicBuyer": "Capra Energy Group",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/capraenergy",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "stanislav-ermilov",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Stanislav Ermilov",
+      "economicBuyer": "Stanislav Ermilov",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@VivekKhemka-pct23?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "states-lee",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "States Lee",
+      "economicBuyer": "States Lee",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/DOEelectricity",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "the-institute-for-oil-gas-sector-iogs",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "The Institute for Oil & Gas Sector (IOGS)",
+      "economicBuyer": "The Institute for Oil & Gas Sector (IOGS)",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@IOGSInternational?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "power-grid-pros",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Power Grid Pros",
+      "economicBuyer": "Power Grid Pros",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@PowerGridPros?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "nuclear-power",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Nuclear Power",
+      "economicBuyer": "Nuclear Power",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@NuclearpowerNetforeverybody?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "emirates-nuclear-energy-company",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Emirates Nuclear Energy Company",
+      "economicBuyer": "Emirates Nuclear Energy Company",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@EMIRATESNUCLEAR?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "fundamentals-of-nuclear-power-generation-iitg",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Fundamentals of Nuclear Power Generation - IITG",
+      "economicBuyer": "Fundamentals of Nuclear Power Generation - IITG",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@fundamentalsofnuclearpower2497?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "greensfornuclearenergy",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "GreensForNuclear.Energy",
+      "economicBuyer": "GreensForNuclear.Energy",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@greensfornuclear.energy?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "rosatom-global",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Rosatom Global",
+      "economicBuyer": "Rosatom Global",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@RosatomGlobal?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "nucleartech",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "NuclearTech",
+      "economicBuyer": "NuclearTech",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@Nuclear-Tech_?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "nuclear-matters",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Nuclear Matters",
+      "economicBuyer": "Nuclear Matters",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@Nuclearmatters?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "market-commodity",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Market Commodity",
+      "economicBuyer": "Market Commodity",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@marketcommoditys?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "commodity-trading",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Commodity Trading",
+      "economicBuyer": "Commodity Trading",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@commoditytrading?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "cawolo-power",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Cawolo-power",
+      "economicBuyer": "Cawolo-power",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@Cawolo-power?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "mustang-energy-uranium-mining",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Mustang Energy - Uranium Mining",
+      "economicBuyer": "Mustang Energy - Uranium Mining",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@MustangEnergyCorp?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "generation-uranium",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Generation Uranium",
+      "economicBuyer": "Generation Uranium",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@Generation.Uranium?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "st-power-services",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "ST Power Services",
+      "economicBuyer": "ST Power Services",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@stpowerservices8956?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    },
+    {
+      "id": "nigeria-energy",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Nigeria Energy",
+      "economicBuyer": "Nigeria Energy",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@nigeriaenergy1052?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:19.136Z"
+    }
+  ]
+}

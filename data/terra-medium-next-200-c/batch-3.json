@@ -1,0 +1,671 @@
+{
+  "methodology": "terra-medium-recovery-v1",
+  "cohort": "next-200-c",
+  "batch": 3,
+  "records": [
+    {
+      "id": "toby-nangle",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Toby Nangle",
+      "economicBuyer": "Toby Nangle",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://thelongview.substack.com/",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "rob-gramlich",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Rob Gramlich",
+      "economicBuyer": "Rob Gramlich",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://gridstrategiesllc.com/",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "tracy-alloway",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Tracy Alloway & Joe Weisenthal",
+      "economicBuyer": "Tracy Alloway & Joe Weisenthal",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/TracyAlloway",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "institute-for-energy-economics-and-finance",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Institute for Energy, Economics, and Finance",
+      "economicBuyer": "Institute for Energy, Economics, and Finance",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@instituteIEEF?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "renewable-energy-institute",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Renewable Energy Institute",
+      "economicBuyer": "Renewable Energy Institute",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@RenewableEnergyInstitute?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "technology-training",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Technology Training",
+      "economicBuyer": "Technology Training",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@renewableenergytechnologyt7785?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "oil-sands-magazine",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Mark Summers",
+      "economicBuyer": "Mark Summers",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/OilSandsMag",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "jarand-rystad",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Jarand Rystad",
+      "economicBuyer": "Jarand Rystad",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/RystadEnergy",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "jennifer-zajac",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "The ownership-verified feed confirms Hiatus Announcement at 2026-01-17T19:55:29.000Z with inactive cadence. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Jennifer Zajac",
+      "economicBuyer": "Jennifer Zajac",
+      "ownedLongForm": {
+        "type": "PODCAST",
+        "latestTitle": "Hiatus Announcement",
+        "latestPublishedAt": "2026-01-17T19:55:29.000Z",
+        "evidenceUrl": "https://api.riverside.fm/hosting/hMdqtkxr.rss",
+        "recentPublicationDates": [
+          "2026-01-17T19:55:29.000Z",
+          "2025-11-15T17:54:11.000Z",
+          "2025-10-29T12:00:00.000Z",
+          "2025-10-22T12:45:00.000Z",
+          "2025-10-11T20:37:51.000Z",
+          "2025-10-06T11:00:00.000Z"
+        ],
+        "cadenceStatus": "INACTIVE",
+        "medianIntervalDays": 8.8
+      },
+      "unresolvedGates": [
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK",
+        "CROSS_CHANNEL_TRUE_LATEST"
+      ],
+      "evidence": [
+        {
+          "url": "https://api.riverside.fm/hosting/hMdqtkxr.rss",
+          "proves": "The ownership-verified feed supplies the channel identity, current episode titles, and publication dates."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "the-commodities-trade-institute",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "The Commodities Trade Institute",
+      "economicBuyer": "The Commodities Trade Institute",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@commoditiesinstitute?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "etrm-world",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "ETRM World",
+      "economicBuyer": "ETRM World",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/olivedelta",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "financial-time-capsule",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Financial Time Capsule",
+      "economicBuyer": "Financial Time Capsule",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://x.com/jeffwalkenhorst",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "energy-week",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Energy Analysts",
+      "economicBuyer": "Energy Analysts",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@energyweek?cbrd=1&ucbcb=1",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "michael-e-webber",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Michael E. Webber",
+      "economicBuyer": "Michael E. Webber",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.michaelwebber.com/",
+          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "rusty-braziel",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Rusty Braziel",
+      "economicBuyer": "Rusty Braziel",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://rbnenergy.com/",
+          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "nick-butler",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Nick Butler",
+      "economicBuyer": "Nick Butler",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://nickbutler.substack.com/",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "gregor-macdonald",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Gregor Macdonald",
+      "economicBuyer": "Gregor Macdonald",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://substack.com/@gregormacdonald",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "mark-mills",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Mark Mills",
+      "economicBuyer": "Mark Mills",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://markmills.substack.com/",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "ryan-sitton",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Ryan Sitton",
+      "economicBuyer": "Ryan Sitton",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://rsitton.substack.com/",
+          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "joe-m-dewoody",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Joe M. DeWoody",
+      "economicBuyer": "Joe M. DeWoody",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://joemdewoody.substack.com/",
+          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "david-blackmon",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "David Blackmon",
+      "economicBuyer": "David Blackmon",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://davidblackmon.substack.com/",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "bjorn-lomborg",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Bjorn Lomborg",
+      "economicBuyer": "Bjorn Lomborg",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://copenhagenconsensus.com/",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "robert-rapier",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Robert Rapier",
+      "economicBuyer": "Robert Rapier",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://industrialenergybenchmarking.com/",
+          "proves": "The source URL resolves and supplies the currently available public prospect evidence."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "tracy-shuchart",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Tracy Shuchart",
+      "economicBuyer": "Tracy Shuchart",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://tracysuchart.substack.com/",
+          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    },
+    {
+      "id": "kirk-van-kooten",
+      "researchCompleteness": "DRAFT",
+      "decision": "NURTURE",
+      "decisionReason": "No ownership-verified feed was resolved from the recorded URLs in this deterministic pass. The remaining owner, buyer, contact, transaction, funnel, and video-quality gates require manual first-party review, so this record cannot be promoted or factually rejected.",
+      "contentOwner": "Kirk Van Kooten",
+      "economicBuyer": "Kirk Van Kooten",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNED_CURRENT_LONG_FORM",
+        "THREE_PUBLICATION_CADENCE",
+        "FIRST_PARTY_OWNER_HOST_BUYER",
+        "VERIFIED_PERSON_TIED_CONTACT",
+        "VERIFIED_COMMERCIAL_OFFER",
+        "OBSERVED_TOF_MOF_BOF",
+        "THREE_SAMPLE_VIDEO_GAP",
+        "TRANSACTION_SPECIFIC_PITCH_HOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://globalenergyinsights.substack.com/",
+          "proves": "The source URL is the recorded public route, but its contents still require manual verification."
+        }
+      ],
+      "auditedAt": "2026-07-15T03:16:18.978Z"
+    }
+  ]
+}

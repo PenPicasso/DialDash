@@ -90,6 +90,7 @@ Current redo progress:
 - Batch validation: `npm run validate:terra-medium-next-200-c -- --batch=N`.
 - Every completed row requires all eight prospect-specific `researchAudit` checks; deterministic drafts cannot be relabeled complete in bulk.
 - This cohort is not started or completed yet. Terra must leave the composed result pending Sol review.
+- On 2026-07-15, official RSS/Apple evidence packs and conservative drafts were generated for all eight batches. All 200 records remain `researchCompleteness: "DRAFT"` and `NURTURE`; this is evidence staging only, not completed Terra research. Do not compose, promote, or count this cohort until each record has a prospect-specific eight-check audit.
 - Before this cohort, 609 of the 840 dashboard rows had entered a research cohort: 409 were fully Sol-audited and 200 remained Terra-complete but pending Sol. This cohort schedules 200 of the 231 untouched dashboard rows, leaving 31 unscheduled.
 
 ### Acquisition-system branch
