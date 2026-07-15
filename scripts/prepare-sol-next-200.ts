@@ -113,6 +113,7 @@ const manifest = {
     priorReviewIdsExcluded: complete.size,
     priorCohortIdsExcluded: prior.size,
     source: useRecoveryPool ? "production-fit-rank-recovery" : "sol-review-queue",
+    excludedCohorts,
   },
   cohortHash: createHash("sha256").update(records.map((record) => record.id).join("\n")).digest("hex"),
   records,

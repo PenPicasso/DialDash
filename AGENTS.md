@@ -79,6 +79,19 @@ Current redo progress:
 - `scripts/apply-terra-redo-findings.ts` applies the durable ledger back to the original `data/terra-medium-next-200-b/batch-N.json` files.
 - No Firecrawl, production writes, deployment, or main-branch changes are permitted during this redo.
 
+### Third fixed Terra cohort
+
+`next-200-c` is staged from the highest-ranked dashboard rows excluded from all prior reviewed and Terra cohorts. Its fixed manifest is under ignored `storage/sol-next-200-c/` with eight batches of 25, fit ranks 503 through 809, and no overlap with earlier cohorts.
+
+- Authoritative mission: `docs/TERRA_NEXT_200_C.md`.
+- Preparation: `npm run research:sol-next-200-c`.
+- Manifest validation: `npm run validate:sol-next-200-c`.
+- Batch research: `npm run research:terra-medium-next-200-c-evidence -- --batch=N`.
+- Batch validation: `npm run validate:terra-medium-next-200-c -- --batch=N`.
+- Every completed row requires all eight prospect-specific `researchAudit` checks; deterministic drafts cannot be relabeled complete in bulk.
+- This cohort is not started or completed yet. Terra must leave the composed result pending Sol review.
+- Before this cohort, 609 of the 840 dashboard rows had entered a research cohort: 409 were fully Sol-audited and 200 remained Terra-complete but pending Sol. This cohort schedules 200 of the 231 untouched dashboard rows, leaving 31 unscheduled.
+
 ### Acquisition-system branch
 
 Branch: `codex/dialdash-acquisition-system`. This is preview-only until the user approves it; do not merge to `main` or promote production.
