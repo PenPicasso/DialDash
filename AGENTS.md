@@ -191,12 +191,15 @@ Terra Medium batch progress:
 
 ### Final Terra 31
 
-- After the three 200-record recovery cohorts passed Sol review, 809 of 840 dashboard prospects had completed Sol-reviewed cohort research.
-- The remaining 31 are fixed under ignored `storage/sol-final-31/`, fit ranks 810-840, in batches of 25 and 6 with an 8-record audit sample.
+- All 840 dashboard prospects have now completed Sol-reviewed cohort research; none remain in the unresolved review queue.
+- The final 31 covered fit ranks 810-840 in batches of 25 and 6. Sol completed both batches on 2026-07-15 with 23 `NURTURE`, 8 first-party-evidenced factual exclusions, and zero promotions.
+- The 8-record deterministic audit sample received 8 explicit verdicts, passed at 100% measured precision against the 90% gate, and returned zero records to research. Durable verdicts are in `data/sol-final-31-audit-verdicts.json`.
+- The composed artifact is `data/terra-medium-final-31.json` with `solReviewStatus: PASSED`; run `npm run review:sol-final-31` to reproduce the fail-closed review gate.
+- Stored 404 routes for Alex Epstein and Matt Ferrell were corrected to their current official channels. Both were excluded for existing strong video capability, not for inactivity. Missing evidence remained `NURTURE` for all other accounts unless a factual hard gate was established.
 - Authoritative mission: `docs/TERRA_FINAL_31.md`.
 - Prepare/validate: `npm run research:sol-final-31` and `npm run validate:sol-final-31`.
 - Terra evidence/draft/validation: `npm run research:terra-final-31-evidence -- --batch=N`, `npm run draft:terra-final-31 -- --batch=N`, and `npm run validate:terra-final-31 -- --batch=N`.
-- Missing evidence remains `NURTURE`; no Firecrawl, production write, main change, push, or deploy is allowed. Compose with `npm run compose:terra-final-31` and leave it `PENDING` for Sol.
+- Missing evidence remains `NURTURE`; no Firecrawl or production write was used. Production and `data/nodes.json` remain unchanged pending an explicit promotion workflow.
 
 ### Second Terra recovery cohort
 

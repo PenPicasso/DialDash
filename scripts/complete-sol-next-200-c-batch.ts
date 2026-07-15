@@ -14,7 +14,7 @@ type EvidenceRecord = {
 const root = join(__dirname, "..");
 const batch = Number(process.argv.find((arg) => arg.startsWith("--batch="))?.split("=")[1] || 0);
 const cohort = process.argv.find((arg) => arg.startsWith("--cohort="))?.split("=")[1] || "next-200-c";
-if (!new Set(["next-200", "next-200-c"]).has(cohort)) throw new Error("Supported cohorts are next-200 and next-200-c.");
+if (!new Set(["next-200", "next-200-c", "final-31"]).has(cohort)) throw new Error("Supported cohorts are next-200, next-200-c, and final-31.");
 if (!Number.isInteger(batch) || batch < 1 || batch > 8) throw new Error("Pass --batch=1 through --batch=8.");
 
 const hardGates: Record<string, { gate: string; reason: string }> = {
@@ -65,10 +65,30 @@ const hardGates: Record<string, { gate: string; reason: string }> = {
   "logistics-updates": { gate: "WRONG_ICP", reason: "The resolved Fathom channel covers logistics and e-commerce rather than the energy industry." },
   "electricity-market-in-india": { gate: "WRONG_ICP", reason: "The resolved channel's current publication is generic peace/relax content rather than electricity-market education." },
   "your-utilities-hub": { gate: "WRONG_ICP", reason: "The resolved channel currently publishes household composting content rather than an energy-industry long-form property." },
+  "mining2me": { gate: "WRONG_ICP", reason: "The channel's current owned output is Calgary real-estate and rental content rather than mining or energy education." },
+  "arab-trading": { gate: "WRONG_ICP", reason: "The current owned output is broad personal-finance and money-transfer content rather than an energy-specialist property." },
+  "nigerias-energy-transition-plan": { gate: "CORPORATE_MONOLITH", reason: "Nigeria's Energy Transition Plan is a government-owned institutional communications program, not a creator-controlled media buyer." },
+  "informa-markets": { gate: "CORPORATE_MONOLITH", reason: "Informa Markets is a large international events and media company with an institutional marketing operation." },
+  "erasmus-ka2": { gate: "CORPORATE_MONOLITH", reason: "The Erasmus KA2 account is an institutionally governed education-project channel rather than a creator-controlled commercial buyer." },
+  "crown-lng": { gate: "CORPORATE_MONOLITH", reason: "Crown LNG's channel is company-owned project and investor communications rather than a creator-controlled long-form property." },
+  "alex-epstein": { gate: "EXISTING_STRONG_VIDEO_CAPABILITY", reason: "Alex Epstein's current official Improve The Planet channel already publishes professionally produced, edited energy interviews and explanatory videos." },
+  "matt-ferrell": { gate: "EXISTING_STRONG_VIDEO_CAPABILITY", reason: "Matt Ferrell's Undecided channel is an established, professionally produced video-first energy property with a dedicated production business." },
 };
 
 const additionalOfficialRoutes: Record<string, string> = {
   "dan-yurman": "https://neutronbytes.com/2014/08/31/welcome-post/",
+  "alex-epstein": "https://industrialprogress.com/",
+  "matt-ferrell": "https://undecided.tech/about-me/",
+};
+
+const correctedYoutubeRoutes: Record<string, string> = {
+  "alex-epstein": "https://www.youtube.com/@ImproveThePlanet",
+  "matt-ferrell": "https://www.youtube.com/undecidedmf",
+};
+
+const correctedRouteTitles: Record<string, string> = {
+  "alex-epstein": "Improve The Planet with Alex Epstein",
+  "matt-ferrell": "Undecided with Matt Ferrell",
 };
 
 const decode = (value: string) => value.replace(/&amp;/g, "&").replace(/&#39;/g, "'").replace(/&quot;/g, "\"");
@@ -115,16 +135,16 @@ async function main() {
     const research = evidenceById.get(record.id);
     if (!research) throw new Error(`Missing deterministic evidence for ${record.id}.`);
     const probe = research.sourceProbes?.find((item) => item.ok) || research.sourceProbes?.[0];
-    const sourceUrl = research.ownedFeed?.url || research.appleDiscovery?.appleUrl || probe?.url;
+    const sourceUrl = correctedYoutubeRoutes[record.id] || research.ownedFeed?.url || research.appleDiscovery?.appleUrl || probe?.url;
     if (!sourceUrl) throw new Error(`${record.id} has no first-party or official-platform route.`);
-    const youtubeUrl = probe?.url?.includes("youtube.com/") ? probe.url : undefined;
+    const youtubeUrl = correctedYoutubeRoutes[record.id] || (probe?.url?.includes("youtube.com/") ? probe.url : undefined);
     const videos = youtubeUrl ? await getLatestVideos(undefined, youtubeUrl, probe?.title) : [];
     const feedItems = research.ownedFeed?.items || [];
     const publications = videos.length
       ? videos.map((video) => ({ title: video.title, publishedAt: video.publishDate, url: `https://www.youtube.com/watch?v=${video.id}` }))
       : feedItems.filter((item) => item.publishedAt).slice(0, 5);
     const latest = publications[0];
-    const sourceTitle = decode(research.ownedFeed?.channelTitle || probe?.title?.replace(/ - YouTube$/, "") || String(record.id));
+    const sourceTitle = decode(correctedRouteTitles[record.id] || research.ownedFeed?.channelTitle || probe?.title?.replace(/ - YouTube$/, "") || String(record.id));
     const threeDates = publications.slice(0, 3).map((item) => fmt(item.publishedAt));
     const proposedIdentity = tokens(research.known?.host, research.known?.organization, research.known?.contentOwner);
     const routeIdentity = tokens(sourceTitle);

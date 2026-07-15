@@ -1,0 +1,661 @@
+{
+  "methodology": "terra-medium-recovery-v1",
+  "cohort": "final-31",
+  "batch": 2,
+  "records": [
+    {
+      "id": "liquefied-natural",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "LNG - Resources and Education was inspected at https://www.youtube.com/@lng-resourcesandeducation1373; latest verified publication \"LNG - Market Imperatives for LNG - Carbon Talks at SFU - Tom Syer - Liquefied Natural Gas\" on 2014-10-29. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Liquefied Natural",
+      "economicBuyer": "Liquefied Natural",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@lng-resourcesandeducation1373",
+          "proves": "LNG - Resources and Education was inspected at https://www.youtube.com/@lng-resourcesandeducation1373; latest verified publication \"LNG - Market Imperatives for LNG - Carbon Talks at SFU - Tom Syer - Liquefied Natural Gas\" on 2014-10-29."
+        },
+        {
+          "url": "https://www.youtube.com/@lng-resourcesandeducation1373?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify LNG - Resources and Education's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=zuYEs1UmIG4",
+          "proves": "Owned publication used to verify LNG - Resources and Education's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=FMOrxFmg0w0",
+          "proves": "Owned publication used to verify LNG - Resources and Education's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ST-uDjO6CGo",
+          "proves": "Owned publication used to verify LNG - Resources and Education's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:58.497Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:58.497Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned LNG - Resources and Education feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@lng-resourcesandeducation1373",
+              "https://www.youtube.com/@lng-resourcesandeducation1373?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=zuYEs1UmIG4",
+              "https://www.youtube.com/watch?v=FMOrxFmg0w0",
+              "https://www.youtube.com/watch?v=ST-uDjO6CGo"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2014-10-29, 2014-10-28, 2014-10-28; latest verified publication \"LNG - Market Imperatives for LNG - Carbon Talks at SFU - Tom Syer - Liquefied Natural Gas\" on 2014-10-29.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@lng-resourcesandeducation1373",
+              "https://www.youtube.com/@lng-resourcesandeducation1373?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=zuYEs1UmIG4",
+              "https://www.youtube.com/watch?v=FMOrxFmg0w0",
+              "https://www.youtube.com/watch?v=ST-uDjO6CGo"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "LNG - Resources and Education was inspected at https://www.youtube.com/@lng-resourcesandeducation1373; latest verified publication \"LNG - Market Imperatives for LNG - Carbon Talks at SFU - Tom Syer - Liquefied Natural Gas\" on 2014-10-29. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@lng-resourcesandeducation1373",
+              "https://www.youtube.com/@lng-resourcesandeducation1373?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=zuYEs1UmIG4",
+              "https://www.youtube.com/watch?v=FMOrxFmg0w0",
+              "https://www.youtube.com/watch?v=ST-uDjO6CGo"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "LNG - Resources and Education was inspected at https://www.youtube.com/@lng-resourcesandeducation1373; latest verified publication \"LNG - Market Imperatives for LNG - Carbon Talks at SFU - Tom Syer - Liquefied Natural Gas\" on 2014-10-29. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@lng-resourcesandeducation1373",
+              "https://www.youtube.com/@lng-resourcesandeducation1373?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=zuYEs1UmIG4",
+              "https://www.youtube.com/watch?v=FMOrxFmg0w0",
+              "https://www.youtube.com/watch?v=ST-uDjO6CGo"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "LNG - Resources and Education was inspected at https://www.youtube.com/@lng-resourcesandeducation1373; latest verified publication \"LNG - Market Imperatives for LNG - Carbon Talks at SFU - Tom Syer - Liquefied Natural Gas\" on 2014-10-29. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@lng-resourcesandeducation1373",
+              "https://www.youtube.com/@lng-resourcesandeducation1373?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=zuYEs1UmIG4",
+              "https://www.youtube.com/watch?v=FMOrxFmg0w0",
+              "https://www.youtube.com/watch?v=ST-uDjO6CGo"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "LNG - Resources and Education was inspected at https://www.youtube.com/@lng-resourcesandeducation1373; latest verified publication \"LNG - Market Imperatives for LNG - Carbon Talks at SFU - Tom Syer - Liquefied Natural Gas\" on 2014-10-29. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@lng-resourcesandeducation1373",
+              "https://www.youtube.com/@lng-resourcesandeducation1373?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=zuYEs1UmIG4",
+              "https://www.youtube.com/watch?v=FMOrxFmg0w0",
+              "https://www.youtube.com/watch?v=ST-uDjO6CGo"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2014-10-29, 2014-10-28, 2014-10-28), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@lng-resourcesandeducation1373",
+              "https://www.youtube.com/@lng-resourcesandeducation1373?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=zuYEs1UmIG4",
+              "https://www.youtube.com/watch?v=FMOrxFmg0w0",
+              "https://www.youtube.com/watch?v=ST-uDjO6CGo"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "LNG - Resources and Education was inspected at https://www.youtube.com/@lng-resourcesandeducation1373; latest verified publication \"LNG - Market Imperatives for LNG - Carbon Talks at SFU - Tom Syer - Liquefied Natural Gas\" on 2014-10-29. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@lng-resourcesandeducation1373",
+              "https://www.youtube.com/@lng-resourcesandeducation1373?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=zuYEs1UmIG4",
+              "https://www.youtube.com/watch?v=FMOrxFmg0w0",
+              "https://www.youtube.com/watch?v=ST-uDjO6CGo"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "cameron-parish",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "Invest In LNG was inspected at https://www.youtube.com/@investinlng6168; latest verified publication \"Invest in Monkey Island LNG\" on 2017-04-28. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Cameron Parish",
+      "economicBuyer": "Cameron Parish",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@investinlng6168",
+          "proves": "Invest In LNG was inspected at https://www.youtube.com/@investinlng6168; latest verified publication \"Invest in Monkey Island LNG\" on 2017-04-28."
+        },
+        {
+          "url": "https://www.youtube.com/@investinlng6168?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Invest In LNG's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=n0i3FvRYuhg",
+          "proves": "Owned publication used to verify Invest In LNG's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=GyX1VaSxVGo",
+          "proves": "Owned publication used to verify Invest In LNG's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=REpfuQshi4I",
+          "proves": "Owned publication used to verify Invest In LNG's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:58.497Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:58.497Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Invest In LNG feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@investinlng6168",
+              "https://www.youtube.com/@investinlng6168?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=n0i3FvRYuhg",
+              "https://www.youtube.com/watch?v=GyX1VaSxVGo",
+              "https://www.youtube.com/watch?v=REpfuQshi4I"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2017-04-28, 2016-12-22, 2016-12-16; latest verified publication \"Invest in Monkey Island LNG\" on 2017-04-28.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@investinlng6168",
+              "https://www.youtube.com/@investinlng6168?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=n0i3FvRYuhg",
+              "https://www.youtube.com/watch?v=GyX1VaSxVGo",
+              "https://www.youtube.com/watch?v=REpfuQshi4I"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Invest In LNG was inspected at https://www.youtube.com/@investinlng6168; latest verified publication \"Invest in Monkey Island LNG\" on 2017-04-28. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@investinlng6168",
+              "https://www.youtube.com/@investinlng6168?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=n0i3FvRYuhg",
+              "https://www.youtube.com/watch?v=GyX1VaSxVGo",
+              "https://www.youtube.com/watch?v=REpfuQshi4I"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Invest In LNG was inspected at https://www.youtube.com/@investinlng6168; latest verified publication \"Invest in Monkey Island LNG\" on 2017-04-28. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@investinlng6168",
+              "https://www.youtube.com/@investinlng6168?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=n0i3FvRYuhg",
+              "https://www.youtube.com/watch?v=GyX1VaSxVGo",
+              "https://www.youtube.com/watch?v=REpfuQshi4I"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Invest In LNG was inspected at https://www.youtube.com/@investinlng6168; latest verified publication \"Invest in Monkey Island LNG\" on 2017-04-28. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@investinlng6168",
+              "https://www.youtube.com/@investinlng6168?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=n0i3FvRYuhg",
+              "https://www.youtube.com/watch?v=GyX1VaSxVGo",
+              "https://www.youtube.com/watch?v=REpfuQshi4I"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Invest In LNG was inspected at https://www.youtube.com/@investinlng6168; latest verified publication \"Invest in Monkey Island LNG\" on 2017-04-28. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@investinlng6168",
+              "https://www.youtube.com/@investinlng6168?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=n0i3FvRYuhg",
+              "https://www.youtube.com/watch?v=GyX1VaSxVGo",
+              "https://www.youtube.com/watch?v=REpfuQshi4I"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2017-04-28, 2016-12-22, 2016-12-16), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@investinlng6168",
+              "https://www.youtube.com/@investinlng6168?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=n0i3FvRYuhg",
+              "https://www.youtube.com/watch?v=GyX1VaSxVGo",
+              "https://www.youtube.com/watch?v=REpfuQshi4I"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Invest In LNG was inspected at https://www.youtube.com/@investinlng6168; latest verified publication \"Invest in Monkey Island LNG\" on 2017-04-28. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@investinlng6168",
+              "https://www.youtube.com/@investinlng6168?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=n0i3FvRYuhg",
+              "https://www.youtube.com/watch?v=GyX1VaSxVGo",
+              "https://www.youtube.com/watch?v=REpfuQshi4I"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "crown-lng",
+      "researchCompleteness": "COMPLETE",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Crown LNG's channel is company-owned project and investor communications rather than a creator-controlled long-form property. Crown LNG was inspected at https://www.youtube.com/@CrownLNG; latest verified publication \"🚀 Massive Data Growth & The Future of AI Energy\" on 2025-02-22.",
+      "contentOwner": "Crown LNG",
+      "economicBuyer": "Crown LNG",
+      "unresolvedGates": [],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@CrownLNG",
+          "proves": "Crown LNG was inspected at https://www.youtube.com/@CrownLNG; latest verified publication \"🚀 Massive Data Growth & The Future of AI Energy\" on 2025-02-22."
+        },
+        {
+          "url": "https://www.youtube.com/@CrownLNG?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Crown LNG's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UX8duDogTSU",
+          "proves": "Owned publication used to verify Crown LNG's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qS2MbJCUlI4",
+          "proves": "Owned publication used to verify Crown LNG's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=IrwFYmSRZ8k",
+          "proves": "Owned publication used to verify Crown LNG's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:58.497Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:58.497Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Crown LNG feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@CrownLNG",
+              "https://www.youtube.com/@CrownLNG?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=UX8duDogTSU",
+              "https://www.youtube.com/watch?v=qS2MbJCUlI4",
+              "https://www.youtube.com/watch?v=IrwFYmSRZ8k"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2025-02-22, 2025-02-13, 2025-02-13; latest verified publication \"🚀 Massive Data Growth & The Future of AI Energy\" on 2025-02-22.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@CrownLNG",
+              "https://www.youtube.com/@CrownLNG?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=UX8duDogTSU",
+              "https://www.youtube.com/watch?v=qS2MbJCUlI4",
+              "https://www.youtube.com/watch?v=IrwFYmSRZ8k"
+            ]
+          },
+          "roles": {
+            "status": "NOT_APPLICABLE",
+            "note": "Crown LNG's channel is company-owned project and investor communications rather than a creator-controlled long-form property. Additional roles research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Crown LNG's channel is company-owned project and investor communications rather than a creator-controlled long-form property. Additional contact research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Crown LNG's channel is company-owned project and investor communications rather than a creator-controlled long-form property. Additional offer research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Crown LNG's channel is company-owned project and investor communications rather than a creator-controlled long-form property. Additional funnel research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Crown LNG's channel is company-owned project and investor communications rather than a creator-controlled long-form property. Additional videoGap research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "Crown LNG's channel is company-owned project and investor communications rather than a creator-controlled long-form property. Additional pitchHook research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          }
+        }
+      },
+      "factualHardGate": "CORPORATE_MONOLITH"
+    },
+    {
+      "id": "alex-epstein",
+      "researchCompleteness": "COMPLETE",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Alex Epstein's current official Improve The Planet channel already publishes professionally produced, edited energy interviews and explanatory videos. Improve The Planet with Alex Epstein was inspected at https://www.youtube.com/@ImproveThePlanet; latest verified publication \"Why America can’t build the natural gas pipelines it needs, with Senator Alan Armstrong\" on 2026-06-05.",
+      "contentOwner": "Alex Epstein",
+      "economicBuyer": "Alex Epstein",
+      "unresolvedGates": [],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@ImproveThePlanet",
+          "proves": "Improve The Planet with Alex Epstein was inspected at https://www.youtube.com/@ImproveThePlanet; latest verified publication \"Why America can’t build the natural gas pipelines it needs, with Senator Alan Armstrong\" on 2026-06-05."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1dnLnZOgzG4",
+          "proves": "Owned publication used to verify Improve The Planet with Alex Epstein's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0PykIJ5_u_w",
+          "proves": "Owned publication used to verify Improve The Planet with Alex Epstein's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=stSM8gqhJp4",
+          "proves": "Owned publication used to verify Improve The Planet with Alex Epstein's cadence."
+        },
+        {
+          "url": "https://industrialprogress.com/",
+          "proves": "Owned publication used to verify Improve The Planet with Alex Epstein's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:58.497Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:58.497Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Improve The Planet with Alex Epstein feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ImproveThePlanet",
+              "https://www.youtube.com/watch?v=1dnLnZOgzG4",
+              "https://www.youtube.com/watch?v=0PykIJ5_u_w",
+              "https://www.youtube.com/watch?v=stSM8gqhJp4",
+              "https://industrialprogress.com/"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-06-05, 2026-02-17, 2026-01-14; latest verified publication \"Why America can’t build the natural gas pipelines it needs, with Senator Alan Armstrong\" on 2026-06-05.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ImproveThePlanet",
+              "https://www.youtube.com/watch?v=1dnLnZOgzG4",
+              "https://www.youtube.com/watch?v=0PykIJ5_u_w",
+              "https://www.youtube.com/watch?v=stSM8gqhJp4",
+              "https://industrialprogress.com/"
+            ]
+          },
+          "roles": {
+            "status": "NOT_APPLICABLE",
+            "note": "Alex Epstein's current official Improve The Planet channel already publishes professionally produced, edited energy interviews and explanatory videos. Additional roles research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Alex Epstein's current official Improve The Planet channel already publishes professionally produced, edited energy interviews and explanatory videos. Additional contact research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Alex Epstein's current official Improve The Planet channel already publishes professionally produced, edited energy interviews and explanatory videos. Additional offer research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Alex Epstein's current official Improve The Planet channel already publishes professionally produced, edited energy interviews and explanatory videos. Additional funnel research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Alex Epstein's current official Improve The Planet channel already publishes professionally produced, edited energy interviews and explanatory videos. Additional videoGap research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "Alex Epstein's current official Improve The Planet channel already publishes professionally produced, edited energy interviews and explanatory videos. Additional pitchHook research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          }
+        }
+      },
+      "factualHardGate": "EXISTING_STRONG_VIDEO_CAPABILITY"
+    },
+    {
+      "id": "matt-ferrell",
+      "researchCompleteness": "COMPLETE",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Matt Ferrell's Undecided channel is an established, professionally produced video-first energy property with a dedicated production business. Undecided with Matt Ferrell was inspected at https://www.youtube.com/undecidedmf; no dated publication exposed by the recorded route.",
+      "contentOwner": "Matt Ferrell",
+      "economicBuyer": "Matt Ferrell",
+      "unresolvedGates": [],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/undecidedmf",
+          "proves": "Undecided with Matt Ferrell was inspected at https://www.youtube.com/undecidedmf; no dated publication exposed by the recorded route."
+        },
+        {
+          "url": "https://undecided.tech/about-me/",
+          "proves": "Owned publication used to verify Undecided with Matt Ferrell's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:58.497Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:58.497Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to Undecided with Matt Ferrell, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/undecidedmf",
+              "https://undecided.tech/about-me/"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Undecided with Matt Ferrell was inspected at https://www.youtube.com/undecidedmf; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/undecidedmf",
+              "https://undecided.tech/about-me/"
+            ]
+          },
+          "roles": {
+            "status": "NOT_APPLICABLE",
+            "note": "Matt Ferrell's Undecided channel is an established, professionally produced video-first energy property with a dedicated production business. Additional roles research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Matt Ferrell's Undecided channel is an established, professionally produced video-first energy property with a dedicated production business. Additional contact research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Matt Ferrell's Undecided channel is an established, professionally produced video-first energy property with a dedicated production business. Additional offer research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Matt Ferrell's Undecided channel is an established, professionally produced video-first energy property with a dedicated production business. Additional funnel research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Matt Ferrell's Undecided channel is an established, professionally produced video-first energy property with a dedicated production business. Additional videoGap research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "Matt Ferrell's Undecided channel is an established, professionally produced video-first energy property with a dedicated production business. Additional pitchHook research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          }
+        }
+      },
+      "factualHardGate": "EXISTING_STRONG_VIDEO_CAPABILITY"
+    },
+    {
+      "id": "hydrogen-news",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "Hydrogen News was inspected at https://www.youtube.com/@HydrogenNews; latest verified publication \"A Greener Highway with Daimler's GenH2!\" on 2025-03-31. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Hydrogen News",
+      "economicBuyer": "Hydrogen News",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@HydrogenNews",
+          "proves": "Hydrogen News was inspected at https://www.youtube.com/@HydrogenNews; latest verified publication \"A Greener Highway with Daimler's GenH2!\" on 2025-03-31."
+        },
+        {
+          "url": "https://www.youtube.com/@HydrogenNews?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Hydrogen News's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iY5WO5VVLuE",
+          "proves": "Owned publication used to verify Hydrogen News's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=TFopS_DM4oI",
+          "proves": "Owned publication used to verify Hydrogen News's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7B75GjOeM3k",
+          "proves": "Owned publication used to verify Hydrogen News's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:58.497Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:58.497Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Hydrogen News feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@HydrogenNews",
+              "https://www.youtube.com/@HydrogenNews?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iY5WO5VVLuE",
+              "https://www.youtube.com/watch?v=TFopS_DM4oI",
+              "https://www.youtube.com/watch?v=7B75GjOeM3k"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2025-03-31, 2025-03-17, 2025-03-14; latest verified publication \"A Greener Highway with Daimler's GenH2!\" on 2025-03-31.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@HydrogenNews",
+              "https://www.youtube.com/@HydrogenNews?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iY5WO5VVLuE",
+              "https://www.youtube.com/watch?v=TFopS_DM4oI",
+              "https://www.youtube.com/watch?v=7B75GjOeM3k"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Hydrogen News was inspected at https://www.youtube.com/@HydrogenNews; latest verified publication \"A Greener Highway with Daimler's GenH2!\" on 2025-03-31. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@HydrogenNews",
+              "https://www.youtube.com/@HydrogenNews?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iY5WO5VVLuE",
+              "https://www.youtube.com/watch?v=TFopS_DM4oI",
+              "https://www.youtube.com/watch?v=7B75GjOeM3k"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Hydrogen News was inspected at https://www.youtube.com/@HydrogenNews; latest verified publication \"A Greener Highway with Daimler's GenH2!\" on 2025-03-31. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@HydrogenNews",
+              "https://www.youtube.com/@HydrogenNews?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iY5WO5VVLuE",
+              "https://www.youtube.com/watch?v=TFopS_DM4oI",
+              "https://www.youtube.com/watch?v=7B75GjOeM3k"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Hydrogen News was inspected at https://www.youtube.com/@HydrogenNews; latest verified publication \"A Greener Highway with Daimler's GenH2!\" on 2025-03-31. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@HydrogenNews",
+              "https://www.youtube.com/@HydrogenNews?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iY5WO5VVLuE",
+              "https://www.youtube.com/watch?v=TFopS_DM4oI",
+              "https://www.youtube.com/watch?v=7B75GjOeM3k"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Hydrogen News was inspected at https://www.youtube.com/@HydrogenNews; latest verified publication \"A Greener Highway with Daimler's GenH2!\" on 2025-03-31. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@HydrogenNews",
+              "https://www.youtube.com/@HydrogenNews?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iY5WO5VVLuE",
+              "https://www.youtube.com/watch?v=TFopS_DM4oI",
+              "https://www.youtube.com/watch?v=7B75GjOeM3k"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2025-03-31, 2025-03-17, 2025-03-14), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@HydrogenNews",
+              "https://www.youtube.com/@HydrogenNews?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iY5WO5VVLuE",
+              "https://www.youtube.com/watch?v=TFopS_DM4oI",
+              "https://www.youtube.com/watch?v=7B75GjOeM3k"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Hydrogen News was inspected at https://www.youtube.com/@HydrogenNews; latest verified publication \"A Greener Highway with Daimler's GenH2!\" on 2025-03-31. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@HydrogenNews",
+              "https://www.youtube.com/@HydrogenNews?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iY5WO5VVLuE",
+              "https://www.youtube.com/watch?v=TFopS_DM4oI",
+              "https://www.youtube.com/watch?v=7B75GjOeM3k"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

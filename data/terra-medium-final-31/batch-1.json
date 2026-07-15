@@ -1,0 +1,2940 @@
+{
+  "methodology": "terra-medium-recovery-v1",
+  "cohort": "final-31",
+  "batch": 1,
+  "records": [
+    {
+      "id": "the-climate-tech-handbook",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "The Climate Tech Handbook was inspected at https://www.youtube.com/@climatetechhandbook; latest verified publication \"Building a sustainable and profitable business by selling less - Sailesh Chutani\" on 2023-10-16. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "The Climate Tech Handbook",
+      "economicBuyer": "The Climate Tech Handbook",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@climatetechhandbook",
+          "proves": "The Climate Tech Handbook was inspected at https://www.youtube.com/@climatetechhandbook; latest verified publication \"Building a sustainable and profitable business by selling less - Sailesh Chutani\" on 2023-10-16."
+        },
+        {
+          "url": "https://www.youtube.com/@climatetechhandbook?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify The Climate Tech Handbook's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=bzQwnc8fKn0",
+          "proves": "Owned publication used to verify The Climate Tech Handbook's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4ogfpf6-8QY",
+          "proves": "Owned publication used to verify The Climate Tech Handbook's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cGGT8nTTzqw",
+          "proves": "Owned publication used to verify The Climate Tech Handbook's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned The Climate Tech Handbook feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatetechhandbook",
+              "https://www.youtube.com/@climatetechhandbook?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=bzQwnc8fKn0",
+              "https://www.youtube.com/watch?v=4ogfpf6-8QY",
+              "https://www.youtube.com/watch?v=cGGT8nTTzqw"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2023-10-16, 2023-10-12, 2023-10-12; latest verified publication \"Building a sustainable and profitable business by selling less - Sailesh Chutani\" on 2023-10-16.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatetechhandbook",
+              "https://www.youtube.com/@climatetechhandbook?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=bzQwnc8fKn0",
+              "https://www.youtube.com/watch?v=4ogfpf6-8QY",
+              "https://www.youtube.com/watch?v=cGGT8nTTzqw"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "The Climate Tech Handbook was inspected at https://www.youtube.com/@climatetechhandbook; latest verified publication \"Building a sustainable and profitable business by selling less - Sailesh Chutani\" on 2023-10-16. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatetechhandbook",
+              "https://www.youtube.com/@climatetechhandbook?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=bzQwnc8fKn0",
+              "https://www.youtube.com/watch?v=4ogfpf6-8QY",
+              "https://www.youtube.com/watch?v=cGGT8nTTzqw"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "The Climate Tech Handbook was inspected at https://www.youtube.com/@climatetechhandbook; latest verified publication \"Building a sustainable and profitable business by selling less - Sailesh Chutani\" on 2023-10-16. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatetechhandbook",
+              "https://www.youtube.com/@climatetechhandbook?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=bzQwnc8fKn0",
+              "https://www.youtube.com/watch?v=4ogfpf6-8QY",
+              "https://www.youtube.com/watch?v=cGGT8nTTzqw"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "The Climate Tech Handbook was inspected at https://www.youtube.com/@climatetechhandbook; latest verified publication \"Building a sustainable and profitable business by selling less - Sailesh Chutani\" on 2023-10-16. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatetechhandbook",
+              "https://www.youtube.com/@climatetechhandbook?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=bzQwnc8fKn0",
+              "https://www.youtube.com/watch?v=4ogfpf6-8QY",
+              "https://www.youtube.com/watch?v=cGGT8nTTzqw"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "The Climate Tech Handbook was inspected at https://www.youtube.com/@climatetechhandbook; latest verified publication \"Building a sustainable and profitable business by selling less - Sailesh Chutani\" on 2023-10-16. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatetechhandbook",
+              "https://www.youtube.com/@climatetechhandbook?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=bzQwnc8fKn0",
+              "https://www.youtube.com/watch?v=4ogfpf6-8QY",
+              "https://www.youtube.com/watch?v=cGGT8nTTzqw"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2023-10-16, 2023-10-12, 2023-10-12), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatetechhandbook",
+              "https://www.youtube.com/@climatetechhandbook?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=bzQwnc8fKn0",
+              "https://www.youtube.com/watch?v=4ogfpf6-8QY",
+              "https://www.youtube.com/watch?v=cGGT8nTTzqw"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "The Climate Tech Handbook was inspected at https://www.youtube.com/@climatetechhandbook; latest verified publication \"Building a sustainable and profitable business by selling less - Sailesh Chutani\" on 2023-10-16. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatetechhandbook",
+              "https://www.youtube.com/@climatetechhandbook?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=bzQwnc8fKn0",
+              "https://www.youtube.com/watch?v=4ogfpf6-8QY",
+              "https://www.youtube.com/watch?v=cGGT8nTTzqw"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "climate-bridge-korea-new-york",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "Climate Bridge Korea New York was inspected at https://www.youtube.com/@ClimateBridgeKoreaNewYork; latest verified publication \"Climate Bridge Korea New York 2024 Holiday Message\" on 2024-12-31. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Climate Bridge Korea New York",
+      "economicBuyer": "Climate Bridge Korea New York",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@ClimateBridgeKoreaNewYork",
+          "proves": "Climate Bridge Korea New York was inspected at https://www.youtube.com/@ClimateBridgeKoreaNewYork; latest verified publication \"Climate Bridge Korea New York 2024 Holiday Message\" on 2024-12-31."
+        },
+        {
+          "url": "https://www.youtube.com/@ClimateBridgeKoreaNewYork?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Climate Bridge Korea New York's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=G7B3AGrMOjM",
+          "proves": "Owned publication used to verify Climate Bridge Korea New York's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ZuD6Q5WcpBQ",
+          "proves": "Owned publication used to verify Climate Bridge Korea New York's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=f-RTaRWQrTc",
+          "proves": "Owned publication used to verify Climate Bridge Korea New York's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Climate Bridge Korea New York feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork",
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=G7B3AGrMOjM",
+              "https://www.youtube.com/watch?v=ZuD6Q5WcpBQ",
+              "https://www.youtube.com/watch?v=f-RTaRWQrTc"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2024-12-31, 2024-12-16, 2024-11-17; latest verified publication \"Climate Bridge Korea New York 2024 Holiday Message\" on 2024-12-31.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork",
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=G7B3AGrMOjM",
+              "https://www.youtube.com/watch?v=ZuD6Q5WcpBQ",
+              "https://www.youtube.com/watch?v=f-RTaRWQrTc"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Climate Bridge Korea New York was inspected at https://www.youtube.com/@ClimateBridgeKoreaNewYork; latest verified publication \"Climate Bridge Korea New York 2024 Holiday Message\" on 2024-12-31. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork",
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=G7B3AGrMOjM",
+              "https://www.youtube.com/watch?v=ZuD6Q5WcpBQ",
+              "https://www.youtube.com/watch?v=f-RTaRWQrTc"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Climate Bridge Korea New York was inspected at https://www.youtube.com/@ClimateBridgeKoreaNewYork; latest verified publication \"Climate Bridge Korea New York 2024 Holiday Message\" on 2024-12-31. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork",
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=G7B3AGrMOjM",
+              "https://www.youtube.com/watch?v=ZuD6Q5WcpBQ",
+              "https://www.youtube.com/watch?v=f-RTaRWQrTc"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Climate Bridge Korea New York was inspected at https://www.youtube.com/@ClimateBridgeKoreaNewYork; latest verified publication \"Climate Bridge Korea New York 2024 Holiday Message\" on 2024-12-31. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork",
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=G7B3AGrMOjM",
+              "https://www.youtube.com/watch?v=ZuD6Q5WcpBQ",
+              "https://www.youtube.com/watch?v=f-RTaRWQrTc"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Climate Bridge Korea New York was inspected at https://www.youtube.com/@ClimateBridgeKoreaNewYork; latest verified publication \"Climate Bridge Korea New York 2024 Holiday Message\" on 2024-12-31. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork",
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=G7B3AGrMOjM",
+              "https://www.youtube.com/watch?v=ZuD6Q5WcpBQ",
+              "https://www.youtube.com/watch?v=f-RTaRWQrTc"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2024-12-31, 2024-12-16, 2024-11-17), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork",
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=G7B3AGrMOjM",
+              "https://www.youtube.com/watch?v=ZuD6Q5WcpBQ",
+              "https://www.youtube.com/watch?v=f-RTaRWQrTc"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Climate Bridge Korea New York was inspected at https://www.youtube.com/@ClimateBridgeKoreaNewYork; latest verified publication \"Climate Bridge Korea New York 2024 Holiday Message\" on 2024-12-31. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork",
+              "https://www.youtube.com/@ClimateBridgeKoreaNewYork?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=G7B3AGrMOjM",
+              "https://www.youtube.com/watch?v=ZuD6Q5WcpBQ",
+              "https://www.youtube.com/watch?v=f-RTaRWQrTc"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "climate-scale-up",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "Climate Scale-Up was inspected at https://www.youtube.com/@climatescaleup; latest verified publication \"Visualizing Sustainability: Trends and Insights\" on 2025-05-25. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Climate Scale-Up",
+      "economicBuyer": "Climate Scale-Up",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@climatescaleup",
+          "proves": "Climate Scale-Up was inspected at https://www.youtube.com/@climatescaleup; latest verified publication \"Visualizing Sustainability: Trends and Insights\" on 2025-05-25."
+        },
+        {
+          "url": "https://www.youtube.com/@climatescaleup?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Climate Scale-Up's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7JIFb05SnkE",
+          "proves": "Owned publication used to verify Climate Scale-Up's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=5q_r_FwIBE0",
+          "proves": "Owned publication used to verify Climate Scale-Up's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_XnMyh35kE0",
+          "proves": "Owned publication used to verify Climate Scale-Up's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Climate Scale-Up feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatescaleup",
+              "https://www.youtube.com/@climatescaleup?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7JIFb05SnkE",
+              "https://www.youtube.com/watch?v=5q_r_FwIBE0",
+              "https://www.youtube.com/watch?v=_XnMyh35kE0"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2025-05-25, 2025-05-25, 2025-05-25; latest verified publication \"Visualizing Sustainability: Trends and Insights\" on 2025-05-25.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatescaleup",
+              "https://www.youtube.com/@climatescaleup?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7JIFb05SnkE",
+              "https://www.youtube.com/watch?v=5q_r_FwIBE0",
+              "https://www.youtube.com/watch?v=_XnMyh35kE0"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Climate Scale-Up was inspected at https://www.youtube.com/@climatescaleup; latest verified publication \"Visualizing Sustainability: Trends and Insights\" on 2025-05-25. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatescaleup",
+              "https://www.youtube.com/@climatescaleup?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7JIFb05SnkE",
+              "https://www.youtube.com/watch?v=5q_r_FwIBE0",
+              "https://www.youtube.com/watch?v=_XnMyh35kE0"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Climate Scale-Up was inspected at https://www.youtube.com/@climatescaleup; latest verified publication \"Visualizing Sustainability: Trends and Insights\" on 2025-05-25. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatescaleup",
+              "https://www.youtube.com/@climatescaleup?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7JIFb05SnkE",
+              "https://www.youtube.com/watch?v=5q_r_FwIBE0",
+              "https://www.youtube.com/watch?v=_XnMyh35kE0"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Climate Scale-Up was inspected at https://www.youtube.com/@climatescaleup; latest verified publication \"Visualizing Sustainability: Trends and Insights\" on 2025-05-25. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatescaleup",
+              "https://www.youtube.com/@climatescaleup?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7JIFb05SnkE",
+              "https://www.youtube.com/watch?v=5q_r_FwIBE0",
+              "https://www.youtube.com/watch?v=_XnMyh35kE0"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Climate Scale-Up was inspected at https://www.youtube.com/@climatescaleup; latest verified publication \"Visualizing Sustainability: Trends and Insights\" on 2025-05-25. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatescaleup",
+              "https://www.youtube.com/@climatescaleup?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7JIFb05SnkE",
+              "https://www.youtube.com/watch?v=5q_r_FwIBE0",
+              "https://www.youtube.com/watch?v=_XnMyh35kE0"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2025-05-25, 2025-05-25, 2025-05-25), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatescaleup",
+              "https://www.youtube.com/@climatescaleup?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7JIFb05SnkE",
+              "https://www.youtube.com/watch?v=5q_r_FwIBE0",
+              "https://www.youtube.com/watch?v=_XnMyh35kE0"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Climate Scale-Up was inspected at https://www.youtube.com/@climatescaleup; latest verified publication \"Visualizing Sustainability: Trends and Insights\" on 2025-05-25. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@climatescaleup",
+              "https://www.youtube.com/@climatescaleup?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=7JIFb05SnkE",
+              "https://www.youtube.com/watch?v=5q_r_FwIBE0",
+              "https://www.youtube.com/watch?v=_XnMyh35kE0"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "mining2me",
+      "researchCompleteness": "COMPLETE",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The channel's current owned output is Calgary real-estate and rental content rather than mining or energy education. Mining2Me was inspected at https://www.youtube.com/@Mining2Me; latest verified publication \"Here's what $1800 gets you in Calgary 2026!\" on 2026-05-30.",
+      "contentOwner": "Mining2Me",
+      "economicBuyer": "Mining2Me",
+      "unresolvedGates": [],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@Mining2Me",
+          "proves": "Mining2Me was inspected at https://www.youtube.com/@Mining2Me; latest verified publication \"Here's what $1800 gets you in Calgary 2026!\" on 2026-05-30."
+        },
+        {
+          "url": "https://www.youtube.com/@Mining2Me?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Mining2Me's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Xad4Q0BCh1Q",
+          "proves": "Owned publication used to verify Mining2Me's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=-0ovexqdJFc",
+          "proves": "Owned publication used to verify Mining2Me's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=MrmQ8YlTxk4",
+          "proves": "Owned publication used to verify Mining2Me's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Mining2Me feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@Mining2Me",
+              "https://www.youtube.com/@Mining2Me?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Xad4Q0BCh1Q",
+              "https://www.youtube.com/watch?v=-0ovexqdJFc",
+              "https://www.youtube.com/watch?v=MrmQ8YlTxk4"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2026-05-30, 2026-03-19, 2025-12-01; latest verified publication \"Here's what $1800 gets you in Calgary 2026!\" on 2026-05-30.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@Mining2Me",
+              "https://www.youtube.com/@Mining2Me?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Xad4Q0BCh1Q",
+              "https://www.youtube.com/watch?v=-0ovexqdJFc",
+              "https://www.youtube.com/watch?v=MrmQ8YlTxk4"
+            ]
+          },
+          "roles": {
+            "status": "NOT_APPLICABLE",
+            "note": "The channel's current owned output is Calgary real-estate and rental content rather than mining or energy education. Additional roles research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "The channel's current owned output is Calgary real-estate and rental content rather than mining or energy education. Additional contact research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "The channel's current owned output is Calgary real-estate and rental content rather than mining or energy education. Additional offer research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "The channel's current owned output is Calgary real-estate and rental content rather than mining or energy education. Additional funnel research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "The channel's current owned output is Calgary real-estate and rental content rather than mining or energy education. Additional videoGap research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "The channel's current owned output is Calgary real-estate and rental content rather than mining or energy education. Additional pitchHook research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          }
+        }
+      },
+      "factualHardGate": "WRONG_ICP"
+    },
+    {
+      "id": "uptrend-finance",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "Uptrend Finance was inspected at https://www.youtube.com/@uptrendfinance; latest verified publication \"Myriad Uranium: This will be the Buildout of Niger's Uranium Basin\" on 2023-07-11. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Uptrend Finance",
+      "economicBuyer": "Uptrend Finance",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@uptrendfinance",
+          "proves": "Uptrend Finance was inspected at https://www.youtube.com/@uptrendfinance; latest verified publication \"Myriad Uranium: This will be the Buildout of Niger's Uranium Basin\" on 2023-07-11."
+        },
+        {
+          "url": "https://www.youtube.com/@uptrendfinance?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Uptrend Finance's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=RB7l5Q2zPr8",
+          "proves": "Owned publication used to verify Uptrend Finance's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vcjC-KaAdj0",
+          "proves": "Owned publication used to verify Uptrend Finance's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=QzpE6CYLwZQ",
+          "proves": "Owned publication used to verify Uptrend Finance's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Uptrend Finance feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@uptrendfinance",
+              "https://www.youtube.com/@uptrendfinance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=RB7l5Q2zPr8",
+              "https://www.youtube.com/watch?v=vcjC-KaAdj0",
+              "https://www.youtube.com/watch?v=QzpE6CYLwZQ"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2023-07-11, 2023-06-29, 2023-06-05; latest verified publication \"Myriad Uranium: This will be the Buildout of Niger's Uranium Basin\" on 2023-07-11.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@uptrendfinance",
+              "https://www.youtube.com/@uptrendfinance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=RB7l5Q2zPr8",
+              "https://www.youtube.com/watch?v=vcjC-KaAdj0",
+              "https://www.youtube.com/watch?v=QzpE6CYLwZQ"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Uptrend Finance was inspected at https://www.youtube.com/@uptrendfinance; latest verified publication \"Myriad Uranium: This will be the Buildout of Niger's Uranium Basin\" on 2023-07-11. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@uptrendfinance",
+              "https://www.youtube.com/@uptrendfinance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=RB7l5Q2zPr8",
+              "https://www.youtube.com/watch?v=vcjC-KaAdj0",
+              "https://www.youtube.com/watch?v=QzpE6CYLwZQ"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Uptrend Finance was inspected at https://www.youtube.com/@uptrendfinance; latest verified publication \"Myriad Uranium: This will be the Buildout of Niger's Uranium Basin\" on 2023-07-11. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@uptrendfinance",
+              "https://www.youtube.com/@uptrendfinance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=RB7l5Q2zPr8",
+              "https://www.youtube.com/watch?v=vcjC-KaAdj0",
+              "https://www.youtube.com/watch?v=QzpE6CYLwZQ"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Uptrend Finance was inspected at https://www.youtube.com/@uptrendfinance; latest verified publication \"Myriad Uranium: This will be the Buildout of Niger's Uranium Basin\" on 2023-07-11. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@uptrendfinance",
+              "https://www.youtube.com/@uptrendfinance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=RB7l5Q2zPr8",
+              "https://www.youtube.com/watch?v=vcjC-KaAdj0",
+              "https://www.youtube.com/watch?v=QzpE6CYLwZQ"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Uptrend Finance was inspected at https://www.youtube.com/@uptrendfinance; latest verified publication \"Myriad Uranium: This will be the Buildout of Niger's Uranium Basin\" on 2023-07-11. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@uptrendfinance",
+              "https://www.youtube.com/@uptrendfinance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=RB7l5Q2zPr8",
+              "https://www.youtube.com/watch?v=vcjC-KaAdj0",
+              "https://www.youtube.com/watch?v=QzpE6CYLwZQ"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2023-07-11, 2023-06-29, 2023-06-05), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@uptrendfinance",
+              "https://www.youtube.com/@uptrendfinance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=RB7l5Q2zPr8",
+              "https://www.youtube.com/watch?v=vcjC-KaAdj0",
+              "https://www.youtube.com/watch?v=QzpE6CYLwZQ"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Uptrend Finance was inspected at https://www.youtube.com/@uptrendfinance; latest verified publication \"Myriad Uranium: This will be the Buildout of Niger's Uranium Basin\" on 2023-07-11. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@uptrendfinance",
+              "https://www.youtube.com/@uptrendfinance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=RB7l5Q2zPr8",
+              "https://www.youtube.com/watch?v=vcjC-KaAdj0",
+              "https://www.youtube.com/watch?v=QzpE6CYLwZQ"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "arab-trading",
+      "researchCompleteness": "COMPLETE",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The current owned output is broad personal-finance and money-transfer content rather than an energy-specialist property. Arab Trading was inspected at https://www.youtube.com/@arabtrading1177; latest verified publication \"Money transfer GPI MT1030_ cash direct _L2L _ IPIP bank gurantee SBLC GB SLC MT799\" on 2023-08-16.",
+      "contentOwner": "Arab Trading",
+      "economicBuyer": "Arab Trading",
+      "unresolvedGates": [],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@arabtrading1177",
+          "proves": "Arab Trading was inspected at https://www.youtube.com/@arabtrading1177; latest verified publication \"Money transfer GPI MT1030_ cash direct _L2L _ IPIP bank gurantee SBLC GB SLC MT799\" on 2023-08-16."
+        },
+        {
+          "url": "https://www.youtube.com/@arabtrading1177?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Arab Trading's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=vfbQnIf3Mco",
+          "proves": "Owned publication used to verify Arab Trading's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=z7K8XXiJI4A",
+          "proves": "Owned publication used to verify Arab Trading's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=7JwO5DSXvXU",
+          "proves": "Owned publication used to verify Arab Trading's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Arab Trading feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@arabtrading1177",
+              "https://www.youtube.com/@arabtrading1177?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=vfbQnIf3Mco",
+              "https://www.youtube.com/watch?v=z7K8XXiJI4A",
+              "https://www.youtube.com/watch?v=7JwO5DSXvXU"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2023-08-16, 2023-03-27, 2023-02-28; latest verified publication \"Money transfer GPI MT1030_ cash direct _L2L _ IPIP bank gurantee SBLC GB SLC MT799\" on 2023-08-16.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@arabtrading1177",
+              "https://www.youtube.com/@arabtrading1177?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=vfbQnIf3Mco",
+              "https://www.youtube.com/watch?v=z7K8XXiJI4A",
+              "https://www.youtube.com/watch?v=7JwO5DSXvXU"
+            ]
+          },
+          "roles": {
+            "status": "NOT_APPLICABLE",
+            "note": "The current owned output is broad personal-finance and money-transfer content rather than an energy-specialist property. Additional roles research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "The current owned output is broad personal-finance and money-transfer content rather than an energy-specialist property. Additional contact research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "The current owned output is broad personal-finance and money-transfer content rather than an energy-specialist property. Additional offer research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "The current owned output is broad personal-finance and money-transfer content rather than an energy-specialist property. Additional funnel research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "The current owned output is broad personal-finance and money-transfer content rather than an energy-specialist property. Additional videoGap research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "The current owned output is broad personal-finance and money-transfer content rather than an energy-specialist property. Additional pitchHook research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          }
+        }
+      },
+      "factualHardGate": "WRONG_ICP"
+    },
+    {
+      "id": "mining-stock-wealth",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "Mining Stock Wealth was inspected at https://www.youtube.com/@miningstockwealth2170; latest verified publication \"Fury Gold’s $60 Million Silver Bullet with CEO Tim Clarke\" on 2022-04-06. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Mining Stock Wealth",
+      "economicBuyer": "Mining Stock Wealth",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@miningstockwealth2170",
+          "proves": "Mining Stock Wealth was inspected at https://www.youtube.com/@miningstockwealth2170; latest verified publication \"Fury Gold’s $60 Million Silver Bullet with CEO Tim Clarke\" on 2022-04-06."
+        },
+        {
+          "url": "https://www.youtube.com/@miningstockwealth2170?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Mining Stock Wealth's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sQD74cqSIDk",
+          "proves": "Owned publication used to verify Mining Stock Wealth's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Ajebsca3lt4",
+          "proves": "Owned publication used to verify Mining Stock Wealth's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=2XtQvZRrtzw",
+          "proves": "Owned publication used to verify Mining Stock Wealth's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Mining Stock Wealth feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@miningstockwealth2170",
+              "https://www.youtube.com/@miningstockwealth2170?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sQD74cqSIDk",
+              "https://www.youtube.com/watch?v=Ajebsca3lt4",
+              "https://www.youtube.com/watch?v=2XtQvZRrtzw"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2022-04-06, 2022-02-21, 2021-12-27; latest verified publication \"Fury Gold’s $60 Million Silver Bullet with CEO Tim Clarke\" on 2022-04-06.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@miningstockwealth2170",
+              "https://www.youtube.com/@miningstockwealth2170?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sQD74cqSIDk",
+              "https://www.youtube.com/watch?v=Ajebsca3lt4",
+              "https://www.youtube.com/watch?v=2XtQvZRrtzw"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Mining Stock Wealth was inspected at https://www.youtube.com/@miningstockwealth2170; latest verified publication \"Fury Gold’s $60 Million Silver Bullet with CEO Tim Clarke\" on 2022-04-06. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@miningstockwealth2170",
+              "https://www.youtube.com/@miningstockwealth2170?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sQD74cqSIDk",
+              "https://www.youtube.com/watch?v=Ajebsca3lt4",
+              "https://www.youtube.com/watch?v=2XtQvZRrtzw"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Mining Stock Wealth was inspected at https://www.youtube.com/@miningstockwealth2170; latest verified publication \"Fury Gold’s $60 Million Silver Bullet with CEO Tim Clarke\" on 2022-04-06. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@miningstockwealth2170",
+              "https://www.youtube.com/@miningstockwealth2170?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sQD74cqSIDk",
+              "https://www.youtube.com/watch?v=Ajebsca3lt4",
+              "https://www.youtube.com/watch?v=2XtQvZRrtzw"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Mining Stock Wealth was inspected at https://www.youtube.com/@miningstockwealth2170; latest verified publication \"Fury Gold’s $60 Million Silver Bullet with CEO Tim Clarke\" on 2022-04-06. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@miningstockwealth2170",
+              "https://www.youtube.com/@miningstockwealth2170?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sQD74cqSIDk",
+              "https://www.youtube.com/watch?v=Ajebsca3lt4",
+              "https://www.youtube.com/watch?v=2XtQvZRrtzw"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Mining Stock Wealth was inspected at https://www.youtube.com/@miningstockwealth2170; latest verified publication \"Fury Gold’s $60 Million Silver Bullet with CEO Tim Clarke\" on 2022-04-06. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@miningstockwealth2170",
+              "https://www.youtube.com/@miningstockwealth2170?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sQD74cqSIDk",
+              "https://www.youtube.com/watch?v=Ajebsca3lt4",
+              "https://www.youtube.com/watch?v=2XtQvZRrtzw"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2022-04-06, 2022-02-21, 2021-12-27), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@miningstockwealth2170",
+              "https://www.youtube.com/@miningstockwealth2170?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sQD74cqSIDk",
+              "https://www.youtube.com/watch?v=Ajebsca3lt4",
+              "https://www.youtube.com/watch?v=2XtQvZRrtzw"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Mining Stock Wealth was inspected at https://www.youtube.com/@miningstockwealth2170; latest verified publication \"Fury Gold’s $60 Million Silver Bullet with CEO Tim Clarke\" on 2022-04-06. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@miningstockwealth2170",
+              "https://www.youtube.com/@miningstockwealth2170?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sQD74cqSIDk",
+              "https://www.youtube.com/watch?v=Ajebsca3lt4",
+              "https://www.youtube.com/watch?v=2XtQvZRrtzw"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "nigerias-energy-transition-plan",
+      "researchCompleteness": "COMPLETE",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Nigeria's Energy Transition Plan is a government-owned institutional communications program, not a creator-controlled media buyer. Nigeria's Energy Transition Plan was inspected at https://www.youtube.com/@NigeriaETP; latest verified publication \"ETO@COP28 Interview with Dr. Alex Irune\" on 2024-01-24.",
+      "contentOwner": "Nigeria's Energy Transition Plan",
+      "economicBuyer": "Nigeria's Energy Transition Plan",
+      "unresolvedGates": [],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@NigeriaETP",
+          "proves": "Nigeria's Energy Transition Plan was inspected at https://www.youtube.com/@NigeriaETP; latest verified publication \"ETO@COP28 Interview with Dr. Alex Irune\" on 2024-01-24."
+        },
+        {
+          "url": "https://www.youtube.com/@NigeriaETP?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Nigeria's Energy Transition Plan's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=HE0A7R_NBvM",
+          "proves": "Owned publication used to verify Nigeria's Energy Transition Plan's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=B9q_som_MS8",
+          "proves": "Owned publication used to verify Nigeria's Energy Transition Plan's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=yFKXO8PHuDc",
+          "proves": "Owned publication used to verify Nigeria's Energy Transition Plan's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Nigeria's Energy Transition Plan feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@NigeriaETP",
+              "https://www.youtube.com/@NigeriaETP?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=HE0A7R_NBvM",
+              "https://www.youtube.com/watch?v=B9q_som_MS8",
+              "https://www.youtube.com/watch?v=yFKXO8PHuDc"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2024-01-24, 2024-01-24, 2024-01-24; latest verified publication \"ETO@COP28 Interview with Dr. Alex Irune\" on 2024-01-24.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@NigeriaETP",
+              "https://www.youtube.com/@NigeriaETP?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=HE0A7R_NBvM",
+              "https://www.youtube.com/watch?v=B9q_som_MS8",
+              "https://www.youtube.com/watch?v=yFKXO8PHuDc"
+            ]
+          },
+          "roles": {
+            "status": "NOT_APPLICABLE",
+            "note": "Nigeria's Energy Transition Plan is a government-owned institutional communications program, not a creator-controlled media buyer. Additional roles research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Nigeria's Energy Transition Plan is a government-owned institutional communications program, not a creator-controlled media buyer. Additional contact research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Nigeria's Energy Transition Plan is a government-owned institutional communications program, not a creator-controlled media buyer. Additional offer research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Nigeria's Energy Transition Plan is a government-owned institutional communications program, not a creator-controlled media buyer. Additional funnel research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Nigeria's Energy Transition Plan is a government-owned institutional communications program, not a creator-controlled media buyer. Additional videoGap research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "Nigeria's Energy Transition Plan is a government-owned institutional communications program, not a creator-controlled media buyer. Additional pitchHook research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          }
+        }
+      },
+      "factualHardGate": "CORPORATE_MONOLITH"
+    },
+    {
+      "id": "informa-markets",
+      "researchCompleteness": "COMPLETE",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "Informa Markets is a large international events and media company with an institutional marketing operation. Energy & Utilites was inspected at https://www.youtube.com/@energyutilites5445; latest verified publication \"Energy and Utilities Marketplace Directory Listing\" on 2021-04-29.",
+      "contentOwner": "Informa Markets",
+      "economicBuyer": "Informa Markets",
+      "unresolvedGates": [],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@energyutilites5445",
+          "proves": "Energy & Utilites was inspected at https://www.youtube.com/@energyutilites5445; latest verified publication \"Energy and Utilities Marketplace Directory Listing\" on 2021-04-29."
+        },
+        {
+          "url": "https://www.youtube.com/@energyutilites5445?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Energy & Utilites's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=B_JLuhLBq8s",
+          "proves": "Owned publication used to verify Energy & Utilites's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=cIIpRBmjVLA",
+          "proves": "Owned publication used to verify Energy & Utilites's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=0yybKryTMEM",
+          "proves": "Owned publication used to verify Energy & Utilites's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Energy & Utilites feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@energyutilites5445",
+              "https://www.youtube.com/@energyutilites5445?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=B_JLuhLBq8s",
+              "https://www.youtube.com/watch?v=cIIpRBmjVLA",
+              "https://www.youtube.com/watch?v=0yybKryTMEM"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2021-04-29, 2021-01-07, 2021-01-07; latest verified publication \"Energy and Utilities Marketplace Directory Listing\" on 2021-04-29.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@energyutilites5445",
+              "https://www.youtube.com/@energyutilites5445?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=B_JLuhLBq8s",
+              "https://www.youtube.com/watch?v=cIIpRBmjVLA",
+              "https://www.youtube.com/watch?v=0yybKryTMEM"
+            ]
+          },
+          "roles": {
+            "status": "NOT_APPLICABLE",
+            "note": "Informa Markets is a large international events and media company with an institutional marketing operation. Additional roles research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "Informa Markets is a large international events and media company with an institutional marketing operation. Additional contact research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "Informa Markets is a large international events and media company with an institutional marketing operation. Additional offer research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "Informa Markets is a large international events and media company with an institutional marketing operation. Additional funnel research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "Informa Markets is a large international events and media company with an institutional marketing operation. Additional videoGap research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "Informa Markets is a large international events and media company with an institutional marketing operation. Additional pitchHook research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          }
+        }
+      },
+      "factualHardGate": "CORPORATE_MONOLITH"
+    },
+    {
+      "id": "erasmus-ka2",
+      "researchCompleteness": "COMPLETE",
+      "decision": "DISQUALIFIED_CONFIRMED",
+      "decisionReason": "The Erasmus KA2 account is an institutionally governed education-project channel rather than a creator-controlled commercial buyer. GrEnFIn - Green Energy market and Finance was inspected at https://www.youtube.com/@grenfin-greenenergymarketa3314; latest verified publication \"Adaptation to the climate change: basic information\" on 2022-03-18.",
+      "contentOwner": "ERASMUS KA2",
+      "economicBuyer": "ERASMUS KA2",
+      "unresolvedGates": [],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@grenfin-greenenergymarketa3314",
+          "proves": "GrEnFIn - Green Energy market and Finance was inspected at https://www.youtube.com/@grenfin-greenenergymarketa3314; latest verified publication \"Adaptation to the climate change: basic information\" on 2022-03-18."
+        },
+        {
+          "url": "https://www.youtube.com/@grenfin-greenenergymarketa3314?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify GrEnFIn - Green Energy market and Finance's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=y7tn0UHo7HU",
+          "proves": "Owned publication used to verify GrEnFIn - Green Energy market and Finance's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=BU_aYyds69A",
+          "proves": "Owned publication used to verify GrEnFIn - Green Energy market and Finance's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=odoW22sU87k",
+          "proves": "Owned publication used to verify GrEnFIn - Green Energy market and Finance's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned GrEnFIn - Green Energy market and Finance feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@grenfin-greenenergymarketa3314",
+              "https://www.youtube.com/@grenfin-greenenergymarketa3314?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=y7tn0UHo7HU",
+              "https://www.youtube.com/watch?v=BU_aYyds69A",
+              "https://www.youtube.com/watch?v=odoW22sU87k"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2022-03-18, 2022-03-18, 2022-03-18; latest verified publication \"Adaptation to the climate change: basic information\" on 2022-03-18.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@grenfin-greenenergymarketa3314",
+              "https://www.youtube.com/@grenfin-greenenergymarketa3314?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=y7tn0UHo7HU",
+              "https://www.youtube.com/watch?v=BU_aYyds69A",
+              "https://www.youtube.com/watch?v=odoW22sU87k"
+            ]
+          },
+          "roles": {
+            "status": "NOT_APPLICABLE",
+            "note": "The Erasmus KA2 account is an institutionally governed education-project channel rather than a creator-controlled commercial buyer. Additional roles research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "contact": {
+            "status": "NOT_APPLICABLE",
+            "note": "The Erasmus KA2 account is an institutionally governed education-project channel rather than a creator-controlled commercial buyer. Additional contact research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "offer": {
+            "status": "NOT_APPLICABLE",
+            "note": "The Erasmus KA2 account is an institutionally governed education-project channel rather than a creator-controlled commercial buyer. Additional offer research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "funnel": {
+            "status": "NOT_APPLICABLE",
+            "note": "The Erasmus KA2 account is an institutionally governed education-project channel rather than a creator-controlled commercial buyer. Additional funnel research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "videoGap": {
+            "status": "NOT_APPLICABLE",
+            "note": "The Erasmus KA2 account is an institutionally governed education-project channel rather than a creator-controlled commercial buyer. Additional videoGap research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          },
+          "pitchHook": {
+            "status": "NOT_APPLICABLE",
+            "note": "The Erasmus KA2 account is an institutionally governed education-project channel rather than a creator-controlled commercial buyer. Additional pitchHook research cannot reverse that factual gate.",
+            "evidenceUrls": []
+          }
+        }
+      },
+      "factualHardGate": "CORPORATE_MONOLITH"
+    },
+    {
+      "id": "ebw-marketpro",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "EBW MarketPro was inspected at https://www.youtube.com/@ebwmarketpro3991; latest verified publication \"How to Create Energy Market Scenarios on Sapphire\" on 2013-11-30. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "EBW MarketPro",
+      "economicBuyer": "EBW MarketPro",
+      "unresolvedGates": [
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@ebwmarketpro3991",
+          "proves": "EBW MarketPro was inspected at https://www.youtube.com/@ebwmarketpro3991; latest verified publication \"How to Create Energy Market Scenarios on Sapphire\" on 2013-11-30."
+        },
+        {
+          "url": "https://www.youtube.com/@ebwmarketpro3991?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify EBW MarketPro's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Y4SsmW3ydEE",
+          "proves": "Owned publication used to verify EBW MarketPro's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned EBW MarketPro feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ebwmarketpro3991",
+              "https://www.youtube.com/@ebwmarketpro3991?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Y4SsmW3ydEE"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "EBW MarketPro was inspected at https://www.youtube.com/@ebwmarketpro3991; latest verified publication \"How to Create Energy Market Scenarios on Sapphire\" on 2013-11-30. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ebwmarketpro3991",
+              "https://www.youtube.com/@ebwmarketpro3991?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Y4SsmW3ydEE"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "EBW MarketPro was inspected at https://www.youtube.com/@ebwmarketpro3991; latest verified publication \"How to Create Energy Market Scenarios on Sapphire\" on 2013-11-30. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ebwmarketpro3991",
+              "https://www.youtube.com/@ebwmarketpro3991?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Y4SsmW3ydEE"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "EBW MarketPro was inspected at https://www.youtube.com/@ebwmarketpro3991; latest verified publication \"How to Create Energy Market Scenarios on Sapphire\" on 2013-11-30. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ebwmarketpro3991",
+              "https://www.youtube.com/@ebwmarketpro3991?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Y4SsmW3ydEE"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "EBW MarketPro was inspected at https://www.youtube.com/@ebwmarketpro3991; latest verified publication \"How to Create Energy Market Scenarios on Sapphire\" on 2013-11-30. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ebwmarketpro3991",
+              "https://www.youtube.com/@ebwmarketpro3991?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Y4SsmW3ydEE"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "EBW MarketPro was inspected at https://www.youtube.com/@ebwmarketpro3991; latest verified publication \"How to Create Energy Market Scenarios on Sapphire\" on 2013-11-30. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ebwmarketpro3991",
+              "https://www.youtube.com/@ebwmarketpro3991?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Y4SsmW3ydEE"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ebwmarketpro3991",
+              "https://www.youtube.com/@ebwmarketpro3991?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Y4SsmW3ydEE"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "EBW MarketPro was inspected at https://www.youtube.com/@ebwmarketpro3991; latest verified publication \"How to Create Energy Market Scenarios on Sapphire\" on 2013-11-30. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ebwmarketpro3991",
+              "https://www.youtube.com/@ebwmarketpro3991?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=Y4SsmW3ydEE"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "money-mastery",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "404 Not Found was inspected at https://www.youtube.com/@ToolHunte19978; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Money Mastery",
+      "economicBuyer": "Money Mastery",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@ToolHunte19978",
+          "proves": "404 Not Found was inspected at https://www.youtube.com/@ToolHunte19978; no dated publication exposed by the recorded route."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to 404 Not Found, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ToolHunte19978"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "404 Not Found was inspected at https://www.youtube.com/@ToolHunte19978; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ToolHunte19978"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "404 Not Found was inspected at https://www.youtube.com/@ToolHunte19978; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ToolHunte19978"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "404 Not Found was inspected at https://www.youtube.com/@ToolHunte19978; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ToolHunte19978"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "404 Not Found was inspected at https://www.youtube.com/@ToolHunte19978; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ToolHunte19978"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "404 Not Found was inspected at https://www.youtube.com/@ToolHunte19978; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ToolHunte19978"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ToolHunte19978"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "404 Not Found was inspected at https://www.youtube.com/@ToolHunte19978; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ToolHunte19978"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "prabhat-ranjan-jha",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "404 Not Found was inspected at https://www.youtube.com/@PrabhatRJha; no dated publication exposed by the recorded route. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Prabhat Ranjan Jha",
+      "economicBuyer": "Prabhat Ranjan Jha",
+      "unresolvedGates": [
+        "SOURCE_IDENTITY",
+        "OWNEDLONGFORM",
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@PrabhatRJha",
+          "proves": "404 Not Found was inspected at https://www.youtube.com/@PrabhatRJha; no dated publication exposed by the recorded route."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "UNRESOLVED",
+            "note": "The route resolves to 404 Not Found, but the stored identity is not strong enough to bind it to the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@PrabhatRJha"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "404 Not Found was inspected at https://www.youtube.com/@PrabhatRJha; no dated publication exposed by the recorded route. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@PrabhatRJha"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "404 Not Found was inspected at https://www.youtube.com/@PrabhatRJha; no dated publication exposed by the recorded route. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@PrabhatRJha"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "404 Not Found was inspected at https://www.youtube.com/@PrabhatRJha; no dated publication exposed by the recorded route. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@PrabhatRJha"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "404 Not Found was inspected at https://www.youtube.com/@PrabhatRJha; no dated publication exposed by the recorded route. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@PrabhatRJha"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "404 Not Found was inspected at https://www.youtube.com/@PrabhatRJha; no dated publication exposed by the recorded route. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@PrabhatRJha"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@PrabhatRJha"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "404 Not Found was inspected at https://www.youtube.com/@PrabhatRJha; no dated publication exposed by the recorded route. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@PrabhatRJha"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "oil_gas_-drilling_operation",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "oil_gas_-drilling_operation was inspected at https://www.youtube.com/@DRILLING_TECH; latest verified publication \"#youtube#Riglife # oil field # live long Pakistan\" on 2023-09-04. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "OIL_GAS_ DRILLING_OPERATION",
+      "economicBuyer": "OIL_GAS_ DRILLING_OPERATION",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@DRILLING_TECH",
+          "proves": "oil_gas_-drilling_operation was inspected at https://www.youtube.com/@DRILLING_TECH; latest verified publication \"#youtube#Riglife # oil field # live long Pakistan\" on 2023-09-04."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=1wi7Lp2xrEE",
+          "proves": "Owned publication used to verify oil_gas_-drilling_operation's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=4HYFYn4lvv8",
+          "proves": "Owned publication used to verify oil_gas_-drilling_operation's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=3SgOgBrZnqA",
+          "proves": "Owned publication used to verify oil_gas_-drilling_operation's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned oil_gas_-drilling_operation feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@DRILLING_TECH",
+              "https://www.youtube.com/watch?v=1wi7Lp2xrEE",
+              "https://www.youtube.com/watch?v=4HYFYn4lvv8",
+              "https://www.youtube.com/watch?v=3SgOgBrZnqA"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2023-09-04, 2023-01-31, 2022-11-21; latest verified publication \"#youtube#Riglife # oil field # live long Pakistan\" on 2023-09-04.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@DRILLING_TECH",
+              "https://www.youtube.com/watch?v=1wi7Lp2xrEE",
+              "https://www.youtube.com/watch?v=4HYFYn4lvv8",
+              "https://www.youtube.com/watch?v=3SgOgBrZnqA"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "oil_gas_-drilling_operation was inspected at https://www.youtube.com/@DRILLING_TECH; latest verified publication \"#youtube#Riglife # oil field # live long Pakistan\" on 2023-09-04. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@DRILLING_TECH",
+              "https://www.youtube.com/watch?v=1wi7Lp2xrEE",
+              "https://www.youtube.com/watch?v=4HYFYn4lvv8",
+              "https://www.youtube.com/watch?v=3SgOgBrZnqA"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "oil_gas_-drilling_operation was inspected at https://www.youtube.com/@DRILLING_TECH; latest verified publication \"#youtube#Riglife # oil field # live long Pakistan\" on 2023-09-04. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@DRILLING_TECH",
+              "https://www.youtube.com/watch?v=1wi7Lp2xrEE",
+              "https://www.youtube.com/watch?v=4HYFYn4lvv8",
+              "https://www.youtube.com/watch?v=3SgOgBrZnqA"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "oil_gas_-drilling_operation was inspected at https://www.youtube.com/@DRILLING_TECH; latest verified publication \"#youtube#Riglife # oil field # live long Pakistan\" on 2023-09-04. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@DRILLING_TECH",
+              "https://www.youtube.com/watch?v=1wi7Lp2xrEE",
+              "https://www.youtube.com/watch?v=4HYFYn4lvv8",
+              "https://www.youtube.com/watch?v=3SgOgBrZnqA"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "oil_gas_-drilling_operation was inspected at https://www.youtube.com/@DRILLING_TECH; latest verified publication \"#youtube#Riglife # oil field # live long Pakistan\" on 2023-09-04. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@DRILLING_TECH",
+              "https://www.youtube.com/watch?v=1wi7Lp2xrEE",
+              "https://www.youtube.com/watch?v=4HYFYn4lvv8",
+              "https://www.youtube.com/watch?v=3SgOgBrZnqA"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2023-09-04, 2023-01-31, 2022-11-21), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@DRILLING_TECH",
+              "https://www.youtube.com/watch?v=1wi7Lp2xrEE",
+              "https://www.youtube.com/watch?v=4HYFYn4lvv8",
+              "https://www.youtube.com/watch?v=3SgOgBrZnqA"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "oil_gas_-drilling_operation was inspected at https://www.youtube.com/@DRILLING_TECH; latest verified publication \"#youtube#Riglife # oil field # live long Pakistan\" on 2023-09-04. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@DRILLING_TECH",
+              "https://www.youtube.com/watch?v=1wi7Lp2xrEE",
+              "https://www.youtube.com/watch?v=4HYFYn4lvv8",
+              "https://www.youtube.com/watch?v=3SgOgBrZnqA"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "learning-this",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "Oil Gas Learning was inspected at https://www.youtube.com/@OilGasLearning; latest verified publication \"Gearbox Overhauling\" on 2025-07-19. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "LEARNING This",
+      "economicBuyer": "LEARNING This",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@OilGasLearning",
+          "proves": "Oil Gas Learning was inspected at https://www.youtube.com/@OilGasLearning; latest verified publication \"Gearbox Overhauling\" on 2025-07-19."
+        },
+        {
+          "url": "https://www.youtube.com/@OilGasLearning?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Oil Gas Learning's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lY60XDcHxi0",
+          "proves": "Owned publication used to verify Oil Gas Learning's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=UDzvC8IU4-E",
+          "proves": "Owned publication used to verify Oil Gas Learning's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SLeNdfcWrfc",
+          "proves": "Owned publication used to verify Oil Gas Learning's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Oil Gas Learning feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OilGasLearning",
+              "https://www.youtube.com/@OilGasLearning?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=lY60XDcHxi0",
+              "https://www.youtube.com/watch?v=UDzvC8IU4-E",
+              "https://www.youtube.com/watch?v=SLeNdfcWrfc"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2025-07-19, 2025-07-11, 2025-07-05; latest verified publication \"Gearbox Overhauling\" on 2025-07-19.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OilGasLearning",
+              "https://www.youtube.com/@OilGasLearning?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=lY60XDcHxi0",
+              "https://www.youtube.com/watch?v=UDzvC8IU4-E",
+              "https://www.youtube.com/watch?v=SLeNdfcWrfc"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Oil Gas Learning was inspected at https://www.youtube.com/@OilGasLearning; latest verified publication \"Gearbox Overhauling\" on 2025-07-19. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OilGasLearning",
+              "https://www.youtube.com/@OilGasLearning?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=lY60XDcHxi0",
+              "https://www.youtube.com/watch?v=UDzvC8IU4-E",
+              "https://www.youtube.com/watch?v=SLeNdfcWrfc"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Oil Gas Learning was inspected at https://www.youtube.com/@OilGasLearning; latest verified publication \"Gearbox Overhauling\" on 2025-07-19. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OilGasLearning",
+              "https://www.youtube.com/@OilGasLearning?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=lY60XDcHxi0",
+              "https://www.youtube.com/watch?v=UDzvC8IU4-E",
+              "https://www.youtube.com/watch?v=SLeNdfcWrfc"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Oil Gas Learning was inspected at https://www.youtube.com/@OilGasLearning; latest verified publication \"Gearbox Overhauling\" on 2025-07-19. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OilGasLearning",
+              "https://www.youtube.com/@OilGasLearning?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=lY60XDcHxi0",
+              "https://www.youtube.com/watch?v=UDzvC8IU4-E",
+              "https://www.youtube.com/watch?v=SLeNdfcWrfc"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Oil Gas Learning was inspected at https://www.youtube.com/@OilGasLearning; latest verified publication \"Gearbox Overhauling\" on 2025-07-19. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OilGasLearning",
+              "https://www.youtube.com/@OilGasLearning?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=lY60XDcHxi0",
+              "https://www.youtube.com/watch?v=UDzvC8IU4-E",
+              "https://www.youtube.com/watch?v=SLeNdfcWrfc"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2025-07-19, 2025-07-11, 2025-07-05), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OilGasLearning",
+              "https://www.youtube.com/@OilGasLearning?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=lY60XDcHxi0",
+              "https://www.youtube.com/watch?v=UDzvC8IU4-E",
+              "https://www.youtube.com/watch?v=SLeNdfcWrfc"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Oil Gas Learning was inspected at https://www.youtube.com/@OilGasLearning; latest verified publication \"Gearbox Overhauling\" on 2025-07-19. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OilGasLearning",
+              "https://www.youtube.com/@OilGasLearning?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=lY60XDcHxi0",
+              "https://www.youtube.com/watch?v=UDzvC8IU4-E",
+              "https://www.youtube.com/watch?v=SLeNdfcWrfc"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "drilling-tech",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "Drilling Tech was inspected at https://www.youtube.com/@gasdrilling; latest verified publication \"enjoy @oilfield #sun_jay @gasdrilling\" on 2024-01-28. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Drilling Tech",
+      "economicBuyer": "Drilling Tech",
+      "unresolvedGates": [
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@gasdrilling",
+          "proves": "Drilling Tech was inspected at https://www.youtube.com/@gasdrilling; latest verified publication \"enjoy @oilfield #sun_jay @gasdrilling\" on 2024-01-28."
+        },
+        {
+          "url": "https://www.youtube.com/@gasdrilling?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Drilling Tech's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SIDlWwWfvDQ",
+          "proves": "Owned publication used to verify Drilling Tech's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Drilling Tech feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasdrilling",
+              "https://www.youtube.com/@gasdrilling?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=SIDlWwWfvDQ"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Drilling Tech was inspected at https://www.youtube.com/@gasdrilling; latest verified publication \"enjoy @oilfield #sun_jay @gasdrilling\" on 2024-01-28. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasdrilling",
+              "https://www.youtube.com/@gasdrilling?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=SIDlWwWfvDQ"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Drilling Tech was inspected at https://www.youtube.com/@gasdrilling; latest verified publication \"enjoy @oilfield #sun_jay @gasdrilling\" on 2024-01-28. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasdrilling",
+              "https://www.youtube.com/@gasdrilling?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=SIDlWwWfvDQ"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Drilling Tech was inspected at https://www.youtube.com/@gasdrilling; latest verified publication \"enjoy @oilfield #sun_jay @gasdrilling\" on 2024-01-28. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasdrilling",
+              "https://www.youtube.com/@gasdrilling?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=SIDlWwWfvDQ"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Drilling Tech was inspected at https://www.youtube.com/@gasdrilling; latest verified publication \"enjoy @oilfield #sun_jay @gasdrilling\" on 2024-01-28. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasdrilling",
+              "https://www.youtube.com/@gasdrilling?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=SIDlWwWfvDQ"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Drilling Tech was inspected at https://www.youtube.com/@gasdrilling; latest verified publication \"enjoy @oilfield #sun_jay @gasdrilling\" on 2024-01-28. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasdrilling",
+              "https://www.youtube.com/@gasdrilling?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=SIDlWwWfvDQ"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasdrilling",
+              "https://www.youtube.com/@gasdrilling?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=SIDlWwWfvDQ"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Drilling Tech was inspected at https://www.youtube.com/@gasdrilling; latest verified publication \"enjoy @oilfield #sun_jay @gasdrilling\" on 2024-01-28. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasdrilling",
+              "https://www.youtube.com/@gasdrilling?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=SIDlWwWfvDQ"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "industry-offshore",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "OILandGas was inspected at https://www.youtube.com/@OILandGas-Experiance; latest verified publication \"20 Jumper Deployment Basket\" on 2024-12-22. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Industry Offshore",
+      "economicBuyer": "Industry Offshore",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@OILandGas-Experiance",
+          "proves": "OILandGas was inspected at https://www.youtube.com/@OILandGas-Experiance; latest verified publication \"20 Jumper Deployment Basket\" on 2024-12-22."
+        },
+        {
+          "url": "https://www.youtube.com/@OILandGas-Experiance?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify OILandGas's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=X6wA-l4tZW4",
+          "proves": "Owned publication used to verify OILandGas's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=zIrLnATITxE",
+          "proves": "Owned publication used to verify OILandGas's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hjZ_gBlRVxw",
+          "proves": "Owned publication used to verify OILandGas's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned OILandGas feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OILandGas-Experiance",
+              "https://www.youtube.com/@OILandGas-Experiance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=X6wA-l4tZW4",
+              "https://www.youtube.com/watch?v=zIrLnATITxE",
+              "https://www.youtube.com/watch?v=hjZ_gBlRVxw"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2024-12-22, 2024-12-22, 2024-12-22; latest verified publication \"20 Jumper Deployment Basket\" on 2024-12-22.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OILandGas-Experiance",
+              "https://www.youtube.com/@OILandGas-Experiance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=X6wA-l4tZW4",
+              "https://www.youtube.com/watch?v=zIrLnATITxE",
+              "https://www.youtube.com/watch?v=hjZ_gBlRVxw"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "OILandGas was inspected at https://www.youtube.com/@OILandGas-Experiance; latest verified publication \"20 Jumper Deployment Basket\" on 2024-12-22. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OILandGas-Experiance",
+              "https://www.youtube.com/@OILandGas-Experiance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=X6wA-l4tZW4",
+              "https://www.youtube.com/watch?v=zIrLnATITxE",
+              "https://www.youtube.com/watch?v=hjZ_gBlRVxw"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "OILandGas was inspected at https://www.youtube.com/@OILandGas-Experiance; latest verified publication \"20 Jumper Deployment Basket\" on 2024-12-22. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OILandGas-Experiance",
+              "https://www.youtube.com/@OILandGas-Experiance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=X6wA-l4tZW4",
+              "https://www.youtube.com/watch?v=zIrLnATITxE",
+              "https://www.youtube.com/watch?v=hjZ_gBlRVxw"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "OILandGas was inspected at https://www.youtube.com/@OILandGas-Experiance; latest verified publication \"20 Jumper Deployment Basket\" on 2024-12-22. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OILandGas-Experiance",
+              "https://www.youtube.com/@OILandGas-Experiance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=X6wA-l4tZW4",
+              "https://www.youtube.com/watch?v=zIrLnATITxE",
+              "https://www.youtube.com/watch?v=hjZ_gBlRVxw"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "OILandGas was inspected at https://www.youtube.com/@OILandGas-Experiance; latest verified publication \"20 Jumper Deployment Basket\" on 2024-12-22. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OILandGas-Experiance",
+              "https://www.youtube.com/@OILandGas-Experiance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=X6wA-l4tZW4",
+              "https://www.youtube.com/watch?v=zIrLnATITxE",
+              "https://www.youtube.com/watch?v=hjZ_gBlRVxw"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2024-12-22, 2024-12-22, 2024-12-22), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OILandGas-Experiance",
+              "https://www.youtube.com/@OILandGas-Experiance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=X6wA-l4tZW4",
+              "https://www.youtube.com/watch?v=zIrLnATITxE",
+              "https://www.youtube.com/watch?v=hjZ_gBlRVxw"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "OILandGas was inspected at https://www.youtube.com/@OILandGas-Experiance; latest verified publication \"20 Jumper Deployment Basket\" on 2024-12-22. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@OILandGas-Experiance",
+              "https://www.youtube.com/@OILandGas-Experiance?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=X6wA-l4tZW4",
+              "https://www.youtube.com/watch?v=zIrLnATITxE",
+              "https://www.youtube.com/watch?v=hjZ_gBlRVxw"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "premium-oilfield",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "GlobalRigs was inspected at https://www.youtube.com/@GlobalRigs; latest verified publication \"Power Up Your Drilling Operations with the Ultimate Mud Pump\" on 2025-03-04. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Premium Oilfield",
+      "economicBuyer": "Premium Oilfield",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@GlobalRigs",
+          "proves": "GlobalRigs was inspected at https://www.youtube.com/@GlobalRigs; latest verified publication \"Power Up Your Drilling Operations with the Ultimate Mud Pump\" on 2025-03-04."
+        },
+        {
+          "url": "https://www.youtube.com/@GlobalRigs?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify GlobalRigs's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=nUMpHhZuTlk",
+          "proves": "Owned publication used to verify GlobalRigs's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=STtW5fywLKQ",
+          "proves": "Owned publication used to verify GlobalRigs's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=mBkUNnLSy4M",
+          "proves": "Owned publication used to verify GlobalRigs's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned GlobalRigs feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@GlobalRigs",
+              "https://www.youtube.com/@GlobalRigs?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=nUMpHhZuTlk",
+              "https://www.youtube.com/watch?v=STtW5fywLKQ",
+              "https://www.youtube.com/watch?v=mBkUNnLSy4M"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2025-03-04, 2025-03-04, 2025-03-04; latest verified publication \"Power Up Your Drilling Operations with the Ultimate Mud Pump\" on 2025-03-04.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@GlobalRigs",
+              "https://www.youtube.com/@GlobalRigs?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=nUMpHhZuTlk",
+              "https://www.youtube.com/watch?v=STtW5fywLKQ",
+              "https://www.youtube.com/watch?v=mBkUNnLSy4M"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "GlobalRigs was inspected at https://www.youtube.com/@GlobalRigs; latest verified publication \"Power Up Your Drilling Operations with the Ultimate Mud Pump\" on 2025-03-04. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@GlobalRigs",
+              "https://www.youtube.com/@GlobalRigs?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=nUMpHhZuTlk",
+              "https://www.youtube.com/watch?v=STtW5fywLKQ",
+              "https://www.youtube.com/watch?v=mBkUNnLSy4M"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "GlobalRigs was inspected at https://www.youtube.com/@GlobalRigs; latest verified publication \"Power Up Your Drilling Operations with the Ultimate Mud Pump\" on 2025-03-04. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@GlobalRigs",
+              "https://www.youtube.com/@GlobalRigs?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=nUMpHhZuTlk",
+              "https://www.youtube.com/watch?v=STtW5fywLKQ",
+              "https://www.youtube.com/watch?v=mBkUNnLSy4M"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "GlobalRigs was inspected at https://www.youtube.com/@GlobalRigs; latest verified publication \"Power Up Your Drilling Operations with the Ultimate Mud Pump\" on 2025-03-04. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@GlobalRigs",
+              "https://www.youtube.com/@GlobalRigs?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=nUMpHhZuTlk",
+              "https://www.youtube.com/watch?v=STtW5fywLKQ",
+              "https://www.youtube.com/watch?v=mBkUNnLSy4M"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "GlobalRigs was inspected at https://www.youtube.com/@GlobalRigs; latest verified publication \"Power Up Your Drilling Operations with the Ultimate Mud Pump\" on 2025-03-04. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@GlobalRigs",
+              "https://www.youtube.com/@GlobalRigs?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=nUMpHhZuTlk",
+              "https://www.youtube.com/watch?v=STtW5fywLKQ",
+              "https://www.youtube.com/watch?v=mBkUNnLSy4M"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2025-03-04, 2025-03-04, 2025-03-04), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@GlobalRigs",
+              "https://www.youtube.com/@GlobalRigs?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=nUMpHhZuTlk",
+              "https://www.youtube.com/watch?v=STtW5fywLKQ",
+              "https://www.youtube.com/watch?v=mBkUNnLSy4M"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "GlobalRigs was inspected at https://www.youtube.com/@GlobalRigs; latest verified publication \"Power Up Your Drilling Operations with the Ultimate Mud Pump\" on 2025-03-04. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@GlobalRigs",
+              "https://www.youtube.com/@GlobalRigs?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=nUMpHhZuTlk",
+              "https://www.youtube.com/watch?v=STtW5fywLKQ",
+              "https://www.youtube.com/watch?v=mBkUNnLSy4M"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "our-mission",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "Ogadenia Petroleum & Gas field insider was inspected at https://www.youtube.com/@ogadeniapetroleumgass; latest verified publication \"1  Oil Drilling Animationwww savevid com\" on 2023-01-07. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Our Mission",
+      "economicBuyer": "Our Mission",
+      "unresolvedGates": [
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@ogadeniapetroleumgass",
+          "proves": "Ogadenia Petroleum & Gas field insider was inspected at https://www.youtube.com/@ogadeniapetroleumgass; latest verified publication \"1  Oil Drilling Animationwww savevid com\" on 2023-01-07."
+        },
+        {
+          "url": "https://www.youtube.com/@ogadeniapetroleumgass?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Ogadenia Petroleum & Gas field insider's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=qQObNLKuwJs",
+          "proves": "Owned publication used to verify Ogadenia Petroleum & Gas field insider's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=I8GQ2kFyuMk",
+          "proves": "Owned publication used to verify Ogadenia Petroleum & Gas field insider's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Ogadenia Petroleum & Gas field insider feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ogadeniapetroleumgass",
+              "https://www.youtube.com/@ogadeniapetroleumgass?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=qQObNLKuwJs",
+              "https://www.youtube.com/watch?v=I8GQ2kFyuMk"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "Ogadenia Petroleum & Gas field insider was inspected at https://www.youtube.com/@ogadeniapetroleumgass; latest verified publication \"1  Oil Drilling Animationwww savevid com\" on 2023-01-07. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ogadeniapetroleumgass",
+              "https://www.youtube.com/@ogadeniapetroleumgass?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=qQObNLKuwJs",
+              "https://www.youtube.com/watch?v=I8GQ2kFyuMk"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Ogadenia Petroleum & Gas field insider was inspected at https://www.youtube.com/@ogadeniapetroleumgass; latest verified publication \"1  Oil Drilling Animationwww savevid com\" on 2023-01-07. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ogadeniapetroleumgass",
+              "https://www.youtube.com/@ogadeniapetroleumgass?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=qQObNLKuwJs",
+              "https://www.youtube.com/watch?v=I8GQ2kFyuMk"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Ogadenia Petroleum & Gas field insider was inspected at https://www.youtube.com/@ogadeniapetroleumgass; latest verified publication \"1  Oil Drilling Animationwww savevid com\" on 2023-01-07. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ogadeniapetroleumgass",
+              "https://www.youtube.com/@ogadeniapetroleumgass?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=qQObNLKuwJs",
+              "https://www.youtube.com/watch?v=I8GQ2kFyuMk"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Ogadenia Petroleum & Gas field insider was inspected at https://www.youtube.com/@ogadeniapetroleumgass; latest verified publication \"1  Oil Drilling Animationwww savevid com\" on 2023-01-07. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ogadeniapetroleumgass",
+              "https://www.youtube.com/@ogadeniapetroleumgass?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=qQObNLKuwJs",
+              "https://www.youtube.com/watch?v=I8GQ2kFyuMk"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Ogadenia Petroleum & Gas field insider was inspected at https://www.youtube.com/@ogadeniapetroleumgass; latest verified publication \"1  Oil Drilling Animationwww savevid com\" on 2023-01-07. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ogadeniapetroleumgass",
+              "https://www.youtube.com/@ogadeniapetroleumgass?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=qQObNLKuwJs",
+              "https://www.youtube.com/watch?v=I8GQ2kFyuMk"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ogadeniapetroleumgass",
+              "https://www.youtube.com/@ogadeniapetroleumgass?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=qQObNLKuwJs",
+              "https://www.youtube.com/watch?v=I8GQ2kFyuMk"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Ogadenia Petroleum & Gas field insider was inspected at https://www.youtube.com/@ogadeniapetroleumgass; latest verified publication \"1  Oil Drilling Animationwww savevid com\" on 2023-01-07. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@ogadeniapetroleumgass",
+              "https://www.youtube.com/@ogadeniapetroleumgass?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=qQObNLKuwJs",
+              "https://www.youtube.com/watch?v=I8GQ2kFyuMk"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "drilling-well",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "NICO OIL, GAS AND TECHNICAL SERVICES LTD was inspected at https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES; latest verified publication \"our contract project, Contact us to make a deal 07082857783 ....\" on 2025-09-08. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Drilling Well",
+      "economicBuyer": "Drilling Well",
+      "unresolvedGates": [
+        "CADENCE",
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES",
+          "proves": "NICO OIL, GAS AND TECHNICAL SERVICES LTD was inspected at https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES; latest verified publication \"our contract project, Contact us to make a deal 07082857783 ....\" on 2025-09-08."
+        },
+        {
+          "url": "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify NICO OIL, GAS AND TECHNICAL SERVICES LTD's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=QqNDw_abVFo",
+          "proves": "Owned publication used to verify NICO OIL, GAS AND TECHNICAL SERVICES LTD's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned NICO OIL, GAS AND TECHNICAL SERVICES LTD feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES",
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=QqNDw_abVFo"
+            ]
+          },
+          "cadence": {
+            "status": "UNRESOLVED",
+            "note": "NICO OIL, GAS AND TECHNICAL SERVICES LTD was inspected at https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES; latest verified publication \"our contract project, Contact us to make a deal 07082857783 ....\" on 2025-09-08. Fewer than three reliable dates were exposed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES",
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=QqNDw_abVFo"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "NICO OIL, GAS AND TECHNICAL SERVICES LTD was inspected at https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES; latest verified publication \"our contract project, Contact us to make a deal 07082857783 ....\" on 2025-09-08. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES",
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=QqNDw_abVFo"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "NICO OIL, GAS AND TECHNICAL SERVICES LTD was inspected at https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES; latest verified publication \"our contract project, Contact us to make a deal 07082857783 ....\" on 2025-09-08. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES",
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=QqNDw_abVFo"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "NICO OIL, GAS AND TECHNICAL SERVICES LTD was inspected at https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES; latest verified publication \"our contract project, Contact us to make a deal 07082857783 ....\" on 2025-09-08. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES",
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=QqNDw_abVFo"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "NICO OIL, GAS AND TECHNICAL SERVICES LTD was inspected at https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES; latest verified publication \"our contract project, Contact us to make a deal 07082857783 ....\" on 2025-09-08. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES",
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=QqNDw_abVFo"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "The recorded route did not expose three recent owned videos, so absence of video distribution is not claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES",
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=QqNDw_abVFo"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "NICO OIL, GAS AND TECHNICAL SERVICES LTD was inspected at https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES; latest verified publication \"our contract project, Contact us to make a deal 07082857783 ....\" on 2025-09-08. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES",
+              "https://www.youtube.com/@NICOOILGASANDTECHNICALSERVICES?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=QqNDw_abVFo"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "your-ultimate",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "Oil & Gas Insights was inspected at https://www.youtube.com/@Tejas-eo6ju; latest verified publication \"Non-Destructive Testing Methods (NDT)\" on 2024-05-22. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Your Ultimate",
+      "economicBuyer": "Your Ultimate",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@Tejas-eo6ju",
+          "proves": "Oil & Gas Insights was inspected at https://www.youtube.com/@Tejas-eo6ju; latest verified publication \"Non-Destructive Testing Methods (NDT)\" on 2024-05-22."
+        },
+        {
+          "url": "https://www.youtube.com/@Tejas-eo6ju?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Oil & Gas Insights's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=WhU6NdgWTMU",
+          "proves": "Owned publication used to verify Oil & Gas Insights's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=wZFdaGT50hw",
+          "proves": "Owned publication used to verify Oil & Gas Insights's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=Vy8Chh-eiLs",
+          "proves": "Owned publication used to verify Oil & Gas Insights's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Oil & Gas Insights feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@Tejas-eo6ju",
+              "https://www.youtube.com/@Tejas-eo6ju?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=WhU6NdgWTMU",
+              "https://www.youtube.com/watch?v=wZFdaGT50hw",
+              "https://www.youtube.com/watch?v=Vy8Chh-eiLs"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2024-05-22, 2024-05-22, 2024-05-21; latest verified publication \"Non-Destructive Testing Methods (NDT)\" on 2024-05-22.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@Tejas-eo6ju",
+              "https://www.youtube.com/@Tejas-eo6ju?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=WhU6NdgWTMU",
+              "https://www.youtube.com/watch?v=wZFdaGT50hw",
+              "https://www.youtube.com/watch?v=Vy8Chh-eiLs"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Oil & Gas Insights was inspected at https://www.youtube.com/@Tejas-eo6ju; latest verified publication \"Non-Destructive Testing Methods (NDT)\" on 2024-05-22. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@Tejas-eo6ju",
+              "https://www.youtube.com/@Tejas-eo6ju?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=WhU6NdgWTMU",
+              "https://www.youtube.com/watch?v=wZFdaGT50hw",
+              "https://www.youtube.com/watch?v=Vy8Chh-eiLs"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Oil & Gas Insights was inspected at https://www.youtube.com/@Tejas-eo6ju; latest verified publication \"Non-Destructive Testing Methods (NDT)\" on 2024-05-22. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@Tejas-eo6ju",
+              "https://www.youtube.com/@Tejas-eo6ju?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=WhU6NdgWTMU",
+              "https://www.youtube.com/watch?v=wZFdaGT50hw",
+              "https://www.youtube.com/watch?v=Vy8Chh-eiLs"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Oil & Gas Insights was inspected at https://www.youtube.com/@Tejas-eo6ju; latest verified publication \"Non-Destructive Testing Methods (NDT)\" on 2024-05-22. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@Tejas-eo6ju",
+              "https://www.youtube.com/@Tejas-eo6ju?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=WhU6NdgWTMU",
+              "https://www.youtube.com/watch?v=wZFdaGT50hw",
+              "https://www.youtube.com/watch?v=Vy8Chh-eiLs"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Oil & Gas Insights was inspected at https://www.youtube.com/@Tejas-eo6ju; latest verified publication \"Non-Destructive Testing Methods (NDT)\" on 2024-05-22. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@Tejas-eo6ju",
+              "https://www.youtube.com/@Tejas-eo6ju?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=WhU6NdgWTMU",
+              "https://www.youtube.com/watch?v=wZFdaGT50hw",
+              "https://www.youtube.com/watch?v=Vy8Chh-eiLs"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2024-05-22, 2024-05-22, 2024-05-21), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@Tejas-eo6ju",
+              "https://www.youtube.com/@Tejas-eo6ju?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=WhU6NdgWTMU",
+              "https://www.youtube.com/watch?v=wZFdaGT50hw",
+              "https://www.youtube.com/watch?v=Vy8Chh-eiLs"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Oil & Gas Insights was inspected at https://www.youtube.com/@Tejas-eo6ju; latest verified publication \"Non-Destructive Testing Methods (NDT)\" on 2024-05-22. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@Tejas-eo6ju",
+              "https://www.youtube.com/@Tejas-eo6ju?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=WhU6NdgWTMU",
+              "https://www.youtube.com/watch?v=wZFdaGT50hw",
+              "https://www.youtube.com/watch?v=Vy8Chh-eiLs"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "mobile-autonomous",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "Mobile Autonomous Solar-Wind Electrical Station was inspected at https://www.youtube.com/@mobileautonomoussolar-wind568; latest verified publication \"Rozhovor Eugena Novaka pre Pravda.sk o MASWES™ https://maswes.net/?lang=sk\" on 2025-10-01. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Mobile Autonomous",
+      "economicBuyer": "Mobile Autonomous",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@mobileautonomoussolar-wind568",
+          "proves": "Mobile Autonomous Solar-Wind Electrical Station was inspected at https://www.youtube.com/@mobileautonomoussolar-wind568; latest verified publication \"Rozhovor Eugena Novaka pre Pravda.sk o MASWES™ https://maswes.net/?lang=sk\" on 2025-10-01."
+        },
+        {
+          "url": "https://www.youtube.com/@mobileautonomoussolar-wind568?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Mobile Autonomous Solar-Wind Electrical Station's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=_yfrt93TQ-8",
+          "proves": "Owned publication used to verify Mobile Autonomous Solar-Wind Electrical Station's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=lFaAghHb9Mw",
+          "proves": "Owned publication used to verify Mobile Autonomous Solar-Wind Electrical Station's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=07SlhDn422s",
+          "proves": "Owned publication used to verify Mobile Autonomous Solar-Wind Electrical Station's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Mobile Autonomous Solar-Wind Electrical Station feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@mobileautonomoussolar-wind568",
+              "https://www.youtube.com/@mobileautonomoussolar-wind568?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_yfrt93TQ-8",
+              "https://www.youtube.com/watch?v=lFaAghHb9Mw",
+              "https://www.youtube.com/watch?v=07SlhDn422s"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2025-10-01, 2025-06-09, 2025-04-21; latest verified publication \"Rozhovor Eugena Novaka pre Pravda.sk o MASWES™ https://maswes.net/?lang=sk\" on 2025-10-01.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@mobileautonomoussolar-wind568",
+              "https://www.youtube.com/@mobileautonomoussolar-wind568?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_yfrt93TQ-8",
+              "https://www.youtube.com/watch?v=lFaAghHb9Mw",
+              "https://www.youtube.com/watch?v=07SlhDn422s"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Mobile Autonomous Solar-Wind Electrical Station was inspected at https://www.youtube.com/@mobileautonomoussolar-wind568; latest verified publication \"Rozhovor Eugena Novaka pre Pravda.sk o MASWES™ https://maswes.net/?lang=sk\" on 2025-10-01. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@mobileautonomoussolar-wind568",
+              "https://www.youtube.com/@mobileautonomoussolar-wind568?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_yfrt93TQ-8",
+              "https://www.youtube.com/watch?v=lFaAghHb9Mw",
+              "https://www.youtube.com/watch?v=07SlhDn422s"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Mobile Autonomous Solar-Wind Electrical Station was inspected at https://www.youtube.com/@mobileautonomoussolar-wind568; latest verified publication \"Rozhovor Eugena Novaka pre Pravda.sk o MASWES™ https://maswes.net/?lang=sk\" on 2025-10-01. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@mobileautonomoussolar-wind568",
+              "https://www.youtube.com/@mobileautonomoussolar-wind568?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_yfrt93TQ-8",
+              "https://www.youtube.com/watch?v=lFaAghHb9Mw",
+              "https://www.youtube.com/watch?v=07SlhDn422s"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Mobile Autonomous Solar-Wind Electrical Station was inspected at https://www.youtube.com/@mobileautonomoussolar-wind568; latest verified publication \"Rozhovor Eugena Novaka pre Pravda.sk o MASWES™ https://maswes.net/?lang=sk\" on 2025-10-01. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@mobileautonomoussolar-wind568",
+              "https://www.youtube.com/@mobileautonomoussolar-wind568?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_yfrt93TQ-8",
+              "https://www.youtube.com/watch?v=lFaAghHb9Mw",
+              "https://www.youtube.com/watch?v=07SlhDn422s"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Mobile Autonomous Solar-Wind Electrical Station was inspected at https://www.youtube.com/@mobileautonomoussolar-wind568; latest verified publication \"Rozhovor Eugena Novaka pre Pravda.sk o MASWES™ https://maswes.net/?lang=sk\" on 2025-10-01. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@mobileautonomoussolar-wind568",
+              "https://www.youtube.com/@mobileautonomoussolar-wind568?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_yfrt93TQ-8",
+              "https://www.youtube.com/watch?v=lFaAghHb9Mw",
+              "https://www.youtube.com/watch?v=07SlhDn422s"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2025-10-01, 2025-06-09, 2025-04-21), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@mobileautonomoussolar-wind568",
+              "https://www.youtube.com/@mobileautonomoussolar-wind568?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_yfrt93TQ-8",
+              "https://www.youtube.com/watch?v=lFaAghHb9Mw",
+              "https://www.youtube.com/watch?v=07SlhDn422s"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Mobile Autonomous Solar-Wind Electrical Station was inspected at https://www.youtube.com/@mobileautonomoussolar-wind568; latest verified publication \"Rozhovor Eugena Novaka pre Pravda.sk o MASWES™ https://maswes.net/?lang=sk\" on 2025-10-01. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@mobileautonomoussolar-wind568",
+              "https://www.youtube.com/@mobileautonomoussolar-wind568?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=_yfrt93TQ-8",
+              "https://www.youtube.com/watch?v=lFaAghHb9Mw",
+              "https://www.youtube.com/watch?v=07SlhDn422s"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "wind-solar-street-light",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "Wind Solar Street Light was inspected at https://www.youtube.com/@windsolarstreetlight2159; latest verified publication \"Wind Power Solution\" on 2020-01-07. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Wind Solar Street Light",
+      "economicBuyer": "Wind Solar Street Light",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@windsolarstreetlight2159",
+          "proves": "Wind Solar Street Light was inspected at https://www.youtube.com/@windsolarstreetlight2159; latest verified publication \"Wind Power Solution\" on 2020-01-07."
+        },
+        {
+          "url": "https://www.youtube.com/@windsolarstreetlight2159?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Wind Solar Street Light's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=iGCExDGDpfw",
+          "proves": "Owned publication used to verify Wind Solar Street Light's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=SI2-J8tTCq8",
+          "proves": "Owned publication used to verify Wind Solar Street Light's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=JkHGtHssa0w",
+          "proves": "Owned publication used to verify Wind Solar Street Light's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Wind Solar Street Light feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@windsolarstreetlight2159",
+              "https://www.youtube.com/@windsolarstreetlight2159?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iGCExDGDpfw",
+              "https://www.youtube.com/watch?v=SI2-J8tTCq8",
+              "https://www.youtube.com/watch?v=JkHGtHssa0w"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2020-01-07, 2019-12-25, 2019-11-04; latest verified publication \"Wind Power Solution\" on 2020-01-07.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@windsolarstreetlight2159",
+              "https://www.youtube.com/@windsolarstreetlight2159?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iGCExDGDpfw",
+              "https://www.youtube.com/watch?v=SI2-J8tTCq8",
+              "https://www.youtube.com/watch?v=JkHGtHssa0w"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Wind Solar Street Light was inspected at https://www.youtube.com/@windsolarstreetlight2159; latest verified publication \"Wind Power Solution\" on 2020-01-07. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@windsolarstreetlight2159",
+              "https://www.youtube.com/@windsolarstreetlight2159?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iGCExDGDpfw",
+              "https://www.youtube.com/watch?v=SI2-J8tTCq8",
+              "https://www.youtube.com/watch?v=JkHGtHssa0w"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Wind Solar Street Light was inspected at https://www.youtube.com/@windsolarstreetlight2159; latest verified publication \"Wind Power Solution\" on 2020-01-07. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@windsolarstreetlight2159",
+              "https://www.youtube.com/@windsolarstreetlight2159?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iGCExDGDpfw",
+              "https://www.youtube.com/watch?v=SI2-J8tTCq8",
+              "https://www.youtube.com/watch?v=JkHGtHssa0w"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Wind Solar Street Light was inspected at https://www.youtube.com/@windsolarstreetlight2159; latest verified publication \"Wind Power Solution\" on 2020-01-07. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@windsolarstreetlight2159",
+              "https://www.youtube.com/@windsolarstreetlight2159?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iGCExDGDpfw",
+              "https://www.youtube.com/watch?v=SI2-J8tTCq8",
+              "https://www.youtube.com/watch?v=JkHGtHssa0w"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Wind Solar Street Light was inspected at https://www.youtube.com/@windsolarstreetlight2159; latest verified publication \"Wind Power Solution\" on 2020-01-07. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@windsolarstreetlight2159",
+              "https://www.youtube.com/@windsolarstreetlight2159?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iGCExDGDpfw",
+              "https://www.youtube.com/watch?v=SI2-J8tTCq8",
+              "https://www.youtube.com/watch?v=JkHGtHssa0w"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2020-01-07, 2019-12-25, 2019-11-04), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@windsolarstreetlight2159",
+              "https://www.youtube.com/@windsolarstreetlight2159?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iGCExDGDpfw",
+              "https://www.youtube.com/watch?v=SI2-J8tTCq8",
+              "https://www.youtube.com/watch?v=JkHGtHssa0w"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Wind Solar Street Light was inspected at https://www.youtube.com/@windsolarstreetlight2159; latest verified publication \"Wind Power Solution\" on 2020-01-07. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@windsolarstreetlight2159",
+              "https://www.youtube.com/@windsolarstreetlight2159?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=iGCExDGDpfw",
+              "https://www.youtube.com/watch?v=SI2-J8tTCq8",
+              "https://www.youtube.com/watch?v=JkHGtHssa0w"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "storage-system",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "Energy Storage System was inspected at https://www.youtube.com/@EnergyStorage-China; latest verified publication \"EV Charger From Calion\" on 2025-12-25. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "Storage System",
+      "economicBuyer": "Storage System",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@EnergyStorage-China",
+          "proves": "Energy Storage System was inspected at https://www.youtube.com/@EnergyStorage-China; latest verified publication \"EV Charger From Calion\" on 2025-12-25."
+        },
+        {
+          "url": "https://www.youtube.com/@EnergyStorage-China?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify Energy Storage System's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=sTnjN6-QjMM",
+          "proves": "Owned publication used to verify Energy Storage System's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=83P-kLSWBWs",
+          "proves": "Owned publication used to verify Energy Storage System's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=fe5JDSTjNXk",
+          "proves": "Owned publication used to verify Energy Storage System's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned Energy Storage System feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@EnergyStorage-China",
+              "https://www.youtube.com/@EnergyStorage-China?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sTnjN6-QjMM",
+              "https://www.youtube.com/watch?v=83P-kLSWBWs",
+              "https://www.youtube.com/watch?v=fe5JDSTjNXk"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2025-12-25, 2025-12-19, 2025-12-16; latest verified publication \"EV Charger From Calion\" on 2025-12-25.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@EnergyStorage-China",
+              "https://www.youtube.com/@EnergyStorage-China?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sTnjN6-QjMM",
+              "https://www.youtube.com/watch?v=83P-kLSWBWs",
+              "https://www.youtube.com/watch?v=fe5JDSTjNXk"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "Energy Storage System was inspected at https://www.youtube.com/@EnergyStorage-China; latest verified publication \"EV Charger From Calion\" on 2025-12-25. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@EnergyStorage-China",
+              "https://www.youtube.com/@EnergyStorage-China?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sTnjN6-QjMM",
+              "https://www.youtube.com/watch?v=83P-kLSWBWs",
+              "https://www.youtube.com/watch?v=fe5JDSTjNXk"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "Energy Storage System was inspected at https://www.youtube.com/@EnergyStorage-China; latest verified publication \"EV Charger From Calion\" on 2025-12-25. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@EnergyStorage-China",
+              "https://www.youtube.com/@EnergyStorage-China?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sTnjN6-QjMM",
+              "https://www.youtube.com/watch?v=83P-kLSWBWs",
+              "https://www.youtube.com/watch?v=fe5JDSTjNXk"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "Energy Storage System was inspected at https://www.youtube.com/@EnergyStorage-China; latest verified publication \"EV Charger From Calion\" on 2025-12-25. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@EnergyStorage-China",
+              "https://www.youtube.com/@EnergyStorage-China?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sTnjN6-QjMM",
+              "https://www.youtube.com/watch?v=83P-kLSWBWs",
+              "https://www.youtube.com/watch?v=fe5JDSTjNXk"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "Energy Storage System was inspected at https://www.youtube.com/@EnergyStorage-China; latest verified publication \"EV Charger From Calion\" on 2025-12-25. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@EnergyStorage-China",
+              "https://www.youtube.com/@EnergyStorage-China?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sTnjN6-QjMM",
+              "https://www.youtube.com/watch?v=83P-kLSWBWs",
+              "https://www.youtube.com/watch?v=fe5JDSTjNXk"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2025-12-25, 2025-12-19, 2025-12-16), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@EnergyStorage-China",
+              "https://www.youtube.com/@EnergyStorage-China?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sTnjN6-QjMM",
+              "https://www.youtube.com/watch?v=83P-kLSWBWs",
+              "https://www.youtube.com/watch?v=fe5JDSTjNXk"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "Energy Storage System was inspected at https://www.youtube.com/@EnergyStorage-China; latest verified publication \"EV Charger From Calion\" on 2025-12-25. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@EnergyStorage-China",
+              "https://www.youtube.com/@EnergyStorage-China?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=sTnjN6-QjMM",
+              "https://www.youtube.com/watch?v=83P-kLSWBWs",
+              "https://www.youtube.com/watch?v=fe5JDSTjNXk"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "gasonline-live",
+      "researchCompleteness": "COMPLETE",
+      "decision": "NURTURE",
+      "decisionReason": "GAS online was inspected at https://www.youtube.com/@gasonline1298; latest verified publication \"GASonline-Changing Dynamics of the Global Industrial Gases Business\" on 2020-07-03. The account remains NURTURE because buyer, contact, offer, complete funnel, visual gap, and transaction-specific hook are not all verified.",
+      "contentOwner": "GASonline Live",
+      "economicBuyer": "GASonline Live",
+      "unresolvedGates": [
+        "ROLES",
+        "CONTACT",
+        "OFFER",
+        "FUNNEL",
+        "VIDEOGAP",
+        "PITCHHOOK"
+      ],
+      "evidence": [
+        {
+          "url": "https://www.youtube.com/@gasonline1298",
+          "proves": "GAS online was inspected at https://www.youtube.com/@gasonline1298; latest verified publication \"GASonline-Changing Dynamics of the Global Industrial Gases Business\" on 2020-07-03."
+        },
+        {
+          "url": "https://www.youtube.com/@gasonline1298?cbrd=1&ucbcb=1",
+          "proves": "Owned publication used to verify GAS online's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=DVeyJfGCWbc",
+          "proves": "Owned publication used to verify GAS online's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=aqE9w_TYjBU",
+          "proves": "Owned publication used to verify GAS online's cadence."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OxQ3QmyYn6o",
+          "proves": "Owned publication used to verify GAS online's cadence."
+        }
+      ],
+      "auditedAt": "2026-07-15T19:48:18.775Z",
+      "researchAudit": {
+        "reviewedBy": "Sol",
+        "reviewedAt": "2026-07-15T19:48:18.775Z",
+        "checks": {
+          "ownedLongForm": {
+            "status": "CONFIRMED",
+            "note": "The official-platform route resolves to the owned GAS online feed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasonline1298",
+              "https://www.youtube.com/@gasonline1298?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=DVeyJfGCWbc",
+              "https://www.youtube.com/watch?v=aqE9w_TYjBU",
+              "https://www.youtube.com/watch?v=OxQ3QmyYn6o"
+            ]
+          },
+          "cadence": {
+            "status": "CONFIRMED",
+            "note": "The owned route exposes publication dates 2020-07-03, 2020-05-01, 2020-04-22; latest verified publication \"GASonline-Changing Dynamics of the Global Industrial Gases Business\" on 2020-07-03.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasonline1298",
+              "https://www.youtube.com/@gasonline1298?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=DVeyJfGCWbc",
+              "https://www.youtube.com/watch?v=aqE9w_TYjBU",
+              "https://www.youtube.com/watch?v=OxQ3QmyYn6o"
+            ]
+          },
+          "roles": {
+            "status": "UNRESOLVED",
+            "note": "GAS online was inspected at https://www.youtube.com/@gasonline1298; latest verified publication \"GASonline-Changing Dynamics of the Global Industrial Gases Business\" on 2020-07-03. It does not independently name and separate the content owner, recurring on-mic host, and economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasonline1298",
+              "https://www.youtube.com/@gasonline1298?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=DVeyJfGCWbc",
+              "https://www.youtube.com/watch?v=aqE9w_TYjBU",
+              "https://www.youtube.com/watch?v=OxQ3QmyYn6o"
+            ]
+          },
+          "contact": {
+            "status": "UNRESOLVED",
+            "note": "GAS online was inspected at https://www.youtube.com/@gasonline1298; latest verified publication \"GASonline-Changing Dynamics of the Global Industrial Gases Business\" on 2020-07-03. It exposes no verified public outreach route tied to a named economic buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasonline1298",
+              "https://www.youtube.com/@gasonline1298?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=DVeyJfGCWbc",
+              "https://www.youtube.com/watch?v=aqE9w_TYjBU",
+              "https://www.youtube.com/watch?v=OxQ3QmyYn6o"
+            ]
+          },
+          "offer": {
+            "status": "UNRESOLVED",
+            "note": "GAS online was inspected at https://www.youtube.com/@gasonline1298; latest verified publication \"GASonline-Changing Dynamics of the Global Industrial Gases Business\" on 2020-07-03. It does not establish a concrete paid offer controlled by the proposed buyer.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasonline1298",
+              "https://www.youtube.com/@gasonline1298?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=DVeyJfGCWbc",
+              "https://www.youtube.com/watch?v=aqE9w_TYjBU",
+              "https://www.youtube.com/watch?v=OxQ3QmyYn6o"
+            ]
+          },
+          "funnel": {
+            "status": "UNRESOLVED",
+            "note": "GAS online was inspected at https://www.youtube.com/@gasonline1298; latest verified publication \"GASonline-Changing Dynamics of the Global Industrial Gases Business\" on 2020-07-03. TOF content is observable, but MOF and BOF cannot be tied to a verified transaction.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasonline1298",
+              "https://www.youtube.com/@gasonline1298?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=DVeyJfGCWbc",
+              "https://www.youtube.com/watch?v=aqE9w_TYjBU",
+              "https://www.youtube.com/watch?v=OxQ3QmyYn6o"
+            ]
+          },
+          "videoGap": {
+            "status": "UNRESOLVED",
+            "note": "Three recent owned uploads were located (2020-07-03, 2020-05-01, 2020-04-22), but their educational production quality has not been visually scored; no distribution gap is claimed.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasonline1298",
+              "https://www.youtube.com/@gasonline1298?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=DVeyJfGCWbc",
+              "https://www.youtube.com/watch?v=aqE9w_TYjBU",
+              "https://www.youtube.com/watch?v=OxQ3QmyYn6o"
+            ]
+          },
+          "pitchHook": {
+            "status": "UNRESOLVED",
+            "note": "GAS online was inspected at https://www.youtube.com/@gasonline1298; latest verified publication \"GASonline-Changing Dynamics of the Global Industrial Gases Business\" on 2020-07-03. A transaction-specific hook would be speculative without a named buyer, actual offer, and visually inspected gap.",
+            "evidenceUrls": [
+              "https://www.youtube.com/@gasonline1298",
+              "https://www.youtube.com/@gasonline1298?cbrd=1&ucbcb=1",
+              "https://www.youtube.com/watch?v=DVeyJfGCWbc",
+              "https://www.youtube.com/watch?v=aqE9w_TYjBU",
+              "https://www.youtube.com/watch?v=OxQ3QmyYn6o"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
