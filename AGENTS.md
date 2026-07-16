@@ -288,6 +288,7 @@ Never run legacy sourcing as a production write unless explicitly requested. `sc
 - `/report` documents the before/after state, methodology, business value, and faster future workflow. Its two generated report visuals live in `public/report/`.
 - `npm run qa:full-dashboard` tests totals, exclusion filtering, Alex Epstein's corrected current-channel hard gate, the detail drawer, report route, mobile overflow, and browser console errors. Screenshots are written under ignored `output/playwright/`.
 - The API and Sites build merge `data/full-review.json` over `data/nodes.json` at read/build time; the production prospect source remains unchanged.
+- `vercel.json` keeps Vercel on `npm run build:next`; `npm run build` is reserved for the Sites/OpenNext artifact.
 
 The dashboard now includes:
 - Default `PURSUE_NOW` view, a `Research next` queue, fit rank/score, and methodology decisions.
