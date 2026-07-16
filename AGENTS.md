@@ -279,6 +279,16 @@ Never run legacy sourcing as a production write unless explicitly requested. `sc
 
 ## Dashboard Notes
 
+### Full reviewed dashboard preview
+
+- Branch: `codex/full-reviewed-dashboard`. This combines the Sites workspace with the completed Sol ledgers; do not merge to `main` or replace the existing production dashboard until the user approves it after hands-on review.
+- `npm run compose:full-review` creates `data/full-review.json`, an exact one-record-per-prospect overlay across the six completed cohorts plus the nine evidence-cleared baseline records.
+- Current reviewed outcome: 840/840 complete, 22 `PURSUE_NOW`, 456 `NURTURE`, and 362 `DISQUALIFIED_CONFIRMED`.
+- The dashboard uses `reviewDecision` and the reviewed evidence fields as the primary sales view. Legacy methodology and actionability fields remain available for compatibility but must not override the completed Sol result.
+- `/report` documents the before/after state, methodology, business value, and faster future workflow. Its two generated report visuals live in `public/report/`.
+- `npm run qa:full-dashboard` tests totals, exclusion filtering, Alex Epstein's corrected current-channel hard gate, the detail drawer, report route, mobile overflow, and browser console errors. Screenshots are written under ignored `output/playwright/`.
+- The API and Sites build merge `data/full-review.json` over `data/nodes.json` at read/build time; the production prospect source remains unchanged.
+
 The dashboard now includes:
 - Default `PURSUE_NOW` view, a `Research next` queue, fit rank/score, and methodology decisions.
 - Contextual action menu for the latest episode, YouTube, Apple Podcasts, RSS, X, verified offer, contact, and source evidence.

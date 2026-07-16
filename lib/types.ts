@@ -148,5 +148,26 @@ export type NodeData = {
   researchReviewedAt?: string;
   researchDecisionReason?: string;
   researchEvidenceUrls?: string[];
+  reviewDecision?: "PURSUE_NOW" | "NURTURE" | "DISQUALIFIED_CONFIRMED";
+  reviewDecisionReason?: string;
+  reviewHardGate?: string;
+  reviewUnresolvedGates?: string[];
+  reviewEvidenceUrls?: string[];
+  reviewCohort?: string;
+  reviewStatus?: "PASSED";
+  reviewOwner?: string;
+  reviewHost?: string;
+  reviewBuyer?: string;
+  reviewPointMan?: string;
+  reviewContact?: string;
+  reviewOffer?: string;
+  reviewPitchHook?: string;
+  reviewVideoGap?: string;
+  reviewLatestPublishedAt?: string;
+  reviewLatestTitle?: string;
+  reviewTof?: string[];
+  reviewMof?: string[];
+  reviewBof?: string[];
+  reviewedAt?: string;
 };
 

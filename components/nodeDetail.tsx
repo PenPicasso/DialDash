@@ -91,16 +91,16 @@ export function NodeDetail({ node, onClose }: Props) {
 
     return {
       tof: {
-        channels: node.tofChannels?.length ? node.tofChannels.join(" & ") : tofChannels.length > 0 ? tofChannels.join(" & ") : "N/A",
-        hasVideoGap: Boolean(node.videoGapReason) || hasVideoGap,
-        videoGapReason: node.videoGapReason || videoGapReason
+        channels: node.reviewTof?.length ? node.reviewTof.join(" & ") : node.tofChannels?.length ? node.tofChannels.join(" & ") : tofChannels.length > 0 ? tofChannels.join(" & ") : "N/A",
+        hasVideoGap: Boolean(node.reviewVideoGap || node.videoGapReason) || hasVideoGap,
+        videoGapReason: node.reviewVideoGap || node.videoGapReason || videoGapReason
       },
       mof: {
-        channels: node.mofChannels?.length ? node.mofChannels.join(" + ") : mofChannels.join(" + ")
+        channels: node.reviewMof?.length ? node.reviewMof.join(" + ") : node.mofChannels?.length ? node.mofChannels.join(" + ") : mofChannels.join(" + ")
       },
       bof: {
-        model: node.bofOffer || bofModel,
-        detail: node.bofOffer
+        model: node.reviewBof?.length ? node.reviewBof.join(" + ") : node.reviewOffer || node.bofOffer || bofModel,
+        detail: node.reviewOffer || node.bofOffer
           ? "Verified first-party commercial transaction used to build this prospect's outreach hook."
           : bofDetail
       }
@@ -191,17 +191,28 @@ export function NodeDetail({ node, onClose }: Props) {
           <div>
             <div className="text-xs text-muted uppercase font-bold tracking-wider">Decision</div>
             <div className="text-sm font-bold text-foreground mt-0.5">
-              {(node.methodologyDecision || node.actionabilityStatus || "REVIEW").replace("_", " ")}
-              {node.reachabilityStatus ? ` / ${node.reachabilityStatus} reach` : ""}
+              {(node.reviewDecision || node.methodologyDecision || node.actionabilityStatus || "REVIEW").replaceAll("_", " ")}
+              {node.reviewDecision !== "DISQUALIFIED_CONFIRMED" && node.reachabilityStatus ? ` / ${node.reachabilityStatus} reach` : ""}
             </div>
           </div>
           <div className="text-right">
             <div className="text-xs text-muted uppercase font-bold tracking-wider">Best Outreach</div>
             <div className="text-sm font-bold text-foreground mt-0.5">
-              {node.bestOutreachChannel ? node.bestOutreachChannel.replace("_", " ") : "Missing"}
+              {node.reviewDecision === "DISQUALIFIED_CONFIRMED" ? "Not applicable" : node.bestOutreachChannel ? node.bestOutreachChannel.replace("_", " ") : "Missing"}
             </div>
           </div>
         </div>
+
+        {node.reviewDecisionReason && (
+          <div className={`mb-6 rounded-lg border p-4 ${node.reviewDecision === "DISQUALIFIED_CONFIRMED" ? "border-border bg-background" : "border-brand-blue/20 bg-brand-blue/[0.04]"}`}>
+            <div className="flex items-center justify-between gap-3 text-[10px] font-extrabold uppercase tracking-wider">
+              <span className="text-brand-blue">Sol-reviewed outcome</span>
+              <span className="text-muted">{node.reviewCohort?.replaceAll("-", " ")}</span>
+            </div>
+            {node.reviewHardGate && <div className="mt-2 text-xs font-black text-foreground">Hard gate: {node.reviewHardGate.replaceAll("_", " ")}</div>}
+            <p className="mt-2 text-xs leading-relaxed text-foreground/80">{node.reviewDecisionReason}</p>
+          </div>
+        )}
 
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-6">
@@ -235,10 +246,17 @@ export function NodeDetail({ node, onClose }: Props) {
             <span className="font-semibold text-foreground text-xs">{node.energyType}</span>
           </div>
 
-          <div className="flex justify-between items-center">
-            <span className="text-muted">Publishing Status</span>
-            {getCadenceDisplay()}
-          </div>
+          {node.reviewLatestPublishedAt ? (
+            <div className="flex justify-between gap-4">
+              <span className="text-muted">Review Latest</span>
+              <span className="text-right text-xs font-semibold text-foreground">{new Date(node.reviewLatestPublishedAt).toLocaleDateString()}</span>
+            </div>
+          ) : node.reviewDecision !== "DISQUALIFIED_CONFIRMED" ? (
+            <div className="flex justify-between items-center">
+              <span className="text-muted">Legacy Publishing Status</span>
+              {getCadenceDisplay()}
+            </div>
+          ) : null}
 
           {node.lastPublishDate && (
             <div className="flex justify-between">
@@ -249,7 +267,7 @@ export function NodeDetail({ node, onClose }: Props) {
         </div>
 
         {/* Funnel Strategy Breakdown */}
-        <div className="border-t border-border/60 pt-5 pb-5 space-y-4">
+        {node.reviewDecision !== "DISQUALIFIED_CONFIRMED" && <div className="border-t border-border/60 pt-5 pb-5 space-y-4">
           <h3 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-2">
             Funnel Strategy Breakdown
           </h3>
@@ -287,31 +305,46 @@ export function NodeDetail({ node, onClose }: Props) {
           {/* Pitch Strategy Hook */}
           <div className="p-3 rounded-xl bg-accent/5 border border-accent/15 text-xs text-muted-foreground leading-relaxed animate-pulse-slow">
             <span className="font-bold text-accent block mb-1">Outreach Hook Recommendation</span>
-            {node.pitchHook || (
+            {node.reviewPitchHook || node.pitchHook || (
               <>
                 Pitch clipping and short-form video optimization to improve their TOF reach, capturing warm organic leads for their <span className="font-semibold text-foreground">{funnel.bof.model.toLowerCase()}</span> model.
               </>
             )}
           </div>
-        </div>
+        </div>}
 
         <div className="mb-6 flex items-center justify-between gap-3 rounded-lg border border-border bg-panel p-3">
           <ProspectActions node={node} />
           {node.fitRank && <span className="text-xs font-extrabold text-brand-blue">Fit rank #{node.fitRank}</span>}
         </div>
 
-        {node.researchDecisionReason && (
+        {(node.reviewDecisionReason || node.researchDecisionReason) && (
           <div className="mb-6 rounded-lg border border-brand-blue/20 bg-brand-blue/[0.04] p-4">
             <div className="flex items-center justify-between gap-3">
-              <div className="text-[10px] font-extrabold uppercase tracking-wider text-brand-blue">Strong review</div>
+              <div className="text-[10px] font-extrabold uppercase tracking-wider text-brand-blue">Review evidence & roles</div>
               <div className="text-[10px] font-bold uppercase text-muted">
-                {node.methodologyDecision?.replace("_", " ")} / {node.researchReviewTier?.replace("_", " ")}
+                {node.reviewDecision?.replaceAll("_", " ")} / {node.reviewStatus || node.researchReviewTier?.replace("_", " ")}
               </div>
             </div>
-            <p className="mt-2 text-xs leading-relaxed text-foreground/80">{node.researchDecisionReason}</p>
-            {node.researchEvidenceUrls && node.researchEvidenceUrls.length > 0 && (
+            {node.reviewUnresolvedGates && node.reviewUnresolvedGates.length > 0 && (
+              <div className="mt-3 text-[11px] leading-relaxed text-muted">Still unresolved: {node.reviewUnresolvedGates.map((gate) => gate.replaceAll("_", " ")).join(", ")}</div>
+            )}
+            {(node.reviewOwner || node.reviewBuyer || node.reviewPointMan) && (
+              <div className="mt-3 grid grid-cols-2 gap-2 border-t border-brand-blue/10 pt-3 text-[11px]">
+                <div><span className="block text-muted">Owner</span><strong>{node.reviewOwner || "Unresolved"}</strong></div>
+                <div><span className="block text-muted">Buyer</span><strong>{node.reviewBuyer || "Unresolved"}</strong></div>
+                <div><span className="block text-muted">Point-man</span><strong>{node.reviewPointMan || "Unresolved"}</strong></div>
+                <div><span className="block text-muted">Contact</span><strong>{node.reviewContact || "Unresolved"}</strong></div>
+              </div>
+            )}
+            {node.reviewLatestTitle && (
+              <div className="mt-3 border-t border-brand-blue/10 pt-3 text-[11px] text-muted">
+                <span className="font-bold text-foreground">Latest verified:</span> {node.reviewLatestTitle}{node.reviewLatestPublishedAt ? ` (${new Date(node.reviewLatestPublishedAt).toLocaleDateString()})` : ""}
+              </div>
+            )}
+            {(node.reviewEvidenceUrls || node.researchEvidenceUrls) && (node.reviewEvidenceUrls || node.researchEvidenceUrls)!.length > 0 && (
               <div className="mt-3 flex flex-wrap gap-2">
-                {node.researchEvidenceUrls.slice(0, 5).map((url, index) => (
+                {(node.reviewEvidenceUrls || node.researchEvidenceUrls)!.slice(0, 5).map((url, index) => (
                   <a
                     key={`${url}-${index}`}
                     href={url}
@@ -327,10 +360,10 @@ export function NodeDetail({ node, onClose }: Props) {
           </div>
         )}
 
-        <div className="mb-6">
+        {node.reviewDecision !== "DISQUALIFIED_CONFIRMED" && <div className="mb-6">
           <div className="mb-2 text-xs font-bold uppercase tracking-wider text-muted">Latest by owned channel</div>
           <MediaFreshness node={node} expanded />
-        </div>
+        </div>}
 
         {/* Verification & Cadence Confidence */}
         <div className="border-t border-border/60 pt-4 pb-4 space-y-3 text-sm">

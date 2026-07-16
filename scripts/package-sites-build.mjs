@@ -27,6 +27,7 @@ const pages = [
   ["dashboard.html", "dashboard/index.html"],
   ["pilot.html", "pilot/index.html"],
   ["portal/demo.html", "portal/demo/index.html"],
+  ["report.html", "report/index.html"],
   ["_not-found.html", "404.html"],
 ];
 
@@ -36,11 +37,16 @@ for (const [sourcePage, targetPage] of pages) {
   copyFileSync(resolve(nextPages, sourcePage), output);
 }
 
-const nodes = JSON.parse(readFileSync(resolve("data", "nodes.json"), "utf8")).nodes;
+const baseNodes = JSON.parse(readFileSync(resolve("data", "nodes.json"), "utf8")).nodes;
+const review = JSON.parse(readFileSync(resolve("data", "full-review.json"), "utf8"));
+const reviewById = new Map(review.records.map((record) => [record.id, record]));
+const nodes = baseNodes.map((node) => ({ ...node, ...reviewById.get(node.id) }));
 const summary = {
   total: nodes.length,
-  pursue: nodes.filter((node) => node.methodologyDecision === "PURSUE_NOW").length,
-  nurture: nodes.filter((node) => node.methodologyDecision === "NURTURE").length,
+  reviewed: nodes.filter((node) => node.reviewStatus === "PASSED").length,
+  pursue: nodes.filter((node) => node.reviewDecision === "PURSUE_NOW").length,
+  nurture: nodes.filter((node) => node.reviewDecision === "NURTURE").length,
+  excluded: nodes.filter((node) => node.reviewDecision === "DISQUALIFIED_CONFIRMED").length,
   strongReady: nodes.filter(
     (node) => node.actionabilityStatus === "READY" && node.reachabilityStatus === "STRONG",
   ).length,
@@ -59,8 +65,8 @@ mkdirSync(dataTarget, { recursive: true });
 
 for (const [scope, selected] of [
   ["all", nodes],
-  ["pursue", nodes.filter((node) => node.methodologyDecision === "PURSUE_NOW")],
-  ["research", nodes.filter((node) => node.methodologyDecision === "NURTURE")],
+  ["pursue", nodes.filter((node) => node.reviewDecision === "PURSUE_NOW")],
+  ["research", nodes.filter((node) => node.reviewDecision === "NURTURE")],
 ]) {
   writeFileSync(
     resolve(dataTarget, `prospects-${scope}.json`),
@@ -80,6 +86,8 @@ writeFileSync(
   ["/pilot/", "/pilot/index.html"],
   ["/portal/demo", "/portal/demo/index.html"],
   ["/portal/demo/", "/portal/demo/index.html"],
+  ["/report", "/report/index.html"],
+  ["/report/", "/report/index.html"],
 ]);
 
 function assetRequest(request, pathname) {

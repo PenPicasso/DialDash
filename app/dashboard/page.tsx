@@ -16,6 +16,7 @@ import {
   LockKeyhole,
   Moon,
   Search,
+  SearchCheck,
   SlidersHorizontal,
   Sun,
   UserRoundCheck,
@@ -37,8 +38,10 @@ type ProspectPayload = {
   nodes: NodeData[];
   summary: {
     total: number;
+    reviewed: number;
     pursue: number;
     nurture: number;
+    excluded: number;
     strongReady: number;
     mediaVerified: number;
   };
@@ -168,9 +171,10 @@ function ViewPresetSelect({
         className="h-11 w-full rounded-lg border border-border bg-input-bg px-3 pr-9 text-sm font-bold text-foreground outline-none transition-colors focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10"
       >
         <option value="pursue">Pursue now</option>
-        <option value="research">Research next</option>
+        <option value="research">Nurture</option>
+        <option value="excluded">Factual exclusions</option>
+        <option value="all">All reviewed</option>
         <option value="ready">Legacy workable</option>
-        <option value="all">All records</option>
         <option value="custom" disabled>
           Custom filters
         </option>
@@ -203,10 +207,22 @@ function StatusPill({ status }: { status?: NodeData["actionabilityStatus"] }) {
   );
 }
 
-function DecisionPill({ decision }: { decision?: NodeData["methodologyDecision"] }) {
+function DecisionPill({ decision }: { decision?: NodeData["reviewDecision"] }) {
   if (decision === "PURSUE_NOW") return <span className="inline-flex min-w-[108px] justify-center rounded-full border border-brand-orange/30 bg-brand-orange/10 px-2.5 py-1 text-xs font-extrabold text-brand-orange">Pursue now</span>;
-  if (decision === "NURTURE") return <span className="inline-flex min-w-[108px] justify-center rounded-full border border-brand-blue/25 bg-brand-blue/5 px-2.5 py-1 text-xs font-extrabold text-brand-blue">Research next</span>;
-  return <span className="inline-flex min-w-[108px] justify-center rounded-full border border-border bg-background px-2.5 py-1 text-xs font-bold text-muted">Disqualified</span>;
+  if (decision === "NURTURE") return <span className="inline-flex min-w-[108px] justify-center rounded-full border border-brand-blue/25 bg-brand-blue/5 px-2.5 py-1 text-xs font-extrabold text-brand-blue">Nurture</span>;
+  return <span className="inline-flex min-w-[108px] justify-center rounded-full border border-border bg-background px-2.5 py-1 text-xs font-bold text-muted">Excluded</span>;
+}
+
+function ReviewFreshness({ node }: { node: NodeData }) {
+  if (node.reviewDecision === "DISQUALIFIED_CONFIRMED") {
+    return (
+      <div className="rounded-md border border-border bg-background px-3 py-2">
+        <div className="text-[10px] font-extrabold text-foreground">Evidence reviewed</div>
+        <div className="mt-0.5 text-[9px] font-bold uppercase text-muted">See Sol outcome</div>
+      </div>
+    );
+  }
+  return <MediaFreshness node={node} />;
 }
 
 function priorityClasses(priority: NodeData["priority"]) {
@@ -363,8 +379,8 @@ export default function Dashboard() {
         label: actionabilityLabel(value),
         value,
       })),
-      methodology: compact(nodes.map((node) => node.methodologyDecision)).map((value) => ({
-        label: value === "PURSUE_NOW" ? "Pursue now" : value === "NURTURE" ? "Research next" : "Disqualified",
+      methodology: compact(nodes.map((node) => node.reviewDecision)).map((value) => ({
+        label: value === "PURSUE_NOW" ? "Pursue now" : value === "NURTURE" ? "Nurture" : "Factual exclusion",
         value,
       })),
       reachability: compact(nodes.map((node) => node.reachabilityStatus)).map((value) => ({
@@ -390,6 +406,9 @@ export default function Dashboard() {
         node.channel,
         node.host,
         node.pointManName,
+        node.reviewPointMan,
+        node.reviewBuyer,
+        node.reviewOwner,
         node.organizationName,
         node.subcategory,
       ];
@@ -400,7 +419,7 @@ export default function Dashboard() {
       const matchCategory = category ? node.category === category : true;
       const matchConfidence = confidence ? node.cadenceConfidence === confidence : true;
       const matchActionability = actionability ? node.actionabilityStatus === actionability : true;
-      const matchMethodology = methodologyDecision ? node.methodologyDecision === methodologyDecision : true;
+      const matchMethodology = methodologyDecision ? node.reviewDecision === methodologyDecision : true;
       const matchReachability = reachability ? node.reachabilityStatus === reachability : true;
       const matchOutreach = outreach ? node.bestOutreachChannel === outreach : true;
       const matchLeadSource = leadSource ? node.leadSource === leadSource : true;
@@ -468,8 +487,10 @@ export default function Dashboard() {
           node.actionabilityStatus === "READY" &&
           Boolean(node.latestYoutubePublishedAt || node.latestYoutubePublishDate || node.latestPodcastPublishedAt || node.latestPodcastPublishDate || node.latestNewsletterPublishedAt)
       ).length,
-      pursue: nodes.filter((node) => node.methodologyDecision === "PURSUE_NOW").length,
-      nurture: nodes.filter((node) => node.methodologyDecision === "NURTURE").length,
+      reviewed: nodes.filter((node) => node.reviewStatus === "PASSED").length,
+      pursue: nodes.filter((node) => node.reviewDecision === "PURSUE_NOW").length,
+      nurture: nodes.filter((node) => node.reviewDecision === "NURTURE").length,
+      excluded: nodes.filter((node) => node.reviewDecision === "DISQUALIFIED_CONFIRMED").length,
     }),
     [nodes]
   );
@@ -482,6 +503,8 @@ export default function Dashboard() {
       ? "pursue"
       : methodologyDecision === "NURTURE" && !actionability && !priority && !reachability
         ? "research"
+        : methodologyDecision === "DISQUALIFIED_CONFIRMED" && !actionability && !priority && !reachability
+          ? "excluded"
     : actionability === "READY" && !methodologyDecision && !priority && !reachability
       ? "ready"
           : !actionability && !methodologyDecision && !priority && !reachability
@@ -526,6 +549,11 @@ export default function Dashboard() {
       setActionability("");
       setPriority("");
       setReachability("");
+    } else if (value === "excluded") {
+      setMethodologyDecision("DISQUALIFIED_CONFIRMED");
+      setActionability("");
+      setPriority("");
+      setReachability("");
     } else if (value === "ready") {
       setMethodologyDecision("");
       setActionability("READY");
@@ -550,6 +578,7 @@ export default function Dashboard() {
             </Link>
             <div className="hidden items-center gap-1 lg:flex">
               <Link href="/dashboard" className="inline-flex h-9 items-center gap-2 rounded-md bg-brand-blue/8 px-3 text-xs font-extrabold text-brand-blue"><LayoutDashboard size={15} />Prospects</Link>
+              <Link href="/report" className="inline-flex h-9 items-center gap-2 rounded-md px-3 text-xs font-bold text-muted hover:bg-background hover:text-foreground"><SearchCheck size={15} />Report</Link>
               <Link href="/pilot" className="inline-flex h-9 items-center gap-2 rounded-md px-3 text-xs font-bold text-muted hover:bg-background hover:text-foreground"><FlaskConical size={15} />Research</Link>
               <Link href="/pilot" className="inline-flex h-9 items-center gap-2 rounded-md px-3 text-xs font-bold text-muted hover:bg-background hover:text-foreground"><BookOpen size={15} />Playbook</Link>
               <Link href="/portal/demo" className="inline-flex h-9 items-center gap-2 rounded-md px-3 text-xs font-bold text-muted hover:bg-background hover:text-foreground"><UserRoundCheck size={15} />Client portal</Link>
@@ -569,7 +598,7 @@ export default function Dashboard() {
           <div className="mb-2 text-[10px] font-extrabold uppercase tracking-[0.16em] text-brand-orange">Prospect intelligence</div>
           <h1 className="text-3xl font-black tracking-tight md:text-4xl">Your next Energy Dial clients</h1>
           <p className="mt-1.5 text-sm text-muted">
-            {databaseStats.pursue} evidence-cleared now &middot; {databaseStats.nurture} research next &middot; {databaseStats.total} ranked records
+            {databaseStats.reviewed} fully reviewed &middot; {databaseStats.pursue} pursue now &middot; {databaseStats.nurture} nurture &middot; {databaseStats.excluded} excluded
           </p>
         </div>
         <button type="button" onClick={() => setFocusOnly((current) => !current)} className={`inline-flex h-10 items-center gap-2 self-start rounded-md border px-3 text-xs font-extrabold transition-colors md:self-auto ${focusOnly ? "border-brand-orange bg-brand-orange text-white" : "border-border bg-panel text-foreground hover:border-brand-orange"}`}>
@@ -579,10 +608,10 @@ export default function Dashboard() {
       </header>
 
       <section className="mb-5 grid grid-cols-2 gap-3 xl:grid-cols-4">
+        <Metric label="Reviewed" value={databaseStats.reviewed} tone="blue" title="All 840 records have a completed Sol-reviewed decision." />
         <Metric label="Pursue Now" value={databaseStats.pursue} tone="orange" />
-        <Metric label="Research Next" value={databaseStats.nurture} />
-        <Metric label="Strong Reach" value={databaseStats.strongReady} tone="blue" />
-        <Metric label="Media Fresh" value={loadState === "loading" ? "..." : databaseStats.mediaVerified} />
+        <Metric label="Nurture" value={databaseStats.nurture} />
+        <Metric label="Excluded" value={databaseStats.excluded} title="Only factual hard-gate exclusions; missing evidence remains nurture." />
       </section>
 
       <section className="mb-5 rounded-xl border border-border bg-panel p-3 shadow-sm">
@@ -714,15 +743,15 @@ export default function Dashboard() {
               </div>
               <div className="flex items-center gap-2">
                 <button type="button" aria-label={focusedIds.includes(node.id) ? `Remove ${node.host} from focus queue` : `Add ${node.host} to focus queue`} onClick={(event) => { event.stopPropagation(); toggleFocus(node.id); }} className={`grid h-8 w-8 place-items-center rounded-md border ${focusedIds.includes(node.id) ? "border-brand-orange/35 bg-brand-orange/10 text-brand-orange" : "border-border text-muted"}`}>{focusedIds.includes(node.id) ? <BookmarkCheck size={15} /> : <Bookmark size={15} />}</button>
-                <DecisionPill decision={node.methodologyDecision} />
+                <DecisionPill decision={node.reviewDecision} />
               </div>
             </div>
             <div className="mt-3 grid grid-cols-2 gap-2 border-y border-border py-3">
-              <MediaFreshness node={node} />
+              <ReviewFreshness node={node} />
               <div className="rounded-md bg-background px-3 py-2">
                 <div className="text-[9px] font-bold uppercase text-muted">Outreach</div>
                 <div className="mt-1 line-clamp-2 text-xs font-extrabold">{node.bestOutreachChannel ? titleCase(node.bestOutreachChannel) : "Needs research"}</div>
-                {node.methodologyConfidence !== undefined && <div className="mt-1 text-[9px] font-bold text-brand-blue">{node.methodologyConfidence}% confidence</div>}
+                <div className="mt-1 text-[9px] font-bold text-brand-blue">Sol reviewed</div>
               </div>
             </div>
             <div className="mt-3 flex items-center justify-between gap-3">
@@ -832,21 +861,15 @@ export default function Dashboard() {
                       </td>
                       <td className="px-5 py-4 text-xs font-semibold text-foreground/80">{node.region}</td>
                       <td className="px-5 py-4">
-                        <MediaFreshness node={node} />
+                        <ReviewFreshness node={node} />
                       </td>
                       <td className="px-5 py-4 align-top">
                         <div className="flex min-h-[68px] w-[110px] flex-col items-start">
-                          <DecisionPill decision={node.methodologyDecision} />
-                        {!node.methodologyDecision && <div className="mt-1.5"><StatusPill status={node.actionabilityStatus} /></div>}
-                        {node.methodologyConfidence !== undefined && (
-                          <div className="mt-1 w-full text-center text-[10px] font-bold uppercase text-muted">
-                            {node.methodologyConfidence}% confidence
-                          </div>
-                        )}
-                        {node.reachabilityStatus && (
-                          <div className="mt-1 w-full text-center text-[10px] font-bold uppercase text-brand-blue dark:text-blue-300">
-                            {node.reachabilityStatus} reach
-                          </div>
+                          <DecisionPill decision={node.reviewDecision} />
+                        {!node.reviewDecision && <div className="mt-1.5"><StatusPill status={node.actionabilityStatus} /></div>}
+                        <div className="mt-1 w-full text-center text-[10px] font-bold uppercase text-muted">Sol reviewed</div>
+                        {node.reviewDecision === "NURTURE" && node.reviewUnresolvedGates && node.reviewUnresolvedGates.length > 0 && (
+                          <div className="mt-1 w-full text-center text-[10px] font-bold uppercase text-brand-blue dark:text-blue-300">{node.reviewUnresolvedGates.length} open gates</div>
                         )}
                         </div>
                       </td>
