@@ -40,6 +40,15 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+::selection {
+  background: color-mix(in srgb, var(--brand-orange) 24%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand-blue);
+  outline-offset: 2px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: inherit;
 }
@@ -96,14 +105,18 @@ input::placeholder {
 
 /* Motion.dev style table row transition */
 .table-row-hover {
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.15s ease;
+  transition: background-color 0.15s ease;
 }
 
 .table-row-hover:hover {
-  transform: translateX(4px);
   background-color: rgba(0, 0, 0, 0.02) !important;
 }
 
 .dark .table-row-hover:hover {
   background-color: rgba(255, 255, 255, 0.02) !important;
+}
+
+.prospect-row {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 102px;
 }

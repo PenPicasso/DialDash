@@ -359,6 +359,17 @@ For UI changes, also smoke-test `/dashboard` locally or on a Vercel preview and 
 
 ## Deployment Notes
 
+### OpenAI Sites workspace
+
+- Branch: `codex/dialdash-sites`.
+- Sites project binding is stored in `.openai/hosting.json`; always reuse that opaque `project_id` and never create a second Sites project for this repository.
+- The Sites dashboard adds an owner-only workspace shell, `Ctrl/Cmd+K` command menu, `/` search shortcut, persistent theme, and a browser-local focus queue stored under `dialdash:focus:v1`.
+- The Sites artifact uses prerendered Next pages plus a small edge router and precomputed `pursue`, `research`, and `all` prospect payloads. Do not restore the full OpenNext request runtime unless DialDash gains a server-only feature that cannot be represented as a versioned asset.
+- The owner-first Sites API serves the 4-record pursue payload first, then the dashboard hydrates the complete 840-record payload in the background. Re-run and redeploy the Sites build after prospect data changes so those versioned payloads stay current.
+- Focus queue changes are intentionally local and do not modify `data/nodes.json`. Prospect promotion still requires the repository validators and explicit production-write workflow.
+- Sites deployments are versioned production artifacts. Keep access owner-only unless the user explicitly asks to share the workspace.
+- `npm run build` creates the Sites `dist` artifact with the Cloudflare OpenNext adapter. Use `npm run build:next` for a Vercel-native or Windows-only Next.js build check.
+
 The branch `codex/quality-gated-prospect-scaling` was deployed to Vercel preview successfully before this record was added. Preview deployments may return `401` to unauthenticated users because Vercel Deployment Protection is enabled on the project.
 
 The methodology pilot is published separately:
