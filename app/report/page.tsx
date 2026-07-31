@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, Gauge, SearchCheck, ShieldCheck } from "lucide-react";
+import { CATEGORY_COMMERCIAL_GUIDE, COMMERCIAL_BENCHMARKS } from "@/lib/commercialBenchmarks";
 
 const outcomes = [
   { label: "Pursue now", value: 22, percent: 2.6, color: "bg-brand-orange" },
@@ -77,6 +78,46 @@ export default function ReportPage() {
             <div><ShieldCheck className="text-brand-blue" /><h3 className="mt-4 text-lg font-black">Safer decisions</h3><p className="mt-2 text-sm leading-6 text-muted">Hard gates override scores, but absence of evidence remains nurture. That prevents false rejection and false confidence.</p></div>
             <div><SearchCheck className="text-brand-orange" /><h3 className="mt-4 text-lg font-black">Transaction-aware research</h3><p className="mt-2 text-sm leading-6 text-muted">The review separates owner, host, buyer, offer, TOF, MOF, BOF, and the real video-distribution opportunity.</p></div>
             <div><Gauge className="text-brand-blue" /><h3 className="mt-4 text-lg font-black">Operational dashboard</h3><p className="mt-2 text-sm leading-6 text-muted">The full review is a separate overlay, so corrected Sol decisions appear without corrupting the original prospect profiles.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-5 py-12 md:px-10">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-xs font-extrabold uppercase tracking-wider text-brand-orange">Commercial economics benchmark</div>
+          <h2 className="mt-2 max-w-4xl text-3xl font-black">What each energy avatar can sell, and what the transaction may be worth.</h2>
+          <p className="mt-4 max-w-4xl text-sm leading-6 text-muted">DialDash uses the prospect&apos;s own published price first. When that does not exist, it uses public filings, government rate cards, or first-party market prices as a comparable and labels the result estimated. A role-based hypothesis remains inferred.</p>
+
+          <div className="mt-8 divide-y divide-border border-y border-border">
+            {CATEGORY_COMMERCIAL_GUIDE.map((guide) => (
+              <div key={guide.category} className="grid gap-3 py-5 md:grid-cols-[190px_1fr_1fr]">
+                <div className="font-black text-foreground">{guide.category}</div>
+                <div>
+                  <div className="text-[10px] font-extrabold uppercase tracking-wider text-muted">Typical avatars and engines</div>
+                  <p className="mt-1 text-xs leading-5 text-foreground/80">{guide.avatars}. {guide.likelyEngines}.</p>
+                </div>
+                <div>
+                  <div className="text-[10px] font-extrabold uppercase tracking-wider text-muted">How to interpret value</div>
+                  <p className="mt-1 text-xs leading-5 text-muted">{guide.pricingInterpretation}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 grid gap-x-8 gap-y-7 md:grid-cols-2">
+            {Object.values(COMMERCIAL_BENCHMARKS).filter((benchmark) => benchmark.sources.length > 0).map((benchmark) => (
+              <article key={benchmark.id} className="border-t-2 border-brand-blue pt-4">
+                <div className="text-sm font-black text-foreground">{benchmark.engine}</div>
+                <div className="mt-2 text-base font-black text-brand-blue">{benchmark.range}</div>
+                <div className="mt-1 text-[10px] font-bold uppercase tracking-wider text-muted">{benchmark.unit}</div>
+                <p className="mt-3 text-xs leading-5 text-muted">{benchmark.basis} {benchmark.caveat}</p>
+                <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1">
+                  {benchmark.sources.map((source) => (
+                    <a key={source.url} href={source.url} target="_blank" rel="noreferrer" className="text-[10px] font-extrabold text-brand-blue hover:underline">{source.title}</a>
+                  ))}
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>

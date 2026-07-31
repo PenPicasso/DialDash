@@ -3,6 +3,11 @@ import type {
   CommercialIntelligence,
   NodeData,
 } from "./types";
+import {
+  getCommercialBenchmark,
+  PROSPECT_PRICE_OVERRIDES,
+  type StackEconomics,
+} from "./commercialBenchmarks";
 
 type EngineDefinition = {
   engine: string;
@@ -166,6 +171,42 @@ function buildEvidence(node: NodeData, extra: string[] = []): CommercialIntellig
   ).slice(0, 6).map((url) => ({ url, supports: evidenceSupport(url, node) }));
 }
 
+function economicsFor(
+  node: NodeData,
+  engine: string,
+  basis: CommercialEvidenceBasis,
+  visiblePrice?: string,
+  isPrimary = false,
+): StackEconomics {
+  const exact = PROSPECT_PRICE_OVERRIDES[node.id]?.find((item) => item.engine === engine);
+  const benchmark = getCommercialBenchmark(engine);
+  if (exact) {
+    return {
+      benchmarkId: benchmark.id,
+      range: exact.range,
+      unit: exact.unit,
+      visibility: exact.visibility,
+      note: exact.note,
+    };
+  }
+  if (isPrimary && visiblePrice) {
+    return {
+      benchmarkId: benchmark.id,
+      range: visiblePrice,
+      unit: "published prospect offer",
+      visibility: "VERIFIED",
+      note: `A price is visible in the prospect's reviewed offer. ${benchmark.caveat}`,
+    };
+  }
+  return {
+    benchmarkId: benchmark.id,
+    range: benchmark.range,
+    unit: benchmark.unit,
+    visibility: basis === "INFERRED" ? "INFERRED" : "ESTIMATED",
+    note: `${benchmark.basis} ${benchmark.caveat}`,
+  };
+}
+
 function basisFor(node: NodeData, offerText: string): CommercialEvidenceBasis {
   if (node.reviewOffer && node.reviewEvidenceUrls?.length) return "VERIFIED";
   if (node.offerUrl && offerText) return "ESTIMATED";
@@ -200,12 +241,30 @@ function prospectOverrides(node: NodeData): CommercialIntelligence | undefined {
   if (node.id === "rory-johnston") {
     const evidence = buildEvidence(node, ["https://www.commoditycontext.com/about"]);
     return {
-      methodologyVersion: "commercial-intelligence-v1",
+      methodologyVersion: "commercial-intelligence-v2",
       primaryRevenueEngine: "Paid research and intelligence",
       revenueStack: [
-        { rank: 1, engine: "Paid research and intelligence", evidenceBasis: "VERIFIED", rationale: "Commodity Context publicly sells a full research service and community to individual and institutional readers." },
-        { rank: 2, engine: "Advisory and consulting mandates", evidenceBasis: "VERIFIED", rationale: "The official offer includes expert advisory, model walkthroughs, and bespoke research." },
-        { rank: 3, engine: "Events and speaking", evidenceBasis: "VERIFIED", rationale: "Keynotes and corporate presentations are listed as additional services." },
+        {
+          rank: 1,
+          engine: "Paid research and intelligence",
+          evidenceBasis: "VERIFIED",
+          rationale: "Commodity Context publicly sells a full research service and community to individual and institutional readers.",
+          economics: { benchmarkId: "research", range: "$75/month or $750/year", unit: "research subscription", visibility: "VERIFIED", note: "Published on Commodity Context's official about page." },
+        },
+        {
+          rank: 2,
+          engine: "Advisory and consulting mandates",
+          evidenceBasis: "VERIFIED",
+          rationale: "The official offer includes expert advisory, model walkthroughs, and bespoke research.",
+          economics: { benchmarkId: "advisory", range: "$200-$375/hour; $10,000-$75,000 scoped project; $100,000-$250,000+ annual strategic relationship", unit: "market benchmark, not Rory's quote", visibility: "ESTIMATED", note: "Derived from public GSA senior-advisor rates and a disclosed $250,000 Veriten energy-advisory engagement; Rory's fee is not public." },
+        },
+        {
+          rank: 3,
+          engine: "Events and speaking",
+          evidenceBasis: "VERIFIED",
+          rationale: "Keynotes and corporate presentations are listed as additional services.",
+          economics: { benchmarkId: "speaking", range: "$3,000-$20,000 plus travel", unit: "energy-industry speaking engagement", visibility: "ESTIMATED", note: "Anchored to OGGN's public energy-speaker catalogue; Rory's fee is not public." },
+        },
       ],
       contentCommercialRole: "Commodity Context's free analysis and podcast appearances demonstrate Rory's judgment, build an audience of market professionals, and move the most engaged readers toward paid research or a direct institutional engagement.",
       revenueLeverage: "The business outcome is more qualified paid subscribers and more institutional advisory enquiries from each research cycle, with repeated executive touchpoints supporting conversion and renewal.",
@@ -216,6 +275,7 @@ function prospectOverrides(node: NodeData): CommercialIntelligence | undefined {
         valueEstimate: "$75 per month or $750 per year for the published research subscription; institutional services are custom-priced.",
         pricingVisibility: "VERIFIED",
         pricingNote: "The subscription price is published on the official about page. No public fee was found for bespoke services.",
+        primaryBenchmarkId: "research",
       },
       evidence,
       confidence: {
@@ -230,14 +290,35 @@ function prospectOverrides(node: NodeData): CommercialIntelligence | undefined {
       "https://veriten.com/public-engagement/",
       "https://veriten.com/bio/arjun-murti/",
       "https://veriten.com/2023/03/veriten-welcomes-arjun-murti-as-partner/",
+      "https://www.sec.gov/Archives/edgar/data/1694028/000169402825000029/lbrt-20250115.htm",
+      "https://www.sec.gov/Archives/edgar/data/1694028/000183988225009861/libertyenergy-pre14a_021925.htm",
+      "https://www.sec.gov/Archives/edgar/data/1163165/000130817924000384/cop4258041-def14a.htm",
     ]);
     return {
-      methodologyVersion: "commercial-intelligence-v1",
+      methodologyVersion: "commercial-intelligence-v2",
       primaryRevenueEngine: "Advisory and consulting mandates",
       revenueStack: [
-        { rank: 1, engine: "Advisory and consulting mandates", evidenceBasis: "VERIFIED", rationale: "Veriten describes itself as a research, strategy, and investing firm, with Arjun leading Energy Macro and Policy." },
-        { rank: 2, engine: "Investment and fund economics", evidenceBasis: "VERIFIED", rationale: "Veriten states that public engagement informs its investment perspectives, and Arjun is a partner in the firm." },
-        { rank: 3, engine: "Board and governance roles", evidenceBasis: "VERIFIED", rationale: "Arjun's official biography lists current public-company directorships and advisory-board roles." },
+        {
+          rank: 1,
+          engine: "Advisory and consulting mandates",
+          evidenceBasis: "VERIFIED",
+          rationale: "Veriten describes itself as a research, strategy, and investing firm, with Arjun leading Energy Macro and Policy.",
+          economics: { benchmarkId: "advisory", range: "Approximately $250,000/year observed for Liberty's Veriten consulting engagement", unit: "disclosed company-to-company annual engagement", visibility: "VERIFIED", note: "Liberty's SEC filing states that it paid Veriten approximately $250,000 in 2024 and retained it again for approximately $250,000 in 2025. This is an observed engagement, not a public rate card." },
+        },
+        {
+          rank: 2,
+          engine: "Investment and fund economics",
+          evidenceBasis: "VERIFIED",
+          rationale: "Veriten states that public engagement informs its investment perspectives, and Arjun is a partner in the firm.",
+          economics: { benchmarkId: "investment", range: "About 1%-2% of AUM plus 15%-20% carried interest for a conventional private-fund model", unit: "market benchmark; Veriten terms undisclosed", visibility: "ESTIMATED", note: "SEC materials support the model benchmark, but Veriten's assets, fee schedule, carry, and Arjun's economics are not public." },
+        },
+        {
+          rank: 3,
+          engine: "Board and governance roles",
+          evidenceBasis: "VERIFIED",
+          rationale: "Arjun's official biography lists current public-company directorships and advisory-board roles.",
+          economics: { benchmarkId: "board", range: "Liberty standard: about $275,000/year; ConocoPhillips standard plus Audit and Finance chair: about $370,000/year", unit: "full-year cash and equity programme", visibility: "VERIFIED", note: "SEC proxy terms show Liberty's $100,000 cash plus $175,000 RSUs and ConocoPhillips' $115,000 cash plus $220,000 RSUs, with $35,000 for the committee chair. Actual realized value varies with proration and stock price." },
+        },
       ],
       contentCommercialRole: "Super-Spiked is a public authority and relationship engine: it puts Arjun's judgment in front of executives, board members, investors, and regulators, while informing Veriten's advisory and investment perspectives.",
       revenueLeverage: "The business outcome is stronger executive mindshare when advisory mandates, investment relationships, and governance opportunities are forming, not simply more media views.",
@@ -245,14 +326,15 @@ function prospectOverrides(node: NodeData): CommercialIntelligence | undefined {
       customerEconomics: {
         buyerUnit: "Enterprise advisory client, investment counterparty, or governance organization",
         revenueModel: "High-value institutional advisory and investment relationships, with board compensation as a separate authority-linked economic layer.",
-        valueEstimate: "Likely high-value and low-volume; no defensible public fee or mandate size was found.",
-        pricingVisibility: "ESTIMATED",
-        pricingNote: "The commercial engines are first-party verified, but their prices and client-level economics are not public.",
+        valueEstimate: "Liberty disclosed an approximately $250,000 annual Veriten consulting engagement. Public board programmes imply roughly $275,000 at Liberty and about $370,000 at ConocoPhillips including Arjun's committee-chair role.",
+        pricingVisibility: "VERIFIED",
+        pricingNote: "These are public engagement and compensation disclosures, not a general Veriten price list or a statement of Arjun's net income. Investment economics remain estimated.",
+        primaryBenchmarkId: "advisory",
       },
       evidence,
       confidence: {
         level: "HIGH",
-        note: "Official Veriten pages connect the content to advisory and investment perspectives and verify Arjun's partner and board roles; only pricing remains undisclosed.",
+        note: "Official Veriten pages establish the commercial roles, while SEC filings disclose one Veriten engagement and the standard economics of Arjun's public-company board seats. Investment terms remain undisclosed.",
       },
     };
   }
@@ -283,13 +365,9 @@ export function buildCommercialIntelligence(node: NodeData): CommercialIntellige
     (matches.length ? matches : [fallback]).map((definition) => [definition.engine, definition]),
   ).values()).slice(0, 3);
   const primary = stackDefinitions[0];
-  const evidence = buildEvidence(node);
+  const priceOverrides = PROSPECT_PRICE_OVERRIDES[node.id] || [];
+  const evidence = buildEvidence(node, priceOverrides.map((item) => item.url));
   const visiblePrice = extractVisiblePrice(offerText);
-  const pricingVisibility: CommercialEvidenceBasis = visiblePrice
-    ? "VERIFIED"
-    : basis === "VERIFIED"
-      ? "ESTIMATED"
-      : "INFERRED";
   const buyer = node.reviewBuyer || node.economicBuyerName || node.reviewPointMan || node.pointManName || "the economic buyer";
   const channel = node.channel || node.host;
   const tof = text(node.reviewTof, node.tofChannels) || "public content";
@@ -297,30 +375,29 @@ export function buildCommercialIntelligence(node: NodeData): CommercialIntellige
   const offer = node.reviewOffer || node.bofOffer || primary.revenueModel;
   const qualifiedBasis = basis === "VERIFIED" ? "reviewed offer evidence" : basis === "ESTIMATED" ? "the linked offer context" : "the prospect's role and category";
 
+  const revenueStack = stackDefinitions.map((definition, index) => ({
+    rank: index + 1,
+    engine: definition.engine,
+    evidenceBasis: matches.length ? basis : "INFERRED" as CommercialEvidenceBasis,
+    rationale: `${qualifiedBasis} connects ${channel} to ${definition.revenueModel.toLowerCase()}`,
+    economics: economicsFor(node, definition.engine, matches.length ? basis : "INFERRED", visiblePrice, index === 0),
+  }));
+  const primaryEconomics = revenueStack[0].economics;
+
   return {
-    methodologyVersion: "commercial-intelligence-v1",
+    methodologyVersion: "commercial-intelligence-v2",
     primaryRevenueEngine: primary.engine,
-    revenueStack: stackDefinitions.map((definition, index) => ({
-      rank: index + 1,
-      engine: definition.engine,
-      evidenceBasis: matches.length ? basis : "INFERRED",
-      rationale: `${qualifiedBasis} connects ${channel} to ${definition.revenueModel.toLowerCase()}`,
-    })),
+    revenueStack,
     contentCommercialRole: `${channel} uses ${tof} to create discovery and ${mof} to build enough subject-matter trust for ${buyer} to convert demand into ${offer}.`,
     revenueLeverage: `Use each long-form idea to ${primary.leverage}. The useful measure is qualified movement toward the offer, not raw clip volume.`,
     valueConversation: `The conversation with ${buyer} should be: how much more commercial value could ${channel} create if each strong idea repeatedly reached the right buyers and moved them toward ${primary.engine.toLowerCase()}?`,
     customerEconomics: {
       buyerUnit: buyer,
       revenueModel: primary.revenueModel,
-      valueEstimate: visiblePrice
-        ? `Publicly visible price evidence includes ${visiblePrice}; confirm scope and billing terms before outreach.`
-        : primary.valueEstimate,
-      pricingVisibility,
-      pricingNote: visiblePrice
-        ? "A price appears in the reviewed offer text; verify it is still current on the cited first-party page."
-        : pricingVisibility === "ESTIMATED"
-          ? "The offer is evidence-backed, but no public prospect-specific price was found. The economics are directional."
-          : "Neither a public prospect-specific price nor a fully verified offer was found. Do not quote a value externally.",
+      valueEstimate: primaryEconomics.range,
+      pricingVisibility: primaryEconomics.visibility,
+      pricingNote: primaryEconomics.note,
+      primaryBenchmarkId: primaryEconomics.benchmarkId,
     },
     evidence,
     confidence: confidenceFor(node, basis, evidence.length),

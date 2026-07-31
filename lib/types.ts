@@ -33,13 +33,20 @@ export const CATEGORY_COLORS: Record<Category, string> = {
 export type CommercialEvidenceBasis = "VERIFIED" | "ESTIMATED" | "INFERRED";
 
 export type CommercialIntelligence = {
-  methodologyVersion: "commercial-intelligence-v1";
+  methodologyVersion: "commercial-intelligence-v2";
   primaryRevenueEngine: string;
   revenueStack: Array<{
     rank: number;
     engine: string;
     evidenceBasis: CommercialEvidenceBasis;
     rationale: string;
+    economics: {
+      benchmarkId: string;
+      range: string;
+      unit: string;
+      visibility: CommercialEvidenceBasis;
+      note: string;
+    };
   }>;
   contentCommercialRole: string;
   revenueLeverage: string;
@@ -50,6 +57,7 @@ export type CommercialIntelligence = {
     valueEstimate: string;
     pricingVisibility: CommercialEvidenceBasis;
     pricingNote: string;
+    primaryBenchmarkId: string;
   };
   evidence: Array<{
     url: string;

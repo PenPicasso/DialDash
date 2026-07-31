@@ -34,6 +34,8 @@ try {
   await desktop.getByRole("button", { name: /Details/ }).click();
   await desktop.getByRole("heading", { name: "Commercial Intelligence" }).waitFor();
   await desktop.getByText("$75 per month or $750 per year", { exact: false }).waitFor();
+  await desktop.getByText("$200-$375/hour", { exact: false }).waitFor();
+  await desktop.getByText("How this range was estimated", { exact: true }).first().waitFor();
   await desktop.getByText("PRICING VERIFIED", { exact: true }).waitFor();
   await desktop.getByRole("heading", { name: "Commercial Intelligence" }).scrollIntoViewIfNeeded();
   await desktop.screenshot({ path: `${output}/commercial-intelligence-rory.png`, fullPage: true });
@@ -42,6 +44,7 @@ try {
   if (!reportResponse?.ok()) throw new Error(`Report returned ${reportResponse?.status()}.`);
   await desktop.getByText("840 / 840 reviewed", { exact: false }).waitFor();
   await desktop.getByText("How to do the next run faster", { exact: false }).waitFor();
+  await desktop.getByText("Commercial economics benchmark", { exact: false }).waitFor();
   await desktop.screenshot({ path: `${output}/full-review-report.png`, fullPage: true });
 
   const mobile = await browser.newPage({ viewport: { width: 390, height: 844 } });

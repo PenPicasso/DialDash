@@ -110,7 +110,7 @@ const counts = records.reduce<Record<string, number>>((result, record) => {
   return result;
 }, {});
 const output = {
-  methodology: "dialdash-full-sol-review-v1+commercial-intelligence-v1",
+  methodology: "dialdash-full-sol-review-v1+commercial-intelligence-v2",
   generatedAt: new Date().toISOString(),
   total: records.length,
   counts,

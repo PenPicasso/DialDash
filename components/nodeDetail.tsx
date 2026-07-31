@@ -5,6 +5,7 @@ import { X, Youtube, ExternalLink, Mail, Podcast, Radio, CheckCircle, AlertTrian
 import { VideoPreview } from "./videoPreview";
 import { MediaFreshness } from "./mediaFreshness";
 import { ProspectActions } from "./prospectActions";
+import { getCommercialBenchmark } from "@/lib/commercialBenchmarks";
 
 type Props = {
   node: NodeData;
@@ -355,6 +356,33 @@ export function NodeDetail({ node, onClose }: Props) {
                         <span className="text-[9px] font-extrabold text-muted">{entry.evidenceBasis}</span>
                       </div>
                       <p className="mt-1 text-[11px] leading-relaxed text-muted">{entry.rationale}</p>
+                      <div className="mt-2 border-l-2 border-brand-blue/25 pl-3">
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="text-[11px] font-black text-foreground">{entry.economics.range}</span>
+                          <span className={`rounded border px-1.5 py-0.5 text-[8px] font-extrabold ${
+                            entry.economics.visibility === "VERIFIED"
+                              ? "border-emerald-500/25 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+                              : entry.economics.visibility === "ESTIMATED"
+                                ? "border-amber-500/25 bg-amber-500/10 text-amber-600 dark:text-amber-400"
+                                : "border-border bg-panel text-muted"
+                          }`}>{entry.economics.visibility} PRICE</span>
+                        </div>
+                        <div className="mt-0.5 text-[9px] font-semibold text-muted">{entry.economics.unit}</div>
+                        <p className="mt-1 text-[10px] leading-relaxed text-muted">{entry.economics.note}</p>
+                        {getCommercialBenchmark(entry.engine).sources.length > 0 && (
+                          <details className="mt-2 text-[9px] text-muted">
+                            <summary className="cursor-pointer font-extrabold text-brand-blue">How this range was estimated</summary>
+                            <div className="mt-2 space-y-2">
+                              {getCommercialBenchmark(entry.engine).sources.map((source) => (
+                                <a key={source.url} href={source.url} target="_blank" rel="noreferrer" className="flex items-start justify-between gap-2 hover:text-foreground">
+                                  <span><strong>{source.title}:</strong> {source.observation}</span>
+                                  <ExternalLink size={10} className="mt-0.5 shrink-0" />
+                                </a>
+                              ))}
+                            </div>
+                          </details>
+                        )}
+                      </div>
                     </div>
                   </div>
                 ))}
