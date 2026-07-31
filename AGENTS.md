@@ -289,6 +289,11 @@ Never run legacy sourcing as a production write unless explicitly requested. `sc
 - `npm run qa:full-dashboard` tests totals, exclusion filtering, Alex Epstein's corrected current-channel hard gate, the detail drawer, report route, mobile overflow, and browser console errors. Screenshots are written under ignored `output/playwright/`.
 - The API and Sites build merge `data/full-review.json` over `data/nodes.json` at read/build time; the production prospect source remains unchanged.
 - `vercel.json` keeps Vercel on `npm run build:next`; `npm run build` is reserved for the Sites/OpenNext artifact.
+- `data/full-review.json` now carries a `commercial-intelligence-v1` layer for all 840 prospects. It is additive and must never alter funnel strategy, outbound score, signability, outreach, or review decisions.
+- Commercial Intelligence identifies the primary revenue engine, ranks up to three revenue streams, explains content's role in the transaction, frames revenue leverage and a value conversation, estimates customer economics, labels pricing as `VERIFIED`, `ESTIMATED`, or `INFERRED`, and includes evidence plus a confidence note.
+- The commercial composer is deterministic and evidence-bound. `PURSUE_NOW` records currently have high-confidence offer intelligence; unresolved or excluded records may contain low-confidence role hypotheses, which must not be presented externally as verified facts.
+- Rory Johnston and Arjun Murti are evidence-specific exemplars, not category templates: Rory's official paid research/advisory stack includes published subscription pricing; Arjun's official Veriten and biography pages support advisory, investment, and board economics while pricing remains undisclosed.
+- Run `npm run validate:commercial-intelligence` after `npm run compose:full-review`. It requires complete 840-record coverage, valid stack ranks, evidence/pricing/confidence labels, and the Rory/Arjun exemplar constraints.
 
 The dashboard now includes:
 - Default `PURSUE_NOW` view, a `Research next` queue, fit rank/score, and methodology decisions.
@@ -300,7 +305,7 @@ The dashboard now includes:
 - Default dashboard view is `READY` only. UI labels `REJECTED` rows as `Archived` because those records failed hard actionability gates and should not be treated as active sales targets.
 - Prospect data is loaded from `/api/prospects` instead of importing `data/nodes.json` into the client page, so the initial dashboard HTML stays light. The table renders in batches of 100.
 - The freshness column prioritizes YouTube and Apple Podcast/RSS evidence and expands on hover to show both platform signals.
-- Detail drawer showing TOF/MOF/BOF and the stored prospect-specific pitch hook.
+- Detail drawer showing TOF/MOF/BOF, the stored prospect-specific pitch hook, and the additive Commercial Intelligence section directly beneath the funnel.
 - Prospect rows use one stable `Details` action. Verified YouTube, podcast, X, email, and offer links render as direct buttons inside the detail drawer; do not restore a floating row dropdown that obscures adjacent prospects.
 - `/pilot` contains the expanded first-client acquisition playbook and links to `/portal/demo`.
 - `/portal/demo` is a manual-first client workspace preview. Media remains in Google Drive, payment uses a configured Flutterwave link, and feedback is browser-local until a real metadata backend is added.

@@ -1,5 +1,7 @@
 import { readFileSync, writeFileSync } from "fs";
 import { join } from "path";
+import { buildCommercialIntelligence } from "../lib/commercialIntelligence";
+import type { NodeData } from "../lib/types";
 
 type SourceRecord = Record<string, unknown> & { id: string; decision?: string };
 
@@ -13,7 +15,7 @@ const sources = [
   "terra-medium-final-31.json",
 ];
 
-const nodes = (JSON.parse(readFileSync(join(root, "data", "nodes.json"), "utf8")) as { nodes: SourceRecord[] }).nodes;
+const nodes = (JSON.parse(readFileSync(join(root, "data", "nodes.json"), "utf8")) as { nodes: NodeData[] }).nodes;
 const byId = new Map<string, Record<string, unknown>>();
 
 const strings = (...values: unknown[]) => Array.from(new Set(values.flatMap((value) => {
@@ -95,14 +97,20 @@ if (byId.size !== nodes.length || nodes.some((node) => !byId.has(node.id))) {
   throw new Error(`Full review must cover all ${nodes.length} prospects exactly once; found ${byId.size}.`);
 }
 
-const records = nodes.map((node) => byId.get(node.id));
+const records = nodes.map((node) => {
+  const review = byId.get(node.id);
+  return {
+    ...review,
+    commercialIntelligence: buildCommercialIntelligence({ ...node, ...review }),
+  };
+});
 const counts = records.reduce<Record<string, number>>((result, record) => {
   const decision = String(record?.reviewDecision);
   result[decision] = (result[decision] || 0) + 1;
   return result;
 }, {});
 const output = {
-  methodology: "dialdash-full-sol-review-v1",
+  methodology: "dialdash-full-sol-review-v1+commercial-intelligence-v1",
   generatedAt: new Date().toISOString(),
   total: records.length,
   counts,

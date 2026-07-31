@@ -27,6 +27,17 @@ try {
   await desktop.getByText(/current official Improve The Planet channel/i).waitFor();
   await desktop.screenshot({ path: `${output}/full-dashboard-detail.png`, fullPage: true });
 
+  await desktop.goto(`${baseUrl}/dashboard`, { waitUntil: "networkidle" });
+  await desktop.getByLabel("View").selectOption("pursue");
+  await desktop.getByPlaceholder(/Search host/).fill("Rory Johnston");
+  await desktop.getByText("Showing 1 of 1 prospect").waitFor();
+  await desktop.getByRole("button", { name: /Details/ }).click();
+  await desktop.getByRole("heading", { name: "Commercial Intelligence" }).waitFor();
+  await desktop.getByText("$75 per month or $750 per year", { exact: false }).waitFor();
+  await desktop.getByText("PRICING VERIFIED", { exact: true }).waitFor();
+  await desktop.getByRole("heading", { name: "Commercial Intelligence" }).scrollIntoViewIfNeeded();
+  await desktop.screenshot({ path: `${output}/commercial-intelligence-rory.png`, fullPage: true });
+
   const reportResponse = await desktop.goto(`${baseUrl}/report`, { waitUntil: "networkidle" });
   if (!reportResponse?.ok()) throw new Error(`Report returned ${reportResponse?.status()}.`);
   await desktop.getByText("840 / 840 reviewed", { exact: false }).waitFor();
@@ -38,9 +49,14 @@ try {
     if (message.type() === "error") errors.push(message.text());
   });
   await mobile.goto(`${baseUrl}/dashboard`, { waitUntil: "networkidle" });
+  await mobile.getByText("22", { exact: true }).first().waitFor();
+  await mobile.getByRole("heading", { name: "Rory Johnston" }).waitFor();
   const dimensions = await mobile.evaluate(() => ({ width: document.documentElement.clientWidth, scrollWidth: document.documentElement.scrollWidth }));
   if (dimensions.scrollWidth > dimensions.width) throw new Error(`Mobile page overflows by ${dimensions.scrollWidth - dimensions.width}px.`);
-  await mobile.getByText("22", { exact: true }).first().waitFor();
+  await mobile.getByRole("button", { name: /Details/ }).first().click();
+  await mobile.getByRole("heading", { name: "Commercial Intelligence" }).waitFor();
+  const detailDimensions = await mobile.evaluate(() => ({ width: document.documentElement.clientWidth, scrollWidth: document.documentElement.scrollWidth }));
+  if (detailDimensions.scrollWidth > detailDimensions.width) throw new Error(`Mobile detail overflows by ${detailDimensions.scrollWidth - detailDimensions.width}px.`);
   await mobile.screenshot({ path: `${output}/full-dashboard-mobile.png`, fullPage: true });
 
   if (errors.length) throw new Error(`Browser console errors:\n${errors.join("\n")}`);
@@ -50,6 +66,7 @@ try {
     screenshots: [
       `${output}/full-dashboard-desktop.png`,
       `${output}/full-dashboard-detail.png`,
+      `${output}/commercial-intelligence-rory.png`,
       `${output}/full-review-report.png`,
       `${output}/full-dashboard-mobile.png`,
     ],

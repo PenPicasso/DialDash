@@ -216,13 +216,13 @@ function DecisionPill({ decision }: { decision?: NodeData["reviewDecision"] }) {
 function ReviewFreshness({ node }: { node: NodeData }) {
   if (node.reviewDecision === "DISQUALIFIED_CONFIRMED") {
     return (
-      <div className="rounded-md border border-border bg-background px-3 py-2">
+      <div className="min-w-0 rounded-md border border-border bg-background px-3 py-2">
         <div className="text-[10px] font-extrabold text-foreground">Evidence reviewed</div>
         <div className="mt-0.5 text-[9px] font-bold uppercase text-muted">See Sol outcome</div>
       </div>
     );
   }
-  return <MediaFreshness node={node} />;
+  return <div className="min-w-0 overflow-hidden"><MediaFreshness node={node} /></div>;
 }
 
 function priorityClasses(priority: NodeData["priority"]) {
@@ -727,12 +727,12 @@ export default function Dashboard() {
         </div>
       </section>
 
-      <div className="grid gap-3 md:hidden">
+      <div className="grid min-w-0 gap-3 md:hidden">
         {loadState === "loading" && Array.from({ length: 4 }).map((_, index) => (
           <div key={index} className="h-44 animate-pulse rounded-lg border border-border bg-panel" />
         ))}
         {loadState === "ready" && visibleNodes.map((node) => (
-          <article key={node.id} onClick={() => setSelectedNode(node)} className="rounded-lg border border-border bg-panel p-4 shadow-sm">
+          <article key={node.id} onClick={() => setSelectedNode(node)} className="w-full min-w-0 max-w-full overflow-hidden rounded-lg border border-border bg-panel p-4 shadow-sm">
             <div className="flex items-start justify-between gap-3">
               <div className="min-w-0">
                 <div className="flex items-center gap-2">
@@ -741,14 +741,14 @@ export default function Dashboard() {
                 </div>
                 <p className="mt-1 line-clamp-2 text-xs text-muted">{node.channel}</p>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex shrink-0 items-center gap-2">
                 <button type="button" aria-label={focusedIds.includes(node.id) ? `Remove ${node.host} from focus queue` : `Add ${node.host} to focus queue`} onClick={(event) => { event.stopPropagation(); toggleFocus(node.id); }} className={`grid h-8 w-8 place-items-center rounded-md border ${focusedIds.includes(node.id) ? "border-brand-orange/35 bg-brand-orange/10 text-brand-orange" : "border-border text-muted"}`}>{focusedIds.includes(node.id) ? <BookmarkCheck size={15} /> : <Bookmark size={15} />}</button>
                 <DecisionPill decision={node.reviewDecision} />
               </div>
             </div>
-            <div className="mt-3 grid grid-cols-2 gap-2 border-y border-border py-3">
+            <div className="mt-3 grid min-w-0 grid-cols-[minmax(0,1fr)_minmax(0,1fr)] gap-2 border-y border-border py-3">
               <ReviewFreshness node={node} />
-              <div className="rounded-md bg-background px-3 py-2">
+              <div className="min-w-0 rounded-md bg-background px-3 py-2">
                 <div className="text-[9px] font-bold uppercase text-muted">Outreach</div>
                 <div className="mt-1 line-clamp-2 text-xs font-extrabold">{node.bestOutreachChannel ? titleCase(node.bestOutreachChannel) : "Needs research"}</div>
                 <div className="mt-1 text-[9px] font-bold text-brand-blue">Sol reviewed</div>

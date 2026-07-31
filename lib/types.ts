@@ -30,6 +30,37 @@ export const CATEGORY_COLORS: Record<Category, string> = {
   "Energy Advisory & Expertise": "#14b8a6", // Teal
 };
 
+export type CommercialEvidenceBasis = "VERIFIED" | "ESTIMATED" | "INFERRED";
+
+export type CommercialIntelligence = {
+  methodologyVersion: "commercial-intelligence-v1";
+  primaryRevenueEngine: string;
+  revenueStack: Array<{
+    rank: number;
+    engine: string;
+    evidenceBasis: CommercialEvidenceBasis;
+    rationale: string;
+  }>;
+  contentCommercialRole: string;
+  revenueLeverage: string;
+  valueConversation: string;
+  customerEconomics: {
+    buyerUnit: string;
+    revenueModel: string;
+    valueEstimate: string;
+    pricingVisibility: CommercialEvidenceBasis;
+    pricingNote: string;
+  };
+  evidence: Array<{
+    url: string;
+    supports: string;
+  }>;
+  confidence: {
+    level: "HIGH" | "MEDIUM" | "LOW";
+    note: string;
+  };
+};
+
 export type NodeData = {
   id: string;
   channel: string;
@@ -169,5 +200,6 @@ export type NodeData = {
   reviewMof?: string[];
   reviewBof?: string[];
   reviewedAt?: string;
+  commercialIntelligence?: CommercialIntelligence;
 };
 

@@ -61,6 +61,7 @@
     "compose:terra-final-31": "npx tsx scripts/compose-terra-medium-next-200.ts --cohort=final-31 --batches=2",
     "review:sol-final-31": "npx tsx scripts/review-terra-medium-cohort.ts --cohort=final-31",
     "compose:full-review": "npx tsx scripts/compose-full-review.ts",
+    "validate:commercial-intelligence": "npx tsx scripts/validate-commercial-intelligence.ts",
     "qa:full-dashboard": "node scripts/qa-full-dashboard.mjs",
     "validate:terra-redo": "npx tsx scripts/validate-terra-redo.ts --cohort=next-200-b",
     "research:sol-queue": "npx tsx scripts/aggregate-sol-review-queue.ts",

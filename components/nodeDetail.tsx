@@ -13,6 +13,7 @@ type Props = {
 
 export function NodeDetail({ node, onClose }: Props) {
   const catColor = CATEGORY_COLORS[node.category as Category] || "#888";
+  const commercial = node.commercialIntelligence;
 
   // Helper to determine Funnel Stages (TOF, MOF, BOF)
   const getFunnelData = () => {
@@ -312,6 +313,129 @@ export function NodeDetail({ node, onClose }: Props) {
             )}
           </div>
         </div>}
+
+        {commercial && (
+          <section className="border-t border-border/60 py-5" aria-labelledby="commercial-intelligence-heading">
+            <div className="mb-4 flex items-start justify-between gap-3">
+              <div>
+                <h3 id="commercial-intelligence-heading" className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+                  Commercial Intelligence
+                </h3>
+                <p className="mt-1 text-[11px] leading-relaxed text-muted">
+                  Business-outcome view of the reviewed funnel and offer evidence.
+                </p>
+              </div>
+              <span className={`rounded-md border px-2 py-1 text-[10px] font-extrabold ${
+                commercial.confidence.level === "HIGH"
+                  ? "border-emerald-500/25 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+                  : commercial.confidence.level === "MEDIUM"
+                    ? "border-amber-500/25 bg-amber-500/10 text-amber-600 dark:text-amber-400"
+                    : "border-border bg-panel text-muted"
+              }`}>
+                {commercial.confidence.level} CONFIDENCE
+              </span>
+            </div>
+
+            <div className="border-l-2 border-brand-orange pl-3">
+              <div className="text-[10px] font-extrabold uppercase tracking-wider text-brand-orange">Primary revenue engine</div>
+              <div className="mt-1 text-sm font-black text-foreground">{commercial.primaryRevenueEngine}</div>
+            </div>
+
+            <div className="mt-5">
+              <div className="text-[10px] font-extrabold uppercase tracking-wider text-muted">Ranked revenue stack</div>
+              <div className="mt-2 divide-y divide-border/60 border-y border-border/60">
+                {commercial.revenueStack.map((entry) => (
+                  <div key={`${entry.rank}-${entry.engine}`} className="grid grid-cols-[24px_1fr] gap-2 py-3">
+                    <span className="flex h-5 w-5 items-center justify-center rounded bg-brand-blue/10 text-[10px] font-black text-brand-blue">
+                      {entry.rank}
+                    </span>
+                    <div>
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="text-xs font-bold text-foreground">{entry.engine}</span>
+                        <span className="text-[9px] font-extrabold text-muted">{entry.evidenceBasis}</span>
+                      </div>
+                      <p className="mt-1 text-[11px] leading-relaxed text-muted">{entry.rationale}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-5 space-y-4 text-xs">
+              <div>
+                <div className="font-bold text-foreground">Content&apos;s commercial role</div>
+                <p className="mt-1 leading-relaxed text-muted">{commercial.contentCommercialRole}</p>
+              </div>
+              <div>
+                <div className="font-bold text-foreground">Revenue leverage</div>
+                <p className="mt-1 leading-relaxed text-muted">{commercial.revenueLeverage}</p>
+              </div>
+            </div>
+
+            <div className="mt-5 rounded-lg border border-brand-blue/20 bg-brand-blue/[0.04] p-4">
+              <div className="text-[10px] font-extrabold uppercase tracking-wider text-brand-blue">Value conversation</div>
+              <p className="mt-2 text-xs font-medium leading-relaxed text-foreground/85">{commercial.valueConversation}</p>
+            </div>
+
+            <div className="mt-5 border-t border-border/60 pt-4">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <div className="text-[10px] font-extrabold uppercase tracking-wider text-muted">Customer economics</div>
+                <span className={`rounded border px-2 py-0.5 text-[9px] font-extrabold ${
+                  commercial.customerEconomics.pricingVisibility === "VERIFIED"
+                    ? "border-emerald-500/25 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
+                    : commercial.customerEconomics.pricingVisibility === "ESTIMATED"
+                      ? "border-amber-500/25 bg-amber-500/10 text-amber-600 dark:text-amber-400"
+                      : "border-border bg-panel text-muted"
+                }`}>
+                  PRICING {commercial.customerEconomics.pricingVisibility}
+                </span>
+              </div>
+              <dl className="mt-3 space-y-3 text-[11px]">
+                <div>
+                  <dt className="text-muted">Buyer unit</dt>
+                  <dd className="mt-0.5 font-semibold leading-relaxed text-foreground">{commercial.customerEconomics.buyerUnit}</dd>
+                </div>
+                <div>
+                  <dt className="text-muted">Revenue model</dt>
+                  <dd className="mt-0.5 font-semibold leading-relaxed text-foreground">{commercial.customerEconomics.revenueModel}</dd>
+                </div>
+                <div>
+                  <dt className="text-muted">Economics estimate</dt>
+                  <dd className="mt-0.5 font-semibold leading-relaxed text-foreground">{commercial.customerEconomics.valueEstimate}</dd>
+                </div>
+              </dl>
+              <p className="mt-3 text-[10px] leading-relaxed text-muted">{commercial.customerEconomics.pricingNote}</p>
+            </div>
+
+            <div className="mt-5 border-t border-border/60 pt-4">
+              <div className="text-[10px] font-extrabold uppercase tracking-wider text-muted">Evidence and confidence</div>
+              {commercial.evidence.length > 0 ? (
+                <div className="mt-2 space-y-2">
+                  {commercial.evidence.map((item, index) => (
+                    <a
+                      key={`${item.url}-${index}`}
+                      href={item.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center justify-between gap-3 rounded-md border border-border bg-panel px-3 py-2 text-[10px] hover:border-brand-blue/40"
+                    >
+                      <span className="min-w-0">
+                        <span className="block leading-relaxed text-muted">{item.supports}</span>
+                        <span className="mt-0.5 block truncate font-bold text-foreground/70">
+                          {new URL(item.url).hostname.replace(/^www\./, "")}
+                        </span>
+                      </span>
+                      <ExternalLink size={12} className="shrink-0 text-brand-blue" />
+                    </a>
+                  ))}
+                </div>
+              ) : (
+                <p className="mt-2 text-[10px] leading-relaxed text-muted">No prospect-specific commercial source is verified yet.</p>
+              )}
+              <p className="mt-3 text-[10px] leading-relaxed text-muted">{commercial.confidence.note}</p>
+            </div>
+          </section>
+        )}
 
         <div className="mb-6 flex items-center justify-between gap-3 rounded-lg border border-border bg-panel p-3">
           <ProspectActions node={node} />
