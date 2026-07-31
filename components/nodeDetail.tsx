@@ -373,6 +373,12 @@ export function NodeDetail({ node, onClose }: Props) {
                           <details className="mt-2 text-[9px] text-muted">
                             <summary className="cursor-pointer font-extrabold text-brand-blue">How this range was estimated</summary>
                             <div className="mt-2 space-y-2">
+                              {getCommercialBenchmark(entry.engine).examples.map((example) => (
+                                <a key={`${example.name}-${example.url}`} href={example.url} target="_blank" rel="noreferrer" className="block border-l-2 border-brand-orange pl-2 hover:text-foreground">
+                                  <strong>{example.name}</strong> · {example.organization}
+                                  <span className="mt-0.5 block">{example.priceConnection}</span>
+                                </a>
+                              ))}
                               {getCommercialBenchmark(entry.engine).sources.map((source) => (
                                 <a key={source.url} href={source.url} target="_blank" rel="noreferrer" className="flex items-start justify-between gap-2 hover:text-foreground">
                                   <span><strong>{source.title}:</strong> {source.observation}</span>

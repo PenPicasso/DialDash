@@ -80,6 +80,12 @@ for (const [id, benchmark] of Object.entries(COMMERCIAL_BENCHMARKS)) {
   for (const source of benchmark.sources) {
     if (!/^https?:\/\//i.test(source.url) || !source.title.trim() || !source.observation.trim()) errors.push(`benchmark ${id}: invalid source`);
   }
+  for (const example of benchmark.examples) {
+    if (!/^https?:\/\//i.test(example.url) || !example.name.trim() || !example.organization.trim() || !example.avatar.trim() || !example.priceConnection.trim()) {
+      errors.push(`benchmark ${id}: invalid named example`);
+    }
+  }
+  if (benchmark.sources.length > 0 && benchmark.examples.length === 0) errors.push(`benchmark ${id}: sourced benchmark requires a named person to study`);
 }
 const guideCategories = CATEGORY_COMMERCIAL_GUIDE.map((guide) => guide.category);
 if (new Set(guideCategories).size !== CATEGORIES.length || CATEGORIES.some((category) => !guideCategories.includes(category))) {

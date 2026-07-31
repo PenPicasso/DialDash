@@ -9,19 +9,19 @@ import {
 } from "node:fs";
 import { resolve } from "node:path";
 
-const source = resolve(".open-next");
 const nextPages = resolve(".next", "server", "app");
 const target = resolve("dist");
 
-if (!existsSync(resolve(source, "assets")) || !existsSync(resolve(nextPages, "dashboard.html"))) {
-  throw new Error("The OpenNext assets and prerendered dashboard were not generated.");
+if (!existsSync(resolve(".next", "static")) || !existsSync(resolve(nextPages, "dashboard.html"))) {
+  throw new Error("The Next.js static assets and prerendered dashboard were not generated.");
 }
 
 rmSync(target, { force: true, recursive: true });
 mkdirSync(target, { recursive: true });
-cpSync(resolve(source, "assets"), resolve(target, "assets"), { recursive: true });
-
 const assetsTarget = resolve(target, "assets");
+mkdirSync(assetsTarget, { recursive: true });
+if (existsSync(resolve("public"))) cpSync(resolve("public"), assetsTarget, { recursive: true });
+cpSync(resolve(".next", "static"), resolve(assetsTarget, "_next", "static"), { recursive: true });
 const pages = [
   ["index.html", "index.html"],
   ["dashboard.html", "dashboard/index.html"],

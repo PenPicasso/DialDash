@@ -38,7 +38,7 @@ export default function ReportPage() {
 
       <section className="px-5 pt-10 md:px-10">
         <figure className="mx-auto max-w-6xl overflow-hidden rounded-lg border border-border bg-panel">
-          <Image src="/report/before-after.png" alt="DialDash before and after: from 840 unqualified names to 840 reviewed prospect decisions" width={1677} height={941} priority className="h-auto w-full" />
+          <Image src="/report/before-after.png" alt="DialDash before and after: from 840 unqualified names to 840 reviewed prospect decisions" width={1677} height={941} priority unoptimized className="h-auto w-full" />
         </figure>
       </section>
 
@@ -111,6 +111,21 @@ export default function ReportPage() {
                 <div className="mt-2 text-base font-black text-brand-blue">{benchmark.range}</div>
                 <div className="mt-1 text-[10px] font-bold uppercase tracking-wider text-muted">{benchmark.unit}</div>
                 <p className="mt-3 text-xs leading-5 text-muted">{benchmark.basis} {benchmark.caveat}</p>
+                {benchmark.examples.length > 0 && (
+                  <div className="mt-4 border-l-2 border-brand-orange pl-3">
+                    <div className="text-[10px] font-extrabold uppercase tracking-wider text-brand-orange">Named people to study</div>
+                    <div className="mt-2 space-y-3">
+                      {benchmark.examples.map((example) => (
+                        <div key={`${benchmark.id}-${example.name}`} className="text-[11px] leading-5">
+                          <a href={example.url} target="_blank" rel="noreferrer" className="font-black text-foreground hover:text-brand-blue">{example.name}</a>
+                          <span className="text-muted"> · {example.organization}</span>
+                          <div className="text-foreground/75">{example.avatar}</div>
+                          <div className="text-muted">{example.priceConnection}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
                 <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1">
                   {benchmark.sources.map((source) => (
                     <a key={source.url} href={source.url} target="_blank" rel="noreferrer" className="text-[10px] font-extrabold text-brand-blue hover:underline">{source.title}</a>
@@ -127,7 +142,7 @@ export default function ReportPage() {
           <div className="text-xs font-extrabold uppercase tracking-wider text-brand-orange">How we did it</div>
           <h2 className="mt-2 text-3xl font-black">A fixed, auditable pipeline</h2>
           <figure className="mt-8 overflow-hidden rounded-lg border border-border bg-panel">
-            <Image src="/report/methodology-faster.png" alt="DialDash five-stage review pipeline and a faster future workflow" width={1677} height={941} className="h-auto w-full" />
+            <Image src="/report/methodology-faster.png" alt="DialDash five-stage review pipeline and a faster future workflow" width={1677} height={941} loading="eager" unoptimized className="h-auto w-full" />
           </figure>
           <div className="mt-8 divide-y divide-border border-y border-border">
             {steps.map(([number, title, body]) => (

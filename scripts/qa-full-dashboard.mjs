@@ -45,6 +45,17 @@ try {
   await desktop.getByText("840 / 840 reviewed", { exact: false }).waitFor();
   await desktop.getByText("How to do the next run faster", { exact: false }).waitFor();
   await desktop.getByText("Commercial economics benchmark", { exact: false }).waitFor();
+  await desktop.getByText("Named people to study", { exact: true }).first().waitFor();
+  await desktop.getByText("Rory Johnston", { exact: true }).last().waitFor();
+  const reportImages = await desktop.locator("figure img").evaluateAll((images) => images.map((image) => ({
+    src: image.getAttribute("src"),
+    complete: image.complete,
+    naturalWidth: image.naturalWidth,
+    naturalHeight: image.naturalHeight,
+  })));
+  if (reportImages.length !== 2 || reportImages.some((image) => !image.complete || image.naturalWidth < 1000 || image.naturalHeight < 500 || image.src?.startsWith("/_next/image"))) {
+    throw new Error(`Report images are not direct, complete static assets: ${JSON.stringify(reportImages)}`);
+  }
   await desktop.screenshot({ path: `${output}/full-review-report.png`, fullPage: true });
 
   const mobile = await browser.newPage({ viewport: { width: 390, height: 844 } });

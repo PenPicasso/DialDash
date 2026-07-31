@@ -1,10 +1,9 @@
 import { spawnSync } from "node:child_process";
 
-const runner = process.platform === "win32" ? "npx.cmd" : "npx";
-
-function run(args, env = process.env) {
-  const result = spawnSync(runner, args, {
-    env,
+function run(command, args) {
+  const executable = process.platform === "win32" ? `${command}.cmd` : command;
+  const result = spawnSync(executable, args, {
+    env: process.env,
     shell: process.platform === "win32",
     stdio: "inherit",
   });
@@ -12,15 +11,7 @@ function run(args, env = process.env) {
   if (result.status !== 0) process.exit(result.status ?? 1);
 }
 
-if (process.env.DIALDASH_OPENNEXT_INNER === "1") {
-  run(["next", "build"]);
-  process.exit(0);
-}
-
-run(["opennextjs-cloudflare", "build"], {
-  ...process.env,
-  DIALDASH_OPENNEXT_INNER: "1",
-});
+run("npx", ["next", "build"]);
 const packageResult = spawnSync(process.execPath, ["scripts/package-sites-build.mjs"], {
   stdio: "inherit",
 });

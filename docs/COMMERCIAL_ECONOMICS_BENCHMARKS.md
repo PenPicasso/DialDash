@@ -12,6 +12,14 @@ DialDash applies evidence in this order:
 
 Every revenue-stack item receives its own economics. Research, advisory, board compensation, fund economics, and speaking are not blended into one number.
 
+Each benchmark also distinguishes:
+
+- **Named person to study:** a real operator whose role and business model illustrate the avatar.
+- **Price publisher:** the prospect's company, a buyer's public filing, or a comparable public rate card.
+- **Connection to price:** whether the number is that person's own public offer, an observed firm transaction, or only a market estimate.
+
+Named examples include Rory Johnston and Emmet Penney for paid research; Arjun Murti for advisory, investing, and board roles; Mark LaCour for energy sponsorship and speaking; Eric Woodroof for training and expert projects; Olivier Corradi, John Sodergreen, and Het Shah for energy data products; and David Hunt for cleantech executive search.
+
 ## Cross-Category Benchmarks
 
 | Revenue engine | Working range | Public basis |
