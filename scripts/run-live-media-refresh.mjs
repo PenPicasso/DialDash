@@ -5,7 +5,7 @@ import { resolve } from "node:path";
 const secretPath = resolve("storage/media-freshness-secrets.json");
 if (!existsSync(secretPath)) throw new Error(`Missing local secret file: ${secretPath}`);
 
-const secrets = JSON.parse(readFileSync(secretPath, "utf8"));
+const secrets = JSON.parse(readFileSync(secretPath, "utf8").replace(/^\uFEFF/, ""));
 const env = {
   ...process.env,
   DIALDASH_FRESHNESS_URL: secrets.url,
