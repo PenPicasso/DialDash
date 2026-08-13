@@ -29,7 +29,7 @@ function assetRequest(request, pathname) {
   const url = new URL(request.url);
   url.pathname = pathname;
   url.search = "";
-  return new Request(url, request);
+  return new Request(url, { method: "GET", headers: request.headers });
 }
 
 function json(value, status = 200) {
