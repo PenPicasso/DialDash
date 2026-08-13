@@ -119,7 +119,8 @@ function extractFirst(body: string, pattern: RegExp) {
 function toIso(value?: string) {
   if (!value) return undefined;
   const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? undefined : date.toISOString();
+  if (Number.isNaN(date.getTime()) || date.getTime() > Date.now() + 60 * 60 * 1000) return undefined;
+  return date.toISOString();
 }
 
 function toDate(value: string) {
