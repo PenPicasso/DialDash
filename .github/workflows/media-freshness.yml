@@ -1,0 +1,32 @@
+name: Refresh DialDash media freshness
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "7 6 * * *"
+
+concurrency:
+  group: dialdash-media-freshness
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Collect owned-channel freshness
+        run: npm run collect:media -- --all --output=storage/media-freshness-live.json
+      - name: Validate snapshot
+        run: npm run validate:media-freshness -- --input=storage/media-freshness-live.json
+      - name: Publish completed snapshot
+        run: npm run upload:media-freshness -- --input=storage/media-freshness-live.json
+        env:
+          DIALDASH_FRESHNESS_URL: https://dialdash-prospect-os.runitback.chatgpt.site
+          DIALDASH_FRESHNESS_INGESTION_KEY: ${{ secrets.DIALDASH_FRESHNESS_INGESTION_KEY }}
+          DIALDASH_SITES_BYPASS_TOKEN: ${{ secrets.DIALDASH_SITES_BYPASS_TOKEN }}

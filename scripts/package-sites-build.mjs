@@ -63,6 +63,24 @@ const summary = {
 const dataTarget = resolve(assetsTarget, "sites-data");
 mkdirSync(dataTarget, { recursive: true });
 
+const mediaRecords = baseNodes.map((node) => {
+  const record = { prospectId: node.id };
+  for (const field of [
+    "latestYoutubePublishedAt", "latestYoutubePublishDate", "latestYoutubeTitle", "latestYoutubeEvidenceUrl", "latestYoutubeCheckedAt", "youtubeFreshnessStatus", "youtubeFreshnessError",
+    "latestPodcastPublishedAt", "latestPodcastPublishDate", "latestPodcastTitle", "latestPodcastEvidenceUrl", "latestPodcastSource", "latestPodcastCheckedAt", "podcastFreshnessStatus", "podcastFreshnessError",
+    "latestNewsletterPublishedAt", "latestNewsletterTitle", "latestNewsletterEvidenceUrl", "latestNewsletterCheckedAt", "newsletterFreshnessStatus", "newsletterFreshnessError",
+    "latestMediaPublishedAt", "latestMediaPublishDate", "latestMediaSource", "latestMediaTitle", "lastMediaFreshnessAuditAt", "mediaRefreshVersion",
+  ]) if (node[field] !== undefined) record[field] = node[field];
+  return record;
+});
+const seedCompletedAt = baseNodes.reduce((latest, node) => node.lastMediaFreshnessAuditAt > latest ? node.lastMediaFreshnessAuditAt : latest, "");
+writeFileSync(resolve(dataTarget, "prospect-ids.json"), JSON.stringify({ ids: baseNodes.map((node) => node.id) }));
+writeFileSync(resolve(dataTarget, "media-freshness-seed.json"), JSON.stringify({
+  schemaVersion: "dialdash-media-live-v1",
+  run: { id: "deployment-seed", status: "SEEDED", completedAt: seedCompletedAt, expectedCount: mediaRecords.length, recordCount: mediaRecords.length, refreshVersion: "media-v3-owned-channels" },
+  records: mediaRecords,
+}));
+
 for (const [scope, selected] of [
   ["all", nodes],
   ["pursue", nodes.filter((node) => node.reviewDecision === "PURSUE_NOW")],
@@ -76,60 +94,11 @@ for (const [scope, selected] of [
 
 const serverTarget = resolve(target, "server");
 mkdirSync(serverTarget, { recursive: true });
-writeFileSync(
-  resolve(serverTarget, "index.js"),
-  `const pageRoutes = new Map([
-  ["/", "/index.html"],
-  ["/dashboard", "/dashboard/index.html"],
-  ["/dashboard/", "/dashboard/index.html"],
-  ["/pilot", "/pilot/index.html"],
-  ["/pilot/", "/pilot/index.html"],
-  ["/portal/demo", "/portal/demo/index.html"],
-  ["/portal/demo/", "/portal/demo/index.html"],
-  ["/report", "/report/index.html"],
-  ["/report/", "/report/index.html"],
-]);
-
-function assetRequest(request, pathname) {
-  const url = new URL(request.url);
-  url.pathname = pathname;
-  url.search = "";
-  return new Request(url, request);
-}
-
-export default {
-  async fetch(request, env) {
-    const url = new URL(request.url);
-
-    if (url.pathname === "/api/prospects") {
-      const requestedScope = url.searchParams.get("scope");
-      const scope = requestedScope === "pursue" || requestedScope === "research"
-        ? requestedScope
-        : "all";
-      const response = await env.ASSETS.fetch(
-        assetRequest(request, "/sites-data/prospects-" + scope + ".json"),
-      );
-      const headers = new Headers(response.headers);
-      headers.set("cache-control", "private, max-age=60, stale-while-revalidate=300");
-      headers.set("content-type", "application/json; charset=utf-8");
-      return new Response(response.body, { status: response.status, headers });
-    }
-
-    const page = pageRoutes.get(url.pathname);
-    if (page) {
-      return env.ASSETS.fetch(assetRequest(request, page));
-    }
-
-    const assetResponse = await env.ASSETS.fetch(request);
-    if (assetResponse.status !== 404) return assetResponse;
-    return env.ASSETS.fetch(assetRequest(request, "/404.html"));
-  },
-};
-`,
-);
+copyFileSync(resolve("sites", "worker.mjs"), resolve(serverTarget, "index.js"));
 
 mkdirSync(resolve(target, ".openai"), { recursive: true });
 copyFileSync(
   resolve(".openai", "hosting.json"),
   resolve(target, ".openai", "hosting.json"),
 );
+if (existsSync(resolve("drizzle"))) cpSync(resolve("drizzle"), resolve(target, ".openai", "drizzle"), { recursive: true });

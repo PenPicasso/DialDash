@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import { CATEGORIES, NodeData } from "@/lib/types";
+import { isLiveMediaPayload, mergeLiveMedia, type LiveMediaPayload, type LiveMediaRecord } from "@/lib/liveMediaFreshness";
 import {
   AlertTriangle,
   Bookmark,
@@ -266,6 +267,8 @@ export default function Dashboard() {
   const [focusOnly, setFocusOnly] = useState(false);
   const [focusedIds, setFocusedIds] = useState<string[]>([]);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const freshnessRecordsRef = useRef<Map<string, LiveMediaRecord>>(new Map());
+  const [freshnessRun, setFreshnessRun] = useState<LiveMediaPayload["run"]>();
 
   useEffect(() => {
     try {
@@ -306,7 +309,7 @@ export default function Dashboard() {
         if (!response.ok) throw new Error("Failed to load prospects");
         const payload = (await response.json()) as ProspectPayload;
         if (active) {
-          setNodes(payload.nodes);
+          setNodes(mergeLiveMedia(payload.nodes, freshnessRecordsRef.current.values()));
           setSummary(payload.summary);
           setLoadState("ready");
         }
@@ -336,7 +339,7 @@ export default function Dashboard() {
         return response.json() as Promise<ProspectPayload>;
       })
       .then((payload) => {
-        setNodes(payload.nodes);
+        setNodes(mergeLiveMedia(payload.nodes, freshnessRecordsRef.current.values()));
         setSummary(payload.summary);
         setLoadedAll(true);
         setLoadState("ready");
@@ -346,6 +349,48 @@ export default function Dashboard() {
       });
     return () => controller.abort();
   }, [filtersOpen, loadedAll, methodologyDecision, search]);
+
+  useEffect(() => {
+    let active = true;
+    let controller: AbortController | undefined;
+
+    async function loadFreshness() {
+      controller?.abort();
+      controller = new AbortController();
+      try {
+        const response = await fetch("/api/media-freshness", {
+          signal: controller.signal,
+          cache: "no-store",
+          headers: { Accept: "application/json" },
+        });
+        if (!response.ok) throw new Error("Failed to load live media freshness");
+        const payload: unknown = await response.json();
+        if (!active || !isLiveMediaPayload(payload)) return;
+        const map = new Map(payload.records.map((record) => [record.prospectId, record]));
+        freshnessRecordsRef.current = map;
+        setFreshnessRun(payload.run);
+        setNodes((current) => mergeLiveMedia(current, map.values()));
+        setSelectedNode((current) => current ? mergeLiveMedia([current], map.values())[0] : null);
+      } catch (error) {
+        if (!(error instanceof DOMException && error.name === "AbortError")) {
+          console.warn("Live media freshness is unavailable; using the deployment snapshot.");
+        }
+      }
+    }
+
+    const onVisibility = () => {
+      if (document.visibilityState === "visible") loadFreshness();
+    };
+    loadFreshness();
+    const interval = window.setInterval(loadFreshness, 15 * 60 * 1000);
+    document.addEventListener("visibilitychange", onVisibility);
+    return () => {
+      active = false;
+      controller?.abort();
+      window.clearInterval(interval);
+      document.removeEventListener("visibilitychange", onVisibility);
+    };
+  }, []);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -495,6 +540,7 @@ export default function Dashboard() {
     [nodes]
   );
   const databaseStats = summary || loadedStats;
+  const freshnessIsStale = freshnessRun ? Date.now() - new Date(freshnessRun.completedAt).getTime() > 30 * 60 * 60 * 1000 : false;
 
   const visibleNodes = filteredNodes.slice(0, visibleCount);
   const hasMoreRows = visibleNodes.length < filteredNodes.length;
@@ -600,6 +646,13 @@ export default function Dashboard() {
           <p className="mt-1.5 text-sm text-muted">
             {databaseStats.reviewed} fully reviewed &middot; {databaseStats.pursue} pursue now &middot; {databaseStats.nurture} nurture &middot; {databaseStats.excluded} excluded
           </p>
+          {freshnessRun && (
+            <div className={`mt-2 inline-flex items-center gap-1.5 text-[10px] font-extrabold uppercase ${freshnessIsStale ? "text-amber-600" : "text-emerald-700 dark:text-emerald-300"}`}>
+              {freshnessIsStale && <AlertTriangle size={12} />}
+              Media checked {freshnessRun.completedAt ? new Intl.DateTimeFormat("en", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }).format(new Date(freshnessRun.completedAt)) : "previously"}
+              {freshnessIsStale ? " · refresh overdue" : ` · ${freshnessRun.recordCount} live records`}
+            </div>
+          )}
         </div>
         <button type="button" onClick={() => setFocusOnly((current) => !current)} className={`inline-flex h-10 items-center gap-2 self-start rounded-md border px-3 text-xs font-extrabold transition-colors md:self-auto ${focusOnly ? "border-brand-orange bg-brand-orange text-white" : "border-border bg-panel text-foreground hover:border-brand-orange"}`}>
           {focusOnly ? <BookmarkCheck size={15} /> : <Bookmark size={15} />}

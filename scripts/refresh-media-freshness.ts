@@ -1,6 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from "fs";
-import { join } from "path";
+import { dirname, join, resolve } from "path";
 import { NodeData } from "../lib/types";
+import { LIVE_MEDIA_SCHEMA_VERSION, pickLiveMediaRecord } from "../lib/liveMediaFreshness";
 
 type Database = { nodes: NodeData[] };
 type MediaHit = {
@@ -25,9 +26,12 @@ const REQUEST_TIMEOUT_MS = 15000;
 const NODE_TIMEOUT_MS = 60000;
 const CONCURRENCY = 3;
 const REFRESH_VERSION = "media-v3-owned-channels";
+const rejectedYoutubeOwnership = new Set<string>();
 
 const args = new Set(process.argv.slice(2));
-const writeChanges = !args.has("--no-write");
+const outputArg = process.argv.find((arg) => arg.startsWith("--output="));
+const outputPath = outputArg ? resolve(outputArg.split("=").slice(1).join("=")) : undefined;
+const writeChanges = !args.has("--no-write") && !outputPath;
 const includeAll = args.has("--all");
 const staleOnly = args.has("--stale-only");
 const limitArg = process.argv.find((arg) => arg.startsWith("--limit="));
@@ -91,7 +95,7 @@ function writeDatabase(database: Database) {
 
 function decodeHtml(value?: string) {
   if (!value) return undefined;
-  return value
+  const decoded = value
     .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
     .replace(/&amp;/g, "&")
     .replace(/&lt;/g, "<")
@@ -101,6 +105,11 @@ function decodeHtml(value?: string) {
     .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
     .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCharCode(parseInt(code, 16)))
     .trim();
+  if (/[ÃÂâ]/.test(decoded)) {
+    const repaired = Buffer.from(decoded, "latin1").toString("utf8");
+    if (!repaired.includes("�")) return repaired;
+  }
+  return decoded;
 }
 
 function extractFirst(body: string, pattern: RegExp) {
@@ -172,7 +181,10 @@ function isResolvableYoutubeChannelUrl(url: string) {
   }
 }
 
-async function fetchText(url: string) {
+const textRequestCache = new Map<string, Promise<string | undefined>>();
+const jsonRequestCache = new Map<string, Promise<unknown>>();
+
+async function fetchTextUncached(url: string) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
 
@@ -195,7 +207,12 @@ async function fetchText(url: string) {
   }
 }
 
-async function fetchJson<T>(url: string) {
+function fetchText(url: string) {
+  if (!textRequestCache.has(url)) textRequestCache.set(url, fetchTextUncached(url));
+  return textRequestCache.get(url)!;
+}
+
+async function fetchJsonUncached<T>(url: string) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
 
@@ -216,6 +233,11 @@ async function fetchJson<T>(url: string) {
   } finally {
     clearTimeout(timeout);
   }
+}
+
+function fetchJson<T>(url: string): Promise<T | undefined> {
+  if (!jsonRequestCache.has(url)) jsonRequestCache.set(url, fetchJsonUncached<T>(url));
+  return jsonRequestCache.get(url)! as Promise<T | undefined>;
 }
 
 async function withTimeout<T>(label: string, promise: Promise<T>, fallback: T): Promise<T> {
@@ -352,7 +374,7 @@ function youtubePathTokens(url?: string) {
   }
 }
 
-function youtubeFeedScore(node: NodeData, youtubeUrl: string | undefined, xml: string) {
+function youtubeIdentityScore(node: NodeData, xml: string) {
   const meta = parseYoutubeFeedMeta(xml);
   const candidateText = normalizeForMatch(`${meta.title || ""} ${meta.author || ""}`);
   const channel = normalizeForMatch(node.channel);
@@ -360,9 +382,6 @@ function youtubeFeedScore(node: NodeData, youtubeUrl: string | undefined, xml: s
   const organization = normalizeForMatch(node.organizationName);
   const genericChannels = new Set(["independent", "unknown", "podcast", "youtube"]);
   let score = 0;
-
-  const pathHits = youtubePathTokens(youtubeUrl).filter((token) => candidateText.includes(token)).length;
-  if (pathHits > 0) score += 5 + Math.min(3, pathHits - 1);
 
   if (channel && !genericChannels.has(channel)) {
     if (candidateText === channel) score += 7;
@@ -383,7 +402,12 @@ function youtubeFeedScore(node: NodeData, youtubeUrl: string | undefined, xml: s
 }
 
 function isCredibleYoutubeFeed(node: NodeData, youtubeUrl: string | undefined, xml: string) {
-  return youtubeFeedScore(node, youtubeUrl, xml) >= 3;
+  const identityScore = youtubeIdentityScore(node, xml);
+  if (identityScore < 3) return false;
+
+  const candidateText = normalizeForMatch(`${parseYoutubeFeedMeta(xml).title || ""} ${parseYoutubeFeedMeta(xml).author || ""}`);
+  const pathHits = youtubePathTokens(youtubeUrl).filter((token) => candidateText.includes(token)).length;
+  return identityScore + Math.min(3, pathHits) >= 3;
 }
 
 async function refreshYoutube(node: NodeData): Promise<MediaHit | undefined> {
@@ -396,7 +420,9 @@ async function refreshYoutube(node: NodeData): Promise<MediaHit | undefined> {
   if (directChannelId) {
     const feedUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${directChannelId}`;
     const xml = await fetchText(feedUrl);
-    if (xml && isCredibleYoutubeFeed(node, youtubeUrl, xml)) {
+    if (xml && !isCredibleYoutubeFeed(node, youtubeUrl, xml)) {
+      rejectedYoutubeOwnership.add(node.id);
+    } else if (xml) {
       const hit = parseYoutubeEntry(xml, feedUrl);
       if (hit) {
         hit.channelId = directChannelId;
@@ -434,7 +460,10 @@ async function refreshYoutube(node: NodeData): Promise<MediaHit | undefined> {
     seenFeeds.add(candidate.url);
     const xml = await fetchText(candidate.url);
     if (!xml) continue;
-    if (!isCredibleYoutubeFeed(node, youtubeUrl, xml)) continue;
+    if (!isCredibleYoutubeFeed(node, youtubeUrl, xml)) {
+      rejectedYoutubeOwnership.add(node.id);
+      continue;
+    }
     const hit = parseYoutubeEntry(xml, candidate.url);
     if (hit) {
       if (candidate.canWriteChannelId) {
@@ -634,7 +663,7 @@ async function refreshNode(node: NodeData, checkedAt: string) {
   const hadYoutube = Boolean(node.youtubeUrl && !node.isXOnly);
   const hadPodcast = Boolean(node.podcastAppleUrl || node.isPodcastOnly || (node.rssUrl && !isNewsletterNode(node)));
   const hadNewsletter = Boolean(node.rssUrl && isNewsletterNode(node));
-  const previousYoutube = preservedHit(node.latestYoutubePublishedAt, node.latestYoutubeTitle, node.latestYoutubeEvidenceUrl, "youtube");
+  let previousYoutube = preservedHit(node.latestYoutubePublishedAt, node.latestYoutubeTitle, node.latestYoutubeEvidenceUrl, "youtube");
   const previousPodcast = preservedHit(
     node.latestPodcastPublishedAt,
     node.latestPodcastTitle,
@@ -654,6 +683,14 @@ async function refreshNode(node: NodeData, checkedAt: string) {
     refreshNewsletter(node),
   ]);
 
+  if (outputPath && rejectedYoutubeOwnership.has(node.id)) {
+    previousYoutube = undefined;
+    delete node.latestYoutubePublishedAt;
+    delete node.latestYoutubePublishDate;
+    delete node.latestYoutubeTitle;
+    delete node.latestYoutubeEvidenceUrl;
+  }
+
   const youtube = youtubeResult || previousYoutube;
   const podcast = podcastResult || previousPodcast;
   const newsletter = newsletterResult || previousNewsletter;
@@ -670,7 +707,9 @@ async function refreshNode(node: NodeData, checkedAt: string) {
   } else if (hadYoutube) {
     node.latestYoutubeCheckedAt = checkedAt;
     node.youtubeFreshnessStatus = previousYoutube ? "ERROR" : "UNVERIFIED";
-    node.youtubeFreshnessError = "Owned YouTube feed did not return a verified latest upload; the last verified value was preserved.";
+    node.youtubeFreshnessError = rejectedYoutubeOwnership.has(node.id)
+      ? "The configured YouTube source no longer matches the prospect's show, host, or organization; its prior attribution was removed from the live overlay."
+      : "Owned YouTube feed did not return a verified latest upload; the last verified value was preserved.";
   } else {
     node.youtubeFreshnessStatus = "MISSING";
     delete node.youtubeFreshnessError;
@@ -780,7 +819,34 @@ async function run() {
 
   if (writeChanges) writeDatabase(db);
 
-  console.log(JSON.stringify({ ...stats, writeChanges, includeAll, staleOnly, refreshVersion: REFRESH_VERSION }, null, 2));
+  if (outputPath) {
+    mkdirSync(dirname(outputPath), { recursive: true });
+    const completedAt = new Date().toISOString();
+    const records = targets.map((node) => {
+      const record = pickLiveMediaRecord(node);
+      if (rejectedYoutubeOwnership.has(node.id)) {
+        record.latestYoutubePublishedAt = null;
+        record.latestYoutubePublishDate = null;
+        record.latestYoutubeTitle = null;
+        record.latestYoutubeEvidenceUrl = null;
+      }
+      return record;
+    });
+    writeFileSync(outputPath, `${JSON.stringify({
+      schemaVersion: LIVE_MEDIA_SCHEMA_VERSION,
+      run: {
+        id: `media-${completedAt.replace(/[^0-9]/g, "").slice(0, 14)}`,
+        status: "COMPLETE",
+        completedAt,
+        expectedCount: records.length,
+        recordCount: records.length,
+        refreshVersion: REFRESH_VERSION,
+      },
+      records,
+    }, null, 2)}\n`);
+  }
+
+  console.log(JSON.stringify({ ...stats, writeChanges, outputPath, includeAll, staleOnly, refreshVersion: REFRESH_VERSION, requestCache: { text: textRequestCache.size, json: jsonRequestCache.size } }, null, 2));
 }
 
 run().catch((error) => {

@@ -326,7 +326,23 @@ Do not use generic `lastPublishDate` or `lastKnownPublishDate` as the dashboard 
 
 Apple/iTunes lookup results are valid only when the result is a podcast result (`wrapperType: "track"`, `kind: "podcast"`), has a `feedUrl`, and links to `podcasts.apple.com`. Do not overwrite podcast fields from music, album, audiobook, or other Apple media results.
 
-A Codex automation named `Refresh DialDash media` runs daily at 07:00 Africa/Lagos with a light model in an isolated worktree. It refreshes, reranks, and validates only; it must not push, deploy, use Firecrawl, or touch `main`.
+A Codex automation named `Refresh DialDash media` runs daily at 07:07 Africa/Lagos with a light model in the reviewed dashboard worktree. It collects, validates, and uploads only the freshness sidecar; it must not rerank, push, deploy, use Firecrawl, touch `main`, or write `data/nodes.json`.
+
+### Live media freshness sidecar
+
+The Sites dashboard now reads a freshness-only live overlay from `GET /api/media-freshness`. The static build seed remains the fallback when the live store is empty or unavailable. The dashboard requests the overlay on open, every 15 minutes while open, and when the tab becomes visible again.
+
+The live store is a D1 sidecar. It may update or clear only the allowlisted fields in `lib/liveMediaFreshness.ts`; it must never mutate prospect decisions, scores, funnel strategy, contact research, Commercial Intelligence, or `data/nodes.json`. Runs are uploaded as `PENDING` batches and become visible only after an atomic `COMPLETE` transition. The worker retains seven completed snapshots and rejects unknown prospect IDs, forbidden fields, future timestamps, and unexplained backwards dates.
+
+Source ownership is a hard gate. A URL or handle alone is insufficient because channels can collide or change owners. YouTube feed metadata must agree with the saved show, host, or organization identity. On an ownership mismatch, the live overlay clears that channel attribution and preserves other verified channels.
+
+Daily commands:
+- `npm run collect:media -- --all --output=storage/media-freshness-live.json`
+- `npm run validate:media-freshness -- --input=storage/media-freshness-live.json`
+- `npm run upload:media-freshness -- --input=storage/media-freshness-live.json`
+- `node scripts/run-live-media-refresh.mjs` runs all three using ignored `storage/media-freshness-secrets.json`.
+
+The GitHub workflow is scheduled for 07:07 Africa/Lagos-equivalent time and becomes recurring only when the workflow exists on GitHub's default branch. Until that merge, the local Codex automation is the active scheduler. Neither scheduler writes `data/nodes.json`, pushes, deploys, uses Firecrawl, or reranks prospects.
 
 ### Light-model 100-record pass
 

@@ -16,6 +16,13 @@ try {
   if (!response?.ok()) throw new Error(`Dashboard returned ${response?.status()}.`);
   await desktop.getByText("840", { exact: true }).first().waitFor();
   await desktop.getByText("22", { exact: true }).first().waitFor();
+  await desktop.getByText(/Media checked/i).waitFor();
+  const freshnessResponse = await desktop.request.get(`${baseUrl}/api/media-freshness`);
+  if (!freshnessResponse.ok()) throw new Error(`Media freshness API returned ${freshnessResponse.status()}.`);
+  const freshness = await freshnessResponse.json();
+  if (freshness.schemaVersion !== "dialdash-media-live-v1" || freshness.records?.length !== 840) {
+    throw new Error(`Media freshness API returned an invalid seed: ${JSON.stringify({ schemaVersion: freshness.schemaVersion, records: freshness.records?.length })}`);
+  }
   await desktop.screenshot({ path: `${output}/full-dashboard-desktop.png`, fullPage: true });
 
   await desktop.getByLabel("View").selectOption("excluded");
