@@ -1,0 +1,50 @@
+name: Jules repair and enrichment
+
+on:
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "Choose the Jules job"
+        required: true
+        type: choice
+        options:
+          - enrich_prospects
+          - repair_deployment
+      batch_size:
+        description: "Prospects to enrich (1-25)"
+        required: false
+        default: "10"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: jules-${{ github.event_name }}-${{ github.event.deployment.sha || github.run_id }}
+  cancel-in-progress: false
+
+jobs:
+  run-jules:
+    if: >-
+      ${{ github.event_name == 'workflow_dispatch' ||
+      github.event.deployment_status.state == 'failure' ||
+      github.event.deployment_status.state == 'error' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.13.0"
+
+      - name: Start focused Jules task
+        run: node scripts/jules-task.mjs
+        env:
+          JULES_API_KEY: ${{ secrets.JULES_API_KEY }}
+          JULES_TASK: ${{ github.event_name == 'deployment_status' && 'repair_deployment' || inputs.task }}
+          ENRICHMENT_BATCH_SIZE: ${{ inputs.batch_size || '10' }}
+          GITHUB_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          DEPLOYMENT_ENVIRONMENT: ${{ github.event.deployment.environment }}
+          DEPLOYMENT_URL: ${{ github.event.deployment_status.target_url }}
+          DEPLOYMENT_SHA: ${{ github.event.deployment.sha }}

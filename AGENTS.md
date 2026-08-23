@@ -11,6 +11,26 @@ Primary ICP:
 - Audio/newsletter-first operators are preferred.
 - A prospect is actionable only when a named human point-man, outreach path, active/semi-active content evidence, and funnel-aware pitch hook are present.
 
+## Non-negotiable Strict ICP Gates
+
+A prospect may be promoted to `READY` only when every applicable gate is supported by direct public evidence:
+
+- Global English-language energy operator in Fossil Fuels, Power & Utilities, Renewables, Nuclear, Energy Enablers, Commodity & Energy Markets, Energy Media & Research, or Energy Advisory & Expertise.
+- Named, visible human point-man who hosts, authors, presents, advises, or leads the content.
+- Usable direct outreach path and an active X presence.
+- Active or semi-active long-form publishing on YouTube or an Apple/Spotify-distributed podcast. Prefer prospects with little or weak short-form output because the service opportunity is clearer.
+- Boutique scale evidenced by either approximately $1M-$50M revenue or 5-200 employees. Never guess either metric.
+- Prefer founder-led or expert-led operators. Exclude majors, giant utilities, large EPCs, corporate monoliths, generic news brands, aggregators, and prospects without a direct point-man.
+
+Quality beats count. Missing or contradictory evidence must remain staged or `REJECTED`; agents must never relax gates, fabricate enrichment, or promote a prospect merely to increase database size.
+
+## Jules Automation
+
+- Failed deployment repair is event-driven from a failed GitHub deployment status. Jules may reproduce the failure, make the smallest durable code fix, add regression coverage, and open a pull request. It must not deploy or merge automatically.
+- Prospect enrichment is manual through the `Jules repair and enrichment` workflow. Default to 10 prospects and never exceed 25 in one task.
+- Enrichment must prioritize existing READY/HOT or near-READY prospects, cite direct evidence for every changed fact, and open a reviewable pull request.
+- Jules credentials belong only in the `JULES_API_KEY` GitHub Actions secret.
+
 ## Data Contract
 
 Canonical categories:
