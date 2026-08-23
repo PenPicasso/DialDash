@@ -3,6 +3,8 @@
 import { NodeData, CATEGORY_COLORS, Category } from "@/lib/types";
 import { X, Youtube, ExternalLink, Mail, Podcast, Radio, CheckCircle, AlertTriangle, Award } from "lucide-react";
 import { VideoPreview } from "./videoPreview";
+import { MediaFreshness } from "./mediaFreshness";
+import { ProspectActions } from "./prospectActions";
 
 type Props = {
   node: NodeData;
@@ -163,7 +165,7 @@ export function NodeDetail({ node, onClose }: Props) {
           <div>
             <div className="text-xs text-muted uppercase font-bold tracking-wider">Outbound Score</div>
             <div className="flex items-center gap-2">
-              <span className="text-lg font-extrabold text-foreground">{node.calculatedScore ?? "N/A"}</span>
+              <span className="text-lg font-extrabold text-foreground">{node.fitScore ?? node.calculatedScore ?? "N/A"}</span>
               <span className="text-xs text-muted">/ 100</span>
               <span
                 className={`ml-2 px-2 py-0.5 rounded text-[10px] font-bold ${
@@ -257,7 +259,7 @@ export function NodeDetail({ node, onClose }: Props) {
               <div className="text-xs text-muted mt-0.5">{funnel.tof.channels}</div>
               {funnel.tof.hasVideoGap && (
                 <span className="inline-flex items-center gap-1 mt-1.5 text-[10px] bg-amber-500/10 border border-amber-500/20 text-amber-600 dark:text-amber-400 px-2 py-0.5 rounded font-medium">
-                  ⚠️ {funnel.tof.videoGapReason}
+                  {funnel.tof.videoGapReason}
                 </span>
               )}
             </div>
@@ -289,6 +291,16 @@ export function NodeDetail({ node, onClose }: Props) {
               </>
             )}
           </div>
+        </div>
+
+        <div className="mb-6 flex items-center justify-between gap-3 rounded-lg border border-border bg-panel p-3">
+          <ProspectActions node={node} />
+          {node.fitRank && <span className="text-xs font-extrabold text-brand-blue">Fit rank #{node.fitRank}</span>}
+        </div>
+
+        <div className="mb-6">
+          <div className="mb-2 text-xs font-bold uppercase tracking-wider text-muted">Latest by owned channel</div>
+          <MediaFreshness node={node} expanded />
         </div>
 
         {/* Verification & Cadence Confidence */}

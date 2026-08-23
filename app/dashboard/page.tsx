@@ -1,24 +1,19 @@
 "use client";
 
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import { CATEGORIES, NodeData } from "@/lib/types";
 import {
   AlertTriangle,
-  ChevronDown,
-  ExternalLink,
+  ChevronRight,
   Moon,
   Search,
   SlidersHorizontal,
   Sun,
   X,
-  Youtube,
 } from "lucide-react";
-
-const VideoPreview = dynamic(
-  () => import("@/components/videoPreview").then((mod) => mod.VideoPreview),
-  { ssr: false, loading: () => null }
-);
+import { MediaFreshness } from "@/components/mediaFreshness";
 
 const NodeDetail = dynamic(
   () => import("@/components/nodeDetail").then((mod) => mod.NodeDetail),
@@ -32,20 +27,15 @@ type FilterOption = {
 
 type ProspectPayload = {
   nodes: NodeData[];
+  summary: {
+    total: number;
+    pursue: number;
+    nurture: number;
+    strongReady: number;
+    mediaVerified: number;
+  };
 };
 
-type FreshnessSignal = {
-  label: string;
-  value: string;
-  source: string;
-  href?: string;
-  date?: string;
-  title?: string;
-  available: boolean;
-  verified: boolean;
-};
-
-const MS_PER_DAY = 24 * 60 * 60 * 1000;
 const PAGE_SIZE = 100;
 
 const formatOptions: FilterOption[] = [
@@ -84,43 +74,6 @@ function actionabilityLabel(value: string) {
   return titleCase(value);
 }
 
-function parsePublishDate(dateValue?: string) {
-  if (!dateValue) return null;
-
-  const normalized = /^\d{4}-\d{2}-\d{2}$/.test(dateValue)
-    ? `${dateValue}T12:00:00`
-    : dateValue;
-  const parsed = new Date(normalized);
-
-  return Number.isNaN(parsed.getTime()) ? null : parsed;
-}
-
-function formatAbsoluteDate(dateValue?: string) {
-  const parsed = parsePublishDate(dateValue);
-
-  if (!parsed) return "No date";
-
-  return new Intl.DateTimeFormat("en", {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  }).format(parsed);
-}
-
-function formatLatestDate(dateValue?: string) {
-  const parsed = parsePublishDate(dateValue);
-
-  if (!parsed) return "Unknown";
-
-  const diffMs = Date.now() - parsed.getTime();
-
-  if (diffMs < -MS_PER_DAY) return formatAbsoluteDate(dateValue);
-  if (diffMs < MS_PER_DAY) return "Today";
-  if (diffMs < 2 * MS_PER_DAY) return "Yesterday";
-
-  return `${Math.floor(diffMs / MS_PER_DAY)}d ago`;
-}
-
 function formatCount(value: number | null | undefined) {
   if (!value) return "";
   if (value >= 1_000_000) return `${(value / 1_000_000).toFixed(value >= 10_000_000 ? 0 : 1)}M`;
@@ -128,59 +81,6 @@ function formatCount(value: number | null | undefined) {
   return `${value}`;
 }
 
-function formatSource(source?: string) {
-  if (!source) return "Unverified";
-  if (source === "apple_podcasts") return "Apple Podcasts";
-  if (source === "itunes_lookup") return "Apple Lookup";
-  return titleCase(source);
-}
-
-function getMediaFreshness(node: NodeData) {
-  const youtubeDate = node.latestYoutubePublishedAt || node.latestYoutubePublishDate;
-  const podcastDate = node.latestPodcastPublishedAt || node.latestPodcastPublishDate;
-  const podcastHref = node.latestPodcastEvidenceUrl || node.podcastAppleUrl || node.rssUrl;
-
-  const signals: FreshnessSignal[] = [
-    {
-      label: "YouTube",
-      value: youtubeDate ? formatLatestDate(youtubeDate) : node.youtubeUrl && !node.isXOnly ? "Needs check" : "Missing",
-      source: youtubeDate ? "Verified YouTube" : node.youtubeUrl && !node.isXOnly ? "No fetched date" : "No channel",
-      href: node.latestYoutubeEvidenceUrl || node.youtubeUrl,
-      date: youtubeDate,
-      title: node.latestYoutubeTitle,
-      available: Boolean(node.youtubeUrl && !node.isXOnly),
-      verified: Boolean(youtubeDate),
-    },
-    {
-      label: "Podcast",
-      value: podcastDate ? formatLatestDate(podcastDate) : podcastHref ? "Needs check" : "Missing",
-      source: podcastDate ? `via ${formatSource(node.latestPodcastSource)}` : podcastHref ? "No fetched date" : "No feed/page",
-      href: podcastHref,
-      date: podcastDate,
-      title: node.latestPodcastTitle,
-      available: Boolean(podcastHref),
-      verified: Boolean(podcastDate),
-    },
-  ];
-
-  const datedSignals = signals
-    .filter((signal) => signal.date)
-    .sort((a, b) => {
-      const aTime = parsePublishDate(a.date)?.getTime() || 0;
-      const bTime = parsePublishDate(b.date)?.getTime() || 0;
-      return bTime - aTime;
-    });
-
-  const primary = datedSignals[0] || signals.find((signal) => signal.available) || {
-    label: "Media",
-    value: "Needs check",
-    source: "No verified media date",
-    available: false,
-    verified: false,
-  };
-
-  return { primary, signals, verified: datedSignals.length > 0 };
-}
 
 function SelectFilter({
   label,
@@ -259,9 +159,9 @@ function ViewPresetSelect({
         onChange={(event) => onChange(event.target.value)}
         className="h-11 w-full rounded-lg border border-border bg-input-bg px-3 pr-9 text-sm font-bold text-foreground outline-none transition-colors focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/10"
       >
-        <option value="ready">Workable</option>
-        <option value="hot">Hot ready</option>
-        <option value="strong">Strong reach</option>
+        <option value="pursue">Pursue now</option>
+        <option value="research">Research next</option>
+        <option value="ready">Legacy workable</option>
         <option value="all">All records</option>
         <option value="custom" disabled>
           Custom filters
@@ -295,6 +195,12 @@ function StatusPill({ status }: { status?: NodeData["actionabilityStatus"] }) {
   );
 }
 
+function DecisionPill({ decision }: { decision?: NodeData["methodologyDecision"] }) {
+  if (decision === "PURSUE_NOW") return <span className="inline-flex min-w-[108px] justify-center rounded-full border border-brand-orange/30 bg-brand-orange/10 px-2.5 py-1 text-xs font-extrabold text-brand-orange">Pursue now</span>;
+  if (decision === "NURTURE") return <span className="inline-flex min-w-[108px] justify-center rounded-full border border-brand-blue/25 bg-brand-blue/5 px-2.5 py-1 text-xs font-extrabold text-brand-blue">Research next</span>;
+  return <span className="inline-flex min-w-[108px] justify-center rounded-full border border-border bg-background px-2.5 py-1 text-xs font-bold text-muted">Disqualified</span>;
+}
+
 function priorityClasses(priority: NodeData["priority"]) {
   if (priority === "HOT") {
     return "border-brand-orange/35 bg-brand-orange/10 text-brand-orange";
@@ -311,79 +217,21 @@ function priorityClasses(priority: NodeData["priority"]) {
   return "border-border bg-panel text-foreground/75";
 }
 
-function FreshnessCell({ node }: { node: NodeData }) {
-  const freshness = getMediaFreshness(node);
-  const toneClass = freshness.verified
-    ? "border-brand-blue/30 bg-brand-blue/5"
-    : "border-amber-500/30 bg-amber-500/10";
-
-  return (
-    <div className="group/fresh inline-block min-w-[132px]" onClick={(event) => event.stopPropagation()}>
-      <div className={`rounded-lg border px-3 py-2 transition-all duration-150 group-hover/fresh:w-[260px] group-hover/fresh:shadow-sm ${toneClass}`}>
-        <div className="flex items-start justify-between gap-3">
-          <div className="min-w-0">
-            <div className="flex items-center gap-1.5 text-xs font-extrabold text-foreground">
-              <span
-                className={`h-1.5 w-1.5 shrink-0 rounded-full ${
-                  freshness.verified ? "bg-brand-blue" : "bg-amber-500"
-                }`}
-              />
-              {freshness.primary.value}
-            </div>
-            <div className="mt-0.5 truncate text-[10px] font-bold uppercase text-muted">
-              {freshness.primary.label}
-            </div>
-          </div>
-          <ChevronDown
-            size={14}
-            className="mt-0.5 shrink-0 text-muted transition-transform group-hover/fresh:rotate-180"
-          />
-        </div>
-        <div className="grid max-h-0 gap-2 overflow-hidden opacity-0 transition-all duration-150 group-hover/fresh:mt-3 group-hover/fresh:max-h-36 group-hover/fresh:opacity-100">
-          {freshness.signals.map((signal) => (
-            <div key={signal.label} className="grid grid-cols-[68px_1fr] gap-2 text-[11px]">
-              <span className="font-bold text-foreground">{signal.label}</span>
-              <span className="min-w-0 text-right text-muted">
-                {signal.href ? (
-                  <a
-                    href={signal.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-bold text-brand-blue hover:underline dark:text-blue-300"
-                  >
-                    {signal.value}
-                  </a>
-                ) : (
-                  signal.value
-                )}
-                <span className="block text-[9px] uppercase">{signal.source}</span>
-                {signal.title && (
-                  <span className="block truncate text-[10px] normal-case text-muted" title={signal.title}>
-                    {signal.title}
-                  </span>
-                )}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export default function Dashboard() {
   const [nodes, setNodes] = useState<NodeData[]>([]);
+  const [summary, setSummary] = useState<ProspectPayload["summary"]>();
+  const [loadedAll, setLoadedAll] = useState(false);
   const [loadState, setLoadState] = useState<"loading" | "ready" | "error">("loading");
   const [search, setSearch] = useState("");
   const deferredSearch = useDeferredValue(search);
   const [priority, setPriority] = useState("");
   const [category, setCategory] = useState("");
   const [formatFilter, setFormatFilter] = useState("");
-  const [hoveredChannel, setHoveredChannel] = useState<string | null>(null);
   const [selectedNode, setSelectedNode] = useState<NodeData | null>(null);
   const [isDark, setIsDark] = useState(false);
   const [confidence, setConfidence] = useState("");
-  const [actionability, setActionability] = useState("READY");
+  const [actionability, setActionability] = useState("");
+  const [methodologyDecision, setMethodologyDecision] = useState("PURSUE_NOW");
   const [reachability, setReachability] = useState("");
   const [outreach, setOutreach] = useState("");
   const [leadSource, setLeadSource] = useState("");
@@ -397,7 +245,7 @@ export default function Dashboard() {
 
     async function loadProspects() {
       try {
-        const response = await fetch("/api/prospects", {
+        const response = await fetch("/api/prospects?scope=pursue", {
           signal: controller.signal,
           headers: { Accept: "application/json" },
         });
@@ -405,6 +253,7 @@ export default function Dashboard() {
         const payload = (await response.json()) as ProspectPayload;
         if (active) {
           setNodes(payload.nodes);
+          setSummary(payload.summary);
           setLoadState("ready");
         }
       } catch (error) {
@@ -421,6 +270,28 @@ export default function Dashboard() {
       controller.abort();
     };
   }, []);
+
+  useEffect(() => {
+    const needsAll = filtersOpen || Boolean(search) || methodologyDecision !== "PURSUE_NOW";
+    if (!needsAll || loadedAll) return;
+    const controller = new AbortController();
+    setLoadState("loading");
+    fetch("/api/prospects?scope=all", { signal: controller.signal, headers: { Accept: "application/json" } })
+      .then((response) => {
+        if (!response.ok) throw new Error("Failed to load prospects");
+        return response.json() as Promise<ProspectPayload>;
+      })
+      .then((payload) => {
+        setNodes(payload.nodes);
+        setSummary(payload.summary);
+        setLoadedAll(true);
+        setLoadState("ready");
+      })
+      .catch((error) => {
+        if (!(error instanceof DOMException && error.name === "AbortError")) setLoadState("error");
+      });
+    return () => controller.abort();
+  }, [filtersOpen, loadedAll, methodologyDecision, search]);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -441,6 +312,10 @@ export default function Dashboard() {
       categories: CATEGORIES.map((value) => ({ label: value, value })),
       actionability: compact(nodes.map((node) => node.actionabilityStatus)).map((value) => ({
         label: actionabilityLabel(value),
+        value,
+      })),
+      methodology: compact(nodes.map((node) => node.methodologyDecision)).map((value) => ({
+        label: value === "PURSUE_NOW" ? "Pursue now" : value === "NURTURE" ? "Research next" : "Disqualified",
         value,
       })),
       reachability: compact(nodes.map((node) => node.reachabilityStatus)).map((value) => ({
@@ -476,6 +351,7 @@ export default function Dashboard() {
       const matchCategory = category ? node.category === category : true;
       const matchConfidence = confidence ? node.cadenceConfidence === confidence : true;
       const matchActionability = actionability ? node.actionabilityStatus === actionability : true;
+      const matchMethodology = methodologyDecision ? node.methodologyDecision === methodologyDecision : true;
       const matchReachability = reachability ? node.reachabilityStatus === reachability : true;
       const matchOutreach = outreach ? node.bestOutreachChannel === outreach : true;
       const matchLeadSource = leadSource ? node.leadSource === leadSource : true;
@@ -500,13 +376,14 @@ export default function Dashboard() {
         matchCategory &&
         matchConfidence &&
         matchActionability &&
+        matchMethodology &&
         matchReachability &&
         matchOutreach &&
         matchLeadSource &&
         matchFunnel &&
         matchFormat
       );
-    });
+    }).sort((a, b) => (a.fitRank || Number.MAX_SAFE_INTEGER) - (b.fitRank || Number.MAX_SAFE_INTEGER));
   }, [
     actionability,
     category,
@@ -515,6 +392,7 @@ export default function Dashboard() {
     formatFilter,
     funnel,
     leadSource,
+    methodologyDecision,
     nodes,
     outreach,
     priority,
@@ -523,9 +401,9 @@ export default function Dashboard() {
 
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
-  }, [actionability, category, confidence, deferredSearch, formatFilter, funnel, leadSource, outreach, priority, reachability]);
+  }, [actionability, category, confidence, deferredSearch, formatFilter, funnel, leadSource, methodologyDecision, outreach, priority, reachability]);
 
-  const databaseStats = useMemo(
+  const loadedStats = useMemo(
     () => ({
       total: nodes.length,
       ready: nodes.filter((node) => node.actionabilityStatus === "READY").length,
@@ -535,30 +413,34 @@ export default function Dashboard() {
       mediaVerified: nodes.filter(
         (node) =>
           node.actionabilityStatus === "READY" &&
-          Boolean(node.latestYoutubePublishedAt || node.latestYoutubePublishDate || node.latestPodcastPublishedAt || node.latestPodcastPublishDate)
+          Boolean(node.latestYoutubePublishedAt || node.latestYoutubePublishDate || node.latestPodcastPublishedAt || node.latestPodcastPublishDate || node.latestNewsletterPublishedAt)
       ).length,
+      pursue: nodes.filter((node) => node.methodologyDecision === "PURSUE_NOW").length,
+      nurture: nodes.filter((node) => node.methodologyDecision === "NURTURE").length,
     }),
     [nodes]
   );
+  const databaseStats = summary || loadedStats;
 
   const visibleNodes = filteredNodes.slice(0, visibleCount);
   const hasMoreRows = visibleNodes.length < filteredNodes.length;
   const viewPreset =
-    actionability === "READY" && !priority && !reachability
+    methodologyDecision === "PURSUE_NOW" && !actionability && !priority && !reachability
+      ? "pursue"
+      : methodologyDecision === "NURTURE" && !actionability && !priority && !reachability
+        ? "research"
+    : actionability === "READY" && !methodologyDecision && !priority && !reachability
       ? "ready"
-      : actionability === "READY" && priority === "HOT" && !reachability
-        ? "hot"
-        : actionability === "READY" && reachability === "STRONG" && !priority
-          ? "strong"
-          : !actionability && !priority && !reachability
+          : !actionability && !methodologyDecision && !priority && !reachability
             ? "all"
             : "custom";
 
-  const advancedFilterCount = [category, formatFilter, confidence, outreach, leadSource, funnel].filter(Boolean).length;
+  const advancedFilterCount = [category, formatFilter, confidence, outreach, leadSource, funnel, actionability].filter(Boolean).length;
   const hasAdvancedFilters = advancedFilterCount > 0;
   const hasActiveFilters = Boolean(
-    search ||
-      actionability !== "READY" ||
+      search ||
+      methodologyDecision !== "PURSUE_NOW" ||
+      actionability ||
       priority ||
       reachability ||
       hasAdvancedFilters
@@ -570,7 +452,8 @@ export default function Dashboard() {
     setCategory("");
     setFormatFilter("");
     setConfidence("");
-    setActionability("READY");
+    setActionability("");
+    setMethodologyDecision("PURSUE_NOW");
     setReachability("");
     setOutreach("");
     setLeadSource("");
@@ -578,19 +461,23 @@ export default function Dashboard() {
   };
 
   const applyViewPreset = (value: string) => {
-    if (value === "ready") {
+    if (value === "pursue") {
+      setMethodologyDecision("PURSUE_NOW");
+      setActionability("");
+      setPriority("");
+      setReachability("");
+    } else if (value === "research") {
+      setMethodologyDecision("NURTURE");
+      setActionability("");
+      setPriority("");
+      setReachability("");
+    } else if (value === "ready") {
+      setMethodologyDecision("");
       setActionability("READY");
       setPriority("");
       setReachability("");
-    } else if (value === "hot") {
-      setActionability("READY");
-      setPriority("HOT");
-      setReachability("");
-    } else if (value === "strong") {
-      setActionability("READY");
-      setPriority("");
-      setReachability("STRONG");
     } else if (value === "all") {
+      setMethodologyDecision("");
       setActionability("");
       setPriority("");
       setReachability("");
@@ -605,22 +492,30 @@ export default function Dashboard() {
             <span className="text-gradient">Energy Dial</span> Network
           </h1>
           <p className="text-sm text-muted">
-            {databaseStats.ready} workable prospects &middot; {databaseStats.hotReady} hot &middot; {databaseStats.archived} archived by quality gates
+            {databaseStats.pursue} evidence-cleared now &middot; {databaseStats.nurture} research next &middot; {databaseStats.total} ranked records
           </p>
         </div>
-        <button
-          onClick={() => setIsDark(!isDark)}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-panel text-muted transition-colors hover:border-brand-blue hover:text-brand-blue"
-          title="Toggle theme"
-          type="button"
-        >
-          {isDark ? <Sun size={18} /> : <Moon size={18} />}
-        </button>
+        <div className="flex items-center gap-2">
+          <Link
+            href="/pilot"
+            className="inline-flex h-10 items-center rounded-lg border border-brand-blue/25 bg-brand-blue/5 px-3 text-sm font-bold text-brand-blue transition-colors hover:border-brand-blue"
+          >
+            Review 15-prospect pilot
+          </Link>
+          <button
+            onClick={() => setIsDark(!isDark)}
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-border bg-panel text-muted transition-colors hover:border-brand-blue hover:text-brand-blue"
+            title="Toggle theme"
+            type="button"
+          >
+            {isDark ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
+        </div>
       </header>
 
       <section className="mb-5 grid gap-3 md:grid-cols-4">
-        <Metric label="Workable" value={databaseStats.ready} tone="orange" />
-        <Metric label="Hot Ready" value={databaseStats.hotReady} />
+        <Metric label="Pursue Now" value={databaseStats.pursue} tone="orange" />
+        <Metric label="Research Next" value={databaseStats.nurture} />
         <Metric label="Strong Reach" value={databaseStats.strongReady} tone="blue" />
         <Metric label="Media Fresh" value={loadState === "loading" ? "..." : databaseStats.mediaVerified} />
       </section>
@@ -661,6 +556,13 @@ export default function Dashboard() {
 
         {filtersOpen && (
           <div className="mt-4 grid gap-3 border-t border-border pt-4 md:grid-cols-2 xl:grid-cols-5">
+            <SelectFilter
+              label="Decision"
+              value={methodologyDecision}
+              allLabel="All decisions"
+              options={filterOptions.methodology}
+              onChange={setMethodologyDecision}
+            />
             <SelectFilter
               label="Status"
               value={actionability}
@@ -730,20 +632,70 @@ export default function Dashboard() {
         </div>
       </section>
 
-      <div className="rounded-xl border border-border bg-panel shadow-sm">
+      <div className="grid gap-3 md:hidden">
+        {loadState === "loading" && Array.from({ length: 4 }).map((_, index) => (
+          <div key={index} className="h-44 animate-pulse rounded-lg border border-border bg-panel" />
+        ))}
+        {loadState === "ready" && visibleNodes.map((node) => (
+          <article key={node.id} onClick={() => setSelectedNode(node)} className="rounded-lg border border-border bg-panel p-4 shadow-sm">
+            <div className="flex items-start justify-between gap-3">
+              <div className="min-w-0">
+                <div className="flex items-center gap-2">
+                  <h2 className="truncate text-base font-extrabold">{node.host}</h2>
+                  {node.fitRank && <span className="rounded bg-brand-blue/10 px-1.5 py-0.5 text-[9px] font-extrabold text-brand-blue">#{node.fitRank}</span>}
+                </div>
+                <p className="mt-1 line-clamp-2 text-xs text-muted">{node.channel}</p>
+              </div>
+              <DecisionPill decision={node.methodologyDecision} />
+            </div>
+            <div className="mt-3 grid grid-cols-2 gap-2 border-y border-border py-3">
+              <MediaFreshness node={node} />
+              <div className="rounded-md bg-background px-3 py-2">
+                <div className="text-[9px] font-bold uppercase text-muted">Outreach</div>
+                <div className="mt-1 line-clamp-2 text-xs font-extrabold">{node.bestOutreachChannel ? titleCase(node.bestOutreachChannel) : "Needs research"}</div>
+                {node.methodologyConfidence !== undefined && <div className="mt-1 text-[9px] font-bold text-brand-blue">{node.methodologyConfidence}% confidence</div>}
+              </div>
+            </div>
+            <div className="mt-3 flex items-center justify-between gap-3">
+              <span className="truncate text-[10px] font-bold uppercase text-muted">{node.category} / {node.region}</span>
+              <button type="button" onClick={(event) => { event.stopPropagation(); setSelectedNode(node); }} className="inline-flex h-9 items-center gap-1 rounded-md bg-brand-blue px-3 text-xs font-extrabold text-white hover:bg-[#0c326a]">
+                Details<ChevronRight size={14} />
+              </button>
+            </div>
+          </article>
+        ))}
+        {hasMoreRows && loadState === "ready" && (
+          <button type="button" onClick={() => setVisibleCount((count) => count + PAGE_SIZE)} className="rounded-lg border border-border bg-panel px-4 py-3 text-sm font-bold text-brand-blue">
+            Show next {Math.min(PAGE_SIZE, filteredNodes.length - visibleNodes.length)}
+          </button>
+        )}
+      </div>
+
+      <div className="hidden rounded-xl border border-border bg-panel shadow-sm md:block">
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[1140px] text-left text-sm">
+          <table className="w-full min-w-[1180px] table-fixed text-left text-sm">
+            <colgroup>
+              <col className="w-[205px]" />
+              <col className="w-[165px]" />
+              <col className="w-[70px]" />
+              <col className="w-[160px]" />
+              <col className="w-[130px]" />
+              <col className="w-[165px]" />
+              <col className="w-[100px]" />
+              <col className="w-[85px]" />
+              <col className="w-[100px]" />
+            </colgroup>
             <thead className="border-b border-border bg-background text-[10px] font-bold uppercase tracking-wider text-muted">
               <tr>
                 <th className="px-5 py-4">Host & Channel</th>
                 <th className="px-5 py-4">Category</th>
                 <th className="px-5 py-4">Region</th>
                 <th className="px-5 py-4">Media Freshness</th>
-                <th className="px-5 py-4">Status</th>
+                <th className="px-5 py-4">Decision</th>
                 <th className="px-5 py-4">Outreach</th>
                 <th className="px-5 py-4">Priority</th>
                 <th className="px-5 py-4">Audience</th>
-                <th className="px-5 py-4 text-right">Links</th>
+                <th className="px-5 py-4 text-right">Actions</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-border">
@@ -780,8 +732,6 @@ export default function Dashboard() {
                       key={node.id}
                       className="table-row-hover group relative cursor-pointer hover:bg-black/[0.025] dark:hover:bg-white/[0.035]"
                       onClick={() => setSelectedNode(node)}
-                      onMouseEnter={() => setHoveredChannel(node.channel)}
-                      onMouseLeave={() => setHoveredChannel(null)}
                     >
                       <td className="relative px-5 py-4">
                         <div className="flex items-center gap-1.5 font-bold text-foreground transition-colors group-hover:text-brand-orange">
@@ -801,34 +751,34 @@ export default function Dashboard() {
                             <span className="h-1.5 w-1.5 rounded-full bg-red-500" title="Inactive cadence" />
                           )}
                         </div>
-                        <div className="mt-1 text-xs text-muted">
-                          {node.channel || (node.isXOnly ? (node.isPodcastOnly ? "Podcast only" : "X only") : "")}
+                        <div className="mt-1 flex items-center gap-2 text-xs text-muted">
+                          <span>{node.channel || (node.isXOnly ? (node.isPodcastOnly ? "Podcast only" : "X only") : "")}</span>
+                          {node.fitRank && <span className="rounded bg-brand-blue/8 px-1.5 py-0.5 text-[9px] font-extrabold text-brand-blue">#{node.fitRank}</span>}
                         </div>
-                        {hoveredChannel === node.channel && node.channel && !node.isXOnly && (
-                          <div onClick={(event) => event.stopPropagation()}>
-                            <VideoPreview
-                              channelId={node.channelId}
-                              youtubeUrl={node.youtubeUrl}
-                              channelName={node.channel}
-                            />
-                          </div>
-                        )}
                       </td>
-                      <td className="px-5 py-4">
+                      <td className="px-5 py-4 align-top">
                         <div className="text-xs font-semibold text-foreground/85">{node.category}</div>
                         <div className="text-xs text-muted">{node.subcategory}</div>
                       </td>
                       <td className="px-5 py-4 text-xs font-semibold text-foreground/80">{node.region}</td>
                       <td className="px-5 py-4">
-                        <FreshnessCell node={node} />
+                        <MediaFreshness node={node} />
                       </td>
-                      <td className="px-5 py-4">
-                        <StatusPill status={node.actionabilityStatus} />
+                      <td className="px-5 py-4 align-top">
+                        <div className="flex min-h-[68px] w-[110px] flex-col items-start">
+                          <DecisionPill decision={node.methodologyDecision} />
+                        {!node.methodologyDecision && <div className="mt-1.5"><StatusPill status={node.actionabilityStatus} /></div>}
+                        {node.methodologyConfidence !== undefined && (
+                          <div className="mt-1 w-full text-center text-[10px] font-bold uppercase text-muted">
+                            {node.methodologyConfidence}% confidence
+                          </div>
+                        )}
                         {node.reachabilityStatus && (
-                          <div className="mt-1 text-[10px] font-bold uppercase text-brand-blue dark:text-blue-300">
+                          <div className="mt-1 w-full text-center text-[10px] font-bold uppercase text-brand-blue dark:text-blue-300">
                             {node.reachabilityStatus} reach
                           </div>
                         )}
+                        </div>
                       </td>
                       <td className="px-5 py-4">
                         <div className="text-xs font-bold uppercase text-foreground/85">
@@ -843,9 +793,9 @@ export default function Dashboard() {
                           <span className={`rounded-full border px-2.5 py-1 text-xs font-bold ${priorityClasses(node.priority)}`}>
                             {node.priority}
                           </span>
-                          {node.calculatedScore !== undefined && (
+                          {(node.fitScore !== undefined || node.calculatedScore !== undefined) && (
                             <span className="rounded-md border border-border bg-background px-2 py-1 text-xs font-bold text-foreground/80">
-                              {node.calculatedScore}
+                              {node.fitScore ?? node.calculatedScore}
                             </span>
                           )}
                         </div>
@@ -854,34 +804,9 @@ export default function Dashboard() {
                         {followers.length ? followers.join(" / ") : "Unknown"}
                       </td>
                       <td className="px-5 py-4 text-right">
-                        <div className="flex items-center justify-end gap-2 opacity-80 transition-opacity group-hover:opacity-100">
-                          {node.youtubeUrl && !node.isXOnly && (
-                            <a
-                              href={node.youtubeUrl}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="rounded-lg p-2 text-muted transition-colors hover:bg-brand-orange/10 hover:text-brand-orange"
-                              title="Open channel"
-                              aria-label={`Open ${node.channel || node.host} on YouTube`}
-                              onClick={(event) => event.stopPropagation()}
-                            >
-                              <Youtube size={16} />
-                            </a>
-                          )}
-                          {node.xProfile && (
-                            <a
-                              href={node.xProfile}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="rounded-lg p-2 text-muted transition-colors hover:bg-brand-blue/10 hover:text-brand-blue dark:hover:text-blue-300"
-                              title="Open X profile"
-                              aria-label={`Open ${node.host} X profile`}
-                              onClick={(event) => event.stopPropagation()}
-                            >
-                              <ExternalLink size={16} />
-                            </a>
-                          )}
-                        </div>
+                        <button type="button" onClick={(event) => { event.stopPropagation(); setSelectedNode(node); }} className="inline-flex h-8 items-center gap-1 rounded-md border border-brand-blue/30 px-2.5 text-[11px] font-extrabold text-brand-blue hover:bg-brand-blue/5">
+                          Details<ChevronRight size={13} />
+                        </button>
                       </td>
                     </tr>
                   );

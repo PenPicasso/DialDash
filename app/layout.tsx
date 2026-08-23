@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { Agentation } from "agentation";
 
 export const metadata: Metadata = {
     title: "Energy Dial Dashboard",
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className="antialiased">{children}</body>
+            <body className="antialiased">
+                {children}
+                {process.env.NODE_ENV === "development" && <Agentation />}
+            </body>
         </html>
     );
 }
