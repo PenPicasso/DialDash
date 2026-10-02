@@ -1,8 +1,3 @@
-const apiKey = process.env.JULES_API_KEY?.trim();
-if (!apiKey) {
-  throw new Error("JULES_API_KEY is not configured as a GitHub Actions repository secret");
-}
-
 const repository = process.env.GITHUB_REPOSITORY?.trim();
 if (repository !== "PenPicasso/DialDash") {
   throw new Error("This workflow is restricted to PenPicasso/DialDash");
@@ -11,6 +6,68 @@ if (repository !== "PenPicasso/DialDash") {
 const task = process.env.JULES_TASK?.trim();
 const runUrl = process.env.GITHUB_RUN_URL?.trim();
 const batchSize = Math.min(25, Math.max(1, Number(process.env.ENRICHMENT_BATCH_SIZE || 10)));
+let mediaRefreshFailure;
+
+if (task === "monitor_media_refresh") {
+  const githubToken = process.env.GITHUB_TOKEN?.trim();
+  if (!githubToken) {
+    throw new Error("GITHUB_TOKEN is required to inspect the media refresh run");
+  }
+
+  const githubHeaders = {
+    accept: "application/vnd.github+json",
+    authorization: `Bearer ${githubToken}`,
+    "x-github-api-version": "2022-11-28",
+  };
+  const runsResponse = await fetch(
+    "https://api.github.com/repos/PenPicasso/DialDash/actions/workflows/media-freshness.yml/runs?branch=main&event=schedule&per_page=10",
+    { headers: githubHeaders },
+  );
+  if (!runsResponse.ok) {
+    throw new Error(`GitHub could not list media refresh runs (HTTP ${runsResponse.status})`);
+  }
+
+  const { workflow_runs: runs = [] } = await runsResponse.json();
+  const latestRun = runs.find((run) => run.event === "schedule");
+  if (!latestRun || latestRun.status !== "completed") {
+    console.log("No completed scheduled media refresh is available to audit yet; skipping Jules.");
+    process.exit(0);
+  }
+  if (latestRun.conclusion === "success") {
+    console.log(`Latest scheduled media refresh passed: ${latestRun.html_url}`);
+    process.exit(0);
+  }
+
+  const jobsResponse = await fetch(
+    `https://api.github.com/repos/PenPicasso/DialDash/actions/runs/${latestRun.id}/jobs?per_page=100`,
+    { headers: githubHeaders },
+  );
+  if (!jobsResponse.ok) {
+    throw new Error(`GitHub could not inspect failed media refresh jobs (HTTP ${jobsResponse.status})`);
+  }
+
+  const { jobs = [] } = await jobsResponse.json();
+  const failedJobs = jobs
+    .filter((job) => job.conclusion && !["success", "skipped"].includes(job.conclusion))
+    .map((job) => {
+      const failedSteps = (job.steps || [])
+        .filter((step) => step.conclusion && !["success", "skipped"].includes(step.conclusion))
+        .map((step) => `${step.name} (${step.conclusion})`);
+      return `${job.name} (${job.conclusion})${failedSteps.length ? `: ${failedSteps.join(", ")}` : ""}`;
+    });
+  mediaRefreshFailure = {
+    conclusion: latestRun.conclusion || "unknown",
+    jobs: failedJobs.length ? failedJobs.join("\n") : "GitHub did not report a failed job or step.",
+    url: latestRun.html_url,
+    sha: latestRun.head_sha,
+    createdAt: latestRun.created_at,
+  };
+}
+
+const apiKey = process.env.JULES_API_KEY?.trim();
+if (!apiKey) {
+  throw new Error("JULES_API_KEY is not configured as a GitHub Actions repository secret");
+}
 
 const sharedRules = [
   "Read AGENTS.md before changing anything.",
@@ -20,6 +77,17 @@ const sharedRules = [
 ];
 
 const prompts = {
+  monitor_media_refresh: [
+    "Investigate the failed scheduled DialDash media freshness refresh. Inspect the GitHub Actions run and its logs using this run link.",
+    `Workflow run: ${mediaRefreshFailure?.url || "unavailable"}`,
+    `Conclusion: ${mediaRefreshFailure?.conclusion || "unknown"}`,
+    `Commit: ${mediaRefreshFailure?.sha || "unknown"}`,
+    `Created at: ${mediaRefreshFailure?.createdAt || "unknown"}`,
+    `Failed jobs and steps:\n${mediaRefreshFailure?.jobs || "unavailable"}`,
+    "Diagnose the root cause. If a durable code fix is appropriate, make the smallest change and open a pull request for human review. Never deploy or merge.",
+    "If the problem is an unavailable secret, provider configuration, permission, or quota, do not guess or change credentials; report the exact blocker and the safe user action needed.",
+    "Do not rerank prospects, enrich records, change data/nodes.json, or publish/replace the live media sidecar.",
+  ],
   repair_deployment: [
     "Diagnose and repair the failed DialDash deployment reported by GitHub.",
     `Workflow run: ${runUrl || "unavailable"}`,
@@ -50,7 +118,12 @@ const response = await fetch("https://jules.googleapis.com/v1alpha/sessions", {
     "x-goog-api-key": apiKey,
   },
   body: JSON.stringify({
-    title: task === "repair_deployment" ? "Repair failed DialDash deployment" : "Strict DialDash prospect enrichment",
+    title:
+      task === "repair_deployment"
+        ? "Repair failed DialDash deployment"
+        : task === "monitor_media_refresh"
+          ? "Investigate failed DialDash media refresh"
+          : "Strict DialDash prospect enrichment",
     prompt: [...sharedRules, ...prompts[task]].join("\n"),
     sourceContext: {
       source: "sources/github/PenPicasso/DialDash",

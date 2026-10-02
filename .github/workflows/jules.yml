@@ -2,6 +2,8 @@ name: Jules repair and enrichment
 
 on:
   deployment_status:
+  schedule:
+    - cron: "0 7 * * *"
   workflow_dispatch:
     inputs:
       task:
@@ -9,6 +11,7 @@ on:
         required: true
         type: choice
         options:
+          - monitor_media_refresh
           - enrich_prospects
           - repair_deployment
       batch_size:
@@ -17,6 +20,7 @@ on:
         default: "10"
 
 permissions:
+  actions: read
   contents: read
 
 concurrency:
@@ -26,7 +30,7 @@ concurrency:
 jobs:
   run-jules:
     if: >-
-      ${{ github.event_name == 'workflow_dispatch' ||
+      ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' ||
       github.event.deployment_status.state == 'failure' ||
       github.event.deployment_status.state == 'error' }}
     runs-on: ubuntu-latest
@@ -42,9 +46,10 @@ jobs:
         run: node scripts/jules-task.mjs
         env:
           JULES_API_KEY: ${{ secrets.JULES_API_KEY }}
-          JULES_TASK: ${{ github.event_name == 'deployment_status' && 'repair_deployment' || inputs.task }}
+          JULES_TASK: ${{ github.event_name == 'schedule' && 'monitor_media_refresh' || (github.event_name == 'deployment_status' && 'repair_deployment' || inputs.task) }}
           ENRICHMENT_BATCH_SIZE: ${{ inputs.batch_size || '10' }}
           GITHUB_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEPLOYMENT_ENVIRONMENT: ${{ github.event.deployment.environment }}
           DEPLOYMENT_URL: ${{ github.event.deployment_status.target_url }}
           DEPLOYMENT_SHA: ${{ github.event.deployment.sha }}
