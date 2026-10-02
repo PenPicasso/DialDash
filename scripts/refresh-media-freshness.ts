@@ -1,6 +1,7 @@
-import { readFileSync, writeFileSync } from "fs";
-import { join } from "path";
+import { existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from "fs";
+import { dirname, join, resolve } from "path";
 import { NodeData } from "../lib/types";
+import { LIVE_MEDIA_SCHEMA_VERSION, pickLiveMediaRecord } from "../lib/liveMediaFreshness";
 
 type Database = { nodes: NodeData[] };
 type MediaHit = {
@@ -8,30 +9,93 @@ type MediaHit = {
   date: string;
   title?: string;
   evidenceUrl?: string;
-  source: "youtube" | "rss" | "apple_podcasts" | "itunes_lookup";
+  source: "youtube" | "rss" | "apple_podcasts" | "itunes_lookup" | "newsletter_rss";
   channelId?: string;
   feedUrl?: string;
   appleUrl?: string;
 };
 
 type LatestHit = MediaHit & {
-  platform: "youtube" | "podcast";
+  platform: "youtube" | "podcast" | "newsletter";
 };
 
 const DATA_PATH = join(__dirname, "..", "data", "nodes.json");
+const LEGACY_TEMP_PATH = `${DATA_PATH}.tmp`;
+const CHECKPOINT_PATH = join(__dirname, "..", "storage", "media-refresh-checkpoint.json");
 const REQUEST_TIMEOUT_MS = 15000;
 const NODE_TIMEOUT_MS = 60000;
 const CONCURRENCY = 3;
+const REFRESH_VERSION = "media-v3-owned-channels";
+const rejectedYoutubeOwnership = new Set<string>();
 
 const args = new Set(process.argv.slice(2));
-const writeChanges = !args.has("--no-write");
+const outputArg = process.argv.find((arg) => arg.startsWith("--output="));
+const outputPath = outputArg ? resolve(outputArg.split("=").slice(1).join("=")) : undefined;
+const writeChanges = !args.has("--no-write") && !outputPath;
 const includeAll = args.has("--all");
+const staleOnly = args.has("--stale-only");
 const limitArg = process.argv.find((arg) => arg.startsWith("--limit="));
 const limit = limitArg ? Number(limitArg.split("=")[1]) : undefined;
+const idsArg = process.argv.find((arg) => arg.startsWith("--ids="));
+const requestedIds = new Set((idsArg?.split("=")[1] || "").split(",").map((id) => id.trim()).filter(Boolean));
+
+function sleep(milliseconds: number) {
+  Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, milliseconds);
+}
+
+function parseDatabase(path: string): Database | undefined {
+  if (!existsSync(path)) return undefined;
+  try {
+    const database = JSON.parse(readFileSync(path, "utf8")) as Database;
+    return Array.isArray(database.nodes) ? database : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+function auditCount(database?: Database) {
+  return database?.nodes.filter((node) => node.mediaRefreshVersion === REFRESH_VERSION).length ?? 0;
+}
+
+function loadDatabase() {
+  const candidates = [DATA_PATH, LEGACY_TEMP_PATH, CHECKPOINT_PATH]
+    .map((path) => ({ path, database: parseDatabase(path) }))
+    .filter((candidate): candidate is { path: string; database: Database } => Boolean(candidate.database))
+    .sort((a, b) => auditCount(b.database) - auditCount(a.database));
+  const selected = candidates[0];
+  if (!selected) throw new Error("No valid prospect database or media refresh checkpoint found.");
+  if (selected.path !== DATA_PATH) console.log(`resuming from ${selected.path} (${auditCount(selected.database)} audited records)`);
+  return selected.database;
+}
+
+function writeCheckpoint(database: Database) {
+  mkdirSync(join(__dirname, "..", "storage"), { recursive: true });
+  writeFileSync(CHECKPOINT_PATH, `${JSON.stringify(database, null, 2)}\n`);
+}
+
+function writeDatabase(database: Database) {
+  const temporaryPath = `${DATA_PATH}.refreshing`;
+  const contents = `${JSON.stringify(database, null, 2)}\n`;
+  writeFileSync(temporaryPath, contents);
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= 12; attempt++) {
+    try {
+      renameSync(temporaryPath, DATA_PATH);
+      rmSync(LEGACY_TEMP_PATH, { force: true });
+      rmSync(CHECKPOINT_PATH, { force: true });
+      return;
+    } catch (error) {
+      lastError = error;
+      if (!["EPERM", "EACCES", "EBUSY", "UNKNOWN"].includes((error as NodeJS.ErrnoException).code || "")) throw error;
+      sleep(attempt * 250);
+    }
+  }
+  throw lastError;
+}
 
 function decodeHtml(value?: string) {
   if (!value) return undefined;
-  return value
+  const decoded = value
     .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
     .replace(/&amp;/g, "&")
     .replace(/&lt;/g, "<")
@@ -41,6 +105,11 @@ function decodeHtml(value?: string) {
     .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
     .replace(/&#x([0-9a-f]+);/gi, (_, code) => String.fromCharCode(parseInt(code, 16)))
     .trim();
+  if (/[ÃÂâ]/.test(decoded)) {
+    const repaired = Buffer.from(decoded, "latin1").toString("utf8");
+    if (!repaired.includes("�")) return repaired;
+  }
+  return decoded;
 }
 
 function extractFirst(body: string, pattern: RegExp) {
@@ -50,7 +119,8 @@ function extractFirst(body: string, pattern: RegExp) {
 function toIso(value?: string) {
   if (!value) return undefined;
   const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? undefined : date.toISOString();
+  if (Number.isNaN(date.getTime()) || date.getTime() > Date.now() + 60 * 60 * 1000) return undefined;
+  return date.toISOString();
 }
 
 function toDate(value: string) {
@@ -61,6 +131,28 @@ function newer<T extends { publishedAt: string }>(a?: T, b?: T) {
   if (!a) return b;
   if (!b) return a;
   return new Date(b.publishedAt).getTime() > new Date(a.publishedAt).getTime() ? b : a;
+}
+
+function freshnessStatus(publishedAt?: string): "CURRENT" | "STALE" | "UNVERIFIED" {
+  if (!publishedAt) return "UNVERIFIED";
+  const published = new Date(publishedAt).getTime();
+  if (!Number.isFinite(published)) return "UNVERIFIED";
+  return Date.now() - published <= 90 * 86_400_000 ? "CURRENT" : "STALE";
+}
+
+function isNewsletterNode(node: NodeData) {
+  const text = `${node.channel} ${node.subcategory} ${node.rssUrl || ""}`.toLowerCase();
+  return !node.isPodcastOnly && !node.podcastAppleUrl && /newsletter|substack|beehiiv|buttondown/.test(text);
+}
+
+function preservedHit(
+  publishedAt: string | undefined,
+  title: string | undefined,
+  evidenceUrl: string | undefined,
+  source: MediaHit["source"]
+): MediaHit | undefined {
+  const iso = toIso(publishedAt);
+  return iso ? { publishedAt: iso, date: toDate(iso), title, evidenceUrl, source } : undefined;
 }
 
 function applePodcastId(url?: string) {
@@ -90,7 +182,10 @@ function isResolvableYoutubeChannelUrl(url: string) {
   }
 }
 
-async function fetchText(url: string) {
+const textRequestCache = new Map<string, Promise<string | undefined>>();
+const jsonRequestCache = new Map<string, Promise<unknown>>();
+
+async function fetchTextUncached(url: string) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
 
@@ -113,7 +208,12 @@ async function fetchText(url: string) {
   }
 }
 
-async function fetchJson<T>(url: string) {
+function fetchText(url: string) {
+  if (!textRequestCache.has(url)) textRequestCache.set(url, fetchTextUncached(url));
+  return textRequestCache.get(url)!;
+}
+
+async function fetchJsonUncached<T>(url: string) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
 
@@ -134,6 +234,11 @@ async function fetchJson<T>(url: string) {
   } finally {
     clearTimeout(timeout);
   }
+}
+
+function fetchJson<T>(url: string): Promise<T | undefined> {
+  if (!jsonRequestCache.has(url)) jsonRequestCache.set(url, fetchJsonUncached<T>(url));
+  return jsonRequestCache.get(url)! as Promise<T | undefined>;
 }
 
 async function withTimeout<T>(label: string, promise: Promise<T>, fallback: T): Promise<T> {
@@ -270,7 +375,7 @@ function youtubePathTokens(url?: string) {
   }
 }
 
-function youtubeFeedScore(node: NodeData, youtubeUrl: string | undefined, xml: string) {
+function youtubeIdentityScore(node: NodeData, xml: string) {
   const meta = parseYoutubeFeedMeta(xml);
   const candidateText = normalizeForMatch(`${meta.title || ""} ${meta.author || ""}`);
   const channel = normalizeForMatch(node.channel);
@@ -278,9 +383,6 @@ function youtubeFeedScore(node: NodeData, youtubeUrl: string | undefined, xml: s
   const organization = normalizeForMatch(node.organizationName);
   const genericChannels = new Set(["independent", "unknown", "podcast", "youtube"]);
   let score = 0;
-
-  const pathHits = youtubePathTokens(youtubeUrl).filter((token) => candidateText.includes(token)).length;
-  if (pathHits > 0) score += 5 + Math.min(3, pathHits - 1);
 
   if (channel && !genericChannels.has(channel)) {
     if (candidateText === channel) score += 7;
@@ -301,7 +403,12 @@ function youtubeFeedScore(node: NodeData, youtubeUrl: string | undefined, xml: s
 }
 
 function isCredibleYoutubeFeed(node: NodeData, youtubeUrl: string | undefined, xml: string) {
-  return youtubeFeedScore(node, youtubeUrl, xml) >= 3;
+  const identityScore = youtubeIdentityScore(node, xml);
+  if (identityScore < 3) return false;
+
+  const candidateText = normalizeForMatch(`${parseYoutubeFeedMeta(xml).title || ""} ${parseYoutubeFeedMeta(xml).author || ""}`);
+  const pathHits = youtubePathTokens(youtubeUrl).filter((token) => candidateText.includes(token)).length;
+  return identityScore + Math.min(3, pathHits) >= 3;
 }
 
 async function refreshYoutube(node: NodeData): Promise<MediaHit | undefined> {
@@ -314,7 +421,9 @@ async function refreshYoutube(node: NodeData): Promise<MediaHit | undefined> {
   if (directChannelId) {
     const feedUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${directChannelId}`;
     const xml = await fetchText(feedUrl);
-    if (xml && isCredibleYoutubeFeed(node, youtubeUrl, xml)) {
+    if (xml && !isCredibleYoutubeFeed(node, youtubeUrl, xml)) {
+      rejectedYoutubeOwnership.add(node.id);
+    } else if (xml) {
       const hit = parseYoutubeEntry(xml, feedUrl);
       if (hit) {
         hit.channelId = directChannelId;
@@ -352,7 +461,10 @@ async function refreshYoutube(node: NodeData): Promise<MediaHit | undefined> {
     seenFeeds.add(candidate.url);
     const xml = await fetchText(candidate.url);
     if (!xml) continue;
-    if (!isCredibleYoutubeFeed(node, youtubeUrl, xml)) continue;
+    if (!isCredibleYoutubeFeed(node, youtubeUrl, xml)) {
+      rejectedYoutubeOwnership.add(node.id);
+      continue;
+    }
     const hit = parseYoutubeEntry(xml, candidate.url);
     if (hit) {
       if (candidate.canWriteChannelId) {
@@ -479,7 +591,7 @@ async function lookupApplePodcast(node: NodeData) {
 async function refreshPodcast(node: NodeData): Promise<MediaHit | undefined> {
   let best: MediaHit | undefined;
 
-  if (node.rssUrl && !node.rssUrl.includes("youtube.com/feeds/videos.xml")) {
+  if (node.rssUrl && !node.rssUrl.includes("youtube.com/feeds/videos.xml") && !isNewsletterNode(node)) {
     const xml = await fetchText(node.rssUrl);
     if (xml) {
       best = newer(best, parsePodcastFeed(xml, node.rssUrl, "rss"));
@@ -520,6 +632,15 @@ async function refreshPodcast(node: NodeData): Promise<MediaHit | undefined> {
   return best;
 }
 
+async function refreshNewsletter(node: NodeData): Promise<MediaHit | undefined> {
+  if (!node.rssUrl || node.rssUrl.includes("youtube.com/feeds/videos.xml") || !isNewsletterNode(node)) {
+    return undefined;
+  }
+
+  const xml = await fetchText(node.rssUrl);
+  return xml ? parsePodcastFeed(xml, node.rssUrl, "newsletter_rss") : undefined;
+}
+
 function clearMediaFields(node: NodeData) {
   delete node.latestYoutubePublishedAt;
   delete node.latestYoutubePublishDate;
@@ -540,38 +661,102 @@ function clearMediaFields(node: NodeData) {
 }
 
 async function refreshNode(node: NodeData, checkedAt: string) {
-  clearMediaFields(node);
+  const hadYoutube = Boolean(node.youtubeUrl && !node.isXOnly);
+  const hadPodcast = Boolean(node.podcastAppleUrl || node.isPodcastOnly || (node.rssUrl && !isNewsletterNode(node)));
+  const hadNewsletter = Boolean(node.rssUrl && isNewsletterNode(node));
+  let previousYoutube = preservedHit(node.latestYoutubePublishedAt, node.latestYoutubeTitle, node.latestYoutubeEvidenceUrl, "youtube");
+  const previousPodcast = preservedHit(
+    node.latestPodcastPublishedAt,
+    node.latestPodcastTitle,
+    node.latestPodcastEvidenceUrl,
+    node.latestPodcastSource || "rss"
+  );
+  const previousNewsletter = preservedHit(
+    node.latestNewsletterPublishedAt,
+    node.latestNewsletterTitle,
+    node.latestNewsletterEvidenceUrl,
+    "newsletter_rss"
+  );
 
-  const [youtube, podcast] = await Promise.all([
+  const [youtubeResult, podcastResult, newsletterResult] = await Promise.all([
     refreshYoutube(node),
     refreshPodcast(node),
+    refreshNewsletter(node),
   ]);
 
-  if (youtube) {
-    node.latestYoutubePublishedAt = youtube.publishedAt;
-    node.latestYoutubePublishDate = youtube.date;
-    node.latestYoutubeTitle = youtube.title;
-    node.latestYoutubeEvidenceUrl = youtube.evidenceUrl;
-    node.latestYoutubeCheckedAt = checkedAt;
-    if (youtube.channelId) node.channelId = youtube.channelId;
-  } else if (node.youtubeUrl && !node.isXOnly) {
-    node.latestYoutubeCheckedAt = checkedAt;
+  if (outputPath && rejectedYoutubeOwnership.has(node.id)) {
+    previousYoutube = undefined;
+    delete node.latestYoutubePublishedAt;
+    delete node.latestYoutubePublishDate;
+    delete node.latestYoutubeTitle;
+    delete node.latestYoutubeEvidenceUrl;
   }
 
-  if (podcast) {
-    node.latestPodcastPublishedAt = podcast.publishedAt;
-    node.latestPodcastPublishDate = podcast.date;
-    node.latestPodcastTitle = podcast.title;
-    node.latestPodcastEvidenceUrl = podcast.evidenceUrl;
-    node.latestPodcastSource = podcast.source === "rss" ? "rss" : podcast.source === "apple_podcasts" ? "apple_podcasts" : "itunes_lookup";
-    node.latestPodcastCheckedAt = checkedAt;
-  } else if (node.podcastAppleUrl || node.rssUrl || node.isPodcastOnly) {
-    node.latestPodcastCheckedAt = checkedAt;
+  const youtube = youtubeResult || previousYoutube;
+  const podcast = podcastResult || previousPodcast;
+  const newsletter = newsletterResult || previousNewsletter;
+
+  if (youtubeResult) {
+    node.latestYoutubePublishedAt = youtubeResult.publishedAt;
+    node.latestYoutubePublishDate = youtubeResult.date;
+    node.latestYoutubeTitle = youtubeResult.title;
+    node.latestYoutubeEvidenceUrl = youtubeResult.evidenceUrl;
+    node.latestYoutubeCheckedAt = checkedAt;
+    node.youtubeFreshnessStatus = freshnessStatus(youtubeResult.publishedAt);
+    delete node.youtubeFreshnessError;
+    if (youtubeResult.channelId) node.channelId = youtubeResult.channelId;
+  } else if (hadYoutube) {
+    node.latestYoutubeCheckedAt = checkedAt;
+    node.youtubeFreshnessStatus = previousYoutube ? "ERROR" : "UNVERIFIED";
+    node.youtubeFreshnessError = rejectedYoutubeOwnership.has(node.id)
+      ? "The configured YouTube source no longer matches the prospect's show, host, or organization; its prior attribution was removed from the live overlay."
+      : "Owned YouTube feed did not return a verified latest upload; the last verified value was preserved.";
+  } else {
+    node.youtubeFreshnessStatus = "MISSING";
+    delete node.youtubeFreshnessError;
   }
 
-  const latest = newer<LatestHit>(
+  if (podcastResult) {
+    node.latestPodcastPublishedAt = podcastResult.publishedAt;
+    node.latestPodcastPublishDate = podcastResult.date;
+    node.latestPodcastTitle = podcastResult.title;
+    node.latestPodcastEvidenceUrl = podcastResult.evidenceUrl;
+    node.latestPodcastSource = podcastResult.source === "rss" ? "rss" : podcastResult.source === "apple_podcasts" ? "apple_podcasts" : "itunes_lookup";
+    node.latestPodcastCheckedAt = checkedAt;
+    node.podcastFreshnessStatus = freshnessStatus(podcastResult.publishedAt);
+    delete node.podcastFreshnessError;
+  } else if (hadPodcast) {
+    node.latestPodcastCheckedAt = checkedAt;
+    node.podcastFreshnessStatus = previousPodcast ? "ERROR" : "UNVERIFIED";
+    node.podcastFreshnessError = "Podcast lookup did not return a verified episode; the last verified value was preserved.";
+  } else {
+    node.podcastFreshnessStatus = "MISSING";
+    delete node.podcastFreshnessError;
+  }
+
+  if (newsletterResult) {
+    node.latestNewsletterPublishedAt = newsletterResult.publishedAt;
+    node.latestNewsletterTitle = newsletterResult.title;
+    node.latestNewsletterEvidenceUrl = newsletterResult.evidenceUrl;
+    node.latestNewsletterCheckedAt = checkedAt;
+    node.newsletterFreshnessStatus = freshnessStatus(newsletterResult.publishedAt);
+    delete node.newsletterFreshnessError;
+  } else if (hadNewsletter) {
+    node.latestNewsletterCheckedAt = checkedAt;
+    node.newsletterFreshnessStatus = previousNewsletter ? "ERROR" : "UNVERIFIED";
+    node.newsletterFreshnessError = "Newsletter feed did not return a verified post; the last verified value was preserved.";
+  } else {
+    node.newsletterFreshnessStatus = "MISSING";
+    delete node.newsletterFreshnessError;
+  }
+
+  const latestVideoOrPodcast = newer<LatestHit>(
     youtube ? { ...youtube, platform: "youtube" } : undefined,
     podcast ? { ...podcast, platform: "podcast" } : undefined
+  );
+  const latest = newer<LatestHit>(
+    latestVideoOrPodcast,
+    newsletter ? { ...newsletter, platform: "newsletter" } : undefined
   );
 
   if (latest) {
@@ -586,16 +771,25 @@ async function refreshNode(node: NodeData, checkedAt: string) {
   }
 
   node.lastMediaFreshnessAuditAt = checkedAt;
+  node.mediaRefreshVersion = REFRESH_VERSION;
 
-  return { youtube: Boolean(youtube), podcast: Boolean(podcast), latest: Boolean(latest) };
+  return {
+    youtube: Boolean(youtubeResult),
+    podcast: Boolean(podcastResult),
+    newsletter: Boolean(newsletterResult),
+    latest: Boolean(latest),
+  };
 }
 
 async function run() {
-  const db = JSON.parse(readFileSync(DATA_PATH, "utf-8")) as Database;
+  const db = loadDatabase();
   const checkedAt = new Date().toISOString();
-  const allTargets = db.nodes.filter((node) => includeAll || node.actionabilityStatus === "READY");
+  const allTargets = db.nodes
+    .filter((node) => requestedIds.size > 0 ? requestedIds.has(node.id) : includeAll || node.actionabilityStatus === "READY")
+    .filter((node) => !staleOnly || !node.lastMediaFreshnessAuditAt || Date.now() - new Date(node.lastMediaFreshnessAuditAt).getTime() > 23 * 60 * 60 * 1000)
+    .sort((a, b) => (b.calculatedScore ?? 0) - (a.calculatedScore ?? 0));
   const targets = typeof limit === "number" && Number.isFinite(limit) ? allTargets.slice(0, limit) : allTargets;
-  const stats = { processed: 0, youtube: 0, podcast: 0, latest: 0 };
+  const stats = { processed: 0, youtube: 0, podcast: 0, newsletter: 0, latest: 0 };
 
   console.log(`refreshing ${targets.length}/${allTargets.length} media records (${writeChanges ? "write" : "dry-run"})`);
 
@@ -604,7 +798,7 @@ async function run() {
     console.log(`batch ${index + 1}-${Math.min(index + CONCURRENCY, targets.length)}: ${batch.map((node) => node.id).join(", ")}`);
     const results = await Promise.all(
       batch.map((node) =>
-        withTimeout(node.id, refreshNode(node, checkedAt), { youtube: false, podcast: false, latest: false })
+        withTimeout(node.id, refreshNode(node, checkedAt), { youtube: false, podcast: false, newsletter: false, latest: false })
       )
     );
 
@@ -612,20 +806,48 @@ async function run() {
       stats.processed++;
       if (result.youtube) stats.youtube++;
       if (result.podcast) stats.podcast++;
+      if ("newsletter" in result && result.newsletter) stats.newsletter++;
       if (result.latest) stats.latest++;
     }
 
     console.log(
       `refreshed ${Math.min(index + CONCURRENCY, targets.length)}/${targets.length} ` +
-      `(youtube=${stats.youtube}, podcast=${stats.podcast}, latest=${stats.latest})`
+      `(youtube=${stats.youtube}, podcast=${stats.podcast}, newsletter=${stats.newsletter}, latest=${stats.latest})`
     );
+
+    if (writeChanges) writeCheckpoint(db);
   }
 
-  if (writeChanges) {
-    writeFileSync(DATA_PATH, `${JSON.stringify(db, null, 2)}\n`);
+  if (writeChanges) writeDatabase(db);
+
+  if (outputPath) {
+    mkdirSync(dirname(outputPath), { recursive: true });
+    const completedAt = new Date().toISOString();
+    const records = targets.map((node) => {
+      const record = pickLiveMediaRecord(node);
+      if (rejectedYoutubeOwnership.has(node.id)) {
+        record.latestYoutubePublishedAt = null;
+        record.latestYoutubePublishDate = null;
+        record.latestYoutubeTitle = null;
+        record.latestYoutubeEvidenceUrl = null;
+      }
+      return record;
+    });
+    writeFileSync(outputPath, `${JSON.stringify({
+      schemaVersion: LIVE_MEDIA_SCHEMA_VERSION,
+      run: {
+        id: `media-${completedAt.replace(/[^0-9]/g, "").slice(0, 14)}`,
+        status: "COMPLETE",
+        completedAt,
+        expectedCount: records.length,
+        recordCount: records.length,
+        refreshVersion: REFRESH_VERSION,
+      },
+      records,
+    }, null, 2)}\n`);
   }
 
-  console.log(JSON.stringify({ ...stats, writeChanges, includeAll }, null, 2));
+  console.log(JSON.stringify({ ...stats, writeChanges, outputPath, includeAll, staleOnly, refreshVersion: REFRESH_VERSION, requestCache: { text: textRequestCache.size, json: jsonRequestCache.size } }, null, 2));
 }
 
 run().catch((error) => {
